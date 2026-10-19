@@ -152,7 +152,10 @@ function buildTonexValues(variant = 0) {
 // 0..9 liga/desliga, 10..19 modelo, 20 volume do patch, 21..30 ordem da
 // cadeia (permutacao de 0..9), 31..113 parametros (bloco*8 + p; NS 103..113).
 function gp5ParamIdx(block, p) { return block < 9 ? 31 + block * 8 + p : 31 + 72 + p; }
-function buildGp5Values() {
+// `gp50`: a conectada e uma GP-50 (PRE em C-Wah e CAB em Dreadnought 1, dois
+// dos modelos que so ela tem). O ultimo valor (idx 114) e a VARIANTE que o
+// host manda no dump: 0 = GP-5, 1 = GP-50.
+function buildGp5Values(gp50 = false) {
   const v = new Array(DT.GP5_EDITOR_SCHEMA.count).fill(0);
   // [bloco, nome do modelo (ou indice), liga]
   const plan = {
@@ -179,6 +182,14 @@ function buildGp5Values() {
   v[19] = 3;           // SLOT 4
   v[20] = 72;          // volume do patch
   for (let s = 0; s < 10; s++) v[21 + s] = s;   // cadeia na ordem padrao
+  if (gp50) {
+    v[1] = 1; v[10 + 1] = 11;                    // PRE ligado, C-Wah
+    v[gp5ParamIdx(1, 0)] = 60; v[gp5ParamIdx(1, 1)] = 45;
+    v[gp5ParamIdx(1, 2)] = 70; v[gp5ParamIdx(1, 3)] = 35;
+    v[10 + 4] = 40;                              // CAB: Dreadnought 1
+    v[gp5ParamIdx(4, 1)] = 65;
+  }
+  v.push(gp50 ? 1 : 0);                          // idx 114: variante
   return v.map(wire6);
 }
 
@@ -388,12 +399,15 @@ function kedRenderText(pages, page, num, v) {
 // ─── cenarios ────────────────────────────────────────────────────────────────
 const DEV_GP5 = { kind: 'midi', index: 0, port: 3, vid: '84EF', pid: '0184', ready: true, vendor: false,
   editor: true, manufacturer: 'Valeton', product: 'GP5', diag: '' };
+const DEV_GP50 = { kind: 'midi', index: 0, port: 3, vid: '84EF', pid: '018A', ready: true, vendor: false,
+  editor: true, manufacturer: 'Valeton', product: 'GP50', diag: '' };
 const DEV_TONEX = { kind: 'tonex', index: 0, port: 4, vid: '1963', pid: '00D1', ready: true, vendor: false,
   editor: true, manufacturer: 'IK Multimedia', product: 'TONEX ONE', diag: '' };
 const DEV_NANO = { kind: 'midi', index: 0, port: 0, vid: '152A', pid: '88E7', ready: true, vendor: false,
   editor: true, manufacturer: 'Neural DSP', product: 'Nano Cortex', diag: 'HID ok fw 2.2.1 #1' };
 const SCENARIOS = {
   default: { devices: [DEV_GP5, DEV_TONEX], kemper: true },
+  gp50: { devices: [DEV_GP50, DEV_TONEX], kemper: true },
   nano: { devices: [DEV_NANO], kemper: true },
   kemper: { devices: [], kemper: true },
   none: { devices: [], kemper: false },
@@ -426,6 +440,12 @@ export function setScenario(state, name) {
   state.kemperPresent = SCENARIOS[sc].kemper;
   state.editors = {};
   for (const k of Object.keys(EDITOR_DEFAULTS)) state.editors[k] = freshEditor(k);
+  if (sc === 'gp50') {
+    const e = state.editors['1:0'];
+    e.values = buildGp5Values(true);
+    e.savedValues = e.values.slice();
+    e.name = 'Big Jazz'; e.savedName = e.name; e.preset = 8;
+  }
   const now = Date.now();
   state.kemper = {
     active: false, reason: '', openMs: 0, reads: 0, rigSeq: 0, pushSeq: 0,
@@ -440,7 +460,7 @@ function devicesNow(state) {
   return state.devices.map((d) => {
     const out = { ...d };
     // GP-5 no MODO TRANSMISSAO nao tem editor (sem endpoint IN).
-    if (d.vid === '84EF' && d.pid === '0184' && state.host.tx_only) out.editor = false;
+    if (d.vid === '84EF' && (d.pid === '0184' || d.pid === '018A') && state.host.tx_only) out.editor = false;
     return out;
   });
 }
@@ -509,7 +529,7 @@ function editorKey(a) {
 function editorSupported(state, kind, slot) {
   return devicesNow(state).some((d) => d.editor && (
     (kind === 0 && d.kind === 'tonex' && d.index === slot)
-    || (kind === 1 && d.kind !== 'tonex' && d.vid === '84EF' && d.pid === '0184')
+    || (kind === 1 && d.kind !== 'tonex' && d.vid === '84EF' && (d.pid === '0184' || d.pid === '018A'))
     || (kind === 2 && d.kind !== 'tonex' && d.vid === '152A' && d.pid === '88E7')));
 }
 function editorParamsJson(state, kind, slot) {
@@ -530,8 +550,24 @@ function editorParamsJson(state, kind, slot) {
     timeout: !!(f & FLAG_TIMEOUT), busy: !!(f & FLAG_BUSY),
     preset: (f & FLAG_INDEX) ? e.preset : -1, name: e.name,
     age_ms: e.dumpMs ? now - e.dumpMs : 0, read_age_ms: e.readMs ? now - e.readMs : 0,
+    ...(kind === 2 ? nanoCaptureFields(e) : {}),
     values: e.values.map(wire6),
   };
+}
+// Nomes das capturas da Nano (frame 0x35 do host, out/2026): a controladora
+// publica capture_names/capture_slot/capture_current no GET. Nomes de mentira.
+const NANO_CAPTURE_NAMES = [
+  'Clean Twin', 'Plexi Crunch', 'Petrucci Lead', 'JCM Rhythm', 'Recto Modern',
+  '5150 Block', 'AC30 Top Boost', 'Bassman 59', 'Dumble Clean', 'Friedman BE',
+  'Mesa Mark IV', 'Orange Rockerverb', 'Soldano SLO', 'Diezel VH4', 'Bogner Uber',
+  'Matchless DC30', 'Hiwatt DR103', 'Vox AC15', '', 'EVH Stealth',
+  'Dual Rec Vintage', 'Super Reverb', 'Morgan AC20', 'Laney Lionheart', 'Engl Savage',
+];
+function nanoCaptureFields(e) {
+  const slot = Math.round(Number(e.values[18]) || 0);
+  return { capture_seq: 1, capture_slot: slot,
+    capture_current: slot > 0 ? (NANO_CAPTURE_NAMES[slot - 1] || '') : '',
+    capture_names: NANO_CAPTURE_NAMES };
 }
 function editorDump(state, e) {
   e.dumps += 1;
@@ -582,9 +618,20 @@ export function handleMock(state, method, pathname, query, body) {
   const M = String(method || 'GET').toUpperCase();
   let p = String(pathname || '').split('?')[0];
   if (p.length > 1) p = p.replace(/\/+$/, '');
-  if (!p.startsWith('/usb_host/') && !p.startsWith('/kemper/editor/')) return null;
+  if (!p.startsWith('/usb_host/') && !p.startsWith('/kemper/editor/') && p !== '/nano/tuner') return null;
   if (M === 'OPTIONS') return {};
   const a = argsOf(query, body);
+  // Afinador da Nano (firmware 15/out/2026): leitura de mentira que passeia
+  // em volta do Lá (A), afinada perto do meio do ciclo.
+  if (p === '/nano/tuner') {
+    const T = state.tuner || (state.tuner = { open: false, at: 0 });
+    if (M === 'POST') { T.open = String(a.open) === '1'; T.at = Date.now(); }
+    if (!T.open) return { supported: true, open: false, ref: 440, note: '', cents: 0, in_tune: false, kemper_busy: false };
+    const tt = (Date.now() - T.at) / 1000;
+    const cents = Math.round(Math.sin(tt * 0.9) * 30 * 10) / 10;
+    return { supported: true, open: true, ref: 440, note: tt % 8 < 0.6 ? '' : 'A', cents,
+      in_tune: Math.abs(cents) <= 3.5, kemper_busy: false };
+  }
   const h = state.host;
   const reqId = () => { h.reqId = (h.reqId % 127) + 1; return h.reqId; };
 

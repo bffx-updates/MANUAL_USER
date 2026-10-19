@@ -23,12 +23,12 @@ CONTENTS
    5.5. The MAIN card
    5.6. Extra messages
    5.7. The pedal screen and the preset's look
-   5.8. Name position and per-preset layout
+   5.8. CONFIGURE DISPLAY: layout, icons, name and background
    5.9. The bottom bar
    5.10. Copy and paste
 6. LIVE mode
    6.1. How to set up a footswitch
-   6.2. The ten operating modes
+   6.2. The twelve operating modes
    6.3. STOMP — on and off
    6.4. Custom values
    6.5. TAP TEMPO — tap the tempo with your foot
@@ -39,23 +39,29 @@ CONTENTS
    6.10. RAMP — sweep smoothly
    6.11. STEPS — CC sequencer
    6.12. CONTROL — A/B selector
-   6.13. MUTE — footswitch with no function
-   6.14. How each footswitch looks
+   6.13. INCREMENTO — goes up on each press
+   6.14. RETORNO — action on press, rest on release
+   6.15. ONDA — the CC moves by itself
+   6.16. MUTE — only in older presets
+   6.17. How each footswitch looks
 7. Stage Mode
-   7.1. Opening Stage Mode and STAGE 1
-   7.2. The control bar
-   7.3. STAGE 2 — the plugged-in device
-   7.4. STAGE 2 with the Nano Cortex
-   7.5. STAGE 2 with the Kemper Player
-   7.6. Stage settings — GENERAL
-   7.7. Stage settings — VISUAL
-   7.8. Stage settings — STAGE 1
-   7.9. Stage images
-   7.10. Stage settings — STAGE 2
-   7.11. On phones and tablets
+   7.1. Opening Stage Mode and the BFMIDI STAGE
+   7.2. Editing a footswitch without leaving the stage
+   7.3. The control bar
+   7.4. SPECIAL STAGE — the dedicated pedal
+   7.5. SPECIAL STAGE with the Nano Cortex
+   7.6. SPECIAL STAGE with the Kemper Player
+   7.7. SPECIAL STAGE favorites
+   7.8. Stage settings — GENERAL
+   7.9. Stage settings — VISUAL
+   7.10. Stage settings — BFMIDI STAGE
+   7.11. Stage images
+   7.12. Profiles and ready-made looks
+   7.13. Stage settings — SPECIAL STAGE
+   7.14. On phones and tablets
 8. Device preset editors
    8.1. Where to open it
-   8.2. Valeton GP-5
+   8.2. Valeton GP-5 and GP-50
    8.3. IK TONEX ONE
    8.4. Neural DSP Nano Cortex
    8.5. Kemper Player — EDIT RIG
@@ -63,24 +69,27 @@ CONTENTS
 9. Settings
    9.1. The settings menu
    9.2. FRIENDLY MODE — MIDI with names
-   9.3. Custom device (USER 1, 2 and 3)
-   9.4. Kemper Player and Nano Cortex in Friendly Mode
-   9.5. FOOTSWITCHES — what applies in any preset
-   9.6. External expression
-   9.7. BANKS — startup, navigation and combos
-   9.8. DISPLAY — layouts, names and BPM
-   9.9. LEDS — brightness and ring colors
-   9.10. IMAGES — your own backgrounds and icons
-   9.11. HARDWARE — model, send timing and memory
-   9.12. WIFI — network and connection
-   9.13. HOST — the USB Host and plugged-in devices
-   9.14. BLUETOOTH — wireless
-   9.15. EDITOR — theme, saving, shortcuts and language
-   9.16. UPDATES — the controller
-   9.17. UPDATES — the USB Host
-   9.18. BACKUP — copy and restore
-   9.19. TESTS — diagnostics and MIDI monitor
-   9.20. FACTORY RESET — erase and go back to defaults
+   9.3. TUNER — the on-screen tuner
+   9.4. Custom device (USER 1, 2 and 3)
+   9.5. ADVANCED — Kemper Player and Nano Cortex
+   9.6. FOOTSWITCHES — what applies in any preset
+   9.7. External expression
+   9.8. BANKS — active banks and how the controller starts
+   9.9. PRESET CALL — what each footswitch does in PRESET mode
+   9.10. COMBOS — two footswitches together
+   9.11. DISPLAY — Gig View, BPM and preset change
+   9.12. LEDS — brightness and ring colors
+   9.13. IMAGES — your own backgrounds and icons
+   9.14. HARDWARE — model, send timing and memory
+   9.15. WIFI — network and connection
+   9.16. HOST — the USB Host and plugged-in devices
+   9.17. BLUETOOTH — wireless
+   9.18. EDITOR — saving, theme, language and shortcuts
+   9.19. UPDATES — the controller
+   9.20. UPDATES — the USB Host
+   9.21. BACKUP — copy and restore
+   9.22. TESTS — diagnostics and MIDI monitor
+   9.23. FACTORY RESET — erase and go back to defaults
 10. Advanced features
    10.1. Navigation commands (the controller talking to itself)
    10.2. Device integrations
@@ -107,7 +116,8 @@ Purpose: There's an official app for Android, iPhone/iPad, Mac and Windows. It's
 How to:
 1. Android (7 or later): BFMiDi on Google Play.
 2. iPhone, iPad (iOS/iPadOS 17+) and Mac (macOS 14+): BFMiDi Editor on the App Store.
-3. Windows 10 and 11 (64-bit): download the installer from the downloads page.
+3. Windows 10 and 11 (64-bit): BFMIDI Editor on the Microsoft Store. If you'd rather install without
+   the store, the installer is on the downloads page.
 4. Open the app. It shows the editor right away and, at the same time, looks for the controller on
    your network and on the controller's own network. Once it finds it, it connects by itself.
 Fields and items:
@@ -126,9 +136,10 @@ Fields and items:
              way to update the controller and the USB Host. In the Android app and on iPhone/iPad,
              the connection is over Wi-Fi.
 - App updates (maintenance)
-  Description: Android, iPhone, iPad and Mac update through their own store. On Windows, download
-             the new installer from the downloads page and install it over the old one — nothing is
-             lost.
+  Description: Apps installed from a store (Google Play, App Store and Microsoft Store) are updated
+             by it. If you installed on Windows with the installer from the downloads page, download
+             the new installer and install it over the old one — nothing is lost. With the Microsoft
+             Store, Windows also stops showing the “Windows protected your PC” warning.
              The controller's firmware is a different thing: it's updated in SETTINGS › UPDATES.
 Notes:
 - Rather not install anything? The browser still works: see the next two cards.
@@ -161,6 +172,10 @@ Fields and items:
 - Reopening the window (shortcut)
   Description: Closed it by accident? Tap the first button on the bottom bar (the connection
              indicator): it opens this window again.
+- Switching connection (shortcut)
+  Description: The window also opens with the editor already connected — including over the USB
+             cable. It highlights the path in use, and tapping another one switches: choosing WI-FI
+             or OFFLINE while the cable is connected releases the cable first.
 Notes:
 - During an update the window doesn't open, even if the connection drops — the drop is part of the
    flashing process.
@@ -190,15 +205,16 @@ Fields and items:
              Type it with http:// in front: without it, Safari and Chrome run a Google search
              instead of opening the editor.
 - Using your home network (optional)
-  Description: In SETTINGS › WIFI, tap SCAN, choose the network, type the password and tap CONNECT.
-             From then on the pedal can be reached at http://bfmidi.local from any device in the
-             house, and you keep your internet while you edit.
+  Description: In SETTINGS › WIFI, on the CONNECT tab, tap SCAN; on the NETWORKS tab, tap your
+             network (the editor goes back to CONNECT with the name filled in), type the password
+             and tap CONNECT. From then on the pedal can be reached at http://bfmidi.local from any
+             device in the house, and you keep your internet while you edit.
              Only 2.4 GHz networks show up: it's a limitation of the chip.
 - The Wi-Fi turned itself off (help)
   Description: With nobody connected, the radio turns off after 90 seconds. To bring it back: turn
              the controller off and on again, or use a footswitch combo set to WI-FI ON/OFF (in
-             SETTINGS › BANKS). When you turn it on with the combo, the pedal's display shows the
-             network, the password and the address for a few seconds.
+             SETTINGS › BANKS › COMBOS). When you turn it on with the combo, the pedal's display
+             shows the network, the password and the address for a few seconds.
 - Mac: Local Network permission (help)
   Description: On macOS 15 or later, the browser needs Local Network permission (System Settings ›
              Privacy & Security › Local Network). Without it, the Mac joins the pedal's Wi-Fi but
@@ -222,7 +238,7 @@ Fields and items:
              USB — there you're already connected over Wi-Fi. Safari doesn't give access to the USB
              port either, and on phones and tablets the connection is always over Wi-Fi.
 - The online editor (address)
-  Description: The address https://bffx-updates.github.io/Editor_BFMiDi_v14/ works over the cable
+  Description: The address https://bffx-updates.github.io/Editor_BFMiDi_v15/ works over the cable
              only: because it's a secure site (https), the browser won't let it talk to the pedal
              over the local Wi-Fi.
 - When the cable is better (when to use)
@@ -251,8 +267,9 @@ Fields and items:
   Description: The first button on the bottom bar shows the Wi-Fi icon crossed out in red. Tapping
              it opens the connection window.
 - Resetting the copy (maintenance)
-  Description: In SETTINGS › FACTORY RESET, the OFFLINE MODE card has the RESET LOCAL COPY button:
-             it takes the copy back to the factory pack. The controller isn't touched.
+  Description: In SETTINGS › FACTORY RESET › VIRTUAL (a tab that only shows up in offline mode), the
+             OFFLINE MODE card has the RESET LOCAL COPY button: it takes the copy back to the
+             factory pack. The controller isn't touched.
 Notes:
 - Anything that depends on the hardware (tests, updates, USB devices, preset editors) is unavailable
    in offline mode, and the screen says why.
@@ -272,7 +289,7 @@ Introduction: The controller leaves the factory ready to plug in and play, but f
 Purpose: In order: check the model, tell it which gear you use, build your first preset, set up a
           footswitch in LIVE and choose your shortcuts.
 How to:
-1. Check the model in SETTINGS › HARDWARE. It must match what's written on your controller.
+1. Check the model in SETTINGS › HARDWARE › MODEL. It must match what's written on your controller.
 2. Tell it which gear you use in SETTINGS › FRIENDLY MODE: from then on, commands show up by name
    (“Delay”, “Reverb”) instead of numbers.
 3. Build your first preset: the next topic shows you how.
@@ -287,7 +304,7 @@ Fields and items:
 - Saving is automatic (default)
   Description: The editor saves by itself less than a second after each change. The save button, on
              the right of the bottom bar, changes color to show the status. If you'd rather save
-             manually, turn it off in SETTINGS › EDITOR.
+             manually, turn it off in SETTINGS › EDITOR › GENERAL.
 - Try it without a pedal (tip)
   Description: The apps open in offline mode: you can get to know the editor and build presets even
              before turning the controller on.
@@ -334,14 +351,14 @@ Fields and items:
              unit doesn't see this name. Usually it's the song's name.
 - Stepped on it again and the bank changed? (attention)
   Description: By default, stepping again on the footswitch of the preset that's already playing
-             moves up one bank (A1 → B1). That's RECLICK, configurable in SETTINGS › BANKS › PRESET
-             CALL. And holding the active preset's footswitch enters LIVE mode.
+             moves up one bank (A1 → B1). That's PRESS AGAIN, configurable in SETTINGS › BANKS ›
+             PRESET CALL. And holding the active preset's footswitch enters LIVE mode.
 - The sound didn't change? (help)
   Description: Check in this order: (1) the cable goes from the BFMiDi to the effects unit (MIDI OUT
              → MIDI IN); (2) the preset's channel is the one the effects unit listens to; (3) the PC
              exists on the effects unit.
-             Still nothing? Use MIDI SEND in SETTINGS › TESTS: it sends a command right away and
-             shows whether the effects unit responds.
+             Still nothing? Use MIDI SEND in SETTINGS › TESTS › SEND: it sends a command right away
+             and shows whether the effects unit responds.
 Notes:
 - The save button (the floppy disk, on the right of the bottom bar) turns green when everything is
    saved.
@@ -365,8 +382,8 @@ Fields and items:
 - Controller model (selection)
   Description: Choose your BFMiDi's family and variant. The S3 family is the current line, with a
              new processor and more memory for images and icons: 8SW+, NANO+, MICRO and 6SW+.
-             In the editor, the same selector is in SETTINGS › HARDWARE, and it only offers the
-             models for the processor of the connected pedal.
+             In the editor, the same selector is in SETTINGS › HARDWARE › MODEL, and it only offers
+             the models for the processor of the connected pedal.
 - Top view (image)
   Description: Where the footswitches (1 to 6, LIVE and GLOBAL, when present), the display and the
              port labels are.
@@ -383,18 +400,19 @@ Fields and items:
              like the Valeton GP-5, the IK TONEX ONE and the Neural DSP Nano Cortex, MIDI keyboards,
              another BFMiDi.
              On the BFMIDI-3 and S3, it recognizes what was plugged in by itself and also includes
-             Bluetooth. Setup in SETTINGS › HOST.
+             Bluetooth. Setup in SETTINGS › HOST and SETTINGS › BLUETOOTH.
 - MIDI TRS and MIDI DIN5 (port)
   Description: MIDI outputs for effects units and traditional gear: a mini jack (TRS) and the
              classic 5-pin connector. Both carry the same signal — use the cable or adapter that
              fits your device.
 - EXP (expression pedal) (port)
   Description: On the “+” models. Input for an expression pedal (TRS): the movement becomes a
-             continuous CC. Setup, calibration and output range in SETTINGS › FOOTSWITCHES.
+             continuous CC. Setup, calibration and output range in SETTINGS › FOOTSWITCHES ›
+             EXTERNAL.
 - 2SW (two external footswitches) (port)
   Description: On the “+” models. Input for a dual pedal (two simple footswitches, no LEDs). Each
-             button gets its own function in SETTINGS › FOOTSWITCHES, and can have an indicator on
-             the display.
+             button gets its own function in SETTINGS › FOOTSWITCHES › EXTERNAL, and can have an
+             indicator on the display.
 - 9V (power) (port)
   Description: A standard 9 V pedal power supply (center negative). The power supply is required to
              update the USB Host, because at that point the USB cable comes out of the DEVICE port.
@@ -437,7 +455,7 @@ Fields and items:
 - Bottom bar (navigation)
   Description: Connection, settings, home, copy/paste and save. Details in the card The bottom bar.
 Notes:
-- The screenshots in this manual come from the real editor screen in version 14.5. Tap a screenshot
+- The screenshots in this manual come from the real editor screen in version 15.0. Tap a screenshot
    to see it at full size.
 
 5.2. On a phone
@@ -448,8 +466,9 @@ Purpose: On a phone the pieces are stacked: the console on top and the MAIN card
 Fields and items:
 - CONFIG and DISPLAY (round buttons)
   Description: CONFIG shows what the preset sends (PC, channel, extras) and the shortcuts. DISPLAY
-             replaces the card's content with the preview of the pedal screen; the SETTINGS button
-             below the preview opens the window with the name position, layout, font and colors.
+             replaces the card's content with the preview of the pedal screen; the CONFIGURE DISPLAY
+             button below the preview opens the window with the layout, icons, name, font, colors
+             and background.
 - In LIVE mode (behavior)
   Description: The footswitch card has the same two round buttons: one for the mode settings, the
              other for how the icon looks on the screen.
@@ -507,9 +526,9 @@ Fields and items:
              600: above 127 the BFMiDi also sends Bank Select in the format of the device chosen in
              Friendly Mode.
 - CHANNEL (selection)
-  Description: The MIDI channel of the device that receives the PC. The device name appears next to
-             the number when the channel is set up in Friendly Mode. OFF = the preset doesn't send a
-             PC.
+  Description: The MIDI channel of the device that receives the PC: the field shows the number, or
+             the device’s name when the channel is in Friendly Mode. OFF = the preset sends no PC,
+             and the card says so right below.
 - EXTRAS (button)
   Description: Each tap adds an extra message that goes out together with the PC (it starts as a PC
              on channel 1). Once there is at least one extra, the list shows up below CHANNEL. See
@@ -527,6 +546,8 @@ Fields and items:
              SETTINGS › EDITOR › SHORTCUTS. On a computer the shortcut opens the settings in the
              third column, next to the preset; on a phone it takes you to the settings screen.
 Notes:
+- At the top of the card, a sentence sums up what goes out when the preset is called: the PC on the
+   chosen channel and, right after, the extras in list order.
 - Shortcuts only appear in PRESET mode. In LIVE mode the middle card is the footswitch card.
 
 5.6. Extra messages
@@ -546,59 +567,82 @@ Fields and items:
 - EXP value — the expression pedal in this preset (special value)
   Description: On boards with an expression input, the value list of a CC row ends with EXP (PEDAL
              DE EXPRESSÃO) (expression pedal). That row doesn't send MIDI: it tells the expression
-             pedal where to point while this preset is active.
+             pedal where to point while this preset is active. Once EXP is chosen, a line right
+             below explains this on screen.
              The preset's target replaces the CC and channel from the expression card (which become
              just the default) and works even with that card turned off. You can have more than one
              EXP row, so the same pedal controls two targets.
 - The sending order (detail)
   Description: When the preset is called up, the PC and the extras go out first; then the initial
              state of the LIVE footswitches; and only then the LED and the screen. Slow devices that
-             miss the first messages can get a pause in SETTINGS › HARDWARE › SEND TIMING.
+             miss the first messages can get a pause in SETTINGS › HARDWARE › TIMING.
 
 5.7. The pedal screen and the preset's look
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Related screen/preview: PEDAL SCREEN — PRESET
 Purpose: See exactly what the controller will show before you step on anything — when calling up the
-          preset and when playing in LIVE — and adjust the name and colors.
+          preset and when playing in LIVE. The screen settings are behind the CONFIGURE DISPLAY
+          button.
 How to:
 1. Use the PRESET and LIVE tabs at the top of the preview to see both screens.
-2. Tap the preview (or POSITION) to move the name and choose the layout.
-3. Adjust the font, style and colors in the blocks below the preview: the preview updates as you go.
+2. Tap the preview or CONFIGURE DISPLAY to adjust the layout, icons, name and background.
+3. The summary below the button tells you how the screen is set (layout, name and background).
+   Tapping a line opens the window right at that spot.
 Fields and items:
 - The preview (visual)
   Description: Draws what the controller shows, with the background, name and icons. Footswitches
              whose function has no MIDI channel don't appear — just like on the pedal screen.
-- PRESET — preset name (text)
-  Description: FONT SIZE (− / +) and STYLE (B = bold) of the name on the screen. EXT. SWITCHES
-             decides whether the external footswitch indicators (ESW1 and ESW2) appear in this
-             preset.
-- APPEARANCE (name colors)
-  Description: The name colors: NAME (the text), OUTLINE and TAG (the bank/preset label).
-- SCREEN COLORS (backgrounds)
-  Description: The two full-screen backgrounds: one for the PRESET screen, the other for the LIVE
-             screen. Each can be a color, a gradient or an image you uploaded in SETTINGS › IMAGES.
+- CONFIGURE DISPLAY (button)
+  Description: Opens the window with everything that changes this preset's screen: layout, icon
+             position and size, name, font, colors, background and external switches.
+- The summary (read-only)
+  Description: Three read-only lines: the layout, the name size and style, and the background.
+             Tapping a line opens CONFIGURE DISPLAY right at that part.
 
-5.8. Name position and per-preset layout
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Related screen/preview: NAME POSITION · PRESET
-Purpose: Drag the name anywhere you like on the screen and choose how the icons are arranged — just
-          for this preset, if you want.
+5.8. CONFIGURE DISPLAY: layout, icons, name and background
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Related screen/preview: CONFIGURE DISPLAY · PRESET
+Purpose: Everything that changes this preset's screen in a single window: the arrangement and size
+          of the icons, where the name goes, the font, the colors and the background. On a computer
+          it opens large and landscape.
 How to:
-1. Drag the name in the preview. The position shows below as a percentage (X and Y).
-2. Choose the screen layout: GLOBAL follows the unit's default; the others apply only to this
-   preset.
-3. Tap APPLY. Nothing changes until you do.
+1. Drag the name and the icons on the stage. Dragging an icon in a fixed layout (L1 to L4) switches
+   the screen to Custom, with the same look.
+2. Pick the layout in the tiles below the stage. It applies only to this preset.
+3. Use PRESET and LIVE at the top of the window to adjust both screens without closing it.
+4. With auto-save on (the default), every change applies right away and UNDO ALL brings back what it
+   was when the window opened; DONE closes it. With auto-save off, nothing changes until APPLY, and
+   CANCEL discards everything, asking first.
 Fields and items:
 - The layouts (selection)
-  Description: GLOBAL inherits the layout from SETTINGS › DISPLAY. L1 to L4 are fixed icon
-             arrangements and Custom lets you drag each icon and choose its size. The PRESET screen
-             also has Nenhum (None — just the big name) and Lista (List — the presets in sequence).
-             Dragging an icon in an L1–L4 layout turns the screen into Custom.
+  Description: L1 to L4 are fixed icon arrangements and Custom lets you drag each icon and choose
+             its size. The PRESET screen also has Nenhum (None — just the big name) and Lista (List
+             — the presets in sequence).
+             Dragging an icon in an L1–L4 layout turns the screen into Custom. A preset that never
+             picked a layout shows lit the one the pedal draws today.
+- Icons (Custom)
+  Description: In Custom, pick the icon (on the stage or in the SW1 to G2 tiles), whether it shows
+             and its size.
+             The ALL PRESETS button opens the options that apply to every preset: the icon shape
+             (default, circle or octagon, one for each screen), on the PRESET screen the bank preset
+             names in place of the icons (with their colors and size), and on LIVE Current only: in
+             Custom, the screen shows only the icon of the last footswitch pressed, at the position
+             and size of the CURRENT tile on the stage.
+- Preset name (text and colors)
+  Description: The Show switch applies to the screen picked at the top (PRESET or LIVE); the GLOBAL
+             tag means the preset still follows the default. Font and colors are dimmed when the
+             name is hidden.
+- Screen background (backgrounds)
+  Description: The two full-screen backgrounds, PRESET and LIVE, each with its thumbnail; the orange
+             outline marks the one for the screen shown. Each can be a color, a gradient or an image
+             uploaded in SETTINGS › IMAGES.
+- External switches (on/off)
+  Description: Only on boards with external switch inputs. Turns ESW1 and ESW2 on or off for this
+             preset; the boxes show on the stage for reference only — position and colors are in
+             SETTINGS › FOOTSWITCHES.
 - Why per preset (use)
   Description: A song that needs four big effects can have its own layout while the others use the
              list. If you don't change anything here, the preset keeps following the global layout.
-- Center (shortcut)
-  Description: Moves the name back to the center of the screen.
 
 5.9. The bottom bar
 ~~~~~~~~~~~~~~~~~~~
@@ -662,7 +706,7 @@ How to:
 1. On the console bar, tap LIVE. (On a computer, clicking a footswitch in the list also takes you to
    LIVE.)
 2. Use keys 1 to 6 to pick the footswitch. The readout changes to FX · SWITCH n.
-3. At the top of the middle card, tap the mode name and choose one of the ten modes.
+3. At the top of the middle card, tap the mode name and choose one of the twelve modes.
 4. Fill in the mode's fields. In the third column (on a phone, the round DISPLAY button), set the
    icon and the screen colors.
 Fields and items:
@@ -677,24 +721,24 @@ Fields and items:
              footswitch set to the » TO LAYER command.
 - Entering and leaving LIVE with your foot (on stage)
   Description: Out of the box, holding the footswitch of the preset that's playing enters LIVE
-             (SETTINGS › BANKS › PRESET CALL › LONG CLICK).
+             (SETTINGS › BANKS › PRESET CALL › HOLD).
              Boards with a LIVE MODE button: one tap enters (and switches the layer), holding exits.
-             Boards without that button: use a two-footswitch combo with the SW_LIVE action — and,
-             inside LIVE, holding the combo for half a second goes straight back to PRESET mode. You
-             can also set a footswitch to the » OUT LIVE MODE command.
+             Boards without that button: use a two-footswitch combo with the ENTER/EXIT LIVE action
+             — and, inside LIVE, holding the combo for half a second goes straight back to PRESET
+             mode. You can also set a footswitch to the » OUT LIVE MODE command.
 - No channel, no icon (pedal screen)
   Description: A footswitch whose function has no MIDI channel doesn't show up on the controller's
              screen (or in the editor preview). That's why, with the factory pack — footswitches in
              STOMP with the channel OFF — the LIVE screen starts out empty: it fills in as you give
              the footswitches a channel.
-             The exceptions are FAVORITE, which navigates instead of sending MIDI, and MUTE, which
-             never shows up.
+             The exceptions are FAVORITE, which navigates instead of sending MIDI, and MUTE (only in
+             older presets), which never shows up.
 Notes:
 - Setting up LIVE is optional: a preset that just calls up the sound is already useful and ready to
    play.
 
-6.2. The ten operating modes
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6.2. The twelve operating modes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Related screen/preview: LIVE MODE · SWITCH 1
 Purpose: Each footswitch runs one mode. The mode decides what happens when you step on it — and
           changes all the other fields.
@@ -705,19 +749,26 @@ Fields and items:
   Description: STOMP — turns an effect on and off. What most people use.
              SPIN — cycles through three values.
              RAMP — sweeps smoothly from one value to another.
-             MOMENT (momentary) — works only while your foot is on it.
-             MACROS — several commands in one press.
+             MOMENT (momentary) — only while your foot is down.
+             MACROS — several commands in one tap.
              TAP TEMPO — tap the tempo with your foot.
              SINGLE — one fixed command per gesture.
-             STEPS — four-value sequencer in a loop.
+             STEPS — sequencer of four values in a loop.
              CONTROL — A/B selector between two targets.
-             MUTE — the footswitch has no function.
+             INCREM (increment) — each press raises a number: a CC value, the CC number or the PC.
+             RETORNO (return) — pressing sends one value, releasing sends another back, like a
+             spring-loaded switch.
+             ONDA (wave) — the CC moves up and down by itself, in time with the music (an LFO).
 - Does changing modes erase what I had? (detail)
   Description: No. Each mode's parameters are stored separately: if you try SPIN and go back to
              STOMP, STOMP is just as you left it.
+- What about MUTE? (detail)
+  Description: MUTE is no longer on the list. To leave a footswitch with no function, use any mode
+             with the CHANNEL set to OFF: it sends no MIDI and disappears from the controller's
+             screen. New footswitches already start that way, in STOMP with the channel OFF.
 Notes:
-- STEPS and CONTROL are for the preset's footswitches. SW GLOBAL and the external footswitches use
-   the other eight modes.
+- STEPS is only for the preset's footswitches. SW GLOBAL uses all the others except CONTROL; the
+   external footswitches use all the others, CONTROL included.
 
 6.3. STOMP — on and off
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -725,16 +776,18 @@ Related screen/preview: SW — STOMP MODE
 Purpose: The classic mode: your foot turns an effect on and off, like a real pedal. A single STOMP
           can have up to three sections, each on a different foot gesture.
 How to:
-1. On the SHORT CLICK tab, choose the effect's CC and CHANNEL.
-2. Want more functions on the same footswitch? Also set up LONG CLICK and RECLICK.
+1. On the TAP tab, choose the effect's CC and CHANNEL.
+2. Want more functions on the same footswitch? Also set up HOLD and PRESS AGAIN.
 3. Set the LED color and the behavior in the options strip below.
 Fields and items:
-- SHORT CLICK / LONG CLICK / RECLICK (sections)
+- TAP / HOLD / PRESS AGAIN (sections)
   Description: Three functions on the same footswitch: quick press, held press and double press. The
              behavior adapts to what you fill in: only the first section = classic stomp; two or
              three sections = two or three effects on the same footswitch.
-             With RECLICK filled in, the short click waits a moment (about a third of a second) to
-             see whether a second press is coming.
+             With PRESS AGAIN filled in, the tap waits a moment (about a third of a second) to see
+             whether a second press is coming.
+             Below the tabs, a notice shows when a gesture has no channel yet and so sends nothing.
+             On TAP, with no channel, the footswitch’s icon disappears from the pedal screen.
 - CC or PC (round button)
   Description: The round button next to the number switches the message type: CC (the usual choice
              for turning effects on and off) or PC (to call up a sound). With Friendly Mode, the
@@ -752,15 +805,16 @@ Fields and items:
              step on it.
              STARTS — the effect starts on or off.
              INVERT — the LED lights when off instead of when on.
-             The LONG CLICK and RECLICK tabs also have BACK: when turned off, the screen goes back
-             to showing the short-click icon.
+             The HOLD and PRESS AGAIN tabs also have BACK: when turned off, the screen goes back to
+             showing the TAP icon.
+             The INFO button at the bottom of the card shows these explanations on screen, along
+             with a sentence about what the mode does.
 - SINGLE RING (switch)
   Description: With two or three sections, the LED ring is split — one color per section. Turning on
-             SINGLE RING (only on the SHORT CLICK tab) lights all three LEDs together, in the color
-             of the last section you triggered.
+             SINGLE RING (only on the TAP tab) lights all three LEDs together, in the color of the
+             last section you triggered.
 Notes:
-- When in doubt, start with just SHORT CLICK. You can add the other sections later without redoing
-   anything.
+- When in doubt, start with just TAP. You can add the other sections later without redoing anything.
 
 6.4. Custom values
 ~~~~~~~~~~~~~~~~~~
@@ -795,9 +849,9 @@ Fields and items:
 - BPM on the screen (visual)
   Description: When you tap the tempo, the controller shows the BPM on a temporary card. How long it
              stays up, and whether it shows the average or the last two taps, is set in SETTINGS ›
-             DISPLAY. Turning the card off doesn't erase the tempo.
+             DISPLAY › GENERAL. Turning the card off doesn't erase the tempo.
 - What else uses the beat (integration)
-  Description: STEPS in SYNC TAP follows the tapped tempo, and STAGE MODE shows the BPM on the top
+  Description: STEPS in IN TIME follows the tapped tempo, and STAGE MODE shows the BPM on the top
              bar. With a Valeton GP-5 plugged into the USB Host and set up in Friendly Mode, a CC
              119 target sends the delay time in milliseconds straight to it.
 
@@ -807,7 +861,7 @@ Related screen/preview: SW — SINGLE MODE
 Purpose: Each gesture always sends the same thing. No on/off — it's a pure command button, with up
           to four messages per gesture.
 How to:
-1. Choose the gesture tab: SHORT CLICK, LONG CLICK or RECLICK.
+1. Choose the gesture tab: TAP, HOLD or PRESS AGAIN (two quick taps).
 2. Fill in up to four slots, each one CC or PC, with a value and a channel.
 Fields and items:
 - When to use it (use)
@@ -903,8 +957,8 @@ Purpose: When it's on, the footswitch steps through four values on the same CC, 
           — as if you were turning a knob in time with the song.
 How to:
 1. In SEQUENCE, choose the CC and channel and fill in the four values.
-2. Choose the timing: MANUAL (a time in milliseconds per step) or SYNC TAP (a note value per step,
-   based on the beat).
+2. Choose the timing: MS (a time in milliseconds per step) or IN TIME (a note value per step, based
+   on the beat).
 3. If you like, fill in TURN EFFECT ON: a second CC that gets ON when the sequence starts and OFF
    when it stops.
 4. Choose how the footswitch triggers it: ON/OFF or MOMENTARY.
@@ -913,10 +967,9 @@ Fields and items:
   Description: The sequence goes through the values in order, in a loop. When you turn it on, the
              first step goes out right away; when you turn it off, it stops immediately. Turning it
              back on starts over from the first one.
-- MANUAL × SYNC TAP (timing)
-  Description: In MANUAL, each step has its own time (up to 2 s) — so you can make irregular
-             rhythms.
-             In SYNC TAP, each step gets a note value based on the beat. The beat can come from Tap
+- MS × IN TIME (timing)
+  Description: In MS, each step has its own time (up to 2 s) — so you can make irregular rhythms.
+             In IN TIME, each step gets a note value based on the beat. The beat can come from Tap
              (tap a new tempo and the sequence follows) or from a Fixed BPM (20 to 300) — with a
              fixed BPM this footswitch ignores the tap, so you can keep a fixed rhythm here while
              another footswitch taps the delay tempo.
@@ -949,17 +1002,113 @@ Notes:
 - The 0 for the outgoing target goes first: that way the two are never on at the same time, not even
    for an instant.
 
-6.13. MUTE — footswitch with no function
+6.13. INCREMENTO — goes up on each press
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Related screen/preview: SW — MUTE MODE
-Purpose: The mode for when you want nothing on that footswitch: it sends no MIDI, lights no LED and
-          doesn't show up on the screen.
+Related screen/preview: SW — INCREMENTO MODE
+Purpose: Each press sends the next number in a sequence: a CC value, the CC number or the PC. Use it
+          to step through presets one by one, raise the volume in steps or walk through a device's
+          scenes.
+How to:
+1. Choose what goes up: VALUE (a fixed CC, the value rises), CC NUMBER (the CC number rises, with a
+   fixed value) or PC.
+2. In SEQUENCE, set the Start and the Step (how much it rises per press).
+3. In How far, choose UP TO 127 (and whether on reaching it it goes BACK TO START or STOPS AT 127)
+   or N PRESSES (how many presses before going back to the start).
+4. Check the preview: it shows every number that will be sent, in order, with the current one lit.
 Fields and items:
-- Why it exists (use)
-  Description: It's the way to disable a footswitch that was in use without erasing the rest of the
-             preset — and the mode for a footswitch you don't want to use yet.
+- HOLD and PRESS AGAIN (gestures)
+  Description: A tap always goes up. The other two gestures can get an action: BACK TO START, UP,
+             DOWN, GO TO END or RESET SILENTLY (goes back to the start without sending; the next
+             press sends the start).
+             With everything on NONE the number goes out the moment you press. With HOLD set it goes
+             out when you lift your foot; with PRESS AGAIN it waits about 0.35 s to see whether a
+             second press is coming.
+- FIRES (option)
+  Description: On (default), the start number is sent when the preset is called and the first press
+             already goes up. Off, nothing is sent on preset call and the first press sends the
+             start. Changing preset always takes the sequence back to the start.
+- LED mode (visual)
+  Description: The LED button cycles through three ways of showing where you are in the sequence:
+             PROGRESS (lights 1, 2 or 3 points of the ring), BRIGHTNESS (the ring gets brighter as
+             the number rises) and FADE (the color goes from the START color to the END color).
+Notes:
+- On SW GLOBAL and the external footswitches nothing is sent on preset call: the first press sends
+   the start. To go back to the start on every preset change, turn on RETURN TO START ON PRESET
+   CHANGE.
+- In Stage Mode, tapping the icon raises the number, like a press.
 
-6.14. How each footswitch looks
+6.14. RETORNO — action on press, rest on release
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Related screen/preview: SW — RETORNO MODE
+Purpose: A spring-loaded switch: pressing sends the ACTION value and releasing sends back the REST
+          value, to a single target (CC or PC). For a solo boost while your foot is down, a freeze,
+          a kill switch.
+How to:
+1. Choose the channel and the CC (or switch to PC with the disc next to it).
+2. In Values, set Rest (sent on release) and Action (sent on press).
+3. Pick the LED color: it lights while your foot is down.
+Fields and items:
+- RETORNO or MOMENTARY? (concept)
+  Description: Both act while your foot is down. RETORNO is the simpler one: a single target, and it
+             shows the pressed foot on the LED and on the screen. MOMENTARY sends several commands
+             at once. RETORNO can also put the device at rest right when the preset is called
+             (FIRES).
+- FIRES and INVERT (options)
+  Description: FIRES (on by default) sends the REST value when the preset is called, so the device
+             starts in the right place. INVERT makes the LED light at rest and go off when you
+             press.
+- With PC (detail)
+  Description: With PC, Action and Rest are program numbers. OFF on either one skips that phase: for
+             example, change sound on press and do nothing on release.
+Notes:
+- Changing preset with your foot still down sends the REST value first — the device never gets stuck
+   on the ACTION.
+- In Stage Mode, tapping the icon doesn't trigger RETORNO: it depends on pressing and releasing.
+
+6.15. ONDA — the CC moves by itself
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Related screen/preview: SW — ONDA MODE
+Purpose: While it's on, the wave sends the CC by itself between MINIMUM and MAXIMUM, in the shape
+          you choose — automatic tremolo, filter or pan in time with the music.
+How to:
+1. Choose the channel and the CC the wave will move.
+2. Tap a Shape: Sine, Triangle, Square, Saw ↑, Saw ↓, Random, Smooth or Pulse.
+3. Set the Minimum and Maximum.
+4. In Speed, choose IN TIME (the cycle lasts a musical note value) or MS (a fixed time).
+Fields and items:
+- IN TIME (speed)
+  Description: One cycle lasts the chosen note value — from 4 bars to 1/16, including dotted and
+             triplet values. The beat comes from Tap (the last TAP TEMPO tapped on the BFMiDi) or
+             from a Fixed BPM. With Tap, tapping a new tempo changes the wave speed right away,
+             without a jump.
+- On/Off or Momentary (trigger)
+  Description: On/Off: pressing starts the wave, pressing again stops it. Momentary: the wave only
+             runs while your foot is down.
+- FIRES and MINIMUM (options)
+  Description: FIRES (off by default, On/Off only) starts the wave as soon as the preset is called.
+             MINIMUM (on) sends the minimum value when it stops; off, the CC stays where the wave
+             stopped.
+- LED (visual)
+  Description: While the wave runs, the ring brightness follows the value being sent — you can see
+             the rhythm at your feet.
+Notes:
+- The wave keeps running on the PRESET screen. It sends at most one message every 15 ms, and only
+   when the value changes.
+- In Stage Mode, tapping the icon starts and stops the wave (in On/Off).
+
+6.16. MUTE — only in older presets
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Related screen/preview: SW — MUTE MODE
+Purpose: MUTE no longer appears in the list of modes. A footswitch that was already in MUTE stays
+          that way — no MIDI, no LED and no icon on the screen — until you pick another mode.
+Fields and items:
+- How to leave a footswitch with no function (use)
+  Description: Use any mode with the CHANNEL set to OFF. The result is the same as MUTE — the foot
+             sends nothing and disappears from the controller's screen — but the footswitch is ready
+             to get a function whenever you want. That's how new footswitches already come: STOMP
+             with the channel OFF.
+
+6.17. How each footswitch looks
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Related screen/preview: FOOTSWITCH APPEARANCE
 Purpose: Icon, label and colors of the little tile that represents the footswitch on the
@@ -970,9 +1119,9 @@ How to:
 3. Adjust BACK and BORDER (each with OFF and ON), the label and the name color.
 Fields and items:
 - Icon and label (content)
-  Description: The icon comes from a built-in library (pedals, effects, symbols) or from the images
-             you uploaded in SETTINGS › IMAGES. The label is the short text — “DRIVE”, “DLY”, “SOLO”
-             —, up to 8 characters (6 per state in SPIN, SINGLE and CONTROL).
+  Description: The icon comes from a built-in library (pedals, effects, symbols) or from the icons
+             you uploaded in SETTINGS › IMAGES › ICONS. The label is the short text — “DRIVE”,
+             “DLY”, “SOLO” —, up to 8 characters (6 per state in SPIN, SINGLE and CONTROL).
              Color icons (pedal photos) show as they are; line icons take the color you choose.
 - FONT SIZE (selection)
   Description: AUTO lets the controller choose based on the available space; or set it to 9, 12, 18
@@ -994,23 +1143,26 @@ Page: 4
 Summary: A full-screen landscape view with big lettering, so you can leave your phone or tablet on
         the stand during the show: the preset that's playing, the footswitches and the plugged-in
         device.
-Introduction: STAGE MODE turns the editor into a panel for the show. There are two screens: STAGE 1
-        shows the BFMiDi — the preset name in huge letters, the background image and the
-        footswitches, which you can turn on and off with your finger — and STAGE 2 shows the device
-        plugged into the controller — the effect chain and the knobs of the GP-5, the TONEX ONE or
-        the Nano Cortex, editable live.
+Introduction: STAGE MODE turns the editor into a panel for the show. There are two screens: the
+        BFMIDI STAGE shows the BFMiDi — the preset name in huge letters, the background image and
+        the footswitches, which you can turn on and off with your finger — and the SPECIAL STAGE
+        shows the dedicated pedal plugged into the controller — the effect chain and the knobs of
+        the GP-5, the TONEX ONE or the Nano Cortex, editable live.
+        Stage Mode exists only in the BFMiDi apps (Android, iPhone/iPad, Mac and Windows). In the
+        editor opened in a browser — from the controller or from the website — it does not appear.
         The stage settings (colors, font, images) stay only on the device where you opened it: none
         of it goes to the controller.
 
-7.1. Opening Stage Mode and STAGE 1
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Related screen/preview: STAGE 1
-Purpose: STAGE 1 is the general-purpose panel: the BFMiDi preset in big letters, the preset image
-          and the footswitch icons — the same ones shown on the controller's screen.
+7.1. Opening Stage Mode and the BFMIDI STAGE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Related screen/preview: BFMIDI STAGE
+Purpose: The BFMIDI STAGE is the general-purpose panel: the BFMiDi preset in big letters, the preset
+          image and the footswitch icons — the same ones shown on the controller's screen.
 How to:
 1. On the PRESET screen, tap STAGE MODE — it's always the first button in the shortcut row of the
    MAIN card.
-2. The stage always opens on STAGE 1. On a phone it fills the whole screen in landscape.
+2. The stage opens on the BFMIDI STAGE; to open on the SPECIAL STAGE or on the last one used, go to
+   SETTINGS › EDITOR › GENERAL, STAGE MODE card. On a phone it fills the whole screen in landscape.
 3. Tap a footswitch icon to turn the effect on or off; tap a preset in the bottom row to switch
    songs.
 Fields and items:
@@ -1019,16 +1171,19 @@ Fields and items:
              and preset (A1) and whether the controller is in PRESET MODE or LIVE MODE; below it,
              the Friendly Mode device.
 - The image (background)
-  Description: By default it's the same background as the controller's screen for that preset (the
-             PRESET one or the LIVE one, depending on the mode). In the apps you can also use the
-             app gallery or one of your own photos — see Stage images.
+  Description: By default it's the same background as the controller's PRESET screen for that preset
+             — even with the pedal in LIVE. Turning off Always the PRESET image shows the LIVE
+             screen background while in LIVE. In the apps you can also use the app gallery or one of
+             your own photos — see Stage images.
 - The footswitches (icons)
   Description: The same icons as on the pedal screen, with the number and a small bar in the LED
              color. Footswitches with no MIDI channel stay blank, just like on the controller.
-             Tapping the icon does the same as a short click with your foot: it turns the effect on
-             or off and sends the MIDI. This works for the on/off modes — STOMP, MACROS, CONTROL and
-             STEPS (the last one only in LIVE); in the other modes you'll see the message “This mode
-             has no on/off”.
+             Tapping the icon does the same as a tap with your foot: it turns the effect on or off
+             and sends the MIDI. This works for STOMP, MACROS, CONTROL, INCREMENTO (raises the
+             number), ONDA (in On/Off) and STEPS (the last one only in LIVE); in the other modes
+             you'll see the message “This mode has no on/off”.
+             Holding the icon opens that footswitch's MIDI settings next to the stage — see the next
+             card.
 - Bank presets (row)
   Description: The six presets of the current bank, with number and name. Tapping one calls that
              preset on the controller, exactly like stepping on its footswitch.
@@ -1042,45 +1197,75 @@ Notes:
 - With no pedal connected, the stage shows the OFFLINE tag; the connection item in the top bar
    becomes a button that opens the connection window.
 
-7.2. The control bar
+7.2. Editing a footswitch without leaving the stage
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Related screen/preview: STAGE MODE — EDIT FOOTSWITCH
+Purpose: Hold a footswitch icon and its MIDI settings open in a panel next to the stage — the same
+          card as the editor's LIVE mode. The stage shrinks beside it and keeps working.
+How to:
+1. On the BFMIDI STAGE, hold your finger on a footswitch icon until the white bar fills. On a
+   computer, the right mouse button does the same.
+2. Change the mode, channel, CC or appearance (CONFIG and DISPLAY) just like in the editor.
+3. To edit another footswitch, hold its icon. To close, tap the X or press ESC.
+Fields and items:
+- Saving (saving)
+  Description: With auto-save on (default), every change is saved to the preset by itself, as in the
+             editor. Without it, the card shows EDITED, NOT SAVED and the SAVE button.
+- The stage stays usable (behavior)
+  Description: With the panel open, tapping an icon still turns the effect on and off — you can hear
+             the change right away. The footswitch being edited gets an outline.
+- Hold the icon (option) (setting)
+  Description: In the stage SETTINGS › BFMIDI STAGE, Hold the icon is set to EDIT THE FOOTSWITCH.
+             With Trigger footswitch from the screen set to HOLD, holding already belongs to the
+             footswitch and this option is greyed out.
+Notes:
+- On the Kemper stage, holding a stomp opens the same panel.
+
+7.3. The control bar
 ~~~~~~~~~~~~~~~~~~~~
-Related screen/preview: STAGE 1 — BAR OPEN
-Purpose: Exit, switch between STAGE 1 and STAGE 2, see the preset, open the settings and keep an eye
-          on the connection and the BPM.
+Related screen/preview: BFMIDI STAGE — BAR OPEN
+Purpose: Exit, switch between the BFMIDI STAGE and the SPECIAL STAGE, see the preset, open the
+          settings and keep an eye on the connection and the BPM.
 Fields and items:
 - EXIT (button)
   Description: Closes the stage and goes back to the editor. The ESC key on the keyboard does the
              same.
-- STAGE 1 / STAGE 2 (button)
+- BFMIDI STAGE / SPECIAL STAGE (button)
   Description: A single button that toggles between the two screens; the two little dots tell you
              which one you're on.
 - PRESET A1 (info)
   Description: The bank and preset currently playing on the controller.
 - SETTINGS (button)
-  Description: Opens the stage settings, in four tabs. See the following cards.
+  Description: Opens the stage settings, in a side panel with six categories. See the following
+             cards.
 - Connection, BPM and clock (status)
   Description: How you're connected (STA, AP or USB), the BPM of the last TAP TEMPO tapped on the
              BFMiDi and, if you turn it on, the clock. With no pedal, the connection turns into the
              OFFLINE button.
-- On STAGE 2 (extras)
-  Description: You'll also see the device selector (GP-5, TONEX, NANO CORTEX, KEMPER) and the EDITOR
-             button, which opens the full preset editor on top of the stage.
+- On the SPECIAL STAGE (extras)
+  Description: You'll also see the device selector (GP-5 or GP-50, TONEX, NANO CORTEX, KEMPER) and
+             the EDITOR button, which opens the full preset editor on top of the stage.
 
-7.3. STAGE 2 — the plugged-in device
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Related screen/preview: STAGE 2 — VALETON GP-5
+7.4. SPECIAL STAGE — the dedicated pedal
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Related screen/preview: SPECIAL STAGE — VALETON GP-5
 Purpose: Shows the preset of the device connected to the controller's USB Host, with the effect
           chain and the knobs — and lets you tweak them live.
 How to:
-1. Open the control bar and tap STAGE 1 to switch to STAGE 2.
+1. Open the control bar and tap BFMIDI STAGE to switch to the SPECIAL STAGE.
 2. Tap a block in the chain to see its knobs.
 3. Hold the block for half a second to turn the effect on or off.
 4. Drag a knob up or down to change the value. The sound changes right away.
 Fields and items:
 - Which devices (compatibility)
-  Description: Valeton GP-5, IK TONEX ONE and Neural DSP Nano Cortex plugged into the controller's
-             USB Host. The stage opens on the first connected device; the others appear in the
-             selector as “not connected”. The Kemper Player has its own screen (next card).
+  Description: Valeton GP-5 or GP-50, IK TONEX ONE and Neural DSP Nano Cortex plugged into the
+             controller's USB Host. The stage opens on the first connected device; the others appear
+             in the selector as “not connected”. The Kemper Player has its own screen (next card).
+- Only with a device in Friendly Mode (condition)
+  Description: The SPECIAL STAGE is available when some FRIENDLY MODE channel has a GP-5, GP-50,
+             TONEX ONE, KEMPER PLAYER or NANO CORTEX. With none, the SPECIAL STAGE button is greyed
+             out and says what's missing. The device selector only shows the ones in Friendly Mode
+             or connected.
 - The header (device preset)
   Description: The device preset's number and name and, below them, which BFMiDi preset is playing.
              Once you've edited something, EDITED, NOT SAVED appears. The floppy-disk icon (GP-5 and
@@ -1098,48 +1283,84 @@ Fields and items:
              itself is what changes the preset, through each preset's PC. Step on or tap a preset in
              the bottom row and the stage reads the device again.
 Notes:
-- In offline mode, STAGE 2 tells you it needs the pedal and offers CONNECT TO THE PEDAL.
+- In offline mode, the SPECIAL STAGE tells you it needs the pedal and offers CONNECT TO THE PEDAL.
 
-7.4. STAGE 2 with the Nano Cortex
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Related screen/preview: STAGE 2 — NANO CORTEX
+7.5. SPECIAL STAGE with the Nano Cortex
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Related screen/preview: SPECIAL STAGE — NANO CORTEX
 Purpose: With the Neural DSP Nano Cortex, the effect slots change color according to the loaded
           effect, and the preset is shown in the Nano's format (A1 to H8).
 Fields and items:
 - Device look (theme)
-  Description: With the Device look option on (default), STAGE 2 takes on each pedal's colors and
-             style: the blue screen of the GP-5, the black and amber of the TONEX, the graphite of
-             the Nano Cortex and the green of the Kemper.
+  Description: With the Device look option on (default), the SPECIAL STAGE takes on each pedal's
+             colors and style: the blue screen of the GP-5, the black and amber of the TONEX, the
+             graphite of the Nano Cortex and the green of the Kemper.
 - Cortex Cloud (limitation)
   Description: While the Cortex Cloud app is connected to the Nano over Bluetooth, the Nano refuses
              editing over USB. Disconnect Cortex Cloud to edit from the stage or the editor.
+- TUNER (button)
+  Description: With the Nano Cortex, the top bar gets a TUNER button: the screen becomes a large
+             tuner, with the note and the needle. It also opens by itself when the Nano's tuner is
+             turned on by foot or on the Nano itself. CLOSE (or ESC) turns the tuner off. Requires
+             an updated controller.
 
-7.5. STAGE 2 with the Kemper Player
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Related screen/preview: STAGE 2 — KEMPER PLAYER
-Purpose: With Friendly Mode set to KEMPER PLAYER, STAGE 2 shows the rig name in big letters and the
-          BFMiDi footswitches as Kemper stomp buttons.
+7.6. SPECIAL STAGE with the Kemper Player
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Related screen/preview: SPECIAL STAGE — KEMPER PLAYER
+Purpose: With Friendly Mode set to KEMPER PLAYER, the SPECIAL STAGE shows the rig name in big
+          letters and the BFMiDi footswitches as Kemper stomp buttons.
 Fields and items:
 - The rig name (marquee)
-  Description: It comes from the Kemper's GET NAMES. Turn it on in SETTINGS › FRIENDLY MODE, in the
-             Kemper Player card.
+  Description: It comes from the Kemper's GET NAMES. Turn it on in SETTINGS › FRIENDLY MODE ›
+             ADVANCED, in the Kemper Player card.
 - The stomps (footswitches)
   Description: Each BFMiDi footswitch becomes a Kemper-style button, with an icon and the two LEDs
              (state and category). Commands like Delay, Reverb and Wah get the Kemper category
              color; STOMP A to D, EFFECT X and MOD show the slot name. Tapping turns it on and off,
-             just like on STAGE 1.
+             just like on the BFMIDI STAGE.
 - EDIT RIG (button)
-  Description: Opens the Kemper editor on top of the stage. While it's open, the controller's
-             footswitches are paused — the button warns you about this.
+  Description: Opens the Kemper editor on top of the stage. The controller's footswitches keep
+             working while it's open — changing preset by foot changes the rig on the Player and the
+             editor reloads it.
 
-7.6. Stage settings — GENERAL
+7.7. SPECIAL STAGE favorites
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Related screen/preview: SPECIAL STAGE — FAVORITES
+Purpose: A screen with just the controls you use most: up to eight, picked from any block of the
+          device, always in the same place.
+How to:
+1. In SETTINGS, SPECIAL STAGE category, choose the FAVORITES layout.
+2. On the stage, tap + ADD and choose the control from the list (block · parameter). Repeat up to
+   eight.
+3. Turn the knobs as in the Full layout: the device responds right away.
+4. To remove a favorite, tap REMOVE, the × on the control and then DONE.
+Fields and items:
+- What can be a favorite (controls)
+  Description: Any knob, switch or list of the current preset, plus the on/off of each block. Each
+             favorite shows the label and the color of the block it comes from. Those from a block
+             that is off look dimmer, but still work.
+- One list per device (TONEX ONE, Nano Cortex, GP-5)
+  Description: Each device keeps its own favorites, in this app and on this phone or tablet. They
+             apply to all profiles. The Kemper Player does not have this screen.
+- When the block model changes (note)
+  Description: A favorite is the position of the control inside the block. If the preset loads
+             another model in that block (a different delay, for example), the knob name follows the
+             new model; if the new model does not have that control, its place shows Not in this
+             model and comes back by itself when the control exists again.
+
+7.8. Stage settings — GENERAL
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Related screen/preview: STAGE SETTINGS — GENERAL
-Purpose: What appears on both stages and how the screen behaves.
+Purpose: What appears on both stages and how the screen behaves. The settings open in a panel beside
+          the stage: the preview shows every change right away, each option has a thumbnail of what
+          it changes, and tapping an area of the preview opens its options. UNDO reverts the last
+          change and MORE OPTIONS shows the less used ones.
 Fields and items:
-- BFMIDI presets at the bottom (switch)
-  Description: The row to change presets, on both stages. The buttons can show NUMBER + NAME or
-             NUMBER ONLY.
+- BFMIDI preset bar (bar)
+  Description: The row used to change presets, on both stages. The buttons show NUMBER + NAME,
+             NUMBER ONLY or NAME ONLY. Under MORE OPTIONS: the position (BOTTOM, TOP or SIDE), the
+             height (S, M, L), the color (each preset's LED or the accent color) and how a preset is
+             called from the screen — ONE TAP or HOLD, to avoid changing by accident.
 - Connection, BPM and clock (switches)
   Description: What the top bar shows. The clock is off by default.
 - Keep the screen on (switch)
@@ -1147,52 +1368,97 @@ Fields and items:
              devices and browsers that allow it). On by default.
 - Vibrate on touch (switch)
   Description: A short vibration confirms each tap, on devices that can vibrate.
+- Performance (choice)
+  Description: AUTO (default) decides by device; LIGHT removes blur, glows and animations, for
+             slower phones or to save battery; FULL keeps everything.
+- Touch lock (safety)
+  Description: With HOLD TO UNLOCK the stage opens locked: touches on footswitches, presets, blocks
+             and knobs do nothing. Hold the padlock in the corner to unlock; 8 seconds after the
+             last touch it locks again (a line at the bottom shows the time left).
+- Top bar and animation (time)
+  Description: How long the top bar stays visible: 2, 4 or 8 seconds, or PINNED (always visible,
+             with the stage starting below it). And the name animation on preset change: NONE, SOFT
+             or MARQUEE.
 Notes:
 - Everything in the stage settings is saved only in this app, on this device. RESTORE DEFAULTS
    brings back the factory settings without erasing the images you chose.
 
-7.7. Stage settings — VISUAL
+7.9. Stage settings — VISUAL
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Related screen/preview: STAGE SETTINGS — VISUAL
 Purpose: The stage's look: background, accent color, font, text size, corners and panels.
 Fields and items:
 - Background and accent color (colors)
-  Description: Eight backgrounds (Charcoal, Black, Night blue, Wine, Forest, Purple, Spotlight,
-             Steel) and nine accent colors.
-- Font, weight and size (text)
-  Description: Default, Rounded, Condensed, Mono or Serif font — all built into the system, so the
-             stage opens without internet. Title weight, text size (P, M, G, GG — small to extra
-             large) and names in uppercase.
-- Corners, outline, spacing and panels (style)
-  Description: Square, soft or round corners; panel outline; compact, normal or wide spacing; solid
-             or glass panels; and the glow on active items.
+  Description: Eight ready-made backgrounds plus CUSTOM, with two colors of your choice (top and
+             bottom). Nine accent colors plus a free color, set by hue, saturation and lightness.
+             Both can also follow the preset LED color — the screen changes color on every preset
+             change. The background can also be the stage IMAGE, full screen (the one chosen in the
+             IMAGES category), dimmed a little, medium or a lot so the text stays readable.
+- Font and preset name (text)
+  Description: Default, Rounded, Narrow, Mono or Serif font — all from the system itself — plus two
+             that ship inside the apps: BIG SHOULDERS (a condensed stage font) and LED (DSEG14),
+             which mimics a segment display and applies only to names and big numbers. Nothing is
+             downloaded: the stage opens without internet. The SHOW THE FONT LICENSES button shows
+             the license of each one. Title weight, text size (S, M, L, XL) and uppercase names. The
+             preset name has its own settings: size, alignment (left, center, right) and number of
+             lines (1 to 3).
+- Panels, glow and contrast (style)
+  Description: SOLID, GLASS or NO PANEL (content straight over the background); glow on active items
+             NONE, SOFT or STRONG; square, soft or round corners; outline; and compact, normal or
+             wide spacing. High contrast turns everything into strong black and white, for outdoor
+             stages and sunlight.
 
-7.8. Stage settings — STAGE 1
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Related screen/preview: STAGE SETTINGS — STAGE 1
-Purpose: How STAGE 1 arranges the name, the image and the footswitches.
+7.10. Stage settings — BFMIDI STAGE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Related screen/preview: STAGE SETTINGS — BFMIDI STAGE
+Purpose: How the BFMIDI STAGE arranges the name, the image and the footswitches.
 Fields and items:
-- Show the image and Top layout (image)
+- Screen layout (layout)
+  Description: Eight ways to arrange the stage: CLASSIC (name and image on top, footswitches and
+             presets below), MARQUEE (the name fills the screen; the footswitches become a strip of
+             LEDs), PEDALBOARD (big footswitches in two rows, in the pedal's order), COLUMN (the
+             bank's presets listed on the side, with the full name), SETLIST (the previous and the
+             next preset beside the current one; tap to call), TEMPO (the BPM in big digits and the
+             clock), MINIMAL (the preset only) and POSTER (the stage image full screen, with the
+             name on top and no panels). Each card shows a drawing of the layout. Options that do
+             not apply to the chosen layout are dimmed, with the reason.
+- Image and Top layout (image)
   Description: With the image on, choose SIDE BY SIDE (name on one side, image on the other — with a
-             choice of image side and a name width of 35, 50 or 65%) or NAME OVER IMAGE.
-- Footswitches (arrangement)
-  Description: ONE ROW (in order, 1 to 6) or LIKE THE PEDAL (two rows, mirroring the controller).
+             choice of image side and a name width from 25 to 75%, on a slider) or NAME OVER IMAGE.
+             Under MORE OPTIONS: the image edge (faded or straight) and dimming the image (no, a
+             little, a lot), so the name reads better.
+- Always the PRESET image (switch)
+  Description: On (default), the stage image is the PRESET screen background even with the pedal in
+             LIVE. Off, LIVE shows the LIVE screen background. Only applies when the image comes
+             from the controller's display.
+- Footswitches (arrangement and shape)
+  Description: Arrangement: ONE ROW (in order, 1 to 6), LIKE THE PEDAL (two rows, mirroring the
+             controller) or COLUMN (beside the name). Size in five steps (XS to XL). Shape: AS ON
+             THE DISPLAY, CIRCLE or LED ONLY (a ring in the LED color with the name). Under MORE
+             OPTIONS, the caption under each icon: the footswitch MODE or the COMMAND it sends.
 - What to show (switches)
-  Description: PRESET / LIVE MODE, the friendly mode, the icon size (P, M, G — small, medium,
-             large), the footswitch numbers and the LED bar.
-- Dim the ones that are off (switch)
-  Description: Makes the footswitches that are off dimmer, so the ones that are on stand out.
-- Tap the icon to turn on/off (switch)
-  Description: When off, the icons only show the state and don't respond to touch — useful when the
-             phone is within reach of other people on stage.
+  Description: PRESET / LIVE MODE, the friendly mode, the preset tag (A1: small, big or hidden), the
+             footswitch number and the LED bar.
+- Footswitches that are off (choice)
+  Description: NORMAL, DIMMED (what is on stands out) or HIDDEN — the icon disappears and only the
+             number stays, so the screen shows just what is on.
+- Trigger a footswitch from the screen (choice)
+  Description: ONE TAP (default), HOLD — the footswitch only triggers after half a second with the
+             finger on the screen, to avoid accidents — or OFF: the icons only show the state,
+             useful when the phone is within reach of other people on stage.
+- Hold the icon (choice)
+  Description: EDIT THE FOOTSWITCH (default): holding an icon opens its MIDI settings next to the
+             stage — see Editing a footswitch without leaving the stage.
 
-7.9. Stage images
-~~~~~~~~~~~~~~~~~
+7.11. Stage images
+~~~~~~~~~~~~~~~~~~
 Related screen/preview: STAGE IMAGE AND CROP
-Purpose: In the apps, the STAGE 1 background can be the controller's image, an image from the app
-          gallery or one of your own photos. Cropping works in every case.
+Purpose: In the apps, the BFMIDI STAGE background can be the controller's image, an image from the
+          app gallery or one of your own photos. Cropping works in every case. The same image is
+          used by the full-screen background, the Poster layout and the Image behind the preset
+          option.
 How to:
-1. In SETTINGS › STAGE 1, scroll down to Stage image.
+1. In SETTINGS, open the IMAGES category.
 2. Choose whether it applies to ALL PRESETS or ONLY A1 (the current preset).
 3. Tap From display, an image from the gallery or UPLOAD PHOTO.
 4. In IMAGE CROP, drag to choose which part shows and adjust the ZOOM.
@@ -1204,43 +1470,96 @@ Fields and items:
 - App gallery (apps)
   Description: Ready-made backgrounds (steel, lights, smoke, galaxy, spotlights, neon, sunset, stage
              floor) that come built into the apps.
-- In the browser (limitation)
-  Description: When opened from the controller or from the website, the stage only uses the
-             controller's screen image — cropping is still available.
+- Apps only (limitation)
+  Description: Stage Mode does not appear in the editor opened in a browser (from the controller or
+             from the website). It exists only in the apps, where the gallery and your photos are
+             always available.
 - Crop (adjustment)
   Description: Each image keeps its own framing: drag to choose the focus point, use the zoom (100
              to 300%) and CENTER to go back to the middle.
 
-7.10. Stage settings — STAGE 2
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Related screen/preview: STAGE SETTINGS — STAGE 2
-Purpose: How STAGE 2 shows the device's chain and knobs.
+7.12. Profiles and ready-made looks
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Related screen/preview: PROFILES AND READY-MADE LOOKS
+Purpose: Keep up to six ways of setting up the stage (Rehearsal, Show, Studio) and go from one to
+          the other with one tap. The ready-made looks change colors, font and panels at once.
+How to:
+1. In SETTINGS, open the PROFILES category.
+2. Tap NEW (starts from the default) or DUPLICATE (a copy of the selected profile), then RENAME to
+   give it a name.
+3. Set the stage up the way you want: everything you change is kept in the selected profile.
+4. To switch, tap the profile in the list — or, with the settings closed, the pill with the profile
+   name on the top bar (it shows up when there are two or more profiles).
 Fields and items:
+- Your profiles (list)
+  Description: Up to six. Each profile keeps all the stage options: layouts, colors, sizes, what to
+             show and how touch works. Uploaded photos, crops and the choice of which stage to open
+             apply to all of them.
+- Export and import (file)
+  Description: EXPORT saves the selected profile to a file; IMPORT reads that file on another device
+             — from the phone to the tablet, for example. Photos are not included in the file:
+             choose the image again on the other device.
+- Delete (button)
+  Description: Asks for a second tap (REALLY DELETE?) and deletes the selected profile. The last
+             profile cannot be deleted.
+- Ready-made looks (cards)
+  Description: DEFAULT, HIGH CONTRAST, OLED BLACK, AMBER, NEON, STEEL, PRESET COLOR (background and
+             accent follow the preset LED color) and CLEAN. One tap changes the background, accent,
+             font, corners and panels of the selected profile; layouts and images stay, and UNDO
+             brings it back.
+
+7.13. Stage settings — SPECIAL STAGE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Related screen/preview: STAGE SETTINGS — SPECIAL STAGE
+Purpose: How the SPECIAL STAGE shows the device's chain and knobs.
+Fields and items:
+- Screen layout (layout)
+  Description: Six ways to arrange the pedal's stage: FULL (preset, effect chain and knobs), CHAIN
+             ONLY (big blocks; hold to turn on and off), KNOBS ONLY, PRESET ONLY (the name in giant
+             letters) and SIDE CHAIN (the chain as a column with the knobs beside it — needs a
+             tablet or computer screen), plus FAVORITES (up to eight controls from any block, fixed
+             on screen). The Kemper Player has its own: RIG + STOMPS, STOMPS ONLY and RIG ONLY.
+- Visual mode: STANDARD or REALISTIC (visual)
+  Description: REALISTIC swaps the knobs and switches for pictures of real gear, leaves the chain
+             blocks without a frame and puts a metal plate behind the knobs, the blocks and the
+             preset name. Choose the style (MODERN or CLASSIC), the knob (ROUND or CHICKEN HEAD) and
+             whether you want the Metal panels. In REALISTIC, Knob style is greyed out. Apps only.
 - Device look (theme)
-  Description: When on, each device uses its own colors and style. When off, STAGE 2 follows the
-             VISUAL tab.
-- Chain, labels and block color (chain)
-  Description: Whether to show the effect chain and the labels on the blocks, and whether the blocks
-             use the device color or the accent color.
-- Knobs (size and arrangement)
-  Description: Size (P, M, G — small, medium, large) and arrangement: IN A ROW (with arrows for the
-             ones that don't fit) or ALL VISIBLE.
+  Description: When on, each device uses its own colors and style. When off, the SPECIAL STAGE
+             follows the VISUAL category. With With my background and accent on, the pedal font and
+             drawing stay, but the background and the accent color are the ones from the VISUAL
+             category.
+- Labels and block color (chain)
+  Description: Whether to show the labels on the blocks, and whether the blocks use the device color
+             or the accent color. (Showing or hiding the chain is now the Screen layout.)
+- Knobs (size, style and arrangement)
+  Description: Size (S, M, L); style: eight knobs (ARC, POINTER, LEDS, RING, COLORED, METAL, VINTAGE
+             and CHICKEN HEAD), vertical BAR or big NUMBER; arrangement: IN A ROW (with arrows for
+             the ones that do not fit) or ALL VISIBLE. Under MORE OPTIONS: where the value appears
+             (below, above or inside the knob) and the drag sensitivity (fine, normal, fast).
 - Hold to turn on/off (time)
   Description: How long your finger has to stay on the block to turn the effect on or off: 0.3 s,
              0.45 s (default), 0.7 s or 1 s.
-- Save button (switch)
-  Description: Shows or hides the floppy-disk icon in the header — if you don't want to risk saving
-             on stage, you can remove it.
+- Save button and preset number (switches)
+  Description: Shows or hides the floppy-disk button in the header — remove it if you do not want to
+             risk saving on stage — and the device preset number. Image behind the preset puts the
+             stage image behind the device preset name.
+- Per-device settings (switch)
+  Description: When on, the screen layout and the knob size, style and arrangement are saved for
+             each pedal (TONEX ONE, Nano Cortex, GP-5): the TONEX can open in Knobs only and the
+             GP-5 in Full. The hint under each option says which device it applies to.
+- Block open on entry (choice)
+  Description: Which block already shows its knobs when the Special Stage opens: the AMP, THE LAST
+             ONE you opened on that device or the FIRST ONE ON in the chain.
 
-7.11. On phones and tablets
+7.14. On phones and tablets
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Related screen/preview: STAGE 1 — PHONE IN LANDSCAPE
+Related screen/preview: BFMIDI STAGE — PHONE IN LANDSCAPE
 Purpose: On a phone the stage fills the whole screen in landscape, even with auto-rotate turned off.
 Fields and items:
 - Full screen (behavior)
   Description: In the Android app the stage hides the system bars and locks the screen in landscape;
-             swiping in from the edge shows the bars for a moment. In the browser the stage asks for
-             full screen and tries to lock the screen in landscape.
+             swiping in from the edge shows the bars for a moment.
 - Where it can't rotate (behavior)
   Description: If the device doesn't allow locking the orientation (an iPhone, for example) and
              you're holding it upright, the stage is drawn rotated 90° — just turn the device
@@ -1254,8 +1573,9 @@ Fields and items:
 TOPIC 8 - DEVICE PRESET EDITORS
 ----------------------------------------------------------------------------------------
 Page: 4
-Summary: Edit the tone of the Valeton GP-5, the IK TONEX ONE, the Neural DSP Nano Cortex and the
-        Kemper Player live — right from the BFMiDi, without the manufacturer's computer software.
+Summary: Edit the tone of the Valeton GP-5 and GP-50, the IK TONEX ONE, the Neural DSP Nano Cortex
+        and the Kemper Player live — right from the BFMiDi, without the manufacturer's computer
+        software.
 Introduction: With the device connected to the controller, the BFMiDi editor shows the preset
         playing on the device — blocks, models and parameters — and sends each change instantly,
         just like the manufacturers' apps.
@@ -1270,10 +1590,10 @@ Purpose: Once the device is plugged in and recognized, its editor shows up on it
           button in the MAIN card.
 How to:
 1. Plug in the device and wait a few seconds.
-2. On the PRESET screen, tap the device's button in the shortcut row (GP-5, TONEX ONE, NANO CORTEX
-   or KEMPER).
-3. Or: SETTINGS › HOST → the device's card → EDIT PRESET. In Stage Mode, the EDITOR button on STAGE
-   2.
+2. On the PRESET screen, tap the device's button in the shortcut row (GP-5 or GP-50, TONEX ONE, NANO
+   CORTEX or KEMPER).
+3. Or: SETTINGS › HOST › DEVICES → the device's card → EDIT PRESET. In Stage Mode, the EDITOR button
+   on the SPECIAL STAGE.
 Fields and items:
 - The device buttons (automatic shortcuts)
   Description: They appear before your own shortcuts, in each brand's color, and don't push any of
@@ -1288,12 +1608,14 @@ Fields and items:
   Description: A USB hub fits two devices — for example GP-5 + TONEX ONE. The Nano Cortex needs more
              USB channels and works on its own on the USB Host.
 
-8.2. Valeton GP-5
-~~~~~~~~~~~~~~~~~
+8.2. Valeton GP-5 and GP-50
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Related screen/preview: PRESET EDITOR — VALETON GP-5
 Purpose: The ten blocks of the GP-5 patch — noise gate, pre, drive, amp, cab, EQ, modulation, delay,
           reverb and NS — with model switching and every parameter. The edit is only stored when you
-          save.
+          save. The GP-50 uses the same editor: the model list gains the ones only it has (AC Sim,
+          C-Wah and Dreadnought 1), and the screen re-reads the pedal every second to follow what
+          you change on it. On both, the CAB also offers the 20 User IR slots.
 How to:
 1. Tap a block in the chain (the list on the left on a computer; the row at the top on a phone) to
    jump to it.
@@ -1318,8 +1640,8 @@ Fields and items:
              Closing with an unsaved edit asks what to do: save, discard, CLOSE WITHOUT SAVING (the
              edit keeps playing until the next preset change) or keep editing.
 Notes:
-- With the USB Host's Transmit-only mode on (SETTINGS › HOST), the GP-5 editor is unavailable: in
-   that mode the host can't read the preset.
+- With the USB Host's Transmit-only mode on (SETTINGS › HOST › STATUS), the GP-5 editor is
+   unavailable: in that mode the host can't read the preset.
 
 8.3. IK TONEX ONE
 ~~~~~~~~~~~~~~~~~
@@ -1337,7 +1659,8 @@ Fields and items:
              their position in the chain (before or after the amp).
 - Two TONEX units (hub)
   Description: With two TONEX ONE units plugged in, each one has its own editor and its own MIDI
-             channel (SETTINGS › HOST). TONEX 1 is the one on the hub's lowest-numbered port.
+             channel (SETTINGS › HOST › DEVICES). TONEX 1 is the one on the hub's lowest-numbered
+             port.
 
 8.4. Neural DSP Nano Cortex
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1346,9 +1669,11 @@ Purpose: Gate, two effects before the capture, the capture itself (with gain, le
           three effects after it — switching models and adjusting every parameter.
 Fields and items:
 - The chain (blocks)
-  Description: GATE (reduction in %) → PRE FX 1 and 2 → CAPTURE (slot 1 to 25, with gain, level,
-             bass, mid, treble and volume) → POST FX 1, 2 and 3. Each effect slot's color follows
-             the type of effect loaded in it.
+  Description: GATE (reduction in %) → PRE FX 1 and 2 → CAPTURE → POST FX 1, 2 and 3. Each effect
+             slot's color follows the type of effect loaded in it.
+             The capture has two frames: AMP (Gain, Bass, Mid, Treble and Amp volume) and CAPTURE
+             (Capture volume). The capture list shows each capture's number and name, as in Cortex
+             Cloud.
 - Saving (actions)
   Description: Same as the GP-5: SAVE TO PEDAL stores, DISCARD goes back to what's stored. The name
              takes up to 32 characters (minimum 4).
@@ -1373,12 +1698,13 @@ How to:
 2. Connect the editor to the controller over Wi-Fi (its USB cable is busy with the Player).
 3. Tap the KEMPER button in the MAIN card, or EDIT RIG in the Kemper Player card.
 Fields and items:
-- Footswitches paused (exclusive mode)
-  Description: With the editor open, the controller dedicates its USB to the Kemper: footswitches,
-             tuner and FOLLOW THE KEMPER are paused. To leave: close the editor, hold any footswitch
-             for 2 seconds, or let the editor go 20 seconds without talking to the controller (tab
-             in the background, connection lost). None of these exits changes the rig or sends a PC
-             or CC.
+- The controller keeps working (behavior)
+  Description: With the editor open, the footswitches, the screen, FOLLOW THE KEMPER and the rig
+             name keep working normally. Changing preset by foot changes the rig on the Player — any
+             unsaved edit is lost — and the editor reloads the new rig. If the Kemper tuner opens on
+             the controller, the editor waits for it to close and then sends what you changed.
+             Closing the editor (or leaving it 20 seconds without talking to the controller) doesn't
+             change the rig or send a PC or CC.
 - Saving on the Player (heads-up)
   Description: The Kemper doesn't accept “save” over MIDI. To keep the edit, on the Player: hold the
              rig button until the LEDs blink, then press the same button. Changing rigs before that
@@ -1388,8 +1714,8 @@ Fields and items:
              RE-READ. REVERT TO ORIGINAL undoes whatever you changed since you opened it. Changed
              rigs on the Player? The editor notices and reads it again.
 - Player level (setting)
-  Description: In SETTINGS › FRIENDLY MODE, Kemper Player card, set the PLAYER LEVEL (I, II or III)
-             to match your Player: level III also shows modules C, D, X and MOD.
+  Description: In SETTINGS › FRIENDLY MODE › ADVANCED, Kemper Player card, set the PLAYER LEVEL (I,
+             II or III) to match your Player: level III also shows modules C, D, X and MOD.
 - Values in the Kemper's own text (detail)
   Description: The value box shows the text the Kemper itself uses (“2.5 dB”, “361 ms”). Until it
              arrives, an estimate is shown in italics.
@@ -1404,8 +1730,8 @@ Fields and items:
 - The device button doesn't appear (checklist)
   Description: Check: (1) the PRESET screen is in PRESET mode (shortcuts don’t show in LIVE); (2)
              the editor is connected to the controller, not in offline mode; (3) the device shows up
-             as connected in SETTINGS › HOST; (4) the board model is BFMIDI-3 or BFMIDI-S3; (5) for
-             the GP-5, Transmit-only mode is off.
+             as connected in SETTINGS › HOST › DEVICES; (4) the board model is BFMIDI-3 or
+             BFMIDI-S3; (5) for the GP-5, Transmit-only mode is off.
 - It stays on “reading” and won't load (checklist)
   Description: Update the USB Host (SETTINGS › UPDATES › USB HOST). On the Nano Cortex, disconnect
              Cortex Cloud.
@@ -1422,8 +1748,11 @@ Page: 5
 Summary: Fifteen destinations, from Friendly Mode to factory reset. What's here applies to the whole
         controller — not to a single preset.
 Introduction: The gear on the bottom bar opens the SETTINGS menu, and each square takes you to a
-        screen. The same destinations can become shortcuts on the MAIN card (SETTINGS › EDITOR ›
-        SHORTCUTS).
+        screen. Almost every screen is split into icon tabs at the top — for example, FRIENDLY MODE
+        · TUNER · ADVANCED — and always opens on the first tab. The same destinations can become
+        shortcuts on the MAIN card (SETTINGS › EDITOR › SHORTCUTS).
+        In this manual, the path to each setting is written like this: SETTINGS › BANKS › COMBOS
+        means the BANKS item on the menu, COMBOS tab.
         Almost everything here is stored in a protected memory on the controller that survives
         updates. The exceptions are the editor's own preferences (theme, language, auto save,
         shortcuts and the Kemper Player level), which stay on the device where you opened the
@@ -1433,25 +1762,49 @@ Introduction: The gear on the bottom bar opens the SETTINGS menu, and each squar
 ~~~~~~~~~~~~~~~~~~~~~~
 Related screen/preview: SETTINGS MENU
 Purpose: Know where to look for each thing. The menu shows the fifteen destinations in three rows of
-          five; here they are grouped by topic.
+          five; here they are grouped by topic, with each screen's tabs in parentheses.
 How to:
 1. Tap the gear on the bottom bar, on any screen.
+2. Inside each screen, tap the tabs at the top to switch pages.
 Fields and items:
 - Sound and behavior (group)
-  Description: FRIENDLY MODE — which device you have, so the editor can speak in names.
-             FOOTSWITCHES — what doesn't belong to a preset: operating mode, SW GLOBAL, expression
-             and external footswitches.
-             BANKS — how the controller starts up, how your foot navigates, and the combos.
+  Description: FRIENDLY MODE (FRIENDLY MODE · TUNER · ADVANCED) — which device you have, so the
+             editor can speak in names; the on-screen tuner; each device's extra features.
+             FOOTSWITCHES (OPERATION · GLOBAL SW · EXTERNAL) — what doesn't belong to a preset:
+             operating mode, SW GLOBAL, expression and external footswitches.
+             BANKS (BANKS · PRESET CALL · COMBOS) — how the controller starts up, what each
+             footswitch does in PRESET mode, and the combos.
 - Appearance (group)
-  Description: DISPLAY — layouts and the BPM card. LEDS — brightness and ring colors. IMAGES — your
-             own backgrounds and icons.
+  Description: DISPLAY — Gig View, the BPM card and the preset change notice (each preset's layout
+             is in CONFIGURE DISPLAY). LEDS (BRIGHTNESS · COLORS · LIVE) — brightness and ring
+             colors. IMAGES (IMAGES · ICONS · MEMORY) — your own backgrounds and icons and the
+             memory they take up.
 - Machine and connections (group)
-  Description: HARDWARE — model, send timing and memory. WIFI, HOST (the USB Host and the devices
-             plugged into it) and BLUETOOTH — the three tabs of the connections screen.
+  Description: HARDWARE (MODEL · TIMING · MEMORY) — model, send timing and memory. WIFI (STATUS ·
+             CONNECT · NETWORKS), HOST (STATUS · DEVICES · MIDI — the USB Host and the devices
+             plugged into it) and BLUETOOTH (STATUS · FUNCTION · FILTER) — each connection with its
+             own screen.
 - Maintenance (group)
-  Description: EDITOR — theme, auto save, shortcuts and language. UPDATES — firmware for the
-             controller and the USB Host. BACKUP — copies to a file. TESTS — diagnostics and MIDI
-             monitor. FACTORY RESET — erase and go back to defaults (that's why it's in red).
+  Description: EDITOR (GENERAL · APPEARANCE · SHORTCUTS) — auto save, theme, language and shortcuts.
+             UPDATES — firmware for the controller and the USB Host (tabs 1 BFMiDi and 2 USB HOST).
+             BACKUP (FULL · BANK · PRESET) — copies to a file. TESTS (HARDWARE · SEND · MONITOR) —
+             diagnostics and MIDI monitor. FACTORY RESET (PRESETS · GLOBAL) — erase and go back to
+             defaults (that's why it's in red).
+- The tabs (navigation)
+  Description: The tab bar sits at the top of the screen: tap an icon to switch pages. When you come
+             in from a menu item or a shortcut, the screen always opens on the first tab.
+             Tabs show up even when there's nothing to display: a tab that depends on another
+             setting or on the board model explains what's missing instead of disappearing — for
+             example, TUNER without a Kemper Player or Nano Cortex, or EXTERNAL on a board without
+             those inputs.
+- How to read a card (guide)
+  Description: Every card starts with its title and a sentence about what it does. In the corner, a
+             colored badge shows the state when there is one (ON, OFF, SAVE TO READ…); when it’s a
+             value, the value shows. Notices that need something from you — saving, picking a
+             channel, updating — always stay in view, in a strip with an icon.
+             Where order matters, the card comes in numbered steps; what few people use stays folded
+             away (like the expression pedal’s Fine tuning); and the INFO button at the bottom of
+             the card shows the explanation of each field.
 
 9.2. FRIENDLY MODE — MIDI with names
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1464,13 +1817,17 @@ How to:
 3. From then on, every PC and CC selector in the editor shows that device's names, based on the
    command's channel.
 Fields and items:
+- The three tabs (tabs)
+  Description: FRIENDLY MODE is the per-channel device map (this tab). TUNER sets up the tuner on
+             the controller's screen, when some channel has a Kemper Player or a Nano Cortex.
+             ADVANCED gathers those devices' extra features and the custom device.
 - One device per channel (map)
   Description: Each row is a MIDI channel (CH 1 to CH 16) with the device that listens on it. GLOBAL
              means “no device”: commands show up by number only.
 - The device list (selection)
   Description: Organized by brand (Valeton, Hotone, Line 6, Fractal, IK, Neural DSP, Kemper, BOSS,
-             Strymon…), with search by brand or model. The devices you registered yourself (USER 1
-             to 3) are right below GLOBAL.
+             Strymon, ZOOM…), with search by brand or model. The devices you registered yourself
+             (USER 1 to 3) are right below GLOBAL.
 - LIVE CC (gear)
   Description: The gear at the end of each row sends a CC on that channel when entering (ON ENTER)
              and leaving (ON EXIT) LIVE mode (adjustable values). It lets devices with a “scene
@@ -1479,30 +1836,59 @@ Fields and items:
   Description: Hides the numbers the device doesn't use from the selectors: the list keeps only what
              actually exists.
 Notes:
-- Can't find your device? Register it on the CUSTOM DEVICE card, just below.
+- Can't find your device? Tap CREATE DEVICE at the end of the card: it takes you to the ADVANCED
+   tab, where the CUSTOM DEVICE card is.
 
-9.3. Custom device (USER 1, 2 and 3)
+9.3. TUNER — the on-screen tuner
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Related screen/preview: SETTINGS › FRIENDLY MODE › TUNER
+Purpose: With a Kemper Player or a Nano Cortex on a Friendly Mode channel, the controller shows the
+          device's tuner on its screen and on the LED rings. This tab decides how it looks.
+How to:
+1. On the FRIENDLY MODE tab, choose KEMPER PLAYER or NANO CORTEX on a channel.
+2. Open the TUNER tab and choose the screen, the speed and the LEDs.
+3. In a preset, set up a footswitch with the device's tuner command (CC 31 on the Kemper, CC 43 on
+   the Nano Cortex). Stepping on it opens the tuner; stepping on another footswitch closes it.
+Fields and items:
+- TUNER SCREEN (style)
+  Description: ARC, BAR or LEDS: how the tuner is drawn on the controller's screen.
+- DATA ACQUISITION (speed)
+  Description: How fast the needle follows the reading, from Smooth (calmer) to Fast (follows
+             everything).
+- LED INDICATOR (rings)
+  Description: Lights the rings while the tuner is on screen. INDICATOR SCOPE: ALL LEDS or only the
+             TUNER SW (the footswitch that opened the tuner). INDICATOR COLORS: one color for IN
+             TUNE, CLOSE and FAR.
+- No Kemper or Nano (notice)
+  Description: With neither of them in Friendly Mode, the tab shows TUNER · NO DEVICE and the PICK A
+             DEVICE button, which goes back to the first tab.
+
+9.4. Custom device (USER 1, 2 and 3)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Related screen/preview: SETTINGS › FRIENDLY MODE › ADVANCED
 Purpose: For gear that isn't on the list: give a name to the device, its commands and its presets,
           and the editor starts using those names.
 How to:
-1. On the CUSTOM DEVICE card, choose USER 1, 2 or 3 and type the device's name.
-2. On the COMMANDS (CC) tab, tap + ADD and enter the number and what it does. Do the same in PRESETS
-   (PC).
-3. Choose that USER on a Friendly Mode channel. Done: the names show up in the selectors.
+1. In FRIENDLY MODE › ADVANCED (or through the CREATE DEVICE button on the first tab), on the CUSTOM
+   DEVICE card, choose USER 1, 2 or 3. Step 1: type the DEVICE NAME.
+2. Step 2 Command names: on the COMMANDS (CC) tab, tap + ADD and enter the number and what it does.
+   Do the same in PRESETS (PC).
+3. Step 3 Use on a channel: the card shows which Friendly Mode channel the device is on. If it isn’t
+   on any yet, tap PICK THE CHANNEL — without a channel, the names don’t show up.
 Fields and items:
 - Limits (detail)
-  Description: Device name up to 24 characters; up to 32 names per list, up to 20 characters each.
-             Duplicate numbers aren't accepted.
+  Description: Device name up to 24 characters; up to 128 names per list (one for each number, 0 to
+             127), up to 20 characters each. Accented letters count as two. Duplicate numbers aren't
+             accepted. With older controller firmware, the limit is 32 names per list.
 - Where it's stored (memory)
   Description: In the controller's memory, saved with the save button (or by auto save). It's
              included in the full backup when you include the global settings.
 
-9.4. Kemper Player and Nano Cortex in Friendly Mode
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Related screen/preview: KEMPER PLAYER CARD
-Purpose: When you choose KEMPER PLAYER or NANO CORTEX on a channel, an extra card appears with
-          features that only exist for them.
+9.5. ADVANCED — Kemper Player and Nano Cortex
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Related screen/preview: FRIENDLY MODE › ADVANCED — KEMPER PLAYER CARD
+Purpose: When you choose KEMPER PLAYER or NANO CORTEX on a channel, the ADVANCED tab gets a card
+          with features that only exist for them (marked EXCLUSIVE), right above the custom device.
 Fields and items:
 - EDIT RIG and PLAYER LEVEL (Kemper)
   Description: Opens the editor for the rig that's playing (see Device preset editors). The Player
@@ -1513,163 +1899,188 @@ Fields and items:
 - FOLLOW THE KEMPER (Kemper)
   Description: When you change the rig on the Kemper itself, the controller jumps to the matching
              preset.
-- On-screen tuner (tuner)
-  Description: Style (ARC, BAR or LEDS), response speed and the indicator colors (in tune, close,
-             far). The tuner opens with a footswitch that sends the device's tuner command (CC 31 on
-             the Kemper, CC 43 on the Nano Cortex).
+Notes:
+- These devices' tuner (screen, speed and LEDs) is set up on the TUNER tab.
 
-9.5. FOOTSWITCHES — what applies in any preset
+9.6. FOOTSWITCHES — what applies in any preset
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Related screen/preview: SETTINGS › FOOTSWITCHES
-Purpose: The controls that don't belong to any preset: the operating mode, the LIVE button, the SW
-          GLOBAL, the expression pedal and the external footswitches.
+Related screen/preview: SETTINGS › FOOTSWITCHES › GLOBAL SW
+Purpose: The controls that don't belong to any preset, in three tabs: OPERATION (the operating
+          mode), GLOBAL SW (the LIVE button, SW6 and the SW GLOBAL) and EXTERNAL (the expression
+          pedal and the external footswitches).
 Fields and items:
-- OPERATING MODE (selection)
+- OPERATING MODE (OPERATION tab)
   Description: PRESET–LIVE is the default: in PRESET mode your feet pick presets; in LIVE, they
              control functions. In HYBRID the controller splits the footswitches: some always call
              presets and the rest always control effects, with no mode switching.
-- LIVE BUTTON (switch)
+- LIVE BUTTON (GLOBAL SW tab)
   Description: On boards with a dedicated LIVE button, Use as GLOBAL SW 2 retires that button's LIVE
              function and turns it into a second SW GLOBAL.
-- SW6 = GLOBAL SW (switch)
+- SW6 = GLOBAL SW (GLOBAL SW tab)
   Description: On the NANO and 6SW+ boards (which have no dedicated GLOBAL SW) and on the BFMIDI-2
              6S, turns SW6 into a GLOBAL SW. It stops calling preset 6 and is also removed from
              preset call and from the combos. The controller restarts when you save.
-- SW GLOBAL (editor)
+- SW GLOBAL (GLOBAL SW tab)
   Description: A footswitch that works in any bank, preset or mode, with the same modes as the
              preset footswitches — except STEPS and CONTROL. The classic use is a global tap tempo,
-             the tuner or a mute. Tap EDIT to open it.
-             RESET ON PRESET CHANGE returns the LED and the screen to their initial state on every
-             preset change, without sending MIDI.
-- EXTERNAL SW1 and SW2 (editors)
-  Description: The two external footswitches (2SW input), with no LED, with the same modes as the
-             GLOBAL SW and working in any preset. Each one can have an on-screen indicator (label,
-             colors and position) and the same reset on preset change. They also have two exclusive
-             commands for browsing banks in preview.
+             the tuner or a mute. Closed, the card says in one sentence what the button does and
+             where it sends; with no channel, it warns that it doesn’t send anything yet. Tap EDIT
+             to open it.
+             RETURN TO START ON PRESET CHANGE returns the LED and the screen to their initial state
+             on every preset change, without sending MIDI.
+- EXTERNAL SW1 and SW2 (EXTERNAL tab)
+  Description: The two external footswitches (2SW input), with no LED, with the GLOBAL SW modes plus
+             CONTROL and working in any preset. Each one can have an on-screen indicator (label,
+             colors and position) and the same return to start on preset change. They also have two
+             exclusive commands for browsing banks in preview.
 Notes:
 - The cards that depend on hardware (LIVE button, expression, external footswitches) only show up on
-   models that have those inputs.
+   models that have those inputs; on a board without them, the EXTERNAL tab says so.
 
-9.6. External expression
+9.7. External expression
 ~~~~~~~~~~~~~~~~~~~~~~~~
-Related screen/preview: EXTERNAL EXPRESSION — OPEN
-Purpose: The expression pedal: which CC it controls, the calibration for your pedal and the output
-          range.
+Related screen/preview: FOOTSWITCHES › EXTERNAL — EXTERNAL EXPRESSION
+Purpose: The expression pedal in three steps: turn it on, choose where it sends and calibrate it.
 How to:
-1. Turn on the card's switch and tap EDIT.
-2. Choose the CC and the channel (volume, wah, delay mix…).
-3. In CALIBRATION, rock the pedal all the way to each end and capture the minimum and the maximum.
+1. In FOOTSWITCHES › EXTERNAL, tap EDIT on the EXTERNAL EXPRESSION card. Closed, the card already
+   says in one sentence where the pedal sends and shows the live value.
+2. Step 1 Turn on: turn the pedal on and save — the BFMiDi only starts reading after you save. Step
+   2 Where it goes: choose the device (the channel) first and then the parameter (volume, wah, delay
+   mix…).
+3. Step 3 CALIBRATION: rock the pedal back and tap SAVE HEEL; push it all the way and tap SAVE TOE.
+   The current step is highlighted.
 Fields and items:
-- LIVE READING (status)
-  Description: Shows the value going out in real time, with the calibration and the range already
-             applied.
-- OUTPUT RANGE (percentage)
-  Description: MIN and MAX in percent: heel down sends the minimum and toe down sends the maximum
-             (50% = 64). A minimum higher than the maximum reverses the direction. It also applies
-             to the presets' EXP targets.
+- The card’s notices (status)
+  Description: The card tells you what’s missing, always in view: SAVE TO READ (you turned it on and
+             haven’t saved yet), NO READING (the BFMiDi isn’t reading the pedal: check the cable in
+             the EXP input) and, before calibration, how far your pedal really goes — for example
+             “Your pedal goes from 6 to 120” — so you know it’s worth calibrating.
+- Fine tuning (folded)
+  Description: Below the steps, folded away. At the heel it sends and At the toe it sends: how much
+             of the MIDI range the pedal covers, in percent (50% = 64). Reverse direction swaps the
+             two. The sensor numbers are here too. It also applies to the presets’ EXP targets.
 - The default and the preset (target)
   Description: This card's CC and channel are the default. A preset with an EXP row in its extra
              messages has its own target — and turns the pedal on even with this card turned off.
 
-9.7. BANKS — startup, navigation and combos
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+9.8. BANKS — active banks and how the controller starts
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Related screen/preview: SETTINGS › BANKS
-Purpose: How the controller wakes up, what each footswitch does in PRESET mode and which footswitch
-          pairs trigger shortcuts.
+Purpose: Which banks your foot goes through and how the controller wakes up. The screen has three
+          tabs: BANKS (this one), PRESET CALL (what each footswitch does in PRESET mode) and COMBOS
+          (two footswitches together).
 Fields and items:
+- ACTIVE BANKS (selection)
+  Description: Turn off the letters you don't use: navigation then skips over them. At least one has
+             to stay on.
 - AUTO START (group)
   Description: With START WITH PRESET on, the controller wakes up in the chosen bank and preset, in
              PRESET or LIVE mode, sending all of its MIDI. You plug in the power and you're ready to
              play.
-- PRESET CALL (three tabs)
-  Description: For each footswitch and each gesture, one action. SHORT CLICK and LONG CLICK work on
-             any footswitch. RECLICK means stepping again on the footswitch of the preset that's
-             already playing (only on footswitches whose short click is CALL PRESET).
-             Factory defaults: short = CALL PRESET, long = ENTER LIVE MODE and reclick = BANK UP.
+- AUTOMATIC LIVE ENTRY (group)
+  Description: When it's on, every preset the controller calls (by foot, by FOLLOW THE KEMPER or by
+             a device on the USB Host) enters LIVE mode by itself after the chosen time, from 0.5 to
+             30 s. Calling another preset before that restarts the count; changing presets from the
+             editor doesn't count.
+
+9.9. PRESET CALL — what each footswitch does in PRESET mode
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Related screen/preview: SETTINGS › BANKS › PRESET CALL
+Purpose: For each footswitch and each gesture, one action: call the preset, browse the banks, enter
+          LIVE or jump straight to a favorite.
+Fields and items:
+- PRESET CALL (table)
+  Description: A table: one row per footswitch and one column per gesture — TAP, HOLD and PRESS
+             AGAIN. Tap a cell and pick the action in the list that opens below, each with a
+             sentence saying what it does. TAP and HOLD work on any footswitch; PRESS AGAIN means
+             stepping again on the footswitch of the preset that’s already playing, and it only
+             exists where the tap is CALL PRESET (elsewhere the cell is grayed out).
+             Factory defaults: tap = CALL PRESET, hold = ENTER LIVE MODE and press again = BANK UP.
+             A notice on the card tells you whether your foot can change presets.
 - The actions (list)
-  Description: CALL PRESET, STANDBY (shows the destination on screen without changing the sound, and
-             you confirm afterward), BANK UP/DOWN (also in a standby version), PRESET UP/DOWN, ENTER
-             LIVE MODE (only on the active preset's footswitch) and NONE. On long click and reclick
-             there's also FAVORITE: go straight to a fixed bank and preset, arriving in PRESET or
-             LIVE.
-             At least one footswitch must call a preset (CALL PRESET or STANDBY) — otherwise there'd
-             be no way left to change presets with your foot.
-- STANDBY — browse without changing the sound (action)
-  Description: With STANDBY you move through banks and presets while the song plays, seeing on
+  Description: CALL PRESET, PREVIEW (STANDBY) (shows the destination on screen without changing the
+             sound, and you confirm afterward), BANK UP/DOWN (also IN PREVIEW), PRESET UP/DOWN,
+             ENTER LIVE MODE (only on the active preset’s footswitch) and NONE. On HOLD and PRESS
+             AGAIN there’s also FAVORITE: go straight to a fixed bank and preset, arriving in PRESET
+             or LIVE.
+             At least one gesture must change presets (CALL PRESET or BANK UP/DOWN IN PREVIEW) —
+             otherwise there’d be no way left to change presets with your foot. That’s why, when
+             only one gesture does it, the list shows the other actions locked, with the reason: put
+             CALL PRESET on another gesture first.
+- PREVIEW (STANDBY) — browse without changing the sound (action)
+  Description: With PREVIEW you move through banks and presets while the song plays, seeing on
              screen where you're headed, and the sound only changes when you confirm. It's like
              finding the next song in the middle of the current one, without anyone hearing it.
+
+9.10. COMBOS — two footswitches together
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Related screen/preview: SETTINGS › BANKS › COMBOS
+Purpose: Stepping on two footswitches at the same time triggers a shortcut: browse, turn on the
+          Wi-Fi or enter and exit LIVE.
+Fields and items:
 - FOOTSWITCH COMBOS (pairs)
   Description: Stepping on two footswitches together triggers an action. There are ten pairs — 1+2,
-             1+3, 1+4, 2+3, 2+4, 2+5, 3+4, 3+6, 4+5 and 5+6 — and each one gets an action:
-             navigation, STANDBY, WI-FI ON/OFF or SW_LIVE (enters and exits LIVE).
-             Combos work in PRESET mode; SW_LIVE keeps working inside LIVE. And inside LIVE, holding
-             the SW_LIVE pair for half a second goes straight back to PRESET mode — even with layer
+             1+3, 1+4, 2+3, 2+4, 2+5, 3+4, 3+6, 4+5 and 5+6 —, each on its own row with the pair
+             drawn on your board’s footswitch map and a sentence saying what the action does. The
+             action can be navigation, PREVIEW, WI-FI ON/OFF or ENTER/EXIT LIVE.
+             Combos work in PRESET mode; ENTER/EXIT LIVE keeps working inside LIVE. And inside LIVE,
+             holding that pair for half a second goes straight back to PRESET mode — even with layer
              2 on.
-- ACTIVE BANKS (selection)
-  Description: Turn off the letters you don't use: navigation then skips over them. At least one has
-             to stay on.
 Notes:
-- A footswitch that's part of an active combo gets a slightly slower long click — that's the slack
-   that lets you land the pair with both feet.
+- On a footswitch that’s part of an active combo, HOLD takes a little longer — that’s the slack that
+   lets you land the pair with both feet.
 - Combos come empty from the factory: WI-FI ON/OFF, for example, has to be set up here.
 
-9.8. DISPLAY — layouts, names and BPM
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+9.11. DISPLAY — Gig View, BPM and preset change
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Related screen/preview: SETTINGS › DISPLAY
-Purpose: The default look of the controller's screen: what shows up in each mode, how the icons are
-          arranged and the BPM card.
+Purpose: What the controller's screen shows in any preset: the screens of each mode, the BPM card
+          and the preset change notice. Layout, positions, icon shape and preset names on the icons
+          are in each preset's CONFIGURE DISPLAY.
 Fields and items:
-- GIG VIEW (selection)
-  Description: DEFAULT (both screens), ONLY PRESET or ONLY LIVE. Plus the switches that show or hide
-             the preset name in LIVE and in BANK.
-- LIVE MODE and PRESET MODE LAYOUT (layout)
-  Description: L1 to L4 are fixed arrangements and CUSTOM lets you drag each icon and choose its
-             size (up to the full screen height). PRESET also has NONE (just the big name) and LIST
-             (the presets in sequence). These are the global values: a preset can have its own
-             layout.
-- Current only (LIVE CUSTOM) (switch)
-  Description: With the CUSTOM layout in LIVE, Current only shows a single icon: the one for the
-             last footswitch you stepped on, in a shared position and size. The Visible icons list
-             still decides which ones can appear.
-- Icon shape and bank names (style)
-  Description: DEFAULT, CIRCLE or OCTAGON icons, set separately for each screen. Show bank preset
-             names replaces the icons on the PRESET screen with the song names, with adjustable
-             colors and size.
-- BPM ON DISPLAY (group)
+- GIG VIEW (DISPLAY)
+  Description: DEFAULT (both screens), ONLY PRESET or ONLY LIVE. The preset name on screen is turned
+             on per preset, in CONFIGURE DISPLAY.
+- BPM ON DISPLAY (DISPLAY)
   Description: How long the BPM card stays on screen when you tap the tempo (OFF, 2, 5 or 10 s) and
              whether the number is the ABSOLUTE (last two taps) or the AVERAGE (average of the
              sequence). OFF only hides the card; the tempo still applies.
+- BANK ON PRESET CHANGE (DISPLAY)
+  Description: When on, every preset change shows the new preset's letter and number (e.g. A1) in
+             the middle of the screen, for the time you pick.
 
-9.9. LEDS — brightness and ring colors
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Related screen/preview: SETTINGS › LEDS
+9.12. LEDS — brightness and ring colors
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Related screen/preview: SETTINGS › LEDS › COLORS
 Purpose: The rings around the footswitches are what you read out of the corner of your eye on stage.
+          Three tabs: BRIGHTNESS, COLORS and LIVE.
 Fields and items:
-- LED Brightness (slider)
+- LED Brightness (BRIGHTNESS tab)
   Description: Applies to all the rings. A dark stage calls for low brightness; daylight, high.
-- BANKS & PRESETS (selection)
+- BANKS & PRESETS (COLORS tab)
   Description: What the color means in PRESET mode. BY LETTER: each bank has its own color. BY
              SWITCH: each footswitch has its own.
-- LED Preview Live Mode (switch)
+- LED Preview Live Mode (LIVE tab)
   Description: Gives the footswitches that are off a faint glow (adjustable) instead of leaving them
              dark, so you can see where your effects are in the dark.
-- DEDICATED LEDS (colors)
+- DEDICATED LEDS (LIVE tab)
   Description: The colors that signal LIVE MODE and LAYER 2. Pick very different colors: they warn
              you that every footswitch has changed function.
 
-9.10. IMAGES — your own backgrounds and icons
+9.13. IMAGES — your own backgrounds and icons
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Related screen/preview: SETTINGS › IMAGES
-Purpose: Upload your own background images and icons to the controller's screen.
+Purpose: Upload your own background images and icons to the controller's screen. Three tabs: IMAGES
+          (full-screen backgrounds), ICONS (the footswitch artwork) and MEMORY.
 How to:
-1. Tap BANK BACKGROUND (full-screen images) or SW ICONS (the footswitch artwork).
+1. Open the IMAGES tab (full-screen backgrounds) or the ICONS tab (the footswitch artwork).
 2. Tap the + and choose a file. Adjust the crop and save.
 3. Then pick the image in SCREEN COLORS (preset background) or in a footswitch's icon.
 Fields and items:
-- Shared memory (bar)
-  Description: Images and icons share the same memory: about 2.4 MB on S3 boards and about 490 KB on
-             earlier ones. The bar shows how much is in use — and deleting an icon frees up room for
-             a background, and vice versa.
+- IMAGE & ICON LIMIT (IMAGES and ICONS tabs)
+  Description: Images and icons share the same quota: about 2.4 MB on S3 boards and about 490 KB on
+             earlier ones. The IMAGE & ICON LIMIT bar, on both tabs, shows how much is in use — and
+             deleting an icon frees up room for a background, and vice versa.
              Up to 40 images and 60 icons fit; each image can be up to 50 KB and each icon up to 30
              KB.
 - The image editor (tool)
@@ -1679,48 +2090,57 @@ Fields and items:
 - In batches (actions)
   Description: Batch upload sends several images at once; Select lets you delete several. Over the
              USB cable, uploading is faster and more stable than over Wi-Fi.
+- MEMORY (MEMORY tab)
+  Description: The controller's whole memory in a single bar: Editor and system, Presets, Images and
+             icons and what's Free. Presets, images and icons share that space: when memory is full,
+             deleting images or icons makes room for presets. It's the same card as HARDWARE ›
+             MEMORY.
 
-9.11. HARDWARE — model, send timing and memory
+9.14. HARDWARE — model, send timing and memory
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Related screen/preview: SETTINGS › HARDWARE
 Purpose: Tell the controller which board it is, adjust the pace of MIDI sending and keep an eye on
-          memory.
+          memory. Three tabs: MODEL, TIMING and MEMORY.
 Fields and items:
-- MODEL (selection)
+- MODEL (MODEL tab)
   Description: First the family (1, 2, 3 or 3 S3), then the variant (NANO, MICRO, 6SW+, 7S, 8SW+…).
              It's not decoration: it's what tells the controller which pins exist. The editor only
              offers the models for the connected pedal's processor. Changing the model restarts the
              controller.
-- SEND TIMING (pauses)
+- Special cards (MODEL tab)
+  Description: On MICRO boards, REMAPPING rotates the screen and rearranges the four footswitches.
+             On the BFMIDI-1 7S, INVERT SCREEN rotates the screen 180°. Both restart the controller.
+- SEND TIMING (TIMING tab)
   Description: For devices that miss messages arriving too fast. Pause between HEADER and LIVE: a
              wait between the preset's PC/extras and the initial state of the footswitches.
              Per-channel pause: the minimum interval between two messages to one channel (a Bank
              Select + PC counts as one).
              Use the smallest value that fixes it: during the pause the controller waits, and an
              expression pedal on that channel becomes “steppy”.
-- STORAGE (status)
-  Description: How much memory is in use: Presets, Images and icons (a single bar, with the
-             breakdown below) and Globals.
-- Special cards (per model)
-  Description: On MICRO boards, REMAPPING rotates the screen and rearranges the four footswitches.
-             On the BFMIDI-1 7S, INVERT SCREEN rotates the screen 180°. Both restart the controller.
+- MEMORY (MEMORY tab)
+  Description: How much of the controller's memory is in use, in a single bar: Editor and system,
+             Presets, Images and icons and Free. It's the same card as IMAGES › MEMORY. The global
+             settings live in a separate memory and aren't part of the bar (the card's INFO says how
+             much they take).
 
-9.12. WIFI — network and connection
+9.15. WIFI — network and connection
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Related screen/preview: SETTINGS › WIFI
-Purpose: See how you're connected and, if you like, put the controller on your home network.
+Related screen/preview: SETTINGS › WIFI › CONNECT
+Purpose: See how you're connected and, if you like, put the controller on your home network. Three
+          tabs: STATUS, CONNECT and NETWORKS.
 How to:
-1. While connected through the pedal's network (AP) or the cable, tap SCAN.
-2. Choose your network, type the password and tap CONNECT. The attempt happens without freezing the
-   pedal.
+1. While connected through the pedal’s network (AP) or the cable, open the CONNECT tab. Step 1
+   SELECT NETWORK: tap SCAN and pick your network from the list (or tap it on the NETWORKS tab).
+2. Step 2 Password: type your network’s password.
+3. Step 3 CONNECT: tap CONNECT. The attempt happens without freezing the pedal.
 Fields and items:
-- CONNECTION STATE (status)
-  Description: Four squares — OFF, AP, STA and USB — with yours highlighted. On your home network,
-             the card shows the network and the address.
+- CONNECTION STATE (STATUS tab)
+  Description: Four squares — OFF, USB, AP and STA — with yours highlighted. On your home network,
+             the CONNECTION card (CONNECT tab) shows the network and the address.
 - The pedal's network (fixed)
   Description: BFMIDI_WIFI, password bfmidi@editor, address http://192.168.4.1 or
              http://bfmidi.local. It's the same on every unit.
-- SCAN and CONNECT (actions)
+- SCAN and CONNECT (CONNECT and NETWORKS tabs)
   Description: SCAN only works through the pedal's network or the cable — on your home network it
              would drop its own connection. Only 2.4 GHz networks show up; hidden networks can be
              typed in by hand. The password is only stored after it actually connects: if it fails,
@@ -1728,36 +2148,37 @@ Fields and items:
 - Why use your own network (advantage)
   Description: Your phone doesn't have to switch networks to edit, and you keep your internet
              connection. On S3 boards it's also the way to update without a cable.
-- Legacy WPA (TKIP) (compatibility)
+- Legacy WPA (TKIP) (CONNECT tab)
   Description: Leave it off on current networks. Only turn it on if an old router really won't
              connect.
 Notes:
 - Your network's password is kept in the controller's protected memory and survives updates.
 
-9.13. HOST — the USB Host and plugged-in devices
+9.16. HOST — the USB Host and plugged-in devices
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Related screen/preview: SETTINGS › HOST
-Purpose: The devices connected to the controller's USB HOST port: one card for each, with its MIDI
-          channel and the preset editor.
+Purpose: The devices connected to the controller's USB HOST port, in three tabs: STATUS (the module
+          and its options), DEVICES (one card for each device, with its MIDI channel and the preset
+          editor) and MIDI (what comes back from the devices to the controller).
 Fields and items:
-- USB HOST (status)
+- USB HOST (STATUS tab)
   Description: How many devices are connected, whether the module is responding and its firmware
-             version (with a warning when it's outdated).
-- Automatic detection (mode)
+             version, with a button that takes you to UPDATES.
+- Automatic detection (STATUS tab)
   Description: The USB Host recognizes what you plugged in on its own: regular USB MIDI pedals and
              the IK TONEX ONE work together, up to two devices on a hub. There's no mode to choose.
-- One card per device (devices)
-  Description: Manufacturer, product, hub port, USB ID, status and the channel that device listens
-             on. Each TONEX ONE has its own channel; regular MIDI pedals share one filter. GP-5,
-             TONEX ONE and Nano Cortex get the EDIT PRESET button.
-- Translate Boss MS-3 (switch)
+- Translate Boss MS-3 (STATUS tab)
   Description: The MS-3 (and the Katana) don't understand regular parameter CCs: the host converts
              them to Boss's format. Only turn it on with them plugged in.
-- Transmit-only mode (more pedals) (switch)
+- Transmit-only mode (more pedals) (STATUS tab)
   Description: Lets the host send MIDI to up to four pedals on a hub, instead of two — in exchange,
              nothing comes back from the pedals: the tuner, the rig name, FOLLOW THE KEMPER and the
              GP-5 editor stop working. With a TONEX ONE plugged in, the limit stays at two.
-- BFMiDi MIDI (host → controller) (switches)
+- One card per device (DEVICES tab)
+  Description: Manufacturer, product, hub port, USB ID, status and the channel that device listens
+             on. Each TONEX ONE has its own channel; regular MIDI pedals share one filter. GP-5,
+             TONEX ONE and Nano Cortex get the EDIT PRESET button.
+- BFMiDi MIDI (host → controller) (MIDI tab)
   Description: Enable reverse MIDI repeats the MIDI coming from the plugged-in devices on the
              controller’s outputs (USB DEVICE and DIN5), like a thru/merge. BFMIDI MIDI Control Host
              lets a plugged-in device control the BFMiDi (call presets and banks, enter LIVE).
@@ -1766,51 +2187,57 @@ Notes:
 - The Nano Cortex works on its own on the USB Host: it doesn't fit on a hub alongside another
    device.
 
-9.14. BLUETOOTH — wireless
+9.17. BLUETOOTH — wireless
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-Related screen/preview: SETTINGS › BLUETOOTH
+Related screen/preview: SETTINGS › BLUETOOTH › FUNCTION
 Purpose: Bluetooth lives in the USB Host module and has three functions — the difference between
-          them is who looks for whom.
+          them is who looks for whom. Three tabs: STATUS, FUNCTION (turns it on or off and picks its
+          role) and FILTER.
 Fields and items:
-- KEYBOARD (function)
+- KEYBOARD (FUNCTION tab)
   Description: The controller becomes a Bluetooth keyboard: CCs become keys and shortcuts, to
              control programs that don't understand MIDI (sheet music, recorders, slides).
-- MIDI (function)
+- MIDI (FUNCTION tab)
   Description: It becomes a wireless MIDI interface called BFMiDi and waits: use it when the other
              device is the one doing the searching (phone, tablet, computer).
-- PEDAL (function)
+- PEDAL (FUNCTION tab)
   Description: The controller looks for a Bluetooth MIDI pedal that's advertising and connects to
              it, so you get wireless footswitches.
-- Bluetooth MIDI filter (channel)
+- Bluetooth MIDI filter (FILTER tab)
   Description: Bluetooth has its own channel filter (OMNI lets everything through), separate from
              the USB devices' filter.
 
-9.15. EDITOR — theme, saving, shortcuts and language
+9.18. EDITOR — saving, theme, language and shortcuts
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Related screen/preview: SETTINGS › EDITOR
+Related screen/preview: SETTINGS › EDITOR › SHORTCUTS
 Purpose: Settings for the editor, not the controller: they stay on the device where you opened it.
+          Three tabs: GENERAL, APPEARANCE and SHORTCUTS.
 Fields and items:
-- THEME (selection)
-  Description: LIGHT or DARK.
-- AUTO SAVE (switch)
+- AUTO SAVE (GENERAL tab)
   Description: On (the default), the editor saves on its own less than a second after each change.
              Off, nothing is saved until you tap save — and leaving the preset discards the change.
-- SHORTCUTS (switches)
+- STAGE MODE (GENERAL tab)
+  Description: Apps only: which stage Stage Mode opens on — BFMIDI STAGE (the default), SPECIAL
+             STAGE or LAST USED.
+- THEME (APPEARANCE tab)
+  Description: LIGHT or DARK.
+- INTERFACE LANGUAGE (APPEARANCE tab)
+  Description: Português, English or Español. The controller's screen stays in English.
+- SHORTCUTS (SHORTCUTS tab)
   Description: One switch for each menu destination: the ones that are on become buttons on the MAIN
              card. STAGE MODE and the editors for plugged-in devices always appear, before your
              shortcuts.
-- INTERFACE LANGUAGE (selection)
-  Description: Português, English or Español. The controller's screen stays in English.
 
-9.16. UPDATES — the controller
+9.19. UPDATES — the controller
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Related screen/preview: SETTINGS › UPDATES — TAB 1
 Purpose: Keep the BFMiDi up to date. The screen checks on its own when it opens and, if there's
           something new, one button takes care of everything.
 How to:
 1. Open SETTINGS › UPDATES. The check starts on its own.
-2. If there's a new version, tap UPDATE THE BFMiDi (or UPDATE EVERYTHING, on boards without USB
-   Host) and follow the screen.
+2. If there's a new version, answer the guide — over the cable it confirms the cable in the DEVICE
+   port and asks whether to back up the presets — and tap UPDATE THE BFMiDi (or UPDATE EVERYTHING,
+   on boards without USB Host).
 3. Over the cable, the browser may ask you to authorize the controller's port in the middle of
    flashing — the card blinks to warn you and shows which one to choose. Don't unplug the cable
    until it's done.
@@ -1821,104 +2248,124 @@ Fields and items:
 - By cable or over the network (path)
   Description: By cable (Chrome or Edge on a computer, or the Mac and Windows apps) works on any
              model. Over the network (OTA) works on S3 boards with the pedal on your home network.
-- AUTOMATIC BACKUP (switch)
-  Description: Flashing by cable replaces the pedal's memory. With automatic backup (on by default),
-             the editor saves your presets, images, icons and custom devices before flashing and
-             puts everything back afterward. When it's off, the controller comes back with the
-             factory package. Over the network nothing is erased.
+- Preset backup (question)
+  Description: Flashing by cable replaces the pedal's memory, so the guide asks Back up the presets?
+             before enabling the button. YES: the editor saves your presets, images, icons and
+             custom devices before flashing and puts everything back afterward. NO: the controller
+             comes back with the factory package. Over the network nothing is erased, and the guide
+             doesn't show up.
 - States and buttons (status)
   Description: BFMiDi up to date (or Equipment up to date, on boards without a USB Host), Update
              available or Not checked (no internet). CHECK AGAIN runs the check again; FORCE UPDATE
              reinstalls the current version. Your device does the downloading, not the pedal; a
              computer that has updated before keeps a copy and can update even without internet.
+- The pedal screen during the update (visual)
+  Description: Over the network, the controller shows ATUALIZANDO (updating) with a progress bar
+             while writing. Over the cable it shows ATUALIZANDO before starting and, in the middle
+             of the write, may freeze or go dark — that's normal: don't unplug the cable. When the
+             controller powers on, the startup screen shows the board model and the firmware version
+             (FIRMWARE 15.0, for example) — the quickest way to check the update went in.
 Notes:
 - You can also update through the update site (Update BFMiDi), with the same automatic backup.
 
-9.17. UPDATES — the USB Host
+9.20. UPDATES — the USB Host
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Related screen/preview: SETTINGS › UPDATES — TAB 2
-Purpose: The USB Host module has its own firmware. It's updated with the computer's cable plugged
-          straight into the HOST port and the controller on its 9 V power supply — a wizard guides
-          you step by step.
+Purpose: The USB Host module has its own firmware. It's updated with two cables connected at the
+          same time: the usual one, in the DEVICE port, and a second cable from the computer in the
+          HOST port, through which the firmware is written.
 How to:
 1. Update the controller first (tab 1).
-2. On the 2 USB HOST tab, plug the 9 V power supply into the controller and tap UPDATE USB HOST.
-3. Follow the wizard: it asks you to unplug the cable from the DEVICE port and connect the computer
-   to the HOST port, then it flashes and checks.
-4. At the end, put the cable back in the DEVICE port.
+2. On the 2 USB HOST tab, answer the guide: is the USB DEVICE cable connected? Are both cables
+   connected? If not, unplug the pedals from the HOST port and plug the computer's second cable into
+   it.
+3. Tap UPDATE USB HOST. When the screen asks, tap SELECT COM PORT (on a Mac, SELECT USB PORT),
+   choose the HOST port (it shows up as ESP32-S3) and click Connect.
+4. Wait for it to write and check the version, without unplugging the cables. At the end, put the
+   pedals back in the HOST port.
 Fields and items:
-- Why the 9 V power supply (required)
-  Description: In this update the USB cable comes out of the DEVICE port and goes into HOST. Without
-             the power supply, the BFMiDi turns off halfway through.
+- The two cables (required)
+  Description: The DEVICE port cable keeps the editor talking to the controller: it's the controller
+             that puts the USB Host into flashing mode and checks the version at the end. The second
+             cable, in the HOST port, carries the firmware. Both stay connected from start to
+             finish.
 - What you need (list)
-  Description: A 9 V pedal power supply, a USB cable with a USB-C end for the HOST port (ideally
-             with the rectangular end on the computer side), Chrome or Edge on the computer (or the
-             BFMiDi app for Windows/Mac) and about 3 minutes. Your presets aren't erased.
+  Description: Two USB cables — the one for the HOST port with a USB-C end, ideally with the
+             rectangular end on the computer side —, Chrome or Edge on the computer (or the BFMiDi
+             app for Windows/Mac) and about 3 minutes. Your presets aren't erased.
+- With the USB Host up to date (button)
+  Description: With the USB Host already on the published version, the button becomes FORCE UPDATE
+             and rewrites the same version.
 - If it stops halfway (rescue)
-  Description: The wizard always tells you what happened — whether nothing changed or the firmware
-             was left incomplete. If the flash is incomplete, the tab offers RECOVER; don't turn off
-             the controller before trying again.
+  Description: The result always tells you what happened — whether nothing changed or the firmware
+             was left incomplete. If the flash is incomplete, the screen offers RECOVER: don't turn
+             off the controller before trying again.
 
-9.18. BACKUP — copy and restore
+9.21. BACKUP — copy and restore
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Related screen/preview: SETTINGS › BACKUP
-Purpose: Save your work to a file — the whole pedal, a bank or a preset — and bring it back when you
-          need it.
+Purpose: Save your work to a file and bring it back when you need it — one tab for each size: FULL
+          (the whole pedal), BANK and PRESET.
 Fields and items:
-- FULL BACKUP (file)
+- FULL BACKUP (FULL tab)
   Description: All the presets. Choose whether to include images and icons (the file gets much
              bigger, but it's the real copy) and the global settings (board, colors, controls,
              custom devices). BACK UP downloads the file; RESTORE brings it back.
-- EXPORT PERFORMANCE (one bank)
+- EXPORT PERFORMANCE (BANK tab)
   Description: Exports or imports a whole bank — the six presets of a show — taking along only the
              images and icons it uses. When importing, you choose the destination bank, which gets
              replaced.
-- SINGLE PRESET (one preset)
+- SINGLE PRESET (PRESET tab)
   Description: Exports or imports a single preset (no images), to take a song from one pedal to
              another.
 Notes:
 - Keep your files somewhere other than your phone (cloud, computer). A backup that lives only on the
    device that can break isn't a backup.
 
-9.19. TESTS — diagnostics and MIDI monitor
+9.22. TESTS — diagnostics and MIDI monitor
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Related screen/preview: SETTINGS › TESTS
 Purpose: Find out whether the problem is the cable, the channel or the command — without setting up
-          any preset.
+          any preset. Three tabs: HARDWARE, SEND and MONITOR.
 Fields and items:
-- HARD TEST (diagnostics)
-  Description: Three ten-second tests: LEDS, DISPLAY and MIDI. If the LEDs light up in the test, the
+- HARD TEST (HARDWARE tab)
+  Description: Ten-second tests for LEDS, DISPLAY and MIDI. If the LEDs light up in the test, the
              problem is in the setup, not the hardware.
-- MIDI SEND (tool)
+             BUTTONS: step on each footswitch and see its name show up — while the test is open the
+             pedal doesn't send MIDI or change presets. RX (on boards with USB Host): shows the MIDI
+             going out of the controller's MIDI output; if the messages show up there and the device
+             doesn't respond, the problem is from the cable onward.
+- MIDI SEND (SEND tab)
   Description: Sends a PC or a CC right away, on the chosen channel. With AUTO SEND, every + or −
              sends immediately — it's the fastest way to find out which number your device responds
              to.
-- MONITOR MIDI (diagnostics)
+- MONITOR MIDI (MONITOR tab)
   Description: Shows what the controller sends on preset recall and on LIVE's live triggers, in
              order, with an option to copy.
 Notes:
 - If the manual send works and the preset doesn't, the problem is in the preset (channel or value) —
    not the cable or the device.
 
-9.20. FACTORY RESET — erase and go back to defaults
+9.23. FACTORY RESET — erase and go back to defaults
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Related screen/preview: SETTINGS › FACTORY RESET
 Purpose: Erase the presets or the global settings and start over. It's the red item on the menu, and
-          for good reason.
+          for good reason. One action per tab: PRESETS and GLOBAL (and VIRTUAL, in offline mode).
 How to:
 1. Make a full backup first. There's no undo.
 Fields and items:
-- ERASE ALL PRESETS (irreversible)
+- ERASE ALL PRESETS (PRESETS tab)
   Description: All 60 presets go back to a blank default: footswitches in STOMP with no channel (so
              they don’t show on the screen) and layer 2 off. Images, icons and custom devices are
              not erased.
-- ERASE GLOBAL CONFIG (irreversible)
+- ERASE GLOBAL CONFIG (GLOBAL tab)
   Description: Resets colors, brightness, auto start, banks, combos and controls to the defaults —
-             and also the board model. Check the model in HARDWARE right afterward. Your home Wi-Fi
-             network isn't erased.
-- OFFLINE MODE (local copy)
-  Description: In offline mode, RESET LOCAL COPY also appears; it returns the copy stored on your
-             device to the factory package without touching the controller.
+             and also the board model. Check the model in HARDWARE › MODEL right afterward. Your
+             home Wi-Fi network isn't erased.
+- OFFLINE MODE (VIRTUAL tab)
+  Description: In offline mode, the VIRTUAL tab also appears, with the RESET LOCAL COPY button: it
+             returns the copy stored on your device to the factory package without touching the
+             controller.
 Notes:
 - You don't need to reset before updating.
 
@@ -1947,16 +2394,16 @@ Fields and items:
 - » UP PRESET and » DOWN PRESET (command)
   Description: Step to the neighboring preset within the bank, cycling around (on four-footswitch
              boards, only among those four). It's “next song” with your foot, without leaving LIVE.
-- » OUT LIVE MODE and » SW_LIVE (command)
-  Description: OUT LIVE MODE leaves LIVE and goes back to preset navigation; SW_LIVE is the toggle:
-             it goes in and out. On boards without a LIVE button, having one of these on a
+- » OUT LIVE MODE and » ENTER/EXIT LIVE (command)
+  Description: OUT LIVE MODE leaves LIVE and goes back to preset navigation; ENTER/EXIT LIVE is the
+             toggle: it goes in and out. On boards without a LIVE button, having one of these on a
              footswitch is what guarantees your way back.
 - » TO LAYER (command)
   Description: Switches between the preset's Layer 1 and Layer 2. It only makes sense inside LIVE,
              with Layer 2 turned on.
 - Preview navigation (external footswitches) (command)
-  Description: The external footswitches have two commands of their own, » UP BANK STANDBY and »
-             DOWN BANK STANDBY: they move up and down through banks in preview, without changing the
+  Description: The external footswitches have two commands of their own, » UP BANK PREVIEW and »
+             DOWN BANK PREVIEW: they move up and down through banks in preview, without changing the
              sound, and wait for a preset footswitch to confirm.
 Notes:
 - These commands don't go out over the MIDI cable: the controller itself uses them. RAMP and STEPS
@@ -1984,12 +2431,21 @@ Fields and items:
              preset editor.
 - Neural DSP Nano Cortex (integration)
   Description: Plugged into the USB Host on its own: the tuner on the controller's screen (a
-             footswitch sending CC 43 on the Nano's channel), the Nano's preset name on the screen
-             (GET NAMES, turned on in the Friendly Mode card) and the preset editor. With Cortex
-             Cloud connected over Bluetooth, the Nano refuses to talk over USB.
+             footswitch sending CC 43 on the Nano's channel) and in Stage Mode, the Nano's preset
+             name on the screen (GET NAMES, turned on in the Friendly Mode card) and the preset
+             editor. The Nano's knobs (amp, capture volume, gate and FX parameters) also appear by
+             name in the command list of any mode, marked with ◇ — the footswitch moves the knob
+             live, without saving on the Nano. With Cortex Cloud connected over Bluetooth, the Nano
+             refuses to talk over USB.
+- ZOOM MS-70CDR, MS-50G and MS-60B (integration)
+  Description: These MultiStomps only have MIDI over USB: plug them into the USB Host. The list gets
+             the presets (PC, PRESET 1 to 50), the tuner (CC 74: 127 on, 0 off) and, under ZOOM
+             EFEITOS, the ◈ FX 1, FX 2 and FX 3 Liga/Desliga (on/off) commands — the first three
+             effects in the chain, which the controller turns on and off using Zoom's own protocol
+             (value 64 or more turns on). Requires the controller and the USB Host to be up to date.
 - BOSS MS-3 and Katana (integration)
-  Description: With Translate Boss MS-3 turned on (SETTINGS › HOST), the USB Host converts commands
-             into Boss's own format.
+  Description: With Translate Boss MS-3 turned on (SETTINGS › HOST › STATUS), the USB Host converts
+             commands into Boss's own format.
 Notes:
 - The preset editors are explained in the Device preset editors chapter.
 
@@ -2001,10 +2457,10 @@ Fields and items:
 - The effects unit doesn't change sound (checklist)
   Description: 1. Does the cable go from the BFMiDi to the effects unit (MIDI OUT → MIDI IN)?
              2. Is the preset's channel the one the effects unit listens to?
-             3. Use MIDI SEND in SETTINGS › TESTS: if it works there, the problem is in the preset;
-             if it doesn't work even there, it's the cable or the device.
+             3. Use MIDI SEND in SETTINGS › TESTS › SEND: if it works there, the problem is in the
+             preset; if it doesn't work even there, it's the cable or the device.
              4. Does the effects unit miss the first messages after a preset change? Use SEND TIMING
-             in SETTINGS › HARDWARE.
+             in SETTINGS › HARDWARE › TIMING.
 - I can't open the editor (checklist)
   Description: 1. The pedal's Wi-Fi turns itself off 90 seconds after power-up if nobody connects:
              turn the controller off and on again.
@@ -2014,22 +2470,31 @@ Fields and items:
              4. On a Mac (macOS 15+), give the browser Local Network permission.
              5. Last resort: USB cable + Chrome/Edge, or the Mac and Windows apps.
 - A footswitch does nothing (checklist)
-  Description: Check that it isn't set to MUTE and that you're in the right mode (PRESET × LIVE). In
-             PRESET mode, look at PRESET CALL: the gesture may be set to NONE, and ENTER LIVE MODE
-             only works on the active preset's footswitch. An open Kemper editor pauses the
-             footswitches (hold one for 2 s to exit). Also check the model in HARDWARE.
+  Description: Check that the command's channel isn't OFF (or the mode set to MUTE, in older
+             presets) and that you're in the right mode (PRESET × LIVE). In PRESET mode, look at
+             PRESET CALL: the gesture may be set to NONE, and ENTER LIVE MODE only works on the
+             active preset's footswitch. Also check the model in HARDWARE.
 - The footswitch icon disappeared from the screen (checklist)
   Description: Its function has no MIDI channel: a footswitch without a channel doesn't show up on
              the controller's screen. Give the command a channel (or use FAVORITE, which shows up
              even without a channel).
 - I can't upload images (checklist)
-  Description: Check the memory bar in SETTINGS › IMAGES: images and icons share the same space.
-             Delete what you don't use, check the file size (up to 50 KB per image, 30 KB per icon)
-             and use the USB cable when you can.
+  Description: Check the IMAGE & ICON LIMIT bar in SETTINGS › IMAGES: images and icons share the
+             same space. Delete what you don't use, check the file size (up to 50 KB per image, 30
+             KB per icon) and use the USB cable when you can.
+- MEMORY FULL when saving (checklist)
+  Description: When the controller refuses to save for lack of space, the editor opens the MEMORY
+             FULL window. Presets, images and icons share the same memory: tap the window's button,
+             delete images or icons you don't use and make the change again — the refused one wasn't
+             saved.
+- The editor stayed on the old version after updating (checklist)
+  Description: When you open the editor from the pedal (http://192.168.4.1 or http://bfmidi.local),
+             it checks the version by itself and reloads if the phone kept the old one. If it still
+             looks the same, reload the page once. In the apps, the store updates the editor.
 - The pedal's screen went dark after changing the model (checklist)
   Description: The wrong model leaves the screen and the footswitches unresponsive. Connect over
-             Wi-Fi or the cable and choose the right model in SETTINGS › HARDWARE — including after
-             ERASE GLOBAL CONFIG, which resets the model to the default.
+             Wi-Fi or the cable and choose the right model in SETTINGS › HARDWARE › MODEL —
+             including after ERASE GLOBAL CONFIG, which resets the model to the default.
 Notes:
 - Before changing anything big, make a backup. It's what turns a mistake into five lost minutes
    instead of a lost night.

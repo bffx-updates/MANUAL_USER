@@ -19,6 +19,16 @@
 //    região. Os marcadores numerados de cada card do manual (campo `hot` no
 //    content.js) são MEDIDOS aqui e gravados junto, em fração da imagem.
 //
+// MODO PALCO (out/2026): o palco existe SÓ NOS APPS — o build do pedal
+// (../data, o padrão daqui) não tem o código dele. Pros prints do palco
+// (ids stage-*), aponte --editor pra um BUILD DOS APPS:
+//     cd webApp && BF_NO_GZIP=1 node build.mjs     (deixa o data/ cru)
+//     copie o data/ pra fora do repo e passe --editor <essa pasta>
+//     cd webApp && node build.mjs                   (devolve o data/ ao gzip)
+// A captura abre o editor com &palco=1, que liga o atalho do palco num
+// servidor local (ver STAGE_DEV no webApp/api.js). Com o build do pedal as
+// etapas do palco avisam "atalho MODO PALCO ausente" e seguem adiante.
+//
 // Mudou a tela do editor? Rode de novo — não redesenhe nada à mão.
 // Requisitos: Chrome (ou Edge) e Node 22+.
 
@@ -72,7 +82,7 @@ function serveEditor() {
     const url = decodeURIComponent(req.url.split('?')[0]);
     // a galeria de fundos do MODO PALCO só existe dentro dos apps (vem de
     // production/stage_bg); aqui ela é servida pra etapa que simula um app
-    const base = url.startsWith('/stage_bg/') ? path.join(REPO, 'production') : EDITOR;
+    const base = url.startsWith('/stage_bg/') || url.startsWith('/stage_fonts/') || url.startsWith('/stage_real/') ? path.join(REPO, 'production') : EDITOR;
     const file = path.join(base, url === '/' ? 'index.html' : url);
     if (!file.startsWith(base)) { res.writeHead(404).end(); return; }
     const type = MIME[path.extname(file)] || 'application/octet-stream';
@@ -151,8 +161,10 @@ const PAGE_HELPERS = `(function(){
         return exact ? t === want : (t === want || t.startsWith(want + ' ') || t.startsWith(want)); }); },
     click(sel, txt, exact) { const e = txt == null ? document.querySelector(sel) : M.find(sel, txt, exact);
       if (!e) return false; e.scrollIntoView({ block: 'nearest' }); e.click(); return true; },
-    fit(sels) { for (const s of [].concat(sels)) document.querySelectorAll(s).forEach((e) => e.classList.add('mn-cap-fit')); return true; },
-    unfit() { document.querySelectorAll('.mn-cap-fit').forEach((e) => e.classList.remove('mn-cap-fit')); return true; },
+    // a LARGURA fica a que o elemento tem no app: com flex 0 0 auto a coluna
+    // encolhia até o conteúdo e as peças de largura total passavam da borda.
+    fit(sels) { for (const s of [].concat(sels)) document.querySelectorAll(s).forEach((e) => { e.style.setProperty('--mn-cap-w', e.getBoundingClientRect().width + 'px'); e.classList.add('mn-cap-fit'); }); return true; },
+    unfit() { document.querySelectorAll('.mn-cap-fit').forEach((e) => { e.classList.remove('mn-cap-fit'); e.style.removeProperty('--mn-cap-w'); }); return true; },
     // uniao das caixas dos seletores (cada seletor: todas as ocorrencias visiveis)
     rect(sels, opts) { opts = opts || {}; let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
       for (const s of [].concat(sels)) for (const e of document.querySelectorAll(s)) {
@@ -209,7 +221,7 @@ const CAPTURE_CSS = `
 html, body { scrollbar-width: none !important; }
 ::-webkit-scrollbar { display: none !important; }
 :root:root:root:root .mn-cap-fit, :root:root:root:root.mn-cap-fit { height: auto !important; min-height: 0 !important; max-height: none !important;
-  align-self: start !important; overflow: visible !important; flex: 0 0 auto !important; }
+  align-self: start !important; overflow: visible !important; flex: 0 0 auto !important; width: var(--mn-cap-w, auto) !important; }
 :root:root:root:root .mn-cap-fit > .bf-sw-card, :root:root:root:root .mn-cap-fit.bf-sw-card, :root:root:root:root .mn-cap-fit > .bf-studio-now-playing {
   height: auto !important; min-height: 0 !important; max-height: none !important;
   flex: 0 0 auto !important; overflow: visible !important; }
@@ -282,7 +294,7 @@ async function main() {
     const themeId = theme === 'light' ? 'studio-green' : 'default';
     await cdp.send('Page.navigate', { url: 'about:blank' });
     await sleep(200);
-    const url = 'http://127.0.0.1:' + PORT + '/index.html?api=' + encodeURIComponent(pedal.base) + query;
+    const url = 'http://127.0.0.1:' + PORT + '/index.html?api=' + encodeURIComponent(pedal.base) + '&palco=1' + query;
     await cdp.send('Page.navigate', { url });
     await sleep(2200);
     await ev(`(function(){ try {
@@ -438,14 +450,14 @@ async function main() {
 }
 
 function readVersion() {
-  try { return /BFMIDI_FW_VERSION\s+"([^"]+)"/.exec(fs.readFileSync(path.join(REPO, 'BFMiDi_v14.ino'), 'utf8'))[1]; }
+  try { return /BFMIDI_FW_VERSION\s+"([^"]+)"/.exec(fs.readFileSync(path.join(REPO, 'BFMiDi_v15.ino'), 'utf8'))[1]; }
   catch { return '?'; }
 }
 
 // ══════════════════════════════════════════════════════════════════════
 // AS TELAS
 // A ORDEM importa: abrir CONFIGURAÇÕES › MODO AMIGÁVEL faz o editor migrar o
-// modo amigável para o mapa por canal (e salvar), e o PALCO 1 passa a mostrar
+// modo amigável para o mapa por canal (e salvar), e o PALCO BFMIDI passa a mostrar
 // "MULTIPLE MODE" no subtítulo. Por isso o palco vem antes das configurações.
 // Cada etapa abre o que precisa e tira os prints. Os ids casam com o campo
 // `shot` dos cards no js/content.js.
@@ -459,16 +471,42 @@ const settingsOpen = async ({ H, sleep }, name) => {
   return ok;
 };
 
+// Subpáginas (out/2026): quase toda tela de configuração tem uma barra de
+// abas de ícone no topo (.bf-subpage-tabs). `tab` = rótulo da aba (null = a
+// primeira). Clica sempre, inclusive na primeira: voltar ao MESMO item do menu
+// não garante que a tela reabra na primeira aba.
+const settingsTab = async ({ H, sleep }, tab) => {
+  if (!await H(`wait('.bf-subpage-tabs .bf-icon-tab', 2500)`)) return tab == null;   // tela sem abas (ATUALIZAR)
+  const ok = tab == null
+    ? await H(`click('.bf-subpage-tabs .bf-icon-tab')`)
+    : await H(`click('.bf-subpage-tabs .bf-icon-tab', ${JSON.stringify(tab)}, true)`);
+  await sleep(900);
+  return ok;
+};
+
+// [item do menu, id do print, aba]. Um item pode render mais de um print.
 const SETTINGS = [
-  ['MODO AMIGÁVEL', 'cfg-amigavel'], ['FOOTSWITCHES', 'cfg-footswitches'], ['BANCOS', 'cfg-bancos'],
-  ['TELA', 'cfg-tela'], ['LEDS', 'cfg-leds'], ['IMAGENS', 'cfg-imagens'], ['HARDWARE', 'cfg-hardware'],
-  ['WIFI', 'cfg-wifi'], ['HOST', 'cfg-host'], ['BLUETOOTH', 'cfg-bluetooth'], ['EDITOR', 'cfg-editor'],
-  ['ATUALIZAR', 'cfg-atualizar'], ['BACKUP', 'cfg-backup'], ['TESTES', 'cfg-testes'], ['RESTAURAR', 'cfg-restaurar'],
+  ['MODO AMIGÁVEL', 'cfg-amigavel', null], ['MODO AMIGÁVEL', 'cfg-user', 'AVANÇADO'],
+  ['FOOTSWITCHES', 'cfg-footswitches', 'SW GLOBAL'],
+  ['BANCOS', 'cfg-bancos', null], ['BANCOS', 'cfg-chamada', 'CHAMADA'], ['BANCOS', 'cfg-combos', 'COMBOS'],
+  ['TELA', 'cfg-tela', null], ['LEDS', 'cfg-leds', 'CORES'], ['IMAGENS', 'cfg-imagens', null],
+  ['HARDWARE', 'cfg-hardware', null],
+  ['WIFI', 'cfg-wifi', null], ['WIFI', 'cfg-wifi-conectar', 'CONECTAR'],
+  ['HOST', 'cfg-host', null], ['BLUETOOTH', 'cfg-bluetooth', 'FUNÇÃO'], ['EDITOR', 'cfg-editor', 'ATALHOS'],
+  ['ATUALIZAR', 'cfg-atualizar', null], ['BACKUP', 'cfg-backup', null], ['TESTES', 'cfg-testes', null],
+  ['RESTAURAR', 'cfg-restaurar', null],
+];
+// Prints de um card ABERTO (toque em EDITAR): [item, aba, título do card, id].
+const SETTINGS_CARDS = [
+  ['FOOTSWITCHES', 'EXTERNOS', 'EXPRESSÃO EXTERNA', 'cfg-exp'],
+  ['FOOTSWITCHES', 'SW GLOBAL', 'SW GLOBAL', 'cfg-swglobal'],
 ];
 const MODES = [
   ['STOMP', 'sw-stomp'], ['SPIN', 'sw-spin'], ['RAMP', 'sw-ramp'], ['MOMENT', 'sw-momentary'],
   ['MACROS', 'sw-macros'], ['TAP TEMPO', 'sw-tap'], ['SINGLE', 'sw-single'], ['STEPS', 'sw-steps'],
-  ['CONTROL', 'sw-control'], ['MUTE', 'sw-mute'],
+  ['CONTROL', 'sw-control'], ['INCREM', 'sw-increment'], ['RETORNO', 'sw-spring'], ['ONDA', 'sw-wave'],
+  // MUTE saiu do seletor em 18/out/2026 (só aparece em preset antigo); o print
+  // sw-mute.webp que já existe continua valendo pro card dele.
 ];
 const goLive = async ({ H, sleep }) => {
   await H(`click('.bf-mobile-home-mode button', 'LIVE', true)`);
@@ -481,7 +519,7 @@ const goPreset = async ({ H, sleep }) => {
 };
 
 const STEPS = [
-  { name: 'PRESET', ids: ['preset-tela', 'preset-console', 'preset-principal', 'preset-display', 'preset-tabbar', 'preset-extras', 'preset-swlist', 'preset-bancos', 'preset-acoes', 'preset-posicionar'],
+  { name: 'PRESET', ids: ['preset-tela', 'preset-console', 'preset-principal', 'preset-display', 'preset-tabbar', 'preset-extras', 'preset-swlist', 'preset-bancos', 'preset-acoes', 'preset-configurar-display'],
     async run(c) {
       await c.open('desk');
       await c.H(`wait('.bf-bank-console .bf-preset', 8000)`);
@@ -509,10 +547,11 @@ const STEPS = [
         await c.shoot('preset-acoes', ['.bf-tabbar-plus-menu', '.bf-tabbar'], { pad: 8 });
         await c.H(`click('.bf-tabbar-plus')`); await c.sleep(400);
       }
-      // POSICIONAR (toque na previa da tela)
-      if (await c.H(`clickIn('.bf-bank-slot-display', 'button, [role=button]', 'POSICIONAR')`)) {
-        await c.H(`wait('.bf-namepos-modal', 4000)`); await c.sleep(900);
-        await c.shoot('preset-posicionar', '.bf-namepos-modal');
+      // CONFIGURAR DISPLAY (o botão embaixo da prévia da tela; desde 17/out/2026
+      // substitui o POSICIONAR). O popup é horizontal no PC.
+      if (await c.H(`click('.bf-bank-slot-display .bf-dcfg-open')`)) {
+        await c.H(`wait('.bf-dcfg', 4000)`); await c.sleep(900);
+        await c.shoot('preset-configurar-display', '.bf-dcfg');
         await c.key('Escape'); await c.sleep(500);
       }
     } },
@@ -572,13 +611,13 @@ const STEPS = [
         await c.key('Escape'); await c.sleep(500);
       } else console.log('  ! atalho TONEX ausente');
     } },
-  { name: 'MODO PALCO', ids: ['stage-1', 'stage-1-barra', 'stage-set-geral', 'stage-set-visual', 'stage-set-p1', 'stage-set-p2', 'stage-2', 'stage-2-hold'],
+  { name: 'MODO PALCO', ids: ['stage-1', 'stage-1-barra', 'stage-set-geral', 'stage-set-visual', 'stage-set-p1', 'stage-set-perfis', 'stage-set-p2', 'stage-2', 'stage-2-hold', 'stage-fav'],
     async run(c) {
       await c.scenario('default');
       await c.mockSet('bpm=118');
       await c.open('desk');
       await c.H(`wait('.bf-np-shortcut.is-device', 15000)`); await c.sleep(500);
-      if (!await c.H(`click('.bf-np-shortcut.is-accent')`)) { console.log('  ! atalho MODO PALCO ausente'); return; }
+      if (!await c.H(`click('.bf-np-shortcut.is-accent')`)) { console.log('  ! atalho MODO PALCO ausente (o palco so existe no build dos apps: use --editor, ver o topo deste arquivo)'); return; }
       await c.H(`wait('.bf-stage-frame.is-p1', 8000)`); await c.sleep(1500);
       for (const n of [1, 3, 4]) { await c.H(`click('.bf-stage-sw:nth-child(${n})')`); await c.sleep(300); }
       await c.sleep(4800);   // o poll traz o estado novo e a barra de cima some
@@ -588,22 +627,82 @@ const STEPS = [
       // configurações do palco (abre na aba do palco atual)
       if (await c.H(`click('.bf-stage-top button[aria-haspopup="dialog"]')`)) {
         await c.H(`wait('.bf-stage-sheet', 4000)`); await c.sleep(700);
-        await c.shoot('stage-set-p1', '.bf-stage-sheet');
+        // painel lateral (Fase 1 do plano do palco): o print pega o palco
+        // INTEIRO — a prévia reduzida + o painel —, que é o que o usuário vê.
+        await c.shoot('stage-set-p1', '.bf-stage');
         const tabs = [['stage-set-geral', 1], ['stage-set-visual', 2], ['stage-set-p2', 4]];
         for (const [id, n] of tabs) {
-          await c.H(`click('.bf-stage-sheet-tabs [role=tab]:nth-child(${n})')`); await c.sleep(600);
-          await c.shoot(id, '.bf-stage-sheet');
+          await c.H(`click('.bf-stage-rail [role=tab]:nth-child(${n})')`); await c.sleep(id === 'stage-set-p2' ? 2600 : 900);
+          await c.shoot(id, '.bf-stage');
+        }
+        // categoria PERFIS (a 6ª): cria dois perfis só pro print e apaga depois,
+        // pra as outras etapas continuarem no perfil único (sem a pílula na barra).
+        await c.H(`click('.bf-stage-rail [role=tab]:nth-child(3)')`); await c.sleep(700);
+        await c.H(`click('.bf-stage-rail [role=tab]:nth-child(6)')`); await c.sleep(900);
+        const pfAct = (i) => `(function(){ var b=document.querySelectorAll('.bf-stage-pf-acts button')[${i}]; if(b&&!b.disabled){ b.click(); return true; } return false; })()`;
+        const pfPick = (last) => `(function(){ var a=document.querySelectorAll('.bf-stage-pf-pick'); var b=a[${last ? 'a.length-1' : '0'}]; if(b) b.click(); })()`;
+        for (let k = 0; k < 2; k++) { await c.ev(pfAct(2)); await c.sleep(500); }
+        await c.ev(pfPick(false)); await c.sleep(700);
+        await c.shoot('stage-set-perfis', '.bf-stage');
+        for (let k = 0; k < 2; k++) {
+          await c.ev(pfPick(true)); await c.sleep(500);
+          await c.ev(pfAct(5)); await c.sleep(300); await c.ev(pfAct(5)); await c.sleep(600);
         }
         await c.key('Escape'); await c.sleep(500);
       }
-      // PALCO 2 com a GP-5
+      // PALCO ESPECIAL com a GP-5
       await c.H(`click('.bf-stage-handle')`); await c.sleep(500);
       if (await c.H(`click('.bf-stage-view')`)) {
         await c.H(`wait('.bf-stage-frame.is-p2 .bf-stage-detail-row', 10000)`); await c.sleep(2500);
         await c.tap('.bf-stage-blk[data-blk="DLY"]'); await c.sleep(4800);
         await c.shoot('stage-2', '.bf-stage');
-      } else console.log('  ! botao PALCO 2 ausente');
+        // FAVORITOS (Fase 6): troca pro layout Favoritos, escolhe oito controles
+        // pela roda, fotografa e devolve o layout Completo (as outras etapas
+        // usam o mesmo armazenamento).
+        const p2Lay = async (i) => {
+          await c.H(`click('.bf-stage-handle')`); await c.sleep(500);
+          if (!await c.H(`click('.bf-stage-top button[aria-haspopup="dialog"]')`)) return false;
+          await c.H(`wait('.bf-stage-sheet', 4000)`); await c.sleep(600);
+          await c.H(`click('.bf-stage-rail [role=tab]:nth-child(4)')`); await c.sleep(2600);
+          await c.ev(`(function(){ var b=document.querySelectorAll('[data-k="p2Layout"] .bf-stage-card')[${i}]; if(b) b.click(); })()`);
+          await c.sleep(600);
+          await c.key('Escape'); await c.sleep(900);
+          return true;
+        };
+        const favPick = (label) => `(function(){ var b=document.querySelector('.bf-studio-picker-backdrop'); if(!b) return false; var it=[].slice.call(b.querySelectorAll('.bf-studio-picker-item')).find(function(e){ return e.textContent.trim() === ${JSON.stringify(label)}; }); if(it) it.click(); return !!it; })()`;
+        if (await p2Lay(5)) {
+          for (const label of ['AMP · Gain', 'AMP · Bass', 'AMP · Treble', 'DST · Ligado', 'DST · Gain', 'DLY · Mix', 'DLY · Time', 'RVB · Mix']) {
+            await c.ev(`(function(){ var b=document.querySelector('.bf-stage-favbtn'); if(b&&!b.disabled) b.click(); })()`); await c.sleep(800);
+            await c.ev(favPick(label)); await c.sleep(500);
+            await c.ev(favPick(label)); await c.sleep(400);   // a roda pode pedir o segundo toque (centralizar, depois confirmar)
+            await c.ev(`(function(){ var x=document.querySelector('.bf-studio-picker-backdrop .bf-studio-picker-modal-close'); if(x) x.click(); })()`); await c.sleep(300);
+          }
+          await c.sleep(4800);   // a barra de cima some
+          await c.shoot('stage-fav', '.bf-stage');
+          await p2Lay(0);
+        }
+      } else console.log('  ! botao do PALCO ESPECIAL ausente');
       await c.key('Escape'); await c.sleep(600);
+    } },
+  // EDITAR O FOOTSWITCH NO PALCO (13/out/2026): segurar o ícone abre o card
+  // do SW ao lado do palco. O botão direito do mouse (contextmenu) faz o mesmo
+  // e não depende do tempo de segurar. O painel mora num portal fora do
+  // .bf-stage, então o print é da tela inteira.
+  { name: 'PALCO · EDITAR FOOTSWITCH', ids: ['stage-swedit'],
+    async run(c) {
+      await c.scenario('default');
+      await c.open('desk');
+      await c.H(`wait('.bf-np-shortcut.is-accent', 12000)`); await c.sleep(600);
+      if (!await c.H(`click('.bf-np-shortcut.is-accent')`)) { console.log('  ! atalho MODO PALCO ausente (use --editor com o build dos apps)'); return; }
+      await c.H(`wait('.bf-stage-frame.is-p1 .bf-stage-sw', 8000)`); await c.sleep(1500);
+      await c.ev(`(function(){ var b=document.querySelector('.bf-stage-sw'); if(!b) return false;
+        var r=b.getBoundingClientRect(); b.dispatchEvent(new MouseEvent('contextmenu', { bubbles: true, cancelable: true,
+          clientX: r.left + r.width / 2, clientY: r.top + r.height / 2, button: 2 })); return true; })()`);
+      if (!await c.H(`wait('.bf-stage-swdock', 5000)`)) { console.log('  ! painel do footswitch nao abriu'); await c.key('Escape'); return; }
+      await c.sleep(2200);
+      await c.shoot('stage-swedit', null, { full: true });
+      await c.key('Escape'); await c.sleep(500);
+      await c.key('Escape'); await c.sleep(500);
     } },
   { name: 'NANO CORTEX', ids: ['deved-nano', 'stage-2-nano'],
     async run(c) {
@@ -638,12 +737,9 @@ const STEPS = [
         await c.H(`click('.bf-stage-handle')`); await c.sleep(500);
         if (await c.H(`click('.bf-stage-top button[aria-haspopup="dialog"]')`)) {
           await c.H(`wait('.bf-stage-sheet', 4000)`); await c.sleep(900);
-          await c.H(`click('.bf-stage-sheet-tabs [role=tab]:nth-child(3)')`); await c.sleep(1200);
-          // rola até o grupo "Imagem do palco" (galeria + recorte)
-          await c.ev(`(function(){ var g=[...document.querySelectorAll('.bf-stage-set-group')].find(function(x){ return x.querySelector('.bf-stage-imgtile'); });
-            if (g) g.scrollIntoView({ block: 'start' }); return 1; })()`);
-          await c.sleep(800);
-          await c.shoot('stage-set-img', '.bf-stage-sheet');
+          // categoria IMAGENS (a 5ª do trilho): galeria + recorte
+          await c.H(`click('.bf-stage-rail [role=tab]:nth-child(5)')`); await c.sleep(1400);
+          await c.shoot('stage-set-img', '.bf-stage');
           // escolhe uma imagem da galeria e mostra o palco com ela
           const ok = await c.ev(`(function(){ var t=[...document.querySelectorAll('.bf-stage-imgtile')].find(function(x){ return (x.innerText||'').trim() === 'Holofotes'; }); var b = t && (t.querySelector('button') || t); if(b){ b.click(); return true;} return false; })()`);
           await c.sleep(900);
@@ -694,7 +790,7 @@ const STEPS = [
       await c.shoot('phone-live', null, { full: true, kind: 'phone' });
       await goPreset(c);
     } },
-  { name: 'KEMPER PLAYER', ids: ['ked', 'stage-kemper', 'cfg-kemper'],
+  { name: 'KEMPER PLAYER', ids: ['ked', 'stage-kemper', 'cfg-kemper', 'cfg-afinador'],
     async run(c) {
       await c.scenario('kemper');
       await c.mockGlobal('match_mode=0&match_channel_0=9&kemper_get_names=1');
@@ -717,16 +813,25 @@ const STEPS = [
         await c.shoot('stage-kemper', '.bf-stage');
         await c.key('Escape'); await c.sleep(500);
       }
+      // MODO AMIGÁVEL com o Kemper no canal: aba AFINADOR (opções do
+      // afinador) e aba AVANÇADO (o card exclusivo do Kemper)
       if (await settingsOpen(c, 'MODO AMIGÁVEL')) {
         await c.sleep(900);
-        const card = await c.H(`markCard('KEMPER', 'kemper')`);
-        if (card) await c.shoot('cfg-kemper', card, { tall: true, pad: 0 });
+        if (!ONLY.length || ONLY.includes('cfg-afinador')) {
+          if (await settingsTab(c, 'AFINADOR')) await c.shoot('cfg-afinador', '.bf-content', { children: true, tall: true, pad: 14 });
+          else console.log('  ! aba AFINADOR ausente');
+        }
+        if (await settingsTab(c, 'AVANÇADO')) {
+          const card = await c.H(`markCard('KEMPER', 'kemper')`);
+          if (card) await c.shoot('cfg-kemper', card, { tall: true, pad: 0 });
+          else console.log('  ! card KEMPER ausente na aba AVANÇADO');
+        } else console.log('  ! aba AVANÇADO ausente');
       }
       await c.mockGlobal('match_mode=6&match_channel_0=6');
       await c.mockSet('pedal_name=');
       await c.setSwNums('A1', { 1: 50, 2: 55, 3: 56, 4: 57, 5: 49, 6: 48 });
     } },
-  { name: 'CONFIGURAÇÕES', ids: ['cfg-menu', 'cfg-exp', 'cfg-swglobal', 'cfg-atualizar-host', 'cfg-imagens-galeria', ...SETTINGS.map((s) => s[1])],
+  { name: 'CONFIGURAÇÕES', ids: ['cfg-menu', 'cfg-atualizar-host', ...SETTINGS.map((s) => s[1]), ...SETTINGS_CARDS.map((s) => s[3])],
     async run(c) {
       await c.scenario('default');
       await c.open('desk');
@@ -735,35 +840,31 @@ const STEPS = [
       await c.H(`wait('.bf-settings-popup', 4000)`); await c.sleep(500);
       await c.shoot('cfg-menu', '.bf-settings-popup');
       await c.H(`click('.bf-settings-close')`); await c.sleep(300);
-      for (const [name, id] of SETTINGS) {
-        if (ONLY.length && !ONLY.includes(id)) continue;
+      for (const [name, id, tab] of SETTINGS) {
+        if (ONLY.length && !ONLY.includes(id) && !(id === 'cfg-atualizar' && ONLY.includes('cfg-atualizar-host'))) continue;
         if (!await settingsOpen(c, name)) { console.log('  ! opcao ausente: ' + name); continue; }
         await c.sleep(900);
+        if (!await settingsTab(c, tab)) { console.log('  ! aba ausente: ' + name + ' › ' + tab); continue; }
         await c.shoot(id, '.bf-content', { children: true, tall: true, pad: 14 });
-        if (id === 'cfg-footswitches') {
-          for (const [title, sid] of [['EXPRESSÃO EXTERNA', 'cfg-exp'], ['SW GLOBAL', 'cfg-swglobal']]) {
-            if (ONLY.length && !ONLY.includes(sid)) continue;
-            const card = await c.H(`markCard(${JSON.stringify(title)}, ${JSON.stringify(sid)})`);
-            if (card && await c.H(`clickIn(${JSON.stringify(card)}, 'button, [role=button]', 'EDITAR')`)) {
-              await c.sleep(900);
-              await c.shoot(sid, card, { tall: true });
-            } else console.log('  ! ' + sid + ' sem EDITAR');
-            await settingsOpen(c, name); await c.sleep(700);
-          }
-        }
-        if (id === 'cfg-imagens' && (!ONLY.length || ONLY.includes('cfg-imagens-galeria'))) {
-          // o tile abre a galeria ali mesmo, no card
-          if (await c.H(`clickIn('.bf-content', '.bfg-media-tile', 'FUNDO')`)) {
-            await c.sleep(1500);
-            await c.shoot('cfg-imagens-galeria', '.bf-content', { children: true, tall: true, pad: 14 });
-          } else console.log('  ! botao FUNDO nao achado');
-        }
         if (id === 'cfg-atualizar' && (!ONLY.length || ONLY.includes('cfg-atualizar-host'))) {
           if (await c.H(`click('.bf-updx-tab', 'USB HOST')`) || await c.H(`click('.bf-updx-tab:nth-child(2)')`)) {
             await c.sleep(1500);
             await c.shoot('cfg-atualizar-host', '.bf-content', { children: true, tall: true, pad: 14 });
           }
         }
+      }
+      // cards abertos pelo EDITAR (só os que algum card do manual usa)
+      for (const [name, tab, title, id] of SETTINGS_CARDS) {
+        if (ONLY.length && !ONLY.includes(id)) continue;
+        if (!USED.has(id) && !argv.includes('--all')) continue;
+        if (!await settingsOpen(c, name)) { console.log('  ! opcao ausente: ' + name); continue; }
+        await c.sleep(700);
+        if (!await settingsTab(c, tab)) { console.log('  ! aba ausente: ' + name + ' › ' + tab); continue; }
+        const card = await c.H(`markCard(${JSON.stringify(title)}, ${JSON.stringify(id)})`);
+        if (card && await c.H(`clickIn(${JSON.stringify(card)}, 'button, [role=button]', 'EDITAR')`)) {
+          await c.sleep(900);
+          await c.shoot(id, card, { tall: true });
+        } else console.log('  ! ' + id + ' sem EDITAR');
       }
     } },
 ];

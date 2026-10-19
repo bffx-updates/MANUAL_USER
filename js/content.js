@@ -1,4 +1,4 @@
-/* BFMiDi · Manual do Usuário — conteúdo (v14.5)
+/* BFMiDi · Manual do Usuário — conteúdo (v15.0)
    ------------------------------------------------------------------
    Escrito PARA a versão atual: descreve a controladora como ela é hoje,
    sem comparar com versões anteriores.
@@ -37,9 +37,9 @@ const MN_CONTENT = {
   "es": "Manual del Usuario"
  },
  "tagline": {
-  "pt": "Tudo o que você precisa para configurar e tocar com a sua controladora BFMiDi (versão 14.5) — do primeiro acesso ao editor até os footswitches, o Modo Palco e os editores de preset da Valeton GP-5, IK TONEX ONE, Neural DSP Nano Cortex e Kemper Player. Os prints deste manual são da tela real do editor; os números neles casam com a lista de campos logo abaixo.",
-  "en": "Everything you need to set up and play with your BFMiDi controller (version 14.5) — from first access to the editor through the footswitches, Stage Mode and the preset editors for the Valeton GP-5, IK TONEX ONE, Neural DSP Nano Cortex and Kemper Player. The screenshots in this manual are the editor's real screen; their numbers match the field list right below.",
-  "es": "Todo lo que necesitas para configurar y tocar con tu controladora BFMiDi (versión 14.5) — desde el primer acceso al editor hasta los footswitches, el Modo Escenario y los editores de preset de la Valeton GP-5, IK TONEX ONE, Neural DSP Nano Cortex y Kemper Player. Las capturas de este manual son la pantalla real del editor; sus números coinciden con la lista de campos justo abajo."
+  "pt": "Tudo o que você precisa para configurar e tocar com a sua controladora BFMiDi (versão 15.0) — do primeiro acesso ao editor até os footswitches, o Modo Palco e os editores de preset da Valeton GP-5 e GP-50, IK TONEX ONE, Neural DSP Nano Cortex e Kemper Player. Os prints deste manual são da tela real do editor; os números neles casam com a lista de campos logo abaixo.",
+  "en": "Everything you need to set up and play with your BFMiDi controller (version 15.0) — from first access to the editor through the footswitches, Stage Mode and the preset editors for the Valeton GP-5 and GP-50, IK TONEX ONE, Neural DSP Nano Cortex and Kemper Player. The screenshots in this manual are the editor's real screen; their numbers match the field list right below.",
+  "es": "Todo lo que necesitas para configurar y tocar con tu controladora BFMiDi (versión 15.0) — desde el primer acceso al editor hasta los footswitches, el Modo Escenario y los editores de preset de la Valeton GP-5 y GP-50, IK TONEX ONE, Neural DSP Nano Cortex y Kemper Player. Las capturas de este manual son la pantalla real del editor; sus números coinciden con la lista de campos justo abajo."
  },
  "sections": [
   {
@@ -91,9 +91,9 @@ const MN_CONTENT = {
        "es": "<strong>iPhone, iPad</strong> (iOS/iPadOS 17+) <strong>y Mac</strong> (macOS 14+): <a href=\"https://apps.apple.com/br/app/bfmidi-editor/id6810756556\" target=\"_blank\" rel=\"noopener\">BFMiDi Editor en la App Store</a>."
       },
       {
-       "pt": "<strong>Windows 10 e 11</strong> (64 bits): baixe o instalador na <a href=\"https://bffx-updates.github.io/Download_Apps/\" target=\"_blank\" rel=\"noopener\">página de downloads</a>.",
-       "en": "<strong>Windows 10 and 11</strong> (64-bit): download the installer from the <a href=\"https://bffx-updates.github.io/Download_Apps/\" target=\"_blank\" rel=\"noopener\">downloads page</a>.",
-       "es": "<strong>Windows 10 y 11</strong> (64 bits): descarga el instalador en la <a href=\"https://bffx-updates.github.io/Download_Apps/\" target=\"_blank\" rel=\"noopener\">página de descargas</a>."
+       "pt": "<strong>Windows 10 e 11</strong> (64 bits): <a href=\"https://apps.microsoft.com/detail/9N261RXBPLBM\" target=\"_blank\" rel=\"noopener\">BFMIDI Editor na Microsoft Store</a>. Quem prefere instalar sem a loja encontra o instalador na <a href=\"https://bffx-updates.github.io/Download_Apps/\" target=\"_blank\" rel=\"noopener\">página de downloads</a>.",
+       "en": "<strong>Windows 10 and 11</strong> (64-bit): <a href=\"https://apps.microsoft.com/detail/9N261RXBPLBM\" target=\"_blank\" rel=\"noopener\">BFMIDI Editor on the Microsoft Store</a>. If you'd rather install without the store, the installer is on the <a href=\"https://bffx-updates.github.io/Download_Apps/\" target=\"_blank\" rel=\"noopener\">downloads page</a>.",
+       "es": "<strong>Windows 10 y 11</strong> (64 bits): <a href=\"https://apps.microsoft.com/detail/9N261RXBPLBM\" target=\"_blank\" rel=\"noopener\">BFMIDI Editor en Microsoft Store</a>. Si prefieres instalar sin la tienda, el instalador está en la <a href=\"https://bffx-updates.github.io/Download_Apps/\" target=\"_blank\" rel=\"noopener\">página de descargas</a>."
       },
       {
        "pt": "Abra o aplicativo. Ele mostra o editor na hora e, em paralelo, procura a controladora na sua rede e na rede dela. Achou, conecta sozinho.",
@@ -166,9 +166,9 @@ const MN_CONTENT = {
         "es": "mantenimiento"
        },
        "desc": {
-        "pt": "<p>Android, iPhone, iPad e Mac atualizam pela própria loja. No Windows, baixe o instalador novo na página de downloads e instale por cima — nada se perde.</p><p>O <em>firmware</em> da controladora é outra coisa: ele se atualiza em <strong>CONFIGURAÇÕES › ATUALIZAR</strong>.</p>",
-        "en": "<p>Android, iPhone, iPad and Mac update through their own store. On Windows, download the new installer from the downloads page and install it over the old one — nothing is lost.</p><p>The controller's <em>firmware</em> is a different thing: it's updated in <strong>SETTINGS › UPDATES</strong>.</p>",
-        "es": "<p>Android, iPhone, iPad y Mac se actualizan por su propia tienda. En Windows, descarga el instalador nuevo en la página de descargas e instálalo encima — no se pierde nada.</p><p>El <em>firmware</em> de la controladora es otra cosa: se actualiza en <strong>CONFIGURACIÓN › ACTUALIZAR</strong>.</p>"
+        "pt": "<p>Os aplicativos instalados pela loja (Google Play, App Store e Microsoft Store) se atualizam por ela. Se você instalou no Windows pelo instalador da página de downloads, baixe o instalador novo e instale por cima — nada se perde. Pela Microsoft Store o Windows também deixa de mostrar o aviso “O Windows protegeu o seu PC”.</p><p>O <em>firmware</em> da controladora é outra coisa: ele se atualiza em <strong>CONFIGURAÇÕES › ATUALIZAR</strong>.</p>",
+        "en": "<p>Apps installed from a store (Google Play, App Store and Microsoft Store) are updated by it. If you installed on Windows with the installer from the downloads page, download the new installer and install it over the old one — nothing is lost. With the Microsoft Store, Windows also stops showing the “Windows protected your PC” warning.</p><p>The controller's <em>firmware</em> is a different thing: it's updated in <strong>SETTINGS › UPDATES</strong>.</p>",
+        "es": "<p>Las aplicaciones instaladas desde una tienda (Google Play, App Store y Microsoft Store) se actualizan por ella. Si instalaste en Windows con el instalador de la página de descargas, baja el instalador nuevo e instálalo encima — no se pierde nada. Con Microsoft Store, Windows además deja de mostrar el aviso “Windows protegió tu PC”.</p><p>El <em>firmware</em> de la controladora es otra cosa: se actualiza en <strong>CONFIGURACIÓN › ACTUALIZAR</strong>.</p>"
        }
       }
      ],
@@ -348,6 +348,23 @@ const MN_CONTENT = {
         "en": "<p>Closed it by accident? Tap the first button on the bottom bar (the connection indicator): it opens this window again.</p>",
         "es": "<p>¿La cerraste sin querer? Toca el primer botón de la barra inferior (el indicador de conexión): vuelve a abrir esta ventana.</p>"
        }
+      },
+      {
+       "name": {
+        "pt": "Trocar de conexão",
+        "en": "Switching connection",
+        "es": "Cambiar de conexión"
+       },
+       "type": {
+        "pt": "atalho",
+        "en": "shortcut",
+        "es": "atajo"
+       },
+       "desc": {
+        "pt": "<p>A janela também abre com o editor já conectado — inclusive pelo cabo USB. Ela marca o caminho em uso, e tocar em outro troca: escolher WI-FI ou OFFLINE com o cabo conectado solta o cabo antes.</p>",
+        "en": "<p>The window also opens with the editor already connected — including over the USB cable. It highlights the path in use, and tapping another one switches: choosing WI-FI or OFFLINE while the cable is connected releases the cable first.</p>",
+        "es": "<p>La ventana también se abre con el editor ya conectado — incluso por el cable USB. Marca el camino en uso, y tocar otro lo cambia: elegir WI-FI u OFFLINE con el cable conectado suelta el cable antes.</p>"
+       }
       }
      ],
      "notes": [
@@ -456,9 +473,9 @@ const MN_CONTENT = {
         "es": "opcional"
        },
        "desc": {
-        "pt": "<p>Em <strong>CONFIGURAÇÕES › WIFI</strong>, toque em <strong>BUSCAR</strong>, escolha a rede, digite a senha e <strong>CONECTAR</strong>. A partir daí o pedal fica alcançável em <code>http://bfmidi.local</code> de qualquer aparelho da casa, e você não perde a internet enquanto edita.</p><p>Só redes de <strong>2,4 GHz</strong> aparecem: é limitação do chip.</p>",
-        "en": "<p>In <strong>SETTINGS › WIFI</strong>, tap <strong>SCAN</strong>, choose the network, type the password and tap <strong>CONNECT</strong>. From then on the pedal can be reached at <code>http://bfmidi.local</code> from any device in the house, and you keep your internet while you edit.</p><p>Only <strong>2.4 GHz</strong> networks show up: it's a limitation of the chip.</p>",
-        "es": "<p>En <strong>CONFIGURACIÓN › WIFI</strong>, toca <strong>BUSCAR</strong>, elige la red, escribe la contraseña y toca <strong>CONECTAR</strong>. A partir de ahí el pedal queda accesible en <code>http://bfmidi.local</code> desde cualquier dispositivo de la casa, y no pierdes internet mientras editas.</p><p>Solo aparecen redes de <strong>2,4 GHz</strong>: es una limitación del chip.</p>"
+        "pt": "<p>Em <strong>CONFIGURAÇÕES › WIFI</strong>, aba <strong>CONECTAR</strong>, toque em <strong>BUSCAR</strong>; na aba <strong>REDES</strong>, toque na sua rede (o editor volta para CONECTAR com o nome preenchido), digite a senha e toque em <strong>CONECTAR</strong>. A partir daí o pedal fica alcançável em <code>http://bfmidi.local</code> de qualquer aparelho da casa, e você não perde a internet enquanto edita.</p><p>Só redes de <strong>2,4 GHz</strong> aparecem: é limitação do chip.</p>",
+        "en": "<p>In <strong>SETTINGS › WIFI</strong>, on the <strong>CONNECT</strong> tab, tap <strong>SCAN</strong>; on the <strong>NETWORKS</strong> tab, tap your network (the editor goes back to CONNECT with the name filled in), type the password and tap <strong>CONNECT</strong>. From then on the pedal can be reached at <code>http://bfmidi.local</code> from any device in the house, and you keep your internet while you edit.</p><p>Only <strong>2.4 GHz</strong> networks show up: it's a limitation of the chip.</p>",
+        "es": "<p>En <strong>CONFIGURACIÓN › WIFI</strong>, pestaña <strong>CONECTAR</strong>, toca <strong>BUSCAR</strong>; en la pestaña <strong>REDES</strong>, toca tu red (el editor vuelve a CONECTAR con el nombre ya escrito), escribe la contraseña y toca <strong>CONECTAR</strong>. A partir de ahí el pedal queda accesible en <code>http://bfmidi.local</code> desde cualquier dispositivo de la casa, y no pierdes internet mientras editas.</p><p>Solo aparecen redes de <strong>2,4 GHz</strong>: es una limitación del chip.</p>"
        }
       },
       {
@@ -473,9 +490,9 @@ const MN_CONTENT = {
         "es": "ayuda"
        },
        "desc": {
-        "pt": "<p>Sem ninguém conectado, o rádio desliga depois de <span class=\"range\">90 segundos</span>. Para trazer de volta: desligue e ligue a controladora, ou use um <strong>combo</strong> de footswitches configurado com <strong>LIGAR/DESLIGAR WI-FI</strong> (em CONFIGURAÇÕES › BANCOS). Ao ligar pelo combo, a tela do pedal mostra a rede, a senha e o endereço por alguns segundos.</p>",
-        "en": "<p>With nobody connected, the radio turns off after <span class=\"range\">90 seconds</span>. To bring it back: turn the controller off and on again, or use a footswitch <strong>combo</strong> set to <strong>WI-FI ON/OFF</strong> (in SETTINGS › BANKS). When you turn it on with the combo, the pedal's display shows the network, the password and the address for a few seconds.</p>",
-        "es": "<p>Sin nadie conectado, la radio se apaga después de <span class=\"range\">90 segundos</span>. Para recuperarla: apaga y enciende la controladora, o usa un <strong>combo</strong> de footswitches configurado con <strong>ENCENDER/APAGAR WI-FI</strong> (en CONFIGURACIÓN › BANCOS). Al encenderlo con el combo, la pantalla del pedal muestra la red, la contraseña y la dirección durante unos segundos.</p>"
+        "pt": "<p>Sem ninguém conectado, o rádio desliga depois de <span class=\"range\">90 segundos</span>. Para trazer de volta: desligue e ligue a controladora, ou use um <strong>combo</strong> de footswitches configurado com <strong>LIGAR/DESLIGAR WI-FI</strong> (em CONFIGURAÇÕES › BANCOS › COMBOS). Ao ligar pelo combo, a tela do pedal mostra a rede, a senha e o endereço por alguns segundos.</p>",
+        "en": "<p>With nobody connected, the radio turns off after <span class=\"range\">90 seconds</span>. To bring it back: turn the controller off and on again, or use a footswitch <strong>combo</strong> set to <strong>WI-FI ON/OFF</strong> (in SETTINGS › BANKS › COMBOS). When you turn it on with the combo, the pedal's display shows the network, the password and the address for a few seconds.</p>",
+        "es": "<p>Sin nadie conectado, la radio se apaga después de <span class=\"range\">90 segundos</span>. Para recuperarla: apaga y enciende la controladora, o usa un <strong>combo</strong> de footswitches configurado con <strong>ENCENDER/APAGAR WI-FI</strong> (en CONFIGURACIÓN › BANCOS › COMBOS). Al encenderlo con el combo, la pantalla del pedal muestra la red, la contraseña y la dirección durante unos segundos.</p>"
        }
       },
       {
@@ -518,9 +535,9 @@ const MN_CONTENT = {
      },
      "howto": [
       {
-       "pt": "Use o <strong>aplicativo de Mac ou de Windows</strong>, ou abra o <a href=\"https://bffx-updates.github.io/Editor_BFMiDi_v14/\" target=\"_blank\" rel=\"noopener\">editor online</a> no <strong>Chrome</strong> ou no <strong>Edge</strong>.",
-       "en": "Use the <strong>Mac or Windows app</strong>, or open the <a href=\"https://bffx-updates.github.io/Editor_BFMiDi_v14/\" target=\"_blank\" rel=\"noopener\">online editor</a> in <strong>Chrome</strong> or <strong>Edge</strong>.",
-       "es": "Usa la <strong>aplicación de Mac o de Windows</strong>, o abre el <a href=\"https://bffx-updates.github.io/Editor_BFMiDi_v14/\" target=\"_blank\" rel=\"noopener\">editor online</a> en <strong>Chrome</strong> o en <strong>Edge</strong>."
+       "pt": "Use o <strong>aplicativo de Mac ou de Windows</strong>, ou abra o <a href=\"https://bffx-updates.github.io/Editor_BFMiDi_v15/\" target=\"_blank\" rel=\"noopener\">editor online</a> no <strong>Chrome</strong> ou no <strong>Edge</strong>.",
+       "en": "Use the <strong>Mac or Windows app</strong>, or open the <a href=\"https://bffx-updates.github.io/Editor_BFMiDi_v15/\" target=\"_blank\" rel=\"noopener\">online editor</a> in <strong>Chrome</strong> or <strong>Edge</strong>.",
+       "es": "Usa la <strong>aplicación de Mac o de Windows</strong>, o abre el <a href=\"https://bffx-updates.github.io/Editor_BFMiDi_v15/\" target=\"_blank\" rel=\"noopener\">editor online</a> en <strong>Chrome</strong> o en <strong>Edge</strong>."
       },
       {
        "pt": "Ligue o cabo USB na porta <strong>DEVICE</strong> da controladora.",
@@ -564,9 +581,9 @@ const MN_CONTENT = {
         "es": "dirección"
        },
        "desc": {
-        "pt": "<p>O endereço <code>https://bffx-updates.github.io/Editor_BFMiDi_v14/</code> funciona <strong>só pelo cabo</strong>: por ser um site seguro (https), o navegador não deixa ele falar com o Wi-Fi local do pedal.</p>",
-        "en": "<p>The address <code>https://bffx-updates.github.io/Editor_BFMiDi_v14/</code> works <strong>over the cable only</strong>: because it's a secure site (https), the browser won't let it talk to the pedal over the local Wi-Fi.</p>",
-        "es": "<p>La dirección <code>https://bffx-updates.github.io/Editor_BFMiDi_v14/</code> funciona <strong>solo por cable</strong>: como es un sitio seguro (https), el navegador no lo deja hablar con el pedal por el Wi-Fi local.</p>"
+        "pt": "<p>O endereço <code>https://bffx-updates.github.io/Editor_BFMiDi_v15/</code> funciona <strong>só pelo cabo</strong>: por ser um site seguro (https), o navegador não deixa ele falar com o Wi-Fi local do pedal.</p>",
+        "en": "<p>The address <code>https://bffx-updates.github.io/Editor_BFMiDi_v15/</code> works <strong>over the cable only</strong>: because it's a secure site (https), the browser won't let it talk to the pedal over the local Wi-Fi.</p>",
+        "es": "<p>La dirección <code>https://bffx-updates.github.io/Editor_BFMiDi_v15/</code> funciona <strong>solo por cable</strong>: como es un sitio seguro (https), el navegador no lo deja hablar con el pedal por el Wi-Fi local.</p>"
        }
       },
       {
@@ -689,9 +706,9 @@ const MN_CONTENT = {
         "es": "mantenimiento"
        },
        "desc": {
-        "pt": "<p>Em <strong>CONFIGURAÇÕES › RESTAURAR</strong>, o card <strong>MODO OFFLINE</strong> tem o botão <strong>ZERAR CÓPIA LOCAL</strong>: volta a cópia ao pacote de fábrica. A controladora não é tocada.</p>",
-        "en": "<p>In <strong>SETTINGS › FACTORY RESET</strong>, the <strong>OFFLINE MODE</strong> card has the <strong>RESET LOCAL COPY</strong> button: it takes the copy back to the factory pack. The controller isn't touched.</p>",
-        "es": "<p>En <strong>CONFIGURACIÓN › RESTAURAR</strong>, la tarjeta <strong>MODO OFFLINE</strong> tiene el botón <strong>REINICIAR COPIA LOCAL</strong>: devuelve la copia al paquete de fábrica. La controladora no se toca.</p>"
+        "pt": "<p>Em <strong>CONFIGURAÇÕES › RESTAURAR › VIRTUAL</strong> (aba que só aparece no modo offline), o card <strong>MODO OFFLINE</strong> tem o botão <strong>ZERAR CÓPIA LOCAL</strong>: volta a cópia ao pacote de fábrica. A controladora não é tocada.</p>",
+        "en": "<p>In <strong>SETTINGS › FACTORY RESET › VIRTUAL</strong> (a tab that only shows up in offline mode), the <strong>OFFLINE MODE</strong> card has the <strong>RESET LOCAL COPY</strong> button: it takes the copy back to the factory pack. The controller isn't touched.</p>",
+        "es": "<p>En <strong>CONFIGURACIÓN › RESTAURAR › VIRTUAL</strong> (pestaña que solo aparece en el modo offline), la tarjeta <strong>MODO OFFLINE</strong> tiene el botón <strong>REINICIAR COPIA LOCAL</strong>: devuelve la copia al paquete de fábrica. La controladora no se toca.</p>"
        }
       }
      ],
@@ -739,9 +756,9 @@ const MN_CONTENT = {
      },
      "howto": [
       {
-       "pt": "<strong>Confira o modelo</strong> em <strong>CONFIGURAÇÕES › HARDWARE</strong>. Ele tem que ser o que está escrito na sua controladora.",
-       "en": "<strong>Check the model</strong> in <strong>SETTINGS › HARDWARE</strong>. It must match what's written on your controller.",
-       "es": "<strong>Revisa el modelo</strong> en <strong>CONFIGURACIÓN › HARDWARE</strong>. Tiene que ser el que está escrito en tu controladora."
+       "pt": "<strong>Confira o modelo</strong> em <strong>CONFIGURAÇÕES › HARDWARE › MODELO</strong>. Ele tem que ser o que está escrito na sua controladora.",
+       "en": "<strong>Check the model</strong> in <strong>SETTINGS › HARDWARE › MODEL</strong>. It must match what's written on your controller.",
+       "es": "<strong>Revisa el modelo</strong> en <strong>CONFIGURACIÓN › HARDWARE › MODELO</strong>. Tiene que ser el que está escrito en tu controladora."
       },
       {
        "pt": "<strong>Diga qual é o seu aparelho</strong> em <strong>CONFIGURAÇÕES › MODO AMIGÁVEL</strong>: a partir daí os comandos aparecem pelo nome (“Delay”, “Reverb”) em vez de números.",
@@ -795,9 +812,9 @@ const MN_CONTENT = {
         "es": "predeterminado"
        },
        "desc": {
-        "pt": "<p>O editor grava sozinho menos de um segundo depois de cada alteração. O botão de salvar, à direita da barra de baixo, muda de cor para mostrar o estado. Se preferir salvar na mão, desligue em <strong>CONFIGURAÇÕES › EDITOR</strong>.</p>",
-        "en": "<p>The editor saves by itself less than a second after each change. The save button, on the right of the bottom bar, changes color to show the status. If you'd rather save manually, turn it off in <strong>SETTINGS › EDITOR</strong>.</p>",
-        "es": "<p>El editor guarda solo menos de un segundo después de cada cambio. El botón de guardar, a la derecha de la barra inferior, cambia de color para mostrar el estado. Si prefieres guardar a mano, desactívalo en <strong>CONFIGURACIÓN › EDITOR</strong>.</p>"
+        "pt": "<p>O editor grava sozinho menos de um segundo depois de cada alteração. O botão de salvar, à direita da barra de baixo, muda de cor para mostrar o estado. Se preferir salvar na mão, desligue em <strong>CONFIGURAÇÕES › EDITOR › GERAL</strong>.</p>",
+        "en": "<p>The editor saves by itself less than a second after each change. The save button, on the right of the bottom bar, changes color to show the status. If you'd rather save manually, turn it off in <strong>SETTINGS › EDITOR › GENERAL</strong>.</p>",
+        "es": "<p>El editor guarda solo menos de un segundo después de cada cambio. El botón de guardar, a la derecha de la barra inferior, cambia de color para mostrar el estado. Si prefieres guardar a mano, desactívalo en <strong>CONFIGURACIÓN › EDITOR › GENERAL</strong>.</p>"
        }
       },
       {
@@ -1002,9 +1019,9 @@ const MN_CONTENT = {
         "es": "atención"
        },
        "desc": {
-        "pt": "<p>De fábrica, pisar outra vez no footswitch do preset que <em>já está tocando</em> sobe um banco (A1 → B1). É o <strong>RECLICK</strong>, configurável em <strong>CONFIGURAÇÕES › BANCOS › CHAMADA DE PRESETS</strong>. E segurar o footswitch do preset ativo entra no modo LIVE.</p>",
-        "en": "<p>By default, stepping again on the footswitch of the preset that's <em>already playing</em> moves up one bank (A1 → B1). That's <strong>RECLICK</strong>, configurable in <strong>SETTINGS › BANKS › PRESET CALL</strong>. And holding the active preset's footswitch enters LIVE mode.</p>",
-        "es": "<p>De fábrica, pisar otra vez el footswitch del preset que <em>ya está sonando</em> sube un banco (A1 → B1). Es el <strong>RECLICK</strong>, configurable en <strong>CONFIGURACIÓN › BANCOS › LLAMADA DE PRESETS</strong>. Y mantener pisado el footswitch del preset activo entra en el modo LIVE.</p>"
+        "pt": "<p>De fábrica, pisar outra vez no footswitch do preset que <em>já está tocando</em> sobe um banco (A1 → B1). É o <strong>PISAR DE NOVO</strong>, configurável em <strong>CONFIGURAÇÕES › BANCOS › CHAMADA</strong>. E segurar o footswitch do preset ativo entra no modo LIVE.</p>",
+        "en": "<p>By default, stepping again on the footswitch of the preset that's <em>already playing</em> moves up one bank (A1 → B1). That's <strong>PRESS AGAIN</strong>, configurable in <strong>SETTINGS › BANKS › PRESET CALL</strong>. And holding the active preset's footswitch enters LIVE mode.</p>",
+        "es": "<p>De fábrica, pisar otra vez el footswitch del preset que <em>ya está sonando</em> sube un banco (A1 → B1). Es el <strong>PISAR DE NUEVO</strong>, configurable en <strong>CONFIGURACIÓN › BANCOS › LLAMADA</strong>. Y mantener pisado el footswitch del preset activo entra en el modo LIVE.</p>"
        }
       },
       {
@@ -1019,9 +1036,9 @@ const MN_CONTENT = {
         "es": "ayuda"
        },
        "desc": {
-        "pt": "<p>Confira nesta ordem: (1) o cabo vai da BFMiDi para a pedaleira (MIDI OUT → MIDI IN); (2) o canal do preset é o que a pedaleira escuta; (3) o PC existe na pedaleira.</p><p>Ainda nada? Use o <strong>DISPARO MIDI</strong> em <strong>CONFIGURAÇÕES › TESTES</strong>: ele manda um comando na hora e mostra se a pedaleira responde.</p>",
-        "en": "<p>Check in this order: (1) the cable goes from the BFMiDi to the effects unit (MIDI OUT → MIDI IN); (2) the preset's channel is the one the effects unit listens to; (3) the PC exists on the effects unit.</p><p>Still nothing? Use <strong>MIDI SEND</strong> in <strong>SETTINGS › TESTS</strong>: it sends a command right away and shows whether the effects unit responds.</p>",
-        "es": "<p>Revisa en este orden: (1) el cable va de la BFMiDi a la pedalera (MIDI OUT → MIDI IN); (2) el canal del preset es el que escucha la pedalera; (3) el PC existe en la pedalera.</p><p>¿Todavía nada? Usa el <strong>DISPARO MIDI</strong> en <strong>CONFIGURACIÓN › PRUEBAS</strong>: envía un comando al instante y muestra si la pedalera responde.</p>"
+        "pt": "<p>Confira nesta ordem: (1) o cabo vai da BFMiDi para a pedaleira (MIDI OUT → MIDI IN); (2) o canal do preset é o que a pedaleira escuta; (3) o PC existe na pedaleira.</p><p>Ainda nada? Use o <strong>DISPARO MIDI</strong> em <strong>CONFIGURAÇÕES › TESTES › DISPARO</strong>: ele manda um comando na hora e mostra se a pedaleira responde.</p>",
+        "en": "<p>Check in this order: (1) the cable goes from the BFMiDi to the effects unit (MIDI OUT → MIDI IN); (2) the preset's channel is the one the effects unit listens to; (3) the PC exists on the effects unit.</p><p>Still nothing? Use <strong>MIDI SEND</strong> in <strong>SETTINGS › TESTS › SEND</strong>: it sends a command right away and shows whether the effects unit responds.</p>",
+        "es": "<p>Revisa en este orden: (1) el cable va de la BFMiDi a la pedalera (MIDI OUT → MIDI IN); (2) el canal del preset es el que escucha la pedalera; (3) el PC existe en la pedalera.</p><p>¿Todavía nada? Usa el <strong>DISPARO MIDI</strong> en <strong>CONFIGURACIÓN › PRUEBAS › ENVÍO</strong>: envía un comando al instante y muestra si la pedalera responde.</p>"
        }
       }
      ],
@@ -1086,9 +1103,9 @@ const MN_CONTENT = {
         "es": "selección"
        },
        "desc": {
-        "pt": "<p>Escolha a família e a variante da sua BFMiDi. A família <strong>S3</strong> é a linha atual, com processador novo e mais memória para imagens e ícones: <strong>8SW+</strong>, <strong>NANO+</strong>, <strong>MICRO</strong> e <strong>6SW+</strong>.</p><p>No editor, o mesmo seletor fica em <strong>CONFIGURAÇÕES › HARDWARE</strong>, e ele só oferece os modelos do processador do pedal conectado.</p>",
-        "en": "<p>Choose your BFMiDi's family and variant. The <strong>S3</strong> family is the current line, with a new processor and more memory for images and icons: <strong>8SW+</strong>, <strong>NANO+</strong>, <strong>MICRO</strong> and <strong>6SW+</strong>.</p><p>In the editor, the same selector is in <strong>SETTINGS › HARDWARE</strong>, and it only offers the models for the processor of the connected pedal.</p>",
-        "es": "<p>Elige la familia y la variante de tu BFMiDi. La familia <strong>S3</strong> es la línea actual, con procesador nuevo y más memoria para imágenes e íconos: <strong>8SW+</strong>, <strong>NANO+</strong>, <strong>MICRO</strong> y <strong>6SW+</strong>.</p><p>En el editor, el mismo selector está en <strong>CONFIGURACIÓN › HARDWARE</strong>, y solo ofrece los modelos del procesador del pedal conectado.</p>"
+        "pt": "<p>Escolha a família e a variante da sua BFMiDi. A família <strong>S3</strong> é a linha atual, com processador novo e mais memória para imagens e ícones: <strong>8SW+</strong>, <strong>NANO+</strong>, <strong>MICRO</strong> e <strong>6SW+</strong>.</p><p>No editor, o mesmo seletor fica em <strong>CONFIGURAÇÕES › HARDWARE › MODELO</strong>, e ele só oferece os modelos do processador do pedal conectado.</p>",
+        "en": "<p>Choose your BFMiDi's family and variant. The <strong>S3</strong> family is the current line, with a new processor and more memory for images and icons: <strong>8SW+</strong>, <strong>NANO+</strong>, <strong>MICRO</strong> and <strong>6SW+</strong>.</p><p>In the editor, the same selector is in <strong>SETTINGS › HARDWARE › MODEL</strong>, and it only offers the models for the processor of the connected pedal.</p>",
+        "es": "<p>Elige la familia y la variante de tu BFMiDi. La familia <strong>S3</strong> es la línea actual, con procesador nuevo y más memoria para imágenes e íconos: <strong>8SW+</strong>, <strong>NANO+</strong>, <strong>MICRO</strong> y <strong>6SW+</strong>.</p><p>En el editor, el mismo selector está en <strong>CONFIGURACIÓN › HARDWARE › MODELO</strong>, y solo ofrece los modelos del procesador del pedal conectado.</p>"
        }
       },
       {
@@ -1154,9 +1171,9 @@ const MN_CONTENT = {
         "es": "puerto"
        },
        "desc": {
-        "pt": "<p>O inverso da DEVICE: aqui você pluga aparelhos <em>na</em> controladora — pedaleiras USB como a Valeton GP-5, a IK TONEX ONE e a Neural DSP Nano Cortex, teclados MIDI, outra BFMiDi.</p><p>Nas BFMIDI-3 e S3 ela reconhece sozinha o que foi plugado e ainda traz o <strong>Bluetooth</strong>. Configuração em <strong>CONFIGURAÇÕES › HOST</strong>.</p>",
-        "en": "<p>The opposite of DEVICE: here you plug devices <em>into</em> the controller — USB effects units like the Valeton GP-5, the IK TONEX ONE and the Neural DSP Nano Cortex, MIDI keyboards, another BFMiDi.</p><p>On the BFMIDI-3 and S3, it recognizes what was plugged in by itself and also includes <strong>Bluetooth</strong>. Setup in <strong>SETTINGS › HOST</strong>.</p>",
-        "es": "<p>Lo contrario de DEVICE: aquí conectas aparatos <em>a</em> la controladora — pedaleras USB como la Valeton GP-5, la IK TONEX ONE y la Neural DSP Nano Cortex, teclados MIDI, otra BFMiDi.</p><p>En las BFMIDI-3 y S3 reconoce sola lo que se conectó y además trae <strong>Bluetooth</strong>. Configuración en <strong>CONFIGURACIÓN › HOST</strong>.</p>"
+        "pt": "<p>O inverso da DEVICE: aqui você pluga aparelhos <em>na</em> controladora — pedaleiras USB como a Valeton GP-5, a IK TONEX ONE e a Neural DSP Nano Cortex, teclados MIDI, outra BFMiDi.</p><p>Nas BFMIDI-3 e S3 ela reconhece sozinha o que foi plugado e ainda traz o <strong>Bluetooth</strong>. Configuração em <strong>CONFIGURAÇÕES › HOST</strong> e <strong>CONFIGURAÇÕES › BLUETOOTH</strong>.</p>",
+        "en": "<p>The opposite of DEVICE: here you plug devices <em>into</em> the controller — USB effects units like the Valeton GP-5, the IK TONEX ONE and the Neural DSP Nano Cortex, MIDI keyboards, another BFMiDi.</p><p>On the BFMIDI-3 and S3, it recognizes what was plugged in by itself and also includes <strong>Bluetooth</strong>. Setup in <strong>SETTINGS › HOST</strong> and <strong>SETTINGS › BLUETOOTH</strong>.</p>",
+        "es": "<p>Lo contrario de DEVICE: aquí conectas aparatos <em>a</em> la controladora — pedaleras USB como la Valeton GP-5, la IK TONEX ONE y la Neural DSP Nano Cortex, teclados MIDI, otra BFMiDi.</p><p>En las BFMIDI-3 y S3 reconoce sola lo que se conectó y además trae <strong>Bluetooth</strong>. Configuración en <strong>CONFIGURACIÓN › HOST</strong> y <strong>CONFIGURACIÓN › BLUETOOTH</strong>.</p>"
        }
       },
       {
@@ -1188,9 +1205,9 @@ const MN_CONTENT = {
         "es": "puerto"
        },
        "desc": {
-        "pt": "<p>Nos modelos “+”. Entrada para um pedal de expressão (TRS): o movimento vira um CC contínuo. Configuração, calibração e faixa de saída em <strong>CONFIGURAÇÕES › FOOTSWITCHES</strong>.</p>",
-        "en": "<p>On the “+” models. Input for an expression pedal (TRS): the movement becomes a continuous CC. Setup, calibration and output range in <strong>SETTINGS › FOOTSWITCHES</strong>.</p>",
-        "es": "<p>En los modelos “+”. Entrada para un pedal de expresión (TRS): el movimiento se convierte en un CC continuo. Configuración, calibración y rango de salida en <strong>CONFIGURACIÓN › FOOTSWITCHES</strong>.</p>"
+        "pt": "<p>Nos modelos “+”. Entrada para um pedal de expressão (TRS): o movimento vira um CC contínuo. Configuração, calibração e faixa de saída em <strong>CONFIGURAÇÕES › FOOTSWITCHES › EXTERNOS</strong>.</p>",
+        "en": "<p>On the “+” models. Input for an expression pedal (TRS): the movement becomes a continuous CC. Setup, calibration and output range in <strong>SETTINGS › FOOTSWITCHES › EXTERNAL</strong>.</p>",
+        "es": "<p>En los modelos “+”. Entrada para un pedal de expresión (TRS): el movimiento se convierte en un CC continuo. Configuración, calibración y rango de salida en <strong>CONFIGURACIÓN › FOOTSWITCHES › EXTERNOS</strong>.</p>"
        }
       },
       {
@@ -1205,9 +1222,9 @@ const MN_CONTENT = {
         "es": "puerto"
        },
        "desc": {
-        "pt": "<p>Nos modelos “+”. Entrada para um pedal duplo (dois footswitches simples, sem LED). Cada botão ganha uma função própria em <strong>CONFIGURAÇÕES › FOOTSWITCHES</strong>, e pode ter um indicador na tela.</p>",
-        "en": "<p>On the “+” models. Input for a dual pedal (two simple footswitches, no LEDs). Each button gets its own function in <strong>SETTINGS › FOOTSWITCHES</strong>, and can have an indicator on the display.</p>",
-        "es": "<p>En los modelos “+”. Entrada para un pedal doble (dos footswitches simples, sin LED). Cada botón recibe su propia función en <strong>CONFIGURACIÓN › FOOTSWITCHES</strong>, y puede tener un indicador en la pantalla.</p>"
+        "pt": "<p>Nos modelos “+”. Entrada para um pedal duplo (dois footswitches simples, sem LED). Cada botão ganha uma função própria em <strong>CONFIGURAÇÕES › FOOTSWITCHES › EXTERNOS</strong>, e pode ter um indicador na tela.</p>",
+        "en": "<p>On the “+” models. Input for a dual pedal (two simple footswitches, no LEDs). Each button gets its own function in <strong>SETTINGS › FOOTSWITCHES › EXTERNAL</strong>, and can have an indicator on the display.</p>",
+        "es": "<p>En los modelos “+”. Entrada para un pedal doble (dos footswitches simples, sin LED). Cada botón recibe su propia función en <strong>CONFIGURACIÓN › FOOTSWITCHES › EXTERNOS</strong>, y puede tener un indicador en la pantalla.</p>"
        }
       },
       {
@@ -1412,9 +1429,9 @@ const MN_CONTENT = {
      ],
      "notes": [
       {
-       "pt": "Os prints deste manual são da tela real do editor na versão 14.5. Toque num print para vê-lo em tamanho real.",
-       "en": "The screenshots in this manual come from the real editor screen in version 14.5. Tap a screenshot to see it at full size.",
-       "es": "Las capturas de este manual son de la pantalla real del editor en la versión 14.5. Toca una captura para verla en tamaño real."
+       "pt": "Os prints deste manual são da tela real do editor na versão 15.0. Toque num print para vê-lo em tamanho real.",
+       "en": "The screenshots in this manual come from the real editor screen in version 15.0. Tap a screenshot to see it at full size.",
+       "es": "Las capturas de este manual son de la pantalla real del editor en la versión 15.0. Toca una captura para verla en tamaño real."
       }
      ]
     },
@@ -1488,9 +1505,9 @@ const MN_CONTENT = {
         "es": "botones redondos"
        },
        "desc": {
-        "pt": "<p><strong>CONFIG</strong> mostra o que o preset manda (PC, canal, extras) e os atalhos. <strong>DISPLAY</strong> troca o conteúdo do card pela prévia da tela do pedal; o botão <strong>CONFIGS</strong> embaixo da prévia abre a janela com posição do nome, layout, fonte e cores.</p>",
-        "en": "<p><strong>CONFIG</strong> shows what the preset sends (PC, channel, extras) and the shortcuts. <strong>DISPLAY</strong> replaces the card's content with the preview of the pedal screen; the <strong>SETTINGS</strong> button below the preview opens the window with the name position, layout, font and colors.</p>",
-        "es": "<p><strong>CONFIG</strong> muestra lo que envía el preset (PC, canal, extras) y los atajos. <strong>DISPLAY</strong> cambia el contenido de la tarjeta por la vista previa de la pantalla del pedal; el botón <strong>AJUSTES</strong> debajo de la vista previa abre la ventana con la posición del nombre, el layout, la fuente y los colores.</p>"
+        "pt": "<p><strong>CONFIG</strong> mostra o que o preset manda (PC, canal, extras) e os atalhos. <strong>DISPLAY</strong> troca o conteúdo do card pela prévia da tela do pedal; o botão <strong>CONFIGURAR DISPLAY</strong> embaixo da prévia abre a janela com layout, ícones, nome, fonte, cores e fundo.</p>",
+        "en": "<p><strong>CONFIG</strong> shows what the preset sends (PC, channel, extras) and the shortcuts. <strong>DISPLAY</strong> replaces the card's content with the preview of the pedal screen; the <strong>CONFIGURE DISPLAY</strong> button below the preview opens the window with the layout, icons, name, font, colors and background.</p>",
+        "es": "<p><strong>CONFIG</strong> muestra lo que envía el preset (PC, canal, extras) y los atajos. <strong>DISPLAY</strong> cambia el contenido de la tarjeta por la vista previa de la pantalla del pedal; el botón <strong>CONFIGURAR PANTALLA</strong> debajo de la vista previa abre la ventana con el layout, los íconos, el nombre, la fuente, los colores y el fondo.</p>"
        }
       },
       {
@@ -1842,9 +1859,9 @@ const MN_CONTENT = {
         "es": "selección"
        },
        "desc": {
-        "pt": "<p>O canal MIDI do aparelho que recebe o PC. O nome do aparelho aparece ao lado do número quando o canal está no Modo Amigável. <strong>OFF</strong> = o preset não manda PC.</p>",
-        "en": "<p>The MIDI channel of the device that receives the PC. The device name appears next to the number when the channel is set up in Friendly Mode. <strong>OFF</strong> = the preset doesn't send a PC.</p>",
-        "es": "<p>El canal MIDI del equipo que recibe el PC. El nombre del equipo aparece junto al número cuando el canal está en el Modo Amigable. <strong>OFF</strong> = el preset no envía PC.</p>"
+        "pt": "<p>O canal MIDI do aparelho que recebe o PC: o campo mostra o número, ou o nome do aparelho quando o canal está no Modo Amigável. <strong>OFF</strong> = o preset não manda PC, e o card avisa isso logo embaixo.</p>",
+        "en": "<p>The MIDI channel of the device that receives the PC: the field shows the number, or the device’s name when the channel is in Friendly Mode. <strong>OFF</strong> = the preset sends no PC, and the card says so right below.</p>",
+        "es": "<p>El canal MIDI del equipo que recibe el PC: el campo muestra el número, o el nombre del equipo cuando el canal está en el Modo Amigable. <strong>OFF</strong> = el preset no envía PC, y la tarjeta lo avisa justo abajo.</p>"
        }
       },
       {
@@ -1918,6 +1935,11 @@ const MN_CONTENT = {
      ],
      "notes": [
       {
+       "pt": "No alto do card, uma frase resume o que sai ao chamar o preset: o PC no canal escolhido e, logo depois, os extras na ordem da lista.",
+       "en": "At the top of the card, a sentence sums up what goes out when the preset is called: the PC on the chosen channel and, right after, the extras in list order.",
+       "es": "Arriba de la tarjeta, una frase resume lo que sale al llamar el preset: el PC en el canal elegido y, justo después, los extras en el orden de la lista."
+      },
+      {
        "pt": "Os atalhos só aparecem no modo PRESET. No modo LIVE o card do meio é o do footswitch.",
        "en": "Shortcuts only appear in PRESET mode. In LIVE mode the middle card is the footswitch card.",
        "es": "Los atajos solo aparecen en el modo PRESET. En el modo LIVE la tarjeta del medio es la del footswitch."
@@ -1989,9 +2011,9 @@ const MN_CONTENT = {
         "es": "valor especial"
        },
        "desc": {
-        "pt": "<p>Nas placas com entrada de expressão, a lista de valores de uma linha CC termina com <strong>EXP (PEDAL DE EXPRESSÃO)</strong>. Essa linha não manda MIDI: ela diz para onde o pedal de expressão aponta enquanto este preset estiver ativo.</p><p>O destino do preset substitui o CC e o canal do card de expressão (que viram só o padrão) e funciona mesmo com aquele card desligado. Pode ter mais de uma linha EXP, para o mesmo pedal controlar dois destinos.</p>",
-        "en": "<p>On boards with an expression input, the value list of a CC row ends with <strong>EXP (PEDAL DE EXPRESSÃO)</strong> (expression pedal). That row doesn't send MIDI: it tells the expression pedal where to point while this preset is active.</p><p>The preset's target replaces the CC and channel from the expression card (which become just the default) and works even with that card turned off. You can have more than one EXP row, so the same pedal controls two targets.</p>",
-        "es": "<p>En las placas con entrada de expresión, la lista de valores de una fila CC termina con <strong>EXP (PEDAL DE EXPRESSÃO)</strong> (pedal de expresión). Esa fila no envía MIDI: indica hacia dónde apunta el pedal de expresión mientras este preset esté activo.</p><p>El destino del preset reemplaza el CC y el canal de la tarjeta de expresión (que pasan a ser solo el valor predeterminado) y funciona aun con esa tarjeta desactivada. Puede haber más de una fila EXP, para que el mismo pedal controle dos destinos.</p>"
+        "pt": "<p>Nas placas com entrada de expressão, a lista de valores de uma linha CC termina com <strong>EXP (PEDAL DE EXPRESSÃO)</strong>. Essa linha não manda MIDI: ela diz para onde o pedal de expressão aponta enquanto este preset estiver ativo. Escolhido o EXP, uma linha logo embaixo explica isso na tela.</p><p>O destino do preset substitui o CC e o canal do card de expressão (que viram só o padrão) e funciona mesmo com aquele card desligado. Pode ter mais de uma linha EXP, para o mesmo pedal controlar dois destinos.</p>",
+        "en": "<p>On boards with an expression input, the value list of a CC row ends with <strong>EXP (PEDAL DE EXPRESSÃO)</strong> (expression pedal). That row doesn't send MIDI: it tells the expression pedal where to point while this preset is active. Once EXP is chosen, a line right below explains this on screen.</p><p>The preset's target replaces the CC and channel from the expression card (which become just the default) and works even with that card turned off. You can have more than one EXP row, so the same pedal controls two targets.</p>",
+        "es": "<p>En las placas con entrada de expresión, la lista de valores de una fila CC termina con <strong>EXP (PEDAL DE EXPRESSÃO)</strong> (pedal de expresión). Esa fila no envía MIDI: indica hacia dónde apunta el pedal de expresión mientras este preset esté activo. Elegido el EXP, una línea justo abajo lo explica en pantalla.</p><p>El destino del preset reemplaza el CC y el canal de la tarjeta de expresión (que pasan a ser solo el valor predeterminado) y funciona aun con esa tarjeta desactivada. Puede haber más de una fila EXP, para que el mismo pedal controle dos destinos.</p>"
        }
       },
       {
@@ -2006,9 +2028,9 @@ const MN_CONTENT = {
         "es": "detalle"
        },
        "desc": {
-        "pt": "<p>Ao chamar o preset, sai primeiro o PC e os extras; depois o estado inicial dos footswitches do LIVE; e só então o LED e a tela. Aparelhos lentos que perdem as primeiras mensagens podem ganhar uma pausa em <strong>CONFIGURAÇÕES › HARDWARE › TEMPOS DE DISPARO</strong>.</p>",
-        "en": "<p>When the preset is called up, the PC and the extras go out first; then the initial state of the LIVE footswitches; and only then the LED and the screen. Slow devices that miss the first messages can get a pause in <strong>SETTINGS › HARDWARE › SEND TIMING</strong>.</p>",
-        "es": "<p>Al llamar el preset, salen primero el PC y los extras; después el estado inicial de los footswitches del LIVE; y solo entonces el LED y la pantalla. A los equipos lentos que pierden los primeros mensajes puedes darles una pausa en <strong>CONFIGURACIÓN › HARDWARE › TIEMPOS DE ENVÍO</strong>.</p>"
+        "pt": "<p>Ao chamar o preset, sai primeiro o PC e os extras; depois o estado inicial dos footswitches do LIVE; e só então o LED e a tela. Aparelhos lentos que perdem as primeiras mensagens podem ganhar uma pausa em <strong>CONFIGURAÇÕES › HARDWARE › TEMPOS</strong>.</p>",
+        "en": "<p>When the preset is called up, the PC and the extras go out first; then the initial state of the LIVE footswitches; and only then the LED and the screen. Slow devices that miss the first messages can get a pause in <strong>SETTINGS › HARDWARE › TIMING</strong>.</p>",
+        "es": "<p>Al llamar el preset, salen primero el PC y los extras; después el estado inicial de los footswitches del LIVE; y solo entonces el LED y la pantalla. A los equipos lentos que pierden los primeros mensajes puedes darles una pausa en <strong>CONFIGURACIÓN › HARDWARE › TIEMPOS</strong>.</p>"
        }
       }
      ]
@@ -2021,9 +2043,9 @@ const MN_CONTENT = {
       "es": "La pantalla del pedal y la apariencia del preset"
      },
      "purpose": {
-      "pt": "Ver, antes de pisar, exatamente o que a controladora vai mostrar — chamando o preset e tocando em LIVE — e ajustar nome e cores.",
-      "en": "See exactly what the controller will show before you step on anything — when calling up the preset and when playing in LIVE — and adjust the name and colors.",
-      "es": "Ver, antes de pisar, exactamente lo que mostrará la controladora — al llamar el preset y al tocar en LIVE — y ajustar el nombre y los colores."
+      "pt": "Ver, antes de pisar, exatamente o que a controladora vai mostrar — chamando o preset e tocando em LIVE. Os ajustes da tela ficam no botão CONFIGURAR DISPLAY.",
+      "en": "See exactly what the controller will show before you step on anything — when calling up the preset and when playing in LIVE. The screen settings are behind the CONFIGURE DISPLAY button.",
+      "es": "Ver, antes de pisar, exactamente lo que mostrará la controladora — al llamar el preset y al tocar en LIVE. Los ajustes de la pantalla están en el botón CONFIGURAR PANTALLA."
      },
      "howto": [
       {
@@ -2032,14 +2054,14 @@ const MN_CONTENT = {
        "es": "Usa las pestañas <strong>PRESET</strong> y <strong>LIVE</strong> arriba de la vista previa para ver las dos pantallas."
       },
       {
-       "pt": "Toque na prévia (ou em <strong>POSICIONAR</strong>) para mover o nome e escolher o layout.",
-       "en": "Tap the preview (or <strong>POSITION</strong>) to move the name and choose the layout.",
-       "es": "Toca la vista previa (o <strong>POSICIONAR</strong>) para mover el nombre y elegir el layout."
+       "pt": "Toque na prévia ou em <strong>CONFIGURAR DISPLAY</strong> para ajustar layout, ícones, nome e fundo.",
+       "en": "Tap the preview or <strong>CONFIGURE DISPLAY</strong> to adjust the layout, icons, name and background.",
+       "es": "Toca la vista previa o <strong>CONFIGURAR PANTALLA</strong> para ajustar el layout, los íconos, el nombre y el fondo."
       },
       {
-       "pt": "Ajuste fonte, estilo e cores nos blocos abaixo da prévia: a prévia muda enquanto você mexe.",
-       "en": "Adjust the font, style and colors in the blocks below the preview: the preview updates as you go.",
-       "es": "Ajusta la fuente, el estilo y los colores en los bloques debajo de la vista previa: la vista previa cambia mientras ajustas."
+       "pt": "O resumo embaixo do botão diz como a tela está (layout, nome e fundo). Tocar numa linha abre a janela já naquele ponto.",
+       "en": "The summary below the button tells you how the screen is set (layout, name and background). Tapping a line opens the window right at that spot.",
+       "es": "El resumen debajo del botón dice cómo está la pantalla (layout, nombre y fondo). Tocar una línea abre la ventana justo en ese punto."
       }
      ],
      "shot": "preset-display",
@@ -2060,29 +2082,20 @@ const MN_CONTENT = {
       },
       {
        "n": 2,
-       "sel": ".bf-grid-nome",
+       "sel": ".bf-dcfg-open",
        "label": {
-        "pt": "PRESET",
-        "en": "PRESET",
-        "es": "PRESET"
+        "pt": "CONFIGURAR DISPLAY",
+        "en": "CONFIGURE DISPLAY",
+        "es": "CONFIGURAR PANTALLA"
        }
       },
       {
        "n": 3,
-       "sel": ".bf-grid-aparencia",
+       "sel": ".bf-dcfg-sum",
        "label": {
-        "pt": "APARÊNCIA",
-        "en": "APPEARANCE",
-        "es": "APARIENCIA"
-       }
-      },
-      {
-       "n": 4,
-       "sel": ".bf-grid-cores",
-       "label": {
-        "pt": "CORES DA TELA",
-        "en": "SCREEN COLORS",
-        "es": "COLORES DE PANTALLA"
+        "pt": "resumo",
+        "en": "summary",
+        "es": "resumen"
        }
       }
      ],
@@ -2106,53 +2119,36 @@ const MN_CONTENT = {
       },
       {
        "name": {
-        "pt": "PRESET — nome do preset",
-        "en": "PRESET — preset name",
-        "es": "PRESET — nombre del preset"
+        "pt": "CONFIGURAR DISPLAY",
+        "en": "CONFIGURE DISPLAY",
+        "es": "CONFIGURAR PANTALLA"
        },
        "type": {
-        "pt": "texto",
-        "en": "text",
-        "es": "texto"
+        "pt": "botão",
+        "en": "button",
+        "es": "botón"
        },
        "desc": {
-        "pt": "<p><strong>TAMANHO DA FONTE</strong> (− / +) e <strong>ESTILO</strong> (B = negrito) do nome na tela. <strong>SW EXTERNOS</strong> decide se os indicadores dos footswitches externos (ESW1 e ESW2) aparecem neste preset.</p>",
-        "en": "<p><strong>FONT SIZE</strong> (− / +) and <strong>STYLE</strong> (B = bold) of the name on the screen. <strong>EXT. SWITCHES</strong> decides whether the external footswitch indicators (ESW1 and ESW2) appear in this preset.</p>",
-        "es": "<p><strong>TAMAÑO DE FUENTE</strong> (− / +) y <strong>ESTILO</strong> (B = negrita) del nombre en la pantalla. <strong>SW EXTERNOS</strong> decide si los indicadores de los footswitches externos (ESW1 y ESW2) aparecen en este preset.</p>"
+        "pt": "<p>Abre a janela com tudo o que muda a tela deste preset: layout, posição e tamanho dos ícones, nome, fonte, cores, fundo e SW externos.</p>",
+        "en": "<p>Opens the window with everything that changes this preset's screen: layout, icon position and size, name, font, colors, background and external switches.</p>",
+        "es": "<p>Abre la ventana con todo lo que cambia la pantalla de este preset: layout, posición y tamaño de los íconos, nombre, fuente, colores, fondo y SW externos.</p>"
        }
       },
       {
        "name": {
-        "pt": "APARÊNCIA",
-        "en": "APPEARANCE",
-        "es": "APARIENCIA"
+        "pt": "O resumo",
+        "en": "The summary",
+        "es": "El resumen"
        },
        "type": {
-        "pt": "cores do nome",
-        "en": "name colors",
-        "es": "colores del nombre"
+        "pt": "leitura",
+        "en": "read-only",
+        "es": "lectura"
        },
        "desc": {
-        "pt": "<p>As cores do nome: <strong>NOME</strong> (o texto), <strong>CONTORNO</strong> e <strong>TAG</strong> (a etiqueta do banco/preset).</p>",
-        "en": "<p>The name colors: <strong>NAME</strong> (the text), <strong>OUTLINE</strong> and <strong>TAG</strong> (the bank/preset label).</p>",
-        "es": "<p>Los colores del nombre: <strong>NOMBRE</strong> (el texto), <strong>CONTORNO</strong> y <strong>TAG</strong> (la etiqueta del banco/preset).</p>"
-       }
-      },
-      {
-       "name": {
-        "pt": "CORES DA TELA",
-        "en": "SCREEN COLORS",
-        "es": "COLORES DE PANTALLA"
-       },
-       "type": {
-        "pt": "fundos",
-        "en": "backgrounds",
-        "es": "fondos"
-       },
-       "desc": {
-        "pt": "<p>Os dois fundos de tela cheia: um para a tela de <strong>PRESET</strong>, outro para a de <strong>LIVE</strong>. Cada um pode ser uma cor, um degradê ou uma imagem que você enviou em <strong>CONFIGURAÇÕES › IMAGENS</strong>.</p>",
-        "en": "<p>The two full-screen backgrounds: one for the <strong>PRESET</strong> screen, the other for the <strong>LIVE</strong> screen. Each can be a color, a gradient or an image you uploaded in <strong>SETTINGS › IMAGES</strong>.</p>",
-        "es": "<p>Los dos fondos de pantalla completa: uno para la pantalla de <strong>PRESET</strong> y otro para la de <strong>LIVE</strong>. Cada uno puede ser un color, un degradado o una imagen que subiste en <strong>CONFIGURACIÓN › IMÁGENES</strong>.</p>"
+        "pt": "<p>Três linhas só de leitura: o layout, o tamanho e o estilo do nome, e o fundo. Tocar numa linha abre o CONFIGURAR DISPLAY já naquela parte.</p>",
+        "en": "<p>Three read-only lines: the layout, the name size and style, and the background. Tapping a line opens CONFIGURE DISPLAY right at that part.</p>",
+        "es": "<p>Tres líneas solo de lectura: el layout, el tamaño y el estilo del nombre, y el fondo. Tocar una línea abre CONFIGURAR PANTALLA justo en esa parte.</p>"
        }
       }
      ]
@@ -2160,37 +2156,42 @@ const MN_CONTENT = {
     {
      "id": "tela-posicionar",
      "title": {
-      "pt": "Posição do nome e layout por preset",
-      "en": "Name position and per-preset layout",
-      "es": "Posición del nombre y layout por preset"
+      "pt": "CONFIGURAR DISPLAY: layout, ícones, nome e fundo",
+      "en": "CONFIGURE DISPLAY: layout, icons, name and background",
+      "es": "CONFIGURAR PANTALLA: layout, íconos, nombre y fondo"
      },
      "purpose": {
-      "pt": "Arraste o nome para onde quiser na tela e escolha o arranjo dos ícones — só para este preset, se quiser.",
-      "en": "Drag the name anywhere you like on the screen and choose how the icons are arranged — just for this preset, if you want.",
-      "es": "Arrastra el nombre a donde quieras en la pantalla y elige la disposición de los íconos — solo para este preset, si quieres."
+      "pt": "Tudo o que muda a tela deste preset numa janela só: o arranjo e o tamanho dos ícones, onde fica o nome, a fonte, as cores e o fundo. No computador ela abre grande e na horizontal.",
+      "en": "Everything that changes this preset's screen in a single window: the arrangement and size of the icons, where the name goes, the font, the colors and the background. On a computer it opens large and landscape.",
+      "es": "Todo lo que cambia la pantalla de este preset en una sola ventana: la disposición y el tamaño de los íconos, dónde va el nombre, la fuente, los colores y el fondo. En la computadora se abre grande y en horizontal."
      },
      "howto": [
       {
-       "pt": "Arraste o nome na prévia. A posição aparece embaixo em porcentagem (X e Y).",
-       "en": "Drag the name in the preview. The position shows below as a percentage (X and Y).",
-       "es": "Arrastra el nombre en la vista previa. La posición aparece abajo en porcentaje (X e Y)."
+       "pt": "Arraste o nome e os ícones no palco. Arrastar um ícone num layout fixo (L1 a L4) passa a tela para Custom, com a mesma aparência.",
+       "en": "Drag the name and the icons on the stage. Dragging an icon in a fixed layout (L1 to L4) switches the screen to Custom, with the same look.",
+       "es": "Arrastra el nombre y los íconos en el escenario. Arrastrar un ícono en un layout fijo (L1 a L4) pasa la pantalla a Custom, con el mismo aspecto."
       },
       {
-       "pt": "Escolha o layout da tela: <strong>GLOBAL</strong> segue o padrão do aparelho; os outros valem só para este preset.",
-       "en": "Choose the screen layout: <strong>GLOBAL</strong> follows the unit's default; the others apply only to this preset.",
-       "es": "Elige el layout de la pantalla: <strong>GLOBAL</strong> sigue el predeterminado del equipo; los demás valen solo para este preset."
+       "pt": "Escolha o layout nas fichas embaixo do palco. Ele vale só para este preset.",
+       "en": "Pick the layout in the tiles below the stage. It applies only to this preset.",
+       "es": "Elige el layout en las fichas debajo del escenario. Vale solo para este preset."
       },
       {
-       "pt": "Toque em <strong>APLICAR</strong>. Nada muda antes disso.",
-       "en": "Tap <strong>APPLY</strong>. Nothing changes until you do.",
-       "es": "Toca <strong>APLICAR</strong>. Nada cambia antes de eso."
+       "pt": "Use <strong>PRESET</strong> e <strong>LIVE</strong> no alto da janela para ajustar as duas telas sem fechar.",
+       "en": "Use <strong>PRESET</strong> and <strong>LIVE</strong> at the top of the window to adjust both screens without closing it.",
+       "es": "Usa <strong>PRESET</strong> y <strong>LIVE</strong> arriba de la ventana para ajustar las dos pantallas sin cerrarla."
+      },
+      {
+       "pt": "Com o <strong>salvamento automático</strong> ligado (o padrão), cada mudança vale na hora e <strong>DESFAZER TUDO</strong> volta ao que era quando a janela abriu; <strong>CONCLUIR</strong> fecha. Com ele desligado, nada muda até <strong>APLICAR</strong>, e <strong>CANCELAR</strong> descarta tudo, perguntando antes.",
+       "en": "With <strong>auto-save</strong> on (the default), every change applies right away and <strong>UNDO ALL</strong> brings back what it was when the window opened; <strong>DONE</strong> closes it. With auto-save off, nothing changes until <strong>APPLY</strong>, and <strong>CANCEL</strong> discards everything, asking first.",
+       "es": "Con el <strong>guardado automático</strong> activado (el predeterminado), cada cambio se aplica al instante y <strong>DESHACER TODO</strong> vuelve a lo que era al abrir la ventana; <strong>LISTO</strong> la cierra. Con él desactivado, nada cambia hasta <strong>APLICAR</strong>, y <strong>CANCELAR</strong> descarta todo, preguntando antes."
       }
      ],
-     "shot": "preset-posicionar",
+     "shot": "preset-configurar-display",
      "mockTitle": {
-      "pt": "POSIÇÃO DO NOME · PRESET",
-      "en": "NAME POSITION · PRESET",
-      "es": "POSICIÓN DEL NOMBRE · PRESET"
+      "pt": "CONFIGURAR DISPLAY · PRESET",
+      "en": "CONFIGURE DISPLAY · PRESET",
+      "es": "CONFIGURAR PANTALLA · PRESET"
      },
      "fields": [
       {
@@ -2205,9 +2206,77 @@ const MN_CONTENT = {
         "es": "selección"
        },
        "desc": {
-        "pt": "<p><strong>GLOBAL</strong> herda o layout de <strong>CONFIGURAÇÕES › TELA</strong>. <strong>L1 a L4</strong> são arranjos fixos de ícones e <strong>Custom</strong> deixa você arrastar cada ícone e escolher o tamanho. Na tela PRESET existem ainda <strong>Nenhum</strong> (só o nome grande) e <strong>Lista</strong> (os presets em sequência).</p><p>Arrastar um ícone num layout L1–L4 converte a tela para Custom.</p>",
-        "en": "<p><strong>GLOBAL</strong> inherits the layout from <strong>SETTINGS › DISPLAY</strong>. <strong>L1 to L4</strong> are fixed icon arrangements and <strong>Custom</strong> lets you drag each icon and choose its size. The PRESET screen also has <strong>Nenhum</strong> (None — just the big name) and <strong>Lista</strong> (List — the presets in sequence).</p><p>Dragging an icon in an L1–L4 layout turns the screen into Custom.</p>",
-        "es": "<p><strong>GLOBAL</strong> hereda el layout de <strong>CONFIGURACIÓN › PANTALLA</strong>. <strong>L1 a L4</strong> son arreglos fijos de íconos y <strong>Custom</strong> te deja arrastrar cada ícono y elegir el tamaño. En la pantalla PRESET existen además <strong>Nenhum</strong> (Ninguno — solo el nombre grande) y <strong>Lista</strong> (los presets en secuencia).</p><p>Arrastrar un ícono en un layout L1–L4 convierte la pantalla en Custom.</p>"
+        "pt": "<p><strong>L1 a L4</strong> são arranjos fixos de ícones e <strong>Custom</strong> deixa você arrastar cada ícone e escolher o tamanho. Na tela PRESET existem ainda <strong>Nenhum</strong> (só o nome grande) e <strong>Lista</strong> (os presets em sequência).</p><p>Arrastar um ícone num layout L1–L4 converte a tela para Custom. Um preset que nunca escolheu layout mostra aceso o que o pedal desenha hoje.</p>",
+        "en": "<p><strong>L1 to L4</strong> are fixed icon arrangements and <strong>Custom</strong> lets you drag each icon and choose its size. The PRESET screen also has <strong>Nenhum</strong> (None — just the big name) and <strong>Lista</strong> (List — the presets in sequence).</p><p>Dragging an icon in an L1–L4 layout turns the screen into Custom. A preset that never picked a layout shows lit the one the pedal draws today.</p>",
+        "es": "<p><strong>L1 a L4</strong> son arreglos fijos de íconos y <strong>Custom</strong> te deja arrastrar cada ícono y elegir el tamaño. En la pantalla PRESET existen además <strong>Nenhum</strong> (Ninguno — solo el nombre grande) y <strong>Lista</strong> (los presets en secuencia).</p><p>Arrastrar un ícono en un layout L1–L4 convierte la pantalla en Custom. Un preset que nunca eligió layout muestra encendido el que el pedal dibuja hoy.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Ícones",
+        "en": "Icons",
+        "es": "Íconos"
+       },
+       "type": {
+        "pt": "Custom",
+        "en": "Custom",
+        "es": "Custom"
+       },
+       "desc": {
+        "pt": "<p>No Custom, escolha o ícone (no palco ou nas fichas SW1 a G2), se ele aparece e o tamanho.</p><p>O botão <strong>TODOS OS PRESETS</strong> abre as opções que valem para todos: o <strong>formato do ícone</strong> (padrão, círculo ou octógono, um para cada tela), na tela PRESET os <strong>nomes dos presets do banco</strong> no lugar dos ícones (com as cores e o tamanho), e na LIVE o <strong>Somente atual</strong>: no Custom, a tela mostra só o ícone do último footswitch pisado, na posição e no tamanho do quadro ATUAL do palco.</p>",
+        "en": "<p>In Custom, pick the icon (on the stage or in the SW1 to G2 tiles), whether it shows and its size.</p><p>The <strong>ALL PRESETS</strong> button opens the options that apply to every preset: the <strong>icon shape</strong> (default, circle or octagon, one for each screen), on the PRESET screen the <strong>bank preset names</strong> in place of the icons (with their colors and size), and on LIVE <strong>Current only</strong>: in Custom, the screen shows only the icon of the last footswitch pressed, at the position and size of the CURRENT tile on the stage.</p>",
+        "es": "<p>En Custom, elige el ícono (en el escenario o en las fichas SW1 a G2), si aparece y el tamaño.</p><p>El botón <strong>TODOS LOS PRESETS</strong> abre las opciones que valen para todos: la <strong>forma del ícono</strong> (estándar, círculo u octógono, una para cada pantalla), en la pantalla PRESET los <strong>nombres de los presets del banco</strong> en lugar de los íconos (con sus colores y tamaño), y en LIVE <strong>Solo el actual</strong>: en Custom, la pantalla muestra solo el ícono del último footswitch pisado, en la posición y el tamaño del cuadro ACTUAL del escenario.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Nome do preset",
+        "en": "Preset name",
+        "es": "Nombre del preset"
+       },
+       "type": {
+        "pt": "texto e cores",
+        "en": "text and colors",
+        "es": "texto y colores"
+       },
+       "desc": {
+        "pt": "<p>O interruptor <strong>Mostrar</strong> vale para a tela escolhida no alto (PRESET ou LIVE); a etiqueta <strong>GLOBAL</strong> diz que o preset ainda segue o padrão. Fonte e cores ficam apagadas quando o nome não aparece.</p>",
+        "en": "<p>The <strong>Show</strong> switch applies to the screen picked at the top (PRESET or LIVE); the <strong>GLOBAL</strong> tag means the preset still follows the default. Font and colors are dimmed when the name is hidden.</p>",
+        "es": "<p>El interruptor <strong>Mostrar</strong> vale para la pantalla elegida arriba (PRESET o LIVE); la etiqueta <strong>GLOBAL</strong> dice que el preset aún sigue el predeterminado. La fuente y los colores quedan atenuados cuando el nombre no aparece.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Fundo da tela",
+        "en": "Screen background",
+        "es": "Fondo de pantalla"
+       },
+       "type": {
+        "pt": "fundos",
+        "en": "backgrounds",
+        "es": "fondos"
+       },
+       "desc": {
+        "pt": "<p>Os dois fundos de tela cheia, PRESET e LIVE, com a miniatura de cada um; o contorno laranja marca o da tela mostrada. Cada um pode ser cor, degradê ou uma imagem enviada em <strong>CONFIGURAÇÕES › IMAGENS</strong>.</p>",
+        "en": "<p>The two full-screen backgrounds, PRESET and LIVE, each with its thumbnail; the orange outline marks the one for the screen shown. Each can be a color, a gradient or an image uploaded in <strong>SETTINGS › IMAGES</strong>.</p>",
+        "es": "<p>Los dos fondos de pantalla completa, PRESET y LIVE, con la miniatura de cada uno; el contorno naranja marca el de la pantalla mostrada. Cada uno puede ser un color, un degradado o una imagen subida en <strong>CONFIGURACIÓN › IMÁGENES</strong>.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "SW externos",
+        "en": "External switches",
+        "es": "SW externos"
+       },
+       "type": {
+        "pt": "liga/desliga",
+        "en": "on/off",
+        "es": "activar/desactivar"
+       },
+       "desc": {
+        "pt": "<p>Só nas placas com entrada de switch externo. Liga ou desliga ESW1 e ESW2 neste preset; as caixas aparecem no palco só como referência — posição e cores ficam em <strong>CONFIGURAÇÕES › FOOTSWITCHES</strong>.</p>",
+        "en": "<p>Only on boards with external switch inputs. Turns ESW1 and ESW2 on or off for this preset; the boxes show on the stage for reference only — position and colors are in <strong>SETTINGS › FOOTSWITCHES</strong>.</p>",
+        "es": "<p>Solo en las placas con entrada de switch externo. Activa o desactiva ESW1 y ESW2 en este preset; las cajas aparecen en el escenario solo como referencia — la posición y los colores están en <strong>CONFIGURACIÓN › FOOTSWITCHES</strong>.</p>"
        }
       },
       {
@@ -2225,23 +2294,6 @@ const MN_CONTENT = {
         "pt": "<p>Uma música que precisa de quatro efeitos grandes pode ter o seu layout enquanto as outras usam a lista. Quem não mexe aqui continua seguindo o global.</p>",
         "en": "<p>A song that needs four big effects can have its own layout while the others use the list. If you don't change anything here, the preset keeps following the global layout.</p>",
         "es": "<p>Una canción que necesita cuatro efectos grandes puede tener su propio layout mientras las demás usan la lista. Si no cambias nada aquí, el preset sigue el layout global.</p>"
-       }
-      },
-      {
-       "name": {
-        "pt": "Centralizar",
-        "en": "Center",
-        "es": "Centrar"
-       },
-       "type": {
-        "pt": "atalho",
-        "en": "shortcut",
-        "es": "atajo"
-       },
-       "desc": {
-        "pt": "<p>Devolve o nome ao centro da tela.</p>",
-        "en": "<p>Moves the name back to the center of the screen.</p>",
-        "es": "<p>Devuelve el nombre al centro de la pantalla.</p>"
        }
       }
      ]
@@ -2517,9 +2569,9 @@ const MN_CONTENT = {
        "es": "Con las teclas <strong>1 a 6</strong>, elige el footswitch. El visor cambia a <strong>FX · SWITCH n</strong>."
       },
       {
-       "pt": "No alto do card do meio, toque no nome do modo e escolha um dos dez modos.",
-       "en": "At the top of the middle card, tap the mode name and choose one of the ten modes.",
-       "es": "Arriba de la tarjeta del medio, toca el nombre del modo y elige uno de los diez modos."
+       "pt": "No alto do card do meio, toque no nome do modo e escolha um dos doze modos.",
+       "en": "At the top of the middle card, tap the mode name and choose one of the twelve modes.",
+       "es": "Arriba de la tarjeta del medio, toca el nombre del modo y elige uno de los doce modos."
       },
       {
        "pt": "Preencha os campos do modo. Na terceira coluna (no celular, no disco <strong>DISPLAY</strong>) ajuste o ícone e as cores na tela.",
@@ -2618,9 +2670,9 @@ const MN_CONTENT = {
         "es": "en el escenario"
        },
        "desc": {
-        "pt": "<p>De fábrica, <strong>segurar o footswitch do preset que está tocando</strong> entra no LIVE (CONFIGURAÇÕES › BANCOS › CHAMADA DE PRESETS › CLICK LONGO).</p><p>Placas com botão <strong>LIVE MODE</strong>: um toque entra (e alterna a camada), segurar sai. Placas sem esse botão: use um combo de dois footswitches com a ação <strong>SW_LIVE</strong> — e, dentro do LIVE, <strong>segurar o combo meio segundo</strong> sai direto para o modo PRESET. Também dá para deixar um footswitch com o comando <strong>» OUT LIVE MODE</strong>.</p>",
-        "en": "<p>Out of the box, <strong>holding the footswitch of the preset that's playing</strong> enters LIVE (SETTINGS › BANKS › PRESET CALL › LONG CLICK).</p><p>Boards with a <strong>LIVE MODE</strong> button: one tap enters (and switches the layer), holding exits. Boards without that button: use a two-footswitch combo with the <strong>SW_LIVE</strong> action — and, inside LIVE, <strong>holding the combo for half a second</strong> goes straight back to PRESET mode. You can also set a footswitch to the <strong>» OUT LIVE MODE</strong> command.</p>",
-        "es": "<p>De fábrica, <strong>mantener pisado el footswitch del preset que está sonando</strong> entra en LIVE (CONFIGURACIÓN › BANCOS › LLAMADA DE PRESETS › CLICK LARGO).</p><p>Placas con botón <strong>LIVE MODE</strong>: un toque entra (y alterna la capa), mantenerlo sale. Placas sin ese botón: usa un combo de dos footswitches con la acción <strong>SW_LIVE</strong> — y, dentro de LIVE, <strong>mantener el combo medio segundo</strong> sale directo al modo PRESET. También puedes dejar un footswitch con el comando <strong>» OUT LIVE MODE</strong>.</p>"
+        "pt": "<p>De fábrica, <strong>segurar o footswitch do preset que está tocando</strong> entra no LIVE (CONFIGURAÇÕES › BANCOS › CHAMADA › SEGURAR).</p><p>Placas com botão <strong>LIVE MODE</strong>: um toque entra (e alterna a camada), segurar sai. Placas sem esse botão: use um combo de dois footswitches com a ação <strong>ENTRAR/SAIR DO LIVE</strong> — e, dentro do LIVE, <strong>segurar o combo meio segundo</strong> sai direto para o modo PRESET. Também dá para deixar um footswitch com o comando <strong>» OUT LIVE MODE</strong>.</p>",
+        "en": "<p>Out of the box, <strong>holding the footswitch of the preset that's playing</strong> enters LIVE (SETTINGS › BANKS › PRESET CALL › HOLD).</p><p>Boards with a <strong>LIVE MODE</strong> button: one tap enters (and switches the layer), holding exits. Boards without that button: use a two-footswitch combo with the <strong>ENTER/EXIT LIVE</strong> action — and, inside LIVE, <strong>holding the combo for half a second</strong> goes straight back to PRESET mode. You can also set a footswitch to the <strong>» OUT LIVE MODE</strong> command.</p>",
+        "es": "<p>De fábrica, <strong>mantener pisado el footswitch del preset que está sonando</strong> entra en LIVE (CONFIGURACIÓN › BANCOS › LLAMADA › MANTENER).</p><p>Placas con botón <strong>LIVE MODE</strong>: un toque entra (y alterna la capa), mantenerlo sale. Placas sin ese botón: usa un combo de dos footswitches con la acción <strong>ENTRAR/SALIR DEL LIVE</strong> — y, dentro de LIVE, <strong>mantener el combo medio segundo</strong> sale directo al modo PRESET. También puedes dejar un footswitch con el comando <strong>» OUT LIVE MODE</strong>.</p>"
        }
       },
       {
@@ -2635,9 +2687,9 @@ const MN_CONTENT = {
         "es": "pantalla del pedal"
        },
        "desc": {
-        "pt": "<p>Um footswitch cuja função não tem canal MIDI <strong>não aparece na tela da controladora</strong> (nem na prévia do editor). Por isso, com o pacote de fábrica — footswitches em STOMP com canal OFF — a tela LIVE começa vazia: ela vai se preenchendo conforme você dá canal aos footswitches.</p><p>As exceções são o FAVORITO, que navega em vez de mandar MIDI, e o MUTE, que nunca aparece.</p>",
-        "en": "<p>A footswitch whose function has no MIDI channel <strong>doesn't show up on the controller's screen</strong> (or in the editor preview). That's why, with the factory pack — footswitches in STOMP with the channel OFF — the LIVE screen starts out empty: it fills in as you give the footswitches a channel.</p><p>The exceptions are FAVORITE, which navigates instead of sending MIDI, and MUTE, which never shows up.</p>",
-        "es": "<p>Un footswitch cuya función no tiene canal MIDI <strong>no aparece en la pantalla de la controladora</strong> (ni en la vista previa del editor). Por eso, con el paquete de fábrica — footswitches en STOMP con canal OFF — la pantalla LIVE empieza vacía: se va llenando a medida que les das canal a los footswitches.</p><p>Las excepciones son el FAVORITO, que navega en vez de enviar MIDI, y el MUTE, que nunca aparece.</p>"
+        "pt": "<p>Um footswitch cuja função não tem canal MIDI <strong>não aparece na tela da controladora</strong> (nem na prévia do editor). Por isso, com o pacote de fábrica — footswitches em STOMP com canal OFF — a tela LIVE começa vazia: ela vai se preenchendo conforme você dá canal aos footswitches.</p><p>As exceções são o FAVORITO, que navega em vez de mandar MIDI, e o MUTE (só em presets antigos), que nunca aparece.</p>",
+        "en": "<p>A footswitch whose function has no MIDI channel <strong>doesn't show up on the controller's screen</strong> (or in the editor preview). That's why, with the factory pack — footswitches in STOMP with the channel OFF — the LIVE screen starts out empty: it fills in as you give the footswitches a channel.</p><p>The exceptions are FAVORITE, which navigates instead of sending MIDI, and MUTE (only in older presets), which never shows up.</p>",
+        "es": "<p>Un footswitch cuya función no tiene canal MIDI <strong>no aparece en la pantalla de la controladora</strong> (ni en la vista previa del editor). Por eso, con el paquete de fábrica — footswitches en STOMP con canal OFF — la pantalla LIVE empieza vacía: se va llenando a medida que les das canal a los footswitches.</p><p>Las excepciones son el FAVORITO, que navega en vez de enviar MIDI, y el MUTE (solo en presets antiguos), que nunca aparece.</p>"
        }
       }
      ],
@@ -2652,9 +2704,9 @@ const MN_CONTENT = {
     {
      "id": "live-picker",
      "title": {
-      "pt": "Os dez modos de operação",
-      "en": "The ten operating modes",
-      "es": "Los diez modos de operación"
+      "pt": "Os doze modos de operação",
+      "en": "The twelve operating modes",
+      "es": "Los doce modos de operación"
      },
      "purpose": {
       "pt": "Cada footswitch roda um modo. O modo decide o que acontece quando você pisa — e muda todos os outros campos.",
@@ -2687,9 +2739,9 @@ const MN_CONTENT = {
         "es": "resumen"
        },
        "desc": {
-        "pt": "<p><strong>STOMP</strong> — liga e desliga um efeito. O que a maioria das pessoas usa.<br><strong>SPIN</strong> — cicla entre três valores.<br><strong>RAMP</strong> — varre suavemente de um valor a outro.<br><strong>MOMENT</strong> (momentary) — vale só enquanto o pé está em cima.<br><strong>MACROS</strong> — vários comandos num toque.<br><strong>TAP TEMPO</strong> — bater o tempo com o pé.<br><strong>SINGLE</strong> — um comando fixo por gesto.<br><strong>STEPS</strong> — sequenciador de quatro valores em loop.<br><strong>CONTROL</strong> — seletor A/B entre dois destinos.<br><strong>MUTE</strong> — o footswitch fica sem função.</p>",
-        "en": "<p><strong>STOMP</strong> — turns an effect on and off. What most people use.<br><strong>SPIN</strong> — cycles through three values.<br><strong>RAMP</strong> — sweeps smoothly from one value to another.<br><strong>MOMENT</strong> (momentary) — works only while your foot is on it.<br><strong>MACROS</strong> — several commands in one press.<br><strong>TAP TEMPO</strong> — tap the tempo with your foot.<br><strong>SINGLE</strong> — one fixed command per gesture.<br><strong>STEPS</strong> — four-value sequencer in a loop.<br><strong>CONTROL</strong> — A/B selector between two targets.<br><strong>MUTE</strong> — the footswitch has no function.</p>",
-        "es": "<p><strong>STOMP</strong> — enciende y apaga un efecto. Lo que usa la mayoría.<br><strong>SPIN</strong> — recorre en ciclo tres valores.<br><strong>RAMP</strong> — barre suavemente de un valor a otro.<br><strong>MOMENT</strong> (momentary) — actúa solo mientras el pie está encima.<br><strong>MACROS</strong> — varios comandos en un toque.<br><strong>TAP TEMPO</strong> — marcar el tempo con el pie.<br><strong>SINGLE</strong> — un comando fijo por gesto.<br><strong>STEPS</strong> — secuenciador de cuatro valores en loop.<br><strong>CONTROL</strong> — selector A/B entre dos destinos.<br><strong>MUTE</strong> — el footswitch queda sin función.</p>"
+        "pt": "<p><strong>STOMP</strong> — liga e desliga um efeito. O que a maioria das pessoas usa.<br><strong>SPIN</strong> — cicla entre três valores.<br><strong>RAMP</strong> — varre suavemente de um valor a outro.<br><strong>MOMENT</strong> (momentary) — vale só enquanto o pé está em cima.<br><strong>MACROS</strong> — vários comandos num toque.<br><strong>TAP TEMPO</strong> — bater o tempo com o pé.<br><strong>SINGLE</strong> — um comando fixo por gesto.<br><strong>STEPS</strong> — sequenciador de quatro valores em loop.<br><strong>CONTROL</strong> — seletor A/B entre dois destinos.<br><strong>INCREM</strong> (incremento) — cada pisada sobe um número: o valor de um CC, o número do CC ou o PC.<br><strong>RETORNO</strong> — pisar manda um valor, soltar devolve outro, como uma chave com mola.<br><strong>ONDA</strong> — o CC sobe e desce sozinho, no tempo da música (um LFO).</p>",
+        "en": "<p><strong>STOMP</strong> — turns an effect on and off. What most people use.<br><strong>SPIN</strong> — cycles through three values.<br><strong>RAMP</strong> — sweeps smoothly from one value to another.<br><strong>MOMENT</strong> (momentary) — only while your foot is down.<br><strong>MACROS</strong> — several commands in one tap.<br><strong>TAP TEMPO</strong> — tap the tempo with your foot.<br><strong>SINGLE</strong> — one fixed command per gesture.<br><strong>STEPS</strong> — sequencer of four values in a loop.<br><strong>CONTROL</strong> — A/B selector between two targets.<br><strong>INCREM</strong> (increment) — each press raises a number: a CC value, the CC number or the PC.<br><strong>RETORNO</strong> (return) — pressing sends one value, releasing sends another back, like a spring-loaded switch.<br><strong>ONDA</strong> (wave) — the CC moves up and down by itself, in time with the music (an LFO).</p>",
+        "es": "<p><strong>STOMP</strong> — enciende y apaga un efecto. Lo que usa la mayoría.<br><strong>SPIN</strong> — recorre tres valores.<br><strong>RAMP</strong> — barre suavemente de un valor a otro.<br><strong>MOMENT</strong> (momentary) — vale solo mientras el pie está encima.<br><strong>MACROS</strong> — varios comandos en un toque.<br><strong>TAP TEMPO</strong> — marcar el tempo con el pie.<br><strong>SINGLE</strong> — un comando fijo por gesto.<br><strong>STEPS</strong> — secuenciador de cuatro valores en bucle.<br><strong>CONTROL</strong> — selector A/B entre dos destinos.<br><strong>INCREM</strong> (incremento) — cada pisada sube un número: el valor de un CC, el número del CC o el PC.<br><strong>RETORNO</strong> — pisar envía un valor y soltar devuelve otro, como una llave con resorte.<br><strong>ONDA</strong> — el CC sube y baja solo, al tempo de la música (un LFO).</p>"
        }
       },
       {
@@ -2708,13 +2760,30 @@ const MN_CONTENT = {
         "en": "<p>No. Each mode's parameters are stored separately: if you try SPIN and go back to STOMP, STOMP is just as you left it.</p>",
         "es": "<p>No. Los parámetros de cada modo se guardan por separado: si pruebas el SPIN y vuelves al STOMP, el STOMP sigue como estaba.</p>"
        }
+      },
+      {
+       "name": {
+        "pt": "E o MUTE?",
+        "en": "What about MUTE?",
+        "es": "¿Y el MUTE?"
+       },
+       "type": {
+        "pt": "detalhe",
+        "en": "detail",
+        "es": "detalle"
+       },
+       "desc": {
+        "pt": "<p>O MUTE saiu da lista. Para deixar um footswitch sem função, use qualquer modo com o <strong>CANAL em OFF</strong>: ele não manda MIDI e some da tela da controladora. Footswitches novos já nascem assim, em STOMP com canal OFF.</p>",
+        "en": "<p>MUTE is no longer on the list. To leave a footswitch with no function, use any mode with the <strong>CHANNEL set to OFF</strong>: it sends no MIDI and disappears from the controller's screen. New footswitches already start that way, in STOMP with the channel OFF.</p>",
+        "es": "<p>El MUTE salió de la lista. Para dejar un footswitch sin función, usa cualquier modo con el <strong>CANAL en OFF</strong>: no envía MIDI y desaparece de la pantalla de la controladora. Los footswitches nuevos ya nacen así, en STOMP con canal OFF.</p>"
+       }
       }
      ],
      "notes": [
       {
-       "pt": "STEPS e CONTROL valem para os footswitches do preset. O SW GLOBAL e os footswitches externos usam os outros oito modos.",
-       "en": "STEPS and CONTROL are for the preset's footswitches. SW GLOBAL and the external footswitches use the other eight modes.",
-       "es": "STEPS y CONTROL valen para los footswitches del preset. El SW GLOBAL y los footswitches externos usan los otros ocho modos."
+       "pt": "STEPS vale só para os footswitches do preset. O SW GLOBAL usa todos os outros menos o CONTROL; os footswitches externos usam todos os outros, inclusive o CONTROL.",
+       "en": "STEPS is only for the preset's footswitches. SW GLOBAL uses all the others except CONTROL; the external footswitches use all the others, CONTROL included.",
+       "es": "STEPS vale solo para los footswitches del preset. El SW GLOBAL usa todos los demás menos el CONTROL; los footswitches externos usan todos los demás, incluido el CONTROL."
       }
      ]
     },
@@ -2732,14 +2801,14 @@ const MN_CONTENT = {
      },
      "howto": [
       {
-       "pt": "Na aba <strong>CLICK CURTO</strong>, escolha o CC e o CANAL do efeito.",
-       "en": "On the <strong>SHORT CLICK</strong> tab, choose the effect's CC and CHANNEL.",
-       "es": "En la pestaña <strong>CLIC CORTO</strong>, elige el CC y el CANAL del efecto."
+       "pt": "Na aba <strong>TOQUE</strong>, escolha o CC e o CANAL do efeito.",
+       "en": "On the <strong>TAP</strong> tab, choose the effect's CC and CHANNEL.",
+       "es": "En la pestaña <strong>TOQUE</strong>, elige el CC y el CANAL del efecto."
       },
       {
-       "pt": "Quer mais funções no mesmo pé? Configure também <strong>CLICK LONGO</strong> e <strong>RECLICK</strong>.",
-       "en": "Want more functions on the same footswitch? Also set up <strong>LONG CLICK</strong> and <strong>RECLICK</strong>.",
-       "es": "¿Quieres más funciones en el mismo pie? Configura también <strong>CLIC LARGO</strong> y <strong>RECLICK</strong>."
+       "pt": "Quer mais funções no mesmo pé? Configure também <strong>SEGURAR</strong> e <strong>PISAR DE NOVO</strong>.",
+       "en": "Want more functions on the same footswitch? Also set up <strong>HOLD</strong> and <strong>PRESS AGAIN</strong>.",
+       "es": "¿Quieres más funciones en el mismo pie? Configura también <strong>MANTENER</strong> y <strong>PISAR DE NUEVO</strong>."
       },
       {
        "pt": "Ajuste a cor do LED e o comportamento na faixa de opções, embaixo.",
@@ -2794,9 +2863,9 @@ const MN_CONTENT = {
      "fields": [
       {
        "name": {
-        "pt": "CLICK CURTO / CLICK LONGO / RECLICK",
-        "en": "SHORT CLICK / LONG CLICK / RECLICK",
-        "es": "CLIC CORTO / CLIC LARGO / RECLICK"
+        "pt": "TOQUE / SEGURAR / PISAR DE NOVO",
+        "en": "TAP / HOLD / PRESS AGAIN",
+        "es": "TOQUE / MANTENER / PISAR DE NUEVO"
        },
        "type": {
         "pt": "seções",
@@ -2804,9 +2873,9 @@ const MN_CONTENT = {
         "es": "secciones"
        },
        "desc": {
-        "pt": "<p>Três funções no mesmo footswitch: toque rápido, toque segurado e toque duplo. O comportamento se adapta ao que você preencher: só a primeira seção = stomp clássico; duas ou três seções = dois ou três efeitos no mesmo pé.</p><p>Com o RECLICK preenchido, o clique curto espera um instante (cerca de um terço de segundo) para saber se vem um segundo toque.</p>",
-        "en": "<p>Three functions on the same footswitch: quick press, held press and double press. The behavior adapts to what you fill in: only the first section = classic stomp; two or three sections = two or three effects on the same footswitch.</p><p>With RECLICK filled in, the short click waits a moment (about a third of a second) to see whether a second press is coming.</p>",
-        "es": "<p>Tres funciones en el mismo footswitch: toque rápido, toque mantenido y doble toque. El comportamiento se adapta a lo que completes: solo la primera sección = stomp clásico; dos o tres secciones = dos o tres efectos en el mismo pie.</p><p>Con el RECLICK completado, el clic corto espera un instante (cerca de un tercio de segundo) para saber si viene un segundo toque.</p>"
+        "pt": "<p>Três funções no mesmo footswitch: toque rápido, toque segurado e toque duplo. O comportamento se adapta ao que você preencher: só a primeira seção = stomp clássico; duas ou três seções = dois ou três efeitos no mesmo pé.</p><p>Com o PISAR DE NOVO preenchido, o toque espera um instante (cerca de um terço de segundo) para saber se vem um segundo toque.</p><p>Embaixo das abas, um aviso mostra quando o gesto ainda não tem canal e por isso não manda nada. No TOQUE, sem canal, o ícone do footswitch some da tela do pedal.</p>",
+        "en": "<p>Three functions on the same footswitch: quick press, held press and double press. The behavior adapts to what you fill in: only the first section = classic stomp; two or three sections = two or three effects on the same footswitch.</p><p>With PRESS AGAIN filled in, the tap waits a moment (about a third of a second) to see whether a second press is coming.</p><p>Below the tabs, a notice shows when a gesture has no channel yet and so sends nothing. On TAP, with no channel, the footswitch’s icon disappears from the pedal screen.</p>",
+        "es": "<p>Tres funciones en el mismo footswitch: toque rápido, toque mantenido y doble toque. El comportamiento se adapta a lo que completes: solo la primera sección = stomp clásico; dos o tres secciones = dos o tres efectos en el mismo pie.</p><p>Con el PISAR DE NUEVO completado, el toque espera un instante (cerca de un tercio de segundo) para saber si viene un segundo toque.</p><p>Debajo de las pestañas, un aviso muestra cuando el gesto todavía no tiene canal y por eso no envía nada. En el TOQUE, sin canal, el ícono del footswitch desaparece de la pantalla del pedal.</p>"
        }
       },
       {
@@ -2872,9 +2941,9 @@ const MN_CONTENT = {
         "es": "franja"
        },
        "desc": {
-        "pt": "<p><strong>LED</strong> — a cor do anel deste footswitch.<br><strong>DISPARA</strong> — manda o comando já na chamada do preset, sem esperar você pisar.<br><strong>COMEÇA</strong> — o efeito entra ligado ou desligado.<br><strong>INVERTE</strong> — o LED acende no desligado em vez de no ligado.<br>Nas abas CLICK LONGO e RECLICK há ainda <strong>VOLTA</strong>: ao desligar, a tela volta a mostrar o ícone do clique curto.</p>",
-        "en": "<p><strong>LED</strong> — the ring color for this footswitch.<br><strong>FIRES</strong> — sends the command as soon as the preset is called, without waiting for you to step on it.<br><strong>STARTS</strong> — the effect starts on or off.<br><strong>INVERT</strong> — the LED lights when off instead of when on.<br>The LONG CLICK and RECLICK tabs also have <strong>BACK</strong>: when turned off, the screen goes back to showing the short-click icon.</p>",
-        "es": "<p><strong>LED</strong> — el color del anillo de este footswitch.<br><strong>DISPARA</strong> — envía el comando ya al llamar el preset, sin esperar a que pises.<br><strong>EMPIEZA</strong> — el efecto arranca encendido o apagado.<br><strong>INVIERTE</strong> — el LED se enciende en apagado en vez de en encendido.<br>En las pestañas CLIC LARGO y RECLICK también está <strong>VUELVE</strong>: al apagar, la pantalla vuelve a mostrar el ícono del clic corto.</p>"
+        "pt": "<p><strong>LED</strong> — a cor do anel deste footswitch.<br><strong>DISPARA</strong> — manda o comando já na chamada do preset, sem esperar você pisar.<br><strong>COMEÇA</strong> — o efeito entra ligado ou desligado.<br><strong>INVERTE</strong> — o LED acende no desligado em vez de no ligado.<br>Nas abas SEGURAR e PISAR DE NOVO há ainda <strong>VOLTA</strong>: ao desligar, a tela volta a mostrar o ícone do TOQUE.</p><p>O botão <strong>INFO</strong>, no pé do card, mostra essas explicações na própria tela, junto com uma frase do que o modo faz.</p>",
+        "en": "<p><strong>LED</strong> — the ring color for this footswitch.<br><strong>FIRES</strong> — sends the command as soon as the preset is called, without waiting for you to step on it.<br><strong>STARTS</strong> — the effect starts on or off.<br><strong>INVERT</strong> — the LED lights when off instead of when on.<br>The HOLD and PRESS AGAIN tabs also have <strong>BACK</strong>: when turned off, the screen goes back to showing the TAP icon.</p><p>The <strong>INFO</strong> button at the bottom of the card shows these explanations on screen, along with a sentence about what the mode does.</p>",
+        "es": "<p><strong>LED</strong> — el color del anillo de este footswitch.<br><strong>DISPARA</strong> — envía el comando ya al llamar el preset, sin esperar a que pises.<br><strong>EMPIEZA</strong> — el efecto arranca encendido o apagado.<br><strong>INVIERTE</strong> — el LED se enciende en apagado en vez de en encendido.<br>En las pestañas MANTENER y PISAR DE NUEVO también está <strong>VUELVE</strong>: al apagar, la pantalla vuelve a mostrar el ícono del TOQUE.</p><p>El botón <strong>INFO</strong>, al pie de la tarjeta, muestra estas explicaciones en la pantalla, junto con una frase de lo que hace el modo.</p>"
        }
       },
       {
@@ -2889,17 +2958,17 @@ const MN_CONTENT = {
         "es": "interruptor"
        },
        "desc": {
-        "pt": "<p>Com duas ou três seções, o anel de LED se reparte — uma cor por seção. Ligando o <strong>ANEL ÚNICO</strong> (só na aba CLICK CURTO), os três LEDs acendem juntos, na cor da última seção que você tocou.</p>",
-        "en": "<p>With two or three sections, the LED ring is split — one color per section. Turning on <strong>SINGLE RING</strong> (only on the SHORT CLICK tab) lights all three LEDs together, in the color of the last section you triggered.</p>",
-        "es": "<p>Con dos o tres secciones, el anillo de LED se reparte — un color por sección. Al activar <strong>ANILLO ÚNICO</strong> (solo en la pestaña CLIC CORTO), los tres LEDs se encienden juntos, en el color de la última sección que tocaste.</p>"
+        "pt": "<p>Com duas ou três seções, o anel de LED se reparte — uma cor por seção. Ligando o <strong>ANEL ÚNICO</strong> (só na aba TOQUE), os três LEDs acendem juntos, na cor da última seção que você tocou.</p>",
+        "en": "<p>With two or three sections, the LED ring is split — one color per section. Turning on <strong>SINGLE RING</strong> (only on the TAP tab) lights all three LEDs together, in the color of the last section you triggered.</p>",
+        "es": "<p>Con dos o tres secciones, el anillo de LED se reparte — un color por sección. Al activar <strong>ANILLO ÚNICO</strong> (solo en la pestaña TOQUE), los tres LEDs se encienden juntos, en el color de la última sección que tocaste.</p>"
        }
       }
      ],
      "notes": [
       {
-       "pt": "Na dúvida, comece só com o CLICK CURTO. As outras seções podem ser acrescentadas depois, sem refazer nada.",
-       "en": "When in doubt, start with just SHORT CLICK. You can add the other sections later without redoing anything.",
-       "es": "Si tienes dudas, empieza solo con el CLIC CORTO. Las otras secciones se pueden agregar después, sin rehacer nada."
+       "pt": "Na dúvida, comece só com o TOQUE. As outras seções podem ser acrescentadas depois, sem refazer nada.",
+       "en": "When in doubt, start with just TAP. You can add the other sections later without redoing anything.",
+       "es": "Si tienes dudas, empieza solo con el TOQUE. Las otras secciones se pueden agregar después, sin rehacer nada."
       }
      ]
     },
@@ -3018,9 +3087,9 @@ const MN_CONTENT = {
         "es": "visual"
        },
        "desc": {
-        "pt": "<p>Ao bater o tempo, a controladora mostra o BPM num card temporário. O tempo que ele fica e se mostra a média ou os dois últimos toques se ajusta em <strong>CONFIGURAÇÕES › TELA</strong>. Desligar o card não apaga o tempo.</p>",
-        "en": "<p>When you tap the tempo, the controller shows the BPM on a temporary card. How long it stays up, and whether it shows the average or the last two taps, is set in <strong>SETTINGS › DISPLAY</strong>. Turning the card off doesn't erase the tempo.</p>",
-        "es": "<p>Al marcar el tempo, la controladora muestra el BPM en una tarjeta temporal. Cuánto tiempo se queda y si muestra el promedio o los dos últimos toques se ajusta en <strong>CONFIGURACIÓN › PANTALLA</strong>. Apagar la tarjeta no borra el tempo.</p>"
+        "pt": "<p>Ao bater o tempo, a controladora mostra o BPM num card temporário. O tempo que ele fica e se mostra a média ou os dois últimos toques se ajusta em <strong>CONFIGURAÇÕES › TELA › GERAL</strong>. Desligar o card não apaga o tempo.</p>",
+        "en": "<p>When you tap the tempo, the controller shows the BPM on a temporary card. How long it stays up, and whether it shows the average or the last two taps, is set in <strong>SETTINGS › DISPLAY › GENERAL</strong>. Turning the card off doesn't erase the tempo.</p>",
+        "es": "<p>Al marcar el tempo, la controladora muestra el BPM en una tarjeta temporal. Cuánto tiempo se queda y si muestra el promedio o los dos últimos toques se ajusta en <strong>CONFIGURACIÓN › PANTALLA › GENERAL</strong>. Apagar la tarjeta no borra el tempo.</p>"
        }
       },
       {
@@ -3035,9 +3104,9 @@ const MN_CONTENT = {
         "es": "integración"
        },
        "desc": {
-        "pt": "<p>O STEPS em <strong>SYNC TAP</strong> segue o tempo batido, e o <strong>MODO PALCO</strong> mostra o BPM na barra de cima. Com uma Valeton GP-5 plugada no USB Host e no Modo Amigável, um destino <strong>CC 119</strong> manda o tempo do delay em milissegundos direto para ela.</p>",
-        "en": "<p>STEPS in <strong>SYNC TAP</strong> follows the tapped tempo, and <strong>STAGE MODE</strong> shows the BPM on the top bar. With a Valeton GP-5 plugged into the USB Host and set up in Friendly Mode, a <strong>CC 119</strong> target sends the delay time in milliseconds straight to it.</p>",
-        "es": "<p>El STEPS en <strong>SYNC TAP</strong> sigue el tempo marcado, y el <strong>MODO ESCENARIO</strong> muestra el BPM en la barra de arriba. Con una Valeton GP-5 conectada al USB Host y en el Modo Amigable, un destino <strong>CC 119</strong> le envía directamente el tiempo del delay en milisegundos.</p>"
+        "pt": "<p>O STEPS em <strong>NO TEMPO</strong> segue o tempo batido, e o <strong>MODO PALCO</strong> mostra o BPM na barra de cima. Com uma Valeton GP-5 plugada no USB Host e no Modo Amigável, um destino <strong>CC 119</strong> manda o tempo do delay em milissegundos direto para ela.</p>",
+        "en": "<p>STEPS in <strong>IN TIME</strong> follows the tapped tempo, and <strong>STAGE MODE</strong> shows the BPM on the top bar. With a Valeton GP-5 plugged into the USB Host and set up in Friendly Mode, a <strong>CC 119</strong> target sends the delay time in milliseconds straight to it.</p>",
+        "es": "<p>El STEPS en <strong>A TEMPO</strong> sigue el tempo marcado, y el <strong>MODO ESCENARIO</strong> muestra el BPM en la barra de arriba. Con una Valeton GP-5 conectada al USB Host y en el Modo Amigable, un destino <strong>CC 119</strong> le envía directamente el tiempo del delay en milisegundos.</p>"
        }
       }
      ]
@@ -3056,9 +3125,9 @@ const MN_CONTENT = {
      },
      "howto": [
       {
-       "pt": "Escolha a aba do gesto: <strong>CLICK CURTO</strong>, <strong>CLICK LONGO</strong> ou <strong>RECLICK</strong>.",
-       "en": "Choose the gesture tab: <strong>SHORT CLICK</strong>, <strong>LONG CLICK</strong> or <strong>RECLICK</strong>.",
-       "es": "Elige la pestaña del gesto: <strong>CLIC CORTO</strong>, <strong>CLIC LARGO</strong> o <strong>RECLICK</strong>."
+       "pt": "Escolha a aba do gesto: <strong>TOQUE</strong>, <strong>SEGURAR</strong> ou <strong>PISAR DE NOVO</strong> (dois toques rápidos).",
+       "en": "Choose the gesture tab: <strong>TAP</strong>, <strong>HOLD</strong> or <strong>PRESS AGAIN</strong> (two quick taps).",
+       "es": "Elige la pestaña del gesto: <strong>TOQUE</strong>, <strong>MANTENER</strong> o <strong>PISAR DE NUEVO</strong> (dos toques rápidos)."
       },
       {
        "pt": "Preencha até quatro slots, cada um CC ou PC, com valor e canal.",
@@ -3437,9 +3506,9 @@ const MN_CONTENT = {
        "es": "En <strong>SECUENCIA</strong>, elige el CC y el canal y completa los cuatro valores."
       },
       {
-       "pt": "Escolha o ritmo: <strong>MANUAL</strong> (um tempo em milissegundos por step) ou <strong>SYNC TAP</strong> (uma figura musical por step, sobre a batida).",
-       "en": "Choose the timing: <strong>MANUAL</strong> (a time in milliseconds per step) or <strong>SYNC TAP</strong> (a note value per step, based on the beat).",
-       "es": "Elige el ritmo: <strong>MANUAL</strong> (un tiempo en milisegundos por step) o <strong>SYNC TAP</strong> (una figura musical por step, sobre el pulso)."
+       "pt": "Escolha o ritmo: <strong>MS</strong> (um tempo em milissegundos por step) ou <strong>NO TEMPO</strong> (uma figura musical por step, sobre a batida).",
+       "en": "Choose the timing: <strong>MS</strong> (a time in milliseconds per step) or <strong>IN TIME</strong> (a note value per step, based on the beat).",
+       "es": "Elige el ritmo: <strong>MS</strong> (un tiempo en milisegundos por step) o <strong>A TEMPO</strong> (una figura musical por step, sobre el pulso)."
       },
       {
        "pt": "Se quiser, preencha <strong>LIGAR EFEITO</strong>: um segundo CC que recebe ON ao começar e OFF ao parar.",
@@ -3478,9 +3547,9 @@ const MN_CONTENT = {
       },
       {
        "name": {
-        "pt": "MANUAL × SYNC TAP",
-        "en": "MANUAL × SYNC TAP",
-        "es": "MANUAL × SYNC TAP"
+        "pt": "MS × NO TEMPO",
+        "en": "MS × IN TIME",
+        "es": "MS × A TEMPO"
        },
        "type": {
         "pt": "ritmo",
@@ -3488,9 +3557,9 @@ const MN_CONTENT = {
         "es": "ritmo"
        },
        "desc": {
-        "pt": "<p>No <strong>MANUAL</strong>, cada step tem o seu tempo (até 2 s) — dá para fazer ritmos irregulares.</p><p>No <strong>SYNC TAP</strong>, cada step recebe uma figura musical sobre a batida. A batida pode vir do <strong>Tap</strong> (bateu um tempo novo, a sequência acompanha) ou de um <strong>BPM fixo</strong> (20 a 300) — com BPM fixo este footswitch ignora o tap, o que permite ritmo fixo aqui enquanto outro pé bate o tempo do delay.</p>",
-        "en": "<p>In <strong>MANUAL</strong>, each step has its own time (up to 2 s) — so you can make irregular rhythms.</p><p>In <strong>SYNC TAP</strong>, each step gets a note value based on the beat. The beat can come from <strong>Tap</strong> (tap a new tempo and the sequence follows) or from a <strong>Fixed BPM</strong> (20 to 300) — with a fixed BPM this footswitch ignores the tap, so you can keep a fixed rhythm here while another footswitch taps the delay tempo.</p>",
-        "es": "<p>En <strong>MANUAL</strong>, cada step tiene su propio tiempo (hasta 2 s) — puedes hacer ritmos irregulares.</p><p>En <strong>SYNC TAP</strong>, cada step recibe una figura musical sobre el pulso. El pulso puede venir del <strong>Tap</strong> (marcas un tempo nuevo y la secuencia lo sigue) o de un <strong>BPM fijo</strong> (20 a 300) — con BPM fijo este footswitch ignora el tap, lo que permite un ritmo fijo aquí mientras otro pie marca el tempo del delay.</p>"
+        "pt": "<p>No <strong>MS</strong>, cada step tem o seu tempo (até 2 s) — dá para fazer ritmos irregulares.</p><p>No <strong>NO TEMPO</strong>, cada step recebe uma figura musical sobre a batida. A batida pode vir do <strong>Tap</strong> (bateu um tempo novo, a sequência acompanha) ou de um <strong>BPM fixo</strong> (20 a 300) — com BPM fixo este footswitch ignora o tap, o que permite ritmo fixo aqui enquanto outro pé bate o tempo do delay.</p>",
+        "en": "<p>In <strong>MS</strong>, each step has its own time (up to 2 s) — so you can make irregular rhythms.</p><p>In <strong>IN TIME</strong>, each step gets a note value based on the beat. The beat can come from <strong>Tap</strong> (tap a new tempo and the sequence follows) or from a <strong>Fixed BPM</strong> (20 to 300) — with a fixed BPM this footswitch ignores the tap, so you can keep a fixed rhythm here while another footswitch taps the delay tempo.</p>",
+        "es": "<p>En <strong>MS</strong>, cada step tiene su propio tiempo (hasta 2 s) — puedes hacer ritmos irregulares.</p><p>En <strong>A TEMPO</strong>, cada step recibe una figura musical sobre el pulso. El pulso puede venir del <strong>Tap</strong> (marcas un tempo nuevo y la secuencia lo sigue) o de un <strong>BPM fijo</strong> (20 a 300) — con BPM fijo este footswitch ignora el tap, lo que permite un ritmo fijo aquí mientras otro pie marca el tempo del delay.</p>"
        }
       },
       {
@@ -3609,16 +3678,346 @@ const MN_CONTENT = {
      ]
     },
     {
-     "id": "sw-mute",
+     "id": "sw-increment",
      "title": {
-      "pt": "MUTE — footswitch sem função",
-      "en": "MUTE — footswitch with no function",
-      "es": "MUTE — footswitch sin función"
+      "pt": "INCREMENTO — sobe a cada pisada",
+      "en": "INCREMENTO — goes up on each press",
+      "es": "INCREMENTO — sube con cada pisada"
      },
      "purpose": {
-      "pt": "O modo de quem não quer nada naquele pé: não manda MIDI, não acende LED, não aparece na tela.",
-      "en": "The mode for when you want nothing on that footswitch: it sends no MIDI, lights no LED and doesn't show up on the screen.",
-      "es": "El modo para cuando no quieres nada en ese pie: no envía MIDI, no enciende LED, no aparece en la pantalla."
+      "pt": "Cada pisada manda o próximo número de uma sequência: o valor de um CC, o número do CC ou o PC. Serve para avançar presets um a um, subir o volume em degraus ou percorrer as cenas de um aparelho.",
+      "en": "Each press sends the next number in a sequence: a CC value, the CC number or the PC. Use it to step through presets one by one, raise the volume in steps or walk through a device's scenes.",
+      "es": "Cada pisada envía el siguiente número de una secuencia: el valor de un CC, el número del CC o el PC. Sirve para avanzar presets uno a uno, subir el volumen por escalones o recorrer las escenas de un equipo."
+     },
+     "howto": [
+      {
+       "pt": "Escolha <strong>o que sobe</strong>: VALOR (um CC fixo, o valor sobe), Nº DO CC (o número do CC sobe, com um valor fixo) ou PC.",
+       "en": "Choose <strong>what goes up</strong>: VALUE (a fixed CC, the value rises), CC NUMBER (the CC number rises, with a fixed value) or PC.",
+       "es": "Elige <strong>qué sube</strong>: VALOR (un CC fijo, el valor sube), Nº DEL CC (el número del CC sube, con un valor fijo) o PC."
+      },
+      {
+       "pt": "Em <strong>SEQUÊNCIA</strong>, ajuste o <strong>Início</strong> e o <strong>Passo</strong> (quanto sobe por pisada).",
+       "en": "In <strong>SEQUENCE</strong>, set the <strong>Start</strong> and the <strong>Step</strong> (how much it rises per press).",
+       "es": "En <strong>SECUENCIA</strong>, ajusta el <strong>Inicio</strong> y el <strong>Paso</strong> (cuánto sube por pisada)."
+      },
+      {
+       "pt": "Em <strong>Até onde</strong>, escolha ATÉ 127 (e se ao chegar lá ele VOLTA AO INÍCIO ou PARA NO 127) ou N PISADAS (quantas pisadas até voltar ao início).",
+       "en": "In <strong>How far</strong>, choose UP TO 127 (and whether on reaching it it goes BACK TO START or STOPS AT 127) or N PRESSES (how many presses before going back to the start).",
+       "es": "En <strong>Hasta dónde</strong>, elige HASTA 127 (y si al llegar VUELVE AL INICIO o SE QUEDA EN 127) o N PISADAS (cuántas pisadas hasta volver al inicio)."
+      },
+      {
+       "pt": "Confira a prévia: ela mostra cada número que vai sair, na ordem, com o atual aceso.",
+       "en": "Check the preview: it shows every number that will be sent, in order, with the current one lit.",
+       "es": "Revisa la vista previa: muestra cada número que va a salir, en orden, con el actual encendido."
+      }
+     ],
+     "shot": "sw-increment",
+     "mockTitle": {
+      "pt": "SW — MODO INCREMENTO",
+      "en": "SW — INCREMENTO MODE",
+      "es": "SW — MODO INCREMENTO"
+     },
+     "fields": [
+      {
+       "name": {
+        "pt": "SEGURAR e PISAR DE NOVO",
+        "en": "HOLD and PRESS AGAIN",
+        "es": "MANTENER y PISAR DE NUEVO"
+       },
+       "type": {
+        "pt": "gestos",
+        "en": "gestures",
+        "es": "gestos"
+       },
+       "desc": {
+        "pt": "<p>O toque sempre sobe. Os outros dois gestos podem ganhar uma ação: <strong>VOLTAR AO INÍCIO</strong>, <strong>SOBE</strong>, <strong>DESCE</strong>, <strong>VAI AO FIM</strong> ou <strong>ZERA SEM ENVIAR</strong> (volta ao início em silêncio; a próxima pisada manda o início).</p><p>Com tudo em NENHUMA o número sai no momento em que você pisa. Com SEGURAR configurado ele sai ao soltar o pé; com PISAR DE NOVO, espera cerca de 0,35 s para saber se vem a segunda pisada.</p>",
+        "en": "<p>A tap always goes up. The other two gestures can get an action: <strong>BACK TO START</strong>, <strong>UP</strong>, <strong>DOWN</strong>, <strong>GO TO END</strong> or <strong>RESET SILENTLY</strong> (goes back to the start without sending; the next press sends the start).</p><p>With everything on NONE the number goes out the moment you press. With HOLD set it goes out when you lift your foot; with PRESS AGAIN it waits about 0.35 s to see whether a second press is coming.</p>",
+        "es": "<p>El toque siempre sube. Los otros dos gestos pueden tener una acción: <strong>VOLVER AL INICIO</strong>, <strong>SUBE</strong>, <strong>BAJA</strong>, <strong>VA AL FINAL</strong> o <strong>REINICIA SIN ENVIAR</strong> (vuelve al inicio en silencio; la próxima pisada envía el inicio).</p><p>Con todo en NINGUNA el número sale en el momento en que pisas. Con MANTENER configurado sale al levantar el pie; con PISAR DE NUEVO espera unos 0,35 s para saber si viene la segunda pisada.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "DISPARA",
+        "en": "FIRES",
+        "es": "DISPARA"
+       },
+       "type": {
+        "pt": "opção",
+        "en": "option",
+        "es": "opción"
+       },
+       "desc": {
+        "pt": "<p>Ligado (padrão), o número de início sai na chamada do preset e a primeira pisada já sobe. Desligado, nada sai na chamada e a primeira pisada manda o início. Trocar de preset sempre volta a sequência ao início.</p>",
+        "en": "<p>On (default), the start number is sent when the preset is called and the first press already goes up. Off, nothing is sent on preset call and the first press sends the start. Changing preset always takes the sequence back to the start.</p>",
+        "es": "<p>Activado (por defecto), el número de inicio sale al llamar el preset y la primera pisada ya sube. Desactivado, no sale nada al llamar y la primera pisada envía el inicio. Cambiar de preset siempre vuelve la secuencia al inicio.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Modo do LED",
+        "en": "LED mode",
+        "es": "Modo del LED"
+       },
+       "type": {
+        "pt": "visual",
+        "en": "visual",
+        "es": "visual"
+       },
+       "desc": {
+        "pt": "<p>O botão do LED alterna três jeitos de mostrar onde você está na sequência: <strong>PROGRESSO</strong> (acende 1, 2 ou 3 pontos do anel), <strong>BRILHO</strong> (o anel fica mais forte conforme o número sobe) e <strong>DEGRADÊ</strong> (a cor vai da cor do INÍCIO até a cor do FIM).</p>",
+        "en": "<p>The LED button cycles through three ways of showing where you are in the sequence: <strong>PROGRESS</strong> (lights 1, 2 or 3 points of the ring), <strong>BRIGHTNESS</strong> (the ring gets brighter as the number rises) and <strong>FADE</strong> (the color goes from the START color to the END color).</p>",
+        "es": "<p>El botón del LED alterna tres maneras de mostrar dónde estás en la secuencia: <strong>PROGRESO</strong> (enciende 1, 2 o 3 puntos del anillo), <strong>BRILLO</strong> (el anillo se vuelve más fuerte a medida que sube el número) y <strong>DEGRADÉ</strong> (el color va del color de INICIO al color de FINAL).</p>"
+       }
+      }
+     ],
+     "notes": [
+      {
+       "pt": "No SW GLOBAL e nos footswitches externos nada sai na chamada de preset: a primeira pisada manda o início. Para voltar ao início a cada troca de preset, ligue VOLTAR AO INÍCIO AO TROCAR DE PRESET.",
+       "en": "On SW GLOBAL and the external footswitches nothing is sent on preset call: the first press sends the start. To go back to the start on every preset change, turn on RETURN TO START ON PRESET CHANGE.",
+       "es": "En el SW GLOBAL y en los footswitches externos no sale nada al llamar un preset: la primera pisada envía el inicio. Para volver al inicio en cada cambio de preset, activa VOLVER AL INICIO AL CAMBIAR DE PRESET."
+      },
+      {
+       "pt": "No Modo Palco, tocar no ícone sobe o número, como uma pisada.",
+       "en": "In Stage Mode, tapping the icon raises the number, like a press.",
+       "es": "En el Modo Escenario, tocar el ícono sube el número, como una pisada."
+      }
+     ]
+    },
+    {
+     "id": "sw-spring",
+     "title": {
+      "pt": "RETORNO — ação ao pisar, repouso ao soltar",
+      "en": "RETORNO — action on press, rest on release",
+      "es": "RETORNO — acción al pisar, reposo al soltar"
+     },
+     "purpose": {
+      "pt": "Uma chave com mola: pisar manda o valor de AÇÃO e soltar devolve o valor de REPOUSO, num destino só (CC ou PC). Para um boost de solo enquanto o pé está em cima, um freeze, um kill switch.",
+      "en": "A spring-loaded switch: pressing sends the ACTION value and releasing sends back the REST value, to a single target (CC or PC). For a solo boost while your foot is down, a freeze, a kill switch.",
+      "es": "Una llave con resorte: pisar envía el valor de ACCIÓN y soltar devuelve el valor de REPOSO, a un solo destino (CC o PC). Para un boost de solo mientras el pie está encima, un freeze, un kill switch."
+     },
+     "howto": [
+      {
+       "pt": "Escolha o canal e o CC (ou troque para PC no disco ao lado).",
+       "en": "Choose the channel and the CC (or switch to PC with the disc next to it).",
+       "es": "Elige el canal y el CC (o cambia a PC con el disco de al lado)."
+      },
+      {
+       "pt": "Em <strong>Valores</strong>, ajuste o <strong>Repouso</strong> (sai ao soltar) e a <strong>Ação</strong> (sai ao pisar).",
+       "en": "In <strong>Values</strong>, set <strong>Rest</strong> (sent on release) and <strong>Action</strong> (sent on press).",
+       "es": "En <strong>Valores</strong>, ajusta el <strong>Reposo</strong> (sale al soltar) y la <strong>Acción</strong> (sale al pisar)."
+      },
+      {
+       "pt": "Escolha a cor do LED: ele acende enquanto o pé está pisado.",
+       "en": "Pick the LED color: it lights while your foot is down.",
+       "es": "Elige el color del LED: se enciende mientras el pie está pisado."
+      }
+     ],
+     "shot": "sw-spring",
+     "mockTitle": {
+      "pt": "SW — MODO RETORNO",
+      "en": "SW — RETORNO MODE",
+      "es": "SW — MODO RETORNO"
+     },
+     "fields": [
+      {
+       "name": {
+        "pt": "RETORNO ou MOMENTARY?",
+        "en": "RETORNO or MOMENTARY?",
+        "es": "¿RETORNO o MOMENTARY?"
+       },
+       "type": {
+        "pt": "conceito",
+        "en": "concept",
+        "es": "concepto"
+       },
+       "desc": {
+        "pt": "<p>Os dois agem enquanto o pé está em cima. O RETORNO é o mais simples: um destino só, e ele mostra o pé pisado no LED e na tela. O MOMENTARY manda vários comandos de uma vez. O RETORNO também pode deixar o aparelho em repouso logo na chamada do preset (DISPARA).</p>",
+        "en": "<p>Both act while your foot is down. RETORNO is the simpler one: a single target, and it shows the pressed foot on the LED and on the screen. MOMENTARY sends several commands at once. RETORNO can also put the device at rest right when the preset is called (FIRES).</p>",
+        "es": "<p>Los dos actúan mientras el pie está encima. El RETORNO es el más simple: un solo destino, y muestra el pie pisado en el LED y en la pantalla. El MOMENTARY envía varios comandos a la vez. El RETORNO también puede dejar el equipo en reposo ya al llamar el preset (DISPARA).</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "DISPARA e INVERTE",
+        "en": "FIRES and INVERT",
+        "es": "DISPARA e INVIERTE"
+       },
+       "type": {
+        "pt": "opções",
+        "en": "options",
+        "es": "opciones"
+       },
+       "desc": {
+        "pt": "<p><strong>DISPARA</strong> (ligado por padrão) manda o valor de REPOUSO na chamada do preset, para o aparelho começar no lugar certo. <strong>INVERTE</strong> faz o LED acender em repouso e apagar ao pisar.</p>",
+        "en": "<p><strong>FIRES</strong> (on by default) sends the REST value when the preset is called, so the device starts in the right place. <strong>INVERT</strong> makes the LED light at rest and go off when you press.</p>",
+        "es": "<p><strong>DISPARA</strong> (activado por defecto) envía el valor de REPOSO al llamar el preset, para que el equipo empiece en el lugar correcto. <strong>INVIERTE</strong> hace que el LED se encienda en reposo y se apague al pisar.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Em PC",
+        "en": "With PC",
+        "es": "En PC"
+       },
+       "type": {
+        "pt": "detalhe",
+        "en": "detail",
+        "es": "detalle"
+       },
+       "desc": {
+        "pt": "<p>Com PC, Ação e Repouso são números de programa. OFF num dos dois pula aquela fase: por exemplo, trocar de som ao pisar e não fazer nada ao soltar.</p>",
+        "en": "<p>With PC, Action and Rest are program numbers. OFF on either one skips that phase: for example, change sound on press and do nothing on release.</p>",
+        "es": "<p>Con PC, Acción y Reposo son números de programa. OFF en uno de los dos omite esa fase: por ejemplo, cambiar de sonido al pisar y no hacer nada al soltar.</p>"
+       }
+      }
+     ],
+     "notes": [
+      {
+       "pt": "Trocar de preset com o pé ainda em cima manda o REPOUSO antes — o aparelho nunca fica preso na AÇÃO.",
+       "en": "Changing preset with your foot still down sends the REST value first — the device never gets stuck on the ACTION.",
+       "es": "Cambiar de preset con el pie todavía encima envía el REPOSO antes — el equipo nunca queda trabado en la ACCIÓN."
+      },
+      {
+       "pt": "No Modo Palco, tocar no ícone não aciona o RETORNO: ele depende de pisar e soltar.",
+       "en": "In Stage Mode, tapping the icon doesn't trigger RETORNO: it depends on pressing and releasing.",
+       "es": "En el Modo Escenario, tocar el ícono no acciona el RETORNO: depende de pisar y soltar."
+      }
+     ]
+    },
+    {
+     "id": "sw-wave",
+     "title": {
+      "pt": "ONDA — o CC se mexe sozinho",
+      "en": "ONDA — the CC moves by itself",
+      "es": "ONDA — el CC se mueve solo"
+     },
+     "purpose": {
+      "pt": "Enquanto ligada, a onda manda o CC sozinha entre o MÍNIMO e o MÁXIMO, na forma escolhida — tremolo, filtro ou pan automático no tempo da música.",
+      "en": "While it's on, the wave sends the CC by itself between MINIMUM and MAXIMUM, in the shape you choose — automatic tremolo, filter or pan in time with the music.",
+      "es": "Mientras está encendida, la onda envía el CC sola entre el MÍNIMO y el MÁXIMO, en la forma elegida — trémolo, filtro o paneo automático al tempo de la música."
+     },
+     "howto": [
+      {
+       "pt": "Escolha o canal e o CC que a onda vai mexer.",
+       "en": "Choose the channel and the CC the wave will move.",
+       "es": "Elige el canal y el CC que la onda va a mover."
+      },
+      {
+       "pt": "Toque numa <strong>Forma</strong>: Senoide, Triângulo, Quadrada, Serra ↑, Serra ↓, Aleatória, Suave ou Pulso.",
+       "en": "Tap a <strong>Shape</strong>: Sine, Triangle, Square, Saw ↑, Saw ↓, Random, Smooth or Pulse.",
+       "es": "Toca una <strong>Forma</strong>: Senoide, Triángulo, Cuadrada, Sierra ↑, Sierra ↓, Aleatoria, Suave o Pulso."
+      },
+      {
+       "pt": "Ajuste o <strong>Mínimo</strong> e o <strong>Máximo</strong>.",
+       "en": "Set the <strong>Minimum</strong> and <strong>Maximum</strong>.",
+       "es": "Ajusta el <strong>Mínimo</strong> y el <strong>Máximo</strong>."
+      },
+      {
+       "pt": "Em <strong>Velocidade</strong>, escolha NO TEMPO (o ciclo dura uma figura musical) ou MS (um tempo fixo).",
+       "en": "In <strong>Speed</strong>, choose IN TIME (the cycle lasts a musical note value) or MS (a fixed time).",
+       "es": "En <strong>Velocidad</strong>, elige A TEMPO (el ciclo dura una figura musical) o MS (un tiempo fijo)."
+      }
+     ],
+     "shot": "sw-wave",
+     "mockTitle": {
+      "pt": "SW — MODO ONDA",
+      "en": "SW — ONDA MODE",
+      "es": "SW — MODO ONDA"
+     },
+     "fields": [
+      {
+       "name": {
+        "pt": "NO TEMPO",
+        "en": "IN TIME",
+        "es": "A TEMPO"
+       },
+       "type": {
+        "pt": "velocidade",
+        "en": "speed",
+        "es": "velocidad"
+       },
+       "desc": {
+        "pt": "<p>Um ciclo dura a figura escolhida — de 4 compassos a 1/16, com pontuadas e tercinas. A batida vem do <strong>Tap</strong> (o último TAP TEMPO batido na BFMiDi) ou de um <strong>BPM fixo</strong>. Com Tap, bater um tempo novo muda a velocidade da onda na hora, sem ela dar um pulo.</p>",
+        "en": "<p>One cycle lasts the chosen note value — from 4 bars to 1/16, including dotted and triplet values. The beat comes from <strong>Tap</strong> (the last TAP TEMPO tapped on the BFMiDi) or from a <strong>Fixed BPM</strong>. With Tap, tapping a new tempo changes the wave speed right away, without a jump.</p>",
+        "es": "<p>Un ciclo dura la figura elegida — de 4 compases a 1/16, con puntillos y tresillos. El pulso viene del <strong>Tap</strong> (el último TAP TEMPO marcado en la BFMiDi) o de un <strong>BPM fijo</strong>. Con Tap, marcar un tempo nuevo cambia la velocidad de la onda al instante, sin saltos.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "On/Off ou Momentâneo",
+        "en": "On/Off or Momentary",
+        "es": "On/Off o Momentáneo"
+       },
+       "type": {
+        "pt": "acionamento",
+        "en": "trigger",
+        "es": "accionamiento"
+       },
+       "desc": {
+        "pt": "<p><strong>On/Off</strong>: pisar liga a onda, pisar de novo para. <strong>Momentâneo</strong>: a onda só roda enquanto o pé está pisado.</p>",
+        "en": "<p><strong>On/Off</strong>: pressing starts the wave, pressing again stops it. <strong>Momentary</strong>: the wave only runs while your foot is down.</p>",
+        "es": "<p><strong>On/Off</strong>: pisar enciende la onda, pisar de nuevo la detiene. <strong>Momentáneo</strong>: la onda solo corre mientras el pie está pisado.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "DISPARA e MÍNIMO",
+        "en": "FIRES and MINIMUM",
+        "es": "DISPARA y MÍNIMO"
+       },
+       "type": {
+        "pt": "opções",
+        "en": "options",
+        "es": "opciones"
+       },
+       "desc": {
+        "pt": "<p><strong>DISPARA</strong> (desligado por padrão, só no On/Off) faz a onda já começar ao chamar o preset. <strong>MÍNIMO</strong> (ligado) manda o valor mínimo ao parar; desligado, o CC fica onde a onda parou.</p>",
+        "en": "<p><strong>FIRES</strong> (off by default, On/Off only) starts the wave as soon as the preset is called. <strong>MINIMUM</strong> (on) sends the minimum value when it stops; off, the CC stays where the wave stopped.</p>",
+        "es": "<p><strong>DISPARA</strong> (desactivado por defecto, solo en On/Off) hace que la onda empiece al llamar el preset. <strong>MÍNIMO</strong> (activado) envía el valor mínimo al detenerse; desactivado, el CC queda donde paró la onda.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "LED",
+        "en": "LED",
+        "es": "LED"
+       },
+       "type": {
+        "pt": "visual",
+        "en": "visual",
+        "es": "visual"
+       },
+       "desc": {
+        "pt": "<p>Enquanto a onda roda, o brilho do anel acompanha o valor que está saindo — dá para ver o ritmo no pé.</p>",
+        "en": "<p>While the wave runs, the ring brightness follows the value being sent — you can see the rhythm at your feet.</p>",
+        "es": "<p>Mientras la onda corre, el brillo del anillo sigue el valor que sale — se ve el ritmo en el pie.</p>"
+       }
+      }
+     ],
+     "notes": [
+      {
+       "pt": "A onda continua rodando na tela de PRESET. Ela manda no máximo uma mensagem a cada 15 ms, e só quando o valor muda.",
+       "en": "The wave keeps running on the PRESET screen. It sends at most one message every 15 ms, and only when the value changes.",
+       "es": "La onda sigue corriendo en la pantalla de PRESET. Envía como máximo un mensaje cada 15 ms, y solo cuando cambia el valor."
+      },
+      {
+       "pt": "No Modo Palco, tocar no ícone liga e desliga a onda (no On/Off).",
+       "en": "In Stage Mode, tapping the icon starts and stops the wave (in On/Off).",
+       "es": "En el Modo Escenario, tocar el ícono enciende y apaga la onda (en On/Off)."
+      }
+     ]
+    },
+    {
+     "id": "sw-mute",
+     "title": {
+      "pt": "MUTE — só em presets antigos",
+      "en": "MUTE — only in older presets",
+      "es": "MUTE — solo en presets antiguos"
+     },
+     "purpose": {
+      "pt": "O MUTE não aparece mais na lista de modos. Um footswitch que já estava em MUTE continua assim — sem MIDI, sem LED e sem ícone na tela — até você escolher outro modo.",
+      "en": "MUTE no longer appears in the list of modes. A footswitch that was already in MUTE stays that way — no MIDI, no LED and no icon on the screen — until you pick another mode.",
+      "es": "El MUTE ya no aparece en la lista de modos. Un footswitch que ya estaba en MUTE sigue así — sin MIDI, sin LED y sin ícono en la pantalla — hasta que elijas otro modo."
      },
      "shot": "sw-mute",
      "mockTitle": {
@@ -3629,9 +4028,9 @@ const MN_CONTENT = {
      "fields": [
       {
        "name": {
-        "pt": "Por que existe",
-        "en": "Why it exists",
-        "es": "Por qué existe"
+        "pt": "Como deixar um footswitch sem função",
+        "en": "How to leave a footswitch with no function",
+        "es": "Cómo dejar un footswitch sin función"
        },
        "type": {
         "pt": "uso",
@@ -3639,9 +4038,9 @@ const MN_CONTENT = {
         "es": "uso"
        },
        "desc": {
-        "pt": "<p>É a forma de desativar um pé que estava em uso, sem apagar o resto do preset — e o modo de um footswitch que você ainda não quer usar.</p>",
-        "en": "<p>It's the way to disable a footswitch that was in use without erasing the rest of the preset — and the mode for a footswitch you don't want to use yet.</p>",
-        "es": "<p>Es la forma de desactivar un pie que estaba en uso, sin borrar el resto del preset — y el modo de un footswitch que todavía no quieres usar.</p>"
+        "pt": "<p>Use qualquer modo com o <strong>CANAL em OFF</strong>. O resultado é o mesmo do MUTE — o pé não manda nada e some da tela da controladora —, mas o footswitch fica pronto para ganhar uma função quando você quiser. É assim que os footswitches novos já vêm: STOMP com canal OFF.</p>",
+        "en": "<p>Use any mode with the <strong>CHANNEL set to OFF</strong>. The result is the same as MUTE — the foot sends nothing and disappears from the controller's screen — but the footswitch is ready to get a function whenever you want. That's how new footswitches already come: STOMP with the channel OFF.</p>",
+        "es": "<p>Usa cualquier modo con el <strong>CANAL en OFF</strong>. El resultado es el mismo del MUTE — el pie no envía nada y desaparece de la pantalla de la controladora —, pero el footswitch queda listo para tener una función cuando quieras. Así vienen los footswitches nuevos: STOMP con canal OFF.</p>"
        }
       }
      ]
@@ -3732,9 +4131,9 @@ const MN_CONTENT = {
         "es": "contenido"
        },
        "desc": {
-        "pt": "<p>O ícone vem de uma biblioteca embutida (pedais, efeitos, símbolos) ou das imagens que você enviou em <strong>CONFIGURAÇÕES › IMAGENS</strong>. A sigla é o texto curto — “DRIVE”, “DLY”, “SOLO” —, com até 8 caracteres (6 por estado no SPIN, no SINGLE e no CONTROL).</p><p>Ícones coloridos (fotos de pedais) aparecem como são; os de traço levam a cor que você escolher.</p>",
-        "en": "<p>The icon comes from a built-in library (pedals, effects, symbols) or from the images you uploaded in <strong>SETTINGS › IMAGES</strong>. The label is the short text — “DRIVE”, “DLY”, “SOLO” —, up to 8 characters (6 per state in SPIN, SINGLE and CONTROL).</p><p>Color icons (pedal photos) show as they are; line icons take the color you choose.</p>",
-        "es": "<p>El ícono viene de una biblioteca integrada (pedales, efectos, símbolos) o de las imágenes que subiste en <strong>CONFIGURACIÓN › IMÁGENES</strong>. La sigla es el texto corto — “DRIVE”, “DLY”, “SOLO” —, de hasta 8 caracteres (6 por estado en SPIN, SINGLE y CONTROL).</p><p>Los íconos a color (fotos de pedales) se ven tal cual; los de trazo toman el color que elijas.</p>"
+        "pt": "<p>O ícone vem de uma biblioteca embutida (pedais, efeitos, símbolos) ou dos ícones que você enviou em <strong>CONFIGURAÇÕES › IMAGENS › ÍCONES</strong>. A sigla é o texto curto — “DRIVE”, “DLY”, “SOLO” —, com até 8 caracteres (6 por estado no SPIN, no SINGLE e no CONTROL).</p><p>Ícones coloridos (fotos de pedais) aparecem como são; os de traço levam a cor que você escolher.</p>",
+        "en": "<p>The icon comes from a built-in library (pedals, effects, symbols) or from the icons you uploaded in <strong>SETTINGS › IMAGES › ICONS</strong>. The label is the short text — “DRIVE”, “DLY”, “SOLO” —, up to 8 characters (6 per state in SPIN, SINGLE and CONTROL).</p><p>Color icons (pedal photos) show as they are; line icons take the color you choose.</p>",
+        "es": "<p>El ícono viene de una biblioteca integrada (pedales, efectos, símbolos) o de los íconos que subiste en <strong>CONFIGURACIÓN › IMÁGENES › ÍCONOS</strong>. La sigla es el texto corto — “DRIVE”, “DLY”, “SOLO” —, de hasta 8 caracteres (6 por estado en SPIN, SINGLE y CONTROL).</p><p>Los íconos a color (fotos de pedales) se ven tal cual; los de trazo toman el color que elijas.</p>"
        }
       },
       {
@@ -3797,22 +4196,22 @@ const MN_CONTENT = {
     "es": "Una pantalla completa, en horizontal y con letras grandes para dejar el celular o la tablet en el atril durante el show: el preset que está sonando, los footswitches y el aparato conectado."
    },
    "intro": {
-    "pt": "<p>O <strong>MODO PALCO</strong> transforma o editor num painel para o show. São duas telas: o <strong>PALCO 1</strong> mostra a BFMiDi — o nome do preset em letra enorme, a imagem de fundo e os footswitches, que você pode ligar e desligar com o dedo — e o <strong>PALCO 2</strong> mostra o aparelho plugado na controladora — a cadeia de efeitos e os knobs da GP-5, da TONEX ONE ou da Nano Cortex, editáveis ao vivo.</p><p>As configurações do palco (cores, fonte, imagens) ficam só no aparelho onde você abriu: nada disso vai para a controladora.</p>",
-    "en": "<p><strong>STAGE MODE</strong> turns the editor into a panel for the show. There are two screens: <strong>STAGE 1</strong> shows the BFMiDi — the preset name in huge letters, the background image and the footswitches, which you can turn on and off with your finger — and <strong>STAGE 2</strong> shows the device plugged into the controller — the effect chain and the knobs of the GP-5, the TONEX ONE or the Nano Cortex, editable live.</p><p>The stage settings (colors, font, images) stay only on the device where you opened it: none of it goes to the controller.</p>",
-    "es": "<p>El <strong>MODO ESCENARIO</strong> convierte el editor en un panel para el show. Son dos pantallas: el <strong>ESCENARIO 1</strong> muestra la BFMiDi — el nombre del preset en letras enormes, la imagen de fondo y los footswitches, que puedes encender y apagar con el dedo — y el <strong>ESCENARIO 2</strong> muestra el aparato conectado a la controladora — la cadena de efectos y los knobs de la GP-5, la TONEX ONE o la Nano Cortex, editables en vivo.</p><p>La configuración del escenario (colores, fuente, imágenes) queda solo en el aparato donde lo abriste: nada de esto va a la controladora.</p>"
+    "pt": "<p>O <strong>MODO PALCO</strong> transforma o editor num painel para o show. São duas telas: o <strong>PALCO BFMIDI</strong> mostra a BFMiDi — o nome do preset em letra enorme, a imagem de fundo e os footswitches, que você pode ligar e desligar com o dedo — e o <strong>PALCO ESPECIAL</strong> mostra o pedal dedicado plugado na controladora — a cadeia de efeitos e os knobs da GP-5, da TONEX ONE ou da Nano Cortex, editáveis ao vivo.</p><p>O Modo Palco existe <strong>só nos aplicativos</strong> da BFMiDi (Android, iPhone/iPad, Mac e Windows). No editor aberto pelo navegador — pela controladora ou pelo site — ele não aparece.</p><p>As configurações do palco (cores, fonte, imagens) ficam só no aparelho onde você abriu: nada disso vai para a controladora.</p>",
+    "en": "<p><strong>STAGE MODE</strong> turns the editor into a panel for the show. There are two screens: the <strong>BFMIDI STAGE</strong> shows the BFMiDi — the preset name in huge letters, the background image and the footswitches, which you can turn on and off with your finger — and the <strong>SPECIAL STAGE</strong> shows the dedicated pedal plugged into the controller — the effect chain and the knobs of the GP-5, the TONEX ONE or the Nano Cortex, editable live.</p><p>Stage Mode exists <strong>only in the BFMiDi apps</strong> (Android, iPhone/iPad, Mac and Windows). In the editor opened in a browser — from the controller or from the website — it does not appear.</p><p>The stage settings (colors, font, images) stay only on the device where you opened it: none of it goes to the controller.</p>",
+    "es": "<p>El <strong>MODO ESCENARIO</strong> convierte el editor en un panel para el show. Son dos pantallas: el <strong>ESCENARIO BFMIDI</strong> muestra la BFMiDi — el nombre del preset en letras enormes, la imagen de fondo y los footswitches, que puedes encender y apagar con el dedo — y el <strong>ESCENARIO ESPECIAL</strong> muestra el pedal dedicado conectado a la controladora — la cadena de efectos y los knobs de la GP-5, la TONEX ONE o la Nano Cortex, editables en vivo.</p><p>El Modo Escenario existe <strong>solo en las apps</strong> de la BFMiDi (Android, iPhone/iPad, Mac y Windows). En el editor abierto en el navegador — desde la controladora o desde el sitio web — no aparece.</p><p>La configuración del escenario (colores, fuente, imágenes) queda solo en el aparato donde lo abriste: nada de esto va a la controladora.</p>"
    },
    "cards": [
     {
      "id": "palco-abrir",
      "title": {
-      "pt": "Abrir o Modo Palco e o PALCO 1",
-      "en": "Opening Stage Mode and STAGE 1",
-      "es": "Abrir el Modo Escenario y el ESCENARIO 1"
+      "pt": "Abrir o Modo Palco e o PALCO BFMIDI",
+      "en": "Opening Stage Mode and the BFMIDI STAGE",
+      "es": "Abrir el Modo Escenario y el ESCENARIO BFMIDI"
      },
      "purpose": {
-      "pt": "O PALCO 1 é o painel genérico: o preset da BFMiDi em letra grande, a imagem do preset e os ícones dos footswitches — iguais aos da tela da controladora.",
-      "en": "STAGE 1 is the general-purpose panel: the BFMiDi preset in big letters, the preset image and the footswitch icons — the same ones shown on the controller's screen.",
-      "es": "El ESCENARIO 1 es el panel general: el preset de la BFMiDi en letras grandes, la imagen del preset y los íconos de los footswitches — iguales a los de la pantalla de la controladora."
+      "pt": "O PALCO BFMIDI é o painel genérico: o preset da BFMiDi em letra grande, a imagem do preset e os ícones dos footswitches — iguais aos da tela da controladora.",
+      "en": "The BFMIDI STAGE is the general-purpose panel: the BFMiDi preset in big letters, the preset image and the footswitch icons — the same ones shown on the controller's screen.",
+      "es": "El ESCENARIO BFMIDI es el panel general: el preset de la BFMiDi en letras grandes, la imagen del preset y los íconos de los footswitches — iguales a los de la pantalla de la controladora."
      },
      "howto": [
       {
@@ -3821,9 +4220,9 @@ const MN_CONTENT = {
        "es": "En la pantalla PRESET, toca <strong>MODO ESCENARIO</strong> — siempre es el primer botón de la fila de atajos de la tarjeta PRINCIPAL."
       },
       {
-       "pt": "O palco abre sempre no <strong>PALCO 1</strong>. No celular ele ocupa a tela inteira e fica deitado.",
-       "en": "The stage always opens on <strong>STAGE 1</strong>. On a phone it fills the whole screen in landscape.",
-       "es": "El escenario siempre abre en el <strong>ESCENARIO 1</strong>. En el celular ocupa toda la pantalla y queda en horizontal."
+       "pt": "O palco abre no <strong>PALCO BFMIDI</strong>; para abrir no PALCO ESPECIAL ou no último usado, vá em <strong>CONFIGURAÇÕES › EDITOR › GERAL</strong>, card <strong>MODO PALCO</strong>. No celular ele ocupa a tela inteira e fica deitado.",
+       "en": "The stage opens on the <strong>BFMIDI STAGE</strong>; to open on the SPECIAL STAGE or on the last one used, go to <strong>SETTINGS › EDITOR › GENERAL</strong>, <strong>STAGE MODE</strong> card. On a phone it fills the whole screen in landscape.",
+       "es": "El escenario abre en el <strong>ESCENARIO BFMIDI</strong>; para abrir en el ESCENARIO ESPECIAL o en el último usado, ve a <strong>CONFIGURACIÓN › EDITOR › GENERAL</strong>, tarjeta <strong>MODO ESCENARIO</strong>. En el celular ocupa toda la pantalla y queda en horizontal."
       },
       {
        "pt": "Toque num ícone de footswitch para ligar ou desligar o efeito; toque num preset da fileira de baixo para trocar de música.",
@@ -3833,9 +4232,9 @@ const MN_CONTENT = {
      ],
      "shot": "stage-1",
      "mockTitle": {
-      "pt": "PALCO 1",
-      "en": "STAGE 1",
-      "es": "ESCENARIO 1"
+      "pt": "PALCO BFMIDI",
+      "en": "BFMIDI STAGE",
+      "es": "ESCENARIO BFMIDI"
      },
      "hot": [
       {
@@ -3915,9 +4314,9 @@ const MN_CONTENT = {
         "es": "fondo"
        },
        "desc": {
-        "pt": "<p>Por padrão é o <strong>mesmo fundo da tela da controladora</strong> naquele preset (o de PRESET ou o de LIVE, conforme o modo). Nos aplicativos você também pode usar a galeria do app ou uma foto sua — veja <strong>As imagens do palco</strong>.</p>",
-        "en": "<p>By default it's the <strong>same background as the controller's screen</strong> for that preset (the PRESET one or the LIVE one, depending on the mode). In the apps you can also use the app gallery or one of your own photos — see <strong>Stage images</strong>.</p>",
-        "es": "<p>Por defecto es el <strong>mismo fondo de la pantalla de la controladora</strong> en ese preset (el de PRESET o el de LIVE, según el modo). En las apps también puedes usar la galería de la app o una foto tuya — mira <strong>Las imágenes del escenario</strong>.</p>"
+        "pt": "<p>Por padrão é o <strong>mesmo fundo da tela PRESET da controladora</strong> naquele preset — mesmo com o pedal em LIVE. Desligando <strong>Imagem sempre do PRESET</strong>, em LIVE aparece o fundo da tela LIVE. Nos aplicativos você também pode usar a galeria do app ou uma foto sua — veja <strong>As imagens do palco</strong>.</p>",
+        "en": "<p>By default it's the <strong>same background as the controller's PRESET screen</strong> for that preset — even with the pedal in LIVE. Turning off <strong>Always the PRESET image</strong> shows the LIVE screen background while in LIVE. In the apps you can also use the app gallery or one of your own photos — see <strong>Stage images</strong>.</p>",
+        "es": "<p>Por defecto es el <strong>mismo fondo de la pantalla PRESET de la controladora</strong> en ese preset — incluso con el pedal en LIVE. Al desactivar <strong>Imagen siempre del PRESET</strong>, en LIVE aparece el fondo de la pantalla LIVE. En las apps también puedes usar la galería de la app o una foto tuya — mira <strong>Las imágenes del escenario</strong>.</p>"
        }
       },
       {
@@ -3932,9 +4331,9 @@ const MN_CONTENT = {
         "es": "íconos"
        },
        "desc": {
-        "pt": "<p>Os mesmos ícones da tela do pedal, com o número e uma barrinha na cor do LED. Footswitches sem canal MIDI ficam em branco, como na controladora.</p><p><strong>Tocar no ícone</strong> faz o mesmo que um clique curto no pé: liga ou desliga o efeito e manda o MIDI. Vale para os modos de liga/desliga — STOMP, MACROS, CONTROL e STEPS (este no LIVE ou no HÍBRIDO); nos outros aparece o aviso “Este modo não liga/desliga”.</p>",
-        "en": "<p>The same icons as on the pedal screen, with the number and a small bar in the LED color. Footswitches with no MIDI channel stay blank, just like on the controller.</p><p><strong>Tapping the icon</strong> does the same as a short click with your foot: it turns the effect on or off and sends the MIDI. This works for the on/off modes — STOMP, MACROS, CONTROL and STEPS (the last one only in LIVE); in the other modes you'll see the message “This mode has no on/off”.</p>",
-        "es": "<p>Los mismos íconos de la pantalla del pedal, con el número y una barrita en el color del LED. Los footswitches sin canal MIDI quedan en blanco, como en la controladora.</p><p><strong>Tocar el ícono</strong> hace lo mismo que un clic corto con el pie: enciende o apaga el efecto y envía el MIDI. Vale para los modos de encendido/apagado — STOMP, MACROS, CONTROL y STEPS (este en LIVE o en el HÍBRIDO); en los demás aparece el aviso “Este modo no enciende/apaga”.</p>"
+        "pt": "<p>Os mesmos ícones da tela do pedal, com o número e uma barrinha na cor do LED. Footswitches sem canal MIDI ficam em branco, como na controladora.</p><p><strong>Tocar no ícone</strong> faz o mesmo que um toque no pé: liga ou desliga o efeito e manda o MIDI. Vale para STOMP, MACROS, CONTROL, INCREMENTO (sobe o número), ONDA (no On/Off) e STEPS (este no LIVE ou no HÍBRIDO); nos outros aparece o aviso “Este modo não liga/desliga”.</p><p><strong>Segurar o ícone</strong> abre as configurações MIDI daquele footswitch ao lado do palco — veja o card seguinte.</p>",
+        "en": "<p>The same icons as on the pedal screen, with the number and a small bar in the LED color. Footswitches with no MIDI channel stay blank, just like on the controller.</p><p><strong>Tapping the icon</strong> does the same as a tap with your foot: it turns the effect on or off and sends the MIDI. This works for STOMP, MACROS, CONTROL, INCREMENTO (raises the number), ONDA (in On/Off) and STEPS (the last one only in LIVE); in the other modes you'll see the message “This mode has no on/off”.</p><p><strong>Holding the icon</strong> opens that footswitch's MIDI settings next to the stage — see the next card.</p>",
+        "es": "<p>Los mismos íconos de la pantalla del pedal, con el número y una barrita en el color del LED. Los footswitches sin canal MIDI quedan en blanco, como en la controladora.</p><p><strong>Tocar el ícono</strong> hace lo mismo que un toque con el pie: enciende o apaga el efecto y envía el MIDI. Vale para STOMP, MACROS, CONTROL, INCREMENTO (sube el número), ONDA (en On/Off) y STEPS (este en LIVE o en el HÍBRIDO); en los demás aparece el aviso “Este modo no enciende/apaga”.</p><p><strong>Mantener el ícono</strong> abre la configuración MIDI de ese footswitch al lado del escenario — mira la tarjeta siguiente.</p>"
        }
       },
       {
@@ -3986,6 +4385,102 @@ const MN_CONTENT = {
      ]
     },
     {
+     "id": "palco-swedit",
+     "title": {
+      "pt": "Editar um footswitch sem sair do palco",
+      "en": "Editing a footswitch without leaving the stage",
+      "es": "Editar un footswitch sin salir del escenario"
+     },
+     "purpose": {
+      "pt": "Segure o ícone de um footswitch e as configurações MIDI dele abrem num painel ao lado do palco — o mesmo card do modo LIVE do editor. O palco fica reduzido ao lado, e continua funcionando.",
+      "en": "Hold a footswitch icon and its MIDI settings open in a panel next to the stage — the same card as the editor's LIVE mode. The stage shrinks beside it and keeps working.",
+      "es": "Mantén el ícono de un footswitch y su configuración MIDI se abre en un panel al lado del escenario — la misma tarjeta del modo LIVE del editor. El escenario queda reducido al lado y sigue funcionando."
+     },
+     "howto": [
+      {
+       "pt": "No PALCO BFMIDI, segure o dedo num ícone de footswitch até a barrinha branca encher. No computador, o botão direito do mouse faz o mesmo.",
+       "en": "On the BFMIDI STAGE, hold your finger on a footswitch icon until the white bar fills. On a computer, the right mouse button does the same.",
+       "es": "En el ESCENARIO BFMIDI, mantén el dedo en un ícono de footswitch hasta que la barrita blanca se llene. En la computadora, el botón derecho del mouse hace lo mismo."
+      },
+      {
+       "pt": "Mude o modo, o canal, o CC ou a aparência (CONFIG e DISPLAY) como no editor.",
+       "en": "Change the mode, channel, CC or appearance (CONFIG and DISPLAY) just like in the editor.",
+       "es": "Cambia el modo, el canal, el CC o la apariencia (CONFIG y DISPLAY) como en el editor."
+      },
+      {
+       "pt": "Para editar outro footswitch, segure o ícone dele. Para fechar, toque no X ou aperte ESC.",
+       "en": "To edit another footswitch, hold its icon. To close, tap the X or press ESC.",
+       "es": "Para editar otro footswitch, mantén su ícono. Para cerrar, toca la X o pulsa ESC."
+      }
+     ],
+     "shot": "stage-swedit",
+     "mockTitle": {
+      "pt": "MODO PALCO — EDITAR FOOTSWITCH",
+      "en": "STAGE MODE — EDIT FOOTSWITCH",
+      "es": "MODO ESCENARIO — EDITAR FOOTSWITCH"
+     },
+     "fields": [
+      {
+       "name": {
+        "pt": "Salvar",
+        "en": "Saving",
+        "es": "Guardar"
+       },
+       "type": {
+        "pt": "gravação",
+        "en": "saving",
+        "es": "guardado"
+       },
+       "desc": {
+        "pt": "<p>Com o <strong>salvamento automático</strong> ligado (padrão), cada mudança é gravada no preset sozinha, como no editor. Sem ele, o card mostra EDITADO, NÃO SALVO e o botão <strong>SALVAR</strong>.</p>",
+        "en": "<p>With <strong>auto-save</strong> on (default), every change is saved to the preset by itself, as in the editor. Without it, the card shows EDITED, NOT SAVED and the <strong>SAVE</strong> button.</p>",
+        "es": "<p>Con el <strong>guardado automático</strong> activado (por defecto), cada cambio se graba en el preset solo, como en el editor. Sin él, la tarjeta muestra EDITADO, SIN GUARDAR y el botón <strong>GUARDAR</strong>.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "O palco continua tocável",
+        "en": "The stage stays usable",
+        "es": "El escenario sigue utilizable"
+       },
+       "type": {
+        "pt": "comportamento",
+        "en": "behavior",
+        "es": "comportamiento"
+       },
+       "desc": {
+        "pt": "<p>Com o painel aberto, tocar num ícone ainda liga e desliga o efeito — dá para ouvir a mudança na hora. O footswitch que está sendo editado ganha um contorno.</p>",
+        "en": "<p>With the panel open, tapping an icon still turns the effect on and off — you can hear the change right away. The footswitch being edited gets an outline.</p>",
+        "es": "<p>Con el panel abierto, tocar un ícono todavía enciende y apaga el efecto — se oye el cambio al instante. El footswitch que se está editando tiene un contorno.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Segurar o ícone (opção)",
+        "en": "Hold the icon (option)",
+        "es": "Mantener el ícono (opción)"
+       },
+       "type": {
+        "pt": "configuração",
+        "en": "setting",
+        "es": "configuración"
+       },
+       "desc": {
+        "pt": "<p>Em CONFIGURAÇÕES do palco › PALCO BFMIDI, <strong>Segurar o ícone</strong> vem em EDITAR O FOOTSWITCH. Com <strong>Acionar footswitch pela tela</strong> em SEGURAR, o segurar já é do footswitch e esta opção fica apagada.</p>",
+        "en": "<p>In the stage SETTINGS › BFMIDI STAGE, <strong>Hold the icon</strong> is set to EDIT THE FOOTSWITCH. With <strong>Trigger footswitch from the screen</strong> set to HOLD, holding already belongs to the footswitch and this option is greyed out.</p>",
+        "es": "<p>En CONFIGURACIÓN del escenario › ESCENARIO BFMIDI, <strong>Mantener el ícono</strong> viene en EDITAR EL FOOTSWITCH. Con <strong>Accionar footswitch desde la pantalla</strong> en MANTENER, mantener ya es del footswitch y esta opción queda apagada.</p>"
+       }
+      }
+     ],
+     "notes": [
+      {
+       "pt": "No palco do Kemper, segurar um stomp abre o mesmo painel.",
+       "en": "On the Kemper stage, holding a stomp opens the same panel.",
+       "es": "En el escenario del Kemper, mantener un stomp abre el mismo panel."
+      }
+     ]
+    },
+    {
      "id": "palco-barra",
      "title": {
       "pt": "A barra de controles",
@@ -3993,15 +4488,15 @@ const MN_CONTENT = {
       "es": "La barra de controles"
      },
      "purpose": {
-      "pt": "Sair, trocar entre PALCO 1 e PALCO 2, ver o preset, abrir as configurações e acompanhar a conexão e o BPM.",
-      "en": "Exit, switch between STAGE 1 and STAGE 2, see the preset, open the settings and keep an eye on the connection and the BPM.",
-      "es": "Salir, cambiar entre ESCENARIO 1 y ESCENARIO 2, ver el preset, abrir los ajustes y seguir la conexión y el BPM."
+      "pt": "Sair, trocar entre PALCO BFMIDI e PALCO ESPECIAL, ver o preset, abrir as configurações e acompanhar a conexão e o BPM.",
+      "en": "Exit, switch between the BFMIDI STAGE and the SPECIAL STAGE, see the preset, open the settings and keep an eye on the connection and the BPM.",
+      "es": "Salir, cambiar entre ESCENARIO BFMIDI y ESCENARIO ESPECIAL, ver el preset, abrir los ajustes y seguir la conexión y el BPM."
      },
      "shot": "stage-1-barra",
      "mockTitle": {
-      "pt": "PALCO 1 — BARRA ABERTA",
-      "en": "STAGE 1 — BAR OPEN",
-      "es": "ESCENARIO 1 — BARRA ABIERTA"
+      "pt": "PALCO BFMIDI — BARRA ABERTA",
+      "en": "BFMIDI STAGE — BAR OPEN",
+      "es": "ESCENARIO BFMIDI — BARRA ABIERTA"
      },
      "hot": [
       {
@@ -4019,9 +4514,9 @@ const MN_CONTENT = {
        "sel": ".bf-stage-view",
        "at": "c",
        "label": {
-        "pt": "PALCO 1 / 2",
-        "en": "STAGE 1 / 2",
-        "es": "ESCENARIO 1 / 2"
+        "pt": "PALCO BFMIDI / ESPECIAL",
+        "en": "BFMIDI / SPECIAL STAGE",
+        "es": "ESCENARIO BFMIDI / ESPECIAL"
        }
       },
       {
@@ -4075,9 +4570,9 @@ const MN_CONTENT = {
       },
       {
        "name": {
-        "pt": "PALCO 1 / PALCO 2",
-        "en": "STAGE 1 / STAGE 2",
-        "es": "ESCENARIO 1 / ESCENARIO 2"
+        "pt": "PALCO BFMIDI / PALCO ESPECIAL",
+        "en": "BFMIDI STAGE / SPECIAL STAGE",
+        "es": "ESCENARIO BFMIDI / ESCENARIO ESPECIAL"
        },
        "type": {
         "pt": "botão",
@@ -4119,9 +4614,9 @@ const MN_CONTENT = {
         "es": "botón"
        },
        "desc": {
-        "pt": "<p>Abre as configurações do palco, em quatro abas. Veja os cards seguintes.</p>",
-        "en": "<p>Opens the stage settings, in four tabs. See the following cards.</p>",
-        "es": "<p>Abre la configuración del escenario, en cuatro pestañas. Mira las tarjetas siguientes.</p>"
+        "pt": "<p>Abre as configurações do palco, num painel lateral com seis categorias. Veja os cards seguintes.</p>",
+        "en": "<p>Opens the stage settings, in a side panel with six categories. See the following cards.</p>",
+        "es": "<p>Abre la configuración del escenario, en un panel lateral con seis categorías. Mira las tarjetas siguientes.</p>"
        }
       },
       {
@@ -4143,9 +4638,9 @@ const MN_CONTENT = {
       },
       {
        "name": {
-        "pt": "No PALCO 2",
-        "en": "On STAGE 2",
-        "es": "En el ESCENARIO 2"
+        "pt": "No PALCO ESPECIAL",
+        "en": "On the SPECIAL STAGE",
+        "es": "En el ESCENARIO ESPECIAL"
        },
        "type": {
         "pt": "extras",
@@ -4153,9 +4648,9 @@ const MN_CONTENT = {
         "es": "extras"
        },
        "desc": {
-        "pt": "<p>Aparecem também o seletor do aparelho (<strong>GP-5</strong>, <strong>TONEX</strong>, <strong>NANO CORTEX</strong>, <strong>KEMPER</strong>) e o botão <strong>EDITOR</strong>, que abre o editor de preset completo por cima do palco.</p>",
-        "en": "<p>You'll also see the device selector (<strong>GP-5</strong>, <strong>TONEX</strong>, <strong>NANO CORTEX</strong>, <strong>KEMPER</strong>) and the <strong>EDITOR</strong> button, which opens the full preset editor on top of the stage.</p>",
-        "es": "<p>También aparecen el selector de aparato (<strong>GP-5</strong>, <strong>TONEX</strong>, <strong>NANO CORTEX</strong>, <strong>KEMPER</strong>) y el botón <strong>EDITOR</strong>, que abre el editor de preset completo encima del escenario.</p>"
+        "pt": "<p>Aparecem também o seletor do aparelho (<strong>GP-5</strong> ou <strong>GP-50</strong>, <strong>TONEX</strong>, <strong>NANO CORTEX</strong>, <strong>KEMPER</strong>) e o botão <strong>EDITOR</strong>, que abre o editor de preset completo por cima do palco.</p>",
+        "en": "<p>You'll also see the device selector (<strong>GP-5</strong> or <strong>GP-50</strong>, <strong>TONEX</strong>, <strong>NANO CORTEX</strong>, <strong>KEMPER</strong>) and the <strong>EDITOR</strong> button, which opens the full preset editor on top of the stage.</p>",
+        "es": "<p>También aparecen el selector de aparato (<strong>GP-5</strong> o <strong>GP-50</strong>, <strong>TONEX</strong>, <strong>NANO CORTEX</strong>, <strong>KEMPER</strong>) y el botón <strong>EDITOR</strong>, que abre el editor de preset completo encima del escenario.</p>"
        }
       }
      ]
@@ -4163,9 +4658,9 @@ const MN_CONTENT = {
     {
      "id": "palco-2",
      "title": {
-      "pt": "PALCO 2 — o aparelho plugado",
-      "en": "STAGE 2 — the plugged-in device",
-      "es": "ESCENARIO 2 — el aparato conectado"
+      "pt": "PALCO ESPECIAL — o pedal dedicado",
+      "en": "SPECIAL STAGE — the dedicated pedal",
+      "es": "ESCENARIO ESPECIAL — el pedal dedicado"
      },
      "purpose": {
       "pt": "Mostra o preset do aparelho ligado no USB Host da controladora, com a cadeia de efeitos e os knobs — e deixa você mexer neles ao vivo.",
@@ -4174,9 +4669,9 @@ const MN_CONTENT = {
      },
      "howto": [
       {
-       "pt": "Abra a barra de controles e toque em <strong>PALCO 1</strong> para trocar para o <strong>PALCO 2</strong>.",
-       "en": "Open the control bar and tap <strong>STAGE 1</strong> to switch to <strong>STAGE 2</strong>.",
-       "es": "Abre la barra de controles y toca <strong>ESCENARIO 1</strong> para cambiar al <strong>ESCENARIO 2</strong>."
+       "pt": "Abra a barra de controles e toque em <strong>PALCO BFMIDI</strong> para trocar para o <strong>PALCO ESPECIAL</strong>.",
+       "en": "Open the control bar and tap <strong>BFMIDI STAGE</strong> to switch to the <strong>SPECIAL STAGE</strong>.",
+       "es": "Abre la barra de controles y toca <strong>ESCENARIO BFMIDI</strong> para cambiar al <strong>ESCENARIO ESPECIAL</strong>."
       },
       {
        "pt": "<strong>Toque</strong> num bloco da cadeia para ver os knobs dele.",
@@ -4196,9 +4691,9 @@ const MN_CONTENT = {
      ],
      "shot": "stage-2",
      "mockTitle": {
-      "pt": "PALCO 2 — VALETON GP-5",
-      "en": "STAGE 2 — VALETON GP-5",
-      "es": "ESCENARIO 2 — VALETON GP-5"
+      "pt": "PALCO ESPECIAL — VALETON GP-5",
+      "en": "SPECIAL STAGE — VALETON GP-5",
+      "es": "ESCENARIO ESPECIAL — VALETON GP-5"
      },
      "hot": [
       {
@@ -4260,9 +4755,26 @@ const MN_CONTENT = {
         "es": "compatibilidad"
        },
        "desc": {
-        "pt": "<p><strong>Valeton GP-5</strong>, <strong>IK TONEX ONE</strong> e <strong>Neural DSP Nano Cortex</strong> plugadas no USB Host da controladora. O palco abre no primeiro aparelho conectado; os outros aparecem no seletor como “não conectado”. O <strong>Kemper Player</strong> tem uma tela própria (card seguinte).</p>",
-        "en": "<p><strong>Valeton GP-5</strong>, <strong>IK TONEX ONE</strong> and <strong>Neural DSP Nano Cortex</strong> plugged into the controller's USB Host. The stage opens on the first connected device; the others appear in the selector as “not connected”. The <strong>Kemper Player</strong> has its own screen (next card).</p>",
-        "es": "<p><strong>Valeton GP-5</strong>, <strong>IK TONEX ONE</strong> y <strong>Neural DSP Nano Cortex</strong> conectadas al USB Host de la controladora. El escenario abre en el primer aparato conectado; los demás aparecen en el selector como “no conectado”. El <strong>Kemper Player</strong> tiene su propia pantalla (tarjeta siguiente).</p>"
+        "pt": "<p><strong>Valeton GP-5</strong> ou <strong>GP-50</strong>, <strong>IK TONEX ONE</strong> e <strong>Neural DSP Nano Cortex</strong> plugadas no USB Host da controladora. O palco abre no primeiro aparelho conectado; os outros aparecem no seletor como “não conectado”. O <strong>Kemper Player</strong> tem uma tela própria (card seguinte).</p>",
+        "en": "<p><strong>Valeton GP-5</strong> or <strong>GP-50</strong>, <strong>IK TONEX ONE</strong> and <strong>Neural DSP Nano Cortex</strong> plugged into the controller's USB Host. The stage opens on the first connected device; the others appear in the selector as “not connected”. The <strong>Kemper Player</strong> has its own screen (next card).</p>",
+        "es": "<p><strong>Valeton GP-5</strong> o <strong>GP-50</strong>, <strong>IK TONEX ONE</strong> y <strong>Neural DSP Nano Cortex</strong> conectadas al USB Host de la controladora. El escenario abre en el primer aparato conectado; los demás aparecen en el selector como “no conectado”. El <strong>Kemper Player</strong> tiene su propia pantalla (tarjeta siguiente).</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Só com aparelho no Modo Amigável",
+        "en": "Only with a device in Friendly Mode",
+        "es": "Solo con un equipo en el Modo Amigable"
+       },
+       "type": {
+        "pt": "condição",
+        "en": "condition",
+        "es": "condición"
+       },
+       "desc": {
+        "pt": "<p>O PALCO ESPECIAL existe quando algum canal do <strong>MODO AMIGÁVEL</strong> tem GP-5, GP-50, TONEX ONE, KEMPER PLAYER ou NANO CORTEX. Sem nenhum, o botão PALCO ESPECIAL fica apagado e diz o que falta. O seletor de aparelho mostra só os que estão no Modo Amigável ou conectados.</p>",
+        "en": "<p>The SPECIAL STAGE is available when some <strong>FRIENDLY MODE</strong> channel has a GP-5, GP-50, TONEX ONE, KEMPER PLAYER or NANO CORTEX. With none, the SPECIAL STAGE button is greyed out and says what's missing. The device selector only shows the ones in Friendly Mode or connected.</p>",
+        "es": "<p>El ESCENARIO ESPECIAL existe cuando algún canal del <strong>MODO AMIGABLE</strong> tiene GP-5, GP-50, TONEX ONE, KEMPER PLAYER o NANO CORTEX. Sin ninguno, el botón ESCENARIO ESPECIAL queda apagado y dice qué falta. El selector de equipo muestra solo los que están en el Modo Amigable o conectados.</p>"
        }
       },
       {
@@ -4336,18 +4848,18 @@ const MN_CONTENT = {
      ],
      "notes": [
       {
-       "pt": "No modo offline o PALCO 2 avisa que precisa do pedal e oferece <strong>CONECTAR AO PEDAL</strong>.",
-       "en": "In offline mode, STAGE 2 tells you it needs the pedal and offers <strong>CONNECT TO THE PEDAL</strong>.",
-       "es": "En el modo offline, el ESCENARIO 2 avisa que necesita el pedal y ofrece <strong>CONECTAR AL PEDAL</strong>."
+       "pt": "No modo offline o PALCO ESPECIAL avisa que precisa do pedal e oferece <strong>CONECTAR AO PEDAL</strong>.",
+       "en": "In offline mode, the SPECIAL STAGE tells you it needs the pedal and offers <strong>CONNECT TO THE PEDAL</strong>.",
+       "es": "En el modo offline, el ESCENARIO ESPECIAL avisa que necesita el pedal y ofrece <strong>CONECTAR AL PEDAL</strong>."
       }
      ]
     },
     {
      "id": "palco-nano",
      "title": {
-      "pt": "PALCO 2 com a Nano Cortex",
-      "en": "STAGE 2 with the Nano Cortex",
-      "es": "ESCENARIO 2 con la Nano Cortex"
+      "pt": "PALCO ESPECIAL com a Nano Cortex",
+      "en": "SPECIAL STAGE with the Nano Cortex",
+      "es": "ESCENARIO ESPECIAL con la Nano Cortex"
      },
      "purpose": {
       "pt": "Com a Neural DSP Nano Cortex, os slots de efeito mudam de cor conforme o efeito carregado, e o preset aparece no formato da Nano (A1 a H8).",
@@ -4356,9 +4868,9 @@ const MN_CONTENT = {
      },
      "shot": "stage-2-nano",
      "mockTitle": {
-      "pt": "PALCO 2 — NANO CORTEX",
-      "en": "STAGE 2 — NANO CORTEX",
-      "es": "ESCENARIO 2 — NANO CORTEX"
+      "pt": "PALCO ESPECIAL — NANO CORTEX",
+      "en": "SPECIAL STAGE — NANO CORTEX",
+      "es": "ESCENARIO ESPECIAL — NANO CORTEX"
      },
      "fields": [
       {
@@ -4373,9 +4885,9 @@ const MN_CONTENT = {
         "es": "tema"
        },
        "desc": {
-        "pt": "<p>Com a opção <strong>Visual do aparelho</strong> ligada (padrão), o PALCO 2 veste as cores e o estilo de cada pedal: a tela azul da GP-5, o preto com âmbar da TONEX, o grafite da Nano Cortex e o verde do Kemper.</p>",
-        "en": "<p>With the <strong>Device look</strong> option on (default), STAGE 2 takes on each pedal's colors and style: the blue screen of the GP-5, the black and amber of the TONEX, the graphite of the Nano Cortex and the green of the Kemper.</p>",
-        "es": "<p>Con la opción <strong>Aspecto del aparato</strong> encendida (predeterminado), el ESCENARIO 2 adopta los colores y el estilo de cada pedal: la pantalla azul de la GP-5, el negro con ámbar de la TONEX, el grafito de la Nano Cortex y el verde del Kemper.</p>"
+        "pt": "<p>Com a opção <strong>Visual do aparelho</strong> ligada (padrão), o PALCO ESPECIAL veste as cores e o estilo de cada pedal: a tela azul da GP-5, o preto com âmbar da TONEX, o grafite da Nano Cortex e o verde do Kemper.</p>",
+        "en": "<p>With the <strong>Device look</strong> option on (default), the SPECIAL STAGE takes on each pedal's colors and style: the blue screen of the GP-5, the black and amber of the TONEX, the graphite of the Nano Cortex and the green of the Kemper.</p>",
+        "es": "<p>Con la opción <strong>Aspecto del aparato</strong> encendida (predeterminado), el ESCENARIO ESPECIAL adopta los colores y el estilo de cada pedal: la pantalla azul de la GP-5, el negro con ámbar de la TONEX, el grafito de la Nano Cortex y el verde del Kemper.</p>"
        }
       },
       {
@@ -4394,26 +4906,43 @@ const MN_CONTENT = {
         "en": "<p>While the Cortex Cloud app is connected to the Nano over Bluetooth, the Nano refuses editing over USB. Disconnect Cortex Cloud to edit from the stage or the editor.</p>",
         "es": "<p>Mientras la app Cortex Cloud esté conectada a la Nano por Bluetooth, la Nano rechaza la edición por USB. Desconecta Cortex Cloud para editar desde el escenario o desde el editor.</p>"
        }
+      },
+      {
+       "name": {
+        "pt": "AFINADOR",
+        "en": "TUNER",
+        "es": "AFINADOR"
+       },
+       "type": {
+        "pt": "botão",
+        "en": "button",
+        "es": "botón"
+       },
+       "desc": {
+        "pt": "<p>Com a Nano Cortex, a barra de cima ganha o botão <strong>AFINADOR</strong>: a tela vira um afinador grande, com a nota e o ponteiro. Ele também abre sozinho quando o afinador da Nano é ligado pelo pé ou na própria Nano. FECHAR (ou ESC) desliga o afinador. Precisa da controladora atualizada.</p>",
+        "en": "<p>With the Nano Cortex, the top bar gets a <strong>TUNER</strong> button: the screen becomes a large tuner, with the note and the needle. It also opens by itself when the Nano's tuner is turned on by foot or on the Nano itself. CLOSE (or ESC) turns the tuner off. Requires an updated controller.</p>",
+        "es": "<p>Con la Nano Cortex, la barra de arriba tiene el botón <strong>AFINADOR</strong>: la pantalla se convierte en un afinador grande, con la nota y la aguja. También se abre solo cuando el afinador de la Nano se activa con el pie o en la propia Nano. CERRAR (o ESC) apaga el afinador. Requiere la controladora actualizada.</p>"
+       }
       }
      ]
     },
     {
      "id": "palco-kemper",
      "title": {
-      "pt": "PALCO 2 com o Kemper Player",
-      "en": "STAGE 2 with the Kemper Player",
-      "es": "ESCENARIO 2 con el Kemper Player"
+      "pt": "PALCO ESPECIAL com o Kemper Player",
+      "en": "SPECIAL STAGE with the Kemper Player",
+      "es": "ESCENARIO ESPECIAL con el Kemper Player"
      },
      "purpose": {
-      "pt": "Com o Modo Amigável em KEMPER PLAYER, o PALCO 2 mostra o nome do rig em letra grande e os footswitches da BFMiDi como botões de stomp do Kemper.",
-      "en": "With Friendly Mode set to KEMPER PLAYER, STAGE 2 shows the rig name in big letters and the BFMiDi footswitches as Kemper stomp buttons.",
-      "es": "Con el Modo Amigable en KEMPER PLAYER, el ESCENARIO 2 muestra el nombre del rig en letras grandes y los footswitches de la BFMiDi como botones de stomp del Kemper."
+      "pt": "Com o Modo Amigável em KEMPER PLAYER, o PALCO ESPECIAL mostra o nome do rig em letra grande e os footswitches da BFMiDi como botões de stomp do Kemper.",
+      "en": "With Friendly Mode set to KEMPER PLAYER, the SPECIAL STAGE shows the rig name in big letters and the BFMiDi footswitches as Kemper stomp buttons.",
+      "es": "Con el Modo Amigable en KEMPER PLAYER, el ESCENARIO ESPECIAL muestra el nombre del rig en letras grandes y los footswitches de la BFMiDi como botones de stomp del Kemper."
      },
      "shot": "stage-kemper",
      "mockTitle": {
-      "pt": "PALCO 2 — KEMPER PLAYER",
-      "en": "STAGE 2 — KEMPER PLAYER",
-      "es": "ESCENARIO 2 — KEMPER PLAYER"
+      "pt": "PALCO ESPECIAL — KEMPER PLAYER",
+      "en": "SPECIAL STAGE — KEMPER PLAYER",
+      "es": "ESCENARIO ESPECIAL — KEMPER PLAYER"
      },
      "fields": [
       {
@@ -4428,9 +4957,9 @@ const MN_CONTENT = {
         "es": "letrero"
        },
        "desc": {
-        "pt": "<p>Vem do <strong>GET NAMES</strong> do Kemper. Ligue-o em <strong>CONFIGURAÇÕES › MODO AMIGÁVEL</strong>, no card do Kemper Player.</p>",
-        "en": "<p>It comes from the Kemper's <strong>GET NAMES</strong>. Turn it on in <strong>SETTINGS › FRIENDLY MODE</strong>, in the Kemper Player card.</p>",
-        "es": "<p>Viene del <strong>GET NAMES</strong> del Kemper. Actívalo en <strong>CONFIGURACIÓN › MODO AMIGABLE</strong>, en la tarjeta del Kemper Player.</p>"
+        "pt": "<p>Vem do <strong>GET NAMES</strong> do Kemper. Ligue-o em <strong>CONFIGURAÇÕES › MODO AMIGÁVEL › AVANÇADO</strong>, no card do Kemper Player.</p>",
+        "en": "<p>It comes from the Kemper's <strong>GET NAMES</strong>. Turn it on in <strong>SETTINGS › FRIENDLY MODE › ADVANCED</strong>, in the Kemper Player card.</p>",
+        "es": "<p>Viene del <strong>GET NAMES</strong> del Kemper. Actívalo en <strong>CONFIGURACIÓN › MODO AMIGABLE › AVANZADO</strong>, en la tarjeta del Kemper Player.</p>"
        }
       },
       {
@@ -4445,9 +4974,9 @@ const MN_CONTENT = {
         "es": "footswitches"
        },
        "desc": {
-        "pt": "<p>Cada footswitch da BFMiDi vira um botão no padrão do Kemper, com ícone e os dois LEDs (estado e categoria). Comandos como Delay, Reverb e Wah ganham a cor da categoria do Kemper; STOMP A a D, EFFECT X e MOD mostram o nome do slot. Tocar liga e desliga, como no PALCO 1.</p>",
-        "en": "<p>Each BFMiDi footswitch becomes a Kemper-style button, with an icon and the two LEDs (state and category). Commands like Delay, Reverb and Wah get the Kemper category color; STOMP A to D, EFFECT X and MOD show the slot name. Tapping turns it on and off, just like on STAGE 1.</p>",
-        "es": "<p>Cada footswitch de la BFMiDi se convierte en un botón al estilo Kemper, con ícono y los dos LEDs (estado y categoría). Comandos como Delay, Reverb y Wah toman el color de la categoría del Kemper; STOMP A a D, EFFECT X y MOD muestran el nombre del slot. Tocar enciende y apaga, como en el ESCENARIO 1.</p>"
+        "pt": "<p>Cada footswitch da BFMiDi vira um botão no padrão do Kemper, com ícone e os dois LEDs (estado e categoria). Comandos como Delay, Reverb e Wah ganham a cor da categoria do Kemper; STOMP A a D, EFFECT X e MOD mostram o nome do slot. Tocar liga e desliga, como no PALCO BFMIDI.</p>",
+        "en": "<p>Each BFMiDi footswitch becomes a Kemper-style button, with an icon and the two LEDs (state and category). Commands like Delay, Reverb and Wah get the Kemper category color; STOMP A to D, EFFECT X and MOD show the slot name. Tapping turns it on and off, just like on the BFMIDI STAGE.</p>",
+        "es": "<p>Cada footswitch de la BFMiDi se convierte en un botón al estilo Kemper, con ícono y los dos LEDs (estado y categoría). Comandos como Delay, Reverb y Wah toman el color de la categoría del Kemper; STOMP A a D, EFFECT X y MOD muestran el nombre del slot. Tocar enciende y apaga, como en el ESCENARIO BFMIDI.</p>"
        }
       },
       {
@@ -4462,9 +4991,103 @@ const MN_CONTENT = {
         "es": "botón"
        },
        "desc": {
-        "pt": "<p>Abre o editor do Kemper por cima do palco. Enquanto ele estiver aberto, os footswitches da controladora ficam pausados — o botão avisa isso.</p>",
-        "en": "<p>Opens the Kemper editor on top of the stage. While it's open, the controller's footswitches are paused — the button warns you about this.</p>",
-        "es": "<p>Abre el editor del Kemper encima del escenario. Mientras esté abierto, los footswitches de la controladora quedan en pausa — el botón lo avisa.</p>"
+        "pt": "<p>Abre o editor do Kemper por cima do palco. Os footswitches da controladora continuam funcionando com ele aberto — trocar de preset pelo pé troca o rig no Player e o editor relê.</p>",
+        "en": "<p>Opens the Kemper editor on top of the stage. The controller's footswitches keep working while it's open — changing preset by foot changes the rig on the Player and the editor reloads it.</p>",
+        "es": "<p>Abre el editor del Kemper encima del escenario. Los footswitches de la controladora siguen funcionando con él abierto — cambiar de preset con el pie cambia el rig en el Player y el editor lo vuelve a leer.</p>"
+       }
+      }
+     ]
+    },
+    {
+     "id": "palco-favoritos",
+     "title": {
+      "pt": "Favoritos do PALCO ESPECIAL",
+      "en": "SPECIAL STAGE favorites",
+      "es": "Favoritos del ESCENARIO ESPECIAL"
+     },
+     "purpose": {
+      "pt": "Uma tela só com os controles que você mais usa: até oito, escolhidos de qualquer bloco do aparelho, sempre no mesmo lugar.",
+      "en": "A screen with just the controls you use most: up to eight, picked from any block of the device, always in the same place.",
+      "es": "Una pantalla solo con los controles que más usas: hasta ocho, elegidos de cualquier bloque del aparato, siempre en el mismo lugar."
+     },
+     "howto": [
+      {
+       "pt": "Em <strong>CONFIGURAÇÕES</strong>, categoria <strong>PALCO ESPECIAL</strong>, escolha o layout <strong>FAVORITOS</strong>.",
+       "en": "In <strong>SETTINGS</strong>, <strong>SPECIAL STAGE</strong> category, choose the <strong>FAVORITES</strong> layout.",
+       "es": "En <strong>AJUSTES</strong>, categoría <strong>ESCENARIO ESPECIAL</strong>, elige el diseño <strong>FAVORITOS</strong>."
+      },
+      {
+       "pt": "No palco, toque em <strong>+ ADICIONAR</strong> e escolha o controle na lista (bloco · parâmetro). Repita até oito.",
+       "en": "On the stage, tap <strong>+ ADD</strong> and choose the control from the list (block · parameter). Repeat up to eight.",
+       "es": "En el escenario, toca <strong>+ AÑADIR</strong> y elige el control en la lista (bloque · parámetro). Repite hasta ocho."
+      },
+      {
+       "pt": "Mexa nos knobs como no layout Completo: o aparelho responde na hora.",
+       "en": "Turn the knobs as in the Full layout: the device responds right away.",
+       "es": "Mueve los knobs como en el diseño Completo: el aparato responde al instante."
+      },
+      {
+       "pt": "Para tirar um favorito, toque em <strong>REMOVER</strong>, no <strong>×</strong> do controle e depois em <strong>PRONTO</strong>.",
+       "en": "To remove a favorite, tap <strong>REMOVE</strong>, the <strong>×</strong> on the control and then <strong>DONE</strong>.",
+       "es": "Para quitar un favorito, toca <strong>QUITAR</strong>, la <strong>×</strong> del control y luego <strong>LISTO</strong>."
+      }
+     ],
+     "shot": "stage-fav",
+     "mockTitle": {
+      "pt": "PALCO ESPECIAL — FAVORITOS",
+      "en": "SPECIAL STAGE — FAVORITES",
+      "es": "ESCENARIO ESPECIAL — FAVORITOS"
+     },
+     "fields": [
+      {
+       "name": {
+        "pt": "O que pode ser favorito",
+        "en": "What can be a favorite",
+        "es": "Qué puede ser favorito"
+       },
+       "type": {
+        "pt": "controles",
+        "en": "controls",
+        "es": "controles"
+       },
+       "desc": {
+        "pt": "<p>Qualquer knob, chave ou lista do preset atual, e também o <strong>liga/desliga</strong> de cada bloco. Cada favorito aparece com a sigla e a cor do bloco de onde veio. Os de um bloco desligado ficam mais apagados, mas continuam funcionando.</p>",
+        "en": "<p>Any knob, switch or list of the current preset, plus the <strong>on/off</strong> of each block. Each favorite shows the label and the color of the block it comes from. Those from a block that is off look dimmer, but still work.</p>",
+        "es": "<p>Cualquier knob, llave o lista del preset actual, y también el <strong>encendido/apagado</strong> de cada bloque. Cada favorito aparece con la sigla y el color del bloque del que viene. Los de un bloque apagado se ven más tenues, pero siguen funcionando.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Uma lista por aparelho",
+        "en": "One list per device",
+        "es": "Una lista por aparato"
+       },
+       "type": {
+        "pt": "TONEX ONE, Nano Cortex, GP-5",
+        "en": "TONEX ONE, Nano Cortex, GP-5",
+        "es": "TONEX ONE, Nano Cortex, GP-5"
+       },
+       "desc": {
+        "pt": "<p>Cada aparelho guarda os seus favoritos, neste aplicativo e neste celular ou tablet. Eles valem para todos os perfis. O Kemper Player não tem esta tela.</p>",
+        "en": "<p>Each device keeps its own favorites, in this app and on this phone or tablet. They apply to all profiles. The Kemper Player does not have this screen.</p>",
+        "es": "<p>Cada aparato guarda sus favoritos, en esta app y en este celular o tablet. Valen para todos los perfiles. El Kemper Player no tiene esta pantalla.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Quando o modelo do bloco muda",
+        "en": "When the block model changes",
+        "es": "Cuando cambia el modelo del bloque"
+       },
+       "type": {
+        "pt": "aviso",
+        "en": "note",
+        "es": "aviso"
+       },
+       "desc": {
+        "pt": "<p>O favorito é a posição do controle dentro do bloco. Se o preset carregar outro modelo naquele bloco (outro delay, por exemplo), o nome do knob acompanha o modelo novo; se o modelo novo não tiver aquele controle, o lugar dele mostra <strong>Não existe neste modelo</strong> e volta sozinho quando o controle existir de novo.</p>",
+        "en": "<p>A favorite is the position of the control inside the block. If the preset loads another model in that block (a different delay, for example), the knob name follows the new model; if the new model does not have that control, its place shows <strong>Not in this model</strong> and comes back by itself when the control exists again.</p>",
+        "es": "<p>El favorito es la posición del control dentro del bloque. Si el preset carga otro modelo en ese bloque (otro delay, por ejemplo), el nombre del knob sigue al modelo nuevo; si el modelo nuevo no tiene ese control, su lugar muestra <strong>No existe en este modelo</strong> y vuelve solo cuando el control exista de nuevo.</p>"
        }
       }
      ]
@@ -4477,9 +5100,9 @@ const MN_CONTENT = {
       "es": "Configuración del escenario — GENERAL"
      },
      "purpose": {
-      "pt": "O que aparece nos dois palcos e como a tela se comporta.",
-      "en": "What appears on both stages and how the screen behaves.",
-      "es": "Lo que aparece en los dos escenarios y cómo se comporta la pantalla."
+      "pt": "O que aparece nos dois palcos e como a tela se comporta. As configurações abrem num painel ao lado do palco: a prévia mostra cada mudança na hora, cada opção tem uma miniatura do que ela mexe e tocar numa área da prévia abre as opções dela. DESFAZER volta a última mudança e MAIS OPÇÕES mostra as menos usadas.",
+      "en": "What appears on both stages and how the screen behaves. The settings open in a panel beside the stage: the preview shows every change right away, each option has a thumbnail of what it changes, and tapping an area of the preview opens its options. UNDO reverts the last change and MORE OPTIONS shows the less used ones.",
+      "es": "Lo que aparece en los dos escenarios y cómo se comporta la pantalla. La configuración abre en un panel al lado del escenario: la vista previa muestra cada cambio al instante, cada opción tiene una miniatura de lo que cambia y tocar un área de la vista previa abre sus opciones. DESHACER revierte el último cambio y MÁS OPCIONES muestra las menos usadas."
      },
      "shot": "stage-set-geral",
      "mockTitle": {
@@ -4490,19 +5113,19 @@ const MN_CONTENT = {
      "fields": [
       {
        "name": {
-        "pt": "Presets da BFMIDI embaixo",
-        "en": "BFMIDI presets at the bottom",
-        "es": "Presets de la BFMIDI abajo"
+        "pt": "Barra de presets da BFMIDI",
+        "en": "BFMIDI preset bar",
+        "es": "Barra de presets de la BFMIDI"
        },
        "type": {
-        "pt": "interruptor",
-        "en": "switch",
-        "es": "interruptor"
+        "pt": "barra",
+        "en": "bar",
+        "es": "barra"
        },
        "desc": {
-        "pt": "<p>A fileira para trocar de preset, nos dois palcos. Os botões podem mostrar <strong>NÚMERO + NOME</strong> ou <strong>SÓ NÚMERO</strong>.</p>",
-        "en": "<p>The row to change presets, on both stages. The buttons can show <strong>NUMBER + NAME</strong> or <strong>NUMBER ONLY</strong>.</p>",
-        "es": "<p>La fila para cambiar de preset, en los dos escenarios. Los botones pueden mostrar <strong>NÚMERO + NOMBRE</strong> o <strong>SOLO NÚMERO</strong>.</p>"
+        "pt": "<p>A fileira para trocar de preset, nos dois palcos. Os botões mostram <strong>NÚMERO + NOME</strong>, <strong>SÓ NÚMERO</strong> ou <strong>SÓ NOME</strong>. Em <strong>MAIS OPÇÕES</strong>: a posição (<strong>EMBAIXO</strong>, <strong>EM CIMA</strong> ou <strong>NA LATERAL</strong>), a altura (P, M, G), a cor (o LED de cada preset ou a cor de destaque) e como o preset é chamado pela tela — <strong>UM TOQUE</strong> ou <strong>SEGURAR</strong>, para não trocar sem querer.</p>",
+        "en": "<p>The row used to change presets, on both stages. The buttons show <strong>NUMBER + NAME</strong>, <strong>NUMBER ONLY</strong> or <strong>NAME ONLY</strong>. Under <strong>MORE OPTIONS</strong>: the position (<strong>BOTTOM</strong>, <strong>TOP</strong> or <strong>SIDE</strong>), the height (S, M, L), the color (each preset's LED or the accent color) and how a preset is called from the screen — <strong>ONE TAP</strong> or <strong>HOLD</strong>, to avoid changing by accident.</p>",
+        "es": "<p>La fila para cambiar de preset, en los dos escenarios. Los botones muestran <strong>NÚMERO + NOMBRE</strong>, <strong>SOLO NÚMERO</strong> o <strong>SOLO NOMBRE</strong>. En <strong>MÁS OPCIONES</strong>: la posición (<strong>ABAJO</strong>, <strong>ARRIBA</strong> o <strong>AL COSTADO</strong>), la altura (P, M, G), el color (el LED de cada preset o el color de acento) y cómo se llama el preset desde la pantalla — <strong>UN TOQUE</strong> o <strong>MANTENER</strong>, para no cambiar sin querer.</p>"
        }
       },
       {
@@ -4555,6 +5178,57 @@ const MN_CONTENT = {
         "en": "<p>A short vibration confirms each tap, on devices that can vibrate.</p>",
         "es": "<p>Una vibración corta confirma el toque, en los aparatos que vibran.</p>"
        }
+      },
+      {
+       "name": {
+        "pt": "Desempenho",
+        "en": "Performance",
+        "es": "Rendimiento"
+       },
+       "type": {
+        "pt": "escolha",
+        "en": "choice",
+        "es": "opción"
+       },
+       "desc": {
+        "pt": "<p><strong>AUTOMÁTICO</strong> (padrão) escolhe pelo aparelho; <strong>LEVE</strong> tira desfoque, brilhos e animações, para celular mais fraco ou para poupar bateria; <strong>COMPLETO</strong> mantém tudo.</p>",
+        "en": "<p><strong>AUTO</strong> (default) decides by device; <strong>LIGHT</strong> removes blur, glows and animations, for slower phones or to save battery; <strong>FULL</strong> keeps everything.</p>",
+        "es": "<p><strong>AUTOMÁTICO</strong> (predeterminado) elige según el aparato; <strong>LIGERO</strong> quita desenfoque, brillos y animaciones, para celulares más lentos o para ahorrar batería; <strong>COMPLETO</strong> mantiene todo.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Trava de toque",
+        "en": "Touch lock",
+        "es": "Bloqueo táctil"
+       },
+       "type": {
+        "pt": "segurança",
+        "en": "safety",
+        "es": "seguridad"
+       },
+       "desc": {
+        "pt": "<p>Em <strong>SEGURAR PARA DESTRAVAR</strong> o palco abre travado: toques em footswitch, preset, bloco e knob não fazem nada. Segure o cadeado no canto para destravar; 8 segundos depois do último toque ele trava de novo (uma linha embaixo mostra o tempo).</p>",
+        "en": "<p>With <strong>HOLD TO UNLOCK</strong> the stage opens locked: touches on footswitches, presets, blocks and knobs do nothing. Hold the padlock in the corner to unlock; 8 seconds after the last touch it locks again (a line at the bottom shows the time left).</p>",
+        "es": "<p>En <strong>MANTENER PARA DESBLOQUEAR</strong> el escenario abre bloqueado: los toques en footswitch, preset, bloque y knob no hacen nada. Mantén el candado de la esquina para desbloquear; 8 segundos después del último toque se bloquea de nuevo (una línea abajo muestra el tiempo).</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Barra de cima e animação",
+        "en": "Top bar and animation",
+        "es": "Barra superior y animación"
+       },
+       "type": {
+        "pt": "tempo",
+        "en": "time",
+        "es": "tiempo"
+       },
+       "desc": {
+        "pt": "<p>Quanto tempo a barra de cima fica à mostra: 2, 4 ou 8 segundos, ou <strong>FIXA</strong> (sempre visível, com o palco começando embaixo dela). E a animação do nome ao trocar de preset: <strong>NENHUMA</strong>, <strong>SUAVE</strong> ou <strong>LETREIRO</strong>.</p>",
+        "en": "<p>How long the top bar stays visible: 2, 4 or 8 seconds, or <strong>PINNED</strong> (always visible, with the stage starting below it). And the name animation on preset change: <strong>NONE</strong>, <strong>SOFT</strong> or <strong>MARQUEE</strong>.</p>",
+        "es": "<p>Cuánto tiempo queda visible la barra superior: 2, 4 u 8 segundos, o <strong>FIJA</strong> (siempre visible, con el escenario empezando debajo). Y la animación del nombre al cambiar de preset: <strong>NINGUNA</strong>, <strong>SUAVE</strong> o <strong>MARQUESINA</strong>.</p>"
+       }
       }
      ],
      "notes": [
@@ -4596,16 +5270,16 @@ const MN_CONTENT = {
         "es": "colores"
        },
        "desc": {
-        "pt": "<p>Oito fundos (Carvão, Preto, Azul noite, Vinho, Floresta, Roxo, Holofote, Aço) e nove cores de destaque.</p>",
-        "en": "<p>Eight backgrounds (Charcoal, Black, Night blue, Wine, Forest, Purple, Spotlight, Steel) and nine accent colors.</p>",
-        "es": "<p>Ocho fondos (Carbón, Negro, Azul noche, Vino, Bosque, Morado, Reflector, Acero) y nueve colores de acento.</p>"
+        "pt": "<p>Oito fundos prontos e o <strong>PERSONALIZADO</strong>, com duas cores à sua escolha (em cima e embaixo). Nove cores de destaque e a <strong>cor livre</strong>, ajustada por matiz, saturação e brilho. Os dois também podem <strong>acompanhar a cor do LED do preset</strong> — a tela muda de cor a cada troca de preset. O fundo também pode ser a <strong>IMAGEM</strong> do palco na tela inteira (a que foi escolhida na categoria IMAGENS), escurecida um pouco, médio ou bastante para o texto continuar legível.</p>",
+        "en": "<p>Eight ready-made backgrounds plus <strong>CUSTOM</strong>, with two colors of your choice (top and bottom). Nine accent colors plus a <strong>free color</strong>, set by hue, saturation and lightness. Both can also <strong>follow the preset LED color</strong> — the screen changes color on every preset change. The background can also be the stage <strong>IMAGE</strong>, full screen (the one chosen in the IMAGES category), dimmed a little, medium or a lot so the text stays readable.</p>",
+        "es": "<p>Ocho fondos listos y el <strong>PERSONALIZADO</strong>, con dos colores a elección (arriba y abajo). Nueve colores de acento y el <strong>color libre</strong>, ajustado por matiz, saturación y brillo. Los dos también pueden <strong>seguir el color del LED del preset</strong> — la pantalla cambia de color en cada cambio de preset. El fondo también puede ser la <strong>IMAGEN</strong> del escenario a pantalla completa (la elegida en la categoría IMÁGENES), oscurecida un poco, medio o mucho para que el texto siga legible.</p>"
        }
       },
       {
        "name": {
-        "pt": "Fonte, peso e tamanho",
-        "en": "Font, weight and size",
-        "es": "Fuente, peso y tamaño"
+        "pt": "Fonte e nome do preset",
+        "en": "Font and preset name",
+        "es": "Fuente y nombre del preset"
        },
        "type": {
         "pt": "texto",
@@ -4613,16 +5287,16 @@ const MN_CONTENT = {
         "es": "texto"
        },
        "desc": {
-        "pt": "<p>Fonte <strong>Padrão</strong>, <strong>Arredondada</strong>, <strong>Estreita</strong>, <strong>Mono</strong> ou <strong>Serifada</strong> — todas do próprio sistema, para o palco abrir sem internet. Peso dos títulos, tamanho dos textos (P, M, G, GG) e nomes em maiúsculas.</p>",
-        "en": "<p><strong>Default</strong>, <strong>Rounded</strong>, <strong>Condensed</strong>, <strong>Mono</strong> or <strong>Serif</strong> font — all built into the system, so the stage opens without internet. Title weight, text size (P, M, G, GG — small to extra large) and names in uppercase.</p>",
-        "es": "<p>Fuente <strong>Estándar</strong>, <strong>Redondeada</strong>, <strong>Estrecha</strong>, <strong>Mono</strong> o <strong>Serifa</strong> — todas del propio sistema, para que el escenario abra sin internet. Peso de los títulos, tamaño de los textos (P, M, G, GG) y nombres en mayúsculas.</p>"
+        "pt": "<p>Fonte <strong>Padrão</strong>, <strong>Arredondada</strong>, <strong>Estreita</strong>, <strong>Mono</strong> ou <strong>Serifada</strong> — todas do próprio sistema — e duas que vêm dentro dos aplicativos: <strong>BIG SHOULDERS</strong> (condensada, de palco) e <strong>LED (DSEG14)</strong>, que imita um display de segmentos e vale só para os nomes e números grandes. Nada é baixado: o palco abre sem internet. O botão <strong>VER AS LICENÇAS DAS FONTES</strong> mostra a licença de cada uma. Peso dos títulos, tamanho dos textos (P, M, G, GG) e nomes em maiúsculas. O <strong>nome do preset</strong> tem ajustes só dele: tamanho, alinhamento (esquerda, centro, direita) e número de linhas (1 a 3).</p>",
+        "en": "<p><strong>Default</strong>, <strong>Rounded</strong>, <strong>Narrow</strong>, <strong>Mono</strong> or <strong>Serif</strong> font — all from the system itself — plus two that ship inside the apps: <strong>BIG SHOULDERS</strong> (a condensed stage font) and <strong>LED (DSEG14)</strong>, which mimics a segment display and applies only to names and big numbers. Nothing is downloaded: the stage opens without internet. The <strong>SHOW THE FONT LICENSES</strong> button shows the license of each one. Title weight, text size (S, M, L, XL) and uppercase names. The <strong>preset name</strong> has its own settings: size, alignment (left, center, right) and number of lines (1 to 3).</p>",
+        "es": "<p>Fuente <strong>Estándar</strong>, <strong>Redondeada</strong>, <strong>Estrecha</strong>, <strong>Mono</strong> o <strong>Con serifa</strong> — todas del propio sistema — y dos que vienen dentro de las apps: <strong>BIG SHOULDERS</strong> (condensada, de escenario) y <strong>LED (DSEG14)</strong>, que imita un display de segmentos y vale solo para los nombres y números grandes. No se descarga nada: el escenario abre sin internet. El botón <strong>VER LAS LICENCIAS DE LAS FUENTES</strong> muestra la licencia de cada una. Peso de los títulos, tamaño de los textos (P, M, G, GG) y nombres en mayúsculas. El <strong>nombre del preset</strong> tiene ajustes propios: tamaño, alineación (izquierda, centro, derecha) y número de líneas (1 a 3).</p>"
        }
       },
       {
        "name": {
-        "pt": "Cantos, contorno, espaçamento e painéis",
-        "en": "Corners, outline, spacing and panels",
-        "es": "Esquinas, contorno, espaciado y paneles"
+        "pt": "Painéis, brilho e contraste",
+        "en": "Panels, glow and contrast",
+        "es": "Paneles, brillo y contraste"
        },
        "type": {
         "pt": "estilo",
@@ -4630,9 +5304,9 @@ const MN_CONTENT = {
         "es": "estilo"
        },
        "desc": {
-        "pt": "<p>Cantos retos, suaves ou redondos; contorno dos painéis; espaçamento justo, normal ou amplo; painéis sólidos ou de vidro; e o brilho nos itens ativos.</p>",
-        "en": "<p>Square, soft or round corners; panel outline; compact, normal or wide spacing; solid or glass panels; and the glow on active items.</p>",
-        "es": "<p>Esquinas rectas, suaves o redondas; contorno de los paneles; espaciado justo, normal o amplio; paneles sólidos o de vidrio; y el brillo en los elementos activos.</p>"
+        "pt": "<p>Painéis <strong>SÓLIDOS</strong>, de <strong>VIDRO</strong> ou <strong>SEM PAINEL</strong> (só o conteúdo sobre o fundo); brilho dos itens ativos <strong>SEM</strong>, <strong>SUAVE</strong> ou <strong>FORTE</strong>; cantos retos, suaves ou redondos; contorno; e espaçamento justo, normal ou amplo. <strong>Alto contraste</strong> deixa tudo em preto e branco fortes, para palco aberto e sol.</p>",
+        "en": "<p><strong>SOLID</strong>, <strong>GLASS</strong> or <strong>NO PANEL</strong> (content straight over the background); glow on active items <strong>NONE</strong>, <strong>SOFT</strong> or <strong>STRONG</strong>; square, soft or round corners; outline; and compact, normal or wide spacing. <strong>High contrast</strong> turns everything into strong black and white, for outdoor stages and sunlight.</p>",
+        "es": "<p>Paneles <strong>SÓLIDOS</strong>, de <strong>VIDRIO</strong> o <strong>SIN PANEL</strong> (solo el contenido sobre el fondo); brillo de los elementos activos <strong>SIN</strong>, <strong>SUAVE</strong> o <strong>FUERTE</strong>; esquinas rectas, suaves o redondas; contorno; y espaciado justo, normal o amplio. <strong>Alto contraste</strong> deja todo en negro y blanco fuertes, para escenario al aire libre y sol.</p>"
        }
       }
      ]
@@ -4640,27 +5314,44 @@ const MN_CONTENT = {
     {
      "id": "palco-p1",
      "title": {
-      "pt": "Configurações do palco — PALCO 1",
-      "en": "Stage settings — STAGE 1",
-      "es": "Configuración del escenario — ESCENARIO 1"
+      "pt": "Configurações do palco — PALCO BFMIDI",
+      "en": "Stage settings — BFMIDI STAGE",
+      "es": "Configuración del escenario — ESCENARIO BFMIDI"
      },
      "purpose": {
-      "pt": "Como o PALCO 1 arruma o nome, a imagem e os footswitches.",
-      "en": "How STAGE 1 arranges the name, the image and the footswitches.",
-      "es": "Cómo el ESCENARIO 1 organiza el nombre, la imagen y los footswitches."
+      "pt": "Como o PALCO BFMIDI arruma o nome, a imagem e os footswitches.",
+      "en": "How the BFMIDI STAGE arranges the name, the image and the footswitches.",
+      "es": "Cómo el ESCENARIO BFMIDI organiza el nombre, la imagen y los footswitches."
      },
      "shot": "stage-set-p1",
      "mockTitle": {
-      "pt": "CONFIGURAÇÕES DO PALCO — PALCO 1",
-      "en": "STAGE SETTINGS — STAGE 1",
-      "es": "CONFIGURACIÓN DEL ESCENARIO — ESCENARIO 1"
+      "pt": "CONFIGURAÇÕES DO PALCO — PALCO BFMIDI",
+      "en": "STAGE SETTINGS — BFMIDI STAGE",
+      "es": "CONFIGURACIÓN DEL ESCENARIO — ESCENARIO BFMIDI"
      },
      "fields": [
       {
        "name": {
-        "pt": "Mostrar a imagem e Layout do topo",
-        "en": "Show the image and Top layout",
-        "es": "Mostrar la imagen y Diseño de arriba"
+        "pt": "Layout da tela",
+        "en": "Screen layout",
+        "es": "Diseño de la pantalla"
+       },
+       "type": {
+        "pt": "layout",
+        "en": "layout",
+        "es": "diseño"
+       },
+       "desc": {
+        "pt": "<p>Oito jeitos de arrumar o palco: <strong>CLÁSSICO</strong> (nome e imagem em cima, footswitches e presets embaixo), <strong>LETREIRO</strong> (o nome ocupa a tela; os footswitches viram uma faixa de LEDs), <strong>PEDALEIRA</strong> (footswitches grandes em duas fileiras, na ordem do pedal), <strong>COLUNA</strong> (os presets do banco em lista na lateral, com o nome inteiro), <strong>SEQUÊNCIA</strong> (o preset anterior e o próximo ao lado do atual; tocar chama), <strong>TEMPO</strong> (o BPM em letra grande e o relógio), <strong>MÍNIMO</strong> (só o preset) e <strong>PÔSTER</strong> (a imagem do palco na tela inteira, com o nome por cima e sem painéis). Cada cartão mostra um desenho do layout. As opções que não valem no layout escolhido ficam apagadas, com o motivo.</p>",
+        "en": "<p>Eight ways to arrange the stage: <strong>CLASSIC</strong> (name and image on top, footswitches and presets below), <strong>MARQUEE</strong> (the name fills the screen; the footswitches become a strip of LEDs), <strong>PEDALBOARD</strong> (big footswitches in two rows, in the pedal's order), <strong>COLUMN</strong> (the bank's presets listed on the side, with the full name), <strong>SETLIST</strong> (the previous and the next preset beside the current one; tap to call), <strong>TEMPO</strong> (the BPM in big digits and the clock), <strong>MINIMAL</strong> (the preset only) and <strong>POSTER</strong> (the stage image full screen, with the name on top and no panels). Each card shows a drawing of the layout. Options that do not apply to the chosen layout are dimmed, with the reason.</p>",
+        "es": "<p>Ocho formas de organizar el escenario: <strong>CLÁSICO</strong> (nombre e imagen arriba, footswitches y presets abajo), <strong>MARQUESINA</strong> (el nombre ocupa la pantalla; los footswitches se vuelven una franja de LEDs), <strong>PEDALERA</strong> (footswitches grandes en dos filas, en el orden del pedal), <strong>COLUMNA</strong> (los presets del banco en lista al costado, con el nombre completo), <strong>SECUENCIA</strong> (el preset anterior y el siguiente al lado del actual; tocar lo llama), <strong>TEMPO</strong> (el BPM en grande y el reloj), <strong>MÍNIMO</strong> (solo el preset) y <strong>PÓSTER</strong> (la imagen del escenario a pantalla completa, con el nombre encima y sin paneles). Cada tarjeta muestra un dibujo del diseño. Las opciones que no valen en el diseño elegido quedan apagadas, con el motivo.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Imagem e Layout do topo",
+        "en": "Image and Top layout",
+        "es": "Imagen y Diseño de arriba"
        },
        "type": {
         "pt": "imagem",
@@ -4668,9 +5359,26 @@ const MN_CONTENT = {
         "es": "imagen"
        },
        "desc": {
-        "pt": "<p>Com a imagem ligada, escolha <strong>LADO A LADO</strong> (nome de um lado, imagem do outro — com o lado da imagem e o espaço do nome em 35, 50 ou 65%) ou <strong>NOME SOBRE A IMAGEM</strong>.</p>",
-        "en": "<p>With the image on, choose <strong>SIDE BY SIDE</strong> (name on one side, image on the other — with a choice of image side and a name width of 35, 50 or 65%) or <strong>NAME OVER IMAGE</strong>.</p>",
-        "es": "<p>Con la imagen encendida, elige <strong>LADO A LADO</strong> (nombre de un lado, imagen del otro — con el lado de la imagen y el espacio del nombre en 35, 50 o 65%) o <strong>NOMBRE SOBRE LA IMAGEN</strong>.</p>"
+        "pt": "<p>Com a imagem ligada, escolha <strong>LADO A LADO</strong> (nome de um lado, imagem do outro — com o lado da imagem e o espaço do nome de 25 a 75%, num controle deslizante) ou <strong>NOME SOBRE A IMAGEM</strong>. Em <strong>MAIS OPÇÕES</strong>: a borda da imagem (esmaecida ou reta) e escurecer a imagem (não, um pouco, bastante), para o nome ler melhor.</p>",
+        "en": "<p>With the image on, choose <strong>SIDE BY SIDE</strong> (name on one side, image on the other — with a choice of image side and a name width from 25 to 75%, on a slider) or <strong>NAME OVER IMAGE</strong>. Under <strong>MORE OPTIONS</strong>: the image edge (faded or straight) and dimming the image (no, a little, a lot), so the name reads better.</p>",
+        "es": "<p>Con la imagen encendida, elige <strong>LADO A LADO</strong> (nombre de un lado, imagen del otro — con el lado de la imagen y el espacio del nombre de 25 a 75%, en un control deslizante) o <strong>NOMBRE SOBRE LA IMAGEN</strong>. En <strong>MÁS OPCIONES</strong>: el borde de la imagen (difuminado o recto) y oscurecer la imagen (no, un poco, mucho), para que el nombre se lea mejor.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Imagem sempre do PRESET",
+        "en": "Always the PRESET image",
+        "es": "Imagen siempre del PRESET"
+       },
+       "type": {
+        "pt": "interruptor",
+        "en": "switch",
+        "es": "interruptor"
+       },
+       "desc": {
+        "pt": "<p>Ligada (padrão), a imagem do palco é o fundo da tela PRESET mesmo com o pedal em LIVE. Desligada, em LIVE aparece o fundo da tela LIVE. Só vale quando a imagem vem do display da controladora.</p>",
+        "en": "<p>On (default), the stage image is the PRESET screen background even with the pedal in LIVE. Off, LIVE shows the LIVE screen background. Only applies when the image comes from the controller's display.</p>",
+        "es": "<p>Activada (por defecto), la imagen del escenario es el fondo de la pantalla PRESET incluso con el pedal en LIVE. Desactivada, en LIVE aparece el fondo de la pantalla LIVE. Solo vale cuando la imagen viene del display de la controladora.</p>"
        }
       },
       {
@@ -4680,14 +5388,14 @@ const MN_CONTENT = {
         "es": "Footswitches"
        },
        "type": {
-        "pt": "arranjo",
-        "en": "arrangement",
-        "es": "disposición"
+        "pt": "arranjo e forma",
+        "en": "arrangement and shape",
+        "es": "disposición y forma"
        },
        "desc": {
-        "pt": "<p><strong>UMA LINHA</strong> (em ordem, 1 a 6) ou <strong>COMO NO PEDAL</strong> (duas fileiras, imitando a controladora).</p>",
-        "en": "<p><strong>ONE ROW</strong> (in order, 1 to 6) or <strong>LIKE THE PEDAL</strong> (two rows, mirroring the controller).</p>",
-        "es": "<p><strong>UNA FILA</strong> (en orden, 1 a 6) o <strong>COMO EN EL PEDAL</strong> (dos filas, imitando la controladora).</p>"
+        "pt": "<p>Arranjo: <strong>UMA LINHA</strong> (em ordem, 1 a 6), <strong>COMO NO PEDAL</strong> (duas fileiras, imitando a controladora) ou <strong>EM COLUNA</strong> (ao lado do nome). Tamanho em cinco passos (PP a GG). Forma: <strong>COMO NO DISPLAY</strong>, <strong>CÍRCULO</strong> ou <strong>SÓ LED</strong> (um anel na cor do LED com o nome). Em <strong>MAIS OPÇÕES</strong>, a legenda embaixo de cada ícone: o <strong>MODO</strong> do footswitch ou o <strong>COMANDO</strong> que ele manda.</p>",
+        "en": "<p>Arrangement: <strong>ONE ROW</strong> (in order, 1 to 6), <strong>LIKE THE PEDAL</strong> (two rows, mirroring the controller) or <strong>COLUMN</strong> (beside the name). Size in five steps (XS to XL). Shape: <strong>AS ON THE DISPLAY</strong>, <strong>CIRCLE</strong> or <strong>LED ONLY</strong> (a ring in the LED color with the name). Under <strong>MORE OPTIONS</strong>, the caption under each icon: the footswitch <strong>MODE</strong> or the <strong>COMMAND</strong> it sends.</p>",
+        "es": "<p>Disposición: <strong>UNA FILA</strong> (en orden, 1 a 6), <strong>COMO EN EL PEDAL</strong> (dos filas, imitando la controladora) o <strong>EN COLUMNA</strong> (al lado del nombre). Tamaño en cinco pasos (PP a GG). Forma: <strong>COMO EN EL DISPLAY</strong>, <strong>CÍRCULO</strong> o <strong>SOLO LED</strong> (un anillo del color del LED con el nombre). En <strong>MÁS OPCIONES</strong>, la leyenda bajo cada ícono: el <strong>MODO</strong> del footswitch o el <strong>COMANDO</strong> que envía.</p>"
        }
       },
       {
@@ -4702,43 +5410,60 @@ const MN_CONTENT = {
         "es": "interruptores"
        },
        "desc": {
-        "pt": "<p><strong>MODO PRESET / LIVE</strong>, o modo amigável, o tamanho dos ícones (P, M, G), o número dos footswitches e a barra do LED.</p>",
-        "en": "<p><strong>PRESET / LIVE MODE</strong>, the friendly mode, the icon size (P, M, G — small, medium, large), the footswitch numbers and the LED bar.</p>",
-        "es": "<p><strong>MODO PRESET / LIVE</strong>, el modo amigable, el tamaño de los íconos (P, M, G), el número de los footswitches y la barra del LED.</p>"
+        "pt": "<p><strong>MODO PRESET / LIVE</strong>, o modo amigável, a etiqueta do preset (A1: pequena, grande ou oculta), o número dos footswitches e a barra do LED.</p>",
+        "en": "<p><strong>PRESET / LIVE MODE</strong>, the friendly mode, the preset tag (A1: small, big or hidden), the footswitch number and the LED bar.</p>",
+        "es": "<p><strong>MODO PRESET / LIVE</strong>, el modo amigable, la etiqueta del preset (A1: pequeña, grande u oculta), el número de los footswitches y la barra del LED.</p>"
        }
       },
       {
        "name": {
-        "pt": "Escurecer os desligados",
-        "en": "Dim the ones that are off",
-        "es": "Oscurecer los apagados"
+        "pt": "Footswitches desligados",
+        "en": "Footswitches that are off",
+        "es": "Footswitches apagados"
        },
        "type": {
-        "pt": "interruptor",
-        "en": "switch",
-        "es": "interruptor"
+        "pt": "escolha",
+        "en": "choice",
+        "es": "opción"
        },
        "desc": {
-        "pt": "<p>Deixa os footswitches desligados mais apagados, para o que está ligado saltar aos olhos.</p>",
-        "en": "<p>Makes the footswitches that are off dimmer, so the ones that are on stand out.</p>",
-        "es": "<p>Deja los footswitches apagados más tenues, para que lo que está encendido salte a la vista.</p>"
+        "pt": "<p><strong>NORMAIS</strong>, <strong>ESCURECIDOS</strong> (o que está ligado salta aos olhos) ou <strong>OCULTOS</strong> — some o ícone e fica só o número, para a tela mostrar apenas o que está ligado.</p>",
+        "en": "<p><strong>NORMAL</strong>, <strong>DIMMED</strong> (what is on stands out) or <strong>HIDDEN</strong> — the icon disappears and only the number stays, so the screen shows just what is on.</p>",
+        "es": "<p><strong>NORMALES</strong>, <strong>OSCURECIDOS</strong> (lo encendido salta a la vista) u <strong>OCULTOS</strong> — desaparece el ícono y queda solo el número, para que la pantalla muestre apenas lo encendido.</p>"
        }
       },
       {
        "name": {
-        "pt": "Tocar no ícone liga/desliga",
-        "en": "Tap the icon to turn on/off",
-        "es": "Tocar el ícono enciende/apaga"
+        "pt": "Acionar footswitch pela tela",
+        "en": "Trigger a footswitch from the screen",
+        "es": "Accionar footswitch desde la pantalla"
        },
        "type": {
-        "pt": "interruptor",
-        "en": "switch",
-        "es": "interruptor"
+        "pt": "escolha",
+        "en": "choice",
+        "es": "opción"
        },
        "desc": {
-        "pt": "<p>Desligado, os ícones só mostram o estado e não respondem ao toque — útil quando o celular fica ao alcance de outras pessoas no palco.</p>",
-        "en": "<p>When off, the icons only show the state and don't respond to touch — useful when the phone is within reach of other people on stage.</p>",
-        "es": "<p>Apagado, los íconos solo muestran el estado y no responden al toque — útil cuando el celular queda al alcance de otras personas en el escenario.</p>"
+        "pt": "<p><strong>UM TOQUE</strong> (padrão), <strong>SEGURAR</strong> — o footswitch só aciona depois de meio segundo com o dedo na tela, para não acionar sem querer — ou <strong>DESLIGADO</strong>: os ícones só mostram o estado, útil quando o celular fica ao alcance de outras pessoas no palco.</p>",
+        "en": "<p><strong>ONE TAP</strong> (default), <strong>HOLD</strong> — the footswitch only triggers after half a second with the finger on the screen, to avoid accidents — or <strong>OFF</strong>: the icons only show the state, useful when the phone is within reach of other people on stage.</p>",
+        "es": "<p><strong>UN TOQUE</strong> (predeterminado), <strong>MANTENER</strong> — el footswitch solo se acciona tras medio segundo con el dedo en la pantalla, para no accionarlo sin querer — o <strong>APAGADO</strong>: los íconos solo muestran el estado, útil cuando el celular queda al alcance de otras personas en el escenario.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Segurar o ícone",
+        "en": "Hold the icon",
+        "es": "Mantener el ícono"
+       },
+       "type": {
+        "pt": "escolha",
+        "en": "choice",
+        "es": "elección"
+       },
+       "desc": {
+        "pt": "<p><strong>EDITAR O FOOTSWITCH</strong> (padrão): segurar um ícone abre as configurações MIDI dele ao lado do palco — veja <strong>Editar um footswitch sem sair do palco</strong>.</p>",
+        "en": "<p><strong>EDIT THE FOOTSWITCH</strong> (default): holding an icon opens its MIDI settings next to the stage — see <strong>Editing a footswitch without leaving the stage</strong>.</p>",
+        "es": "<p><strong>EDITAR EL FOOTSWITCH</strong> (por defecto): mantener un ícono abre su configuración MIDI al lado del escenario — mira <strong>Editar un footswitch sin salir del escenario</strong>.</p>"
        }
       }
      ]
@@ -4751,15 +5476,15 @@ const MN_CONTENT = {
       "es": "Las imágenes del escenario"
      },
      "purpose": {
-      "pt": "Nos aplicativos, o fundo do PALCO 1 pode ser a imagem da controladora, uma imagem da galeria do app ou uma foto sua. O recorte vale em qualquer caso.",
-      "en": "In the apps, the STAGE 1 background can be the controller's image, an image from the app gallery or one of your own photos. Cropping works in every case.",
-      "es": "En las apps, el fondo del ESCENARIO 1 puede ser la imagen de la controladora, una imagen de la galería de la app o una foto tuya. El recorte vale en cualquier caso."
+      "pt": "Nos aplicativos, o fundo do PALCO BFMIDI pode ser a imagem da controladora, uma imagem da galeria do app ou uma foto sua. O recorte vale em qualquer caso. A mesma imagem é a do fundo de tela cheia, do layout Pôster e da opção Imagem atrás do preset.",
+      "en": "In the apps, the BFMIDI STAGE background can be the controller's image, an image from the app gallery or one of your own photos. Cropping works in every case. The same image is used by the full-screen background, the Poster layout and the Image behind the preset option.",
+      "es": "En las apps, el fondo del ESCENARIO BFMIDI puede ser la imagen de la controladora, una imagen de la galería de la app o una foto tuya. El recorte vale en cualquier caso. La misma imagen es la del fondo a pantalla completa, del diseño Póster y de la opción Imagen detrás del preset."
      },
      "howto": [
       {
-       "pt": "Em <strong>CONFIGURAÇÕES › PALCO 1</strong>, desça até <strong>Imagem do palco</strong>.",
-       "en": "In <strong>SETTINGS › STAGE 1</strong>, scroll down to <strong>Stage image</strong>.",
-       "es": "En <strong>AJUSTES › ESCENARIO 1</strong>, baja hasta <strong>Imagen del escenario</strong>."
+       "pt": "Em <strong>CONFIGURAÇÕES</strong>, abra a categoria <strong>IMAGENS</strong>.",
+       "en": "In <strong>SETTINGS</strong>, open the <strong>IMAGES</strong> category.",
+       "es": "En <strong>AJUSTES</strong>, abre la categoría <strong>IMÁGENES</strong>."
       },
       {
        "pt": "Escolha se vale para <strong>TODOS OS PRESETS</strong> ou <strong>SÓ O A1</strong> (o preset atual).",
@@ -4820,9 +5545,9 @@ const MN_CONTENT = {
       },
       {
        "name": {
-        "pt": "No navegador",
-        "en": "In the browser",
-        "es": "En el navegador"
+        "pt": "Só nos aplicativos",
+        "en": "Apps only",
+        "es": "Solo en las apps"
        },
        "type": {
         "pt": "limitação",
@@ -4830,9 +5555,9 @@ const MN_CONTENT = {
         "es": "limitación"
        },
        "desc": {
-        "pt": "<p>Aberto pela controladora ou pelo site, o palco usa só a imagem da tela da controladora — o recorte continua disponível.</p>",
-        "en": "<p>When opened from the controller or from the website, the stage only uses the controller's screen image — cropping is still available.</p>",
-        "es": "<p>Abierto desde la controladora o desde el sitio web, el escenario usa solo la imagen de la pantalla de la controladora — el recorte sigue disponible.</p>"
+        "pt": "<p>O Modo Palco não aparece no editor aberto pelo navegador (pela controladora ou pelo site). Ele existe só nos aplicativos, onde a galeria e as fotos estão sempre disponíveis.</p>",
+        "en": "<p>Stage Mode does not appear in the editor opened in a browser (from the controller or from the website). It exists only in the apps, where the gallery and your photos are always available.</p>",
+        "es": "<p>El Modo Escenario no aparece en el editor abierto en el navegador (desde la controladora o desde el sitio web). Existe solo en las apps, donde la galería y tus fotos están siempre disponibles.</p>"
        }
       },
       {
@@ -4855,24 +5580,169 @@ const MN_CONTENT = {
      ]
     },
     {
-     "id": "palco-p2",
+     "id": "palco-perfis",
      "title": {
-      "pt": "Configurações do palco — PALCO 2",
-      "en": "Stage settings — STAGE 2",
-      "es": "Configuración del escenario — ESCENARIO 2"
+      "pt": "Perfis e visuais prontos",
+      "en": "Profiles and ready-made looks",
+      "es": "Perfiles y visuales listos"
      },
      "purpose": {
-      "pt": "Como o PALCO 2 mostra a cadeia e os knobs do aparelho.",
-      "en": "How STAGE 2 shows the device's chain and knobs.",
-      "es": "Cómo el ESCENARIO 2 muestra la cadena y los knobs del aparato."
+      "pt": "Guarde até seis jeitos de deixar o palco (Ensaio, Show, Estúdio) e passe de um para o outro com um toque. Os visuais prontos trocam cores, fonte e painéis de uma vez.",
+      "en": "Keep up to six ways of setting up the stage (Rehearsal, Show, Studio) and go from one to the other with one tap. The ready-made looks change colors, font and panels at once.",
+      "es": "Guarda hasta seis formas de dejar el escenario (Ensayo, Show, Estudio) y pasa de una a otra con un toque. Los visuales listos cambian colores, fuente y paneles de una vez."
+     },
+     "howto": [
+      {
+       "pt": "Em <strong>CONFIGURAÇÕES</strong>, abra a categoria <strong>PERFIS</strong>.",
+       "en": "In <strong>SETTINGS</strong>, open the <strong>PROFILES</strong> category.",
+       "es": "En <strong>AJUSTES</strong>, abre la categoría <strong>PERFILES</strong>."
+      },
+      {
+       "pt": "Toque em <strong>NOVO</strong> (começa do padrão) ou em <strong>DUPLICAR</strong> (cópia do perfil marcado) e depois em <strong>RENOMEAR</strong> para dar um nome.",
+       "en": "Tap <strong>NEW</strong> (starts from the default) or <strong>DUPLICATE</strong> (a copy of the selected profile), then <strong>RENAME</strong> to give it a name.",
+       "es": "Toca <strong>NUEVO</strong> (empieza del predeterminado) o <strong>DUPLICAR</strong> (copia del perfil marcado) y luego <strong>RENOMBRAR</strong> para darle un nombre."
+      },
+      {
+       "pt": "Ajuste o palco como quiser: tudo o que você mudar fica guardado no perfil marcado.",
+       "en": "Set the stage up the way you want: everything you change is kept in the selected profile.",
+       "es": "Ajusta el escenario como quieras: todo lo que cambies queda guardado en el perfil marcado."
+      },
+      {
+       "pt": "Para trocar, toque no perfil na lista — ou, com as configurações fechadas, na pílula com o nome do perfil na barra de cima (ela aparece quando há dois perfis ou mais).",
+       "en": "To switch, tap the profile in the list — or, with the settings closed, the pill with the profile name on the top bar (it shows up when there are two or more profiles).",
+       "es": "Para cambiar, toca el perfil en la lista — o, con los ajustes cerrados, la píldora con el nombre del perfil en la barra de arriba (aparece cuando hay dos perfiles o más)."
+      }
+     ],
+     "shot": "stage-set-perfis",
+     "mockTitle": {
+      "pt": "PERFIS E VISUAIS PRONTOS",
+      "en": "PROFILES AND READY-MADE LOOKS",
+      "es": "PERFILES Y VISUALES LISTOS"
+     },
+     "fields": [
+      {
+       "name": {
+        "pt": "Seus perfis",
+        "en": "Your profiles",
+        "es": "Tus perfiles"
+       },
+       "type": {
+        "pt": "lista",
+        "en": "list",
+        "es": "lista"
+       },
+       "desc": {
+        "pt": "<p>Até <strong>seis</strong>. Cada perfil guarda todas as opções do palco: layouts, cores, tamanhos, o que mostrar e o jeito de tocar. As fotos enviadas, os recortes e a escolha de em qual palco abrir valem para todos.</p>",
+        "en": "<p>Up to <strong>six</strong>. Each profile keeps all the stage options: layouts, colors, sizes, what to show and how touch works. Uploaded photos, crops and the choice of which stage to open apply to all of them.</p>",
+        "es": "<p>Hasta <strong>seis</strong>. Cada perfil guarda todas las opciones del escenario: diseños, colores, tamaños, qué mostrar y la forma de tocar. Las fotos subidas, los recortes y la elección de en qué escenario abrir valen para todos.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Exportar e importar",
+        "en": "Export and import",
+        "es": "Exportar e importar"
+       },
+       "type": {
+        "pt": "arquivo",
+        "en": "file",
+        "es": "archivo"
+       },
+       "desc": {
+        "pt": "<p><strong>EXPORTAR</strong> salva o perfil marcado num arquivo; <strong>IMPORTAR</strong> lê esse arquivo em outro aparelho — do celular para o tablet, por exemplo. As fotos não vão no arquivo: no outro aparelho, escolha a imagem de novo.</p>",
+        "en": "<p><strong>EXPORT</strong> saves the selected profile to a file; <strong>IMPORT</strong> reads that file on another device — from the phone to the tablet, for example. Photos are not included in the file: choose the image again on the other device.</p>",
+        "es": "<p><strong>EXPORTAR</strong> guarda el perfil marcado en un archivo; <strong>IMPORTAR</strong> lee ese archivo en otro aparato — del celular a la tablet, por ejemplo. Las fotos no van en el archivo: en el otro aparato, elige la imagen de nuevo.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Apagar",
+        "en": "Delete",
+        "es": "Borrar"
+       },
+       "type": {
+        "pt": "botão",
+        "en": "button",
+        "es": "botón"
+       },
+       "desc": {
+        "pt": "<p>Pede um segundo toque (<strong>APAGAR MESMO?</strong>) e apaga o perfil marcado. O último perfil não pode ser apagado.</p>",
+        "en": "<p>Asks for a second tap (<strong>REALLY DELETE?</strong>) and deletes the selected profile. The last profile cannot be deleted.</p>",
+        "es": "<p>Pide un segundo toque (<strong>¿BORRAR DE VERDAD?</strong>) y borra el perfil marcado. El último perfil no se puede borrar.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Visuais prontos",
+        "en": "Ready-made looks",
+        "es": "Visuales listos"
+       },
+       "type": {
+        "pt": "cartões",
+        "en": "cards",
+        "es": "tarjetas"
+       },
+       "desc": {
+        "pt": "<p><strong>PADRÃO</strong>, <strong>ALTO CONTRASTE</strong>, <strong>OLED PRETO</strong>, <strong>ÂMBAR</strong>, <strong>NEON</strong>, <strong>AÇO</strong>, <strong>COR DO PRESET</strong> (fundo e destaque seguem a cor do LED do preset) e <strong>LIMPO</strong>. Um toque troca fundo, destaque, fonte, cantos e painéis do perfil marcado; layouts e imagens não mudam, e o <strong>DESFAZER</strong> volta.</p>",
+        "en": "<p><strong>DEFAULT</strong>, <strong>HIGH CONTRAST</strong>, <strong>OLED BLACK</strong>, <strong>AMBER</strong>, <strong>NEON</strong>, <strong>STEEL</strong>, <strong>PRESET COLOR</strong> (background and accent follow the preset LED color) and <strong>CLEAN</strong>. One tap changes the background, accent, font, corners and panels of the selected profile; layouts and images stay, and <strong>UNDO</strong> brings it back.</p>",
+        "es": "<p><strong>PREDETERMINADO</strong>, <strong>ALTO CONTRASTE</strong>, <strong>OLED NEGRO</strong>, <strong>ÁMBAR</strong>, <strong>NEÓN</strong>, <strong>ACERO</strong>, <strong>COLOR DEL PRESET</strong> (fondo y acento siguen el color del LED del preset) y <strong>LIMPIO</strong>. Un toque cambia fondo, acento, fuente, esquinas y paneles del perfil marcado; los diseños y las imágenes no cambian, y <strong>DESHACER</strong> vuelve atrás.</p>"
+       }
+      }
+     ]
+    },
+    {
+     "id": "palco-p2",
+     "title": {
+      "pt": "Configurações do palco — PALCO ESPECIAL",
+      "en": "Stage settings — SPECIAL STAGE",
+      "es": "Configuración del escenario — ESCENARIO ESPECIAL"
+     },
+     "purpose": {
+      "pt": "Como o PALCO ESPECIAL mostra a cadeia e os knobs do aparelho.",
+      "en": "How the SPECIAL STAGE shows the device's chain and knobs.",
+      "es": "Cómo el ESCENARIO ESPECIAL muestra la cadena y los knobs del aparato."
      },
      "shot": "stage-set-p2",
      "mockTitle": {
-      "pt": "CONFIGURAÇÕES DO PALCO — PALCO 2",
-      "en": "STAGE SETTINGS — STAGE 2",
-      "es": "CONFIGURACIÓN DEL ESCENARIO — ESCENARIO 2"
+      "pt": "CONFIGURAÇÕES DO PALCO — PALCO ESPECIAL",
+      "en": "STAGE SETTINGS — SPECIAL STAGE",
+      "es": "CONFIGURACIÓN DEL ESCENARIO — ESCENARIO ESPECIAL"
      },
      "fields": [
+      {
+       "name": {
+        "pt": "Layout da tela",
+        "en": "Screen layout",
+        "es": "Diseño de la pantalla"
+       },
+       "type": {
+        "pt": "layout",
+        "en": "layout",
+        "es": "diseño"
+       },
+       "desc": {
+        "pt": "<p>Seis jeitos de arrumar o palco do pedal: <strong>COMPLETO</strong> (preset, cadeia de efeitos e knobs), <strong>SÓ A CADEIA</strong> (blocos grandes; segurar liga e desliga), <strong>SÓ OS KNOBS</strong>, <strong>SÓ O PRESET</strong> (o nome em letra gigante) e <strong>CADEIA LATERAL</strong> (a cadeia em coluna e os knobs ao lado — pede tela de tablet ou computador), além de <strong>FAVORITOS</strong> (até oito controles de qualquer bloco, fixos na tela). O <strong>Kemper Player</strong> tem os dele: <strong>RIG + STOMPS</strong>, <strong>SÓ OS STOMPS</strong> e <strong>SÓ O RIG</strong>.</p>",
+        "en": "<p>Six ways to arrange the pedal's stage: <strong>FULL</strong> (preset, effect chain and knobs), <strong>CHAIN ONLY</strong> (big blocks; hold to turn on and off), <strong>KNOBS ONLY</strong>, <strong>PRESET ONLY</strong> (the name in giant letters) and <strong>SIDE CHAIN</strong> (the chain as a column with the knobs beside it — needs a tablet or computer screen), plus <strong>FAVORITES</strong> (up to eight controls from any block, fixed on screen). The <strong>Kemper Player</strong> has its own: <strong>RIG + STOMPS</strong>, <strong>STOMPS ONLY</strong> and <strong>RIG ONLY</strong>.</p>",
+        "es": "<p>Seis formas de organizar el escenario del pedal: <strong>COMPLETO</strong> (preset, cadena de efectos y knobs), <strong>SOLO LA CADENA</strong> (bloques grandes; mantener enciende y apaga), <strong>SOLO LOS KNOBS</strong>, <strong>SOLO EL PRESET</strong> (el nombre en letras gigantes) y <strong>CADENA LATERAL</strong> (la cadena en columna y los knobs al lado — pide pantalla de tablet o computadora), además de <strong>FAVORITOS</strong> (hasta ocho controles de cualquier bloque, fijos en la pantalla). El <strong>Kemper Player</strong> tiene los suyos: <strong>RIG + STOMPS</strong>, <strong>SOLO LOS STOMPS</strong> y <strong>SOLO EL RIG</strong>.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Modo visual: PADRÃO ou REALISTA",
+        "en": "Visual mode: STANDARD or REALISTIC",
+        "es": "Modo visual: ESTÁNDAR o REALISTA"
+       },
+       "type": {
+        "pt": "visual",
+        "en": "visual",
+        "es": "visual"
+       },
+       "desc": {
+        "pt": "<p><strong>REALISTA</strong> troca os knobs e as chaves por imagens de equipamento de verdade, deixa os blocos da cadeia sem moldura e põe uma chapa de metal atrás dos knobs, dos blocos e do nome do preset. Escolha o estilo (<strong>MODERNO</strong> ou <strong>CLÁSSICO</strong>), o knob (<strong>REDONDO</strong> ou <strong>CHICKEN HEAD</strong>) e se quer os <strong>Painéis de metal</strong>. No REALISTA o Estilo dos knobs fica apagado. Só nos aplicativos.</p>",
+        "en": "<p><strong>REALISTIC</strong> swaps the knobs and switches for pictures of real gear, leaves the chain blocks without a frame and puts a metal plate behind the knobs, the blocks and the preset name. Choose the style (<strong>MODERN</strong> or <strong>CLASSIC</strong>), the knob (<strong>ROUND</strong> or <strong>CHICKEN HEAD</strong>) and whether you want the <strong>Metal panels</strong>. In REALISTIC, Knob style is greyed out. Apps only.</p>",
+        "es": "<p><strong>REALISTA</strong> cambia los knobs y los interruptores por imágenes de equipos de verdad, deja los bloques de la cadena sin marco y pone una chapa de metal detrás de los knobs, los bloques y el nombre del preset. Elige el estilo (<strong>MODERNO</strong> o <strong>CLÁSICO</strong>), el knob (<strong>REDONDO</strong> o <strong>CHICKEN HEAD</strong>) y si quieres los <strong>Paneles de metal</strong>. En REALISTA el Estilo de los knobs queda apagado. Solo en las apps.</p>"
+       }
+      },
       {
        "name": {
         "pt": "Visual do aparelho",
@@ -4885,16 +5755,16 @@ const MN_CONTENT = {
         "es": "tema"
        },
        "desc": {
-        "pt": "<p>Ligado, cada aparelho usa as suas cores e o seu estilo. Desligado, o PALCO 2 segue a aba VISUAL.</p>",
-        "en": "<p>When on, each device uses its own colors and style. When off, STAGE 2 follows the VISUAL tab.</p>",
-        "es": "<p>Encendido, cada aparato usa sus propios colores y su estilo. Apagado, el ESCENARIO 2 sigue la pestaña VISUAL.</p>"
+        "pt": "<p>Ligado, cada aparelho usa as suas cores e o seu estilo. Desligado, o PALCO ESPECIAL segue a categoria VISUAL. Com <strong>Com o meu fundo e destaque</strong> ligado, ficam a fonte e o desenho do pedal, mas o fundo e a cor de destaque são os da categoria VISUAL.</p>",
+        "en": "<p>When on, each device uses its own colors and style. When off, the SPECIAL STAGE follows the VISUAL category. With <strong>With my background and accent</strong> on, the pedal font and drawing stay, but the background and the accent color are the ones from the VISUAL category.</p>",
+        "es": "<p>Encendido, cada aparato usa sus propios colores y su estilo. Apagado, el ESCENARIO ESPECIAL sigue la categoría VISUAL. Con <strong>Con mi fondo y acento</strong> encendido, quedan la fuente y el dibujo del pedal, pero el fondo y el color de acento son los de la categoría VISUAL.</p>"
        }
       },
       {
        "name": {
-        "pt": "Cadeia, siglas e cor dos blocos",
-        "en": "Chain, labels and block color",
-        "es": "Cadena, siglas y color de los bloques"
+        "pt": "Siglas e cor dos blocos",
+        "en": "Labels and block color",
+        "es": "Siglas y color de los bloques"
        },
        "type": {
         "pt": "cadeia",
@@ -4902,9 +5772,9 @@ const MN_CONTENT = {
         "es": "cadena"
        },
        "desc": {
-        "pt": "<p>Mostrar ou não a cadeia de efeitos, as siglas nos blocos e se os blocos usam a cor do aparelho ou a cor de destaque.</p>",
-        "en": "<p>Whether to show the effect chain and the labels on the blocks, and whether the blocks use the device color or the accent color.</p>",
-        "es": "<p>Mostrar o no la cadena de efectos y las siglas en los bloques, y si los bloques usan el color del aparato o el color de acento.</p>"
+        "pt": "<p>Mostrar ou não as siglas nos blocos, e se os blocos usam a cor do aparelho ou a cor de destaque. (Mostrar ou esconder a cadeia agora é o <strong>Layout da tela</strong>.)</p>",
+        "en": "<p>Whether to show the labels on the blocks, and whether the blocks use the device color or the accent color. (Showing or hiding the chain is now the <strong>Screen layout</strong>.)</p>",
+        "es": "<p>Mostrar o no las siglas en los bloques, y si los bloques usan el color del aparato o el color de acento. (Mostrar u ocultar la cadena ahora es el <strong>Diseño de la pantalla</strong>.)</p>"
        }
       },
       {
@@ -4914,14 +5784,14 @@ const MN_CONTENT = {
         "es": "Knobs"
        },
        "type": {
-        "pt": "tamanho e arranjo",
-        "en": "size and arrangement",
-        "es": "tamaño y disposición"
+        "pt": "tamanho, estilo e arranjo",
+        "en": "size, style and arrangement",
+        "es": "tamaño, estilo y disposición"
        },
        "desc": {
-        "pt": "<p>Tamanho (P, M, G) e arranjo: <strong>EM LINHA</strong> (com setas para os que não cabem) ou <strong>TODOS À VISTA</strong>.</p>",
-        "en": "<p>Size (P, M, G — small, medium, large) and arrangement: <strong>IN A ROW</strong> (with arrows for the ones that don't fit) or <strong>ALL VISIBLE</strong>.</p>",
-        "es": "<p>Tamaño (P, M, G) y disposición: <strong>EN FILA</strong> (con flechas para los que no caben) o <strong>TODOS A LA VISTA</strong>.</p>"
+        "pt": "<p>Tamanho (P, M, G); estilo: oito knobs (<strong>ARCO</strong>, <strong>PONTEIRO</strong>, <strong>LEDS</strong>, <strong>ANEL</strong>, <strong>COLORIDO</strong>, <strong>METAL</strong>, <strong>VINTAGE</strong> e <strong>CHICKEN HEAD</strong>), <strong>BARRA</strong> vertical ou <strong>NÚMERO</strong> grande; arranjo: <strong>EM LINHA</strong> (com setas para os que não cabem) ou <strong>TODOS À VISTA</strong>. Em <strong>MAIS OPÇÕES</strong>: onde o valor aparece (embaixo, em cima ou dentro do knob) e a sensibilidade do arraste (fino, normal, rápido).</p>",
+        "en": "<p>Size (S, M, L); style: eight knobs (<strong>ARC</strong>, <strong>POINTER</strong>, <strong>LEDS</strong>, <strong>RING</strong>, <strong>COLORED</strong>, <strong>METAL</strong>, <strong>VINTAGE</strong> and <strong>CHICKEN HEAD</strong>), vertical <strong>BAR</strong> or big <strong>NUMBER</strong>; arrangement: <strong>IN A ROW</strong> (with arrows for the ones that do not fit) or <strong>ALL VISIBLE</strong>. Under <strong>MORE OPTIONS</strong>: where the value appears (below, above or inside the knob) and the drag sensitivity (fine, normal, fast).</p>",
+        "es": "<p>Tamaño (P, M, G); estilo: ocho knobs (<strong>ARCO</strong>, <strong>PUNTERO</strong>, <strong>LEDS</strong>, <strong>ANILLO</strong>, <strong>COLOR</strong>, <strong>METAL</strong>, <strong>VINTAGE</strong> y <strong>CHICKEN HEAD</strong>), <strong>BARRA</strong> vertical o <strong>NÚMERO</strong> grande; disposición: <strong>EN LÍNEA</strong> (con flechas para los que no caben) o <strong>TODOS A LA VISTA</strong>. En <strong>MÁS OPCIONES</strong>: dónde aparece el valor (abajo, arriba o dentro del knob) y la sensibilidad del arrastre (fino, normal, rápido).</p>"
        }
       },
       {
@@ -4943,9 +5813,26 @@ const MN_CONTENT = {
       },
       {
        "name": {
-        "pt": "Botão de salvar",
-        "en": "Save button",
-        "es": "Botón de guardar"
+        "pt": "Botão de salvar e número do preset",
+        "en": "Save button and preset number",
+        "es": "Botón de guardar y número del preset"
+       },
+       "type": {
+        "pt": "interruptores",
+        "en": "switches",
+        "es": "interruptores"
+       },
+       "desc": {
+        "pt": "<p>Mostra ou esconde o disquete do cabeçalho — quem não quer correr o risco de gravar no palco pode tirá-lo — e o número do preset do aparelho. <strong>Imagem atrás do preset</strong> põe a imagem do palco atrás do nome do preset do aparelho.</p>",
+        "en": "<p>Shows or hides the floppy-disk button in the header — remove it if you do not want to risk saving on stage — and the device preset number. <strong>Image behind the preset</strong> puts the stage image behind the device preset name.</p>",
+        "es": "<p>Muestra u oculta el disquete del encabezado — quien no quiera arriesgarse a guardar en el escenario puede quitarlo — y el número del preset del aparato. <strong>Imagen detrás del preset</strong> pone la imagen del escenario detrás del nombre del preset del aparato.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Ajustes por aparelho",
+        "en": "Per-device settings",
+        "es": "Ajustes por aparato"
        },
        "type": {
         "pt": "interruptor",
@@ -4953,9 +5840,26 @@ const MN_CONTENT = {
         "es": "interruptor"
        },
        "desc": {
-        "pt": "<p>Mostra ou esconde o disquete do cabeçalho — quem não quer correr o risco de gravar no palco pode tirá-lo.</p>",
-        "en": "<p>Shows or hides the floppy-disk icon in the header — if you don't want to risk saving on stage, you can remove it.</p>",
-        "es": "<p>Muestra u oculta el disquete del encabezado — si no quieres arriesgarte a grabar en el escenario, puedes quitarlo.</p>"
+        "pt": "<p>Ligado, o layout da tela e o tamanho, o estilo e o arranjo dos knobs passam a ser guardados para <strong>cada pedal</strong> (TONEX ONE, Nano Cortex, GP-5): a TONEX pode abrir em Só os knobs e a GP-5 no Completo. A dica de cada opção diz para qual aparelho ela vale.</p>",
+        "en": "<p>When on, the screen layout and the knob size, style and arrangement are saved for <strong>each pedal</strong> (TONEX ONE, Nano Cortex, GP-5): the TONEX can open in Knobs only and the GP-5 in Full. The hint under each option says which device it applies to.</p>",
+        "es": "<p>Encendido, el diseño de la pantalla y el tamaño, el estilo y la disposición de los knobs se guardan para <strong>cada pedal</strong> (TONEX ONE, Nano Cortex, GP-5): la TONEX puede abrir en Solo los knobs y la GP-5 en Completo. La pista de cada opción dice para qué aparato vale.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Bloco aberto ao entrar",
+        "en": "Block open on entry",
+        "es": "Bloque abierto al entrar"
+       },
+       "type": {
+        "pt": "escolha",
+        "en": "choice",
+        "es": "opción"
+       },
+       "desc": {
+        "pt": "<p>Qual bloco já aparece com os knobs quando o Palco Especial abre: o <strong>AMP</strong>, <strong>O ÚLTIMO</strong> que você abriu naquele aparelho ou <strong>O PRIMEIRO LIGADO</strong> da cadeia.</p>",
+        "en": "<p>Which block already shows its knobs when the Special Stage opens: the <strong>AMP</strong>, <strong>THE LAST ONE</strong> you opened on that device or the <strong>FIRST ONE ON</strong> in the chain.</p>",
+        "es": "<p>Qué bloque ya aparece con los knobs cuando abre el Escenario Especial: el <strong>AMP</strong>, <strong>EL ÚLTIMO</strong> que abriste en ese aparato o <strong>EL PRIMERO ENCENDIDO</strong> de la cadena.</p>"
        }
       }
      ]
@@ -4974,9 +5878,9 @@ const MN_CONTENT = {
      },
      "shot": "stage-land",
      "mockTitle": {
-      "pt": "PALCO 1 — CELULAR DEITADO",
-      "en": "STAGE 1 — PHONE IN LANDSCAPE",
-      "es": "ESCENARIO 1 — CELULAR EN HORIZONTAL"
+      "pt": "PALCO BFMIDI — CELULAR DEITADO",
+      "en": "BFMIDI STAGE — PHONE IN LANDSCAPE",
+      "es": "ESCENARIO BFMIDI — CELULAR EN HORIZONTAL"
      },
      "fields": [
       {
@@ -4991,9 +5895,9 @@ const MN_CONTENT = {
         "es": "comportamiento"
        },
        "desc": {
-        "pt": "<p>No aplicativo de Android o palco esconde as barras do sistema e trava a tela deitada; deslizar da borda mostra as barras por um instante. No navegador o palco pede tela cheia e tenta travar a tela deitada.</p>",
-        "en": "<p>In the Android app the stage hides the system bars and locks the screen in landscape; swiping in from the edge shows the bars for a moment. In the browser the stage asks for full screen and tries to lock the screen in landscape.</p>",
-        "es": "<p>En la app de Android el escenario oculta las barras del sistema y bloquea la pantalla en horizontal; deslizar desde el borde muestra las barras por un instante. En el navegador el escenario pide pantalla completa e intenta bloquear la pantalla en horizontal.</p>"
+        "pt": "<p>No aplicativo de Android o palco esconde as barras do sistema e trava a tela deitada; deslizar da borda mostra as barras por um instante.</p>",
+        "en": "<p>In the Android app the stage hides the system bars and locks the screen in landscape; swiping in from the edge shows the bars for a moment.</p>",
+        "es": "<p>En la app de Android el escenario oculta las barras del sistema y bloquea la pantalla en horizontal; deslizar desde el borde muestra las barras por un instante.</p>"
        }
       },
       {
@@ -5044,9 +5948,9 @@ const MN_CONTENT = {
     "es": "Editores de preset de los aparatos"
    },
    "summary": {
-    "pt": "Edite ao vivo o timbre da Valeton GP-5, da IK TONEX ONE, da Neural DSP Nano Cortex e do Kemper Player — pela própria BFMiDi, sem o computador do fabricante.",
-    "en": "Edit the tone of the Valeton GP-5, the IK TONEX ONE, the Neural DSP Nano Cortex and the Kemper Player live — right from the BFMiDi, without the manufacturer's computer software.",
-    "es": "Edita en vivo el sonido de la Valeton GP-5, la IK TONEX ONE, la Neural DSP Nano Cortex y el Kemper Player — desde la propia BFMiDi, sin el software de computadora del fabricante."
+    "pt": "Edite ao vivo o timbre da Valeton GP-5 e GP-50, da IK TONEX ONE, da Neural DSP Nano Cortex e do Kemper Player — pela própria BFMiDi, sem o computador do fabricante.",
+    "en": "Edit the tone of the Valeton GP-5 and GP-50, the IK TONEX ONE, the Neural DSP Nano Cortex and the Kemper Player live — right from the BFMiDi, without the manufacturer's computer software.",
+    "es": "Edita en vivo el sonido de la Valeton GP-5 y GP-50, la IK TONEX ONE, la Neural DSP Nano Cortex y el Kemper Player — desde la propia BFMiDi, sin el software de computadora del fabricante."
    },
    "intro": {
     "pt": "<p>Com o aparelho ligado na controladora, o editor da BFMiDi mostra o <strong>preset que está tocando no aparelho</strong> — blocos, modelos e parâmetros — e manda cada ajuste na hora, como os apps dos fabricantes.</p><p>A GP-5, a TONEX ONE e a Nano Cortex se ligam na porta <strong>USB HOST</strong> da controladora (BFMIDI-3 e BFMIDI-S3). O Kemper Player é ligado no contrário: a porta <strong>DEVICE</strong> da controladora na porta USB do Player.</p>",
@@ -5073,14 +5977,14 @@ const MN_CONTENT = {
        "es": "Conecta el aparato y espera unos segundos."
       },
       {
-       "pt": "Na tela PRESET, toque no botão do aparelho na fileira de atalhos (<strong>GP-5</strong>, <strong>TONEX ONE</strong>, <strong>NANO CORTEX</strong> ou <strong>KEMPER</strong>).",
-       "en": "On the PRESET screen, tap the device's button in the shortcut row (<strong>GP-5</strong>, <strong>TONEX ONE</strong>, <strong>NANO CORTEX</strong> or <strong>KEMPER</strong>).",
-       "es": "En la pantalla PRESET, toca el botón del aparato en la fila de atajos (<strong>GP-5</strong>, <strong>TONEX ONE</strong>, <strong>NANO CORTEX</strong> o <strong>KEMPER</strong>)."
+       "pt": "Na tela PRESET, toque no botão do aparelho na fileira de atalhos (<strong>GP-5</strong> ou <strong>GP-50</strong>, <strong>TONEX ONE</strong>, <strong>NANO CORTEX</strong> ou <strong>KEMPER</strong>).",
+       "en": "On the PRESET screen, tap the device's button in the shortcut row (<strong>GP-5</strong> or <strong>GP-50</strong>, <strong>TONEX ONE</strong>, <strong>NANO CORTEX</strong> or <strong>KEMPER</strong>).",
+       "es": "En la pantalla PRESET, toca el botón del aparato en la fila de atajos (<strong>GP-5</strong> o <strong>GP-50</strong>, <strong>TONEX ONE</strong>, <strong>NANO CORTEX</strong> o <strong>KEMPER</strong>)."
       },
       {
-       "pt": "Ou: <strong>CONFIGURAÇÕES › HOST</strong> → card do aparelho → <strong>EDITAR PRESET</strong>. No Modo Palco, o botão <strong>EDITOR</strong> do PALCO 2.",
-       "en": "Or: <strong>SETTINGS › HOST</strong> → the device's card → <strong>EDIT PRESET</strong>. In Stage Mode, the <strong>EDITOR</strong> button on STAGE 2.",
-       "es": "O: <strong>CONFIGURACIÓN › HOST</strong> → tarjeta del aparato → <strong>EDITAR PRESET</strong>. En el Modo Escenario, el botón <strong>EDITOR</strong> del ESCENARIO 2."
+       "pt": "Ou: <strong>CONFIGURAÇÕES › HOST › APARELHOS</strong> → card do aparelho → <strong>EDITAR PRESET</strong>. No Modo Palco, o botão <strong>EDITOR</strong> do PALCO ESPECIAL.",
+       "en": "Or: <strong>SETTINGS › HOST › DEVICES</strong> → the device's card → <strong>EDIT PRESET</strong>. In Stage Mode, the <strong>EDITOR</strong> button on the SPECIAL STAGE.",
+       "es": "O: <strong>CONFIGURACIÓN › HOST › APARATOS</strong> → tarjeta del aparato → <strong>EDITAR PRESET</strong>. En el Modo Escenario, el botón <strong>EDITOR</strong> del ESCENARIO ESPECIAL."
       }
      ],
      "shot": "preset-atalhos",
@@ -5168,14 +6072,14 @@ const MN_CONTENT = {
     {
      "id": "ed-gp5",
      "title": {
-      "pt": "Valeton GP-5",
-      "en": "Valeton GP-5",
-      "es": "Valeton GP-5"
+      "pt": "Valeton GP-5 e GP-50",
+      "en": "Valeton GP-5 and GP-50",
+      "es": "Valeton GP-5 y GP-50"
      },
      "purpose": {
-      "pt": "Os dez blocos do patch da GP-5 — noise gate, pré, drive, amp, cab, EQ, modulação, delay, reverb e NS — com troca de modelo e todos os parâmetros. A edição só fica gravada quando você salva.",
-      "en": "The ten blocks of the GP-5 patch — noise gate, pre, drive, amp, cab, EQ, modulation, delay, reverb and NS — with model switching and every parameter. The edit is only stored when you save.",
-      "es": "Los diez bloques del patch de la GP-5 — noise gate, pre, drive, amp, cab, EQ, modulación, delay, reverb y NS — con cambio de modelo y todos los parámetros. La edición solo queda grabada cuando guardas."
+      "pt": "Os dez blocos do patch da GP-5 — noise gate, pré, drive, amp, cab, EQ, modulação, delay, reverb e NS — com troca de modelo e todos os parâmetros. A edição só fica gravada quando você salva. A <strong>GP-50</strong> usa o mesmo editor: a lista de modelos ganha os que só ela tem (AC Sim, C-Wah e Dreadnought 1), e a tela relê o pedal a cada segundo, para acompanhar o que você mexe nele. Nas duas, o CAB também oferece os 20 slots de User IR.",
+      "en": "The ten blocks of the GP-5 patch — noise gate, pre, drive, amp, cab, EQ, modulation, delay, reverb and NS — with model switching and every parameter. The edit is only stored when you save. The <strong>GP-50</strong> uses the same editor: the model list gains the ones only it has (AC Sim, C-Wah and Dreadnought 1), and the screen re-reads the pedal every second to follow what you change on it. On both, the CAB also offers the 20 User IR slots.",
+      "es": "Los diez bloques del patch de la GP-5 — noise gate, pre, drive, amp, cab, EQ, modulación, delay, reverb y NS — con cambio de modelo y todos los parámetros. La edición solo queda grabada cuando guardas. La <strong>GP-50</strong> usa el mismo editor: la lista de modelos gana los que solo ella tiene (AC Sim, C-Wah y Dreadnought 1), y la pantalla relee el pedal cada segundo, para acompañar lo que cambias en él. En las dos, el CAB también ofrece los 20 slots de User IR."
      },
      "howto": [
       {
@@ -5324,9 +6228,9 @@ const MN_CONTENT = {
      ],
      "notes": [
       {
-       "pt": "Com o <strong>Modo transmissão</strong> do USB Host ligado (CONFIGURAÇÕES › HOST), o editor da GP-5 fica indisponível: sem ele o host não consegue ler o preset.",
-       "en": "With the USB Host's <strong>Transmit-only mode</strong> on (SETTINGS › HOST), the GP-5 editor is unavailable: in that mode the host can't read the preset.",
-       "es": "Con el <strong>Modo transmisión</strong> del USB Host activado (CONFIGURACIÓN › HOST), el editor de la GP-5 no está disponible: en ese modo el host no puede leer el preset."
+       "pt": "Com o <strong>Modo transmissão</strong> do USB Host ligado (CONFIGURAÇÕES › HOST › STATUS), o editor da GP-5 fica indisponível: sem ele o host não consegue ler o preset.",
+       "en": "With the USB Host's <strong>Transmit-only mode</strong> on (SETTINGS › HOST › STATUS), the GP-5 editor is unavailable: in that mode the host can't read the preset.",
+       "es": "Con el <strong>Modo transmisión</strong> del USB Host activado (CONFIGURACIÓN › HOST › ESTADO), el editor de la GP-5 no está disponible: en ese modo el host no puede leer el preset."
       }
      ]
     },
@@ -5395,9 +6299,9 @@ const MN_CONTENT = {
         "es": "hub"
        },
        "desc": {
-        "pt": "<p>Com duas TONEX ONE plugadas, cada uma tem o seu editor e o seu canal MIDI (CONFIGURAÇÕES › HOST). A TONEX 1 é a que está na porta de menor número do hub.</p>",
-        "en": "<p>With two TONEX ONE units plugged in, each one has its own editor and its own MIDI channel (SETTINGS › HOST). TONEX 1 is the one on the hub's lowest-numbered port.</p>",
-        "es": "<p>Con dos TONEX ONE conectadas, cada una tiene su propio editor y su propio canal MIDI (CONFIGURACIÓN › HOST). La TONEX 1 es la que está en el puerto de menor número del hub.</p>"
+        "pt": "<p>Com duas TONEX ONE plugadas, cada uma tem o seu editor e o seu canal MIDI (CONFIGURAÇÕES › HOST › APARELHOS). A TONEX 1 é a que está na porta de menor número do hub.</p>",
+        "en": "<p>With two TONEX ONE units plugged in, each one has its own editor and its own MIDI channel (SETTINGS › HOST › DEVICES). TONEX 1 is the one on the hub's lowest-numbered port.</p>",
+        "es": "<p>Con dos TONEX ONE conectadas, cada una tiene su propio editor y su propio canal MIDI (CONFIGURACIÓN › HOST › APARATOS). La TONEX 1 es la que está en el puerto de menor número del hub.</p>"
        }
       }
      ]
@@ -5433,9 +6337,9 @@ const MN_CONTENT = {
         "es": "bloques"
        },
        "desc": {
-        "pt": "<p><strong>GATE</strong> (redução em %) → <strong>PRE FX 1</strong> e <strong>2</strong> → <strong>CAPTURA</strong> (slot 1 a 25, com gain, level, bass, mid, treble e volume) → <strong>POST FX 1</strong>, <strong>2</strong> e <strong>3</strong>. A cor de cada slot de efeito segue o tipo do efeito carregado.</p>",
-        "en": "<p><strong>GATE</strong> (reduction in %) → <strong>PRE FX 1</strong> and <strong>2</strong> → <strong>CAPTURE</strong> (slot 1 to 25, with gain, level, bass, mid, treble and volume) → <strong>POST FX 1</strong>, <strong>2</strong> and <strong>3</strong>. Each effect slot's color follows the type of effect loaded in it.</p>",
-        "es": "<p><strong>GATE</strong> (reducción en %) → <strong>PRE FX 1</strong> y <strong>2</strong> → <strong>CAPTURA</strong> (slot 1 a 25, con gain, level, bass, mid, treble y volume) → <strong>POST FX 1</strong>, <strong>2</strong> y <strong>3</strong>. El color de cada slot de efecto sigue el tipo del efecto cargado.</p>"
+        "pt": "<p><strong>GATE</strong> (redução em %) → <strong>PRE FX 1</strong> e <strong>2</strong> → <strong>CAPTURA</strong> → <strong>POST FX 1</strong>, <strong>2</strong> e <strong>3</strong>. A cor de cada slot de efeito segue o tipo do efeito carregado.</p><p>A captura tem dois quadros: <strong>AMP</strong> (Gain, Bass, Mid, Treble e Volume do amp) e <strong>CAPTURE</strong> (Volume da captura). A lista de capturas mostra o número e o <strong>nome</strong> de cada uma, como no Cortex Cloud.</p>",
+        "en": "<p><strong>GATE</strong> (reduction in %) → <strong>PRE FX 1</strong> and <strong>2</strong> → <strong>CAPTURE</strong> → <strong>POST FX 1</strong>, <strong>2</strong> and <strong>3</strong>. Each effect slot's color follows the type of effect loaded in it.</p><p>The capture has two frames: <strong>AMP</strong> (Gain, Bass, Mid, Treble and Amp volume) and <strong>CAPTURE</strong> (Capture volume). The capture list shows each capture's number and <strong>name</strong>, as in Cortex Cloud.</p>",
+        "es": "<p><strong>GATE</strong> (reducción en %) → <strong>PRE FX 1</strong> y <strong>2</strong> → <strong>CAPTURA</strong> → <strong>POST FX 1</strong>, <strong>2</strong> y <strong>3</strong>. El color de cada slot de efecto sigue el tipo del efecto cargado.</p><p>La captura tiene dos cuadros: <strong>AMP</strong> (Gain, Bass, Mid, Treble y Volumen del amp) y <strong>CAPTURE</strong> (Volumen de la captura). La lista de capturas muestra el número y el <strong>nombre</strong> de cada una, como en Cortex Cloud.</p>"
        }
       },
       {
@@ -5574,19 +6478,19 @@ const MN_CONTENT = {
      "fields": [
       {
        "name": {
-        "pt": "Footswitches pausados",
-        "en": "Footswitches paused",
-        "es": "Footswitches en pausa"
+        "pt": "A controladora continua funcionando",
+        "en": "The controller keeps working",
+        "es": "La controladora sigue funcionando"
        },
        "type": {
-        "pt": "modo exclusivo",
-        "en": "exclusive mode",
-        "es": "modo exclusivo"
+        "pt": "comportamento",
+        "en": "behavior",
+        "es": "comportamiento"
        },
        "desc": {
-        "pt": "<p>Com o editor aberto, a controladora dedica a USB ao Kemper: footswitches, afinador e SEGUIR O KEMPER ficam parados. Para sair: feche o editor, <strong>segure qualquer footswitch por 2 segundos</strong>, ou deixe o editor 20 segundos sem falar com a controladora (aba em segundo plano, conexão perdida). Nenhuma das saídas troca o rig nem manda PC ou CC.</p>",
-        "en": "<p>With the editor open, the controller dedicates its USB to the Kemper: footswitches, tuner and FOLLOW THE KEMPER are paused. To leave: close the editor, <strong>hold any footswitch for 2 seconds</strong>, or let the editor go 20 seconds without talking to the controller (tab in the background, connection lost). None of these exits changes the rig or sends a PC or CC.</p>",
-        "es": "<p>Con el editor abierto, la controladora dedica el USB al Kemper: footswitches, afinador y SEGUIR EL KEMPER quedan detenidos. Para salir: cierra el editor, <strong>mantén cualquier footswitch durante 2 segundos</strong>, o deja el editor 20 segundos sin hablar con la controladora (pestaña en segundo plano, conexión perdida). Ninguna de las salidas cambia el rig ni envía PC o CC.</p>"
+        "pt": "<p>Com o editor aberto, os footswitches, a tela, o SEGUIR O KEMPER e o nome do rig continuam normais. Trocar de preset pelo pé troca o rig no Player — a edição não salva se perde — e o editor relê o rig novo. Se o <strong>afinador do Kemper</strong> abrir na controladora, o editor espera ele fechar e manda depois o que você mudou. Fechar o editor (ou deixá-lo 20 segundos sem falar com a controladora) não troca o rig nem manda PC ou CC.</p>",
+        "en": "<p>With the editor open, the footswitches, the screen, FOLLOW THE KEMPER and the rig name keep working normally. Changing preset by foot changes the rig on the Player — any unsaved edit is lost — and the editor reloads the new rig. If the <strong>Kemper tuner</strong> opens on the controller, the editor waits for it to close and then sends what you changed. Closing the editor (or leaving it 20 seconds without talking to the controller) doesn't change the rig or send a PC or CC.</p>",
+        "es": "<p>Con el editor abierto, los footswitches, la pantalla, SEGUIR EL KEMPER y el nombre del rig siguen normales. Cambiar de preset con el pie cambia el rig en el Player — la edición sin guardar se pierde — y el editor lee el rig nuevo. Si el <strong>afinador del Kemper</strong> se abre en la controladora, el editor espera a que se cierre y envía después lo que cambiaste. Cerrar el editor (o dejarlo 20 segundos sin hablar con la controladora) no cambia el rig ni envía PC o CC.</p>"
        }
       },
       {
@@ -5635,9 +6539,9 @@ const MN_CONTENT = {
         "es": "ajuste"
        },
        "desc": {
-        "pt": "<p>Em <strong>CONFIGURAÇÕES › MODO AMIGÁVEL</strong>, card do Kemper Player, escolha o <strong>NÍVEL DO PLAYER</strong> (I, II ou III) igual ao do seu Player: o nível III mostra também os módulos C, D, X e MOD.</p>",
-        "en": "<p>In <strong>SETTINGS › FRIENDLY MODE</strong>, Kemper Player card, set the <strong>PLAYER LEVEL</strong> (I, II or III) to match your Player: level III also shows modules C, D, X and MOD.</p>",
-        "es": "<p>En <strong>CONFIGURACIÓN › MODO AMIGABLE</strong>, tarjeta del Kemper Player, elige el <strong>NIVEL DEL PLAYER</strong> (I, II o III) igual al de tu Player: el nivel III también muestra los módulos C, D, X y MOD.</p>"
+        "pt": "<p>Em <strong>CONFIGURAÇÕES › MODO AMIGÁVEL › AVANÇADO</strong>, card do Kemper Player, escolha o <strong>NÍVEL DO PLAYER</strong> (I, II ou III) igual ao do seu Player: o nível III mostra também os módulos C, D, X e MOD.</p>",
+        "en": "<p>In <strong>SETTINGS › FRIENDLY MODE › ADVANCED</strong>, Kemper Player card, set the <strong>PLAYER LEVEL</strong> (I, II or III) to match your Player: level III also shows modules C, D, X and MOD.</p>",
+        "es": "<p>En <strong>CONFIGURACIÓN › MODO AMIGABLE › AVANZADO</strong>, tarjeta del Kemper Player, elige el <strong>NIVEL DEL PLAYER</strong> (I, II o III) igual al de tu Player: el nivel III también muestra los módulos C, D, X y MOD.</p>"
        }
       },
       {
@@ -5692,9 +6596,9 @@ const MN_CONTENT = {
         "es": "guía"
        },
        "desc": {
-        "pt": "<p>Confira: (1) a tela PRESET está em modo PRESET (os atalhos não aparecem no LIVE); (2) o editor está conectado à controladora, não no modo offline; (3) o aparelho aparece em <strong>CONFIGURAÇÕES › HOST</strong> como conectado; (4) o modelo da placa é BFMIDI-3 ou BFMIDI-S3; (5) na GP-5, o <strong>Modo transmissão</strong> está desligado.</p>",
-        "en": "<p>Check: (1) the PRESET screen is in PRESET mode (shortcuts don’t show in LIVE); (2) the editor is connected to the controller, not in offline mode; (3) the device shows up as connected in <strong>SETTINGS › HOST</strong>; (4) the board model is BFMIDI-3 or BFMIDI-S3; (5) for the GP-5, <strong>Transmit-only mode</strong> is off.</p>",
-        "es": "<p>Revisa: (1) la pantalla PRESET está en modo PRESET (los atajos no aparecen en LIVE); (2) el editor está conectado a la controladora, no en el modo offline; (3) el equipo aparece como conectado en <strong>CONFIGURACIÓN › HOST</strong>; (4) el modelo de la placa es BFMIDI-3 o BFMIDI-S3; (5) en la GP-5, el <strong>Modo transmisión</strong> está apagado.</p>"
+        "pt": "<p>Confira: (1) a tela PRESET está em modo PRESET (os atalhos não aparecem no LIVE); (2) o editor está conectado à controladora, não no modo offline; (3) o aparelho aparece em <strong>CONFIGURAÇÕES › HOST › APARELHOS</strong> como conectado; (4) o modelo da placa é BFMIDI-3 ou BFMIDI-S3; (5) na GP-5, o <strong>Modo transmissão</strong> está desligado.</p>",
+        "en": "<p>Check: (1) the PRESET screen is in PRESET mode (shortcuts don’t show in LIVE); (2) the editor is connected to the controller, not in offline mode; (3) the device shows up as connected in <strong>SETTINGS › HOST › DEVICES</strong>; (4) the board model is BFMIDI-3 or BFMIDI-S3; (5) for the GP-5, <strong>Transmit-only mode</strong> is off.</p>",
+        "es": "<p>Revisa: (1) la pantalla PRESET está en modo PRESET (los atajos no aparecen en LIVE); (2) el editor está conectado a la controladora, no en el modo offline; (3) el equipo aparece como conectado en <strong>CONFIGURACIÓN › HOST › APARATOS</strong>; (4) el modelo de la placa es BFMIDI-3 o BFMIDI-S3; (5) en la GP-5, el <strong>Modo transmisión</strong> está apagado.</p>"
        }
       },
       {
@@ -5750,9 +6654,9 @@ const MN_CONTENT = {
     "es": "Quince destinos, del Modo Amigable a la restauración de fábrica. Lo que está aquí vale para toda la controladora — no para un preset."
    },
    "intro": {
-    "pt": "<p>A engrenagem da barra de baixo abre o menu <strong>CONFIGURAÇÕES</strong>, e cada quadrado leva a uma tela. Os mesmos destinos podem virar atalhos no card PRINCIPAL (<strong>CONFIGURAÇÕES › EDITOR › ATALHOS</strong>).</p><p>Quase tudo aqui fica guardado numa memória protegida da controladora, que sobrevive às atualizações. As exceções são as preferências do próprio editor (tema, idioma, salvamento automático, atalhos e o nível do Kemper Player), que ficam no aparelho onde você abriu.</p>",
-    "en": "<p>The gear on the bottom bar opens the <strong>SETTINGS</strong> menu, and each square takes you to a screen. The same destinations can become shortcuts on the MAIN card (<strong>SETTINGS › EDITOR › SHORTCUTS</strong>).</p><p>Almost everything here is stored in a protected memory on the controller that survives updates. The exceptions are the editor's own preferences (theme, language, auto save, shortcuts and the Kemper Player level), which stay on the device where you opened the editor.</p>",
-    "es": "<p>El engranaje de la barra inferior abre el menú <strong>CONFIGURACIÓN</strong>, y cada cuadro te lleva a una pantalla. Los mismos destinos pueden convertirse en atajos en la tarjeta PRINCIPAL (<strong>CONFIGURACIÓN › EDITOR › ATAJOS</strong>).</p><p>Casi todo aquí se guarda en una memoria protegida de la controladora, que sobrevive a las actualizaciones. Las excepciones son las preferencias del propio editor (tema, idioma, guardado automático, atajos y el nivel del Kemper Player), que quedan en el dispositivo donde lo abriste.</p>"
+    "pt": "<p>A engrenagem da barra de baixo abre o menu <strong>CONFIGURAÇÕES</strong>, e cada quadrado leva a uma tela. Quase todas as telas são divididas em <strong>abas com ícone</strong> no topo — por exemplo, <strong>MODO AMIGÁVEL · AFINADOR · AVANÇADO</strong> — e abrem sempre na primeira aba. Os mesmos destinos podem virar atalhos no card PRINCIPAL (<strong>CONFIGURAÇÕES › EDITOR › ATALHOS</strong>).</p><p>Neste manual o caminho até cada ajuste aparece assim: <strong>CONFIGURAÇÕES › BANCOS › COMBOS</strong> quer dizer o item BANCOS do menu, aba COMBOS.</p><p>Quase tudo aqui fica guardado numa memória protegida da controladora, que sobrevive às atualizações. As exceções são as preferências do próprio editor (tema, idioma, salvamento automático, atalhos e o nível do Kemper Player), que ficam no aparelho onde você abriu.</p>",
+    "en": "<p>The gear on the bottom bar opens the <strong>SETTINGS</strong> menu, and each square takes you to a screen. Almost every screen is split into <strong>icon tabs</strong> at the top — for example, <strong>FRIENDLY MODE · TUNER · ADVANCED</strong> — and always opens on the first tab. The same destinations can become shortcuts on the MAIN card (<strong>SETTINGS › EDITOR › SHORTCUTS</strong>).</p><p>In this manual, the path to each setting is written like this: <strong>SETTINGS › BANKS › COMBOS</strong> means the BANKS item on the menu, COMBOS tab.</p><p>Almost everything here is stored in a protected memory on the controller that survives updates. The exceptions are the editor's own preferences (theme, language, auto save, shortcuts and the Kemper Player level), which stay on the device where you opened the editor.</p>",
+    "es": "<p>El engranaje de la barra inferior abre el menú <strong>CONFIGURACIÓN</strong>, y cada cuadro te lleva a una pantalla. Casi todas las pantallas están divididas en <strong>pestañas con ícono</strong> arriba — por ejemplo, <strong>MODO AMIGABLE · AFINADOR · AVANZADO</strong> — y siempre abren en la primera pestaña. Los mismos destinos pueden convertirse en atajos en la tarjeta PRINCIPAL (<strong>CONFIGURACIÓN › EDITOR › ATAJOS</strong>).</p><p>En este manual, el camino hasta cada ajuste aparece así: <strong>CONFIGURACIÓN › BANCOS › COMBOS</strong> significa el ítem BANCOS del menú, pestaña COMBOS.</p><p>Casi todo aquí se guarda en una memoria protegida de la controladora, que sobrevive a las actualizaciones. Las excepciones son las preferencias del propio editor (tema, idioma, guardado automático, atajos y el nivel del Kemper Player), que quedan en el dispositivo donde lo abriste.</p>"
    },
    "cards": [
     {
@@ -5763,15 +6667,20 @@ const MN_CONTENT = {
       "es": "El menú de configuración"
      },
      "purpose": {
-      "pt": "Saber onde procurar cada coisa. O menu mostra os quinze destinos em três linhas de cinco; aqui eles estão agrupados por assunto.",
-      "en": "Know where to look for each thing. The menu shows the fifteen destinations in three rows of five; here they are grouped by topic.",
-      "es": "Saber dónde buscar cada cosa. El menú muestra los quince destinos en tres filas de cinco; aquí están agrupados por tema."
+      "pt": "Saber onde procurar cada coisa. O menu mostra os quinze destinos em três linhas de cinco; aqui eles estão agrupados por assunto, com as abas de cada tela entre parênteses.",
+      "en": "Know where to look for each thing. The menu shows the fifteen destinations in three rows of five; here they are grouped by topic, with each screen's tabs in parentheses.",
+      "es": "Saber dónde buscar cada cosa. El menú muestra los quince destinos en tres filas de cinco; aquí están agrupados por tema, con las pestañas de cada pantalla entre paréntesis."
      },
      "howto": [
       {
        "pt": "Toque na engrenagem, na barra de baixo, em qualquer tela.",
        "en": "Tap the gear on the bottom bar, on any screen.",
        "es": "Toca el engranaje de la barra inferior, en cualquier pantalla."
+      },
+      {
+       "pt": "Dentro de cada tela, toque nas abas do topo para trocar de página.",
+       "en": "Inside each screen, tap the tabs at the top to switch pages.",
+       "es": "Dentro de cada pantalla, toca las pestañas de arriba para cambiar de página."
       }
      ],
      "shot": "cfg-menu",
@@ -5793,9 +6702,9 @@ const MN_CONTENT = {
         "es": "grupo"
        },
        "desc": {
-        "pt": "<p><strong>MODO AMIGÁVEL</strong> — qual é o seu aparelho, para o editor falar por nomes.<br><strong>FOOTSWITCHES</strong> — o que não pertence a preset: modo de operação, SW GLOBAL, expressão e footswitches externos.<br><strong>BANCOS</strong> — como a controladora liga, como o pé navega e os combos.</p>",
-        "en": "<p><strong>FRIENDLY MODE</strong> — which device you have, so the editor can speak in names.<br><strong>FOOTSWITCHES</strong> — what doesn't belong to a preset: operating mode, SW GLOBAL, expression and external footswitches.<br><strong>BANKS</strong> — how the controller starts up, how your foot navigates, and the combos.</p>",
-        "es": "<p><strong>MODO AMIGABLE</strong> — cuál es tu equipo, para que el editor hable con nombres.<br><strong>FOOTSWITCHES</strong> — lo que no pertenece a un preset: modo de operación, SW GLOBAL, expresión y footswitches externos.<br><strong>BANCOS</strong> — cómo arranca la controladora, cómo navega el pie y los combos.</p>"
+        "pt": "<p><strong>MODO AMIGÁVEL</strong> (MODO AMIGÁVEL · AFINADOR · AVANÇADO) — qual é o seu aparelho, para o editor falar por nomes; o afinador na tela; os recursos extras de cada aparelho.<br><strong>FOOTSWITCHES</strong> (OPERAÇÃO · SW GLOBAL · EXTERNOS) — o que não pertence a preset: modo de operação, SW GLOBAL, expressão e footswitches externos.<br><strong>BANCOS</strong> (BANCOS · CHAMADA · COMBOS) — como a controladora liga, o que cada footswitch faz no modo PRESET e os combos.</p>",
+        "en": "<p><strong>FRIENDLY MODE</strong> (FRIENDLY MODE · TUNER · ADVANCED) — which device you have, so the editor can speak in names; the on-screen tuner; each device's extra features.<br><strong>FOOTSWITCHES</strong> (OPERATION · GLOBAL SW · EXTERNAL) — what doesn't belong to a preset: operating mode, SW GLOBAL, expression and external footswitches.<br><strong>BANKS</strong> (BANKS · PRESET CALL · COMBOS) — how the controller starts up, what each footswitch does in PRESET mode, and the combos.</p>",
+        "es": "<p><strong>MODO AMIGABLE</strong> (MODO AMIGABLE · AFINADOR · AVANZADO) — cuál es tu equipo, para que el editor hable con nombres; el afinador en pantalla; las funciones extra de cada equipo.<br><strong>FOOTSWITCHES</strong> (OPERACIÓN · SW GLOBAL · EXTERNOS) — lo que no pertenece a un preset: modo de operación, SW GLOBAL, expresión y footswitches externos.<br><strong>BANCOS</strong> (BANCOS · LLAMADA · COMBOS) — cómo arranca la controladora, qué hace cada footswitch en el modo PRESET y los combos.</p>"
        }
       },
       {
@@ -5810,9 +6719,9 @@ const MN_CONTENT = {
         "es": "grupo"
        },
        "desc": {
-        "pt": "<p><strong>TELA</strong> — layouts e o card de BPM. <strong>LEDS</strong> — brilho e cores dos anéis. <strong>IMAGENS</strong> — os seus fundos e ícones.</p>",
-        "en": "<p><strong>DISPLAY</strong> — layouts and the BPM card. <strong>LEDS</strong> — brightness and ring colors. <strong>IMAGES</strong> — your own backgrounds and icons.</p>",
-        "es": "<p><strong>PANTALLA</strong> — layouts y la tarjeta de BPM. <strong>LEDS</strong> — brillo y colores de los anillos. <strong>IMÁGENES</strong> — tus propios fondos e íconos.</p>"
+        "pt": "<p><strong>TELA</strong> — Gig View, card de BPM e o aviso de troca de preset (o layout de cada preset fica no CONFIGURAR DISPLAY). <strong>LEDS</strong> (BRILHO · CORES · LIVE) — brilho e cores dos anéis. <strong>IMAGENS</strong> (IMAGENS · ÍCONES · MEMÓRIA) — os seus fundos e ícones e a memória que eles ocupam.</p>",
+        "en": "<p><strong>DISPLAY</strong> — Gig View, the BPM card and the preset change notice (each preset's layout is in CONFIGURE DISPLAY). <strong>LEDS</strong> (BRIGHTNESS · COLORS · LIVE) — brightness and ring colors. <strong>IMAGES</strong> (IMAGES · ICONS · MEMORY) — your own backgrounds and icons and the memory they take up.</p>",
+        "es": "<p><strong>PANTALLA</strong> — Gig View, la tarjeta de BPM y el aviso de cambio de preset (el layout de cada preset está en CONFIGURAR PANTALLA). <strong>LEDS</strong> (BRILLO · COLORES · LIVE) — brillo y colores de los anillos. <strong>IMÁGENES</strong> (IMÁGENES · ÍCONOS · MEMORIA) — tus propios fondos e íconos y la memoria que ocupan.</p>"
        }
       },
       {
@@ -5827,9 +6736,9 @@ const MN_CONTENT = {
         "es": "grupo"
        },
        "desc": {
-        "pt": "<p><strong>HARDWARE</strong> — modelo, tempos de disparo e memória. <strong>WIFI</strong>, <strong>HOST</strong> (USB Host e os aparelhos plugados) e <strong>BLUETOOTH</strong> — as três abas da tela de conexões.</p>",
-        "en": "<p><strong>HARDWARE</strong> — model, send timing and memory. <strong>WIFI</strong>, <strong>HOST</strong> (the USB Host and the devices plugged into it) and <strong>BLUETOOTH</strong> — the three tabs of the connections screen.</p>",
-        "es": "<p><strong>HARDWARE</strong> — modelo, tiempos de envío y memoria. <strong>WIFI</strong>, <strong>HOST</strong> (el USB Host y los equipos conectados) y <strong>BLUETOOTH</strong> — las tres pestañas de la pantalla de conexiones.</p>"
+        "pt": "<p><strong>HARDWARE</strong> (MODELO · TEMPOS · MEMÓRIA) — modelo, tempos de disparo e memória. <strong>WIFI</strong> (ESTADO · CONECTAR · REDES), <strong>HOST</strong> (STATUS · APARELHOS · MIDI — o USB Host e os aparelhos plugados) e <strong>BLUETOOTH</strong> (STATUS · FUNÇÃO · FILTRO) — cada conexão com a sua tela.</p>",
+        "en": "<p><strong>HARDWARE</strong> (MODEL · TIMING · MEMORY) — model, send timing and memory. <strong>WIFI</strong> (STATUS · CONNECT · NETWORKS), <strong>HOST</strong> (STATUS · DEVICES · MIDI — the USB Host and the devices plugged into it) and <strong>BLUETOOTH</strong> (STATUS · FUNCTION · FILTER) — each connection with its own screen.</p>",
+        "es": "<p><strong>HARDWARE</strong> (MODELO · TIEMPOS · MEMORIA) — modelo, tiempos de envío y memoria. <strong>WIFI</strong> (ESTADO · CONECTAR · REDES), <strong>HOST</strong> (ESTADO · APARATOS · MIDI — el USB Host y los equipos conectados) y <strong>BLUETOOTH</strong> (ESTADO · FUNCIÓN · FILTRO) — cada conexión con su propia pantalla.</p>"
        }
       },
       {
@@ -5844,9 +6753,43 @@ const MN_CONTENT = {
         "es": "grupo"
        },
        "desc": {
-        "pt": "<p><strong>EDITOR</strong> — tema, salvamento automático, atalhos e idioma. <strong>ATUALIZAR</strong> — firmware da controladora e do USB Host. <strong>BACKUP</strong> — cópias em arquivo. <strong>TESTES</strong> — diagnóstico e monitor MIDI. <strong>RESTAURAR</strong> — apagar e voltar ao padrão (por isso em vermelho).</p>",
-        "en": "<p><strong>EDITOR</strong> — theme, auto save, shortcuts and language. <strong>UPDATES</strong> — firmware for the controller and the USB Host. <strong>BACKUP</strong> — copies to a file. <strong>TESTS</strong> — diagnostics and MIDI monitor. <strong>FACTORY RESET</strong> — erase and go back to defaults (that's why it's in red).</p>",
-        "es": "<p><strong>EDITOR</strong> — tema, guardado automático, atajos e idioma. <strong>ACTUALIZAR</strong> — firmware de la controladora y del USB Host. <strong>BACKUP</strong> — copias en archivo. <strong>PRUEBAS</strong> — diagnóstico y monitor MIDI. <strong>RESTAURAR</strong> — borrar y volver a los valores de fábrica (por eso está en rojo).</p>"
+        "pt": "<p><strong>EDITOR</strong> (GERAL · APARÊNCIA · ATALHOS) — salvamento automático, tema, idioma e atalhos. <strong>ATUALIZAR</strong> — firmware da controladora e do USB Host (abas 1 BFMiDi e 2 USB HOST). <strong>BACKUP</strong> (COMPLETO · BANCO · PRESET) — cópias em arquivo. <strong>TESTES</strong> (HARDWARE · DISPARO · MONITOR) — diagnóstico e monitor MIDI. <strong>RESTAURAR</strong> (PRESETS · GLOBAL) — apagar e voltar ao padrão (por isso em vermelho).</p>",
+        "en": "<p><strong>EDITOR</strong> (GENERAL · APPEARANCE · SHORTCUTS) — auto save, theme, language and shortcuts. <strong>UPDATES</strong> — firmware for the controller and the USB Host (tabs 1 BFMiDi and 2 USB HOST). <strong>BACKUP</strong> (FULL · BANK · PRESET) — copies to a file. <strong>TESTS</strong> (HARDWARE · SEND · MONITOR) — diagnostics and MIDI monitor. <strong>FACTORY RESET</strong> (PRESETS · GLOBAL) — erase and go back to defaults (that's why it's in red).</p>",
+        "es": "<p><strong>EDITOR</strong> (GENERAL · APARIENCIA · ATAJOS) — guardado automático, tema, idioma y atajos. <strong>ACTUALIZAR</strong> — firmware de la controladora y del USB Host (pestañas 1 BFMiDi y 2 USB HOST). <strong>BACKUP</strong> (COMPLETO · BANCO · PRESET) — copias en archivo. <strong>PRUEBAS</strong> (HARDWARE · ENVÍO · MONITOR) — diagnóstico y monitor MIDI. <strong>RESTAURAR</strong> (PRESETS · GLOBAL) — borrar y volver a los valores de fábrica (por eso está en rojo).</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "As abas",
+        "en": "The tabs",
+        "es": "Las pestañas"
+       },
+       "type": {
+        "pt": "navegação",
+        "en": "navigation",
+        "es": "navegación"
+       },
+       "desc": {
+        "pt": "<p>A barra de abas fica no topo da tela: toque num ícone para trocar de página. Entrando por um item do menu ou por um atalho, a tela abre sempre na primeira aba.</p><p>As abas aparecem mesmo quando não há nada para mostrar: uma aba que depende de outro ajuste ou do modelo da placa explica o que falta em vez de sumir — por exemplo, o AFINADOR sem Kemper Player nem Nano Cortex, ou EXTERNOS numa placa sem as entradas.</p>",
+        "en": "<p>The tab bar sits at the top of the screen: tap an icon to switch pages. When you come in from a menu item or a shortcut, the screen always opens on the first tab.</p><p>Tabs show up even when there's nothing to display: a tab that depends on another setting or on the board model explains what's missing instead of disappearing — for example, TUNER without a Kemper Player or Nano Cortex, or EXTERNAL on a board without those inputs.</p>",
+        "es": "<p>La barra de pestañas está arriba en la pantalla: toca un ícono para cambiar de página. Al entrar por un ítem del menú o por un atajo, la pantalla siempre abre en la primera pestaña.</p><p>Las pestañas aparecen incluso cuando no hay nada que mostrar: una pestaña que depende de otro ajuste o del modelo de la placa explica lo que falta en lugar de desaparecer — por ejemplo, AFINADOR sin Kemper Player ni Nano Cortex, o EXTERNOS en una placa sin esas entradas.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Como ler um card",
+        "en": "How to read a card",
+        "es": "Cómo leer una tarjeta"
+       },
+       "type": {
+        "pt": "guia",
+        "en": "guide",
+        "es": "guía"
+       },
+       "desc": {
+        "pt": "<p>Todo card começa pelo título e por uma frase do que ele faz. No canto, um <strong>selo colorido</strong> diz o estado quando há um (LIGADO, DESLIGADO, SALVE PARA LER…); quando é um valor, aparece o valor. Avisos que pedem algo de você — salvar, escolher um canal, atualizar — ficam sempre à vista, numa faixa com ícone.</p><p>Onde a ordem importa, o card vem em <strong>passos numerados</strong>; o que poucos usam fica recolhido (como o <strong>Ajuste fino</strong> do pedal de expressão); e o botão <strong>INFO</strong>, no pé do card, mostra a explicação de cada campo.</p>",
+        "en": "<p>Every card starts with its title and a sentence about what it does. In the corner, a <strong>colored badge</strong> shows the state when there is one (ON, OFF, SAVE TO READ…); when it’s a value, the value shows. Notices that need something from you — saving, picking a channel, updating — always stay in view, in a strip with an icon.</p><p>Where order matters, the card comes in <strong>numbered steps</strong>; what few people use stays folded away (like the expression pedal’s <strong>Fine tuning</strong>); and the <strong>INFO</strong> button at the bottom of the card shows the explanation of each field.</p>",
+        "es": "<p>Toda tarjeta empieza con el título y una frase de lo que hace. En la esquina, un <strong>sello de color</strong> dice el estado cuando lo hay (ACTIVO, INACTIVO, GUARDA PARA LEER…); cuando es un valor, aparece el valor. Los avisos que piden algo de ti — guardar, elegir un canal, actualizar — quedan siempre a la vista, en una franja con ícono.</p><p>Donde el orden importa, la tarjeta viene en <strong>pasos numerados</strong>; lo que pocos usan queda plegado (como el <strong>Ajuste fino</strong> del pedal de expresión); y el botón <strong>INFO</strong>, al pie de la tarjeta, muestra la explicación de cada campo.</p>"
        }
       }
      ]
@@ -5889,6 +6832,23 @@ const MN_CONTENT = {
      "fields": [
       {
        "name": {
+        "pt": "As três abas",
+        "en": "The three tabs",
+        "es": "Las tres pestañas"
+       },
+       "type": {
+        "pt": "abas",
+        "en": "tabs",
+        "es": "pestañas"
+       },
+       "desc": {
+        "pt": "<p><strong>MODO AMIGÁVEL</strong> é o mapa de aparelhos por canal (esta aba). <strong>AFINADOR</strong> ajusta o afinador na tela da controladora, quando algum canal tem Kemper Player ou Nano Cortex. <strong>AVANÇADO</strong> reúne os recursos extras desses aparelhos e o aparelho personalizado.</p>",
+        "en": "<p><strong>FRIENDLY MODE</strong> is the per-channel device map (this tab). <strong>TUNER</strong> sets up the tuner on the controller's screen, when some channel has a Kemper Player or a Nano Cortex. <strong>ADVANCED</strong> gathers those devices' extra features and the custom device.</p>",
+        "es": "<p><strong>MODO AMIGABLE</strong> es el mapa de equipos por canal (esta pestaña). <strong>AFINADOR</strong> ajusta el afinador en la pantalla de la controladora, cuando algún canal tiene Kemper Player o Nano Cortex. <strong>AVANZADO</strong> reúne las funciones extra de esos equipos y el aparato personalizado.</p>"
+       }
+      },
+      {
+       "name": {
         "pt": "Um aparelho por canal",
         "en": "One device per channel",
         "es": "Un equipo por canal"
@@ -5916,9 +6876,9 @@ const MN_CONTENT = {
         "es": "selección"
        },
        "desc": {
-        "pt": "<p>Organizada por marca (Valeton, Hotone, Line 6, Fractal, IK, Neural DSP, Kemper, BOSS, Strymon…), com busca por marca ou modelo. Os aparelhos que você mesmo cadastrou (<strong>USER 1</strong> a <strong>3</strong>) ficam logo abaixo de GLOBAL.</p>",
-        "en": "<p>Organized by brand (Valeton, Hotone, Line 6, Fractal, IK, Neural DSP, Kemper, BOSS, Strymon…), with search by brand or model. The devices you registered yourself (<strong>USER 1</strong> to <strong>3</strong>) are right below GLOBAL.</p>",
-        "es": "<p>Organizada por marca (Valeton, Hotone, Line 6, Fractal, IK, Neural DSP, Kemper, BOSS, Strymon…), con búsqueda por marca o modelo. Los equipos que registraste tú mismo (<strong>USER 1</strong> a <strong>3</strong>) quedan justo debajo de GLOBAL.</p>"
+        "pt": "<p>Organizada por marca (Valeton, Hotone, Line 6, Fractal, IK, Neural DSP, Kemper, BOSS, Strymon, ZOOM…), com busca por marca ou modelo. Os aparelhos que você mesmo cadastrou (<strong>USER 1</strong> a <strong>3</strong>) ficam logo abaixo de GLOBAL.</p>",
+        "en": "<p>Organized by brand (Valeton, Hotone, Line 6, Fractal, IK, Neural DSP, Kemper, BOSS, Strymon, ZOOM…), with search by brand or model. The devices you registered yourself (<strong>USER 1</strong> to <strong>3</strong>) are right below GLOBAL.</p>",
+        "es": "<p>Organizada por marca (Valeton, Hotone, Line 6, Fractal, IK, Neural DSP, Kemper, BOSS, Strymon, ZOOM…), con búsqueda por marca o modelo. Los equipos que registraste tú mismo (<strong>USER 1</strong> a <strong>3</strong>) quedan justo debajo de GLOBAL.</p>"
        }
       },
       {
@@ -5958,9 +6918,115 @@ const MN_CONTENT = {
      ],
      "notes": [
       {
-       "pt": "Não achou o seu aparelho? Cadastre-o no card <strong>APARELHO PERSONALIZADO</strong>, logo abaixo.",
-       "en": "Can't find your device? Register it on the <strong>CUSTOM DEVICE</strong> card, just below.",
-       "es": "¿No encuentras tu equipo? Regístralo en la tarjeta <strong>APARATO PERSONALIZADO</strong>, justo debajo."
+       "pt": "Não achou o seu aparelho? Toque em <strong>CRIAR APARELHO</strong>, no fim do card: ele leva à aba <strong>AVANÇADO</strong>, onde fica o <strong>APARELHO PERSONALIZADO</strong>.",
+       "en": "Can't find your device? Tap <strong>CREATE DEVICE</strong> at the end of the card: it takes you to the <strong>ADVANCED</strong> tab, where the <strong>CUSTOM DEVICE</strong> card is.",
+       "es": "¿No encuentras tu equipo? Toca <strong>CREAR APARATO</strong>, al final de la tarjeta: te lleva a la pestaña <strong>AVANZADO</strong>, donde está el <strong>APARATO PERSONALIZADO</strong>."
+      }
+     ]
+    },
+    {
+     "id": "cfg-afinador",
+     "title": {
+      "pt": "AFINADOR — o afinador na tela",
+      "en": "TUNER — the on-screen tuner",
+      "es": "AFINADOR — el afinador en pantalla"
+     },
+     "purpose": {
+      "pt": "Com o Kemper Player ou a Nano Cortex num canal do Modo Amigável, a controladora mostra o afinador do aparelho na tela e nos anéis de LED. Esta aba decide como ele aparece.",
+      "en": "With a Kemper Player or a Nano Cortex on a Friendly Mode channel, the controller shows the device's tuner on its screen and on the LED rings. This tab decides how it looks.",
+      "es": "Con el Kemper Player o la Nano Cortex en un canal del Modo Amigable, la controladora muestra el afinador del equipo en la pantalla y en los anillos de LED. Esta pestaña decide cómo aparece."
+     },
+     "howto": [
+      {
+       "pt": "Na aba <strong>MODO AMIGÁVEL</strong>, escolha <strong>KEMPER PLAYER</strong> ou <strong>NANO CORTEX</strong> num canal.",
+       "en": "On the <strong>FRIENDLY MODE</strong> tab, choose <strong>KEMPER PLAYER</strong> or <strong>NANO CORTEX</strong> on a channel.",
+       "es": "En la pestaña <strong>MODO AMIGABLE</strong>, elige <strong>KEMPER PLAYER</strong> o <strong>NANO CORTEX</strong> en un canal."
+      },
+      {
+       "pt": "Abra a aba <strong>AFINADOR</strong> e escolha a tela, a velocidade e os LEDs.",
+       "en": "Open the <strong>TUNER</strong> tab and choose the screen, the speed and the LEDs.",
+       "es": "Abre la pestaña <strong>AFINADOR</strong> y elige la pantalla, la velocidad y los LEDs."
+      },
+      {
+       "pt": "Num preset, configure um footswitch com o comando de afinador do aparelho (CC 31 no Kemper, CC 43 na Nano Cortex). Pisar nele abre o afinador; pisar em outro footswitch fecha.",
+       "en": "In a preset, set up a footswitch with the device's tuner command (CC 31 on the Kemper, CC 43 on the Nano Cortex). Stepping on it opens the tuner; stepping on another footswitch closes it.",
+       "es": "En un preset, configura un footswitch con el comando de afinador del equipo (CC 31 en el Kemper, CC 43 en la Nano Cortex). Pisarlo abre el afinador; pisar otro footswitch lo cierra."
+      }
+     ],
+     "shot": "cfg-afinador",
+     "mockTitle": {
+      "pt": "CONFIGURAÇÕES › MODO AMIGÁVEL › AFINADOR",
+      "en": "SETTINGS › FRIENDLY MODE › TUNER",
+      "es": "CONFIGURACIÓN › MODO AMIGABLE › AFINADOR"
+     },
+     "fields": [
+      {
+       "name": {
+        "pt": "TELA DO AFINADOR",
+        "en": "TUNER SCREEN",
+        "es": "PANTALLA DEL AFINADOR"
+       },
+       "type": {
+        "pt": "estilo",
+        "en": "style",
+        "es": "estilo"
+       },
+       "desc": {
+        "pt": "<p><strong>ARCO</strong>, <strong>BARRA</strong> ou <strong>LEDS</strong>: o desenho do afinador na tela da controladora.</p>",
+        "en": "<p><strong>ARC</strong>, <strong>BAR</strong> or <strong>LEDS</strong>: how the tuner is drawn on the controller's screen.</p>",
+        "es": "<p><strong>ARCO</strong>, <strong>BARRA</strong> o <strong>LEDS</strong>: el dibujo del afinador en la pantalla de la controladora.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "AQUISIÇÃO DE DADOS",
+        "en": "DATA ACQUISITION",
+        "es": "ADQUISICIÓN DE DATOS"
+       },
+       "type": {
+        "pt": "velocidade",
+        "en": "speed",
+        "es": "velocidad"
+       },
+       "desc": {
+        "pt": "<p>Quão rápido o ponteiro acompanha a leitura, de <strong>Suave</strong> (mais calmo) a <strong>Rápido</strong> (segue tudo).</p>",
+        "en": "<p>How fast the needle follows the reading, from <strong>Smooth</strong> (calmer) to <strong>Fast</strong> (follows everything).</p>",
+        "es": "<p>Qué tan rápido la aguja sigue la lectura, de <strong>Suave</strong> (más calma) a <strong>Rápido</strong> (sigue todo).</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "INDICADOR DE LEDS",
+        "en": "LED INDICATOR",
+        "es": "INDICADOR DE LEDS"
+       },
+       "type": {
+        "pt": "anéis",
+        "en": "rings",
+        "es": "anillos"
+       },
+       "desc": {
+        "pt": "<p>Acende os anéis enquanto o afinador está na tela. <strong>ALCANCE DO INDICADOR</strong>: <strong>TODOS OS LEDS</strong> ou só o <strong>SW DO AFINADOR</strong> (o footswitch que abriu o afinador). <strong>CORES DO INDICADOR</strong>: uma cor para <strong>AFINADO</strong>, <strong>PERTO</strong> e <strong>LONGE</strong>.</p>",
+        "en": "<p>Lights the rings while the tuner is on screen. <strong>INDICATOR SCOPE</strong>: <strong>ALL LEDS</strong> or only the <strong>TUNER SW</strong> (the footswitch that opened the tuner). <strong>INDICATOR COLORS</strong>: one color for <strong>IN TUNE</strong>, <strong>CLOSE</strong> and <strong>FAR</strong>.</p>",
+        "es": "<p>Enciende los anillos mientras el afinador está en pantalla. <strong>ALCANCE DEL INDICADOR</strong>: <strong>TODOS LOS LEDS</strong> o solo el <strong>SW DEL AFINADOR</strong> (el footswitch que abrió el afinador). <strong>COLORES DEL INDICADOR</strong>: un color para <strong>AFINADO</strong>, <strong>CERCA</strong> y <strong>LEJOS</strong>.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Sem Kemper nem Nano",
+        "en": "No Kemper or Nano",
+        "es": "Sin Kemper ni Nano"
+       },
+       "type": {
+        "pt": "aviso",
+        "en": "notice",
+        "es": "aviso"
+       },
+       "desc": {
+        "pt": "<p>Sem nenhum dos dois no Modo Amigável, a aba mostra <strong>AFINADOR · SEM APARELHO</strong> e o botão <strong>ESCOLHER APARELHO</strong>, que volta para a primeira aba.</p>",
+        "en": "<p>With neither of them in Friendly Mode, the tab shows <strong>TUNER · NO DEVICE</strong> and the <strong>PICK A DEVICE</strong> button, which goes back to the first tab.</p>",
+        "es": "<p>Sin ninguno de los dos en el Modo Amigable, la pestaña muestra <strong>AFINADOR · SIN APARATO</strong> y el botón <strong>ELEGIR APARATO</strong>, que vuelve a la primera pestaña.</p>"
+       }
       }
      ]
     },
@@ -5978,22 +7044,21 @@ const MN_CONTENT = {
      },
      "howto": [
       {
-       "pt": "No card <strong>APARELHO PERSONALIZADO</strong>, escolha <strong>USER 1</strong>, <strong>2</strong> ou <strong>3</strong> e escreva o nome do aparelho.",
-       "en": "On the <strong>CUSTOM DEVICE</strong> card, choose <strong>USER 1</strong>, <strong>2</strong> or <strong>3</strong> and type the device's name.",
-       "es": "En la tarjeta <strong>APARATO PERSONALIZADO</strong>, elige <strong>USER 1</strong>, <strong>2</strong> o <strong>3</strong> y escribe el nombre del equipo."
+       "pt": "Em <strong>MODO AMIGÁVEL › AVANÇADO</strong> (ou pelo botão <strong>CRIAR APARELHO</strong> da primeira aba), no card <strong>APARELHO PERSONALIZADO</strong>, escolha <strong>USER 1</strong>, <strong>2</strong> ou <strong>3</strong>. Passo <strong>1</strong>: escreva o <strong>NOME DO APARELHO</strong>.",
+       "en": "In <strong>FRIENDLY MODE › ADVANCED</strong> (or through the <strong>CREATE DEVICE</strong> button on the first tab), on the <strong>CUSTOM DEVICE</strong> card, choose <strong>USER 1</strong>, <strong>2</strong> or <strong>3</strong>. Step <strong>1</strong>: type the <strong>DEVICE NAME</strong>.",
+       "es": "En <strong>MODO AMIGABLE › AVANZADO</strong> (o con el botón <strong>CREAR APARATO</strong> de la primera pestaña), en la tarjeta <strong>APARATO PERSONALIZADO</strong>, elige <strong>USER 1</strong>, <strong>2</strong> o <strong>3</strong>. Paso <strong>1</strong>: escribe el <strong>NOMBRE DEL APARATO</strong>."
       },
       {
-       "pt": "Na aba <strong>COMANDOS (CC)</strong>, toque em <strong>+ ADICIONAR</strong> e diga o número e o que ele faz. Faça o mesmo em <strong>PRESETS (PC)</strong>.",
-       "en": "On the <strong>COMMANDS (CC)</strong> tab, tap <strong>+ ADD</strong> and enter the number and what it does. Do the same in <strong>PRESETS (PC)</strong>.",
-       "es": "En la pestaña <strong>COMANDOS (CC)</strong>, toca <strong>+ AÑADIR</strong> e indica el número y lo que hace. Haz lo mismo en <strong>PRESETS (PC)</strong>."
+       "pt": "Passo <strong>2 Nomes dos comandos</strong>: na aba <strong>COMANDOS (CC)</strong>, toque em <strong>+ ADICIONAR</strong> e diga o número e o que ele faz. Faça o mesmo em <strong>PRESETS (PC)</strong>.",
+       "en": "Step <strong>2 Command names</strong>: on the <strong>COMMANDS (CC)</strong> tab, tap <strong>+ ADD</strong> and enter the number and what it does. Do the same in <strong>PRESETS (PC)</strong>.",
+       "es": "Paso <strong>2 Nombres de los comandos</strong>: en la pestaña <strong>COMANDOS (CC)</strong>, toca <strong>+ AÑADIR</strong> e indica el número y lo que hace. Haz lo mismo en <strong>PRESETS (PC)</strong>."
       },
       {
-       "pt": "Escolha esse USER num canal do Modo Amigável. Pronto: os nomes aparecem nos seletores.",
-       "en": "Choose that USER on a Friendly Mode channel. Done: the names show up in the selectors.",
-       "es": "Elige ese USER en un canal del Modo Amigable. Listo: los nombres aparecen en los selectores."
+       "pt": "Passo <strong>3 Usar num canal</strong>: o card mostra em qual canal do Modo Amigável o aparelho está. Se ainda não está em nenhum, toque em <strong>ESCOLHER O CANAL</strong> — sem canal, os nomes não aparecem.",
+       "en": "Step <strong>3 Use on a channel</strong>: the card shows which Friendly Mode channel the device is on. If it isn’t on any yet, tap <strong>PICK THE CHANNEL</strong> — without a channel, the names don’t show up.",
+       "es": "Paso <strong>3 Usar en un canal</strong>: la tarjeta muestra en qué canal del Modo Amigable está el equipo. Si todavía no está en ninguno, toca <strong>ELEGIR EL CANAL</strong> — sin canal, los nombres no aparecen."
       }
      ],
-     "noMock": true,
      "fields": [
       {
        "name": {
@@ -6007,9 +7072,9 @@ const MN_CONTENT = {
         "es": "detalle"
        },
        "desc": {
-        "pt": "<p>Nome do aparelho até 24 caracteres; até 32 nomes por lista, de até 20 caracteres. Número repetido não é aceito.</p>",
-        "en": "<p>Device name up to 24 characters; up to 32 names per list, up to 20 characters each. Duplicate numbers aren't accepted.</p>",
-        "es": "<p>Nombre del equipo de hasta 24 caracteres; hasta 32 nombres por lista, de hasta 20 caracteres cada uno. No se aceptan números repetidos.</p>"
+        "pt": "<p>Nome do aparelho até 24 caracteres; até 128 nomes por lista (um para cada número, de 0 a 127), de até 20 caracteres. Letras acentuadas contam como duas. Número repetido não é aceito. Com o firmware antigo da controladora, o limite é de 32 nomes por lista.</p>",
+        "en": "<p>Device name up to 24 characters; up to 128 names per list (one for each number, 0 to 127), up to 20 characters each. Accented letters count as two. Duplicate numbers aren't accepted. With older controller firmware, the limit is 32 names per list.</p>",
+        "es": "<p>Nombre del equipo de hasta 24 caracteres; hasta 128 nombres por lista (uno para cada número, de 0 a 127), de hasta 20 caracteres cada uno. Las letras con tilde cuentan como dos. No se aceptan números repetidos. Con el firmware antiguo de la controladora, el límite es de 32 nombres por lista.</p>"
        }
       },
       {
@@ -6029,25 +7094,31 @@ const MN_CONTENT = {
         "es": "<p>En la memoria de la controladora, guardado con el botón de guardar (o por el guardado automático). Va incluido en el backup completo cuando incluyes la configuración global.</p>"
        }
       }
-     ]
+     ],
+     "shot": "cfg-user",
+     "mockTitle": {
+      "pt": "CONFIGURAÇÕES › MODO AMIGÁVEL › AVANÇADO",
+      "en": "SETTINGS › FRIENDLY MODE › ADVANCED",
+      "es": "CONFIGURACIÓN › MODO AMIGABLE › AVANZADO"
+     }
     },
     {
      "id": "cfg-kemper",
      "title": {
-      "pt": "Kemper Player e Nano Cortex no Modo Amigável",
-      "en": "Kemper Player and Nano Cortex in Friendly Mode",
-      "es": "Kemper Player y Nano Cortex en el Modo Amigable"
+      "pt": "AVANÇADO — Kemper Player e Nano Cortex",
+      "en": "ADVANCED — Kemper Player and Nano Cortex",
+      "es": "AVANZADO — Kemper Player y Nano Cortex"
      },
      "purpose": {
-      "pt": "Escolhendo KEMPER PLAYER ou NANO CORTEX num canal, aparece um card extra com recursos que só existem para eles.",
-      "en": "When you choose KEMPER PLAYER or NANO CORTEX on a channel, an extra card appears with features that only exist for them.",
-      "es": "Al elegir KEMPER PLAYER o NANO CORTEX en un canal, aparece una tarjeta extra con funciones que solo existen para ellos."
+      "pt": "Escolhendo KEMPER PLAYER ou NANO CORTEX num canal, a aba AVANÇADO ganha um card com recursos que só existem para eles (marcado EXCLUSIVO), logo acima do aparelho personalizado.",
+      "en": "When you choose KEMPER PLAYER or NANO CORTEX on a channel, the ADVANCED tab gets a card with features that only exist for them (marked EXCLUSIVE), right above the custom device.",
+      "es": "Al elegir KEMPER PLAYER o NANO CORTEX en un canal, la pestaña AVANZADO recibe una tarjeta con funciones que solo existen para ellos (marcada EXCLUSIVO), justo encima del aparato personalizado."
      },
      "shot": "cfg-kemper",
      "mockTitle": {
-      "pt": "CARD KEMPER PLAYER",
-      "en": "KEMPER PLAYER CARD",
-      "es": "TARJETA KEMPER PLAYER"
+      "pt": "MODO AMIGÁVEL › AVANÇADO — CARD KEMPER PLAYER",
+      "en": "FRIENDLY MODE › ADVANCED — KEMPER PLAYER CARD",
+      "es": "MODO AMIGABLE › AVANZADO — TARJETA KEMPER PLAYER"
      },
      "fields": [
       {
@@ -6100,23 +7171,13 @@ const MN_CONTENT = {
         "en": "<p>When you change the rig on the Kemper itself, the controller jumps to the matching preset.</p>",
         "es": "<p>Cuando cambias el rig en el propio Kemper, la controladora salta al preset que coincide.</p>"
        }
-      },
+      }
+     ],
+     "notes": [
       {
-       "name": {
-        "pt": "Afinador na tela",
-        "en": "On-screen tuner",
-        "es": "Afinador en pantalla"
-       },
-       "type": {
-        "pt": "afinador",
-        "en": "tuner",
-        "es": "afinador"
-       },
-       "desc": {
-        "pt": "<p>Estilo (<strong>ARCO</strong>, <strong>BARRA</strong> ou <strong>LEDS</strong>), velocidade de resposta e as cores do indicador (afinado, perto, longe). O afinador abre com um footswitch que manda o comando de afinador do aparelho (CC 31 no Kemper, CC 43 na Nano Cortex).</p>",
-        "en": "<p>Style (<strong>ARC</strong>, <strong>BAR</strong> or <strong>LEDS</strong>), response speed and the indicator colors (in tune, close, far). The tuner opens with a footswitch that sends the device's tuner command (CC 31 on the Kemper, CC 43 on the Nano Cortex).</p>",
-        "es": "<p>Estilo (<strong>ARCO</strong>, <strong>BARRA</strong> o <strong>LEDS</strong>), velocidad de respuesta y los colores del indicador (afinado, cerca, lejos). El afinador se abre con un footswitch que envía el comando de afinador del equipo (CC 31 en el Kemper, CC 43 en la Nano Cortex).</p>"
-       }
+       "pt": "O afinador desses aparelhos (tela, velocidade e LEDs) se ajusta na aba <strong>AFINADOR</strong>.",
+       "en": "These devices' tuner (screen, speed and LEDs) is set up on the <strong>TUNER</strong> tab.",
+       "es": "El afinador de estos equipos (pantalla, velocidad y LEDs) se ajusta en la pestaña <strong>AFINADOR</strong>."
       }
      ]
     },
@@ -6128,15 +7189,15 @@ const MN_CONTENT = {
       "es": "FOOTSWITCHES — lo que vale en cualquier preset"
      },
      "purpose": {
-      "pt": "Os controles que não pertencem a preset nenhum: o modo de operação, o botão LIVE, o SW GLOBAL, o pedal de expressão e os footswitches externos.",
-      "en": "The controls that don't belong to any preset: the operating mode, the LIVE button, the SW GLOBAL, the expression pedal and the external footswitches.",
-      "es": "Los controles que no pertenecen a ningún preset: el modo de operación, el botón LIVE, el SW GLOBAL, el pedal de expresión y los footswitches externos."
+      "pt": "Os controles que não pertencem a preset nenhum, em três abas: <strong>OPERAÇÃO</strong> (o modo de operação), <strong>SW GLOBAL</strong> (o botão LIVE, o SW6 e o SW GLOBAL) e <strong>EXTERNOS</strong> (o pedal de expressão e os footswitches externos).",
+      "en": "The controls that don't belong to any preset, in three tabs: <strong>OPERATION</strong> (the operating mode), <strong>GLOBAL SW</strong> (the LIVE button, SW6 and the SW GLOBAL) and <strong>EXTERNAL</strong> (the expression pedal and the external footswitches).",
+      "es": "Los controles que no pertenecen a ningún preset, en tres pestañas: <strong>OPERACIÓN</strong> (el modo de operación), <strong>SW GLOBAL</strong> (el botón LIVE, el SW6 y el SW GLOBAL) y <strong>EXTERNOS</strong> (el pedal de expresión y los footswitches externos)."
      },
      "shot": "cfg-footswitches",
      "mockTitle": {
-      "pt": "CONFIGURAÇÕES › FOOTSWITCHES",
-      "en": "SETTINGS › FOOTSWITCHES",
-      "es": "CONFIGURACIÓN › FOOTSWITCHES"
+      "pt": "CONFIGURAÇÕES › FOOTSWITCHES › SW GLOBAL",
+      "en": "SETTINGS › FOOTSWITCHES › GLOBAL SW",
+      "es": "CONFIGURACIÓN › FOOTSWITCHES › SW GLOBAL"
      },
      "fields": [
       {
@@ -6146,9 +7207,9 @@ const MN_CONTENT = {
         "es": "MODO DE OPERACIÓN"
        },
        "type": {
-        "pt": "seleção",
-        "en": "selection",
-        "es": "selección"
+        "pt": "aba OPERAÇÃO",
+        "en": "OPERATION tab",
+        "es": "pestaña OPERACIÓN"
        },
        "desc": {
         "pt": "<p><strong>PRESET–LIVE</strong> é o padrão: no modo PRESET os pés escolhem presets; no LIVE, controlam funções. No <strong>HÍBRIDO</strong> a controladora divide os footswitches: uma parte sempre chama presets e a outra sempre controla efeitos, sem trocar de modo.</p>",
@@ -6163,9 +7224,9 @@ const MN_CONTENT = {
         "es": "BOTÓN LIVE"
        },
        "type": {
-        "pt": "interruptor",
-        "en": "switch",
-        "es": "interruptor"
+        "pt": "aba SW GLOBAL",
+        "en": "GLOBAL SW tab",
+        "es": "pestaña SW GLOBAL"
        },
        "desc": {
         "pt": "<p>Nas placas com botão LIVE dedicado, <strong>Usar como SW GLOBAL 2</strong> aposenta a função de LIVE desse botão e o transforma num segundo SW GLOBAL.</p>",
@@ -6180,9 +7241,9 @@ const MN_CONTENT = {
         "es": "SW6 = SW GLOBAL"
        },
        "type": {
-        "pt": "interruptor",
-        "en": "switch",
-        "es": "interruptor"
+        "pt": "aba SW GLOBAL",
+        "en": "GLOBAL SW tab",
+        "es": "pestaña SW GLOBAL"
        },
        "desc": {
         "pt": "<p>Nas placas NANO e 6SW+ (que não têm SW GLOBAL dedicado) e na BFMIDI-2 6S, transforma o SW6 num SW GLOBAL. Ele deixa de chamar o preset 6 e sai também da chamada de presets e dos combos. Reinicia a controladora ao salvar.</p>",
@@ -6197,14 +7258,14 @@ const MN_CONTENT = {
         "es": "SW GLOBAL"
        },
        "type": {
-        "pt": "editor",
-        "en": "editor",
-        "es": "editor"
+        "pt": "aba SW GLOBAL",
+        "en": "GLOBAL SW tab",
+        "es": "pestaña SW GLOBAL"
        },
        "desc": {
-        "pt": "<p>Um footswitch que vale em qualquer banco, preset ou modo, com os modos dos footswitches do preset — menos STEPS e CONTROL. O uso clássico é o tap tempo geral, o afinador ou um mute. Toque em <strong>EDITAR</strong> para abrir.</p><p><strong>RESET AO TROCAR PRESET</strong> devolve o LED e a tela ao estado inicial a cada troca de preset, sem mandar MIDI.</p>",
-        "en": "<p>A footswitch that works in any bank, preset or mode, with the same modes as the preset footswitches — except STEPS and CONTROL. The classic use is a global tap tempo, the tuner or a mute. Tap <strong>EDIT</strong> to open it.</p><p><strong>RESET ON PRESET CHANGE</strong> returns the LED and the screen to their initial state on every preset change, without sending MIDI.</p>",
-        "es": "<p>Un footswitch que vale en cualquier banco, preset o modo, con los modos de los footswitches del preset — menos STEPS y CONTROL. El uso clásico es el tap tempo general, el afinador o un mute. Toca <strong>EDITAR</strong> para abrirlo.</p><p><strong>RESET AL CAMBIAR PRESET</strong> devuelve el LED y la pantalla al estado inicial en cada cambio de preset, sin enviar MIDI.</p>"
+        "pt": "<p>Um footswitch que vale em qualquer banco, preset ou modo, com os modos dos footswitches do preset — menos STEPS e CONTROL. O uso clássico é o tap tempo geral, o afinador ou um mute. Fechado, o card diz numa frase o que o botão faz e para onde manda; sem canal, avisa que ele ainda não manda nada. Toque em <strong>EDITAR</strong> para abrir.</p><p><strong>VOLTAR AO INÍCIO AO TROCAR DE PRESET</strong> devolve o LED e a tela ao estado inicial a cada troca de preset, sem mandar MIDI.</p>",
+        "en": "<p>A footswitch that works in any bank, preset or mode, with the same modes as the preset footswitches — except STEPS and CONTROL. The classic use is a global tap tempo, the tuner or a mute. Closed, the card says in one sentence what the button does and where it sends; with no channel, it warns that it doesn’t send anything yet. Tap <strong>EDIT</strong> to open it.</p><p><strong>RETURN TO START ON PRESET CHANGE</strong> returns the LED and the screen to their initial state on every preset change, without sending MIDI.</p>",
+        "es": "<p>Un footswitch que vale en cualquier banco, preset o modo, con los modos de los footswitches del preset — menos STEPS y CONTROL. El uso clásico es el tap tempo general, el afinador o un mute. Cerrada, la tarjeta dice en una frase qué hace el botón y adónde envía; sin canal, avisa que todavía no envía nada. Toca <strong>EDITAR</strong> para abrirlo.</p><p><strong>VOLVER AL INICIO AL CAMBIAR DE PRESET</strong> devuelve el LED y la pantalla al estado inicial en cada cambio de preset, sin enviar MIDI.</p>"
        }
       },
       {
@@ -6214,22 +7275,22 @@ const MN_CONTENT = {
         "es": "EXTERNAL SW1 y SW2"
        },
        "type": {
-        "pt": "editores",
-        "en": "editors",
-        "es": "editores"
+        "pt": "aba EXTERNOS",
+        "en": "EXTERNAL tab",
+        "es": "pestaña EXTERNOS"
        },
        "desc": {
-        "pt": "<p>Os dois footswitches externos (entrada 2SW), sem LED, com os mesmos modos do SW GLOBAL e valendo em qualquer preset. Cada um pode ter um <strong>indicador na tela</strong> (sigla, cores e posição) e o mesmo reset ao trocar de preset. Também têm dois comandos exclusivos para navegar bancos em prévia.</p>",
-        "en": "<p>The two external footswitches (2SW input), with no LED, with the same modes as the GLOBAL SW and working in any preset. Each one can have an <strong>on-screen indicator</strong> (label, colors and position) and the same reset on preset change. They also have two exclusive commands for browsing banks in preview.</p>",
-        "es": "<p>Los dos footswitches externos (entrada 2SW), sin LED, con los mismos modos del SW GLOBAL y válidos en cualquier preset. Cada uno puede tener un <strong>indicador en pantalla</strong> (sigla, colores y posición) y el mismo reset al cambiar de preset. También tienen dos comandos exclusivos para recorrer bancos en vista previa.</p>"
+        "pt": "<p>Os dois footswitches externos (entrada 2SW), sem LED, com os modos do SW GLOBAL e também o CONTROL e valendo em qualquer preset. Cada um pode ter um <strong>indicador na tela</strong> (sigla, cores e posição) e a mesma volta ao início ao trocar de preset. Também têm dois comandos exclusivos para navegar bancos em prévia.</p>",
+        "en": "<p>The two external footswitches (2SW input), with no LED, with the GLOBAL SW modes plus CONTROL and working in any preset. Each one can have an <strong>on-screen indicator</strong> (label, colors and position) and the same return to start on preset change. They also have two exclusive commands for browsing banks in preview.</p>",
+        "es": "<p>Los dos footswitches externos (entrada 2SW), sin LED, con los modos del SW GLOBAL y también el CONTROL y válidos en cualquier preset. Cada uno puede tener un <strong>indicador en pantalla</strong> (sigla, colores y posición) y la misma vuelta al inicio al cambiar de preset. También tienen dos comandos exclusivos para recorrer bancos en vista previa.</p>"
        }
       }
      ],
      "notes": [
       {
-       "pt": "Os cards que dependem de hardware (botão LIVE, expressão, footswitches externos) só aparecem nos modelos que têm essas entradas.",
-       "en": "The cards that depend on hardware (LIVE button, expression, external footswitches) only show up on models that have those inputs.",
-       "es": "Las tarjetas que dependen del hardware (botón LIVE, expresión, footswitches externos) solo aparecen en los modelos que tienen esas entradas."
+       "pt": "Os cards que dependem de hardware (botão LIVE, expressão, footswitches externos) só aparecem nos modelos que têm essas entradas; numa placa sem elas, a aba EXTERNOS explica isso.",
+       "en": "The cards that depend on hardware (LIVE button, expression, external footswitches) only show up on models that have those inputs; on a board without them, the EXTERNAL tab says so.",
+       "es": "Las tarjetas que dependen del hardware (botón LIVE, expresión, footswitches externos) solo aparecen en los modelos que tienen esas entradas; en una placa sin ellas, la pestaña EXTERNOS lo explica."
       }
      ]
     },
@@ -6241,66 +7302,66 @@ const MN_CONTENT = {
       "es": "Expresión externa"
      },
      "purpose": {
-      "pt": "O pedal de expressão: qual CC ele controla, a calibração do seu pedal e a faixa de saída.",
-      "en": "The expression pedal: which CC it controls, the calibration for your pedal and the output range.",
-      "es": "El pedal de expresión: qué CC controla, la calibración de tu pedal y el rango de salida."
+      "pt": "O pedal de expressão em três passos: ligar, escolher para onde ele manda e calibrar.",
+      "en": "The expression pedal in three steps: turn it on, choose where it sends and calibrate it.",
+      "es": "El pedal de expresión en tres pasos: encenderlo, elegir adónde envía y calibrarlo."
      },
      "howto": [
       {
-       "pt": "Ligue a chave do card e toque em <strong>EDITAR</strong>.",
-       "en": "Turn on the card's switch and tap <strong>EDIT</strong>.",
-       "es": "Activa el interruptor de la tarjeta y toca <strong>EDITAR</strong>."
+       "pt": "Em <strong>FOOTSWITCHES › EXTERNOS</strong>, toque em <strong>EDITAR</strong> no card <strong>EXPRESSÃO EXTERNA</strong>. Fechado, o card já diz numa frase para onde o pedal manda e mostra o valor ao vivo.",
+       "en": "In <strong>FOOTSWITCHES › EXTERNAL</strong>, tap <strong>EDIT</strong> on the <strong>EXTERNAL EXPRESSION</strong> card. Closed, the card already says in one sentence where the pedal sends and shows the live value.",
+       "es": "En <strong>FOOTSWITCHES › EXTERNOS</strong>, toca <strong>EDITAR</strong> en la tarjeta <strong>EXPRESIÓN EXTERNA</strong>. Cerrada, la tarjeta ya dice en una frase adónde envía el pedal y muestra el valor en vivo."
       },
       {
-       "pt": "Escolha o CC e o canal (volume, wah, mix do delay…).",
-       "en": "Choose the CC and the channel (volume, wah, delay mix…).",
-       "es": "Elige el CC y el canal (volumen, wah, mix del delay…)."
+       "pt": "Passo <strong>1 Ligar</strong>: ligue o pedal e salve — só depois de salvar a BFMiDi começa a ler. Passo <strong>2 Para onde vai</strong>: escolha primeiro o aparelho (o canal) e depois o parâmetro (volume, wah, mix do delay…).",
+       "en": "Step <strong>1 Turn on</strong>: turn the pedal on and save — the BFMiDi only starts reading after you save. Step <strong>2 Where it goes</strong>: choose the device (the channel) first and then the parameter (volume, wah, delay mix…).",
+       "es": "Paso <strong>1 Encender</strong>: enciende el pedal y guarda — la BFMiDi solo empieza a leer después de guardar. Paso <strong>2 Adónde va</strong>: elige primero el equipo (el canal) y después el parámetro (volumen, wah, mix del delay…)."
       },
       {
-       "pt": "Em <strong>CALIBRAÇÃO</strong>, pise até o fim de cada lado e capture o mínimo e o máximo.",
-       "en": "In <strong>CALIBRATION</strong>, rock the pedal all the way to each end and capture the minimum and the maximum.",
-       "es": "En <strong>CALIBRACIÓN</strong>, lleva el pedal hasta el final de cada lado y captura el mínimo y el máximo."
+       "pt": "Passo <strong>3 CALIBRAÇÃO</strong>: recolha o pedal e toque em <strong>GRAVAR CALCANHAR</strong>; pise até o fim e toque em <strong>GRAVAR PONTA</strong>. O passo da vez fica destacado.",
+       "en": "Step <strong>3 CALIBRATION</strong>: rock the pedal back and tap <strong>SAVE HEEL</strong>; push it all the way and tap <strong>SAVE TOE</strong>. The current step is highlighted.",
+       "es": "Paso <strong>3 CALIBRACIÓN</strong>: lleva el pedal atrás y toca <strong>GRABAR TALÓN</strong>; písalo hasta el final y toca <strong>GRABAR PUNTA</strong>. El paso de turno queda resaltado."
       }
      ],
      "shot": "cfg-exp",
      "mockTitle": {
-      "pt": "EXPRESSÃO EXTERNA — ABERTO",
-      "en": "EXTERNAL EXPRESSION — OPEN",
-      "es": "EXPRESIÓN EXTERNA — ABIERTA"
+      "pt": "FOOTSWITCHES › EXTERNOS — EXPRESSÃO EXTERNA",
+      "en": "FOOTSWITCHES › EXTERNAL — EXTERNAL EXPRESSION",
+      "es": "FOOTSWITCHES › EXTERNOS — EXPRESIÓN EXTERNA"
      },
      "fields": [
       {
        "name": {
-        "pt": "LEITURA AO VIVO",
-        "en": "LIVE READING",
-        "es": "LECTURA EN VIVO"
+        "pt": "Os avisos do card",
+        "en": "The card’s notices",
+        "es": "Los avisos de la tarjeta"
        },
        "type": {
-        "pt": "status",
+        "pt": "estado",
         "en": "status",
         "es": "estado"
        },
        "desc": {
-        "pt": "<p>Mostra o valor saindo em tempo real, já com a calibração e a faixa aplicadas.</p>",
-        "en": "<p>Shows the value going out in real time, with the calibration and the range already applied.</p>",
-        "es": "<p>Muestra el valor que sale en tiempo real, ya con la calibración y el rango aplicados.</p>"
+        "pt": "<p>O card diz o que falta, sempre à vista: <strong>SALVE PARA LER</strong> (ligou e ainda não salvou), <strong>SEM LEITURA</strong> (a BFMiDi não está lendo o pedal: confira o cabo na entrada EXP) e, antes de calibrar, até onde o seu pedal vai de verdade — por exemplo “Seu pedal vai de 6 a 120” —, para você saber que vale a pena calibrar.</p>",
+        "en": "<p>The card tells you what’s missing, always in view: <strong>SAVE TO READ</strong> (you turned it on and haven’t saved yet), <strong>NO READING</strong> (the BFMiDi isn’t reading the pedal: check the cable in the EXP input) and, before calibration, how far your pedal really goes — for example “Your pedal goes from 6 to 120” — so you know it’s worth calibrating.</p>",
+        "es": "<p>La tarjeta dice lo que falta, siempre a la vista: <strong>GUARDA PARA LEER</strong> (lo encendiste y aún no guardaste), <strong>SIN LECTURA</strong> (la BFMiDi no está leyendo el pedal: revisa el cable en la entrada EXP) y, antes de calibrar, hasta dónde llega tu pedal de verdad — por ejemplo “Tu pedal va de 6 a 120” —, para que sepas que vale la pena calibrar.</p>"
        }
       },
       {
        "name": {
-        "pt": "FAIXA DE SAÍDA",
-        "en": "OUTPUT RANGE",
-        "es": "RANGO DE SALIDA"
+        "pt": "Ajuste fino",
+        "en": "Fine tuning",
+        "es": "Ajuste fino"
        },
        "type": {
-        "pt": "porcentagem",
-        "en": "percentage",
-        "es": "porcentaje"
+        "pt": "recolhido",
+        "en": "folded",
+        "es": "plegado"
        },
        "desc": {
-        "pt": "<p><strong>MÍN</strong> e <strong>MÁX</strong> em porcentagem: o pedal recolhido manda o mínimo e na ponta manda o máximo (50% = 64). Mínimo maior que o máximo <strong>inverte</strong> o sentido. Vale também para os destinos EXP dos presets.</p>",
-        "en": "<p><strong>MIN</strong> and <strong>MAX</strong> in percent: heel down sends the minimum and toe down sends the maximum (50% = 64). A minimum higher than the maximum <strong>reverses</strong> the direction. It also applies to the presets' EXP targets.</p>",
-        "es": "<p><strong>MÍN</strong> y <strong>MÁX</strong> en porcentaje: con el pedal atrás envía el mínimo y con la punta abajo envía el máximo (50% = 64). Un mínimo mayor que el máximo <strong>invierte</strong> el sentido. Vale también para los destinos EXP de los presets.</p>"
+        "pt": "<p>Embaixo dos passos, recolhido. <strong>No calcanhar manda</strong> e <strong>Na ponta manda</strong>: quanto do MIDI o pedal percorre, em porcentagem (50% = 64). <strong>Inverter o sentido</strong> troca os dois. Os números do sensor também ficam aqui. Vale também para os destinos EXP dos presets.</p>",
+        "en": "<p>Below the steps, folded away. <strong>At the heel it sends</strong> and <strong>At the toe it sends</strong>: how much of the MIDI range the pedal covers, in percent (50% = 64). <strong>Reverse direction</strong> swaps the two. The sensor numbers are here too. It also applies to the presets’ EXP targets.</p>",
+        "es": "<p>Debajo de los pasos, plegado. <strong>En el talón envía</strong> y <strong>En la punta envía</strong>: cuánto del MIDI recorre el pedal, en porcentaje (50% = 64). <strong>Invertir el sentido</strong> intercambia los dos. Los números del sensor también están aquí. Vale también para los destinos EXP de los presets.</p>"
        }
       },
       {
@@ -6325,14 +7386,14 @@ const MN_CONTENT = {
     {
      "id": "cfg-bancos",
      "title": {
-      "pt": "BANCOS — ligar, navegar e combos",
-      "en": "BANKS — startup, navigation and combos",
-      "es": "BANCOS — arranque, navegación y combos"
+      "pt": "BANCOS — bancos ativos e como a controladora liga",
+      "en": "BANKS — active banks and how the controller starts",
+      "es": "BANCOS — bancos activos y cómo arranca la controladora"
      },
      "purpose": {
-      "pt": "Como a controladora acorda, o que cada footswitch faz no modo PRESET e quais pares de pés disparam atalhos.",
-      "en": "How the controller wakes up, what each footswitch does in PRESET mode and which footswitch pairs trigger shortcuts.",
-      "es": "Cómo arranca la controladora, qué hace cada footswitch en el modo PRESET y qué pares de footswitches disparan atajos."
+      "pt": "Quais bancos o pé percorre e como a controladora acorda. A tela tem três abas: <strong>BANCOS</strong> (esta), <strong>CHAMADA</strong> (o que cada footswitch faz no modo PRESET) e <strong>COMBOS</strong> (dois footswitches juntos).",
+      "en": "Which banks your foot goes through and how the controller wakes up. The screen has three tabs: <strong>BANKS</strong> (this one), <strong>PRESET CALL</strong> (what each footswitch does in PRESET mode) and <strong>COMBOS</strong> (two footswitches together).",
+      "es": "Qué bancos recorre el pie y cómo arranca la controladora. La pantalla tiene tres pestañas: <strong>BANCOS</strong> (esta), <strong>LLAMADA</strong> (qué hace cada footswitch en el modo PRESET) y <strong>COMBOS</strong> (dos footswitches juntos)."
      },
      "shot": "cfg-bancos",
      "mockTitle": {
@@ -6341,6 +7402,23 @@ const MN_CONTENT = {
       "es": "CONFIGURACIÓN › BANCOS"
      },
      "fields": [
+      {
+       "name": {
+        "pt": "BANCOS ATIVOS",
+        "en": "ACTIVE BANKS",
+        "es": "BANCOS ACTIVOS"
+       },
+       "type": {
+        "pt": "seleção",
+        "en": "selection",
+        "es": "selección"
+       },
+       "desc": {
+        "pt": "<p>Desligue as letras que você não usa: a navegação passa a pulá-las. Pelo menos uma precisa continuar ligada.</p>",
+        "en": "<p>Turn off the letters you don't use: navigation then skips over them. At least one has to stay on.</p>",
+        "es": "<p>Desactiva las letras que no usas: la navegación pasa a saltarlas. Al menos una tiene que seguir activada.</p>"
+       }
+      },
       {
        "name": {
         "pt": "INÍCIO AUTOMÁTICO",
@@ -6360,19 +7438,57 @@ const MN_CONTENT = {
       },
       {
        "name": {
+        "pt": "ENTRADA AUTOMÁTICA NO LIVE",
+        "en": "AUTOMATIC LIVE ENTRY",
+        "es": "ENTRADA AUTOMÁTICA EN LIVE"
+       },
+       "type": {
+        "pt": "grupo",
+        "en": "group",
+        "es": "grupo"
+       },
+       "desc": {
+        "pt": "<p>Ligada, cada preset chamado pela controladora (pelo pé, pelo SEGUIR O KEMPER ou por um aparelho no USB Host) entra sozinho no modo LIVE depois do tempo escolhido, de 0,5 a 30 s. Chamar outro preset antes recomeça a contagem; trocar de preset pelo editor não conta.</p>",
+        "en": "<p>When it's on, every preset the controller calls (by foot, by FOLLOW THE KEMPER or by a device on the USB Host) enters LIVE mode by itself after the chosen time, from 0.5 to 30 s. Calling another preset before that restarts the count; changing presets from the editor doesn't count.</p>",
+        "es": "<p>Activada, cada preset que llama la controladora (con el pie, con SEGUIR EL KEMPER o desde un equipo en el USB Host) entra solo en el modo LIVE después del tiempo elegido, de 0,5 a 30 s. Llamar otro preset antes reinicia la cuenta; cambiar de preset desde el editor no cuenta.</p>"
+       }
+      }
+     ]
+    },
+    {
+     "id": "cfg-chamada",
+     "title": {
+      "pt": "CHAMADA — o que cada footswitch faz no modo PRESET",
+      "en": "PRESET CALL — what each footswitch does in PRESET mode",
+      "es": "LLAMADA — qué hace cada footswitch en el modo PRESET"
+     },
+     "purpose": {
+      "pt": "Para cada footswitch e cada gesto, uma ação: chamar o preset, navegar pelos bancos, entrar no LIVE ou ir direto para um favorito.",
+      "en": "For each footswitch and each gesture, one action: call the preset, browse the banks, enter LIVE or jump straight to a favorite.",
+      "es": "Para cada footswitch y cada gesto, una acción: llamar el preset, recorrer los bancos, entrar en LIVE o ir directo a un favorito."
+     },
+     "shot": "cfg-chamada",
+     "mockTitle": {
+      "pt": "CONFIGURAÇÕES › BANCOS › CHAMADA",
+      "en": "SETTINGS › BANKS › PRESET CALL",
+      "es": "CONFIGURACIÓN › BANCOS › LLAMADA"
+     },
+     "fields": [
+      {
+       "name": {
         "pt": "CHAMADA DE PRESETS",
         "en": "PRESET CALL",
         "es": "LLAMADA DE PRESETS"
        },
        "type": {
-        "pt": "três abas",
-        "en": "three tabs",
-        "es": "tres pestañas"
+        "pt": "tabela",
+        "en": "table",
+        "es": "tabla"
        },
        "desc": {
-        "pt": "<p>Para cada footswitch e cada gesto, uma ação. <strong>CLICK CURTO</strong> e <strong>CLICK LONGO</strong> valem em qualquer footswitch. O <strong>RECLICK</strong> é pisar de novo no footswitch do preset que <em>já está tocando</em> (só nos footswitches cujo clique curto é CHAMAR PRESET).</p><p>De fábrica: curto = <strong>CHAMAR PRESET</strong>, longo = <strong>ENTRAR EM MODO LIVE</strong> e reclick = <strong>SUBIR BANCO</strong>.</p>",
-        "en": "<p>For each footswitch and each gesture, one action. <strong>SHORT CLICK</strong> and <strong>LONG CLICK</strong> work on any footswitch. <strong>RECLICK</strong> means stepping again on the footswitch of the preset that's <em>already playing</em> (only on footswitches whose short click is CALL PRESET).</p><p>Factory defaults: short = <strong>CALL PRESET</strong>, long = <strong>ENTER LIVE MODE</strong> and reclick = <strong>BANK UP</strong>.</p>",
-        "es": "<p>Para cada footswitch y cada gesto, una acción. <strong>CLICK CORTO</strong> y <strong>CLICK LARGO</strong> valen en cualquier footswitch. El <strong>RECLICK</strong> es pisar de nuevo el footswitch del preset que <em>ya está sonando</em> (solo en los footswitches cuyo clic corto es LLAMAR PRESET).</p><p>De fábrica: corto = <strong>LLAMAR PRESET</strong>, largo = <strong>ENTRAR EN MODO LIVE</strong> y reclick = <strong>SUBIR BANCO</strong>.</p>"
+        "pt": "<p>Uma tabela: uma linha por footswitch e uma coluna por gesto — <strong>TOQUE</strong>, <strong>SEGURAR</strong> e <strong>PISAR DE NOVO</strong>. Toque numa célula e escolha a ação na lista que abre embaixo, cada uma com uma frase do que faz. TOQUE e SEGURAR valem em qualquer footswitch; PISAR DE NOVO é pisar outra vez no footswitch do preset que <em>já está tocando</em>, e só existe onde o toque é CHAMAR PRESET (nos outros a célula fica apagada).</p><p>De fábrica: toque = <strong>CHAMAR PRESET</strong>, segurar = <strong>ENTRAR EM MODO LIVE</strong> e pisar de novo = <strong>SUBIR BANCO</strong>. Um aviso no card diz se o pé consegue trocar de preset.</p>",
+        "en": "<p>A table: one row per footswitch and one column per gesture — <strong>TAP</strong>, <strong>HOLD</strong> and <strong>PRESS AGAIN</strong>. Tap a cell and pick the action in the list that opens below, each with a sentence saying what it does. TAP and HOLD work on any footswitch; PRESS AGAIN means stepping again on the footswitch of the preset that’s <em>already playing</em>, and it only exists where the tap is CALL PRESET (elsewhere the cell is grayed out).</p><p>Factory defaults: tap = <strong>CALL PRESET</strong>, hold = <strong>ENTER LIVE MODE</strong> and press again = <strong>BANK UP</strong>. A notice on the card tells you whether your foot can change presets.</p>",
+        "es": "<p>Una tabla: una fila por footswitch y una columna por gesto — <strong>TOQUE</strong>, <strong>MANTENER</strong> y <strong>PISAR DE NUEVO</strong>. Toca una celda y elige la acción en la lista que se abre abajo, cada una con una frase de lo que hace. TOQUE y MANTENER valen en cualquier footswitch; PISAR DE NUEVO es pisar otra vez el footswitch del preset que <em>ya está sonando</em>, y solo existe donde el toque es LLAMAR PRESET (en los demás la celda queda apagada).</p><p>De fábrica: toque = <strong>LLAMAR PRESET</strong>, mantener = <strong>ENTRAR EN MODO LIVE</strong> y pisar de nuevo = <strong>SUBIR BANCO</strong>. Un aviso en la tarjeta dice si el pie puede cambiar de preset.</p>"
        }
       },
       {
@@ -6387,16 +7503,16 @@ const MN_CONTENT = {
         "es": "lista"
        },
        "desc": {
-        "pt": "<p><strong>CHAMAR PRESET</strong>, <strong>STANDBY</strong> (mostra o destino na tela sem trocar o som, e você confirma depois), <strong>SUBIR/DESCER BANCO</strong> (também em versão standby), <strong>SUBIR/DESCER PRESET</strong>, <strong>ENTRAR EM MODO LIVE</strong> (só no footswitch do preset ativo) e <strong>NENHUM</strong>. No clique longo e no reclick existe ainda o <strong>FAVORITO</strong>: ir direto para um banco e preset fixos, chegando em PRESET ou LIVE.</p><p>Pelo menos um footswitch precisa chamar preset (CHAMAR PRESET ou STANDBY) — senão não sobraria como trocar de preset com o pé.</p>",
-        "en": "<p><strong>CALL PRESET</strong>, <strong>STANDBY</strong> (shows the destination on screen without changing the sound, and you confirm afterward), <strong>BANK UP/DOWN</strong> (also in a standby version), <strong>PRESET UP/DOWN</strong>, <strong>ENTER LIVE MODE</strong> (only on the active preset's footswitch) and <strong>NONE</strong>. On long click and reclick there's also <strong>FAVORITE</strong>: go straight to a fixed bank and preset, arriving in PRESET or LIVE.</p><p>At least one footswitch must call a preset (CALL PRESET or STANDBY) — otherwise there'd be no way left to change presets with your foot.</p>",
-        "es": "<p><strong>LLAMAR PRESET</strong>, <strong>STANDBY</strong> (muestra el destino en pantalla sin cambiar el sonido, y confirmas después), <strong>SUBIR/BAJAR BANCO</strong> (también en versión standby), <strong>SUBIR/BAJAR PRESET</strong>, <strong>ENTRAR EN MODO LIVE</strong> (solo en el footswitch del preset activo) y <strong>NINGUNO</strong>. En el clic largo y en el reclick existe además el <strong>FAVORITO</strong>: ir directo a un banco y preset fijos, llegando en PRESET o en LIVE.</p><p>Al menos un footswitch tiene que llamar preset (LLAMAR PRESET o STANDBY) — si no, no quedaría forma de cambiar de preset con el pie.</p>"
+        "pt": "<p><strong>CHAMAR PRESET</strong>, <strong>PRÉVIA (STANDBY)</strong> (mostra o destino na tela sem trocar o som, e você confirma depois), <strong>SUBIR/DESCER BANCO</strong> (também <strong>EM PRÉVIA</strong>), <strong>SUBIR/DESCER PRESET</strong>, <strong>ENTRAR EM MODO LIVE</strong> (só no footswitch do preset ativo) e <strong>NENHUM</strong>. Em SEGURAR e em PISAR DE NOVO existe ainda o <strong>FAVORITO</strong>: ir direto para um banco e preset fixos, chegando em PRESET ou LIVE.</p><p>Pelo menos um gesto precisa trocar de preset (CHAMAR PRESET ou SUBIR/DESCER BANCO EM PRÉVIA) — senão não sobraria como trocar de preset com o pé. Por isso, quando só um gesto faz isso, a lista mostra as outras ações bloqueadas, com o motivo: ponha CHAMAR PRESET em outro gesto antes.</p>",
+        "en": "<p><strong>CALL PRESET</strong>, <strong>PREVIEW (STANDBY)</strong> (shows the destination on screen without changing the sound, and you confirm afterward), <strong>BANK UP/DOWN</strong> (also <strong>IN PREVIEW</strong>), <strong>PRESET UP/DOWN</strong>, <strong>ENTER LIVE MODE</strong> (only on the active preset’s footswitch) and <strong>NONE</strong>. On HOLD and PRESS AGAIN there’s also <strong>FAVORITE</strong>: go straight to a fixed bank and preset, arriving in PRESET or LIVE.</p><p>At least one gesture must change presets (CALL PRESET or BANK UP/DOWN IN PREVIEW) — otherwise there’d be no way left to change presets with your foot. That’s why, when only one gesture does it, the list shows the other actions locked, with the reason: put CALL PRESET on another gesture first.</p>",
+        "es": "<p><strong>LLAMAR PRESET</strong>, <strong>VISTA PREVIA (STANDBY)</strong> (muestra el destino en pantalla sin cambiar el sonido, y confirmas después), <strong>SUBIR/BAJAR BANCO</strong> (también <strong>EN VISTA PREVIA</strong>), <strong>SUBIR/BAJAR PRESET</strong>, <strong>ENTRAR EN MODO LIVE</strong> (solo en el footswitch del preset activo) y <strong>NINGUNO</strong>. En MANTENER y en PISAR DE NUEVO existe además el <strong>FAVORITO</strong>: ir directo a un banco y preset fijos, llegando en PRESET o en LIVE.</p><p>Al menos un gesto tiene que cambiar de preset (LLAMAR PRESET o SUBIR/BAJAR BANCO EN VISTA PREVIA) — si no, no quedaría forma de cambiar de preset con el pie. Por eso, cuando solo un gesto lo hace, la lista muestra las otras acciones bloqueadas, con el motivo: pon LLAMAR PRESET en otro gesto antes.</p>"
        }
       },
       {
        "name": {
-        "pt": "STANDBY — passear sem trocar o som",
-        "en": "STANDBY — browse without changing the sound",
-        "es": "STANDBY — recorrer sin cambiar el sonido"
+        "pt": "PRÉVIA (STANDBY) — passear sem trocar o som",
+        "en": "PREVIEW (STANDBY) — browse without changing the sound",
+        "es": "VISTA PREVIA (STANDBY) — recorrer sin cambiar el sonido"
        },
        "type": {
         "pt": "ação",
@@ -6404,11 +7520,32 @@ const MN_CONTENT = {
         "es": "acción"
        },
        "desc": {
-        "pt": "<p>Com STANDBY você anda pelos bancos e presets enquanto a música toca, vendo na tela para onde vai, e o som só troca quando você confirma. É como procurar a próxima música no meio da anterior, sem ninguém ouvir.</p>",
-        "en": "<p>With STANDBY you move through banks and presets while the song plays, seeing on screen where you're headed, and the sound only changes when you confirm. It's like finding the next song in the middle of the current one, without anyone hearing it.</p>",
-        "es": "<p>Con STANDBY recorres bancos y presets mientras suena la música, viendo en pantalla a dónde vas, y el sonido solo cambia cuando confirmas. Es como buscar la siguiente canción en medio de la anterior, sin que nadie lo escuche.</p>"
+        "pt": "<p>Com a PRÉVIA você anda pelos bancos e presets enquanto a música toca, vendo na tela para onde vai, e o som só troca quando você confirma. É como procurar a próxima música no meio da anterior, sem ninguém ouvir.</p>",
+        "en": "<p>With PREVIEW you move through banks and presets while the song plays, seeing on screen where you're headed, and the sound only changes when you confirm. It's like finding the next song in the middle of the current one, without anyone hearing it.</p>",
+        "es": "<p>Con la VISTA PREVIA recorres bancos y presets mientras suena la música, viendo en pantalla a dónde vas, y el sonido solo cambia cuando confirmas. Es como buscar la siguiente canción en medio de la anterior, sin que nadie lo escuche.</p>"
        }
-      },
+      }
+     ]
+    },
+    {
+     "id": "cfg-combos",
+     "title": {
+      "pt": "COMBOS — dois footswitches juntos",
+      "en": "COMBOS — two footswitches together",
+      "es": "COMBOS — dos footswitches juntos"
+     },
+     "purpose": {
+      "pt": "Pisar dois footswitches ao mesmo tempo dispara um atalho: navegar, ligar o Wi-Fi ou entrar e sair do LIVE.",
+      "en": "Stepping on two footswitches at the same time triggers a shortcut: browse, turn on the Wi-Fi or enter and exit LIVE.",
+      "es": "Pisar dos footswitches al mismo tiempo dispara un atajo: navegar, encender el Wi-Fi o entrar y salir del LIVE."
+     },
+     "shot": "cfg-combos",
+     "mockTitle": {
+      "pt": "CONFIGURAÇÕES › BANCOS › COMBOS",
+      "en": "SETTINGS › BANKS › COMBOS",
+      "es": "CONFIGURACIÓN › BANCOS › COMBOS"
+     },
+     "fields": [
       {
        "name": {
         "pt": "COMBOS DE FOOTSWITCH",
@@ -6421,34 +7558,17 @@ const MN_CONTENT = {
         "es": "pares"
        },
        "desc": {
-        "pt": "<p>Pisar dois footswitches juntos dispara uma ação. São dez pares — 1+2, 1+3, 1+4, 2+3, 2+4, 2+5, 3+4, 3+6, 4+5 e 5+6 — e cada um recebe uma ação: navegação, STANDBY, <strong>LIGAR/DESLIGAR WI-FI</strong> ou <strong>SW_LIVE</strong> (entra e sai do LIVE).</p><p>Combos valem no modo PRESET; o SW_LIVE continua valendo dentro do LIVE. E dentro do LIVE, <strong>segurar o par do SW_LIVE meio segundo</strong> sai direto para o modo PRESET — mesmo com a layer 2 ligada.</p>",
-        "en": "<p>Stepping on two footswitches together triggers an action. There are ten pairs — 1+2, 1+3, 1+4, 2+3, 2+4, 2+5, 3+4, 3+6, 4+5 and 5+6 — and each one gets an action: navigation, STANDBY, <strong>WI-FI ON/OFF</strong> or <strong>SW_LIVE</strong> (enters and exits LIVE).</p><p>Combos work in PRESET mode; SW_LIVE keeps working inside LIVE. And inside LIVE, <strong>holding the SW_LIVE pair for half a second</strong> goes straight back to PRESET mode — even with layer 2 on.</p>",
-        "es": "<p>Pisar dos footswitches juntos dispara una acción. Son diez pares — 1+2, 1+3, 1+4, 2+3, 2+4, 2+5, 3+4, 3+6, 4+5 y 5+6 — y cada uno recibe una acción: navegación, STANDBY, <strong>ENCENDER/APAGAR WI-FI</strong> o <strong>SW_LIVE</strong> (entra y sale del LIVE).</p><p>Los combos valen en el modo PRESET; el SW_LIVE sigue valiendo dentro del LIVE. Y dentro del LIVE, <strong>mantener el par del SW_LIVE medio segundo</strong> sale directo al modo PRESET — incluso con la capa 2 activada.</p>"
-       }
-      },
-      {
-       "name": {
-        "pt": "BANCOS ATIVOS",
-        "en": "ACTIVE BANKS",
-        "es": "BANCOS ACTIVOS"
-       },
-       "type": {
-        "pt": "seleção",
-        "en": "selection",
-        "es": "selección"
-       },
-       "desc": {
-        "pt": "<p>Desligue as letras que você não usa: a navegação passa a pulá-las. Pelo menos uma precisa continuar ligada.</p>",
-        "en": "<p>Turn off the letters you don't use: navigation then skips over them. At least one has to stay on.</p>",
-        "es": "<p>Desactiva las letras que no usas: la navegación pasa a saltarlas. Al menos una tiene que seguir activada.</p>"
+        "pt": "<p>Pisar dois footswitches juntos dispara uma ação. São dez pares — 1+2, 1+3, 1+4, 2+3, 2+4, 2+5, 3+4, 3+6, 4+5 e 5+6 —, cada um numa linha com o par desenhado no mapa dos footswitches da sua placa e uma frase do que a ação faz. A ação pode ser de navegação, PRÉVIA, <strong>LIGAR/DESLIGAR WI-FI</strong> ou <strong>ENTRAR/SAIR DO LIVE</strong>.</p><p>Combos valem no modo PRESET; o ENTRAR/SAIR DO LIVE continua valendo dentro do LIVE. E dentro do LIVE, <strong>segurar esse par meio segundo</strong> sai direto para o modo PRESET — mesmo com a layer 2 ligada.</p>",
+        "en": "<p>Stepping on two footswitches together triggers an action. There are ten pairs — 1+2, 1+3, 1+4, 2+3, 2+4, 2+5, 3+4, 3+6, 4+5 and 5+6 —, each on its own row with the pair drawn on your board’s footswitch map and a sentence saying what the action does. The action can be navigation, PREVIEW, <strong>WI-FI ON/OFF</strong> or <strong>ENTER/EXIT LIVE</strong>.</p><p>Combos work in PRESET mode; ENTER/EXIT LIVE keeps working inside LIVE. And inside LIVE, <strong>holding that pair for half a second</strong> goes straight back to PRESET mode — even with layer 2 on.</p>",
+        "es": "<p>Pisar dos footswitches juntos dispara una acción. Son diez pares — 1+2, 1+3, 1+4, 2+3, 2+4, 2+5, 3+4, 3+6, 4+5 y 5+6 —, cada uno en una fila con el par dibujado en el mapa de footswitches de tu placa y una frase de lo que hace la acción. La acción puede ser de navegación, VISTA PREVIA, <strong>ENCENDER/APAGAR WI-FI</strong> o <strong>ENTRAR/SALIR DEL LIVE</strong>.</p><p>Los combos valen en el modo PRESET; el ENTRAR/SALIR DEL LIVE sigue valiendo dentro del LIVE. Y dentro del LIVE, <strong>mantener ese par medio segundo</strong> sale directo al modo PRESET — incluso con la capa 2 activada.</p>"
        }
       }
      ],
      "notes": [
       {
-       "pt": "Um footswitch que participa de um combo ativo ganha um clique longo um pouco mais lento — é a folga para você montar o par com os dois pés.",
-       "en": "A footswitch that's part of an active combo gets a slightly slower long click — that's the slack that lets you land the pair with both feet.",
-       "es": "Un footswitch que participa en un combo activo tiene un clic largo un poco más lento — es el margen para que armes el par con los dos pies."
+       "pt": "Num footswitch que participa de um combo ativo, o SEGURAR demora um pouco mais — é a folga para você montar o par com os dois pés.",
+       "en": "On a footswitch that’s part of an active combo, HOLD takes a little longer — that’s the slack that lets you land the pair with both feet.",
+       "es": "En un footswitch que participa en un combo activo, el MANTENER tarda un poco más — es el margen para que armes el par con los dos pies."
       },
       {
        "pt": "Os combos vêm vazios de fábrica: o LIGAR/DESLIGAR WI-FI, por exemplo, precisa ser configurado aqui.",
@@ -6460,14 +7580,14 @@ const MN_CONTENT = {
     {
      "id": "cfg-tela",
      "title": {
-      "pt": "TELA — layouts, nomes e BPM",
-      "en": "DISPLAY — layouts, names and BPM",
-      "es": "PANTALLA — layouts, nombres y BPM"
+      "pt": "TELA — Gig View, BPM e troca de preset",
+      "en": "DISPLAY — Gig View, BPM and preset change",
+      "es": "PANTALLA — Gig View, BPM y cambio de preset"
      },
      "purpose": {
-      "pt": "A aparência padrão da tela da controladora: o que aparece em cada modo, o arranjo dos ícones e o card de BPM.",
-      "en": "The default look of the controller's screen: what shows up in each mode, how the icons are arranged and the BPM card.",
-      "es": "La apariencia predeterminada de la pantalla de la controladora: qué aparece en cada modo, la disposición de los íconos y la tarjeta de BPM."
+      "pt": "O que a tela da controladora mostra em qualquer preset: as telas de cada modo, o card de BPM e o aviso de troca de preset. O layout, as posições, o formato dos ícones e os nomes dos presets nos ícones ficam no <strong>CONFIGURAR DISPLAY</strong> de cada preset.",
+      "en": "What the controller's screen shows in any preset: the screens of each mode, the BPM card and the preset change notice. Layout, positions, icon shape and preset names on the icons are in each preset's <strong>CONFIGURE DISPLAY</strong>.",
+      "es": "Lo que la pantalla de la controladora muestra en cualquier preset: las pantallas de cada modo, la tarjeta de BPM y el aviso de cambio de preset. El layout, las posiciones, la forma de los íconos y los nombres de los presets en los íconos están en el <strong>CONFIGURAR PANTALLA</strong> de cada preset."
      },
      "shot": "cfg-tela",
      "mockTitle": {
@@ -6483,65 +7603,14 @@ const MN_CONTENT = {
         "es": "GIG VIEW"
        },
        "type": {
-        "pt": "seleção",
-        "en": "selection",
-        "es": "selección"
+        "pt": "TELA",
+        "en": "DISPLAY",
+        "es": "PANTALLA"
        },
        "desc": {
-        "pt": "<p><strong>PADRÃO</strong> (as duas telas), <strong>SÓ PRESET</strong> ou <strong>SÓ LIVE</strong>. Mais os interruptores que mostram ou escondem o nome do preset no LIVE e no BANK.</p>",
-        "en": "<p><strong>DEFAULT</strong> (both screens), <strong>ONLY PRESET</strong> or <strong>ONLY LIVE</strong>. Plus the switches that show or hide the preset name in LIVE and in BANK.</p>",
-        "es": "<p><strong>ESTÁNDAR</strong> (las dos pantallas), <strong>SOLO PRESET</strong> o <strong>SOLO LIVE</strong>. Además de los interruptores que muestran u ocultan el nombre del preset en LIVE y en BANK.</p>"
-       }
-      },
-      {
-       "name": {
-        "pt": "LAYOUT DO MODO LIVE e DO MODO PRESET",
-        "en": "LIVE MODE and PRESET MODE LAYOUT",
-        "es": "LAYOUT DEL MODO LIVE y DEL MODO PRESET"
-       },
-       "type": {
-        "pt": "layout",
-        "en": "layout",
-        "es": "layout"
-       },
-       "desc": {
-        "pt": "<p><strong>L1 a L4</strong> são arranjos fixos e <strong>CUSTOM</strong> deixa você arrastar cada ícone e escolher o tamanho (até a altura inteira da tela). No PRESET existem ainda <strong>NENHUM</strong> (só o nome grande) e <strong>LISTA</strong> (os presets em sequência). Estes são os valores globais: um preset pode ter o seu próprio layout.</p>",
-        "en": "<p><strong>L1 to L4</strong> are fixed arrangements and <strong>CUSTOM</strong> lets you drag each icon and choose its size (up to the full screen height). PRESET also has <strong>NONE</strong> (just the big name) and <strong>LIST</strong> (the presets in sequence). These are the global values: a preset can have its own layout.</p>",
-        "es": "<p><strong>L1 a L4</strong> son arreglos fijos y <strong>CUSTOM</strong> te deja arrastrar cada ícono y elegir el tamaño (hasta la altura completa de la pantalla). En PRESET existen además <strong>NINGUNO</strong> (solo el nombre grande) y <strong>LISTA</strong> (los presets en secuencia). Estos son los valores globales: un preset puede tener su propio layout.</p>"
-       }
-      },
-      {
-       "name": {
-        "pt": "Somente atual (CUSTOM do LIVE)",
-        "en": "Current only (LIVE CUSTOM)",
-        "es": "Sólo el actual (CUSTOM del LIVE)"
-       },
-       "type": {
-        "pt": "interruptor",
-        "en": "switch",
-        "es": "interruptor"
-       },
-       "desc": {
-        "pt": "<p>Com o layout CUSTOM no LIVE, <strong>Somente atual</strong> mostra um ícone só: o do último footswitch pisado, numa posição e tamanho compartilhados. A lista <strong>Ícones visíveis</strong> continua decidindo quais podem aparecer.</p>",
-        "en": "<p>With the CUSTOM layout in LIVE, <strong>Current only</strong> shows a single icon: the one for the last footswitch you stepped on, in a shared position and size. The <strong>Visible icons</strong> list still decides which ones can appear.</p>",
-        "es": "<p>Con el layout CUSTOM en LIVE, <strong>Sólo el actual</strong> muestra un solo ícono: el del último footswitch pisado, en una posición y un tamaño compartidos. La lista <strong>Iconos visibles</strong> sigue decidiendo cuáles pueden aparecer.</p>"
-       }
-      },
-      {
-       "name": {
-        "pt": "Formato do ícone e nomes do banco",
-        "en": "Icon shape and bank names",
-        "es": "Forma del ícono y nombres del banco"
-       },
-       "type": {
-        "pt": "estilo",
-        "en": "style",
-        "es": "estilo"
-       },
-       "desc": {
-        "pt": "<p>Ícones <strong>PADRÃO</strong>, <strong>CÍRCULO</strong> ou <strong>OCTÓGONO</strong>, separados para cada tela. <strong>Mostrar nomes dos presets do banco</strong> troca os ícones da tela PRESET pelos nomes das músicas, com cores e tamanho ajustáveis.</p>",
-        "en": "<p><strong>DEFAULT</strong>, <strong>CIRCLE</strong> or <strong>OCTAGON</strong> icons, set separately for each screen. <strong>Show bank preset names</strong> replaces the icons on the PRESET screen with the song names, with adjustable colors and size.</p>",
-        "es": "<p>Íconos <strong>ESTÁNDAR</strong>, <strong>CÍRCULO</strong> u <strong>OCTÓGONO</strong>, por separado para cada pantalla. <strong>Mostrar nombres de presets del banco</strong> cambia los íconos de la pantalla PRESET por los nombres de las canciones, con colores y tamaño ajustables.</p>"
+        "pt": "<p><strong>PADRÃO</strong> (as duas telas), <strong>SÓ PRESET</strong> ou <strong>SÓ LIVE</strong>. O nome do preset na tela se liga por preset, no CONFIGURAR DISPLAY.</p>",
+        "en": "<p><strong>DEFAULT</strong> (both screens), <strong>ONLY PRESET</strong> or <strong>ONLY LIVE</strong>. The preset name on screen is turned on per preset, in CONFIGURE DISPLAY.</p>",
+        "es": "<p><strong>ESTÁNDAR</strong> (las dos pantallas), <strong>SOLO PRESET</strong> o <strong>SOLO LIVE</strong>. El nombre del preset en pantalla se activa por preset, en CONFIGURAR PANTALLA.</p>"
        }
       },
       {
@@ -6551,14 +7620,31 @@ const MN_CONTENT = {
         "es": "BPM EN PANTALLA"
        },
        "type": {
-        "pt": "grupo",
-        "en": "group",
-        "es": "grupo"
+        "pt": "TELA",
+        "en": "DISPLAY",
+        "es": "PANTALLA"
        },
        "desc": {
         "pt": "<p>Por quanto tempo o card de BPM fica na tela ao bater o tap tempo (<strong>OFF</strong>, 2, 5 ou 10 s) e se o número é o <strong>ABSOLUTO</strong> (dois últimos toques) ou o <strong>MÉDIO</strong> (média da sequência). OFF só esconde o card; o tempo continua valendo.</p>",
         "en": "<p>How long the BPM card stays on screen when you tap the tempo (<strong>OFF</strong>, 2, 5 or 10 s) and whether the number is the <strong>ABSOLUTE</strong> (last two taps) or the <strong>AVERAGE</strong> (average of the sequence). OFF only hides the card; the tempo still applies.</p>",
         "es": "<p>Cuánto tiempo queda la tarjeta de BPM en pantalla al marcar el tap tempo (<strong>OFF</strong>, 2, 5 o 10 s) y si el número es el <strong>ABSOLUTO</strong> (los dos últimos toques) o el <strong>PROMEDIO</strong> (promedio de la secuencia). OFF solo oculta la tarjeta; el tempo sigue valiendo.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "BANK NA TROCA DE PRESET",
+        "en": "BANK ON PRESET CHANGE",
+        "es": "BANK AL CAMBIAR DE PRESET"
+       },
+       "type": {
+        "pt": "TELA",
+        "en": "DISPLAY",
+        "es": "PANTALLA"
+       },
+       "desc": {
+        "pt": "<p>Ligado, a cada troca de preset a tela mostra a letra e o número do preset novo (ex.: A1) no meio, pelo tempo escolhido.</p>",
+        "en": "<p>When on, every preset change shows the new preset's letter and number (e.g. A1) in the middle of the screen, for the time you pick.</p>",
+        "es": "<p>Activado, en cada cambio de preset la pantalla muestra la letra y el número del preset nuevo (ej.: A1) en el centro, durante el tiempo elegido.</p>"
        }
       }
      ]
@@ -6571,15 +7657,15 @@ const MN_CONTENT = {
       "es": "LEDS — brillo y colores de los anillos"
      },
      "purpose": {
-      "pt": "Os anéis em volta dos footswitches são o que você lê com o canto do olho no palco.",
-      "en": "The rings around the footswitches are what you read out of the corner of your eye on stage.",
-      "es": "Los anillos alrededor de los footswitches son lo que lees con el rabillo del ojo en el escenario."
+      "pt": "Os anéis em volta dos footswitches são o que você lê com o canto do olho no palco. Três abas: <strong>BRILHO</strong>, <strong>CORES</strong> e <strong>LIVE</strong>.",
+      "en": "The rings around the footswitches are what you read out of the corner of your eye on stage. Three tabs: <strong>BRIGHTNESS</strong>, <strong>COLORS</strong> and <strong>LIVE</strong>.",
+      "es": "Los anillos alrededor de los footswitches son lo que lees con el rabillo del ojo en el escenario. Tres pestañas: <strong>BRILLO</strong>, <strong>COLORES</strong> y <strong>LIVE</strong>."
      },
      "shot": "cfg-leds",
      "mockTitle": {
-      "pt": "CONFIGURAÇÕES › LEDS",
-      "en": "SETTINGS › LEDS",
-      "es": "CONFIGURACIÓN › LEDS"
+      "pt": "CONFIGURAÇÕES › LEDS › CORES",
+      "en": "SETTINGS › LEDS › COLORS",
+      "es": "CONFIGURACIÓN › LEDS › COLORES"
      },
      "fields": [
       {
@@ -6589,9 +7675,9 @@ const MN_CONTENT = {
         "es": "Brillo de LEDs"
        },
        "type": {
-        "pt": "faixa",
-        "en": "slider",
-        "es": "deslizador"
+        "pt": "aba BRILHO",
+        "en": "BRIGHTNESS tab",
+        "es": "pestaña BRILLO"
        },
        "desc": {
         "pt": "<p>Vale para todos os anéis. Palco escuro pede brilho baixo; luz do dia, alto.</p>",
@@ -6606,9 +7692,9 @@ const MN_CONTENT = {
         "es": "BANCOS Y PRESETS"
        },
        "type": {
-        "pt": "seleção",
-        "en": "selection",
-        "es": "selección"
+        "pt": "aba CORES",
+        "en": "COLORS tab",
+        "es": "pestaña COLORES"
        },
        "desc": {
         "pt": "<p>O que a cor significa no modo PRESET. <strong>POR LETRA</strong>: cada banco tem a sua cor. <strong>POR SWITCH</strong>: cada footswitch tem a sua.</p>",
@@ -6623,9 +7709,9 @@ const MN_CONTENT = {
         "es": "Vista previa del LED en LIVE"
        },
        "type": {
-        "pt": "interruptor",
-        "en": "switch",
-        "es": "interruptor"
+        "pt": "aba LIVE",
+        "en": "LIVE tab",
+        "es": "pestaña LIVE"
        },
        "desc": {
         "pt": "<p>Deixa os footswitches desligados com um brilho fraquinho (ajustável) em vez de apagados, para você enxergar onde estão os efeitos no escuro.</p>",
@@ -6640,9 +7726,9 @@ const MN_CONTENT = {
         "es": "LEDS DEDICADOS"
        },
        "type": {
-        "pt": "cores",
-        "en": "colors",
-        "es": "colores"
+        "pt": "aba LIVE",
+        "en": "LIVE tab",
+        "es": "pestaña LIVE"
        },
        "desc": {
         "pt": "<p>As cores que avisam <strong>MODO LIVE</strong> e <strong>LAYER 2</strong>. Escolha cores bem diferentes: é o aviso de que todos os pés mudaram de função.</p>",
@@ -6660,15 +7746,15 @@ const MN_CONTENT = {
       "es": "IMÁGENES — tus propios fondos e íconos"
      },
      "purpose": {
-      "pt": "Envie as suas imagens de fundo e os seus ícones para a tela da controladora.",
-      "en": "Upload your own background images and icons to the controller's screen.",
-      "es": "Sube tus propias imágenes de fondo e íconos a la pantalla de la controladora."
+      "pt": "Envie as suas imagens de fundo e os seus ícones para a tela da controladora. Três abas: <strong>IMAGENS</strong> (fundos de tela cheia), <strong>ÍCONES</strong> (os desenhos dos footswitches) e <strong>MEMÓRIA</strong>.",
+      "en": "Upload your own background images and icons to the controller's screen. Three tabs: <strong>IMAGES</strong> (full-screen backgrounds), <strong>ICONS</strong> (the footswitch artwork) and <strong>MEMORY</strong>.",
+      "es": "Sube tus propias imágenes de fondo e íconos a la pantalla de la controladora. Tres pestañas: <strong>IMÁGENES</strong> (fondos de pantalla completa), <strong>ÍCONOS</strong> (los dibujos de los footswitches) y <strong>MEMORIA</strong>."
      },
      "howto": [
       {
-       "pt": "Toque em <strong>FUNDO BANK</strong> (imagens de tela cheia) ou <strong>ÍCONES SW</strong> (os desenhos dos footswitches).",
-       "en": "Tap <strong>BANK BACKGROUND</strong> (full-screen images) or <strong>SW ICONS</strong> (the footswitch artwork).",
-       "es": "Toca <strong>FONDO BANK</strong> (imágenes de pantalla completa) o <strong>ÍCONOS SW</strong> (los dibujos de los footswitches)."
+       "pt": "Abra a aba <strong>IMAGENS</strong> (fundos de tela cheia) ou <strong>ÍCONES</strong> (os desenhos dos footswitches).",
+       "en": "Open the <strong>IMAGES</strong> tab (full-screen backgrounds) or the <strong>ICONS</strong> tab (the footswitch artwork).",
+       "es": "Abre la pestaña <strong>IMÁGENES</strong> (fondos de pantalla completa) o <strong>ÍCONOS</strong> (los dibujos de los footswitches)."
       },
       {
        "pt": "Toque no <strong>+</strong> e escolha um arquivo. Ajuste o recorte e salve.",
@@ -6681,7 +7767,7 @@ const MN_CONTENT = {
        "es": "Después elige la imagen en <strong>COLORES DE PANTALLA</strong> (fondo del preset) o en el ícono de un footswitch."
       }
      ],
-     "shot": "cfg-imagens-galeria",
+     "shot": "cfg-imagens",
      "mockTitle": {
       "pt": "CONFIGURAÇÕES › IMAGENS",
       "en": "SETTINGS › IMAGES",
@@ -6690,19 +7776,19 @@ const MN_CONTENT = {
      "fields": [
       {
        "name": {
-        "pt": "Memória compartilhada",
-        "en": "Shared memory",
-        "es": "Memoria compartida"
+        "pt": "LIMITE DE IMAGENS E ÍCONES",
+        "en": "IMAGE & ICON LIMIT",
+        "es": "LÍMITE DE IMÁGENES E ÍCONOS"
        },
        "type": {
-        "pt": "barra",
-        "en": "bar",
-        "es": "barra"
+        "pt": "abas IMAGENS e ÍCONES",
+        "en": "IMAGES and ICONS tabs",
+        "es": "pestañas IMÁGENES e ÍCONOS"
        },
        "desc": {
-        "pt": "<p>Imagens e ícones dividem a mesma memória: cerca de 2,4 MB nas placas S3 e cerca de 490 KB nas anteriores. A barra mostra quanto está usado — e apagar um ícone libera espaço para um fundo, e vice-versa.</p><p>Cabem até 40 imagens e 60 ícones; cada imagem pode ter até 50 KB e cada ícone até 30 KB.</p>",
-        "en": "<p>Images and icons share the same memory: about 2.4 MB on S3 boards and about 490 KB on earlier ones. The bar shows how much is in use — and deleting an icon frees up room for a background, and vice versa.</p><p>Up to 40 images and 60 icons fit; each image can be up to 50 KB and each icon up to 30 KB.</p>",
-        "es": "<p>Las imágenes y los íconos comparten la misma memoria: unos 2,4 MB en las placas S3 y unos 490 KB en las anteriores. La barra muestra cuánto está en uso — y borrar un ícono libera espacio para un fondo, y viceversa.</p><p>Caben hasta 40 imágenes y 60 íconos; cada imagen puede tener hasta 50 KB y cada ícono hasta 30 KB.</p>"
+        "pt": "<p>Imagens e ícones dividem a mesma cota: cerca de 2,4 MB nas placas S3 e cerca de 490 KB nas anteriores. A barra <strong>LIMITE DE IMAGENS E ÍCONES</strong>, nas duas abas, mostra quanto está usado — e apagar um ícone libera espaço para um fundo, e vice-versa.</p><p>Cabem até 40 imagens e 60 ícones; cada imagem pode ter até 50 KB e cada ícone até 30 KB.</p>",
+        "en": "<p>Images and icons share the same quota: about 2.4 MB on S3 boards and about 490 KB on earlier ones. The <strong>IMAGE &amp; ICON LIMIT</strong> bar, on both tabs, shows how much is in use — and deleting an icon frees up room for a background, and vice versa.</p><p>Up to 40 images and 60 icons fit; each image can be up to 50 KB and each icon up to 30 KB.</p>",
+        "es": "<p>Las imágenes y los íconos comparten la misma cuota: unos 2,4 MB en las placas S3 y unos 490 KB en las anteriores. La barra <strong>LÍMITE DE IMÁGENES E ÍCONOS</strong>, en las dos pestañas, muestra cuánto está en uso — y borrar un ícono libera espacio para un fondo, y viceversa.</p><p>Caben hasta 40 imágenes y 60 íconos; cada imagen puede tener hasta 50 KB y cada ícono hasta 30 KB.</p>"
        }
       },
       {
@@ -6738,6 +7824,23 @@ const MN_CONTENT = {
         "en": "<p><strong>Batch upload</strong> sends several images at once; <strong>Select</strong> lets you delete several. Over the USB cable, uploading is faster and more stable than over Wi-Fi.</p>",
         "es": "<p><strong>Subir en lote</strong> envía varias imágenes de una vez; <strong>Seleccionar</strong> permite borrar varias. Por el cable USB el envío es más rápido y estable que por Wi-Fi.</p>"
        }
+      },
+      {
+       "name": {
+        "pt": "MEMÓRIA",
+        "en": "MEMORY",
+        "es": "MEMORIA"
+       },
+       "type": {
+        "pt": "aba MEMÓRIA",
+        "en": "MEMORY tab",
+        "es": "pestaña MEMORIA"
+       },
+       "desc": {
+        "pt": "<p>A memória inteira da controladora numa barra só: <strong>Editor e sistema</strong>, <strong>Presets</strong>, <strong>Imagens e ícones</strong> e o que está <strong>Livre</strong>. Presets, imagens e ícones dividem esse espaço: com a memória cheia, apagar imagens ou ícones abre espaço para presets. É o mesmo card de <strong>HARDWARE › MEMÓRIA</strong>.</p>",
+        "en": "<p>The controller's whole memory in a single bar: <strong>Editor and system</strong>, <strong>Presets</strong>, <strong>Images and icons</strong> and what's <strong>Free</strong>. Presets, images and icons share that space: when memory is full, deleting images or icons makes room for presets. It's the same card as <strong>HARDWARE › MEMORY</strong>.</p>",
+        "es": "<p>Toda la memoria de la controladora en una sola barra: <strong>Editor y sistema</strong>, <strong>Presets</strong>, <strong>Imágenes e iconos</strong> y lo que está <strong>Libre</strong>. Los presets, las imágenes y los íconos comparten ese espacio: con la memoria llena, borrar imágenes o íconos deja espacio para presets. Es la misma tarjeta de <strong>HARDWARE › MEMORIA</strong>.</p>"
+       }
       }
      ]
     },
@@ -6749,9 +7852,9 @@ const MN_CONTENT = {
       "es": "HARDWARE — modelo, tiempos de envío y memoria"
      },
      "purpose": {
-      "pt": "Dizer à controladora qual placa ela é, ajustar o ritmo do envio MIDI e acompanhar a memória.",
-      "en": "Tell the controller which board it is, adjust the pace of MIDI sending and keep an eye on memory.",
-      "es": "Decirle a la controladora qué placa es, ajustar el ritmo del envío MIDI y seguir el uso de la memoria."
+      "pt": "Dizer à controladora qual placa ela é, ajustar o ritmo do envio MIDI e acompanhar a memória. Três abas: <strong>MODELO</strong>, <strong>TEMPOS</strong> e <strong>MEMÓRIA</strong>.",
+      "en": "Tell the controller which board it is, adjust the pace of MIDI sending and keep an eye on memory. Three tabs: <strong>MODEL</strong>, <strong>TIMING</strong> and <strong>MEMORY</strong>.",
+      "es": "Decirle a la controladora qué placa es, ajustar el ritmo del envío MIDI y seguir el uso de la memoria. Tres pestañas: <strong>MODELO</strong>, <strong>TIEMPOS</strong> y <strong>MEMORIA</strong>."
      },
      "shot": "cfg-hardware",
      "mockTitle": {
@@ -6767,9 +7870,9 @@ const MN_CONTENT = {
         "es": "MODELO"
        },
        "type": {
-        "pt": "seleção",
-        "en": "selection",
-        "es": "selección"
+        "pt": "aba MODELO",
+        "en": "MODEL tab",
+        "es": "pestaña MODELO"
        },
        "desc": {
         "pt": "<p>Primeiro a família (<strong>1</strong>, <strong>2</strong>, <strong>3</strong> ou <strong>3 S3</strong>), depois a variante (NANO, MICRO, 6SW+, 7S, 8SW+…). Não é enfeite: é o que diz à controladora quais pinos existem. O editor só oferece os modelos do processador do pedal conectado. Trocar o modelo reinicia a controladora.</p>",
@@ -6779,14 +7882,31 @@ const MN_CONTENT = {
       },
       {
        "name": {
+        "pt": "Cards especiais",
+        "en": "Special cards",
+        "es": "Tarjetas especiales"
+       },
+       "type": {
+        "pt": "aba MODELO",
+        "en": "MODEL tab",
+        "es": "pestaña MODELO"
+       },
+       "desc": {
+        "pt": "<p>Nas placas MICRO, <strong>REMAPPING</strong> gira a tela e reorganiza os quatro footswitches. Na BFMIDI-1 7S, <strong>INVERTER TELA</strong> gira a tela 180°. Os dois reiniciam a controladora.</p>",
+        "en": "<p>On MICRO boards, <strong>REMAPPING</strong> rotates the screen and rearranges the four footswitches. On the BFMIDI-1 7S, <strong>INVERT SCREEN</strong> rotates the screen 180°. Both restart the controller.</p>",
+        "es": "<p>En las placas MICRO, <strong>REMAPPING</strong> gira la pantalla y reorganiza los cuatro footswitches. En la BFMIDI-1 7S, <strong>INVERTIR PANTALLA</strong> gira la pantalla 180°. Las dos reinician la controladora.</p>"
+       }
+      },
+      {
+       "name": {
         "pt": "TEMPOS DE DISPARO",
         "en": "SEND TIMING",
         "es": "TIEMPOS DE ENVÍO"
        },
        "type": {
-        "pt": "pausas",
-        "en": "pauses",
-        "es": "pausas"
+        "pt": "aba TEMPOS",
+        "en": "TIMING tab",
+        "es": "pestaña TIEMPOS"
        },
        "desc": {
         "pt": "<p>Para aparelhos que perdem mensagens chegando rápido demais. <strong>Pausa entre HEADER e LIVE</strong>: espera entre o PC/extras do preset e o estado inicial dos footswitches. <strong>Pausa por canal</strong>: intervalo mínimo entre duas mensagens para um canal (um Bank Select + PC conta como uma só).</p><p>Use o mínimo que resolver: durante a pausa a controladora espera, e um pedal de expressão nesse canal fica “degrau”.</p>",
@@ -6796,36 +7916,19 @@ const MN_CONTENT = {
       },
       {
        "name": {
-        "pt": "STORAGE",
-        "en": "STORAGE",
-        "es": "STORAGE"
+        "pt": "MEMÓRIA",
+        "en": "MEMORY",
+        "es": "MEMORIA"
        },
        "type": {
-        "pt": "status",
-        "en": "status",
-        "es": "estado"
+        "pt": "aba MEMÓRIA",
+        "en": "MEMORY tab",
+        "es": "pestaña MEMORIA"
        },
        "desc": {
-        "pt": "<p>Quanto da memória está em uso: <strong>Presets</strong>, <strong>Imagens e ícones</strong> (uma barra só, com o detalhe embaixo) e <strong>Globais</strong>.</p>",
-        "en": "<p>How much memory is in use: <strong>Presets</strong>, <strong>Images and icons</strong> (a single bar, with the breakdown below) and <strong>Globals</strong>.</p>",
-        "es": "<p>Cuánta memoria está en uso: <strong>Presets</strong>, <strong>Imágenes e íconos</strong> (una sola barra, con el detalle debajo) y <strong>Globales</strong>.</p>"
-       }
-      },
-      {
-       "name": {
-        "pt": "Cards especiais",
-        "en": "Special cards",
-        "es": "Tarjetas especiales"
-       },
-       "type": {
-        "pt": "por modelo",
-        "en": "per model",
-        "es": "por modelo"
-       },
-       "desc": {
-        "pt": "<p>Nas placas MICRO, <strong>REMAPPING</strong> gira a tela e reorganiza os quatro footswitches. Na BFMIDI-1 7S, <strong>INVERTER TELA</strong> gira a tela 180°. Os dois reiniciam a controladora.</p>",
-        "en": "<p>On MICRO boards, <strong>REMAPPING</strong> rotates the screen and rearranges the four footswitches. On the BFMIDI-1 7S, <strong>INVERT SCREEN</strong> rotates the screen 180°. Both restart the controller.</p>",
-        "es": "<p>En las placas MICRO, <strong>REMAPPING</strong> gira la pantalla y reorganiza los cuatro footswitches. En la BFMIDI-1 7S, <strong>INVERTIR PANTALLA</strong> gira la pantalla 180°. Las dos reinician la controladora.</p>"
+        "pt": "<p>Quanto da memória da controladora está em uso, numa barra só: <strong>Editor e sistema</strong>, <strong>Presets</strong>, <strong>Imagens e ícones</strong> e <strong>Livre</strong>. É o mesmo card de <strong>IMAGENS › MEMÓRIA</strong>. As configurações globais ficam numa memória à parte e não entram na barra (o INFO do card diz quanto ocupam).</p>",
+        "en": "<p>How much of the controller's memory is in use, in a single bar: <strong>Editor and system</strong>, <strong>Presets</strong>, <strong>Images and icons</strong> and <strong>Free</strong>. It's the same card as <strong>IMAGES › MEMORY</strong>. The global settings live in a separate memory and aren't part of the bar (the card's INFO says how much they take).</p>",
+        "es": "<p>Cuánta memoria de la controladora está en uso, en una sola barra: <strong>Editor y sistema</strong>, <strong>Presets</strong>, <strong>Imágenes e iconos</strong> y <strong>Libre</strong>. Es la misma tarjeta de <strong>IMÁGENES › MEMORIA</strong>. La configuración global está en una memoria aparte y no entra en la barra (el INFO de la tarjeta dice cuánto ocupa).</p>"
        }
       }
      ]
@@ -6838,27 +7941,32 @@ const MN_CONTENT = {
       "es": "WIFI — red y conexión"
      },
      "purpose": {
-      "pt": "Ver como você está conectado e, se quiser, colocar a controladora na sua rede de casa.",
-      "en": "See how you're connected and, if you like, put the controller on your home network.",
-      "es": "Ver cómo estás conectado y, si quieres, poner la controladora en tu red de casa."
+      "pt": "Ver como você está conectado e, se quiser, colocar a controladora na sua rede de casa. Três abas: <strong>ESTADO</strong>, <strong>CONECTAR</strong> e <strong>REDES</strong>.",
+      "en": "See how you're connected and, if you like, put the controller on your home network. Three tabs: <strong>STATUS</strong>, <strong>CONNECT</strong> and <strong>NETWORKS</strong>.",
+      "es": "Ver cómo estás conectado y, si quieres, poner la controladora en tu red de casa. Tres pestañas: <strong>ESTADO</strong>, <strong>CONECTAR</strong> y <strong>REDES</strong>."
      },
      "howto": [
       {
-       "pt": "Conectado pela rede do pedal (AP) ou pelo cabo, toque em <strong>BUSCAR</strong>.",
-       "en": "While connected through the pedal's network (AP) or the cable, tap <strong>SCAN</strong>.",
-       "es": "Conectado por la red del pedal (AP) o por el cable, toca <strong>BUSCAR</strong>."
+       "pt": "Conectado pela rede do pedal (AP) ou pelo cabo, abra a aba <strong>CONECTAR</strong>. Passo <strong>1 SELECIONAR REDE</strong>: toque em <strong>BUSCAR</strong> e escolha a sua rede na lista (ou toque nela na aba <strong>REDES</strong>).",
+       "en": "While connected through the pedal’s network (AP) or the cable, open the <strong>CONNECT</strong> tab. Step <strong>1 SELECT NETWORK</strong>: tap <strong>SCAN</strong> and pick your network from the list (or tap it on the <strong>NETWORKS</strong> tab).",
+       "es": "Conectado por la red del pedal (AP) o por el cable, abre la pestaña <strong>CONECTAR</strong>. Paso <strong>1 SELECCIONAR RED</strong>: toca <strong>BUSCAR</strong> y elige tu red en la lista (o tócala en la pestaña <strong>REDES</strong>)."
       },
       {
-       "pt": "Escolha a sua rede, digite a senha e toque em <strong>CONECTAR</strong>. A tentativa acontece sem travar o pedal.",
-       "en": "Choose your network, type the password and tap <strong>CONNECT</strong>. The attempt happens without freezing the pedal.",
-       "es": "Elige tu red, escribe la contraseña y toca <strong>CONECTAR</strong>. El intento ocurre sin bloquear el pedal."
+       "pt": "Passo <strong>2 Senha</strong>: digite a senha da sua rede.",
+       "en": "Step <strong>2 Password</strong>: type your network’s password.",
+       "es": "Paso <strong>2 Contraseña</strong>: escribe la contraseña de tu red."
+      },
+      {
+       "pt": "Passo <strong>3 CONECTAR</strong>: toque em <strong>CONECTAR</strong>. A tentativa acontece sem travar o pedal.",
+       "en": "Step <strong>3 CONNECT</strong>: tap <strong>CONNECT</strong>. The attempt happens without freezing the pedal.",
+       "es": "Paso <strong>3 CONECTAR</strong>: toca <strong>CONECTAR</strong>. El intento ocurre sin bloquear el pedal."
       }
      ],
-     "shot": "cfg-wifi",
+     "shot": "cfg-wifi-conectar",
      "mockTitle": {
-      "pt": "CONFIGURAÇÕES › WIFI",
-      "en": "SETTINGS › WIFI",
-      "es": "CONFIGURACIÓN › WIFI"
+      "pt": "CONFIGURAÇÕES › WIFI › CONECTAR",
+      "en": "SETTINGS › WIFI › CONNECT",
+      "es": "CONFIGURACIÓN › WIFI › CONECTAR"
      },
      "fields": [
       {
@@ -6868,14 +7976,14 @@ const MN_CONTENT = {
         "es": "ESTADO DE LA CONEXIÓN"
        },
        "type": {
-        "pt": "status",
-        "en": "status",
-        "es": "estado"
+        "pt": "aba ESTADO",
+        "en": "STATUS tab",
+        "es": "pestaña ESTADO"
        },
        "desc": {
-        "pt": "<p>Quatro quadrados — <strong>OFF</strong>, <strong>AP</strong>, <strong>STA</strong> e <strong>USB</strong> — com o seu em destaque. Na rede de casa, o card mostra a rede e o endereço.</p>",
-        "en": "<p>Four squares — <strong>OFF</strong>, <strong>AP</strong>, <strong>STA</strong> and <strong>USB</strong> — with yours highlighted. On your home network, the card shows the network and the address.</p>",
-        "es": "<p>Cuatro cuadros — <strong>OFF</strong>, <strong>AP</strong>, <strong>STA</strong> y <strong>USB</strong> — con el tuyo resaltado. En la red de casa, la tarjeta muestra la red y la dirección.</p>"
+        "pt": "<p>Quatro quadrados — <strong>OFF</strong>, <strong>USB</strong>, <strong>AP</strong> e <strong>STA</strong> — com o seu em destaque. Na rede de casa, o card <strong>CONEXÃO</strong> (aba CONECTAR) mostra a rede e o endereço.</p>",
+        "en": "<p>Four squares — <strong>OFF</strong>, <strong>USB</strong>, <strong>AP</strong> and <strong>STA</strong> — with yours highlighted. On your home network, the <strong>CONNECTION</strong> card (CONNECT tab) shows the network and the address.</p>",
+        "es": "<p>Cuatro cuadros — <strong>OFF</strong>, <strong>USB</strong>, <strong>AP</strong> y <strong>STA</strong> — con el tuyo resaltado. En la red de casa, la tarjeta <strong>CONEXIÓN</strong> (pestaña CONECTAR) muestra la red y la dirección.</p>"
        }
       },
       {
@@ -6902,9 +8010,9 @@ const MN_CONTENT = {
         "es": "BUSCAR y CONECTAR"
        },
        "type": {
-        "pt": "ações",
-        "en": "actions",
-        "es": "acciones"
+        "pt": "abas CONECTAR e REDES",
+        "en": "CONNECT and NETWORKS tabs",
+        "es": "pestañas CONECTAR y REDES"
        },
        "desc": {
         "pt": "<p>O BUSCAR só funciona pela rede do pedal ou pelo cabo — na rede de casa ele derrubaria a própria conexão. Só redes de 2,4 GHz aparecem; redes ocultas podem ser digitadas à mão. A senha só é guardada depois de conectar de verdade: se falhar, a configuração anterior continua.</p>",
@@ -6936,9 +8044,9 @@ const MN_CONTENT = {
         "es": "WPA antiguo (TKIP)"
        },
        "type": {
-        "pt": "compatibilidade",
-        "en": "compatibility",
-        "es": "compatibilidad"
+        "pt": "aba CONECTAR",
+        "en": "CONNECT tab",
+        "es": "pestaña CONECTAR"
        },
        "desc": {
         "pt": "<p>Deixe desligado em redes atuais. Ligue só se um roteador antigo realmente não conectar.</p>",
@@ -6963,9 +8071,9 @@ const MN_CONTENT = {
       "es": "HOST — el USB Host y los equipos conectados"
      },
      "purpose": {
-      "pt": "Os aparelhos ligados na porta USB HOST da controladora: um card para cada um, com o canal MIDI e o editor de preset.",
-      "en": "The devices connected to the controller's USB HOST port: one card for each, with its MIDI channel and the preset editor.",
-      "es": "Los equipos conectados al puerto USB HOST de la controladora: una tarjeta para cada uno, con el canal MIDI y el editor de preset."
+      "pt": "Os aparelhos ligados na porta USB HOST da controladora, em três abas: <strong>STATUS</strong> (o módulo e as opções dele), <strong>APARELHOS</strong> (um card para cada aparelho, com o canal MIDI e o editor de preset) e <strong>MIDI</strong> (o que volta dos aparelhos para a controladora).",
+      "en": "The devices connected to the controller's USB HOST port, in three tabs: <strong>STATUS</strong> (the module and its options), <strong>DEVICES</strong> (one card for each device, with its MIDI channel and the preset editor) and <strong>MIDI</strong> (what comes back from the devices to the controller).",
+      "es": "Los equipos conectados al puerto USB HOST de la controladora, en tres pestañas: <strong>ESTADO</strong> (el módulo y sus opciones), <strong>APARATOS</strong> (una tarjeta para cada equipo, con el canal MIDI y el editor de preset) y <strong>MIDI</strong> (lo que vuelve de los equipos a la controladora)."
      },
      "shot": "cfg-host",
      "mockTitle": {
@@ -6981,14 +8089,14 @@ const MN_CONTENT = {
         "es": "USB HOST"
        },
        "type": {
-        "pt": "status",
-        "en": "status",
-        "es": "estado"
+        "pt": "aba STATUS",
+        "en": "STATUS tab",
+        "es": "pestaña ESTADO"
        },
        "desc": {
-        "pt": "<p>Quantos aparelhos estão conectados, se o módulo está respondendo e a versão do firmware dele (com aviso quando está antigo).</p>",
-        "en": "<p>How many devices are connected, whether the module is responding and its firmware version (with a warning when it's outdated).</p>",
-        "es": "<p>Cuántos equipos están conectados, si el módulo está respondiendo y la versión de su firmware (con un aviso cuando está desactualizado).</p>"
+        "pt": "<p>Quantos aparelhos estão conectados, se o módulo está respondendo e a versão do firmware dele, com um botão que leva a <strong>ATUALIZAR</strong>.</p>",
+        "en": "<p>How many devices are connected, whether the module is responding and its firmware version, with a button that takes you to <strong>UPDATES</strong>.</p>",
+        "es": "<p>Cuántos equipos están conectados, si el módulo está respondiendo y la versión de su firmware, con un botón que lleva a <strong>ACTUALIZAR</strong>.</p>"
        }
       },
       {
@@ -6998,9 +8106,9 @@ const MN_CONTENT = {
         "es": "Detección automática"
        },
        "type": {
-        "pt": "modo",
-        "en": "mode",
-        "es": "modo"
+        "pt": "aba STATUS",
+        "en": "STATUS tab",
+        "es": "pestaña ESTADO"
        },
        "desc": {
         "pt": "<p>O USB Host reconhece sozinho o que foi plugado: pedais MIDI USB comuns e a IK TONEX ONE funcionam juntos, até <strong>dois aparelhos</strong> num hub. Não há modo para escolher.</p>",
@@ -7010,31 +8118,14 @@ const MN_CONTENT = {
       },
       {
        "name": {
-        "pt": "Um card por aparelho",
-        "en": "One card per device",
-        "es": "Una tarjeta por equipo"
-       },
-       "type": {
-        "pt": "aparelhos",
-        "en": "devices",
-        "es": "equipos"
-       },
-       "desc": {
-        "pt": "<p>Fabricante, produto, porta do hub, ID USB, status e o <strong>canal</strong> que aquele aparelho escuta. Cada TONEX ONE tem o seu canal; os pedais MIDI comuns dividem um filtro. GP-5, TONEX ONE e Nano Cortex ganham o botão <strong>EDITAR PRESET</strong>.</p>",
-        "en": "<p>Manufacturer, product, hub port, USB ID, status and the <strong>channel</strong> that device listens on. Each TONEX ONE has its own channel; regular MIDI pedals share one filter. GP-5, TONEX ONE and Nano Cortex get the <strong>EDIT PRESET</strong> button.</p>",
-        "es": "<p>Fabricante, producto, puerto del hub, ID USB, estado y el <strong>canal</strong> que escucha ese equipo. Cada TONEX ONE tiene su propio canal; los pedales MIDI comunes comparten un filtro. GP-5, TONEX ONE y Nano Cortex tienen el botón <strong>EDITAR PRESET</strong>.</p>"
-       }
-      },
-      {
-       "name": {
         "pt": "Traduzir Boss MS-3",
         "en": "Translate Boss MS-3",
         "es": "Traducir Boss MS-3"
        },
        "type": {
-        "pt": "interruptor",
-        "en": "switch",
-        "es": "interruptor"
+        "pt": "aba STATUS",
+        "en": "STATUS tab",
+        "es": "pestaña ESTADO"
        },
        "desc": {
         "pt": "<p>O MS-3 (e a Katana) não entendem CC de parâmetro comum: o host converte para o formato da Boss. Ligue só com eles plugados.</p>",
@@ -7049,9 +8140,9 @@ const MN_CONTENT = {
         "es": "Modo transmisión (más pedales)"
        },
        "type": {
-        "pt": "interruptor",
-        "en": "switch",
-        "es": "interruptor"
+        "pt": "aba STATUS",
+        "en": "STATUS tab",
+        "es": "pestaña ESTADO"
        },
        "desc": {
         "pt": "<p>Deixa o host mandar MIDI para até <strong>quatro</strong> pedais num hub, em vez de dois — em troca, nada volta dos pedais: afinador, nome do rig, SEGUIR O KEMPER e o editor da GP-5 param de funcionar. Com uma TONEX ONE plugada o limite continua dois.</p>",
@@ -7061,14 +8152,31 @@ const MN_CONTENT = {
       },
       {
        "name": {
+        "pt": "Um card por aparelho",
+        "en": "One card per device",
+        "es": "Una tarjeta por equipo"
+       },
+       "type": {
+        "pt": "aba APARELHOS",
+        "en": "DEVICES tab",
+        "es": "pestaña APARATOS"
+       },
+       "desc": {
+        "pt": "<p>Fabricante, produto, porta do hub, ID USB, status e o <strong>canal</strong> que aquele aparelho escuta. Cada TONEX ONE tem o seu canal; os pedais MIDI comuns dividem um filtro. GP-5, TONEX ONE e Nano Cortex ganham o botão <strong>EDITAR PRESET</strong>.</p>",
+        "en": "<p>Manufacturer, product, hub port, USB ID, status and the <strong>channel</strong> that device listens on. Each TONEX ONE has its own channel; regular MIDI pedals share one filter. GP-5, TONEX ONE and Nano Cortex get the <strong>EDIT PRESET</strong> button.</p>",
+        "es": "<p>Fabricante, producto, puerto del hub, ID USB, estado y el <strong>canal</strong> que escucha ese equipo. Cada TONEX ONE tiene su propio canal; los pedales MIDI comunes comparten un filtro. GP-5, TONEX ONE y Nano Cortex tienen el botón <strong>EDITAR PRESET</strong>.</p>"
+       }
+      },
+      {
+       "name": {
         "pt": "MIDI BFMIDI (host → controladora)",
         "en": "BFMiDi MIDI (host → controller)",
         "es": "MIDI BFMiDi (host → controladora)"
        },
        "type": {
-        "pt": "interruptores",
-        "en": "switches",
-        "es": "interruptores"
+        "pt": "aba MIDI",
+        "en": "MIDI tab",
+        "es": "pestaña MIDI"
        },
        "desc": {
         "pt": "<p><strong>Habilitar MIDI reverso</strong> repete o MIDI que chega dos aparelhos plugados nas saídas da controladora (USB DEVICE e DIN5), como um thru/merge. <strong>MIDI Control Host BFMIDI</strong> deixa um aparelho plugado comandar a BFMiDi (chamar presets e bancos, entrar no LIVE).</p>",
@@ -7098,15 +8206,15 @@ const MN_CONTENT = {
       "es": "BLUETOOTH — inalámbrico"
      },
      "purpose": {
-      "pt": "O Bluetooth mora no módulo USB Host e tem três funções — a diferença entre elas é quem procura quem.",
-      "en": "Bluetooth lives in the USB Host module and has three functions — the difference between them is who looks for whom.",
-      "es": "El Bluetooth vive en el módulo USB Host y tiene tres funciones — la diferencia entre ellas es quién busca a quién."
+      "pt": "O Bluetooth mora no módulo USB Host e tem três funções — a diferença entre elas é quem procura quem. Três abas: <strong>STATUS</strong>, <strong>FUNÇÃO</strong> (liga, desliga e escolhe o papel) e <strong>FILTRO</strong>.",
+      "en": "Bluetooth lives in the USB Host module and has three functions — the difference between them is who looks for whom. Three tabs: <strong>STATUS</strong>, <strong>FUNCTION</strong> (turns it on or off and picks its role) and <strong>FILTER</strong>.",
+      "es": "El Bluetooth vive en el módulo USB Host y tiene tres funciones — la diferencia entre ellas es quién busca a quién. Tres pestañas: <strong>ESTADO</strong>, <strong>FUNCIÓN</strong> (lo enciende, lo apaga y elige el papel) y <strong>FILTRO</strong>."
      },
      "shot": "cfg-bluetooth",
      "mockTitle": {
-      "pt": "CONFIGURAÇÕES › BLUETOOTH",
-      "en": "SETTINGS › BLUETOOTH",
-      "es": "CONFIGURACIÓN › BLUETOOTH"
+      "pt": "CONFIGURAÇÕES › BLUETOOTH › FUNÇÃO",
+      "en": "SETTINGS › BLUETOOTH › FUNCTION",
+      "es": "CONFIGURACIÓN › BLUETOOTH › FUNCIÓN"
      },
      "fields": [
       {
@@ -7116,9 +8224,9 @@ const MN_CONTENT = {
         "es": "TECLADO"
        },
        "type": {
-        "pt": "função",
-        "en": "function",
-        "es": "función"
+        "pt": "aba FUNÇÃO",
+        "en": "FUNCTION tab",
+        "es": "pestaña FUNCIÓN"
        },
        "desc": {
         "pt": "<p>A controladora vira um teclado Bluetooth: os CCs viram teclas e atalhos, para controlar programas que não entendem MIDI (partitura, gravador, slides).</p>",
@@ -7133,9 +8241,9 @@ const MN_CONTENT = {
         "es": "MIDI"
        },
        "type": {
-        "pt": "função",
-        "en": "function",
-        "es": "función"
+        "pt": "aba FUNÇÃO",
+        "en": "FUNCTION tab",
+        "es": "pestaña FUNCIÓN"
        },
        "desc": {
         "pt": "<p>Vira uma interface MIDI sem fio chamada BFMiDi e espera: use quando quem procura é o outro aparelho (celular, tablet, computador).</p>",
@@ -7150,9 +8258,9 @@ const MN_CONTENT = {
         "es": "PEDAL"
        },
        "type": {
-        "pt": "função",
-        "en": "function",
-        "es": "función"
+        "pt": "aba FUNÇÃO",
+        "en": "FUNCTION tab",
+        "es": "pestaña FUNCIÓN"
        },
        "desc": {
         "pt": "<p>A controladora procura um pedal Bluetooth MIDI que esteja anunciando e conecta nele, para ganhar footswitches sem fio.</p>",
@@ -7167,9 +8275,9 @@ const MN_CONTENT = {
         "es": "Filtro MIDI del Bluetooth"
        },
        "type": {
-        "pt": "canal",
-        "en": "channel",
-        "es": "canal"
+        "pt": "aba FILTRO",
+        "en": "FILTER tab",
+        "es": "pestaña FILTRO"
        },
        "desc": {
         "pt": "<p>O Bluetooth tem o próprio filtro de canal (OMNI deixa passar todos), separado do filtro dos aparelhos USB.</p>",
@@ -7182,39 +8290,22 @@ const MN_CONTENT = {
     {
      "id": "cfg-editor",
      "title": {
-      "pt": "EDITOR — tema, salvamento, atalhos e idioma",
-      "en": "EDITOR — theme, saving, shortcuts and language",
-      "es": "EDITOR — tema, guardado, atajos e idioma"
+      "pt": "EDITOR — salvamento, tema, idioma e atalhos",
+      "en": "EDITOR — saving, theme, language and shortcuts",
+      "es": "EDITOR — guardado, tema, idioma y atajos"
      },
      "purpose": {
-      "pt": "Ajustes do editor, não da controladora: eles ficam no aparelho onde você abriu.",
-      "en": "Settings for the editor, not the controller: they stay on the device where you opened it.",
-      "es": "Ajustes del editor, no de la controladora: quedan en el dispositivo donde lo abriste."
+      "pt": "Ajustes do editor, não da controladora: eles ficam no aparelho onde você abriu. Três abas: <strong>GERAL</strong>, <strong>APARÊNCIA</strong> e <strong>ATALHOS</strong>.",
+      "en": "Settings for the editor, not the controller: they stay on the device where you opened it. Three tabs: <strong>GENERAL</strong>, <strong>APPEARANCE</strong> and <strong>SHORTCUTS</strong>.",
+      "es": "Ajustes del editor, no de la controladora: quedan en el dispositivo donde lo abriste. Tres pestañas: <strong>GENERAL</strong>, <strong>APARIENCIA</strong> y <strong>ATAJOS</strong>."
      },
      "shot": "cfg-editor",
      "mockTitle": {
-      "pt": "CONFIGURAÇÕES › EDITOR",
-      "en": "SETTINGS › EDITOR",
-      "es": "CONFIGURACIÓN › EDITOR"
+      "pt": "CONFIGURAÇÕES › EDITOR › ATALHOS",
+      "en": "SETTINGS › EDITOR › SHORTCUTS",
+      "es": "CONFIGURACIÓN › EDITOR › ATAJOS"
      },
      "fields": [
-      {
-       "name": {
-        "pt": "TEMA",
-        "en": "THEME",
-        "es": "TEMA"
-       },
-       "type": {
-        "pt": "seleção",
-        "en": "selection",
-        "es": "selección"
-       },
-       "desc": {
-        "pt": "<p><strong>CLARO</strong> ou <strong>ESCURO</strong>.</p>",
-        "en": "<p><strong>LIGHT</strong> or <strong>DARK</strong>.</p>",
-        "es": "<p><strong>CLARO</strong> u <strong>OSCURO</strong>.</p>"
-       }
-      },
       {
        "name": {
         "pt": "SALVAMENTO AUTOMÁTICO",
@@ -7222,9 +8313,9 @@ const MN_CONTENT = {
         "es": "GUARDADO AUTOMÁTICO"
        },
        "type": {
-        "pt": "interruptor",
-        "en": "switch",
-        "es": "interruptor"
+        "pt": "aba GERAL",
+        "en": "GENERAL tab",
+        "es": "pestaña GENERAL"
        },
        "desc": {
         "pt": "<p>Ligado (o padrão), o editor grava sozinho menos de um segundo depois de cada alteração. Desligado, nada é gravado até você tocar em salvar — e sair do preset descarta a alteração.</p>",
@@ -7234,19 +8325,36 @@ const MN_CONTENT = {
       },
       {
        "name": {
-        "pt": "ATALHOS",
-        "en": "SHORTCUTS",
-        "es": "ATAJOS"
+        "pt": "MODO PALCO",
+        "en": "STAGE MODE",
+        "es": "MODO ESCENARIO"
        },
        "type": {
-        "pt": "interruptores",
-        "en": "switches",
-        "es": "interruptores"
+        "pt": "aba GERAL",
+        "en": "GENERAL tab",
+        "es": "pestaña GENERAL"
        },
        "desc": {
-        "pt": "<p>Um interruptor para cada destino do menu: os ligados viram botões no card PRINCIPAL. O MODO PALCO e os editores dos aparelhos plugados aparecem sempre, antes dos seus atalhos.</p>",
-        "en": "<p>One switch for each menu destination: the ones that are on become buttons on the MAIN card. STAGE MODE and the editors for plugged-in devices always appear, before your shortcuts.</p>",
-        "es": "<p>Un interruptor para cada destino del menú: los activados se convierten en botones en la tarjeta PRINCIPAL. El MODO ESCENARIO y los editores de los equipos conectados aparecen siempre, antes de tus atajos.</p>"
+        "pt": "<p>Só nos aplicativos: em qual palco o Modo Palco abre — <strong>PALCO BFMIDI</strong> (o padrão), <strong>PALCO ESPECIAL</strong> ou <strong>O ÚLTIMO USADO</strong>.</p>",
+        "en": "<p>Apps only: which stage Stage Mode opens on — <strong>BFMIDI STAGE</strong> (the default), <strong>SPECIAL STAGE</strong> or <strong>LAST USED</strong>.</p>",
+        "es": "<p>Solo en las aplicaciones: en qué escenario abre el Modo Escenario — <strong>ESCENARIO BFMIDI</strong> (el predeterminado), <strong>ESCENARIO ESPECIAL</strong> o <strong>EL ÚLTIMO USADO</strong>.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "TEMA",
+        "en": "THEME",
+        "es": "TEMA"
+       },
+       "type": {
+        "pt": "aba APARÊNCIA",
+        "en": "APPEARANCE tab",
+        "es": "pestaña APARIENCIA"
+       },
+       "desc": {
+        "pt": "<p><strong>CLARO</strong> ou <strong>ESCURO</strong>.</p>",
+        "en": "<p><strong>LIGHT</strong> or <strong>DARK</strong>.</p>",
+        "es": "<p><strong>CLARO</strong> u <strong>OSCURO</strong>.</p>"
        }
       },
       {
@@ -7256,14 +8364,31 @@ const MN_CONTENT = {
         "es": "IDIOMA DE LA INTERFAZ"
        },
        "type": {
-        "pt": "seleção",
-        "en": "selection",
-        "es": "selección"
+        "pt": "aba APARÊNCIA",
+        "en": "APPEARANCE tab",
+        "es": "pestaña APARIENCIA"
        },
        "desc": {
         "pt": "<p>Português, English ou Español. A tela da controladora permanece em inglês.</p>",
         "en": "<p>Português, English or Español. The controller's screen stays in English.</p>",
         "es": "<p>Português, English o Español. La pantalla de la controladora permanece en inglés.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "ATALHOS",
+        "en": "SHORTCUTS",
+        "es": "ATAJOS"
+       },
+       "type": {
+        "pt": "aba ATALHOS",
+        "en": "SHORTCUTS tab",
+        "es": "pestaña ATAJOS"
+       },
+       "desc": {
+        "pt": "<p>Um interruptor para cada destino do menu: os ligados viram botões no card PRINCIPAL. O MODO PALCO e os editores dos aparelhos plugados aparecem sempre, antes dos seus atalhos.</p>",
+        "en": "<p>One switch for each menu destination: the ones that are on become buttons on the MAIN card. STAGE MODE and the editors for plugged-in devices always appear, before your shortcuts.</p>",
+        "es": "<p>Un interruptor para cada destino del menú: los activados se convierten en botones en la tarjeta PRINCIPAL. El MODO ESCENARIO y los editores de los equipos conectados aparecen siempre, antes de tus atajos.</p>"
        }
       }
      ]
@@ -7287,9 +8412,9 @@ const MN_CONTENT = {
        "es": "Abre <strong>CONFIGURACIÓN › ACTUALIZAR</strong>. La verificación empieza sola."
       },
       {
-       "pt": "Havendo versão nova, toque em <strong>ATUALIZAR A BFMiDi</strong> (ou <strong>ATUALIZAR TUDO</strong>, nas placas sem USB Host) e siga a tela.",
-       "en": "If there's a new version, tap <strong>UPDATE THE BFMiDi</strong> (or <strong>UPDATE EVERYTHING</strong>, on boards without USB Host) and follow the screen.",
-       "es": "Si hay una versión nueva, toca <strong>ACTUALIZAR LA BFMiDi</strong> (o <strong>ACTUALIZAR TODO</strong>, en las placas sin USB Host) y sigue la pantalla."
+       "pt": "Havendo versão nova, responda ao guia — pelo cabo ele confirma o cabo na porta DEVICE e pergunta se deve fazer backup dos presets — e toque em <strong>ATUALIZAR A BFMiDi</strong> (ou <strong>ATUALIZAR TUDO</strong>, nas placas sem USB Host).",
+       "en": "If there's a new version, answer the guide — over the cable it confirms the cable in the DEVICE port and asks whether to back up the presets — and tap <strong>UPDATE THE BFMiDi</strong> (or <strong>UPDATE EVERYTHING</strong>, on boards without USB Host).",
+       "es": "Si hay una versión nueva, responde la guía — por cable confirma el cable en el puerto DEVICE y pregunta si debe hacer copia de los presets — y toca <strong>ACTUALIZAR LA BFMiDi</strong> (o <strong>ACTUALIZAR TODO</strong>, en las placas sin USB Host)."
       },
       {
        "pt": "Pelo cabo, o navegador pode pedir para autorizar a porta da controladora no meio da gravação — o card pisca avisando e mostra qual escolher. Não tire o cabo até o fim.",
@@ -7340,19 +8465,19 @@ const MN_CONTENT = {
       },
       {
        "name": {
-        "pt": "BACKUP AUTOMÁTICO",
-        "en": "AUTOMATIC BACKUP",
-        "es": "COPIA AUTOMÁTICA"
+        "pt": "Backup dos presets",
+        "en": "Preset backup",
+        "es": "Copia de los presets"
        },
        "type": {
-        "pt": "interruptor",
-        "en": "switch",
-        "es": "interruptor"
+        "pt": "pergunta",
+        "en": "question",
+        "es": "pregunta"
        },
        "desc": {
-        "pt": "<p>A gravação por cabo substitui a memória do pedal. Com o backup automático (ligado por padrão), o editor guarda os seus presets, imagens, ícones e aparelhos personalizados antes de gravar e devolve tudo depois. Desligado, a controladora volta com o pacote de fábrica. Pela rede nada é apagado.</p>",
-        "en": "<p>Flashing by cable replaces the pedal's memory. With automatic backup (on by default), the editor saves your presets, images, icons and custom devices before flashing and puts everything back afterward. When it's off, the controller comes back with the factory package. Over the network nothing is erased.</p>",
-        "es": "<p>La grabación por cable reemplaza la memoria del pedal. Con la copia automática (activada por defecto), el editor guarda tus presets, imágenes, íconos y aparatos personalizados antes de grabar y devuelve todo después. Desactivada, la controladora vuelve con el paquete de fábrica. Por la red no se borra nada.</p>"
+        "pt": "<p>A gravação por cabo substitui a memória do pedal, por isso o guia pergunta <strong>Fazer backup dos presets?</strong> antes de liberar o botão. <strong>SIM</strong>: o editor guarda os seus presets, imagens, ícones e aparelhos personalizados antes de gravar e devolve tudo depois. <strong>NÃO</strong>: a controladora volta com o pacote de fábrica. Pela rede nada é apagado, e o guia não aparece.</p>",
+        "en": "<p>Flashing by cable replaces the pedal's memory, so the guide asks <strong>Back up the presets?</strong> before enabling the button. <strong>YES</strong>: the editor saves your presets, images, icons and custom devices before flashing and puts everything back afterward. <strong>NO</strong>: the controller comes back with the factory package. Over the network nothing is erased, and the guide doesn't show up.</p>",
+        "es": "<p>La grabación por cable reemplaza la memoria del pedal, por eso la guía pregunta <strong>¿Hacer copia de los presets?</strong> antes de habilitar el botón. <strong>SÍ</strong>: el editor guarda tus presets, imágenes, íconos y aparatos personalizados antes de grabar y devuelve todo después. <strong>NO</strong>: la controladora vuelve con el paquete de fábrica. Por la red no se borra nada, y la guía no aparece.</p>"
        }
       },
       {
@@ -7371,13 +8496,30 @@ const MN_CONTENT = {
         "en": "<p><strong>BFMiDi up to date</strong> (or <strong>Equipment up to date</strong>, on boards without a USB Host), <strong>Update available</strong> or <strong>Not checked</strong> (no internet). <strong>CHECK AGAIN</strong> runs the check again; <strong>FORCE UPDATE</strong> reinstalls the current version. Your device does the downloading, not the pedal; a computer that has updated before keeps a copy and can update even without internet.</p>",
         "es": "<p><strong>BFMiDi actualizada</strong> (o <strong>Equipo actualizado</strong>, en las placas sin USB Host), <strong>Actualización disponible</strong> o <strong>Sin verificación</strong> (sin internet). <strong>VERIFICAR DE NUEVO</strong> repite la consulta; <strong>FORCE UPDATE</strong> reinstala la versión actual. Quien descarga de internet es tu dispositivo, no el pedal; una computadora que ya actualizó antes guarda una copia y puede actualizar incluso sin internet.</p>"
        }
+      },
+      {
+       "name": {
+        "pt": "A tela do pedal durante a atualização",
+        "en": "The pedal screen during the update",
+        "es": "La pantalla del pedal durante la actualización"
+       },
+       "type": {
+        "pt": "visual",
+        "en": "visual",
+        "es": "visual"
+       },
+       "desc": {
+        "pt": "<p>Pela rede, a controladora mostra <strong>ATUALIZANDO</strong> com uma barra de progresso durante a gravação. Pelo cabo ela mostra ATUALIZANDO antes de começar e, no meio da gravação, pode ficar parada ou apagada — é normal: não tire o cabo. Quando a controladora liga, a tela de abertura mostra o modelo da placa e a versão do firmware (<strong>FIRMWARE 15.0</strong>, por exemplo) — é o jeito mais rápido de conferir se a atualização entrou.</p>",
+        "en": "<p>Over the network, the controller shows <strong>ATUALIZANDO</strong> (updating) with a progress bar while writing. Over the cable it shows ATUALIZANDO before starting and, in the middle of the write, may freeze or go dark — that's normal: don't unplug the cable. When the controller powers on, the startup screen shows the board model and the firmware version (<strong>FIRMWARE 15.0</strong>, for example) — the quickest way to check the update went in.</p>",
+        "es": "<p>Por la red, la controladora muestra <strong>ATUALIZANDO</strong> (actualizando) con una barra de progreso durante la grabación. Por el cable muestra ATUALIZANDO antes de empezar y, en medio de la grabación, puede quedar congelada o apagada — es normal: no quites el cable. Cuando la controladora enciende, la pantalla de inicio muestra el modelo de la placa y la versión del firmware (<strong>FIRMWARE 15.0</strong>, por ejemplo) — la forma más rápida de comprobar que la actualización entró.</p>"
+       }
       }
      ],
      "notes": [
       {
-       "pt": "Também dá para atualizar pelo site de atualização (<a href=\"https://bffx-updates.github.io/Update_BFMiDi_v14/\" target=\"_blank\" rel=\"noopener\">Update BFMiDi</a>), com o mesmo backup automático.",
-       "en": "You can also update through the update site (<a href=\"https://bffx-updates.github.io/Update_BFMiDi_v14/\" target=\"_blank\" rel=\"noopener\">Update BFMiDi</a>), with the same automatic backup.",
-       "es": "También puedes actualizar desde el sitio de actualización (<a href=\"https://bffx-updates.github.io/Update_BFMiDi_v14/\" target=\"_blank\" rel=\"noopener\">Update BFMiDi</a>), con la misma copia automática."
+       "pt": "Também dá para atualizar pelo site de atualização (<a href=\"https://bffx-updates.github.io/Update_BFMiDi_v15/\" target=\"_blank\" rel=\"noopener\">Update BFMiDi</a>), com o mesmo backup automático.",
+       "en": "You can also update through the update site (<a href=\"https://bffx-updates.github.io/Update_BFMiDi_v15/\" target=\"_blank\" rel=\"noopener\">Update BFMiDi</a>), with the same automatic backup.",
+       "es": "También puedes actualizar desde el sitio de actualización (<a href=\"https://bffx-updates.github.io/Update_BFMiDi_v15/\" target=\"_blank\" rel=\"noopener\">Update BFMiDi</a>), con la misma copia automática."
       }
      ]
     },
@@ -7389,9 +8531,9 @@ const MN_CONTENT = {
       "es": "ACTUALIZAR — el USB Host"
      },
      "purpose": {
-      "pt": "O módulo USB Host tem firmware próprio. Ele se atualiza com o cabo do computador ligado direto na porta HOST, com a controladora na fonte de 9 V — um assistente guia passo a passo.",
-      "en": "The USB Host module has its own firmware. It's updated with the computer's cable plugged straight into the HOST port and the controller on its 9 V power supply — a wizard guides you step by step.",
-      "es": "El módulo USB Host tiene su propio firmware. Se actualiza con el cable de la computadora conectado directo al puerto HOST y la controladora en la fuente de 9 V — un asistente te guía paso a paso."
+      "pt": "O módulo USB Host tem firmware próprio. Ele se atualiza com dois cabos ligados ao mesmo tempo: o de sempre, na porta DEVICE, e um segundo cabo do computador na porta HOST, por onde o firmware é gravado.",
+      "en": "The USB Host module has its own firmware. It's updated with two cables connected at the same time: the usual one, in the DEVICE port, and a second cable from the computer in the HOST port, through which the firmware is written.",
+      "es": "El módulo USB Host tiene su propio firmware. Se actualiza con dos cables conectados al mismo tiempo: el de siempre, en el puerto DEVICE, y un segundo cable de la computadora en el puerto HOST, por donde se graba el firmware."
      },
      "howto": [
       {
@@ -7400,19 +8542,19 @@ const MN_CONTENT = {
        "es": "Actualiza primero la controladora (pestaña 1)."
       },
       {
-       "pt": "Na aba <strong>2 USB HOST</strong>, ligue a fonte de 9 V na controladora e toque em <strong>ATUALIZAR USB HOST</strong>.",
-       "en": "On the <strong>2 USB HOST</strong> tab, plug the 9 V power supply into the controller and tap <strong>UPDATE USB HOST</strong>.",
-       "es": "En la pestaña <strong>2 USB HOST</strong>, conecta la fuente de 9 V a la controladora y toca <strong>ACTUALIZAR USB HOST</strong>."
+       "pt": "Na aba <strong>2 USB HOST</strong>, responda ao guia: o cabo USB DEVICE está conectado? Os 2 cabos estão conectados? Se não, tire os pedais da porta HOST e ligue nela o segundo cabo do computador.",
+       "en": "On the <strong>2 USB HOST</strong> tab, answer the guide: is the USB DEVICE cable connected? Are both cables connected? If not, unplug the pedals from the HOST port and plug the computer's second cable into it.",
+       "es": "En la pestaña <strong>2 USB HOST</strong>, responde la guía: ¿el cable USB DEVICE está conectado? ¿Los 2 cables están conectados? Si no, quita los pedales del puerto HOST y conecta allí el segundo cable de la computadora."
       },
       {
-       "pt": "Siga o assistente: ele pede para tirar o cabo da porta DEVICE, ligar o computador na porta HOST, grava e confere.",
-       "en": "Follow the wizard: it asks you to unplug the cable from the DEVICE port and connect the computer to the HOST port, then it flashes and checks.",
-       "es": "Sigue el asistente: te pide sacar el cable del puerto DEVICE y conectar la computadora al puerto HOST, y luego graba y verifica."
+       "pt": "Toque em <strong>ATUALIZAR USB HOST</strong>. Quando a tela pedir, toque em <strong>SELECIONAR PORTA COM</strong> (no Mac, <strong>SELECIONAR PORTA USB</strong>), escolha a porta do HOST (aparece como <strong>ESP32-S3</strong>) e clique em <strong>Conectar</strong>.",
+       "en": "Tap <strong>UPDATE USB HOST</strong>. When the screen asks, tap <strong>SELECT COM PORT</strong> (on a Mac, <strong>SELECT USB PORT</strong>), choose the HOST port (it shows up as <strong>ESP32-S3</strong>) and click <strong>Connect</strong>.",
+       "es": "Toca <strong>ACTUALIZAR USB HOST</strong>. Cuando la pantalla lo pida, toca <strong>SELECCIONAR PUERTO COM</strong> (en Mac, <strong>SELECCIONAR PUERTO USB</strong>), elige el puerto HOST (aparece como <strong>ESP32-S3</strong>) y haz clic en <strong>Conectar</strong>."
       },
       {
-       "pt": "No fim, volte o cabo para a porta DEVICE.",
-       "en": "At the end, put the cable back in the DEVICE port.",
-       "es": "Al final, vuelve a poner el cable en el puerto DEVICE."
+       "pt": "Espere gravar e conferir a versão, sem tirar os cabos. No fim, devolva os pedais à porta HOST.",
+       "en": "Wait for it to write and check the version, without unplugging the cables. At the end, put the pedals back in the HOST port.",
+       "es": "Espera a que grabe y verifique la versión, sin quitar los cables. Al final, vuelve a conectar los pedales al puerto HOST."
       }
      ],
      "shot": "cfg-atualizar-host",
@@ -7424,9 +8566,9 @@ const MN_CONTENT = {
      "fields": [
       {
        "name": {
-        "pt": "Por que a fonte de 9 V",
-        "en": "Why the 9 V power supply",
-        "es": "Por qué la fuente de 9 V"
+        "pt": "Os dois cabos",
+        "en": "The two cables",
+        "es": "Los dos cables"
        },
        "type": {
         "pt": "obrigatório",
@@ -7434,9 +8576,9 @@ const MN_CONTENT = {
         "es": "obligatorio"
        },
        "desc": {
-        "pt": "<p>Nesta atualização o cabo USB sai da porta DEVICE e vai para a HOST. Sem a fonte, a BFMiDi desliga no meio.</p>",
-        "en": "<p>In this update the USB cable comes out of the DEVICE port and goes into HOST. Without the power supply, the BFMiDi turns off halfway through.</p>",
-        "es": "<p>En esta actualización el cable USB sale del puerto DEVICE y va al HOST. Sin la fuente, la BFMiDi se apaga a mitad del proceso.</p>"
+        "pt": "<p>O cabo da porta DEVICE mantém o editor falando com a controladora: é ela que coloca o USB Host em modo de gravação e confere a versão no fim. O segundo cabo, na porta HOST, leva o firmware. Os dois ficam ligados do começo ao fim.</p>",
+        "en": "<p>The DEVICE port cable keeps the editor talking to the controller: it's the controller that puts the USB Host into flashing mode and checks the version at the end. The second cable, in the HOST port, carries the firmware. Both stay connected from start to finish.</p>",
+        "es": "<p>El cable del puerto DEVICE mantiene al editor hablando con la controladora: es ella la que pone el USB Host en modo de grabación y verifica la versión al final. El segundo cable, en el puerto HOST, lleva el firmware. Los dos quedan conectados de principio a fin.</p>"
        }
       },
       {
@@ -7451,9 +8593,26 @@ const MN_CONTENT = {
         "es": "lista"
        },
        "desc": {
-        "pt": "<p>Fonte 9 V de pedal, um cabo USB com ponta USB-C para a porta HOST (de preferência com a ponta retangular no computador), Chrome ou Edge no computador (ou o app BFMiDi de Windows/Mac) e uns 3 minutos. Seus presets não são apagados.</p>",
-        "en": "<p>A 9 V pedal power supply, a USB cable with a USB-C end for the HOST port (ideally with the rectangular end on the computer side), Chrome or Edge on the computer (or the BFMiDi app for Windows/Mac) and about 3 minutes. Your presets aren't erased.</p>",
-        "es": "<p>Fuente de 9 V de pedal, un cable USB con punta USB-C para el puerto HOST (de preferencia con la punta rectangular en la computadora), Chrome o Edge en la computadora (o la app BFMiDi de Windows/Mac) y unos 3 minutos. Tus presets no se borran.</p>"
+        "pt": "<p>Dois cabos USB — o da porta HOST com ponta USB-C, de preferência com a ponta retangular no computador —, Chrome ou Edge no computador (ou o app BFMiDi de Windows/Mac) e uns 3 minutos. Seus presets não são apagados.</p>",
+        "en": "<p>Two USB cables — the one for the HOST port with a USB-C end, ideally with the rectangular end on the computer side —, Chrome or Edge on the computer (or the BFMiDi app for Windows/Mac) and about 3 minutes. Your presets aren't erased.</p>",
+        "es": "<p>Dos cables USB — el del puerto HOST con punta USB-C, de preferencia con la punta rectangular en la computadora —, Chrome o Edge en la computadora (o la app BFMiDi de Windows/Mac) y unos 3 minutos. Tus presets no se borran.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Com o USB Host em dia",
+        "en": "With the USB Host up to date",
+        "es": "Con el USB Host al día"
+       },
+       "type": {
+        "pt": "botão",
+        "en": "button",
+        "es": "botón"
+       },
+       "desc": {
+        "pt": "<p>Com o USB Host já na versão publicada, o botão vira <strong>FORCE UPDATE</strong> e regrava a mesma versão.</p>",
+        "en": "<p>With the USB Host already on the published version, the button becomes <strong>FORCE UPDATE</strong> and rewrites the same version.</p>",
+        "es": "<p>Con el USB Host ya en la versión publicada, el botón pasa a <strong>FORCE UPDATE</strong> y vuelve a grabar la misma versión.</p>"
        }
       },
       {
@@ -7468,9 +8627,9 @@ const MN_CONTENT = {
         "es": "rescate"
        },
        "desc": {
-        "pt": "<p>O assistente sempre diz o que aconteceu — se nada mudou ou se o firmware ficou incompleto. Com a gravação incompleta, a aba oferece <strong>RECUPERAR</strong>; não desligue a controladora antes de tentar de novo.</p>",
-        "en": "<p>The wizard always tells you what happened — whether nothing changed or the firmware was left incomplete. If the flash is incomplete, the tab offers <strong>RECOVER</strong>; don't turn off the controller before trying again.</p>",
-        "es": "<p>El asistente siempre dice qué pasó — si nada cambió o si el firmware quedó incompleto. Con la grabación incompleta, la pestaña ofrece <strong>RECUPERAR</strong>; no apagues la controladora antes de intentarlo de nuevo.</p>"
+        "pt": "<p>O resultado sempre diz o que aconteceu — se nada mudou ou se o firmware ficou incompleto. Com a gravação incompleta, a tela oferece <strong>RECUPERAR</strong>: não desligue a controladora antes de tentar de novo.</p>",
+        "en": "<p>The result always tells you what happened — whether nothing changed or the firmware was left incomplete. If the flash is incomplete, the screen offers <strong>RECOVER</strong>: don't turn off the controller before trying again.</p>",
+        "es": "<p>El resultado siempre dice qué pasó — si nada cambió o si el firmware quedó incompleto. Con la grabación incompleta, la pantalla ofrece <strong>RECUPERAR</strong>: no apagues la controladora antes de intentarlo de nuevo.</p>"
        }
       }
      ]
@@ -7483,9 +8642,9 @@ const MN_CONTENT = {
       "es": "BACKUP — copia y restauración"
      },
      "purpose": {
-      "pt": "Guardar o seu trabalho num arquivo — o pedal inteiro, um banco ou um preset — e trazer de volta quando precisar.",
-      "en": "Save your work to a file — the whole pedal, a bank or a preset — and bring it back when you need it.",
-      "es": "Guardar tu trabajo en un archivo — el pedal entero, un banco o un preset — y traerlo de vuelta cuando lo necesites."
+      "pt": "Guardar o seu trabalho num arquivo e trazer de volta quando precisar — uma aba para cada tamanho: <strong>COMPLETO</strong> (o pedal inteiro), <strong>BANCO</strong> e <strong>PRESET</strong>.",
+      "en": "Save your work to a file and bring it back when you need it — one tab for each size: <strong>FULL</strong> (the whole pedal), <strong>BANK</strong> and <strong>PRESET</strong>.",
+      "es": "Guardar tu trabajo en un archivo y traerlo de vuelta cuando lo necesites — una pestaña para cada tamaño: <strong>COMPLETO</strong> (el pedal entero), <strong>BANCO</strong> y <strong>PRESET</strong>."
      },
      "shot": "cfg-backup",
      "mockTitle": {
@@ -7501,9 +8660,9 @@ const MN_CONTENT = {
         "es": "BACKUP COMPLETO"
        },
        "type": {
-        "pt": "arquivo",
-        "en": "file",
-        "es": "archivo"
+        "pt": "aba COMPLETO",
+        "en": "FULL tab",
+        "es": "pestaña COMPLETO"
        },
        "desc": {
         "pt": "<p>Todos os presets. Escolha incluir imagens e ícones (o arquivo fica bem maior, mas é a cópia de verdade) e as configurações globais (placa, cores, controles, aparelhos personalizados). <strong>FAZER CÓPIA</strong> baixa o arquivo; <strong>RESTAURAR</strong> traz de volta.</p>",
@@ -7518,9 +8677,9 @@ const MN_CONTENT = {
         "es": "EXPORTAR PERFORMANCE"
        },
        "type": {
-        "pt": "um banco",
-        "en": "one bank",
-        "es": "un banco"
+        "pt": "aba BANCO",
+        "en": "BANK tab",
+        "es": "pestaña BANCO"
        },
        "desc": {
         "pt": "<p>Exporta ou importa um banco inteiro — os seis presets de um show — levando só as imagens e ícones que ele usa. Ao importar você escolhe o banco de destino, que é substituído.</p>",
@@ -7535,9 +8694,9 @@ const MN_CONTENT = {
         "es": "PRESET ÚNICO"
        },
        "type": {
-        "pt": "um preset",
-        "en": "one preset",
-        "es": "un preset"
+        "pt": "aba PRESET",
+        "en": "PRESET tab",
+        "es": "pestaña PRESET"
        },
        "desc": {
         "pt": "<p>Exporta ou importa um preset só (sem imagens), para levar uma música de um pedal para outro.</p>",
@@ -7562,9 +8721,9 @@ const MN_CONTENT = {
       "es": "PRUEBAS — diagnóstico y monitor MIDI"
      },
      "purpose": {
-      "pt": "Descobrir se o problema é o cabo, o canal ou o comando — sem montar preset nenhum.",
-      "en": "Find out whether the problem is the cable, the channel or the command — without setting up any preset.",
-      "es": "Descubrir si el problema es el cable, el canal o el comando — sin armar ningún preset."
+      "pt": "Descobrir se o problema é o cabo, o canal ou o comando — sem montar preset nenhum. Três abas: <strong>HARDWARE</strong>, <strong>DISPARO</strong> e <strong>MONITOR</strong>.",
+      "en": "Find out whether the problem is the cable, the channel or the command — without setting up any preset. Three tabs: <strong>HARDWARE</strong>, <strong>SEND</strong> and <strong>MONITOR</strong>.",
+      "es": "Descubrir si el problema es el cable, el canal o el comando — sin armar ningún preset. Tres pestañas: <strong>HARDWARE</strong>, <strong>ENVÍO</strong> y <strong>MONITOR</strong>."
      },
      "shot": "cfg-testes",
      "mockTitle": {
@@ -7580,14 +8739,14 @@ const MN_CONTENT = {
         "es": "PRUEBA DE HARDWARE"
        },
        "type": {
-        "pt": "diagnóstico",
-        "en": "diagnostics",
-        "es": "diagnóstico"
+        "pt": "aba HARDWARE",
+        "en": "HARDWARE tab",
+        "es": "pestaña HARDWARE"
        },
        "desc": {
-        "pt": "<p>Três testes de dez segundos: <strong>LEDS</strong>, <strong>DISPLAY</strong> e <strong>MIDI</strong>. Se os LEDs acendem no teste, o problema está na configuração, não no hardware.</p>",
-        "en": "<p>Three ten-second tests: <strong>LEDS</strong>, <strong>DISPLAY</strong> and <strong>MIDI</strong>. If the LEDs light up in the test, the problem is in the setup, not the hardware.</p>",
-        "es": "<p>Tres pruebas de diez segundos: <strong>LEDS</strong>, <strong>DISPLAY</strong> y <strong>MIDI</strong>. Si los LEDs se encienden en la prueba, el problema está en la configuración, no en el hardware.</p>"
+        "pt": "<p>Testes de dez segundos para <strong>LEDS</strong>, <strong>DISPLAY</strong> e <strong>MIDI</strong>. Se os LEDs acendem no teste, o problema está na configuração, não no hardware.</p><p><strong>BOTÕES</strong>: pise em cada footswitch e veja o nome dele aparecer — enquanto o teste está aberto o pedal não manda MIDI nem troca de preset. <strong>RX</strong> (nas placas com USB Host): mostra o MIDI que sai pela saída MIDI da controladora; se as mensagens aparecem ali e o aparelho não responde, o problema está do cabo para fora.</p>",
+        "en": "<p>Ten-second tests for <strong>LEDS</strong>, <strong>DISPLAY</strong> and <strong>MIDI</strong>. If the LEDs light up in the test, the problem is in the setup, not the hardware.</p><p><strong>BUTTONS</strong>: step on each footswitch and see its name show up — while the test is open the pedal doesn't send MIDI or change presets. <strong>RX</strong> (on boards with USB Host): shows the MIDI going out of the controller's MIDI output; if the messages show up there and the device doesn't respond, the problem is from the cable onward.</p>",
+        "es": "<p>Pruebas de diez segundos para <strong>LEDS</strong>, <strong>DISPLAY</strong> y <strong>MIDI</strong>. Si los LEDs se encienden en la prueba, el problema está en la configuración, no en el hardware.</p><p><strong>BOTONES</strong>: pisa cada footswitch y verás aparecer su nombre — mientras la prueba está abierta el pedal no envía MIDI ni cambia de preset. <strong>RX</strong> (en las placas con USB Host): muestra el MIDI que sale por la salida MIDI de la controladora; si los mensajes aparecen ahí y el equipo no responde, el problema está del cable hacia afuera.</p>"
        }
       },
       {
@@ -7597,9 +8756,9 @@ const MN_CONTENT = {
         "es": "DISPARO MIDI"
        },
        "type": {
-        "pt": "ferramenta",
-        "en": "tool",
-        "es": "herramienta"
+        "pt": "aba DISPARO",
+        "en": "SEND tab",
+        "es": "pestaña ENVÍO"
        },
        "desc": {
         "pt": "<p>Manda um <strong>PC</strong> ou um <strong>CC</strong> na hora, no canal escolhido. Com <strong>DISPARO AUTOMÁTICO</strong>, cada + ou − já manda — é a forma mais rápida de descobrir a que número o seu aparelho responde.</p>",
@@ -7614,9 +8773,9 @@ const MN_CONTENT = {
         "es": "MONITOR MIDI"
        },
        "type": {
-        "pt": "diagnóstico",
-        "en": "diagnostics",
-        "es": "diagnóstico"
+        "pt": "aba MONITOR",
+        "en": "MONITOR tab",
+        "es": "pestaña MONITOR"
        },
        "desc": {
         "pt": "<p>Mostra o que a controladora manda na <strong>chamada de preset</strong> e nos <strong>disparos ao vivo</strong> do LIVE, em ordem, com a opção de copiar.</p>",
@@ -7641,9 +8800,9 @@ const MN_CONTENT = {
       "es": "RESTAURAR — borrar y volver a los valores de fábrica"
      },
      "purpose": {
-      "pt": "Apagar os presets ou as configurações globais e recomeçar. É o item vermelho do menu, e por um bom motivo.",
-      "en": "Erase the presets or the global settings and start over. It's the red item on the menu, and for good reason.",
-      "es": "Borrar los presets o la configuración global y empezar de nuevo. Es el ítem rojo del menú, y por una buena razón."
+      "pt": "Apagar os presets ou as configurações globais e recomeçar. É o item vermelho do menu, e por um bom motivo. Uma ação por aba: <strong>PRESETS</strong> e <strong>GLOBAL</strong> (e <strong>VIRTUAL</strong>, no modo offline).",
+      "en": "Erase the presets or the global settings and start over. It's the red item on the menu, and for good reason. One action per tab: <strong>PRESETS</strong> and <strong>GLOBAL</strong> (and <strong>VIRTUAL</strong>, in offline mode).",
+      "es": "Borrar los presets o la configuración global y empezar de nuevo. Es el ítem rojo del menú, y por una buena razón. Una acción por pestaña: <strong>PRESETS</strong> y <strong>GLOBAL</strong> (y <strong>VIRTUAL</strong>, en el modo offline)."
      },
      "howto": [
       {
@@ -7666,9 +8825,9 @@ const MN_CONTENT = {
         "es": "BORRAR TODOS LOS PRESETS"
        },
        "type": {
-        "pt": "irreversível",
-        "en": "irreversible",
-        "es": "irreversible"
+        "pt": "aba PRESETS",
+        "en": "PRESETS tab",
+        "es": "pestaña PRESETS"
        },
        "desc": {
         "pt": "<p>Os 60 presets voltam ao padrão em branco: footswitches em STOMP sem canal (por isso não aparecem na tela) e a layer 2 desligada. Imagens, ícones e aparelhos personalizados não são apagados.</p>",
@@ -7683,14 +8842,14 @@ const MN_CONTENT = {
         "es": "BORRAR CONFIG GLOBAL"
        },
        "type": {
-        "pt": "irreversível",
-        "en": "irreversible",
-        "es": "irreversible"
+        "pt": "aba GLOBAL",
+        "en": "GLOBAL tab",
+        "es": "pestaña GLOBAL"
        },
        "desc": {
-        "pt": "<p>Volta cores, brilho, início automático, bancos, combos e controles ao padrão — e também o <strong>modelo da placa</strong>. Confira o modelo em <strong>HARDWARE</strong> logo depois. A rede Wi-Fi de casa não é apagada.</p>",
-        "en": "<p>Resets colors, brightness, auto start, banks, combos and controls to the defaults — and also the <strong>board model</strong>. Check the model in <strong>HARDWARE</strong> right afterward. Your home Wi-Fi network isn't erased.</p>",
-        "es": "<p>Devuelve colores, brillo, inicio automático, bancos, combos y controles a los valores de fábrica — y también el <strong>modelo de la placa</strong>. Revisa el modelo en <strong>HARDWARE</strong> justo después. La red Wi-Fi de casa no se borra.</p>"
+        "pt": "<p>Volta cores, brilho, início automático, bancos, combos e controles ao padrão — e também o <strong>modelo da placa</strong>. Confira o modelo em <strong>HARDWARE › MODELO</strong> logo depois. A rede Wi-Fi de casa não é apagada.</p>",
+        "en": "<p>Resets colors, brightness, auto start, banks, combos and controls to the defaults — and also the <strong>board model</strong>. Check the model in <strong>HARDWARE › MODEL</strong> right afterward. Your home Wi-Fi network isn't erased.</p>",
+        "es": "<p>Devuelve colores, brillo, inicio automático, bancos, combos y controles a los valores de fábrica — y también el <strong>modelo de la placa</strong>. Revisa el modelo en <strong>HARDWARE › MODELO</strong> justo después. La red Wi-Fi de casa no se borra.</p>"
        }
       },
       {
@@ -7700,14 +8859,14 @@ const MN_CONTENT = {
         "es": "MODO OFFLINE"
        },
        "type": {
-        "pt": "cópia local",
-        "en": "local copy",
-        "es": "copia local"
+        "pt": "aba VIRTUAL",
+        "en": "VIRTUAL tab",
+        "es": "pestaña VIRTUAL"
        },
        "desc": {
-        "pt": "<p>No modo offline aparece também <strong>ZERAR CÓPIA LOCAL</strong>, que volta a cópia guardada no aparelho ao pacote de fábrica sem tocar na controladora.</p>",
-        "en": "<p>In offline mode, <strong>RESET LOCAL COPY</strong> also appears; it returns the copy stored on your device to the factory package without touching the controller.</p>",
-        "es": "<p>En el modo offline aparece también <strong>REINICIAR COPIA LOCAL</strong>, que devuelve la copia guardada en el dispositivo al paquete de fábrica sin tocar la controladora.</p>"
+        "pt": "<p>No modo offline aparece também a aba <strong>VIRTUAL</strong>, com o botão <strong>ZERAR CÓPIA LOCAL</strong>: volta a cópia guardada no aparelho ao pacote de fábrica sem tocar na controladora.</p>",
+        "en": "<p>In offline mode, the <strong>VIRTUAL</strong> tab also appears, with the <strong>RESET LOCAL COPY</strong> button: it returns the copy stored on your device to the factory package without touching the controller.</p>",
+        "es": "<p>En el modo offline aparece también la pestaña <strong>VIRTUAL</strong>, con el botón <strong>REINICIAR COPIA LOCAL</strong>: devuelve la copia guardada en el dispositivo al paquete de fábrica sin tocar la controladora.</p>"
        }
       }
      ],
@@ -7798,9 +8957,9 @@ const MN_CONTENT = {
       },
       {
        "name": {
-        "pt": "» OUT LIVE MODE e » SW_LIVE",
-        "en": "» OUT LIVE MODE and » SW_LIVE",
-        "es": "» OUT LIVE MODE y » SW_LIVE"
+        "pt": "» OUT LIVE MODE e » ENTER/EXIT LIVE",
+        "en": "» OUT LIVE MODE and » ENTER/EXIT LIVE",
+        "es": "» OUT LIVE MODE y » ENTER/EXIT LIVE"
        },
        "type": {
         "pt": "comando",
@@ -7808,9 +8967,9 @@ const MN_CONTENT = {
         "es": "comando"
        },
        "desc": {
-        "pt": "<p>OUT LIVE MODE sai do LIVE e volta à navegação de presets; SW_LIVE é o interruptor: entra e sai. Nas placas sem botão LIVE, ter um destes num footswitch é o que garante a volta.</p>",
-        "en": "<p>OUT LIVE MODE leaves LIVE and goes back to preset navigation; SW_LIVE is the toggle: it goes in and out. On boards without a LIVE button, having one of these on a footswitch is what guarantees your way back.</p>",
-        "es": "<p>OUT LIVE MODE sale del LIVE y vuelve a la navegación de presets; SW_LIVE es el interruptor: entra y sale. En las placas sin botón LIVE, tener uno de estos en un footswitch es lo que garantiza la vuelta.</p>"
+        "pt": "<p>OUT LIVE MODE sai do LIVE e volta à navegação de presets; ENTER/EXIT LIVE é o interruptor: entra e sai. Nas placas sem botão LIVE, ter um destes num footswitch é o que garante a volta.</p>",
+        "en": "<p>OUT LIVE MODE leaves LIVE and goes back to preset navigation; ENTER/EXIT LIVE is the toggle: it goes in and out. On boards without a LIVE button, having one of these on a footswitch is what guarantees your way back.</p>",
+        "es": "<p>OUT LIVE MODE sale del LIVE y vuelve a la navegación de presets; ENTER/EXIT LIVE es el interruptor: entra y sale. En las placas sin botón LIVE, tener uno de estos en un footswitch es lo que garantiza la vuelta.</p>"
        }
       },
       {
@@ -7842,9 +9001,9 @@ const MN_CONTENT = {
         "es": "comando"
        },
        "desc": {
-        "pt": "<p>Os footswitches externos têm dois comandos exclusivos — <strong>» UP BANK STANDBY</strong> e <strong>» DOWN BANK STANDBY</strong> —: sobem e descem banco em prévia, sem trocar o som, esperando um footswitch do preset confirmar.</p>",
-        "en": "<p>The external footswitches have two commands of their own, <strong>» UP BANK STANDBY</strong> and <strong>» DOWN BANK STANDBY</strong>: they move up and down through banks in preview, without changing the sound, and wait for a preset footswitch to confirm.</p>",
-        "es": "<p>Los footswitches externos tienen dos comandos exclusivos, <strong>» UP BANK STANDBY</strong> y <strong>» DOWN BANK STANDBY</strong>: suben y bajan de banco en vista previa, sin cambiar el sonido, y esperan a que un footswitch del preset confirme.</p>"
+        "pt": "<p>Os footswitches externos têm dois comandos exclusivos — <strong>» UP BANK PREVIEW</strong> e <strong>» DOWN BANK PREVIEW</strong> —: sobem e descem banco em prévia, sem trocar o som, esperando um footswitch do preset confirmar.</p>",
+        "en": "<p>The external footswitches have two commands of their own, <strong>» UP BANK PREVIEW</strong> and <strong>» DOWN BANK PREVIEW</strong>: they move up and down through banks in preview, without changing the sound, and wait for a preset footswitch to confirm.</p>",
+        "es": "<p>Los footswitches externos tienen dos comandos exclusivos, <strong>» UP BANK PREVIEW</strong> y <strong>» DOWN BANK PREVIEW</strong>: suben y bajan de banco en vista previa, sin cambiar el sonido, y esperan a que un footswitch del preset confirme.</p>"
        }
       }
      ],
@@ -7933,9 +9092,26 @@ const MN_CONTENT = {
         "es": "integración"
        },
        "desc": {
-        "pt": "<p>Plugada sozinha no USB Host: o <strong>afinador</strong> na tela da controladora (um footswitch mandando CC 43 no canal da Nano), o <strong>nome do preset</strong> da Nano na tela (GET NAMES, ligado no card do Modo Amigável) e o <strong>editor de preset</strong>. Com o Cortex Cloud conectado por Bluetooth, a Nano recusa a conversa pelo USB.</p>",
-        "en": "<p>Plugged into the USB Host on its own: the <strong>tuner</strong> on the controller's screen (a footswitch sending CC 43 on the Nano's channel), the Nano's <strong>preset name</strong> on the screen (GET NAMES, turned on in the Friendly Mode card) and the <strong>preset editor</strong>. With Cortex Cloud connected over Bluetooth, the Nano refuses to talk over USB.</p>",
-        "es": "<p>Conectada sola al USB Host: el <strong>afinador</strong> en la pantalla de la controladora (un footswitch enviando CC 43 en el canal de la Nano), el <strong>nombre del preset</strong> de la Nano en la pantalla (GET NAMES, activado en la tarjeta del Modo Amigable) y el <strong>editor de preset</strong>. Con el Cortex Cloud conectado por Bluetooth, la Nano rechaza la comunicación por USB.</p>"
+        "pt": "<p>Plugada sozinha no USB Host: o <strong>afinador</strong> na tela da controladora (um footswitch mandando CC 43 no canal da Nano) e no Modo Palco, o <strong>nome do preset</strong> da Nano na tela (GET NAMES, ligado no card do Modo Amigável) e o <strong>editor de preset</strong>. Os <strong>knobs</strong> da Nano (amp, volume da captura, gate e os parâmetros dos FX) também aparecem por nome na lista de comandos de qualquer modo, marcados com ◇ — o footswitch mexe no knob ao vivo, sem gravar na Nano. Com o Cortex Cloud conectado por Bluetooth, a Nano recusa a conversa pelo USB.</p>",
+        "en": "<p>Plugged into the USB Host on its own: the <strong>tuner</strong> on the controller's screen (a footswitch sending CC 43 on the Nano's channel) and in Stage Mode, the Nano's <strong>preset name</strong> on the screen (GET NAMES, turned on in the Friendly Mode card) and the <strong>preset editor</strong>. The Nano's <strong>knobs</strong> (amp, capture volume, gate and FX parameters) also appear by name in the command list of any mode, marked with ◇ — the footswitch moves the knob live, without saving on the Nano. With Cortex Cloud connected over Bluetooth, the Nano refuses to talk over USB.</p>",
+        "es": "<p>Conectada sola al USB Host: el <strong>afinador</strong> en la pantalla de la controladora (un footswitch enviando CC 43 en el canal de la Nano) y en el Modo Escenario, el <strong>nombre del preset</strong> de la Nano en la pantalla (GET NAMES, activado en la tarjeta del Modo Amigable) y el <strong>editor de preset</strong>. Los <strong>knobs</strong> de la Nano (amp, volumen de la captura, gate y parámetros de los FX) también aparecen por nombre en la lista de comandos de cualquier modo, marcados con ◇ — el footswitch mueve el knob en vivo, sin grabar en la Nano. Con el Cortex Cloud conectado por Bluetooth, la Nano rechaza la comunicación por USB.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "ZOOM MS-70CDR, MS-50G e MS-60B",
+        "en": "ZOOM MS-70CDR, MS-50G and MS-60B",
+        "es": "ZOOM MS-70CDR, MS-50G y MS-60B"
+       },
+       "type": {
+        "pt": "integração",
+        "en": "integration",
+        "es": "integración"
+       },
+       "desc": {
+        "pt": "<p>Esses MultiStomp só têm MIDI pela USB: ligue-os no USB Host. A lista ganha os presets (PC, PRESET 1 a 50), o afinador (CC 74: 127 liga, 0 desliga) e, sob <strong>ZOOM EFEITOS</strong>, os comandos ◈ <strong>FX 1</strong>, <strong>FX 2</strong> e <strong>FX 3 Liga/Desliga</strong> — os três primeiros efeitos da cadeia, que a controladora liga e desliga pelo protocolo da própria Zoom (valor 64 ou mais liga). Exige a controladora e o USB Host atualizados.</p>",
+        "en": "<p>These MultiStomps only have MIDI over USB: plug them into the USB Host. The list gets the presets (PC, PRESET 1 to 50), the tuner (CC 74: 127 on, 0 off) and, under <strong>ZOOM EFEITOS</strong>, the ◈ <strong>FX 1</strong>, <strong>FX 2</strong> and <strong>FX 3 Liga/Desliga</strong> (on/off) commands — the first three effects in the chain, which the controller turns on and off using Zoom's own protocol (value 64 or more turns on). Requires the controller and the USB Host to be up to date.</p>",
+        "es": "<p>Estos MultiStomp solo tienen MIDI por USB: conéctalos al USB Host. La lista gana los presets (PC, PRESET 1 a 50), el afinador (CC 74: 127 enciende, 0 apaga) y, bajo <strong>ZOOM EFEITOS</strong>, los comandos ◈ <strong>FX 1</strong>, <strong>FX 2</strong> y <strong>FX 3 Liga/Desliga</strong> (encender/apagar) — los tres primeros efectos de la cadena, que la controladora enciende y apaga con el protocolo de la propia Zoom (valor 64 o más enciende). Requiere la controladora y el USB Host actualizados.</p>"
        }
       },
       {
@@ -7950,9 +9126,9 @@ const MN_CONTENT = {
         "es": "integración"
        },
        "desc": {
-        "pt": "<p>Com <strong>Traduzir Boss MS-3</strong> ligado (CONFIGURAÇÕES › HOST), o USB Host converte os comandos para o formato próprio da Boss.</p>",
-        "en": "<p>With <strong>Translate Boss MS-3</strong> turned on (SETTINGS › HOST), the USB Host converts commands into Boss's own format.</p>",
-        "es": "<p>Con <strong>Traducir Boss MS-3</strong> activado (CONFIGURACIÓN › HOST), el USB Host convierte los comandos al formato propio de Boss.</p>"
+        "pt": "<p>Com <strong>Traduzir Boss MS-3</strong> ligado (CONFIGURAÇÕES › HOST › STATUS), o USB Host converte os comandos para o formato próprio da Boss.</p>",
+        "en": "<p>With <strong>Translate Boss MS-3</strong> turned on (SETTINGS › HOST › STATUS), the USB Host converts commands into Boss's own format.</p>",
+        "es": "<p>Con <strong>Traducir Boss MS-3</strong> activado (CONFIGURACIÓN › HOST › ESTADO), el USB Host convierte los comandos al formato propio de Boss.</p>"
        }
       }
      ],
@@ -7990,9 +9166,9 @@ const MN_CONTENT = {
         "es": "guía"
        },
        "desc": {
-        "pt": "<p>1. O cabo vai da BFMiDi para a pedaleira (MIDI OUT → MIDI IN)?<br>2. O canal do preset é o que a pedaleira escuta?<br>3. Use o <strong>DISPARO MIDI</strong> em CONFIGURAÇÕES › TESTES: se ali funciona, o problema está no preset; se nem ali, no cabo ou no aparelho.<br>4. A pedaleira perde as primeiras mensagens depois de trocar de preset? Use os <strong>TEMPOS DE DISPARO</strong> em CONFIGURAÇÕES › HARDWARE.</p>",
-        "en": "<p>1. Does the cable go from the BFMiDi to the effects unit (MIDI OUT → MIDI IN)?<br>2. Is the preset's channel the one the effects unit listens to?<br>3. Use <strong>MIDI SEND</strong> in SETTINGS › TESTS: if it works there, the problem is in the preset; if it doesn't work even there, it's the cable or the device.<br>4. Does the effects unit miss the first messages after a preset change? Use <strong>SEND TIMING</strong> in SETTINGS › HARDWARE.</p>",
-        "es": "<p>1. ¿El cable va de la BFMiDi a la pedalera (MIDI OUT → MIDI IN)?<br>2. ¿El canal del preset es el que escucha la pedalera?<br>3. Usa el <strong>DISPARO MIDI</strong> en CONFIGURACIÓN › PRUEBAS: si ahí funciona, el problema está en el preset; si ni ahí funciona, está en el cable o en el equipo.<br>4. ¿La pedalera pierde los primeros mensajes después de cambiar de preset? Usa los <strong>TIEMPOS DE ENVÍO</strong> en CONFIGURACIÓN › HARDWARE.</p>"
+        "pt": "<p>1. O cabo vai da BFMiDi para a pedaleira (MIDI OUT → MIDI IN)?<br>2. O canal do preset é o que a pedaleira escuta?<br>3. Use o <strong>DISPARO MIDI</strong> em CONFIGURAÇÕES › TESTES › DISPARO: se ali funciona, o problema está no preset; se nem ali, no cabo ou no aparelho.<br>4. A pedaleira perde as primeiras mensagens depois de trocar de preset? Use os <strong>TEMPOS DE DISPARO</strong> em CONFIGURAÇÕES › HARDWARE › TEMPOS.</p>",
+        "en": "<p>1. Does the cable go from the BFMiDi to the effects unit (MIDI OUT → MIDI IN)?<br>2. Is the preset's channel the one the effects unit listens to?<br>3. Use <strong>MIDI SEND</strong> in SETTINGS › TESTS › SEND: if it works there, the problem is in the preset; if it doesn't work even there, it's the cable or the device.<br>4. Does the effects unit miss the first messages after a preset change? Use <strong>SEND TIMING</strong> in SETTINGS › HARDWARE › TIMING.</p>",
+        "es": "<p>1. ¿El cable va de la BFMiDi a la pedalera (MIDI OUT → MIDI IN)?<br>2. ¿El canal del preset es el que escucha la pedalera?<br>3. Usa el <strong>DISPARO MIDI</strong> en CONFIGURACIÓN › PRUEBAS › ENVÍO: si ahí funciona, el problema está en el preset; si ni ahí funciona, está en el cable o en el equipo.<br>4. ¿La pedalera pierde los primeros mensajes después de cambiar de preset? Usa los <strong>TIEMPOS DE ENVÍO</strong> en CONFIGURACIÓN › HARDWARE › TIEMPOS.</p>"
        }
       },
       {
@@ -8024,9 +9200,9 @@ const MN_CONTENT = {
         "es": "guía"
        },
        "desc": {
-        "pt": "<p>Confira se ele não está em MUTE e se você está no modo certo (PRESET × LIVE). No modo PRESET, veja a <strong>CHAMADA DE PRESETS</strong>: o gesto pode estar em NENHUM, e ENTRAR EM MODO LIVE só funciona no footswitch do preset ativo. O editor do Kemper aberto pausa os footswitches (segure um por 2 s para sair). Confira também o modelo em HARDWARE.</p>",
-        "en": "<p>Check that it isn't set to MUTE and that you're in the right mode (PRESET × LIVE). In PRESET mode, look at <strong>PRESET CALL</strong>: the gesture may be set to NONE, and ENTER LIVE MODE only works on the active preset's footswitch. An open Kemper editor pauses the footswitches (hold one for 2 s to exit). Also check the model in HARDWARE.</p>",
-        "es": "<p>Verifica que no esté en MUTE y que estés en el modo correcto (PRESET × LIVE). En el modo PRESET, revisa la <strong>LLAMADA DE PRESETS</strong>: el gesto puede estar en NINGUNO, y ENTRAR EN MODO LIVE solo funciona en el footswitch del preset activo. El editor del Kemper abierto pausa los footswitches (mantén uno presionado 2 s para salir). Revisa también el modelo en HARDWARE.</p>"
+        "pt": "<p>Confira se o canal do comando não está em OFF (ou o modo em MUTE, nos presets antigos) e se você está no modo certo (PRESET × LIVE). No modo PRESET, veja a <strong>CHAMADA DE PRESETS</strong>: o gesto pode estar em NENHUM, e ENTRAR EM MODO LIVE só funciona no footswitch do preset ativo. Confira também o modelo em HARDWARE.</p>",
+        "en": "<p>Check that the command's channel isn't OFF (or the mode set to MUTE, in older presets) and that you're in the right mode (PRESET × LIVE). In PRESET mode, look at <strong>PRESET CALL</strong>: the gesture may be set to NONE, and ENTER LIVE MODE only works on the active preset's footswitch. Also check the model in HARDWARE.</p>",
+        "es": "<p>Verifica que el canal del comando no esté en OFF (o el modo en MUTE, en los presets antiguos) y que estés en el modo correcto (PRESET × LIVE). En el modo PRESET, revisa la <strong>LLAMADA DE PRESETS</strong>: el gesto puede estar en NINGUNO, y ENTRAR EN MODO LIVE solo funciona en el footswitch del preset activo. Revisa también el modelo en HARDWARE.</p>"
        }
       },
       {
@@ -8058,9 +9234,43 @@ const MN_CONTENT = {
         "es": "guía"
        },
        "desc": {
-        "pt": "<p>Veja a barra de memória em CONFIGURAÇÕES › IMAGENS: imagens e ícones dividem o mesmo espaço. Apague o que não usa, confira o tamanho do arquivo (até 50 KB por imagem, 30 KB por ícone) e prefira o cabo USB.</p>",
-        "en": "<p>Check the memory bar in SETTINGS › IMAGES: images and icons share the same space. Delete what you don't use, check the file size (up to 50 KB per image, 30 KB per icon) and use the USB cable when you can.</p>",
-        "es": "<p>Mira la barra de memoria en CONFIGURACIÓN › IMÁGENES: las imágenes y los íconos comparten el mismo espacio. Borra lo que no usas, revisa el tamaño del archivo (hasta 50 KB por imagen, 30 KB por ícono) y prefiere el cable USB.</p>"
+        "pt": "<p>Veja a barra <strong>LIMITE DE IMAGENS E ÍCONES</strong> em CONFIGURAÇÕES › IMAGENS: imagens e ícones dividem o mesmo espaço. Apague o que não usa, confira o tamanho do arquivo (até 50 KB por imagem, 30 KB por ícone) e prefira o cabo USB.</p>",
+        "en": "<p>Check the <strong>IMAGE &amp; ICON LIMIT</strong> bar in SETTINGS › IMAGES: images and icons share the same space. Delete what you don't use, check the file size (up to 50 KB per image, 30 KB per icon) and use the USB cable when you can.</p>",
+        "es": "<p>Mira la barra <strong>LÍMITE DE IMÁGENES E ÍCONOS</strong> en CONFIGURACIÓN › IMÁGENES: las imágenes y los íconos comparten el mismo espacio. Borra lo que no usas, revisa el tamaño del archivo (hasta 50 KB por imagen, 30 KB por ícono) y prefiere el cable USB.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "MEMÓRIA CHEIA ao salvar",
+        "en": "MEMORY FULL when saving",
+        "es": "MEMORIA LLENA al guardar"
+       },
+       "type": {
+        "pt": "roteiro",
+        "en": "checklist",
+        "es": "guía"
+       },
+       "desc": {
+        "pt": "<p>Quando a controladora recusa uma gravação por falta de espaço, o editor abre a janela <strong>MEMÓRIA CHEIA</strong>. Presets, imagens e ícones dividem a mesma memória: toque no botão da janela, apague imagens ou ícones que não usa e faça a alteração de novo — a que foi recusada não ficou gravada.</p>",
+        "en": "<p>When the controller refuses to save for lack of space, the editor opens the <strong>MEMORY FULL</strong> window. Presets, images and icons share the same memory: tap the window's button, delete images or icons you don't use and make the change again — the refused one wasn't saved.</p>",
+        "es": "<p>Cuando la controladora rechaza una grabación por falta de espacio, el editor abre la ventana <strong>MEMORIA LLENA</strong>. Presets, imágenes e íconos comparten la misma memoria: toca el botón de la ventana, borra imágenes o íconos que no usas y vuelve a hacer el cambio — el rechazado no quedó grabado.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "O editor ficou na versão antiga depois de atualizar",
+        "en": "The editor stayed on the old version after updating",
+        "es": "El editor quedó en la versión antigua después de actualizar"
+       },
+       "type": {
+        "pt": "roteiro",
+        "en": "checklist",
+        "es": "guía"
+       },
+       "desc": {
+        "pt": "<p>Abrindo o editor pelo pedal (<code>http://192.168.4.1</code> ou <code>http://bfmidi.local</code>), ele confere sozinho a versão e recarrega se o celular guardou a antiga. Se mesmo assim continuar igual, recarregue a página uma vez. Nos aplicativos, quem atualiza o editor é a loja.</p>",
+        "en": "<p>When you open the editor from the pedal (<code>http://192.168.4.1</code> or <code>http://bfmidi.local</code>), it checks the version by itself and reloads if the phone kept the old one. If it still looks the same, reload the page once. In the apps, the store updates the editor.</p>",
+        "es": "<p>Al abrir el editor desde el pedal (<code>http://192.168.4.1</code> o <code>http://bfmidi.local</code>), comprueba la versión solo y recarga si el celular guardó la antigua. Si aun así sigue igual, recarga la página una vez. En las apps, quien actualiza el editor es la tienda.</p>"
        }
       },
       {
@@ -8075,9 +9285,9 @@ const MN_CONTENT = {
         "es": "guía"
        },
        "desc": {
-        "pt": "<p>Modelo errado deixa a tela e os footswitches sem resposta. Conecte pelo Wi-Fi ou pelo cabo e escolha o modelo certo em CONFIGURAÇÕES › HARDWARE — inclusive depois de <strong>APAGAR CONFIG GLOBAL</strong>, que volta o modelo ao padrão.</p>",
-        "en": "<p>The wrong model leaves the screen and the footswitches unresponsive. Connect over Wi-Fi or the cable and choose the right model in SETTINGS › HARDWARE — including after <strong>ERASE GLOBAL CONFIG</strong>, which resets the model to the default.</p>",
-        "es": "<p>Un modelo equivocado deja la pantalla y los footswitches sin respuesta. Conéctate por Wi-Fi o por cable y elige el modelo correcto en CONFIGURACIÓN › HARDWARE — incluso después de <strong>BORRAR CONFIG GLOBAL</strong>, que devuelve el modelo al predeterminado.</p>"
+        "pt": "<p>Modelo errado deixa a tela e os footswitches sem resposta. Conecte pelo Wi-Fi ou pelo cabo e escolha o modelo certo em CONFIGURAÇÕES › HARDWARE › MODELO — inclusive depois de <strong>APAGAR CONFIG GLOBAL</strong>, que volta o modelo ao padrão.</p>",
+        "en": "<p>The wrong model leaves the screen and the footswitches unresponsive. Connect over Wi-Fi or the cable and choose the right model in SETTINGS › HARDWARE › MODEL — including after <strong>ERASE GLOBAL CONFIG</strong>, which resets the model to the default.</p>",
+        "es": "<p>Un modelo equivocado deja la pantalla y los footswitches sin respuesta. Conéctate por Wi-Fi o por cable y elige el modelo correcto en CONFIGURACIÓN › HARDWARE › MODELO — incluso después de <strong>BORRAR CONFIG GLOBAL</strong>, que devuelve el modelo al predeterminado.</p>"
        }
       }
      ],

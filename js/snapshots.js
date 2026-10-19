@@ -1,4 +1,4 @@
-/* BFMiDi · Manual — PRINTS do editor (v14.5).
+/* BFMiDi · Manual — PRINTS do editor (v15.0).
    Gerado por tools/capture_shots.mjs. NAO editar a mao: quando a tela
    do editor mudar, rode a captura de novo.
    { img, light?, w, h, kind?, hot: { seletor: [x, y, w, h] em fracao } } */
@@ -31,13 +31,13 @@ const MN_SHOTS = {
    ],
    ".bf-studio-np-pill-l.is-pc": [
     0.3563,
-    0.1456,
+    0.2008,
     0.0391,
     0.0489
    ],
    ".bf-studio-np-ch-row": [
     0.3555,
-    0.2067,
+    0.2619,
     0.2891,
     0.0511
    ],
@@ -119,74 +119,68 @@ const MN_SHOTS = {
  "preset-principal": {
   "img": "img/shots/preset-principal.webp",
   "w": 404,
-  "h": 813,
+  "h": 863,
   "hot": {
    ".bf-studio-np-pill-l.is-pc": [
     0.0446,
-    0.1292,
+    0.1792,
     0.1238,
-    0.0541
+    0.051
    ],
    ".bf-studio-np-ch-row": [
     0.0421,
-    0.1968,
+    0.243,
     0.9158,
-    0.0566
+    0.0533
    ],
    ".bf-studio-np-extras-btn": [
     0.75,
-    0.1968,
+    0.243,
     0.2079,
-    0.0566
+    0.0533
    ],
    ".bf-np-shortcut.is-accent": [
     0.0668,
-    0.2952,
+    0.3357,
     0.8663,
-    0.1033
+    0.0973
    ],
    ".bf-np-shortcut.is-device": [
     0.0668,
-    0.4108,
+    0.4446,
     0.2723,
-    0.1009
+    0.095
    ],
    ".bf-np-shortcut:not(.is-accent):not(.is-device)": [
     0.6609,
-    0.4108,
+    0.4446,
     0.2723,
-    0.1009
+    0.095
    ]
   }
  },
  "preset-display": {
   "img": "img/shots/preset-display.webp",
-  "w": 388,
-  "h": 859,
+  "w": 404,
+  "h": 570,
   "hot": {
    ".bf-grid-screen": [
-    0.0361,
-    0.0163,
-    0.9278,
-    0.3702
+    0.0347,
+    0.0246,
+    0.9307,
+    0.95
    ],
-   ".bf-grid-nome": [
-    0.0361,
-    0.3981,
-    0.9278,
-    0.2061
+   ".bf-dcfg-open": [
+    0.0347,
+    0.6342,
+    0.9307,
+    0.0912
    ],
-   ".bf-grid-aparencia": [
-    0.0361,
-    0.6042,
-    0.9278,
-    0.1537
-   ],
-   ".bf-grid-cores": [
-    0.0361,
-    0.7579,
-    0.9278,
-    0.2251
+   ".bf-dcfg-sum": [
+    0.0347,
+    0.743,
+    0.9307,
+    0.2316
    ]
   }
  },
@@ -243,12 +237,6 @@ const MN_SHOTS = {
   "img": "img/shots/preset-acoes.webp",
   "w": 576,
   "h": 290,
-  "hot": {}
- },
- "preset-posicionar": {
-  "img": "img/shots/preset-posicionar.webp",
-  "w": 420,
-  "h": 559,
   "hot": {}
  },
  "live-tela": {
@@ -316,98 +304,98 @@ const MN_SHOTS = {
  "sw-picker": {
   "img": "img/shots/sw-picker.webp",
   "w": 440,
-  "h": 596,
+  "h": 627,
   "hot": {}
  },
  "sw-stomp": {
   "img": "img/shots/sw-stomp.webp",
   "w": 404,
-  "h": 471,
+  "h": 545,
   "hot": {
    ".bf-sw-fx2-tabs": [
     0.0569,
-    0.242,
+    0.2794,
     0.8861,
-    0.0977
+    0.0844
    ],
    ".bf-typebtn-row": [
     0.0619,
-    0.3737,
+    0.3931,
     0.8762,
-    0.1359
+    0.1174
    ],
    ".bf-sw-fx1-chrow": [
     0.0619,
-    0.5435,
+    0.5399,
     0.8762,
-    0.1359
+    0.1174
    ],
    ".bf-sw-opt-card": [
     0.0619,
-    0.7134,
+    0.6867,
     0.8762,
-    0.2293
+    0.1982
    ]
   }
  },
  "sw-spin": {
   "img": "img/shots/sw-spin.webp",
   "w": 404,
-  "h": 1181,
+  "h": 1237,
   "hot": {}
  },
  "sw-ramp": {
   "img": "img/shots/sw-ramp.webp",
   "w": 404,
-  "h": 1028,
+  "h": 1084,
   "hot": {}
  },
  "sw-momentary": {
   "img": "img/shots/sw-momentary.webp",
   "w": 404,
-  "h": 834,
+  "h": 908,
   "hot": {}
  },
  "sw-macros": {
   "img": "img/shots/sw-macros.webp",
   "w": 404,
-  "h": 601,
+  "h": 735,
   "hot": {}
  },
  "sw-tap": {
   "img": "img/shots/sw-tap.webp",
   "w": 404,
-  "h": 839,
+  "h": 895,
   "hot": {}
  },
  "sw-single": {
   "img": "img/shots/sw-single.webp",
   "w": 404,
-  "h": 757,
+  "h": 895,
   "hot": {}
  },
  "sw-steps": {
   "img": "img/shots/sw-steps.webp",
   "w": 404,
-  "h": 1348,
+  "h": 1422,
   "hot": {}
  },
  "sw-control": {
   "img": "img/shots/sw-control.webp",
   "w": 404,
-  "h": 491,
+  "h": 565,
   "hot": {}
  },
  "sw-mute": {
   "img": "img/shots/sw-mute.webp",
   "w": 404,
-  "h": 335,
+  "h": 356,
   "hot": {}
  },
  "sw-custom": {
   "img": "img/shots/sw-custom.webp",
   "w": 404,
-  "h": 727,
+  "h": 801,
   "hot": {}
  },
  "preset-atalhos": {
@@ -417,13 +405,13 @@ const MN_SHOTS = {
   "hot": {
    ".bf-np-shortcut.is-gp5": [
     0.0466,
-    0.1931,
+    0.1943,
     0.285,
     0.1414
    ],
    ".bf-np-shortcut.is-tonex": [
     0.3575,
-    0.1931,
+    0.1943,
     0.285,
     0.1414
    ]
@@ -479,9 +467,9 @@ const MN_SHOTS = {
   "hot": {
    ".bf-stage-name-big": [
     0.0507,
-    0.1499,
+    0.1409,
     0.4186,
-    0.2867
+    0.3049
    ],
    ".bf-stage-img": [
     0.5,
@@ -515,59 +503,59 @@ const MN_SHOTS = {
   "h": 900,
   "hot": {
    ".bf-stage-top .bf-stage-pill:first-child": [
-    0.2051,
+    0.1958,
     0.0153,
-    0.0725,
+    0.0708,
     0.0467
    ],
    ".bf-stage-view": [
-    0.2839,
+    0.2729,
     0.0153,
-    0.0976,
+    0.1356,
     0.0467
    ],
    ".bf-stage-pill.is-tag": [
-    0.3877,
+    0.4147,
     0.0153,
-    0.0832,
+    0.0815,
     0.0467
    ],
    ".bf-stage-top button[aria-haspopup='dialog']": [
-    0.4772,
+    0.5025,
     0.0153,
-    0.1447,
+    0.1385,
     0.0467
    ],
    ".bf-stage-status": [
-    0.6281,
+    0.6472,
     0.0153,
-    0.1667,
+    0.157,
     0.0467
    ]
   }
  },
  "stage-set-p1": {
   "img": "img/shots/stage-set-p1.webp",
-  "w": 760,
-  "h": 849,
+  "w": 1280,
+  "h": 900,
   "hot": {}
  },
  "stage-set-geral": {
   "img": "img/shots/stage-set-geral.webp",
-  "w": 760,
-  "h": 674,
+  "w": 1280,
+  "h": 900,
   "hot": {}
  },
  "stage-set-visual": {
   "img": "img/shots/stage-set-visual.webp",
-  "w": 760,
-  "h": 849,
+  "w": 1280,
+  "h": 900,
   "hot": {}
  },
  "stage-set-p2": {
   "img": "img/shots/stage-set-p2.webp",
-  "w": 760,
-  "h": 784,
+  "w": 1280,
+  "h": 900,
   "hot": {}
  },
  "stage-2": {
@@ -621,8 +609,8 @@ const MN_SHOTS = {
  },
  "stage-set-img": {
   "img": "img/shots/stage-set-img.webp",
-  "w": 760,
-  "h": 849,
+  "w": 1280,
+  "h": 900,
   "hot": {}
  },
  "stage-land": {
@@ -701,7 +689,7 @@ const MN_SHOTS = {
    ],
    ".bf-np-shortcuts": [
     0.0744,
-    0.5752,
+    0.6341,
     0.8513,
     0.4481
    ],
@@ -729,13 +717,13 @@ const MN_SHOTS = {
     0.0186,
     0.1857,
     0.2458,
-    0.0833
+    0.1044
    ],
    ".bf-deved-chain": [
     0.0186,
-    0.2839,
+    0.305,
     0.2458,
-    0.5298
+    0.5087
    ],
    ".bf-deved-actions": [
     0.0186,
@@ -754,7 +742,7 @@ const MN_SHOTS = {
  "cfg-kemper": {
   "img": "img/shots/cfg-kemper.webp",
   "w": 668,
-  "h": 1046,
+  "h": 483,
   "hot": {}
  },
  "cfg-menu": {
@@ -766,110 +754,182 @@ const MN_SHOTS = {
  "cfg-amigavel": {
   "img": "img/shots/cfg-amigavel.webp",
   "w": 696,
-  "h": 802,
+  "h": 588,
   "hot": {}
  },
  "cfg-footswitches": {
   "img": "img/shots/cfg-footswitches.webp",
   "w": 696,
-  "h": 1134,
+  "h": 568,
   "hot": {}
  },
  "cfg-exp": {
   "img": "img/shots/cfg-exp.webp",
   "w": 668,
-  "h": 724,
+  "h": 1024,
   "hot": {}
  },
  "cfg-bancos": {
   "img": "img/shots/cfg-bancos.webp",
   "w": 696,
-  "h": 1449,
+  "h": 1158,
   "hot": {}
  },
  "cfg-tela": {
   "img": "img/shots/cfg-tela.webp",
   "w": 696,
-  "h": 1313,
+  "h": 748,
   "hot": {}
  },
  "cfg-leds": {
   "img": "img/shots/cfg-leds.webp",
   "w": 696,
-  "h": 1105,
-  "hot": {}
- },
- "cfg-imagens-galeria": {
-  "img": "img/shots/cfg-imagens-galeria.webp",
-  "w": 696,
-  "h": 722,
+  "h": 483,
   "hot": {}
  },
  "cfg-hardware": {
   "img": "img/shots/cfg-hardware.webp",
   "w": 696,
-  "h": 1095,
+  "h": 527,
   "hot": {}
  },
  "cfg-wifi": {
   "img": "img/shots/cfg-wifi.webp",
   "w": 696,
-  "h": 1016,
+  "h": 393,
   "hot": {
    ".bf-wifi-state-grid, [class*='wifi-state']": [
     0.0503,
-    0.2269,
+    0.5939,
     0.8994,
-    0.1142
+    0.2952
    ]
   }
  },
  "cfg-host": {
   "img": "img/shots/cfg-host.webp",
   "w": 696,
-  "h": 2255,
+  "h": 836,
   "hot": {}
  },
  "cfg-bluetooth": {
   "img": "img/shots/cfg-bluetooth.webp",
   "w": 696,
-  "h": 992,
+  "h": 460,
   "hot": {}
  },
  "cfg-editor": {
   "img": "img/shots/cfg-editor.webp",
   "w": 696,
-  "h": 1624,
+  "h": 1079,
   "hot": {}
  },
  "cfg-atualizar": {
   "img": "img/shots/cfg-atualizar.webp",
   "w": 696,
-  "h": 669,
+  "h": 624,
   "hot": {}
  },
  "cfg-atualizar-host": {
   "img": "img/shots/cfg-atualizar-host.webp",
   "w": 696,
-  "h": 1008,
+  "h": 982,
   "hot": {}
  },
  "cfg-backup": {
   "img": "img/shots/cfg-backup.webp",
   "w": 696,
-  "h": 1224,
+  "h": 567,
   "hot": {}
  },
  "cfg-testes": {
   "img": "img/shots/cfg-testes.webp",
   "w": 696,
-  "h": 1507,
+  "h": 532,
   "hot": {}
  },
  "cfg-restaurar": {
   "img": "img/shots/cfg-restaurar.webp",
   "w": 696,
-  "h": 237,
+  "h": 345,
+  "hot": {}
+ },
+ "stage-set-perfis": {
+  "img": "img/shots/stage-set-perfis.webp",
+  "w": 1280,
+  "h": 900,
+  "hot": {}
+ },
+ "stage-fav": {
+  "img": "img/shots/stage-fav.webp",
+  "w": 1280,
+  "h": 900,
+  "hot": {}
+ },
+ "cfg-afinador": {
+  "img": "img/shots/cfg-afinador.webp",
+  "w": 696,
+  "h": 888,
+  "hot": {}
+ },
+ "cfg-user": {
+  "img": "img/shots/cfg-user.webp",
+  "w": 696,
+  "h": 853,
+  "hot": {}
+ },
+ "cfg-chamada": {
+  "img": "img/shots/cfg-chamada.webp",
+  "w": 696,
+  "h": 782,
+  "hot": {}
+ },
+ "cfg-combos": {
+  "img": "img/shots/cfg-combos.webp",
+  "w": 696,
+  "h": 1357,
+  "hot": {}
+ },
+ "cfg-imagens": {
+  "img": "img/shots/cfg-imagens.webp",
+  "w": 696,
+  "h": 685,
+  "hot": {}
+ },
+ "cfg-wifi-conectar": {
+  "img": "img/shots/cfg-wifi-conectar.webp",
+  "w": 696,
+  "h": 892,
+  "hot": {}
+ },
+ "preset-configurar-display": {
+  "img": "img/shots/preset-configurar-display.webp",
+  "w": 1180,
+  "h": 780,
+  "hot": {}
+ },
+ "sw-increment": {
+  "img": "img/shots/sw-increment.webp",
+  "w": 404,
+  "h": 1328,
+  "hot": {}
+ },
+ "sw-spring": {
+  "img": "img/shots/sw-spring.webp",
+  "w": 404,
+  "h": 765,
+  "hot": {}
+ },
+ "sw-wave": {
+  "img": "img/shots/sw-wave.webp",
+  "w": 404,
+  "h": 1531,
+  "hot": {}
+ },
+ "stage-swedit": {
+  "img": "img/shots/stage-swedit.webp",
+  "w": 1280,
+  "h": 900,
   "hot": {}
  }
 };

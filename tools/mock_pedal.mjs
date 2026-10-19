@@ -59,6 +59,11 @@ export function buildDemoSeed(seedPath = path.join(REPO, 'production', 'backup_p
     combo_4_5_tap: '5',           // DESCER BANCO
     combo_5_6_tap: '4',           // SUBIR BANCO
     auto_start_enabled: '1',
+    // chaves do firmware atual que o pacote de fábrica não traz: sem elas o
+    // editor mostra "atualize o firmware" no card ENTRADA AUTOMÁTICA NO LIVE
+    auto_live: '0', auto_live_ms: '2000',
+    // idem no card BANK NA TROCA DE PRESET (GLOBAL > TELA > GERAL)
+    preset_card: '0', preset_card_ms: '2000',
     exp_enabled: '1', exp_cc: '7', exp_channel: '1',
   });
   return b;
@@ -105,7 +110,9 @@ export async function startMockPedal({ port = 8932, seedPath, quiet = false } = 
   const identity = {
     '/ping': () => ({ ok: true, product: 'BFMIDI', device_id: 'A1B2C3', mdns: 'bfmidi.local',
       mdns_short: 'bfmidi.local', via_ap: false }),
-    '/version': () => ({ fw: '14.5', webapp: '14.5', chip: 's3', board: 'BFMIDI-S3 8SW+',
+    // BFMIDI_MOCK_FW=14.9 faz o pedal simulado se dizer em dia (pra testar a aba
+    // USB HOST do card ATUALIZACAO, que espera a controladora atualizada).
+    '/version': () => ({ fw: process.env.BFMIDI_MOCK_FW || '14.5', webapp: process.env.BFMIDI_MOCK_FW || '14.5', chip: 's3', board: 'BFMIDI-S3 8SW+',
       ota: true, usb_ota: true, usb_fs_write: true, running: 'ota_0', ota_max: 3670016,
       fs_total: 5242880, fs_used: 1182000 }),
     '/wifi/status': () => ({ product: 'BFMIDI', device_id: 'A1B2C3', mdns: 'bfmidi.local',
@@ -167,6 +174,14 @@ export async function startMockPedal({ port = 8932, seedPath, quiet = false } = 
         if (r != null) return send((mock.MOCK_STATUS && r[mock.MOCK_STATUS]) || 200, r);
       }
       if (identity[u.pathname]) return send(200, identity[u.pathname]());
+      // Tela "ATUALIZANDO" pedida pelo editor (POST /update/screen, 14.9+):
+      // o pedal simulado só registra no console (serve pra conferir que o
+      // editor chama a rota nos momentos certos).
+      if (u.pathname === '/update/screen') {
+        const a = { ...Object.fromEntries(u.searchParams), ...bodyObj };
+        if (!quiet) console.log(`[tela] /update/screen text=${a.text || '?'} pct=${a.pct ?? '?'}`);
+        return send(200, { ok: true });
+      }
       if (u.pathname === '/log') {
         res.writeHead(200, { ...CORS, 'content-type': 'text/plain' }).end('');
         return;
