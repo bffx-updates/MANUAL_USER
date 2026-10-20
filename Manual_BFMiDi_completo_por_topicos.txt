@@ -1134,8 +1134,11 @@ Introdução: O MODO PALCO transforma o editor num painel para o show. São trê
         você pode ligar e desligar com o dedo — e o PALCO ESPECIAL mostra o pedal dedicado plugado
         na controladora — a cadeia de efeitos e os knobs da GP-5, da TONEX ONE ou da Nano Cortex,
         editáveis ao vivo — e o SETLIST mostra a música do show, as partes dela e as anotações.
-        O Modo Palco existe só nos aplicativos da BFMiDi (Android, iPhone/iPad, Mac e Windows). No
-        editor aberto pelo navegador — pela controladora ou pelo site — ele não aparece.
+        O Modo Palco existe nos aplicativos da BFMiDi (Android, iPhone/iPad, Mac e Windows) e no
+        editor do site, inclusive instalado como ícone. O único lugar onde ele não aparece é o
+        editor aberto pela própria controladora (http://192.168.4.1 ou http://bfmidi.local). No
+        site, o palco fala com o pedal pelo cabo USB (Chrome ou Edge no computador); sem cabo, abre
+        no modo offline.
         As configurações do palco (cores, fonte, imagens) ficam só no aparelho onde você abriu: nada
         disso vai para a controladora.
 
@@ -1438,9 +1441,9 @@ Campos e itens:
 7.11. As imagens do palco
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 Tela/preview relacionado: IMAGEM DO PALCO E RECORTE
-Objetivo: Nos aplicativos, o fundo do PALCO BFMIDI pode ser a imagem da controladora, uma imagem da
-          galeria do app ou uma foto sua. O recorte vale em qualquer caso. A mesma imagem é a do
-          fundo de tela cheia, do layout Pôster e da opção Imagem atrás do preset.
+Objetivo: Nos aplicativos e no site, o fundo do PALCO BFMIDI pode ser a imagem da controladora, uma
+          imagem da galeria do app ou uma foto sua. O recorte vale em qualquer caso. A mesma imagem
+          é a do fundo de tela cheia, do layout Pôster e da opção Imagem atrás do preset.
 Como fazer:
 1. Em CONFIGURAÇÕES, abra a categoria IMAGENS.
 2. Escolha se vale para TODOS OS PRESETS ou SÓ O A1 (o preset atual).
@@ -1453,11 +1456,10 @@ Campos e itens:
              foto.
 - Galeria do app (apps)
   Descrição: Fundos prontos (aço, luzes, fumaça, galáxia, holofotes, neon, pôr do sol, tablado) que
-             vêm dentro dos aplicativos.
-- Só nos aplicativos (limitação)
-  Descrição: O Modo Palco não aparece no editor aberto pelo navegador (pela controladora ou pelo
-             site). Ele existe só nos aplicativos, onde a galeria e as fotos estão sempre
-             disponíveis.
+             vêm com o editor, nos aplicativos e no site.
+- Fora da controladora (limitação)
+  Descrição: O Modo Palco não aparece no editor aberto pela própria controladora. Nos aplicativos e
+             no site ele está completo, com a galeria e as suas fotos.
 - Recorte (ajuste)
   Descrição: Cada imagem guarda o seu enquadramento: arraste para escolher o ponto, use o zoom (100
              a 300%) e CENTRALIZAR para voltar ao meio.
@@ -1506,8 +1508,8 @@ Campos e itens:
   Descrição: REALISTA troca os knobs e as chaves por imagens de equipamento de verdade, deixa os
              blocos da cadeia sem moldura e põe uma chapa de metal atrás dos knobs, dos blocos e do
              nome do preset. Escolha o estilo (MODERNO ou CLÁSSICO), o knob (REDONDO ou CHICKEN
-             HEAD) e se quer os Painéis de metal. No REALISTA o Estilo dos knobs fica apagado. Só
-             nos aplicativos.
+             HEAD) e se quer os Painéis de metal. No REALISTA o Estilo dos knobs fica apagado. Nos
+             aplicativos e no site.
 - Visual do aparelho (tema)
   Descrição: Ligado, cada aparelho usa as suas cores e o seu estilo. Desligado, o PALCO ESPECIAL
              segue a categoria VISUAL. Com Com o meu fundo e destaque ligado, ficam a fonte e o
@@ -1656,8 +1658,8 @@ Campos e itens:
 Objetivo: O banco de músicas mora só no aparelho, então ele tem um backup próprio, separado do
           backup da controladora.
 Como fazer:
-1. Na aba BACKUP do editor do setlist (ou em CONFIGURAÇÕES › BACKUP › SETLIST, nos aplicativos),
-   toque em BACKUP COMPLETO e guarde o arquivo.
+1. Na aba BACKUP do editor do setlist (ou em CONFIGURAÇÕES › BACKUP › SETLIST, nos aplicativos e no
+   site), toque em BACKUP COMPLETO e guarde o arquivo.
 2. Para voltar, ABRIR ARQUIVO: o app mostra um resumo (músicas e setlists novos, iguais e
    diferentes) antes de mexer em qualquer coisa, e oferece DESFAZER RESTAURAÇÃO no fim. O mesmo
    botão recebe os arquivos feitos no editor do site (próximo card).
@@ -2346,8 +2348,8 @@ Campos e itens:
              Desligado, nada é gravado até você tocar em salvar — e sair do preset descarta a
              alteração.
 - MODO PALCO (aba GERAL)
-  Descrição: Só nos aplicativos: em qual palco o Modo Palco abre — PALCO BFMIDI (o padrão), PALCO
-             ESPECIAL ou O ÚLTIMO USADO.
+  Descrição: Nos aplicativos e no site: em qual palco o Modo Palco abre — PALCO BFMIDI (o padrão),
+             PALCO ESPECIAL ou O ÚLTIMO USADO.
 - TEMA (aba APARÊNCIA)
   Descrição: CLARO ou ESCURO.
 - IDIOMA DA INTERFACE (aba APARÊNCIA)

@@ -4196,9 +4196,9 @@ const MN_CONTENT = {
     "es": "Una pantalla completa, en horizontal y con letras grandes para dejar el celular o la tablet en el atril durante el show: el preset que está sonando, los footswitches y el aparato conectado."
    },
    "intro": {
-    "pt": "<p>O <strong>MODO PALCO</strong> transforma o editor num painel para o show. São três telas: o <strong>PALCO BFMIDI</strong> mostra a BFMiDi — o nome do preset em letra enorme, a imagem de fundo e os footswitches, que você pode ligar e desligar com o dedo — e o <strong>PALCO ESPECIAL</strong> mostra o pedal dedicado plugado na controladora — a cadeia de efeitos e os knobs da GP-5, da TONEX ONE ou da Nano Cortex, editáveis ao vivo — e o <strong>SETLIST</strong> mostra a música do show, as partes dela e as anotações.</p><p>O Modo Palco existe <strong>só nos aplicativos</strong> da BFMiDi (Android, iPhone/iPad, Mac e Windows). No editor aberto pelo navegador — pela controladora ou pelo site — ele não aparece.</p><p>As configurações do palco (cores, fonte, imagens) ficam só no aparelho onde você abriu: nada disso vai para a controladora.</p>",
-    "en": "<p><strong>STAGE MODE</strong> turns the editor into a panel for the show. There are three screens: the <strong>BFMIDI STAGE</strong> shows the BFMiDi — the preset name in huge letters, the background image and the footswitches, which you can turn on and off with your finger — and the <strong>SPECIAL STAGE</strong> shows the dedicated pedal plugged into the controller — the effect chain and the knobs of the GP-5, the TONEX ONE or the Nano Cortex, editable live — and the <strong>SETLIST</strong> shows the song of the show, its parts and notes.</p><p>Stage Mode exists <strong>only in the BFMiDi apps</strong> (Android, iPhone/iPad, Mac and Windows). In the editor opened in a browser — from the controller or from the website — it does not appear.</p><p>The stage settings (colors, font, images) stay only on the device where you opened it: none of it goes to the controller.</p>",
-    "es": "<p>El <strong>MODO ESCENARIO</strong> convierte el editor en un panel para el show. Son tres pantallas: el <strong>ESCENARIO BFMIDI</strong> muestra la BFMiDi — el nombre del preset en letras enormes, la imagen de fondo y los footswitches, que puedes encender y apagar con el dedo — y el <strong>ESCENARIO ESPECIAL</strong> muestra el pedal dedicado conectado a la controladora — la cadena de efectos y los knobs de la GP-5, la TONEX ONE o la Nano Cortex, editables en vivo — y el <strong>SETLIST</strong> muestra la canción del show, sus partes y las notas.</p><p>El Modo Escenario existe <strong>solo en las apps</strong> de la BFMiDi (Android, iPhone/iPad, Mac y Windows). En el editor abierto en el navegador — desde la controladora o desde el sitio web — no aparece.</p><p>La configuración del escenario (colores, fuente, imágenes) queda solo en el aparato donde lo abriste: nada de esto va a la controladora.</p>"
+    "pt": "<p>O <strong>MODO PALCO</strong> transforma o editor num painel para o show. São três telas: o <strong>PALCO BFMIDI</strong> mostra a BFMiDi — o nome do preset em letra enorme, a imagem de fundo e os footswitches, que você pode ligar e desligar com o dedo — e o <strong>PALCO ESPECIAL</strong> mostra o pedal dedicado plugado na controladora — a cadeia de efeitos e os knobs da GP-5, da TONEX ONE ou da Nano Cortex, editáveis ao vivo — e o <strong>SETLIST</strong> mostra a música do show, as partes dela e as anotações.</p><p>O Modo Palco existe nos <strong>aplicativos</strong> da BFMiDi (Android, iPhone/iPad, Mac e Windows) e no <strong>editor do site</strong>, inclusive instalado como ícone. O único lugar onde ele não aparece é o editor aberto pela própria controladora (<code>http://192.168.4.1</code> ou <code>http://bfmidi.local</code>). No site, o palco fala com o pedal pelo <strong>cabo USB</strong> (Chrome ou Edge no computador); sem cabo, abre no modo offline.</p><p>As configurações do palco (cores, fonte, imagens) ficam só no aparelho onde você abriu: nada disso vai para a controladora.</p>",
+    "en": "<p><strong>STAGE MODE</strong> turns the editor into a panel for the show. There are three screens: the <strong>BFMIDI STAGE</strong> shows the BFMiDi — the preset name in huge letters, the background image and the footswitches, which you can turn on and off with your finger — and the <strong>SPECIAL STAGE</strong> shows the dedicated pedal plugged into the controller — the effect chain and the knobs of the GP-5, the TONEX ONE or the Nano Cortex, editable live — and the <strong>SETLIST</strong> shows the song of the show, its parts and notes.</p><p>Stage Mode exists in the BFMiDi <strong>apps</strong> (Android, iPhone/iPad, Mac and Windows) and in the <strong>website editor</strong>, installed as an icon or not. The only place it does not appear is the editor opened from the controller itself (<code>http://192.168.4.1</code> or <code>http://bfmidi.local</code>). On the website, the stage talks to the pedal over the <strong>USB cable</strong> (Chrome or Edge on a computer); without the cable, it opens in offline mode.</p><p>The stage settings (colors, font, images) stay only on the device where you opened it: none of it goes to the controller.</p>",
+    "es": "<p>El <strong>MODO ESCENARIO</strong> convierte el editor en un panel para el show. Son tres pantallas: el <strong>ESCENARIO BFMIDI</strong> muestra la BFMiDi — el nombre del preset en letras enormes, la imagen de fondo y los footswitches, que puedes encender y apagar con el dedo — y el <strong>ESCENARIO ESPECIAL</strong> muestra el pedal dedicado conectado a la controladora — la cadena de efectos y los knobs de la GP-5, la TONEX ONE o la Nano Cortex, editables en vivo — y el <strong>SETLIST</strong> muestra la canción del show, sus partes y las notas.</p><p>El Modo Escenario existe en las <strong>apps</strong> de la BFMiDi (Android, iPhone/iPad, Mac y Windows) y en el <strong>editor del sitio web</strong>, también instalado como icono. El único lugar donde no aparece es el editor abierto desde la propia controladora (<code>http://192.168.4.1</code> o <code>http://bfmidi.local</code>). En el sitio, el escenario habla con el pedal por el <strong>cable USB</strong> (Chrome o Edge en la computadora); sin cable, abre en modo offline.</p><p>La configuración del escenario (colores, fuente, imágenes) queda solo en el aparato donde lo abriste: nada de esto va a la controladora.</p>"
    },
    "cards": [
     {
@@ -5476,9 +5476,9 @@ const MN_CONTENT = {
       "es": "Las imágenes del escenario"
      },
      "purpose": {
-      "pt": "Nos aplicativos, o fundo do PALCO BFMIDI pode ser a imagem da controladora, uma imagem da galeria do app ou uma foto sua. O recorte vale em qualquer caso. A mesma imagem é a do fundo de tela cheia, do layout Pôster e da opção Imagem atrás do preset.",
-      "en": "In the apps, the BFMIDI STAGE background can be the controller's image, an image from the app gallery or one of your own photos. Cropping works in every case. The same image is used by the full-screen background, the Poster layout and the Image behind the preset option.",
-      "es": "En las apps, el fondo del ESCENARIO BFMIDI puede ser la imagen de la controladora, una imagen de la galería de la app o una foto tuya. El recorte vale en cualquier caso. La misma imagen es la del fondo a pantalla completa, del diseño Póster y de la opción Imagen detrás del preset."
+      "pt": "Nos aplicativos e no site, o fundo do PALCO BFMIDI pode ser a imagem da controladora, uma imagem da galeria do app ou uma foto sua. O recorte vale em qualquer caso. A mesma imagem é a do fundo de tela cheia, do layout Pôster e da opção Imagem atrás do preset.",
+      "en": "In the apps and on the website, the BFMIDI STAGE background can be the controller's image, an image from the app gallery or one of your own photos. Cropping works in every case. The same image is used by the full-screen background, the Poster layout and the Image behind the preset option.",
+      "es": "En las apps y en el sitio, el fondo del ESCENARIO BFMIDI puede ser la imagen de la controladora, una imagen de la galería de la app o una foto tuya. El recorte vale en cualquier caso. La misma imagen es la del fondo a pantalla completa, del diseño Póster y de la opción Imagen detrás del preset."
      },
      "howto": [
       {
@@ -5538,16 +5538,16 @@ const MN_CONTENT = {
         "es": "apps"
        },
        "desc": {
-        "pt": "<p>Fundos prontos (aço, luzes, fumaça, galáxia, holofotes, neon, pôr do sol, tablado) que vêm dentro dos aplicativos.</p>",
-        "en": "<p>Ready-made backgrounds (steel, lights, smoke, galaxy, spotlights, neon, sunset, stage floor) that come built into the apps.</p>",
-        "es": "<p>Fondos listos (acero, luces, humo, galaxia, reflectores, neón, atardecer, tarima) que vienen dentro de las apps.</p>"
+        "pt": "<p>Fundos prontos (aço, luzes, fumaça, galáxia, holofotes, neon, pôr do sol, tablado) que vêm com o editor, nos aplicativos e no site.</p>",
+        "en": "<p>Ready-made backgrounds (steel, lights, smoke, galaxy, spotlights, neon, sunset, stage floor) that come with the editor, in the apps and on the website.</p>",
+        "es": "<p>Fondos listos (acero, luces, humo, galaxia, reflectores, neón, atardecer, tarima) que vienen con el editor, en las apps y en el sitio.</p>"
        }
       },
       {
        "name": {
-        "pt": "Só nos aplicativos",
-        "en": "Apps only",
-        "es": "Solo en las apps"
+        "pt": "Fora da controladora",
+        "en": "Outside the controller",
+        "es": "Fuera de la controladora"
        },
        "type": {
         "pt": "limitação",
@@ -5555,9 +5555,9 @@ const MN_CONTENT = {
         "es": "limitación"
        },
        "desc": {
-        "pt": "<p>O Modo Palco não aparece no editor aberto pelo navegador (pela controladora ou pelo site). Ele existe só nos aplicativos, onde a galeria e as fotos estão sempre disponíveis.</p>",
-        "en": "<p>Stage Mode does not appear in the editor opened in a browser (from the controller or from the website). It exists only in the apps, where the gallery and your photos are always available.</p>",
-        "es": "<p>El Modo Escenario no aparece en el editor abierto en el navegador (desde la controladora o desde el sitio web). Existe solo en las apps, donde la galería y tus fotos están siempre disponibles.</p>"
+        "pt": "<p>O Modo Palco não aparece no editor aberto pela própria controladora. Nos aplicativos e no site ele está completo, com a galeria e as suas fotos.</p>",
+        "en": "<p>Stage Mode does not appear in the editor opened from the controller itself. In the apps and on the website it is complete, with the gallery and your photos.</p>",
+        "es": "<p>El Modo Escenario no aparece en el editor abierto desde la propia controladora. En las apps y en el sitio está completo, con la galería y tus fotos.</p>"
        }
       },
       {
@@ -5738,9 +5738,9 @@ const MN_CONTENT = {
         "es": "visual"
        },
        "desc": {
-        "pt": "<p><strong>REALISTA</strong> troca os knobs e as chaves por imagens de equipamento de verdade, deixa os blocos da cadeia sem moldura e põe uma chapa de metal atrás dos knobs, dos blocos e do nome do preset. Escolha o estilo (<strong>MODERNO</strong> ou <strong>CLÁSSICO</strong>), o knob (<strong>REDONDO</strong> ou <strong>CHICKEN HEAD</strong>) e se quer os <strong>Painéis de metal</strong>. No REALISTA o Estilo dos knobs fica apagado. Só nos aplicativos.</p>",
-        "en": "<p><strong>REALISTIC</strong> swaps the knobs and switches for pictures of real gear, leaves the chain blocks without a frame and puts a metal plate behind the knobs, the blocks and the preset name. Choose the style (<strong>MODERN</strong> or <strong>CLASSIC</strong>), the knob (<strong>ROUND</strong> or <strong>CHICKEN HEAD</strong>) and whether you want the <strong>Metal panels</strong>. In REALISTIC, Knob style is greyed out. Apps only.</p>",
-        "es": "<p><strong>REALISTA</strong> cambia los knobs y los interruptores por imágenes de equipos de verdad, deja los bloques de la cadena sin marco y pone una chapa de metal detrás de los knobs, los bloques y el nombre del preset. Elige el estilo (<strong>MODERNO</strong> o <strong>CLÁSICO</strong>), el knob (<strong>REDONDO</strong> o <strong>CHICKEN HEAD</strong>) y si quieres los <strong>Paneles de metal</strong>. En REALISTA el Estilo de los knobs queda apagado. Solo en las apps.</p>"
+        "pt": "<p><strong>REALISTA</strong> troca os knobs e as chaves por imagens de equipamento de verdade, deixa os blocos da cadeia sem moldura e põe uma chapa de metal atrás dos knobs, dos blocos e do nome do preset. Escolha o estilo (<strong>MODERNO</strong> ou <strong>CLÁSSICO</strong>), o knob (<strong>REDONDO</strong> ou <strong>CHICKEN HEAD</strong>) e se quer os <strong>Painéis de metal</strong>. No REALISTA o Estilo dos knobs fica apagado. Nos aplicativos e no site.</p>",
+        "en": "<p><strong>REALISTIC</strong> swaps the knobs and switches for pictures of real gear, leaves the chain blocks without a frame and puts a metal plate behind the knobs, the blocks and the preset name. Choose the style (<strong>MODERN</strong> or <strong>CLASSIC</strong>), the knob (<strong>ROUND</strong> or <strong>CHICKEN HEAD</strong>) and whether you want the <strong>Metal panels</strong>. In REALISTIC, Knob style is greyed out. In the apps and on the website.</p>",
+        "es": "<p><strong>REALISTA</strong> cambia los knobs y los interruptores por imágenes de equipos de verdad, deja los bloques de la cadena sin marco y pone una chapa de metal detrás de los knobs, los bloques y el nombre del preset. Elige el estilo (<strong>MODERNO</strong> o <strong>CLÁSICO</strong>), el knob (<strong>REDONDO</strong> o <strong>CHICKEN HEAD</strong>) y si quieres los <strong>Paneles de metal</strong>. En REALISTA el Estilo de los knobs queda apagado. En las apps y en el sitio.</p>"
        }
       },
       {
@@ -6424,9 +6424,9 @@ const MN_CONTENT = {
      },
      "howto": [
       {
-       "pt": "Na aba <strong>BACKUP</strong> do editor do setlist (ou em <strong>CONFIGURAÇÕES › BACKUP › SETLIST</strong>, nos aplicativos), toque em <strong>BACKUP COMPLETO</strong> e guarde o arquivo.",
-       "en": "On the <strong>BACKUP</strong> tab of the setlist editor (or in <strong>SETTINGS › BACKUP › SETLIST</strong>, in the apps), tap <strong>FULL BACKUP</strong> and keep the file.",
-       "es": "En la pestaña <strong>BACKUP</strong> del editor del setlist (o en <strong>CONFIGURACIÓN › BACKUP › SETLIST</strong>, en las apps), toca <strong>BACKUP COMPLETO</strong> y guarda el archivo."
+       "pt": "Na aba <strong>BACKUP</strong> do editor do setlist (ou em <strong>CONFIGURAÇÕES › BACKUP › SETLIST</strong>, nos aplicativos e no site), toque em <strong>BACKUP COMPLETO</strong> e guarde o arquivo.",
+       "en": "On the <strong>BACKUP</strong> tab of the setlist editor (or in <strong>SETTINGS › BACKUP › SETLIST</strong>, in the apps and on the website), tap <strong>FULL BACKUP</strong> and keep the file.",
+       "es": "En la pestaña <strong>BACKUP</strong> del editor del setlist (o en <strong>CONFIGURACIÓN › BACKUP › SETLIST</strong>, en las apps y en el sitio), toca <strong>BACKUP COMPLETO</strong> y guarda el archivo."
       },
       {
        "pt": "Para voltar, <strong>ABRIR ARQUIVO</strong>: o app mostra um resumo (músicas e setlists novos, iguais e diferentes) antes de mexer em qualquer coisa, e oferece <strong>DESFAZER RESTAURAÇÃO</strong> no fim. O mesmo botão recebe os arquivos feitos no editor do site (próximo card).",
@@ -9015,9 +9015,9 @@ const MN_CONTENT = {
         "es": "pestaña GENERAL"
        },
        "desc": {
-        "pt": "<p>Só nos aplicativos: em qual palco o Modo Palco abre — <strong>PALCO BFMIDI</strong> (o padrão), <strong>PALCO ESPECIAL</strong> ou <strong>O ÚLTIMO USADO</strong>.</p>",
-        "en": "<p>Apps only: which stage Stage Mode opens on — <strong>BFMIDI STAGE</strong> (the default), <strong>SPECIAL STAGE</strong> or <strong>LAST USED</strong>.</p>",
-        "es": "<p>Solo en las aplicaciones: en qué escenario abre el Modo Escenario — <strong>ESCENARIO BFMIDI</strong> (el predeterminado), <strong>ESCENARIO ESPECIAL</strong> o <strong>EL ÚLTIMO USADO</strong>.</p>"
+        "pt": "<p>Nos aplicativos e no site: em qual palco o Modo Palco abre — <strong>PALCO BFMIDI</strong> (o padrão), <strong>PALCO ESPECIAL</strong> ou <strong>O ÚLTIMO USADO</strong>.</p>",
+        "en": "<p>In the apps and on the website: which stage Stage Mode opens on — <strong>BFMIDI STAGE</strong> (the default), <strong>SPECIAL STAGE</strong> or <strong>LAST USED</strong>.</p>",
+        "es": "<p>En las apps y en el sitio: en qué escenario abre el Modo Escenario — <strong>ESCENARIO BFMIDI</strong> (el predeterminado), <strong>ESCENARIO ESPECIAL</strong> o <strong>EL ÚLTIMO USADO</strong>.</p>"
        }
       },
       {

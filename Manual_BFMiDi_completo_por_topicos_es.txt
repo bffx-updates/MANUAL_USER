@@ -1175,9 +1175,11 @@ Introducción: El MODO ESCENARIO convierte el editor en un panel para el show. S
         muestra el pedal dedicado conectado a la controladora — la cadena de efectos y los knobs de
         la GP-5, la TONEX ONE o la Nano Cortex, editables en vivo — y el SETLIST muestra la canción
         del show, sus partes y las notas.
-        El Modo Escenario existe solo en las apps de la BFMiDi (Android, iPhone/iPad, Mac y
-        Windows). En el editor abierto en el navegador — desde la controladora o desde el sitio web
-        — no aparece.
+        El Modo Escenario existe en las apps de la BFMiDi (Android, iPhone/iPad, Mac y Windows) y en
+        el editor del sitio web, también instalado como icono. El único lugar donde no aparece es el
+        editor abierto desde la propia controladora (http://192.168.4.1 o http://bfmidi.local). En
+        el sitio, el escenario habla con el pedal por el cable USB (Chrome o Edge en la
+        computadora); sin cable, abre en modo offline.
         La configuración del escenario (colores, fuente, imágenes) queda solo en el aparato donde lo
         abriste: nada de esto va a la controladora.
 
@@ -1496,10 +1498,10 @@ Campos e ítems:
 7.11. Las imágenes del escenario
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Pantalla/vista relacionada: IMAGEN DEL ESCENARIO Y RECORTE
-Objetivo: En las apps, el fondo del ESCENARIO BFMIDI puede ser la imagen de la controladora, una
-          imagen de la galería de la app o una foto tuya. El recorte vale en cualquier caso. La
-          misma imagen es la del fondo a pantalla completa, del diseño Póster y de la opción Imagen
-          detrás del preset.
+Objetivo: En las apps y en el sitio, el fondo del ESCENARIO BFMIDI puede ser la imagen de la
+          controladora, una imagen de la galería de la app o una foto tuya. El recorte vale en
+          cualquier caso. La misma imagen es la del fondo a pantalla completa, del diseño Póster y
+          de la opción Imagen detrás del preset.
 Cómo hacerlo:
 1. En AJUSTES, abre la categoría IMÁGENES.
 2. Elige si vale para TODOS LOS PRESETS o SOLO A1 (el preset actual).
@@ -1511,11 +1513,10 @@ Campos e ítems:
              a la controladora y no ocupan su memoria de imágenes. La X de la esquina borra la foto.
 - Galería de la app (apps)
   Descripción: Fondos listos (acero, luces, humo, galaxia, reflectores, neón, atardecer, tarima) que
-             vienen dentro de las apps.
-- Solo en las apps (limitación)
-  Descripción: El Modo Escenario no aparece en el editor abierto en el navegador (desde la
-             controladora o desde el sitio web). Existe solo en las apps, donde la galería y tus
-             fotos están siempre disponibles.
+             vienen con el editor, en las apps y en el sitio.
+- Fuera de la controladora (limitación)
+  Descripción: El Modo Escenario no aparece en el editor abierto desde la propia controladora. En
+             las apps y en el sitio está completo, con la galería y tus fotos.
 - Recorte (ajuste)
   Descripción: Cada imagen guarda su propio encuadre: arrastra para elegir el punto, usa el zoom
              (100 a 300%) y CENTRAR para volver al centro.
@@ -1567,7 +1568,7 @@ Campos e ítems:
              los bloques de la cadena sin marco y pone una chapa de metal detrás de los knobs, los
              bloques y el nombre del preset. Elige el estilo (MODERNO o CLÁSICO), el knob (REDONDO o
              CHICKEN HEAD) y si quieres los Paneles de metal. En REALISTA el Estilo de los knobs
-             queda apagado. Solo en las apps.
+             queda apagado. En las apps y en el sitio.
 - Aspecto del aparato (tema)
   Descripción: Encendido, cada aparato usa sus propios colores y su estilo. Apagado, el ESCENARIO
              ESPECIAL sigue la categoría VISUAL. Con Con mi fondo y acento encendido, quedan la
@@ -1721,8 +1722,8 @@ Campos e ítems:
 Objetivo: El banco de canciones vive solo en el aparato, así que tiene un backup propio, separado
           del backup de la controladora.
 Cómo hacerlo:
-1. En la pestaña BACKUP del editor del setlist (o en CONFIGURACIÓN › BACKUP › SETLIST, en las apps),
-   toca BACKUP COMPLETO y guarda el archivo.
+1. En la pestaña BACKUP del editor del setlist (o en CONFIGURACIÓN › BACKUP › SETLIST, en las apps y
+   en el sitio), toca BACKUP COMPLETO y guarda el archivo.
 2. Para volver, ABRIR ARCHIVO: la app muestra un resumen (canciones y setlists nuevos, iguales y
    diferentes) antes de tocar nada, y ofrece DESHACER RESTAURACIÓN al final. El mismo botón recibe
    los archivos hechos en el editor del sitio (próxima tarjeta).
@@ -2443,7 +2444,7 @@ Campos e ítems:
              cada cambio. Desactivado, nada se graba hasta que tocas guardar — y salir del preset
              descarta el cambio.
 - MODO ESCENARIO (pestaña GENERAL)
-  Descripción: Solo en las aplicaciones: en qué escenario abre el Modo Escenario — ESCENARIO BFMIDI
+  Descripción: En las apps y en el sitio: en qué escenario abre el Modo Escenario — ESCENARIO BFMIDI
              (el predeterminado), ESCENARIO ESPECIAL o EL ÚLTIMO USADO.
 - TEMA (pestaña APARIENCIA)
   Descripción: CLARO u OSCURO.

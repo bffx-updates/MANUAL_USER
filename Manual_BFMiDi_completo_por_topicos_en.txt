@@ -1155,8 +1155,11 @@ Introduction: STAGE MODE turns the editor into a panel for the show. There are t
         shows the dedicated pedal plugged into the controller — the effect chain and the knobs of
         the GP-5, the TONEX ONE or the Nano Cortex, editable live — and the SETLIST shows the song
         of the show, its parts and notes.
-        Stage Mode exists only in the BFMiDi apps (Android, iPhone/iPad, Mac and Windows). In the
-        editor opened in a browser — from the controller or from the website — it does not appear.
+        Stage Mode exists in the BFMiDi apps (Android, iPhone/iPad, Mac and Windows) and in the
+        website editor, installed as an icon or not. The only place it does not appear is the editor
+        opened from the controller itself (http://192.168.4.1 or http://bfmidi.local). On the
+        website, the stage talks to the pedal over the USB cable (Chrome or Edge on a computer);
+        without the cable, it opens in offline mode.
         The stage settings (colors, font, images) stay only on the device where you opened it: none
         of it goes to the controller.
 
@@ -1460,10 +1463,10 @@ Fields and items:
 7.11. Stage images
 ~~~~~~~~~~~~~~~~~~
 Related screen/preview: STAGE IMAGE AND CROP
-Purpose: In the apps, the BFMIDI STAGE background can be the controller's image, an image from the
-          app gallery or one of your own photos. Cropping works in every case. The same image is
-          used by the full-screen background, the Poster layout and the Image behind the preset
-          option.
+Purpose: In the apps and on the website, the BFMIDI STAGE background can be the controller's image,
+          an image from the app gallery or one of your own photos. Cropping works in every case. The
+          same image is used by the full-screen background, the Poster layout and the Image behind
+          the preset option.
 How to:
 1. In SETTINGS, open the IMAGES category.
 2. Choose whether it applies to ALL PRESETS or ONLY A1 (the current preset).
@@ -1476,11 +1479,10 @@ Fields and items:
              deletes the photo.
 - App gallery (apps)
   Description: Ready-made backgrounds (steel, lights, smoke, galaxy, spotlights, neon, sunset, stage
-             floor) that come built into the apps.
-- Apps only (limitation)
-  Description: Stage Mode does not appear in the editor opened in a browser (from the controller or
-             from the website). It exists only in the apps, where the gallery and your photos are
-             always available.
+             floor) that come with the editor, in the apps and on the website.
+- Outside the controller (limitation)
+  Description: Stage Mode does not appear in the editor opened from the controller itself. In the
+             apps and on the website it is complete, with the gallery and your photos.
 - Crop (adjustment)
   Description: Each image keeps its own framing: drag to choose the focus point, use the zoom (100
              to 300%) and CENTER to go back to the middle.
@@ -1530,7 +1532,8 @@ Fields and items:
   Description: REALISTIC swaps the knobs and switches for pictures of real gear, leaves the chain
              blocks without a frame and puts a metal plate behind the knobs, the blocks and the
              preset name. Choose the style (MODERN or CLASSIC), the knob (ROUND or CHICKEN HEAD) and
-             whether you want the Metal panels. In REALISTIC, Knob style is greyed out. Apps only.
+             whether you want the Metal panels. In REALISTIC, Knob style is greyed out. In the apps
+             and on the website.
 - Device look (theme)
   Description: When on, each device uses its own colors and style. When off, the SPECIAL STAGE
              follows the VISUAL category. With With my background and accent on, the pedal font and
@@ -1680,8 +1683,8 @@ Fields and items:
 Purpose: The song bank lives only on the device, so it has its own backup, separate from the
           controller backup.
 How to:
-1. On the BACKUP tab of the setlist editor (or in SETTINGS › BACKUP › SETLIST, in the apps), tap
-   FULL BACKUP and keep the file.
+1. On the BACKUP tab of the setlist editor (or in SETTINGS › BACKUP › SETLIST, in the apps and on
+   the website), tap FULL BACKUP and keep the file.
 2. To bring it back, OPEN FILE: the app shows a summary (new, same and different songs and setlists)
    before touching anything, and offers UNDO RESTORE at the end. The same button takes the files
    made in the site editor (next card).
@@ -2380,8 +2383,8 @@ Fields and items:
   Description: On (the default), the editor saves on its own less than a second after each change.
              Off, nothing is saved until you tap save — and leaving the preset discards the change.
 - STAGE MODE (GENERAL tab)
-  Description: Apps only: which stage Stage Mode opens on — BFMIDI STAGE (the default), SPECIAL
-             STAGE or LAST USED.
+  Description: In the apps and on the website: which stage Stage Mode opens on — BFMIDI STAGE (the
+             default), SPECIAL STAGE or LAST USED.
 - THEME (APPEARANCE tab)
   Description: LIGHT or DARK.
 - INTERFACE LANGUAGE (APPEARANCE tab)
