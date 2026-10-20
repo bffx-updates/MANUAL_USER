@@ -931,5 +931,165 @@ const MN_SHOTS = {
   "w": 1280,
   "h": 900,
   "hot": {}
+ },
+ "stage-sl": {
+  "img": "img/shots/stage-sl.webp",
+  "w": 1280,
+  "h": 900,
+  "hot": {
+   ".bf-sl-head": [
+    0.02,
+    0.022,
+    0.96,
+    0.2581
+   ],
+   ".bf-sl-parts": [
+    0.02,
+    0.2973,
+    0.96,
+    0.1988
+   ],
+   ".bf-sl-notes": [
+    0.02,
+    0.5133,
+    0.96,
+    0.3423
+   ],
+   ".bf-sl-foot": [
+    0.02,
+    0.8728,
+    0.96,
+    0.1052
+   ],
+   ".bf-stage-handle": [
+    0.4641,
+    0,
+    0.0719,
+    0.0289
+   ]
+  },
+  "light": "img/shots/stage-sl.light.webp"
+ },
+ "stage-sl-editor": {
+  "img": "img/shots/stage-sl-editor.webp",
+  "w": 1280,
+  "h": 900,
+  "hot": {
+   ".bf-sl-pe-num": [
+    0.6453,
+    0.1443,
+    0.0187,
+    0.0167
+   ],
+   ".bf-sl-pe-pre": [
+    0.8422,
+    0.1315,
+    0.0406,
+    0.0422
+   ],
+   ".bf-sl-pe-ex.is-on": [
+    0.8859,
+    0.3407,
+    0.0344,
+    0.0422
+   ],
+   ".bf-sl-pe.is-open .bf-sl-seg.is-nbox": [
+    0.6469,
+    0.7495,
+    0.3328,
+    0.0489
+   ]
+  },
+  "light": "img/shots/stage-sl-editor.light.webp"
+ },
+ "stage-sl-backup": {
+  "img": "img/shots/stage-sl-backup.webp",
+  "w": 1280,
+  "h": 900,
+  "hot": {
+   ".bf-sl-tab.is-on": [
+    0.8729,
+    0.0856,
+    0.1146,
+    0.0422
+   ],
+   ".bf-sl-bk .bf-sl-btn.is-primary": [
+    0.6453,
+    0.2599,
+    0.128,
+    0.0444
+   ],
+   ".bf-sl-bk-sec:first-child .bf-sl-acts .bf-sl-btn:not(.is-primary)": [
+    0.7796,
+    0.2599,
+    0.1072,
+    0.0444
+   ],
+   ".bf-sl-rows.is-snaps": [
+    0.6453,
+    0.4842,
+    0.3344,
+    0.1053
+   ]
+  },
+  "light": "img/shots/stage-sl-backup.light.webp"
+ },
+ "stage-set-sl": {
+  "img": "img/shots/stage-set-sl.webp",
+  "w": 1280,
+  "h": 900,
+  "hot": {
+   ".bf-stage-rail [role=tab]:nth-child(6)": [
+    0.6609,
+    0.4033,
+    0.0531,
+    0.06
+   ],
+   "[data-k=\"slLay\"]": [
+    0.7305,
+    0.1171,
+    0.2586,
+    0.2334
+   ],
+   "[data-k=\"slNotesSize\"]": [
+    0.7305,
+    0.3505,
+    0.2586,
+    0.2578
+   ],
+   ".bf-sl-screen": [
+    0.0221,
+    0.1696,
+    0.612,
+    0.6095
+   ]
+  },
+  "light": "img/shots/stage-set-sl.light.webp"
+ },
+ "stage-sl-pe": {
+  "img": "img/shots/stage-sl-pe.webp",
+  "w": 646,
+  "h": 891,
+  "hot": {
+   "[data-mn-mark=\"sl-call\"]": [
+    0.031,
+    0.9191,
+    0.9381,
+    0.0584
+   ],
+   "[data-mn-mark=\"sl-next\"]": [
+    0.031,
+    0.6764,
+    0.9381,
+    0.0584
+   ],
+   "[data-mn-mark=\"sl-song\"]": [
+    0.031,
+    0.7978,
+    0.9381,
+    0.0584
+   ]
+  },
+  "light": "img/shots/stage-sl-pe.light.webp"
  }
 };

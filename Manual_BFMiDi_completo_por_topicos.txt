@@ -59,6 +59,12 @@ SUMÁRIO
    7.12. Perfis e visuais prontos
    7.13. Configurações do palco — PALCO ESPECIAL
    7.14. No celular e no tablet
+   7.15. SETLIST: a música, as partes e as anotações
+   7.16. Banco de músicas e setlists
+   7.17. Controlar o setlist com o pé
+   7.18. Ajustar a tela do setlist
+   7.19. Backup do setlist
+   7.20. Editar o setlist no computador (site)
 8. Editores de preset dos aparelhos
    8.1. Onde abrir
    8.2. Valeton GP-5 e GP-50
@@ -1123,11 +1129,11 @@ TÓPICO 7 - MODO PALCO
 Página: 4
 Resumo: Uma tela cheia, deitada e de letra grande para deixar o celular ou o tablet na estante
         durante o show: o preset que está tocando, os footswitches e o aparelho plugado.
-Introdução: O MODO PALCO transforma o editor num painel para o show. São duas telas: o PALCO BFMIDI
+Introdução: O MODO PALCO transforma o editor num painel para o show. São três telas: o PALCO BFMIDI
         mostra a BFMiDi — o nome do preset em letra enorme, a imagem de fundo e os footswitches, que
         você pode ligar e desligar com o dedo — e o PALCO ESPECIAL mostra o pedal dedicado plugado
         na controladora — a cadeia de efeitos e os knobs da GP-5, da TONEX ONE ou da Nano Cortex,
-        editáveis ao vivo.
+        editáveis ao vivo — e o SETLIST mostra a música do show, as partes dela e as anotações.
         O Modo Palco existe só nos aplicativos da BFMiDi (Android, iPhone/iPad, Mac e Windows). No
         editor aberto pelo navegador — pela controladora ou pelo site — ele não aparece.
         As configurações do palco (cores, fonte, imagens) ficam só no aparelho onde você abriu: nada
@@ -1544,6 +1550,161 @@ Campos e itens:
              acompanham.
 - Tela sempre acesa (comportamento)
   Descrição: Com Manter a tela acesa ligado (padrão), o aparelho não apaga a tela no meio da música.
+
+7.15. SETLIST: a música, as partes e as anotações
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Objetivo: A terceira tela do Modo Palco: a música atual em letra grande, as partes dela em ordem
+          (INTRO, VERSO, REFRÃO…) com o preset que cada uma chama, e as anotações ou cifras da parte
+          que está tocando.
+Como fazer:
+1. No card PRINCIPAL, toque em SETLIST (ao lado do MODO PALCO). Com o palco já aberto, escolha
+   SETLIST no seletor BFMIDI · ESPECIAL · SETLIST da barra de cima.
+2. Escolha um setlist (ou toque em ABRIR O EDITOR para criar o primeiro).
+3. Toque numa parte para chamar o preset dela. As setas do rodapé trocam de música sem chamar preset
+   — pela tela você pode só estar olhando a próxima.
+Campos e itens:
+- O selo da barra (estado)
+  Descrição: NA CONTROLADORA: a controladora recebeu as partes da música e os comandos do pé
+             funcionam. SÓ NO APP: sem conexão, modo offline ou firmware antigo — a tela acompanha o
+             preset que está tocando, mas o pé não sabe do setlist. Toque no selo para ver a
+             explicação.
+- Acompanhamento automático (comportamento)
+  Descrição: Trocou de preset por fora (um footswitch comum, o editor)? A tela marca sozinha a parte
+             cujo preset é o que está tocando. Preset que nenhuma parte usa aparece como FORA DO
+             SETLIST, e PRÓXIMA PARTE continua da última parte conhecida.
+- Só com o app aberto (regra)
+  Descrição: A controladora guarda só a música atual e as vizinhas, na memória, e esquece tudo ao
+             fechar o palco ou depois de 15 s sem notícia do app (segundo plano, tela apagada,
+             conexão caída). Nada se perde: o setlist mora no app, e ao reconectar ele é mandado de
+             novo. A tela fica acesa enquanto o setlist estiver aberto.
+             Trocar para o PALCO BFMIDI ou o ESPECIAL no meio da música não desliga o setlist: só
+             fechar o palco.
+- O nome da parte na controladora (tela do pedal)
+  Descrição: Com Bank na troca de preset ligado (CONFIGURAÇÕES › TELA), o card que aparece na tela
+             da controladora mostra o nome da parte em cima do preset — por exemplo REFRAO sobre D4
+             — também quando duas partes usam o mesmo preset. O nome vai sem acento e com até 12
+             letras.
+
+7.16. Banco de músicas e setlists
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Objetivo: Cada música é cadastrada uma vez no banco; um setlist é uma lista de músicas do banco.
+          Tudo fica guardado no aparelho, sem precisar do pedal.
+Como fazer:
+1. Na tela SETLIST, abra a barra de cima e toque em EDITAR SETLIST. O editor abre ao lado do palco,
+   com as abas SETLISTS, BANCO DE MÚSICAS e BACKUP.
+2. Crie a música com nome, artista, tom e BPM, e acrescente as partes por tipo. Em cada parte
+   escolha o preset da controladora que ela chama.
+3. Ponha a música num setlist e acerte a ordem com ↑ ↓. Tudo grava sozinho.
+Campos e itens:
+- O número da parte (ordem)
+  Descrição: É a posição da parte na música (1, 2, 3…), e é por ele que os comandos PARTE N e CHAMAR
+             PARTE funcionam. Reordenar as partes muda os números — o editor avisa. Até 32 partes
+             por música.
+- Notas pessoais ou cifras (anotações)
+  Descrição: Cada parte (e a música) tem um seletor NOTAS PESSOAIS | CIFRAS. As cifras se montam
+             tocando em blocos: primeiro os acordes do tom da música, depois as 12 notas no tipo
+             escolhido, e "Outra cifra" para digitar. No palco elas aparecem em quadros grandes.
+             TRANSPOR muda as cifras de uma parte ou da música inteira.
+- Disparos extras (PC / CC)
+  Descrição: O ícone ao lado do preset de cada parte guarda até 3 mensagens PC ou CC que a
+             controladora manda junto com a parte — para um VS/playback, a luz ou outro aparelho.
+             Saem a cada vez que a parte é chamada. Cada uma escolhe a saída: BLUETOOTH DO HOST (nas
+             placas com USB host) ou TODAS AS SAÍDAS.
+
+7.17. Controlar o setlist com o pé
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Objetivo: Os footswitches nunca mudam sozinhos: você escolhe em qual gesto de qual footswitch põe
+          cada comando de setlist — ou não põe nenhum.
+Como fazer:
+1. Nos footswitches do BANK: CONFIGURAÇÕES › BANCOS › CHAMADA, ações SETLIST: … no TOQUE ou no
+   SEGURAR.
+2. Num footswitch do LIVE, do SW GLOBAL ou num externo: nas listas de CC, depois dos comandos de
+   navegação, vem o grupo ── SETLIST ──.
+Campos e itens:
+- CHAMAR PARTE (ação)
+  Descrição: Na CHAMADA DE PRESETS: o footswitch 3 chama a parte 3, e assim por diante. Sem setlist
+             aberto ele age como CHAMAR PRESET — o pé nunca fica sem trocar de preset. Com o setlist
+             aberto, o anel aceso é o do footswitch da parte atual.
+- PRÓXIMA / ANTERIOR (partes e músicas)
+  Descrição: PRÓXIMA PARTE e PARTE ANTERIOR andam dentro da música e param nas pontas. PRÓXIMA
+             MÚSICA e MÚSICA ANTERIOR trocam de música e chamam a 1ª parte dela, na hora, sem
+             esperar o app. Comando disparado no LIVE fica no LIVE.
+- PARTE 1 a PARTE 8 (comandos)
+  Descrição: Chamam a parte com aquele número; numa música com menos partes, não fazem nada. Chamar
+             a parte que já está tocando não reenvia o preset (só os disparos extras dela).
+
+7.18. Ajustar a tela do setlist
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Objetivo: Nas configurações do palco, a categoria SETLIST muda o arranjo e o tamanho das peças da
+          tela do setlist, com a prévia ao lado.
+Como fazer:
+1. Abra a barra de cima, toque em CONFIGURAÇÕES e escolha SETLIST no trilho da esquerda. Sem setlist
+   com música, a prévia mostra um exemplo.
+Campos e itens:
+- Layout da tela (4 opções)
+  Descrição: COMPLETO (música, faixa de partes, anotações e rodapé), PARTES AO LADO (as partes numa
+             coluna, as anotações à direita — precisa de tela larga), ANOTAÇÕES GRANDES (a música
+             numa linha só e as anotações com a maior parte da tela) e SÓ AS PARTES (os cartões das
+             partes ocupam a tela, sem anotações).
+- Tamanhos e o que aparece (opções)
+  Descrição: Tamanho das anotações e das partes; artista, tom e BPM; o preset de cada parte; o
+             rodapé com as músicas vizinhas (desligado, a lista do setlist vai para o cabeçalho); e,
+             em MAIS OPÇÕES, o número da música e a marca A SEGUIR.
+
+7.19. Backup do setlist
+~~~~~~~~~~~~~~~~~~~~~~~
+Objetivo: O banco de músicas mora só no aparelho, então ele tem um backup próprio, separado do
+          backup da controladora.
+Como fazer:
+1. Na aba BACKUP do editor do setlist (ou em CONFIGURAÇÕES › BACKUP › SETLIST, nos aplicativos),
+   toque em BACKUP COMPLETO e guarde o arquivo.
+2. Para voltar, ABRIR ARQUIVO: o app mostra um resumo (músicas e setlists novos, iguais e
+   diferentes) antes de mexer em qualquer coisa, e oferece DESFAZER RESTAURAÇÃO no fim. O mesmo
+   botão recebe os arquivos feitos no editor do site (próximo card).
+Campos e itens:
+- Cópias automáticas (proteção)
+  Descrição: O app guarda sozinho até 20 cópias do banco (uma por dia de uso, e antes de restaurar
+             ou apagar). Elas protegem contra erro de edição — não contra desinstalar o app ou
+             trocar de aparelho. Para isso, só o arquivo de backup.
+- Arquivos separados (regra)
+  Descrição: O backup do setlist não leva presets da controladora, e o backup da controladora não
+             leva o setlist. Cada RESTAURAR recusa o arquivo do outro, dizendo onde ele deve ser
+             restaurado.
+
+7.20. Editar o setlist no computador (site)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Objetivo: O mesmo editor do setlist, no navegador: monte o banco de músicas e os setlists com
+          teclado e tela grande e leve para o app por um arquivo — e o contrário também.
+Como fazer:
+1. Abra bffx.com.br/setlist em qualquer navegador (computador, tablet ou celular). Não precisa de
+   conta nem da controladora.
+2. Para trazer o que já está no app: no app, CONFIGURAÇÕES › BACKUP › SETLIST › BACKUP COMPLETO; no
+   site, ABRIR ARQUIVO, confira o resumo e toque em RESTAURAR AGORA.
+3. Edite como no app: setlists, músicas, partes, cifras e disparos extras. No computador a lista
+   fica à esquerda e a música aberta à direita.
+4. Para levar ao app: no site, BAIXAR (no celular, COMPARTILHAR); no app, CONFIGURAÇÕES › BACKUP ›
+   SETLIST › ABRIR ARQUIVO. No SOMAR AO BANCO, fica a versão mais recente de cada música e de cada
+   setlist.
+Campos e itens:
+- Fica neste navegador (armazenamento)
+  Descrição: O que você edita no site fica só no navegador em que editou: outro navegador, outro
+             computador e o app começam sem isso até você levar o arquivo. Não há conta nem servidor
+             — nada do que você digita sai do navegador. No Safari, os dados somem se a página ficar
+             7 dias sem ser aberta: baixe o arquivo antes.
+- Edições dos dois lados (regra)
+  Descrição: Se a mesma música (ou o mesmo setlist) foi editada no site e no app, uma das versões
+             ganha — a mais recente, por padrão. Para não perder nada, escolha MANTER AS DUAS no
+             resumo. SOMAR nunca apaga: o que foi apagado de um lado continua no outro. Para deixar
+             os dois iguais, use SUBSTITUIR O BANCO INTEIRO com um backup completo.
+- Nomes dos presets (seletor de preset)
+  Descrição: Sem a controladora, o seletor de preset mostra os nomes que vieram no arquivo do app.
+             Um backup da controladora (o de CONFIGURAÇÕES › BACKUP › COMPLETO) também serve: ao
+             abri-lo, o site oferece USAR OS NOMES DOS PRESETS. O preset de cada parte é só a
+             posição (B3): ele chama o B3 da controladora em que o setlist for tocado.
+- A sua controladora (ajuste)
+  Descrição: O arquivo do app diz quantos presets o pé alcança em cada banco e se a placa tem USB
+             host (para os disparos extras pelo Bluetooth do host); o site se acerta sozinho ao
+             abri-lo. Para mudar à mão, toque em COMO LEVAR PARA O APP.
 
 ========================================================================================
 
@@ -1968,7 +2129,9 @@ Campos e itens:
 - As ações (lista)
   Descrição: CHAMAR PRESET, PRÉVIA (STANDBY) (mostra o destino na tela sem trocar o som, e você
              confirma depois), SUBIR/DESCER BANCO (também EM PRÉVIA), SUBIR/DESCER PRESET, ENTRAR EM
-             MODO LIVE (só no footswitch do preset ativo) e NENHUM. Em SEGURAR e em PISAR DE NOVO
+             MODO LIVE (só no footswitch do preset ativo) e NENHUM. As ações SETLIST: …
+             (PRÓXIMA/ANTERIOR PARTE, PRÓXIMA/ANTERIOR MÚSICA e CHAMAR PARTE) controlam o setlist do
+             Modo Palco — CHAMAR PARTE conta como trocar de preset. Em SEGURAR e em PISAR DE NOVO
              existe ainda o FAVORITO: ir direto para um banco e preset fixos, chegando em PRESET ou
              LIVE.
              Pelo menos um gesto precisa trocar de preset (CHAMAR PRESET ou SUBIR/DESCER BANCO EM
@@ -2298,7 +2461,25 @@ Campos e itens:
              BOTÕES: pise em cada footswitch e veja o nome dele aparecer — enquanto o teste está
              aberto o pedal não manda MIDI nem troca de preset. RX (nas placas com USB Host): mostra
              o MIDI que sai pela saída MIDI da controladora; se as mensagens aparecem ali e o
-             aparelho não responde, o problema está do cabo para fora.
+             aparelho não responde, o problema está do cabo para fora. CABO (nas placas com entrada
+             EXT SW): testa um cabo TRS — veja TESTE DE CABO TRS, logo abaixo.
+- TESTE DE CABO TRS (aba HARDWARE · botão CABO)
+  Descrição: Só nas placas com entrada EXT SW (a dos dois footswitches externos). A controladora
+             vira um testador de cabo: ligue um cabo TRS (estéreo, de três contatos) da saída MIDI
+             TRS na entrada EXT SW e toque em CABO. O resultado aparece no editor e no display do
+             pedal.
+             PASSOU, FALHOU ou SEM CABO (nada passa: confira os dois plugues) — o anel de LEDs fica
+             verde, vermelho ou âmbar. Passando, diz se o cabo é reto (sai tipo A) ou cruzado (ponta
+             e anel trocados: sai tipo B) — use o reto com aparelho tipo A e o cruzado com aparelho
+             tipo B. O editor mostra também a ponta e o anel, cada um com OK, aberto ou em curto, e,
+             falhando, diz o defeito.
+             Com o cabo aprovado, mexa nele e nos plugues: cada falha rápida conta como uma queda
+             (mau contato). O display do pedal mostra o total em QUEDAS.
+             O corpo (a malha) não é testado: as duas pontas usam o mesmo terra da placa. Enquanto o
+             teste roda, os footswitches, o pedal de expressão e o MIDI de saída ficam parados.
+             Cabo mono (o anel aparece em curto): tire o cabo, porque assim a saída MIDI fica
+             forçando corrente. Com a ponta em curto, a saída MIDI é desligada até o cabo sair (o
+             pedal mostra TX DESLIGADO - TIRE O CABO). Ao concluir, tire o cabo da entrada EXT SW.
 - DISPARO MIDI (aba DISPARO)
   Descrição: Manda um PC ou um CC na hora, no canal escolhido. Com DISPARO AUTOMÁTICO, cada + ou −
              já manda — é a forma mais rápida de descobrir a que número o seu aparelho responde.
@@ -2362,6 +2543,10 @@ Campos e itens:
 - » TO LAYER (comando)
   Descrição: Alterna entre a Layer 1 e a Layer 2 do preset. Só faz sentido dentro do LIVE, com a
              Layer 2 ligada.
+- » SETLIST (NEXT/PREV PART, NEXT/PREV SONG, PART 1–8) (comando)
+  Descrição: No fim da lista, sob ── SETLIST ──: andam pelas partes e músicas do setlist aberto no
+             Modo Palco do app. Sem setlist aberto, não fazem nada. Não precisam de canal. Veja
+             Controlar o setlist com o pé no capítulo Modo Palco.
 - Navegação em prévia (footswitches externos) (comando)
   Descrição: Os footswitches externos têm dois comandos exclusivos — » UP BANK PREVIEW e » DOWN BANK
              PREVIEW —: sobem e descem banco em prévia, sem trocar o som, esperando um footswitch do
@@ -2416,7 +2601,8 @@ Campos e itens:
   Descrição: 1. O cabo vai da BFMiDi para a pedaleira (MIDI OUT → MIDI IN)?
              2. O canal do preset é o que a pedaleira escuta?
              3. Use o DISPARO MIDI em CONFIGURAÇÕES › TESTES › DISPARO: se ali funciona, o problema
-             está no preset; se nem ali, no cabo ou no aparelho.
+             está no preset; se nem ali, no cabo ou no aparelho. Cabo TRS? Nas placas com entrada
+             EXT SW, teste o cabo em CONFIGURAÇÕES › TESTES › HARDWARE › CABO.
              4. A pedaleira perde as primeiras mensagens depois de trocar de preset? Use os TEMPOS
              DE DISPARO em CONFIGURAÇÕES › HARDWARE › TEMPOS.
 - Não consigo abrir o editor (roteiro)

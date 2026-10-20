@@ -59,6 +59,12 @@ CONTENTS
    7.12. Profiles and ready-made looks
    7.13. Stage settings — SPECIAL STAGE
    7.14. On phones and tablets
+   7.15. SETLIST: the song, its parts and notes
+   7.16. Song bank and setlists
+   7.17. Controlling the setlist with your foot
+   7.18. Adjusting the setlist screen
+   7.19. Setlist backup
+   7.20. Editing the setlist on a computer (website)
 8. Device preset editors
    8.1. Where to open it
    8.2. Valeton GP-5 and GP-50
@@ -1143,11 +1149,12 @@ Page: 4
 Summary: A full-screen landscape view with big lettering, so you can leave your phone or tablet on
         the stand during the show: the preset that's playing, the footswitches and the plugged-in
         device.
-Introduction: STAGE MODE turns the editor into a panel for the show. There are two screens: the
+Introduction: STAGE MODE turns the editor into a panel for the show. There are three screens: the
         BFMIDI STAGE shows the BFMiDi — the preset name in huge letters, the background image and
         the footswitches, which you can turn on and off with your finger — and the SPECIAL STAGE
         shows the dedicated pedal plugged into the controller — the effect chain and the knobs of
-        the GP-5, the TONEX ONE or the Nano Cortex, editable live.
+        the GP-5, the TONEX ONE or the Nano Cortex, editable live — and the SETLIST shows the song
+        of the show, its parts and notes.
         Stage Mode exists only in the BFMiDi apps (Android, iPhone/iPad, Mac and Windows). In the
         editor opened in a browser — from the controller or from the website — it does not appear.
         The stage settings (colors, font, images) stay only on the device where you opened it: none
@@ -1567,6 +1574,161 @@ Fields and items:
 - Screen always on (behavior)
   Description: With Keep the screen on enabled (default), the device won't turn off the screen in
              the middle of a song.
+
+7.15. SETLIST: the song, its parts and notes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Purpose: The third Stage Mode screen: the current song in big letters, its parts in order (INTRO,
+          VERSE, CHORUS…) with the preset each one calls, and the notes or chords of the part that
+          is playing.
+How to:
+1. On the MAIN card, tap SETLIST (next to STAGE MODE). With the stage already open, choose SETLIST
+   in the BFMIDI · SPECIAL · SETLIST selector on the top bar.
+2. Pick a setlist (or tap OPEN THE EDITOR to create the first one).
+3. Tap a part to call its preset. The footer arrows change songs without calling a preset — on
+   screen you may just be looking at the next one.
+Fields and items:
+- The bar badge (status)
+  Description: ON THE CONTROLLER: the controller received the song’s parts and the foot commands
+             work. APP ONLY: no connection, offline mode or old firmware — the screen follows the
+             preset that is playing, but your foot doesn’t know about the setlist. Tap the badge for
+             the explanation.
+- Automatic following (behavior)
+  Description: Changed presets some other way (a regular footswitch, the editor)? The screen marks
+             on its own the part whose preset is the one playing. A preset no part uses shows OUT OF
+             THE SETLIST, and NEXT PART continues from the last known part.
+- Only with the app open (rule)
+  Description: The controller keeps only the current song and its neighbors, in memory, and forgets
+             everything when you close the stage or after 15 s without hearing from the app
+             (background, screen off, lost connection). Nothing is lost: the setlist lives in the
+             app, and on reconnecting it is sent again. The screen stays on while the setlist is
+             open.
+             Switching to the BFMIDI or SPECIAL stage in the middle of a song doesn’t turn the
+             setlist off: only closing the stage does.
+- The part name on the controller (pedal screen)
+  Description: With Bank on preset change on (SETTINGS › SCREEN), the card that appears on the
+             controller’s screen shows the part name above the preset — for example CHORUS over D4 —
+             also when two parts use the same preset. The name goes without accents and with up to
+             12 letters.
+
+7.16. Song bank and setlists
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Purpose: Each song is entered once in the bank; a setlist is a list of songs from the bank.
+          Everything is stored on the device, with no pedal needed.
+How to:
+1. On the SETLIST screen, open the top bar and tap EDIT SETLIST. The editor opens beside the stage,
+   with the SETLISTS, SONG BANK and BACKUP tabs.
+2. Create the song with name, artist, key and BPM, and add the parts by type. In each part choose
+   the controller preset it calls.
+3. Put the song in a setlist and set the order with ↑ ↓. Everything saves on its own.
+Fields and items:
+- The part number (order)
+  Description: It’s the part’s position in the song (1, 2, 3…), and it’s what the PART N and CALL
+             PART commands use. Reordering the parts changes the numbers — the editor warns you. Up
+             to 32 parts per song.
+- Personal notes or chords (notes)
+  Description: Each part (and the song) has a PERSONAL NOTES | CHORDS selector. Chords are built by
+             tapping blocks: first the chords of the song’s key, then the 12 notes in the chosen
+             type, and "Other chord" to type. On stage they show in big boxes. TRANSPOSE changes the
+             chords of one part or of the whole song.
+- Extra messages (PC / CC)
+  Description: The icon next to each part’s preset holds up to 3 PC or CC messages the controller
+             sends along with the part — for a backing track/VS, lights or another device. They go
+             out every time the part is called. Each one picks the output: HOST BLUETOOTH (on boards
+             with a USB host) or ALL OUTPUTS.
+
+7.17. Controlling the setlist with your foot
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Purpose: The footswitches never change on their own: you choose which gesture of which footswitch
+          gets each setlist command — or none at all.
+How to:
+1. On the BANK footswitches: SETTINGS › BANKS › CALL, the SETLIST: … actions on TAP or HOLD.
+2. On a LIVE, SW GLOBAL or external footswitch: in the CC lists, after the navigation commands,
+   comes the ── SETLIST ── group.
+Fields and items:
+- CALL PART (action)
+  Description: In PRESET CALL: footswitch 3 calls part 3, and so on. Without a setlist open it acts
+             as CALL PRESET — your foot never loses the ability to change presets. With the setlist
+             open, the lit ring is the one on the current part’s footswitch.
+- NEXT / PREVIOUS (parts and songs)
+  Description: NEXT PART and PREVIOUS PART move within the song and stop at the ends. NEXT SONG and
+             PREVIOUS SONG change the song and call its 1st part, right away, without waiting for
+             the app. A command fired in LIVE stays in LIVE.
+- PART 1 to PART 8 (commands)
+  Description: Call the part with that number; in a song with fewer parts, they do nothing. Calling
+             the part that is already playing doesn’t resend the preset (only its extra messages).
+
+7.18. Adjusting the setlist screen
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Purpose: In the stage settings, the SETLIST category changes the arrangement and the size of the
+          setlist screen pieces, with the preview beside it.
+How to:
+1. Open the top bar, tap SETTINGS and choose SETLIST on the left rail. Without a setlist with songs,
+   the preview shows an example.
+Fields and items:
+- Screen layout (4 options)
+  Description: FULL (song, parts strip, notes and footer), PARTS ON THE SIDE (the parts in a column,
+             the notes on the right — needs a wide screen), BIG NOTES (the song on a single line and
+             the notes taking most of the screen) and PARTS ONLY (the part cards fill the screen, no
+             notes).
+- Sizes and what shows (options)
+  Description: Size of the notes and of the parts; artist, key and BPM; each part’s preset; the
+             footer with the nearby songs (turned off, the setlist list moves to the header); and,
+             under MORE OPTIONS, the song number and the UP NEXT tag.
+
+7.19. Setlist backup
+~~~~~~~~~~~~~~~~~~~~
+Purpose: The song bank lives only on the device, so it has its own backup, separate from the
+          controller backup.
+How to:
+1. On the BACKUP tab of the setlist editor (or in SETTINGS › BACKUP › SETLIST, in the apps), tap
+   FULL BACKUP and keep the file.
+2. To bring it back, OPEN FILE: the app shows a summary (new, same and different songs and setlists)
+   before touching anything, and offers UNDO RESTORE at the end. The same button takes the files
+   made in the site editor (next card).
+Fields and items:
+- Automatic copies (protection)
+  Description: The app keeps up to 20 copies of the bank on its own (one per day of use, and before
+             restoring or deleting). They protect against editing mistakes — not against
+             uninstalling the app or changing devices. For that, only the backup file.
+- Separate files (rule)
+  Description: The setlist backup doesn’t carry controller presets, and the controller backup
+             doesn’t carry the setlist. Each RESTORE refuses the other’s file, saying where it
+             should be restored.
+
+7.20. Editing the setlist on a computer (website)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Purpose: The same setlist editor, in the browser: build the song bank and the setlists with a
+          keyboard and a big screen and take them to the app with a file — and the other way around.
+How to:
+1. Open bffx.com.br/setlist in any browser (computer, tablet or phone). No account and no controller
+   needed.
+2. To bring what is already in the app: in the app, SETTINGS › BACKUP › SETLIST › FULL BACKUP; on
+   the site, OPEN FILE, check the summary and tap RESTORE NOW.
+3. Edit as in the app: setlists, songs, parts, chords and extra messages. On a computer the list
+   stays on the left and the open song on the right.
+4. To take it to the app: on the site, DOWNLOAD (on a phone, SHARE); in the app, SETTINGS › BACKUP ›
+   SETLIST › OPEN FILE. With ADD TO THE BANK, the newest version of each song and each setlist
+   stays.
+Fields and items:
+- It stays in this browser (storage)
+  Description: What you edit on the site stays only in the browser you used: another browser,
+             another computer and the app start without it until you take the file there. There is
+             no account and no server — nothing you type leaves the browser. In Safari, the data is
+             erased if the page goes 7 days without being opened: download the file first.
+- Edits on both sides (rule)
+  Description: If the same song (or the same setlist) was edited on the site and in the app, one
+             version wins — the newest, by default. To lose nothing, choose KEEP BOTH in the
+             summary. ADD never deletes: what was deleted on one side stays on the other. To make
+             both the same, use REPLACE THE WHOLE BANK with a full backup.
+- Preset names (preset picker)
+  Description: Without the controller, the preset picker shows the names that came in the app file.
+             A controller backup (the one from SETTINGS › BACKUP › FULL) also works: when you open
+             it, the site offers USE THE PRESET NAMES. Each part's preset is just a position (B3):
+             it calls B3 on the controller where the setlist is played.
+- Your controller (setting)
+  Description: The app file says how many presets the foot reaches in each bank and whether the
+             board has a USB host (for extra messages over the host Bluetooth); the site sets itself
+             when you open it. To change it by hand, tap HOW TO TAKE IT TO THE APP.
 
 ========================================================================================
 
@@ -2000,9 +2162,10 @@ Fields and items:
 - The actions (list)
   Description: CALL PRESET, PREVIEW (STANDBY) (shows the destination on screen without changing the
              sound, and you confirm afterward), BANK UP/DOWN (also IN PREVIEW), PRESET UP/DOWN,
-             ENTER LIVE MODE (only on the active preset’s footswitch) and NONE. On HOLD and PRESS
-             AGAIN there’s also FAVORITE: go straight to a fixed bank and preset, arriving in PRESET
-             or LIVE.
+             ENTER LIVE MODE (only on the active preset’s footswitch) and NONE. The SETLIST: …
+             actions (NEXT/PREVIOUS PART, NEXT/PREVIOUS SONG and CALL PART) control the Stage Mode
+             setlist — CALL PART counts as changing presets. On HOLD and PRESS AGAIN there’s also
+             FAVORITE: go straight to a fixed bank and preset, arriving in PRESET or LIVE.
              At least one gesture must change presets (CALL PRESET or BANK UP/DOWN IN PREVIEW) —
              otherwise there’d be no way left to change presets with your foot. That’s why, when
              only one gesture does it, the list shows the other actions locked, with the reason: put
@@ -2334,7 +2497,28 @@ Fields and items:
              BUTTONS: step on each footswitch and see its name show up — while the test is open the
              pedal doesn't send MIDI or change presets. RX (on boards with USB Host): shows the MIDI
              going out of the controller's MIDI output; if the messages show up there and the device
-             doesn't respond, the problem is from the cable onward.
+             doesn't respond, the problem is from the cable onward. CABLE (on boards with an EXT SW
+             input): tests a TRS cable — see TRS CABLE TEST, just below.
+- TRS CABLE TEST (HARDWARE tab · CABLE button)
+  Description: Only on boards with an EXT SW input (the one for the two external footswitches). The
+             controller becomes a cable tester: plug a TRS cable (stereo, three contacts) from the
+             TRS MIDI output into the EXT SW input and tap CABLE. The result shows in the editor and
+             on the pedal's display.
+             Passed, Failed or No cable (nothing gets through: check both plugs) — the pedal's
+             display shows them in Portuguese: PASSOU, FALHOU, SEM CABO — and the LED ring turns
+             green, red or amber. When it passes, it tells whether the cable is straight (outputs
+             type A; RETO on the pedal) or crossed (tip and ring swapped: outputs type B; CRUZADO on
+             the pedal) — use the straight one with a type A device and the crossed one with a type
+             B device. The editor also shows the tip and the ring, each one OK, open or shorted,
+             and, when it fails, says what's wrong.
+             With the cable approved, wiggle it and the plugs: each brief failure counts as a
+             dropout (bad contact). The pedal's display shows the total as QUEDAS (dropouts).
+             The sleeve (the shield) isn't tested: both ends share the board ground. While the test
+             runs, the footswitches, the expression pedal and the MIDI output are paused.
+             Mono cable (the ring shows as shorted): unplug the cable, because that way the MIDI
+             output keeps driving current. With the tip shorted, the MIDI output is turned off until
+             the cable comes out (the pedal shows TX DESLIGADO - TIRE O CABO, “TX off – unplug the
+             cable”). When you're done, unplug the cable from the EXT SW input.
 - MIDI SEND (SEND tab)
   Description: Sends a PC or a CC right away, on the chosen channel. With AUTO SEND, every + or −
              sends immediately — it's the fastest way to find out which number your device responds
@@ -2401,6 +2585,10 @@ Fields and items:
 - » TO LAYER (command)
   Description: Switches between the preset's Layer 1 and Layer 2. It only makes sense inside LIVE,
              with Layer 2 turned on.
+- » SETLIST (NEXT/PREV PART, NEXT/PREV SONG, PART 1–8) (command)
+  Description: At the end of the list, under ── SETLIST ──: move through the parts and songs of the
+             setlist open in the app’s Stage Mode. With no setlist open, they do nothing. They don’t
+             need a channel. See Controlling the setlist with your foot in the Stage Mode chapter.
 - Preview navigation (external footswitches) (command)
   Description: The external footswitches have two commands of their own, » UP BANK PREVIEW and »
              DOWN BANK PREVIEW: they move up and down through banks in preview, without changing the
@@ -2458,7 +2646,8 @@ Fields and items:
   Description: 1. Does the cable go from the BFMiDi to the effects unit (MIDI OUT → MIDI IN)?
              2. Is the preset's channel the one the effects unit listens to?
              3. Use MIDI SEND in SETTINGS › TESTS › SEND: if it works there, the problem is in the
-             preset; if it doesn't work even there, it's the cable or the device.
+             preset; if it doesn't work even there, it's the cable or the device. TRS cable? On
+             boards with an EXT SW input, test the cable in SETTINGS › TESTS › HARDWARE › CABLE.
              4. Does the effects unit miss the first messages after a preset change? Use SEND TIMING
              in SETTINGS › HARDWARE › TIMING.
 - I can't open the editor (checklist)

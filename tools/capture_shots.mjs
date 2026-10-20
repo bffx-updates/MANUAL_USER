@@ -518,6 +518,64 @@ const goPreset = async ({ H, sleep }) => {
   await sleep(900);
 };
 
+// Setlist de exemplo do MODO SETLIST (músicas e banda fictícias). O `target`
+// de cada parte é o preset plano da controladora (letra*6 + preset: 0 = A1).
+const SL_SEED = (() => {
+  const now = Date.now();
+  const P = (id, type, target, extra = {}) => ({ id, type, label: '', target, color: -1, reps: 1, notes: '',
+    mode: 'notes', chords: [], extras: [], ...extra });
+  const songs = [
+    { id: 'mnso1', name: 'Noite de Estrada', artist: 'Banda Aurora', key: 'Em', bpm: 120, tags: ['abertura'],
+      notes: 'Afinação padrão. Começa sozinho no dedilhado.', notesMode: 'notes', chords: [], updated: now,
+      parts: [
+        P('mnp11', 'intro', 0, { notes: 'Dedilhado limpo, 4 compassos.\nDelay curto.' }),
+        P('mnp12', 'verse', 1, { notes: 'Volume baixo, palhetada abafada.\nVoz entra no 2º compasso.', reps: 2 }),
+        P('mnp13', 'prechorus', 2, { notes: 'Crescendo — abre o volume no pedal.' }),
+        P('mnp14', 'chorus', 3, { mode: 'chords', chords: ['Em', 'C', 'G', 'D', 'Em', 'C', 'Am', 'B7'],
+          extras: [{ t: 'pc', ch: 16, n: 4, v: 0, o: 'bt' }] }),
+        P('mnp15', 'solo', 4, { notes: 'Solo: 8 compassos.\nBoost ligado, delay longo.' }),
+        P('mnp16', 'outro', 0, { notes: 'Volta ao dedilhado e termina no Em.' }),
+      ] },
+    { id: 'mnso2', name: 'Céu de Vidro', artist: 'Banda Aurora', key: 'A', bpm: 96, tags: [],
+      notes: '', notesMode: 'notes', chords: [], updated: now,
+      parts: [P('mnp21', 'intro', 6), P('mnp22', 'verse', 7), P('mnp23', 'chorus', 8), P('mnp24', 'outro', 6)] },
+    { id: 'mnso3', name: 'Última Chamada', artist: 'Banda Aurora', key: 'D', bpm: 140, tags: [],
+      notes: '', notesMode: 'notes', chords: [], updated: now,
+      parts: [P('mnp31', 'intro', 12), P('mnp32', 'verse', 13), P('mnp33', 'chorus', 14), P('mnp34', 'solo', 15), P('mnp35', 'outro', 12)] },
+  ];
+  const setlists = [{ id: 'mnsl1', name: 'Show de Sábado', songs: songs.map((s) => s.id), updated: now }];
+  const meta = { active: 'mnsl1', pos: { mnsl1: { song: 0, part: -1 } }, firstUse: now, lastChange: now - 1000,
+    lastFullBackup: now, lastSnap: now, lastDaily: now };
+  // uma cópia automática de ontem, pra a aba BACKUP não abrir com a lista vazia
+  const snap = { at: now - 86400000, reason: 'daily', counts: { songs: songs.length, setlists: setlists.length },
+    data: { songs, setlists, meta: { active: meta.active, pos: meta.pos } } };
+  return { songs, setlists, meta, snap };
+})();
+
+// Grava o setlist de exemplo no IndexedDB do app (mesmo esquema do
+// webApp/components/setlist_store.js). Abra a página de novo depois: o app só
+// lê o banco ao abrir.
+const seedSetlist = (c) => c.ev(`(async function(){
+  const seed = ${JSON.stringify(SL_SEED)};
+  const norm = (s) => String(s || '').normalize('NFD').replace(/[\\u0300-\\u036f]/g, '').toLowerCase().replace(/\\s+/g, ' ').trim();
+  const db = await new Promise((ok, err) => { const rq = indexedDB.open('bfmidi-setlist', 1);
+    rq.onupgradeneeded = () => { const d = rq.result;
+      if (!d.objectStoreNames.contains('songs')) { const st = d.createObjectStore('songs', { keyPath: 'id' }); st.createIndex('name', '_n'); st.createIndex('artist', '_a'); }
+      if (!d.objectStoreNames.contains('setlists')) d.createObjectStore('setlists', { keyPath: 'id' });
+      if (!d.objectStoreNames.contains('meta')) d.createObjectStore('meta', { keyPath: 'k' });
+      if (!d.objectStoreNames.contains('snapshots')) d.createObjectStore('snapshots', { keyPath: 'at' }); };
+    rq.onsuccess = () => ok(rq.result); rq.onerror = () => err(rq.error); rq.onblocked = () => err(new Error('blocked')); });
+  const t = db.transaction(['songs', 'setlists', 'meta', 'snapshots'], 'readwrite');
+  for (const n of ['songs', 'setlists', 'meta', 'snapshots']) t.objectStore(n).clear();
+  for (const s of seed.songs) t.objectStore('songs').put({ ...s, _n: norm(s.name), _a: norm(s.artist) });
+  for (const s of seed.setlists) t.objectStore('setlists').put(s);
+  for (const [k, v] of Object.entries(seed.meta)) t.objectStore('meta').put({ k, v });
+  t.objectStore('snapshots').put(seed.snap);
+  await new Promise((ok, err) => { t.oncomplete = ok; t.onerror = () => err(t.error); });
+  db.close();
+  return seed.songs.length;
+})()`);
+
 const STEPS = [
   { name: 'PRESET', ids: ['preset-tela', 'preset-console', 'preset-principal', 'preset-display', 'preset-tabbar', 'preset-extras', 'preset-swlist', 'preset-bancos', 'preset-acoes', 'preset-configurar-display'],
     async run(c) {
@@ -635,10 +693,11 @@ const STEPS = [
           await c.H(`click('.bf-stage-rail [role=tab]:nth-child(${n})')`); await c.sleep(id === 'stage-set-p2' ? 2600 : 900);
           await c.shoot(id, '.bf-stage');
         }
-        // categoria PERFIS (a 6ª): cria dois perfis só pro print e apaga depois,
-        // pra as outras etapas continuarem no perfil único (sem a pílula na barra).
+        // categoria PERFIS (a 7ª desde a categoria SETLIST, a 6ª): cria dois
+        // perfis só pro print e apaga depois, pra as outras etapas continuarem
+        // no perfil único (sem a pílula na barra).
         await c.H(`click('.bf-stage-rail [role=tab]:nth-child(3)')`); await c.sleep(700);
-        await c.H(`click('.bf-stage-rail [role=tab]:nth-child(6)')`); await c.sleep(900);
+        await c.H(`click('.bf-stage-rail [role=tab]:nth-child(7)')`); await c.sleep(900);
         const pfAct = (i) => `(function(){ var b=document.querySelectorAll('.bf-stage-pf-acts button')[${i}]; if(b&&!b.disabled){ b.click(); return true; } return false; })()`;
         const pfPick = (last) => `(function(){ var a=document.querySelectorAll('.bf-stage-pf-pick'); var b=a[${last ? 'a.length-1' : '0'}]; if(b) b.click(); })()`;
         for (let k = 0; k < 2; k++) { await c.ev(pfAct(2)); await c.sleep(500); }
@@ -703,6 +762,76 @@ const STEPS = [
       await c.shoot('stage-swedit', null, { full: true });
       await c.key('Escape'); await c.sleep(500);
       await c.key('Escape'); await c.sleep(500);
+    } },
+  // MODO SETLIST (19/out/2026): a 3ª tela do palco, só no build dos apps (use
+  // --editor, ver o topo). O banco de músicas mora no IndexedDB do app
+  // ('bfmidi-setlist'), então a etapa o SEMEIA antes de abrir: um setlist de
+  // exemplo com três músicas. A tela, o editor ao lado (a música aberta), a
+  // categoria SETLIST das configurações do palco (a 6ª do trilho) e a aba
+  // BACKUP do editor.
+  { name: 'MODO SETLIST', ids: ['stage-sl', 'stage-sl-editor', 'stage-set-sl', 'stage-sl-backup'],
+    async run(c) {
+      await c.scenario('default');
+      await c.open('desk');
+      await seedSetlist(c);
+      await c.open('desk');
+      await c.H(`wait('.bf-np-shortcut.is-accent', 12000)`); await c.sleep(600);
+      if (!await c.H(`click('.bf-np-shortcut', 'SETLIST')`)) { console.log('  ! atalho SETLIST ausente (use --editor com o build dos apps)'); return; }
+      if (!await c.H(`wait('.bf-sl-screen .bf-sl-part', 8000)`)) { console.log('  ! tela do setlist sem partes (a semente nao entrou?)'); await c.key('Escape'); return; }
+      await c.sleep(1200);
+      // chama o REFRÃO (cifras na área de anotações) e espera o mapa chegar na
+      // controladora simulada; a barra de cima fica escondida (o selo e o
+      // EDITAR SETLIST moram nela — o marcador aponta a alcinha)
+      await c.tap('.bf-sl-part:nth-child(4)'); await c.sleep(4800);
+      await c.shoot('stage-sl', '.bf-stage');
+      // EDITAR (cabeçalho da música): o editor abre ao lado, na música
+      if (await c.H(`clickIn('.bf-sl-head-acts', '.bf-sl-chip', 'EDITAR')`)) {
+        if (await c.H(`wait('.bf-sl-dock .bf-sl-parted', 5000)`)) {
+          await c.sleep(600);
+          // abre o REFRÃO (cifras) e rola até a lista de partes
+          await c.H(`click('.bf-sl-pe:nth-child(4) .bf-sl-pe-main')`); await c.sleep(600);
+          await c.ev(`(function(){ var b=document.querySelector('.bf-sl-dock-body'), h=document.querySelector('.bf-sl-subhead');
+            if(b&&h) b.scrollTop = h.offsetTop - b.offsetTop - 8; return 1; })()`);
+          await c.sleep(500);
+          await c.shoot('stage-sl-editor', null, { full: true });
+        } else console.log('  ! editor da musica nao abriu');
+        await c.key('Escape'); await c.sleep(600);
+      }
+      // aba BACKUP (EDITAR SETLIST na barra)
+      await c.H(`click('.bf-stage-handle')`); await c.sleep(500);
+      if (await c.H(`click('.bf-stage-pill', 'EDITAR SETLIST', true)`)) {
+        await c.H(`wait('.bf-sl-dock .bf-sl-tabs', 5000)`); await c.sleep(400);
+        if (await c.H(`click('.bf-sl-tab', 'BACKUP', true)`)) {
+          await c.H(`wait('.bf-sl-dock .bf-sl-bk', 4000)`); await c.sleep(700);
+          await c.shoot('stage-sl-backup', null, { full: true });
+        } else console.log('  ! aba BACKUP ausente');
+        await c.key('Escape'); await c.sleep(600);
+      } else console.log('  ! EDITAR SETLIST ausente na barra');
+      // configurações do palco, categoria SETLIST (a 6ª do trilho)
+      await c.H(`click('.bf-stage-handle')`); await c.sleep(500);
+      if (await c.H(`click('.bf-stage-top button[aria-haspopup="dialog"]')`)) {
+        await c.H(`wait('.bf-stage-sheet', 4000)`); await c.sleep(700);
+        await c.H(`click('.bf-stage-rail [role=tab]:nth-child(6)')`); await c.sleep(1200);
+        await c.shoot('stage-set-sl', '.bf-stage');
+        await c.key('Escape'); await c.sleep(500);
+      }
+      await c.key('Escape'); await c.sleep(500);
+    } },
+  // Os comandos de setlist na CHAMADA DE PRESETS (CONFIGURAÇÕES › BANCOS):
+  // a lista de ações de uma célula aberta, com o grupo SETLIST no fim.
+  { name: 'SETLIST · CHAMADA', ids: ['stage-sl-pe'],
+    async run(c) {
+      await c.scenario('default');
+      await c.open('desk');
+      await c.H(`wait('.bf-np-shortcut.is-device', 15000)`);
+      if (!await settingsOpen(c, 'BANCOS')) { console.log('  ! opcao ausente: BANCOS'); return; }
+      if (!await settingsTab(c, 'CHAMADA')) { console.log('  ! aba CHAMADA ausente'); return; }
+      if (!await c.H(`click('.bf-ck-pc-cell')`)) { console.log('  ! celula da CHAMADA ausente'); return; }
+      await c.H(`wait('.bf-ck-pc-pick', 4000)`); await c.sleep(600);
+      await c.H(`mark('.bf-ck-pc-opt', 'SETLIST: CHAMAR PARTE', 'sl-call')`);
+      await c.H(`mark('.bf-ck-pc-opt', 'SETLIST: PRÓXIMA PARTE', 'sl-next')`);
+      await c.H(`mark('.bf-ck-pc-opt', 'SETLIST: PRÓXIMA MÚSICA', 'sl-song')`);
+      await c.shoot('stage-sl-pe', '.bf-ck-pc-pick', { pad: 10 });
     } },
   { name: 'NANO CORTEX', ids: ['deved-nano', 'stage-2-nano'],
     async run(c) {

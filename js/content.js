@@ -4196,9 +4196,9 @@ const MN_CONTENT = {
     "es": "Una pantalla completa, en horizontal y con letras grandes para dejar el celular o la tablet en el atril durante el show: el preset que está sonando, los footswitches y el aparato conectado."
    },
    "intro": {
-    "pt": "<p>O <strong>MODO PALCO</strong> transforma o editor num painel para o show. São duas telas: o <strong>PALCO BFMIDI</strong> mostra a BFMiDi — o nome do preset em letra enorme, a imagem de fundo e os footswitches, que você pode ligar e desligar com o dedo — e o <strong>PALCO ESPECIAL</strong> mostra o pedal dedicado plugado na controladora — a cadeia de efeitos e os knobs da GP-5, da TONEX ONE ou da Nano Cortex, editáveis ao vivo.</p><p>O Modo Palco existe <strong>só nos aplicativos</strong> da BFMiDi (Android, iPhone/iPad, Mac e Windows). No editor aberto pelo navegador — pela controladora ou pelo site — ele não aparece.</p><p>As configurações do palco (cores, fonte, imagens) ficam só no aparelho onde você abriu: nada disso vai para a controladora.</p>",
-    "en": "<p><strong>STAGE MODE</strong> turns the editor into a panel for the show. There are two screens: the <strong>BFMIDI STAGE</strong> shows the BFMiDi — the preset name in huge letters, the background image and the footswitches, which you can turn on and off with your finger — and the <strong>SPECIAL STAGE</strong> shows the dedicated pedal plugged into the controller — the effect chain and the knobs of the GP-5, the TONEX ONE or the Nano Cortex, editable live.</p><p>Stage Mode exists <strong>only in the BFMiDi apps</strong> (Android, iPhone/iPad, Mac and Windows). In the editor opened in a browser — from the controller or from the website — it does not appear.</p><p>The stage settings (colors, font, images) stay only on the device where you opened it: none of it goes to the controller.</p>",
-    "es": "<p>El <strong>MODO ESCENARIO</strong> convierte el editor en un panel para el show. Son dos pantallas: el <strong>ESCENARIO BFMIDI</strong> muestra la BFMiDi — el nombre del preset en letras enormes, la imagen de fondo y los footswitches, que puedes encender y apagar con el dedo — y el <strong>ESCENARIO ESPECIAL</strong> muestra el pedal dedicado conectado a la controladora — la cadena de efectos y los knobs de la GP-5, la TONEX ONE o la Nano Cortex, editables en vivo.</p><p>El Modo Escenario existe <strong>solo en las apps</strong> de la BFMiDi (Android, iPhone/iPad, Mac y Windows). En el editor abierto en el navegador — desde la controladora o desde el sitio web — no aparece.</p><p>La configuración del escenario (colores, fuente, imágenes) queda solo en el aparato donde lo abriste: nada de esto va a la controladora.</p>"
+    "pt": "<p>O <strong>MODO PALCO</strong> transforma o editor num painel para o show. São três telas: o <strong>PALCO BFMIDI</strong> mostra a BFMiDi — o nome do preset em letra enorme, a imagem de fundo e os footswitches, que você pode ligar e desligar com o dedo — e o <strong>PALCO ESPECIAL</strong> mostra o pedal dedicado plugado na controladora — a cadeia de efeitos e os knobs da GP-5, da TONEX ONE ou da Nano Cortex, editáveis ao vivo — e o <strong>SETLIST</strong> mostra a música do show, as partes dela e as anotações.</p><p>O Modo Palco existe <strong>só nos aplicativos</strong> da BFMiDi (Android, iPhone/iPad, Mac e Windows). No editor aberto pelo navegador — pela controladora ou pelo site — ele não aparece.</p><p>As configurações do palco (cores, fonte, imagens) ficam só no aparelho onde você abriu: nada disso vai para a controladora.</p>",
+    "en": "<p><strong>STAGE MODE</strong> turns the editor into a panel for the show. There are three screens: the <strong>BFMIDI STAGE</strong> shows the BFMiDi — the preset name in huge letters, the background image and the footswitches, which you can turn on and off with your finger — and the <strong>SPECIAL STAGE</strong> shows the dedicated pedal plugged into the controller — the effect chain and the knobs of the GP-5, the TONEX ONE or the Nano Cortex, editable live — and the <strong>SETLIST</strong> shows the song of the show, its parts and notes.</p><p>Stage Mode exists <strong>only in the BFMiDi apps</strong> (Android, iPhone/iPad, Mac and Windows). In the editor opened in a browser — from the controller or from the website — it does not appear.</p><p>The stage settings (colors, font, images) stay only on the device where you opened it: none of it goes to the controller.</p>",
+    "es": "<p>El <strong>MODO ESCENARIO</strong> convierte el editor en un panel para el show. Son tres pantallas: el <strong>ESCENARIO BFMIDI</strong> muestra la BFMiDi — el nombre del preset en letras enormes, la imagen de fondo y los footswitches, que puedes encender y apagar con el dedo — y el <strong>ESCENARIO ESPECIAL</strong> muestra el pedal dedicado conectado a la controladora — la cadena de efectos y los knobs de la GP-5, la TONEX ONE o la Nano Cortex, editables en vivo — y el <strong>SETLIST</strong> muestra la canción del show, sus partes y las notas.</p><p>El Modo Escenario existe <strong>solo en las apps</strong> de la BFMiDi (Android, iPhone/iPad, Mac y Windows). En el editor abierto en el navegador — desde la controladora o desde el sitio web — no aparece.</p><p>La configuración del escenario (colores, fuente, imágenes) queda solo en el aparato donde lo abriste: nada de esto va a la controladora.</p>"
    },
    "cards": [
     {
@@ -5935,6 +5935,686 @@ const MN_CONTENT = {
        }
       }
      ]
+    },
+    {
+     "id": "palco-setlist",
+     "title": {
+      "pt": "SETLIST: a música, as partes e as anotações",
+      "en": "SETLIST: the song, its parts and notes",
+      "es": "SETLIST: la canción, las partes y las notas"
+     },
+     "purpose": {
+      "pt": "A terceira tela do Modo Palco: a música atual em letra grande, as partes dela em ordem (INTRO, VERSO, REFRÃO…) com o preset que cada uma chama, e as anotações ou cifras da parte que está tocando.",
+      "en": "The third Stage Mode screen: the current song in big letters, its parts in order (INTRO, VERSE, CHORUS…) with the preset each one calls, and the notes or chords of the part that is playing.",
+      "es": "La tercera pantalla del Modo Escenario: la canción actual en letras grandes, sus partes en orden (INTRO, ESTROFA, ESTRIBILLO…) con el preset que llama cada una, y las notas o acordes de la parte que está sonando."
+     },
+     "howto": [
+      {
+       "pt": "No card PRINCIPAL, toque em <strong>SETLIST</strong> (ao lado do MODO PALCO). Com o palco já aberto, escolha <strong>SETLIST</strong> no seletor <strong>BFMIDI · ESPECIAL · SETLIST</strong> da barra de cima.",
+       "en": "On the MAIN card, tap <strong>SETLIST</strong> (next to STAGE MODE). With the stage already open, choose <strong>SETLIST</strong> in the <strong>BFMIDI · SPECIAL · SETLIST</strong> selector on the top bar.",
+       "es": "En la tarjeta PRINCIPAL, toca <strong>SETLIST</strong> (al lado del MODO ESCENARIO). Con el escenario ya abierto, elige <strong>SETLIST</strong> en el selector <strong>BFMIDI · ESPECIAL · SETLIST</strong> de la barra superior."
+      },
+      {
+       "pt": "Escolha um setlist (ou toque em <strong>ABRIR O EDITOR</strong> para criar o primeiro).",
+       "en": "Pick a setlist (or tap <strong>OPEN THE EDITOR</strong> to create the first one).",
+       "es": "Elige un setlist (o toca <strong>ABRIR EL EDITOR</strong> para crear el primero)."
+      },
+      {
+       "pt": "Toque numa parte para chamar o preset dela. As setas do rodapé trocam de música <strong>sem</strong> chamar preset — pela tela você pode só estar olhando a próxima.",
+       "en": "Tap a part to call its preset. The footer arrows change songs <strong>without</strong> calling a preset — on screen you may just be looking at the next one.",
+       "es": "Toca una parte para llamar su preset. Las flechas del pie cambian de canción <strong>sin</strong> llamar preset — en la pantalla puede que solo estés mirando la próxima."
+      }
+     ],
+     "shot": "stage-sl",
+     "hot": [
+      {
+       "n": 1,
+       "sel": ".bf-sl-head",
+       "label": {
+        "pt": "música atual",
+        "en": "current song",
+        "es": "canción actual"
+       }
+      },
+      {
+       "n": 2,
+       "sel": ".bf-sl-parts",
+       "label": {
+        "pt": "partes",
+        "en": "parts",
+        "es": "partes"
+       }
+      },
+      {
+       "n": 3,
+       "sel": ".bf-sl-notes",
+       "label": {
+        "pt": "anotações e cifras",
+        "en": "notes and chords",
+        "es": "notas y acordes"
+       }
+      },
+      {
+       "n": 4,
+       "sel": ".bf-sl-foot",
+       "label": {
+        "pt": "músicas vizinhas",
+        "en": "nearby songs",
+        "es": "canciones vecinas"
+       }
+      },
+      {
+       "n": 5,
+       "sel": ".bf-stage-handle",
+       "at": "c",
+       "label": {
+        "pt": "barra: selo e EDITAR SETLIST",
+        "en": "bar: badge and EDIT SETLIST",
+        "es": "barra: sello y EDITAR SETLIST"
+       }
+      }
+     ],
+     "fields": [
+      {
+       "name": {
+        "pt": "O selo da barra",
+        "en": "The bar badge",
+        "es": "El sello de la barra"
+       },
+       "type": {
+        "pt": "estado",
+        "en": "status",
+        "es": "estado"
+       },
+       "desc": {
+        "pt": "<p><strong>NA CONTROLADORA</strong>: a controladora recebeu as partes da música e os comandos do pé funcionam. <strong>SÓ NO APP</strong>: sem conexão, modo offline ou firmware antigo — a tela acompanha o preset que está tocando, mas o pé não sabe do setlist. Toque no selo para ver a explicação.</p>",
+        "en": "<p><strong>ON THE CONTROLLER</strong>: the controller received the song’s parts and the foot commands work. <strong>APP ONLY</strong>: no connection, offline mode or old firmware — the screen follows the preset that is playing, but your foot doesn’t know about the setlist. Tap the badge for the explanation.</p>",
+        "es": "<p><strong>EN LA CONTROLADORA</strong>: la controladora recibió las partes de la canción y los comandos del pie funcionan. <strong>SOLO EN LA APP</strong>: sin conexión, modo offline o firmware antiguo — la pantalla sigue al preset que está sonando, pero el pie no sabe del setlist. Toca el sello para ver la explicación.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Acompanhamento automático",
+        "en": "Automatic following",
+        "es": "Seguimiento automático"
+       },
+       "type": {
+        "pt": "comportamento",
+        "en": "behavior",
+        "es": "comportamiento"
+       },
+       "desc": {
+        "pt": "<p>Trocou de preset por fora (um footswitch comum, o editor)? A tela marca sozinha a parte cujo preset é o que está tocando. Preset que nenhuma parte usa aparece como <strong>FORA DO SETLIST</strong>, e PRÓXIMA PARTE continua da última parte conhecida.</p>",
+        "en": "<p>Changed presets some other way (a regular footswitch, the editor)? The screen marks on its own the part whose preset is the one playing. A preset no part uses shows <strong>OUT OF THE SETLIST</strong>, and NEXT PART continues from the last known part.</p>",
+        "es": "<p>¿Cambiaste de preset por otro lado (un footswitch común, el editor)? La pantalla marca sola la parte cuyo preset es el que está sonando. Un preset que ninguna parte usa aparece como <strong>FUERA DEL SETLIST</strong>, y PRÓXIMA PARTE sigue desde la última parte conocida.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Só com o app aberto",
+        "en": "Only with the app open",
+        "es": "Solo con la app abierta"
+       },
+       "type": {
+        "pt": "regra",
+        "en": "rule",
+        "es": "regla"
+       },
+       "desc": {
+        "pt": "<p>A controladora guarda só a música atual e as vizinhas, na memória, e <strong>esquece tudo</strong> ao fechar o palco ou depois de 15 s sem notícia do app (segundo plano, tela apagada, conexão caída). Nada se perde: o setlist mora no app, e ao reconectar ele é mandado de novo. A tela fica acesa enquanto o setlist estiver aberto.</p><p>Trocar para o PALCO BFMIDI ou o ESPECIAL no meio da música não desliga o setlist: só fechar o palco.</p>",
+        "en": "<p>The controller keeps only the current song and its neighbors, in memory, and <strong>forgets everything</strong> when you close the stage or after 15 s without hearing from the app (background, screen off, lost connection). Nothing is lost: the setlist lives in the app, and on reconnecting it is sent again. The screen stays on while the setlist is open.</p><p>Switching to the BFMIDI or SPECIAL stage in the middle of a song doesn’t turn the setlist off: only closing the stage does.</p>",
+        "es": "<p>La controladora guarda solo la canción actual y las vecinas, en la memoria, y <strong>olvida todo</strong> al cerrar el escenario o después de 15 s sin noticias de la app (segundo plano, pantalla apagada, conexión caída). Nada se pierde: el setlist vive en la app, y al reconectar se envía de nuevo. La pantalla queda encendida mientras el setlist esté abierto.</p><p>Cambiar al escenario BFMIDI o ESPECIAL en medio de la canción no apaga el setlist: solo cerrar el escenario.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "O nome da parte na controladora",
+        "en": "The part name on the controller",
+        "es": "El nombre de la parte en la controladora"
+       },
+       "type": {
+        "pt": "tela do pedal",
+        "en": "pedal screen",
+        "es": "pantalla del pedal"
+       },
+       "desc": {
+        "pt": "<p>Com <strong>Bank na troca de preset</strong> ligado (CONFIGURAÇÕES › TELA), o card que aparece na tela da controladora mostra o nome da parte em cima do preset — por exemplo <strong>REFRAO</strong> sobre <strong>D4</strong> — também quando duas partes usam o mesmo preset. O nome vai sem acento e com até 12 letras.</p>",
+        "en": "<p>With <strong>Bank on preset change</strong> on (SETTINGS › SCREEN), the card that appears on the controller’s screen shows the part name above the preset — for example <strong>CHORUS</strong> over <strong>D4</strong> — also when two parts use the same preset. The name goes without accents and with up to 12 letters.</p>",
+        "es": "<p>Con <strong>Bank al cambiar de preset</strong> activado (CONFIGURACIÓN › PANTALLA), la tarjeta que aparece en la pantalla de la controladora muestra el nombre de la parte encima del preset — por ejemplo <strong>ESTRIBILLO</strong> sobre <strong>D4</strong> — también cuando dos partes usan el mismo preset. El nombre va sin acentos y con hasta 12 letras.</p>"
+       }
+      }
+     ]
+    },
+    {
+     "id": "palco-setlist-editor",
+     "title": {
+      "pt": "Banco de músicas e setlists",
+      "en": "Song bank and setlists",
+      "es": "Banco de canciones y setlists"
+     },
+     "purpose": {
+      "pt": "Cada música é cadastrada uma vez no banco; um setlist é uma lista de músicas do banco. Tudo fica guardado no aparelho, sem precisar do pedal.",
+      "en": "Each song is entered once in the bank; a setlist is a list of songs from the bank. Everything is stored on the device, with no pedal needed.",
+      "es": "Cada canción se registra una vez en el banco; un setlist es una lista de canciones del banco. Todo queda guardado en el aparato, sin necesitar el pedal."
+     },
+     "howto": [
+      {
+       "pt": "Na tela SETLIST, abra a barra de cima e toque em <strong>EDITAR SETLIST</strong>. O editor abre ao lado do palco, com as abas <strong>SETLISTS</strong>, <strong>BANCO DE MÚSICAS</strong> e <strong>BACKUP</strong>.",
+       "en": "On the SETLIST screen, open the top bar and tap <strong>EDIT SETLIST</strong>. The editor opens beside the stage, with the <strong>SETLISTS</strong>, <strong>SONG BANK</strong> and <strong>BACKUP</strong> tabs.",
+       "es": "En la pantalla SETLIST, abre la barra superior y toca <strong>EDITAR SETLIST</strong>. El editor se abre al lado del escenario, con las pestañas <strong>SETLISTS</strong>, <strong>BANCO DE CANCIONES</strong> y <strong>BACKUP</strong>."
+      },
+      {
+       "pt": "Crie a música com nome, artista, tom e BPM, e acrescente as partes por tipo. Em cada parte escolha o <strong>preset</strong> da controladora que ela chama.",
+       "en": "Create the song with name, artist, key and BPM, and add the parts by type. In each part choose the controller <strong>preset</strong> it calls.",
+       "es": "Crea la canción con nombre, artista, tono y BPM, y agrega las partes por tipo. En cada parte elige el <strong>preset</strong> de la controladora que llama."
+      },
+      {
+       "pt": "Ponha a música num setlist e acerte a ordem com ↑ ↓. Tudo grava sozinho.",
+       "en": "Put the song in a setlist and set the order with ↑ ↓. Everything saves on its own.",
+       "es": "Pon la canción en un setlist y ajusta el orden con ↑ ↓. Todo se guarda solo."
+      }
+     ],
+     "shot": "stage-sl-editor",
+     "hot": [
+      {
+       "n": 1,
+       "sel": ".bf-sl-pe-num",
+       "label": {
+        "pt": "número da parte",
+        "en": "part number",
+        "es": "número de la parte"
+       }
+      },
+      {
+       "n": 2,
+       "sel": ".bf-sl-pe-pre",
+       "label": {
+        "pt": "preset da parte",
+        "en": "part preset",
+        "es": "preset de la parte"
+       }
+      },
+      {
+       "n": 3,
+       "sel": ".bf-sl-pe-ex.is-on",
+       "label": {
+        "pt": "disparos extras",
+        "en": "extra messages",
+        "es": "disparos extra"
+       }
+      },
+      {
+       "n": 4,
+       "sel": ".bf-sl-pe.is-open .bf-sl-seg.is-nbox",
+       "label": {
+        "pt": "notas ou cifras",
+        "en": "notes or chords",
+        "es": "notas o acordes"
+       }
+      }
+     ],
+     "fields": [
+      {
+       "name": {
+        "pt": "O número da parte",
+        "en": "The part number",
+        "es": "El número de la parte"
+       },
+       "type": {
+        "pt": "ordem",
+        "en": "order",
+        "es": "orden"
+       },
+       "desc": {
+        "pt": "<p>É a posição da parte na música (1, 2, 3…), e é por ele que os comandos <strong>PARTE N</strong> e <strong>CHAMAR PARTE</strong> funcionam. Reordenar as partes muda os números — o editor avisa. Até 32 partes por música.</p>",
+        "en": "<p>It’s the part’s position in the song (1, 2, 3…), and it’s what the <strong>PART N</strong> and <strong>CALL PART</strong> commands use. Reordering the parts changes the numbers — the editor warns you. Up to 32 parts per song.</p>",
+        "es": "<p>Es la posición de la parte en la canción (1, 2, 3…), y es por él que funcionan los comandos <strong>PARTE N</strong> y <strong>LLAMAR PARTE</strong>. Reordenar las partes cambia los números — el editor avisa. Hasta 32 partes por canción.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Notas pessoais ou cifras",
+        "en": "Personal notes or chords",
+        "es": "Notas personales o acordes"
+       },
+       "type": {
+        "pt": "anotações",
+        "en": "notes",
+        "es": "notas"
+       },
+       "desc": {
+        "pt": "<p>Cada parte (e a música) tem um seletor <strong>NOTAS PESSOAIS | CIFRAS</strong>. As cifras se montam tocando em blocos: primeiro os acordes do tom da música, depois as 12 notas no tipo escolhido, e \"Outra cifra\" para digitar. No palco elas aparecem em quadros grandes. <strong>TRANSPOR</strong> muda as cifras de uma parte ou da música inteira.</p>",
+        "en": "<p>Each part (and the song) has a <strong>PERSONAL NOTES | CHORDS</strong> selector. Chords are built by tapping blocks: first the chords of the song’s key, then the 12 notes in the chosen type, and \"Other chord\" to type. On stage they show in big boxes. <strong>TRANSPOSE</strong> changes the chords of one part or of the whole song.</p>",
+        "es": "<p>Cada parte (y la canción) tiene un selector <strong>NOTAS PERSONALES | ACORDES</strong>. Los acordes se arman tocando bloques: primero los acordes del tono de la canción, después las 12 notas en el tipo elegido, y \"Otro acorde\" para escribir. En el escenario aparecen en cuadros grandes. <strong>TRANSPONER</strong> cambia los acordes de una parte o de la canción entera.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Disparos extras",
+        "en": "Extra messages",
+        "es": "Disparos extra"
+       },
+       "type": {
+        "pt": "PC / CC",
+        "en": "PC / CC",
+        "es": "PC / CC"
+       },
+       "desc": {
+        "pt": "<p>O ícone ao lado do preset de cada parte guarda até <strong>3 mensagens PC ou CC</strong> que a controladora manda junto com a parte — para um VS/playback, a luz ou outro aparelho. Saem a cada vez que a parte é chamada. Cada uma escolhe a saída: <strong>BLUETOOTH DO HOST</strong> (nas placas com USB host) ou <strong>TODAS AS SAÍDAS</strong>.</p>",
+        "en": "<p>The icon next to each part’s preset holds up to <strong>3 PC or CC messages</strong> the controller sends along with the part — for a backing track/VS, lights or another device. They go out every time the part is called. Each one picks the output: <strong>HOST BLUETOOTH</strong> (on boards with a USB host) or <strong>ALL OUTPUTS</strong>.</p>",
+        "es": "<p>El ícono al lado del preset de cada parte guarda hasta <strong>3 mensajes PC o CC</strong> que la controladora envía junto con la parte — para un VS/playback, la luz u otro aparato. Salen cada vez que se llama la parte. Cada uno elige la salida: <strong>BLUETOOTH DEL HOST</strong> (en las placas con USB host) o <strong>TODAS LAS SALIDAS</strong>.</p>"
+       }
+      }
+     ]
+    },
+    {
+     "id": "palco-setlist-pe",
+     "title": {
+      "pt": "Controlar o setlist com o pé",
+      "en": "Controlling the setlist with your foot",
+      "es": "Controlar el setlist con el pie"
+     },
+     "purpose": {
+      "pt": "Os footswitches nunca mudam sozinhos: você escolhe em qual gesto de qual footswitch põe cada comando de setlist — ou não põe nenhum.",
+      "en": "The footswitches never change on their own: you choose which gesture of which footswitch gets each setlist command — or none at all.",
+      "es": "Los footswitches nunca cambian solos: tú eliges en qué gesto de qué footswitch pones cada comando de setlist — o ninguno."
+     },
+     "howto": [
+      {
+       "pt": "Nos footswitches do BANK: <strong>CONFIGURAÇÕES › BANCOS › CHAMADA</strong>, ações <strong>SETLIST: …</strong> no TOQUE ou no SEGURAR.",
+       "en": "On the BANK footswitches: <strong>SETTINGS › BANKS › CALL</strong>, the <strong>SETLIST: …</strong> actions on TAP or HOLD.",
+       "es": "En los footswitches del BANK: <strong>CONFIGURACIÓN › BANCOS › LLAMADA</strong>, acciones <strong>SETLIST: …</strong> en el TOQUE o en MANTENER."
+      },
+      {
+       "pt": "Num footswitch do LIVE, do SW GLOBAL ou num externo: nas listas de CC, depois dos comandos de navegação, vem o grupo <strong>── SETLIST ──</strong>.",
+       "en": "On a LIVE, SW GLOBAL or external footswitch: in the CC lists, after the navigation commands, comes the <strong>── SETLIST ──</strong> group.",
+       "es": "En un footswitch del LIVE, del SW GLOBAL o externo: en las listas de CC, después de los comandos de navegación, viene el grupo <strong>── SETLIST ──</strong>."
+      }
+     ],
+     "shot": "stage-sl-pe",
+     "hot": [
+      {
+       "n": 1,
+       "sel": "[data-mn-mark=\"sl-call\"]",
+       "label": {
+        "pt": "chamar parte",
+        "en": "call part",
+        "es": "llamar parte"
+       }
+      },
+      {
+       "n": 2,
+       "sel": "[data-mn-mark=\"sl-next\"]",
+       "label": {
+        "pt": "próxima / anterior parte",
+        "en": "next / previous part",
+        "es": "próxima / anterior parte"
+       }
+      },
+      {
+       "n": 3,
+       "sel": "[data-mn-mark=\"sl-song\"]",
+       "label": {
+        "pt": "próxima / anterior música",
+        "en": "next / previous song",
+        "es": "próxima / anterior canción"
+       }
+      }
+     ],
+     "fields": [
+      {
+       "name": {
+        "pt": "CHAMAR PARTE",
+        "en": "CALL PART",
+        "es": "LLAMAR PARTE"
+       },
+       "type": {
+        "pt": "ação",
+        "en": "action",
+        "es": "acción"
+       },
+       "desc": {
+        "pt": "<p>Na CHAMADA DE PRESETS: o footswitch 3 chama a parte 3, e assim por diante. Sem setlist aberto ele age como CHAMAR PRESET — o pé nunca fica sem trocar de preset. Com o setlist aberto, o anel aceso é o do footswitch da parte atual.</p>",
+        "en": "<p>In PRESET CALL: footswitch 3 calls part 3, and so on. Without a setlist open it acts as CALL PRESET — your foot never loses the ability to change presets. With the setlist open, the lit ring is the one on the current part’s footswitch.</p>",
+        "es": "<p>En la LLAMADA DE PRESETS: el footswitch 3 llama la parte 3, y así sucesivamente. Sin setlist abierto actúa como LLAMAR PRESET — el pie nunca se queda sin cambiar de preset. Con el setlist abierto, el anillo encendido es el del footswitch de la parte actual.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "PRÓXIMA / ANTERIOR",
+        "en": "NEXT / PREVIOUS",
+        "es": "PRÓXIMA / ANTERIOR"
+       },
+       "type": {
+        "pt": "partes e músicas",
+        "en": "parts and songs",
+        "es": "partes y canciones"
+       },
+       "desc": {
+        "pt": "<p>PRÓXIMA PARTE e PARTE ANTERIOR andam dentro da música e param nas pontas. PRÓXIMA MÚSICA e MÚSICA ANTERIOR trocam de música e chamam a 1ª parte dela, na hora, sem esperar o app. Comando disparado no LIVE fica no LIVE.</p>",
+        "en": "<p>NEXT PART and PREVIOUS PART move within the song and stop at the ends. NEXT SONG and PREVIOUS SONG change the song and call its 1st part, right away, without waiting for the app. A command fired in LIVE stays in LIVE.</p>",
+        "es": "<p>PRÓXIMA PARTE y PARTE ANTERIOR avanzan dentro de la canción y se detienen en los extremos. PRÓXIMA CANCIÓN y CANCIÓN ANTERIOR cambian de canción y llaman su 1ª parte, al instante, sin esperar la app. Un comando disparado en el LIVE se queda en el LIVE.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "PARTE 1 a PARTE 8",
+        "en": "PART 1 to PART 8",
+        "es": "PARTE 1 a PARTE 8"
+       },
+       "type": {
+        "pt": "comandos",
+        "en": "commands",
+        "es": "comandos"
+       },
+       "desc": {
+        "pt": "<p>Chamam a parte com aquele número; numa música com menos partes, não fazem nada. Chamar a parte que já está tocando não reenvia o preset (só os disparos extras dela).</p>",
+        "en": "<p>Call the part with that number; in a song with fewer parts, they do nothing. Calling the part that is already playing doesn’t resend the preset (only its extra messages).</p>",
+        "es": "<p>Llaman la parte con ese número; en una canción con menos partes, no hacen nada. Llamar la parte que ya está sonando no reenvía el preset (solo sus disparos extra).</p>"
+       }
+      }
+     ]
+    },
+    {
+     "id": "palco-setlist-tela",
+     "title": {
+      "pt": "Ajustar a tela do setlist",
+      "en": "Adjusting the setlist screen",
+      "es": "Ajustar la pantalla del setlist"
+     },
+     "purpose": {
+      "pt": "Nas configurações do palco, a categoria SETLIST muda o arranjo e o tamanho das peças da tela do setlist, com a prévia ao lado.",
+      "en": "In the stage settings, the SETLIST category changes the arrangement and the size of the setlist screen pieces, with the preview beside it.",
+      "es": "En la configuración del escenario, la categoría SETLIST cambia la disposición y el tamaño de las piezas de la pantalla del setlist, con la vista previa al lado."
+     },
+     "howto": [
+      {
+       "pt": "Abra a barra de cima, toque em <strong>CONFIGURAÇÕES</strong> e escolha <strong>SETLIST</strong> no trilho da esquerda. Sem setlist com música, a prévia mostra um exemplo.",
+       "en": "Open the top bar, tap <strong>SETTINGS</strong> and choose <strong>SETLIST</strong> on the left rail. Without a setlist with songs, the preview shows an example.",
+       "es": "Abre la barra superior, toca <strong>CONFIGURACIÓN</strong> y elige <strong>SETLIST</strong> en el carril de la izquierda. Sin setlist con canciones, la vista previa muestra un ejemplo."
+      }
+     ],
+     "shot": "stage-set-sl",
+     "hot": [
+      {
+       "n": 1,
+       "sel": ".bf-stage-rail [role=tab]:nth-child(6)",
+       "label": {
+        "pt": "categoria SETLIST",
+        "en": "SETLIST category",
+        "es": "categoría SETLIST"
+       }
+      },
+      {
+       "n": 2,
+       "sel": "[data-k=\"slLay\"]",
+       "label": {
+        "pt": "layout da tela",
+        "en": "screen layout",
+        "es": "diseño de la pantalla"
+       }
+      },
+      {
+       "n": 3,
+       "sel": "[data-k=\"slNotesSize\"]",
+       "label": {
+        "pt": "tamanhos",
+        "en": "sizes",
+        "es": "tamaños"
+       }
+      },
+      {
+       "n": 4,
+       "sel": ".bf-sl-screen",
+       "label": {
+        "pt": "prévia",
+        "en": "preview",
+        "es": "vista previa"
+       }
+      }
+     ],
+     "fields": [
+      {
+       "name": {
+        "pt": "Layout da tela",
+        "en": "Screen layout",
+        "es": "Diseño de la pantalla"
+       },
+       "type": {
+        "pt": "4 opções",
+        "en": "4 options",
+        "es": "4 opciones"
+       },
+       "desc": {
+        "pt": "<p><strong>COMPLETO</strong> (música, faixa de partes, anotações e rodapé), <strong>PARTES AO LADO</strong> (as partes numa coluna, as anotações à direita — precisa de tela larga), <strong>ANOTAÇÕES GRANDES</strong> (a música numa linha só e as anotações com a maior parte da tela) e <strong>SÓ AS PARTES</strong> (os cartões das partes ocupam a tela, sem anotações).</p>",
+        "en": "<p><strong>FULL</strong> (song, parts strip, notes and footer), <strong>PARTS ON THE SIDE</strong> (the parts in a column, the notes on the right — needs a wide screen), <strong>BIG NOTES</strong> (the song on a single line and the notes taking most of the screen) and <strong>PARTS ONLY</strong> (the part cards fill the screen, no notes).</p>",
+        "es": "<p><strong>COMPLETO</strong> (canción, franja de partes, notas y pie), <strong>PARTES AL LADO</strong> (las partes en una columna, las notas a la derecha — necesita pantalla ancha), <strong>NOTAS GRANDES</strong> (la canción en una sola línea y las notas ocupando la mayor parte de la pantalla) y <strong>SOLO LAS PARTES</strong> (las tarjetas de las partes ocupan la pantalla, sin notas).</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Tamanhos e o que aparece",
+        "en": "Sizes and what shows",
+        "es": "Tamaños y lo que aparece"
+       },
+       "type": {
+        "pt": "opções",
+        "en": "options",
+        "es": "opciones"
+       },
+       "desc": {
+        "pt": "<p>Tamanho das anotações e das partes; artista, tom e BPM; o preset de cada parte; o rodapé com as músicas vizinhas (desligado, a lista do setlist vai para o cabeçalho); e, em MAIS OPÇÕES, o número da música e a marca A SEGUIR.</p>",
+        "en": "<p>Size of the notes and of the parts; artist, key and BPM; each part’s preset; the footer with the nearby songs (turned off, the setlist list moves to the header); and, under MORE OPTIONS, the song number and the UP NEXT tag.</p>",
+        "es": "<p>Tamaño de las notas y de las partes; artista, tono y BPM; el preset de cada parte; el pie con las canciones vecinas (apagado, la lista del setlist pasa a la cabecera); y, en MÁS OPCIONES, el número de la canción y la marca A CONTINUACIÓN.</p>"
+       }
+      }
+     ]
+    },
+    {
+     "id": "palco-setlist-backup",
+     "title": {
+      "pt": "Backup do setlist",
+      "en": "Setlist backup",
+      "es": "Backup del setlist"
+     },
+     "purpose": {
+      "pt": "O banco de músicas mora só no aparelho, então ele tem um backup próprio, separado do backup da controladora.",
+      "en": "The song bank lives only on the device, so it has its own backup, separate from the controller backup.",
+      "es": "El banco de canciones vive solo en el aparato, así que tiene un backup propio, separado del backup de la controladora."
+     },
+     "howto": [
+      {
+       "pt": "Na aba <strong>BACKUP</strong> do editor do setlist (ou em <strong>CONFIGURAÇÕES › BACKUP › SETLIST</strong>, nos aplicativos), toque em <strong>BACKUP COMPLETO</strong> e guarde o arquivo.",
+       "en": "On the <strong>BACKUP</strong> tab of the setlist editor (or in <strong>SETTINGS › BACKUP › SETLIST</strong>, in the apps), tap <strong>FULL BACKUP</strong> and keep the file.",
+       "es": "En la pestaña <strong>BACKUP</strong> del editor del setlist (o en <strong>CONFIGURACIÓN › BACKUP › SETLIST</strong>, en las apps), toca <strong>BACKUP COMPLETO</strong> y guarda el archivo."
+      },
+      {
+       "pt": "Para voltar, <strong>ABRIR ARQUIVO</strong>: o app mostra um resumo (músicas e setlists novos, iguais e diferentes) antes de mexer em qualquer coisa, e oferece <strong>DESFAZER RESTAURAÇÃO</strong> no fim. O mesmo botão recebe os arquivos feitos no editor do site (próximo card).",
+       "en": "To bring it back, <strong>OPEN FILE</strong>: the app shows a summary (new, same and different songs and setlists) before touching anything, and offers <strong>UNDO RESTORE</strong> at the end. The same button takes the files made in the site editor (next card).",
+       "es": "Para volver, <strong>ABRIR ARCHIVO</strong>: la app muestra un resumen (canciones y setlists nuevos, iguales y diferentes) antes de tocar nada, y ofrece <strong>DESHACER RESTAURACIÓN</strong> al final. El mismo botón recibe los archivos hechos en el editor del sitio (próxima tarjeta)."
+      }
+     ],
+     "shot": "stage-sl-backup",
+     "hot": [
+      {
+       "n": 1,
+       "sel": ".bf-sl-tab.is-on",
+       "label": {
+        "pt": "aba BACKUP",
+        "en": "BACKUP tab",
+        "es": "pestaña BACKUP"
+       }
+      },
+      {
+       "n": 2,
+       "sel": ".bf-sl-bk .bf-sl-btn.is-primary",
+       "label": {
+        "pt": "backup completo",
+        "en": "full backup",
+        "es": "backup completo"
+       }
+      },
+      {
+       "n": 3,
+       "sel": ".bf-sl-bk-sec:first-child .bf-sl-acts .bf-sl-btn:not(.is-primary)",
+       "label": {
+        "pt": "abrir arquivo",
+        "en": "open file",
+        "es": "abrir archivo"
+       }
+      },
+      {
+       "n": 4,
+       "sel": ".bf-sl-rows.is-snaps",
+       "label": {
+        "pt": "cópias automáticas",
+        "en": "automatic copies",
+        "es": "copias automáticas"
+       }
+      }
+     ],
+     "fields": [
+      {
+       "name": {
+        "pt": "Cópias automáticas",
+        "en": "Automatic copies",
+        "es": "Copias automáticas"
+       },
+       "type": {
+        "pt": "proteção",
+        "en": "protection",
+        "es": "protección"
+       },
+       "desc": {
+        "pt": "<p>O app guarda sozinho até 20 cópias do banco (uma por dia de uso, e antes de restaurar ou apagar). Elas protegem contra erro de edição — <strong>não</strong> contra desinstalar o app ou trocar de aparelho. Para isso, só o arquivo de backup.</p>",
+        "en": "<p>The app keeps up to 20 copies of the bank on its own (one per day of use, and before restoring or deleting). They protect against editing mistakes — <strong>not</strong> against uninstalling the app or changing devices. For that, only the backup file.</p>",
+        "es": "<p>La app guarda sola hasta 20 copias del banco (una por día de uso, y antes de restaurar o borrar). Protegen contra errores de edición — <strong>no</strong> contra desinstalar la app o cambiar de aparato. Para eso, solo el archivo de backup.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Arquivos separados",
+        "en": "Separate files",
+        "es": "Archivos separados"
+       },
+       "type": {
+        "pt": "regra",
+        "en": "rule",
+        "es": "regla"
+       },
+       "desc": {
+        "pt": "<p>O backup do setlist não leva presets da controladora, e o backup da controladora não leva o setlist. Cada RESTAURAR recusa o arquivo do outro, dizendo onde ele deve ser restaurado.</p>",
+        "en": "<p>The setlist backup doesn’t carry controller presets, and the controller backup doesn’t carry the setlist. Each RESTORE refuses the other’s file, saying where it should be restored.</p>",
+        "es": "<p>El backup del setlist no lleva presets de la controladora, y el backup de la controladora no lleva el setlist. Cada RESTAURAR rechaza el archivo del otro, diciendo dónde debe restaurarse.</p>"
+       }
+      }
+     ]
+    },
+    {
+     "id": "palco-setlist-site",
+     "title": {
+      "pt": "Editar o setlist no computador (site)",
+      "en": "Editing the setlist on a computer (website)",
+      "es": "Editar el setlist en la computadora (sitio)"
+     },
+     "purpose": {
+      "pt": "O mesmo editor do setlist, no navegador: monte o banco de músicas e os setlists com teclado e tela grande e leve para o app por um arquivo — e o contrário também.",
+      "en": "The same setlist editor, in the browser: build the song bank and the setlists with a keyboard and a big screen and take them to the app with a file — and the other way around.",
+      "es": "El mismo editor del setlist, en el navegador: arma el banco de canciones y los setlists con teclado y pantalla grande y llévalos a la app con un archivo — y al revés también."
+     },
+     "howto": [
+      {
+       "pt": "Abra <a href=\"https://bffx.com.br/setlist/\" target=\"_blank\" rel=\"noopener\">bffx.com.br/setlist</a> em qualquer navegador (computador, tablet ou celular). Não precisa de conta nem da controladora.",
+       "en": "Open <a href=\"https://bffx.com.br/setlist/\" target=\"_blank\" rel=\"noopener\">bffx.com.br/setlist</a> in any browser (computer, tablet or phone). No account and no controller needed.",
+       "es": "Abre <a href=\"https://bffx.com.br/setlist/\" target=\"_blank\" rel=\"noopener\">bffx.com.br/setlist</a> en cualquier navegador (computadora, tablet o celular). No hace falta cuenta ni la controladora."
+      },
+      {
+       "pt": "Para trazer o que já está no app: no app, <strong>CONFIGURAÇÕES › BACKUP › SETLIST › BACKUP COMPLETO</strong>; no site, <strong>ABRIR ARQUIVO</strong>, confira o resumo e toque em <strong>RESTAURAR AGORA</strong>.",
+       "en": "To bring what is already in the app: in the app, <strong>SETTINGS › BACKUP › SETLIST › FULL BACKUP</strong>; on the site, <strong>OPEN FILE</strong>, check the summary and tap <strong>RESTORE NOW</strong>.",
+       "es": "Para traer lo que ya está en la app: en la app, <strong>CONFIGURACIÓN › BACKUP › SETLIST › BACKUP COMPLETO</strong>; en el sitio, <strong>ABRIR ARCHIVO</strong>, revisa el resumen y toca <strong>RESTAURAR AHORA</strong>."
+      },
+      {
+       "pt": "Edite como no app: setlists, músicas, partes, cifras e disparos extras. No computador a lista fica à esquerda e a música aberta à direita.",
+       "en": "Edit as in the app: setlists, songs, parts, chords and extra messages. On a computer the list stays on the left and the open song on the right.",
+       "es": "Edita como en la app: setlists, canciones, partes, acordes y disparos extra. En la computadora la lista queda a la izquierda y la canción abierta a la derecha."
+      },
+      {
+       "pt": "Para levar ao app: no site, <strong>BAIXAR</strong> (no celular, <strong>COMPARTILHAR</strong>); no app, <strong>CONFIGURAÇÕES › BACKUP › SETLIST › ABRIR ARQUIVO</strong>. No <strong>SOMAR AO BANCO</strong>, fica a versão mais recente de cada música e de cada setlist.",
+       "en": "To take it to the app: on the site, <strong>DOWNLOAD</strong> (on a phone, <strong>SHARE</strong>); in the app, <strong>SETTINGS › BACKUP › SETLIST › OPEN FILE</strong>. With <strong>ADD TO THE BANK</strong>, the newest version of each song and each setlist stays.",
+       "es": "Para llevarlo a la app: en el sitio, <strong>DESCARGAR</strong> (en el celular, <strong>COMPARTIR</strong>); en la app, <strong>CONFIGURACIÓN › BACKUP › SETLIST › ABRIR ARCHIVO</strong>. Con <strong>SUMAR AL BANCO</strong>, queda la versión más reciente de cada canción y de cada setlist."
+      }
+     ],
+     "noMock": true,
+     "fields": [
+      {
+       "name": {
+        "pt": "Fica neste navegador",
+        "en": "It stays in this browser",
+        "es": "Queda en este navegador"
+       },
+       "type": {
+        "pt": "armazenamento",
+        "en": "storage",
+        "es": "almacenamiento"
+       },
+       "desc": {
+        "pt": "<p>O que você edita no site fica só no navegador em que editou: outro navegador, outro computador e o app começam sem isso até você levar o arquivo. Não há conta nem servidor — nada do que você digita sai do navegador. No <strong>Safari</strong>, os dados somem se a página ficar 7 dias sem ser aberta: baixe o arquivo antes.</p>",
+        "en": "<p>What you edit on the site stays only in the browser you used: another browser, another computer and the app start without it until you take the file there. There is no account and no server — nothing you type leaves the browser. In <strong>Safari</strong>, the data is erased if the page goes 7 days without being opened: download the file first.</p>",
+        "es": "<p>Lo que editas en el sitio queda solo en el navegador donde editaste: otro navegador, otra computadora y la app empiezan sin eso hasta que lleves el archivo. No hay cuenta ni servidor — nada de lo que escribes sale del navegador. En <strong>Safari</strong>, los datos se borran si la página pasa 7 días sin abrirse: descarga el archivo antes.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Edições dos dois lados",
+        "en": "Edits on both sides",
+        "es": "Ediciones de los dos lados"
+       },
+       "type": {
+        "pt": "regra",
+        "en": "rule",
+        "es": "regla"
+       },
+       "desc": {
+        "pt": "<p>Se a mesma música (ou o mesmo setlist) foi editada no site e no app, uma das versões ganha — a mais recente, por padrão. Para não perder nada, escolha <strong>MANTER AS DUAS</strong> no resumo. <strong>SOMAR</strong> nunca apaga: o que foi apagado de um lado continua no outro. Para deixar os dois iguais, use <strong>SUBSTITUIR O BANCO INTEIRO</strong> com um backup completo.</p>",
+        "en": "<p>If the same song (or the same setlist) was edited on the site and in the app, one version wins — the newest, by default. To lose nothing, choose <strong>KEEP BOTH</strong> in the summary. <strong>ADD</strong> never deletes: what was deleted on one side stays on the other. To make both the same, use <strong>REPLACE THE WHOLE BANK</strong> with a full backup.</p>",
+        "es": "<p>Si la misma canción (o el mismo setlist) se editó en el sitio y en la app, una versión gana — la más reciente, por defecto. Para no perder nada, elige <strong>MANTENER LAS DOS</strong> en el resumen. <strong>SUMAR</strong> nunca borra: lo que se borró de un lado sigue en el otro. Para dejar los dos iguales, usa <strong>REEMPLAZAR TODO EL BANCO</strong> con un backup completo.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Nomes dos presets",
+        "en": "Preset names",
+        "es": "Nombres de los presets"
+       },
+       "type": {
+        "pt": "seletor de preset",
+        "en": "preset picker",
+        "es": "selector de preset"
+       },
+       "desc": {
+        "pt": "<p>Sem a controladora, o seletor de preset mostra os nomes que vieram no arquivo do app. Um backup da controladora (o de <strong>CONFIGURAÇÕES › BACKUP › COMPLETO</strong>) também serve: ao abri-lo, o site oferece <strong>USAR OS NOMES DOS PRESETS</strong>. O preset de cada parte é só a posição (B3): ele chama o B3 da controladora em que o setlist for tocado.</p>",
+        "en": "<p>Without the controller, the preset picker shows the names that came in the app file. A controller backup (the one from <strong>SETTINGS › BACKUP › FULL</strong>) also works: when you open it, the site offers <strong>USE THE PRESET NAMES</strong>. Each part's preset is just a position (B3): it calls B3 on the controller where the setlist is played.</p>",
+        "es": "<p>Sin la controladora, el selector de preset muestra los nombres que vinieron en el archivo de la app. Un backup de la controladora (el de <strong>CONFIGURACIÓN › BACKUP › COMPLETO</strong>) también sirve: al abrirlo, el sitio ofrece <strong>USAR LOS NOMBRES DE LOS PRESETS</strong>. El preset de cada parte es solo la posición (B3): llama al B3 de la controladora donde se toque el setlist.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "A sua controladora",
+        "en": "Your controller",
+        "es": "Tu controladora"
+       },
+       "type": {
+        "pt": "ajuste",
+        "en": "setting",
+        "es": "ajuste"
+       },
+       "desc": {
+        "pt": "<p>O arquivo do app diz quantos presets o pé alcança em cada banco e se a placa tem USB host (para os disparos extras pelo Bluetooth do host); o site se acerta sozinho ao abri-lo. Para mudar à mão, toque em <strong>COMO LEVAR PARA O APP</strong>.</p>",
+        "en": "<p>The app file says how many presets the foot reaches in each bank and whether the board has a USB host (for extra messages over the host Bluetooth); the site sets itself when you open it. To change it by hand, tap <strong>HOW TO TAKE IT TO THE APP</strong>.</p>",
+        "es": "<p>El archivo de la app dice cuántos presets alcanza el pie en cada banco y si la placa tiene USB host (para los disparos extra por el Bluetooth del host); el sitio se ajusta solo al abrirlo. Para cambiarlo a mano, toca <strong>CÓMO LLEVARLO A LA APP</strong>.</p>"
+       }
+      }
+     ]
     }
    ]
   },
@@ -7503,9 +8183,9 @@ const MN_CONTENT = {
         "es": "lista"
        },
        "desc": {
-        "pt": "<p><strong>CHAMAR PRESET</strong>, <strong>PRÉVIA (STANDBY)</strong> (mostra o destino na tela sem trocar o som, e você confirma depois), <strong>SUBIR/DESCER BANCO</strong> (também <strong>EM PRÉVIA</strong>), <strong>SUBIR/DESCER PRESET</strong>, <strong>ENTRAR EM MODO LIVE</strong> (só no footswitch do preset ativo) e <strong>NENHUM</strong>. Em SEGURAR e em PISAR DE NOVO existe ainda o <strong>FAVORITO</strong>: ir direto para um banco e preset fixos, chegando em PRESET ou LIVE.</p><p>Pelo menos um gesto precisa trocar de preset (CHAMAR PRESET ou SUBIR/DESCER BANCO EM PRÉVIA) — senão não sobraria como trocar de preset com o pé. Por isso, quando só um gesto faz isso, a lista mostra as outras ações bloqueadas, com o motivo: ponha CHAMAR PRESET em outro gesto antes.</p>",
-        "en": "<p><strong>CALL PRESET</strong>, <strong>PREVIEW (STANDBY)</strong> (shows the destination on screen without changing the sound, and you confirm afterward), <strong>BANK UP/DOWN</strong> (also <strong>IN PREVIEW</strong>), <strong>PRESET UP/DOWN</strong>, <strong>ENTER LIVE MODE</strong> (only on the active preset’s footswitch) and <strong>NONE</strong>. On HOLD and PRESS AGAIN there’s also <strong>FAVORITE</strong>: go straight to a fixed bank and preset, arriving in PRESET or LIVE.</p><p>At least one gesture must change presets (CALL PRESET or BANK UP/DOWN IN PREVIEW) — otherwise there’d be no way left to change presets with your foot. That’s why, when only one gesture does it, the list shows the other actions locked, with the reason: put CALL PRESET on another gesture first.</p>",
-        "es": "<p><strong>LLAMAR PRESET</strong>, <strong>VISTA PREVIA (STANDBY)</strong> (muestra el destino en pantalla sin cambiar el sonido, y confirmas después), <strong>SUBIR/BAJAR BANCO</strong> (también <strong>EN VISTA PREVIA</strong>), <strong>SUBIR/BAJAR PRESET</strong>, <strong>ENTRAR EN MODO LIVE</strong> (solo en el footswitch del preset activo) y <strong>NINGUNO</strong>. En MANTENER y en PISAR DE NUEVO existe además el <strong>FAVORITO</strong>: ir directo a un banco y preset fijos, llegando en PRESET o en LIVE.</p><p>Al menos un gesto tiene que cambiar de preset (LLAMAR PRESET o SUBIR/BAJAR BANCO EN VISTA PREVIA) — si no, no quedaría forma de cambiar de preset con el pie. Por eso, cuando solo un gesto lo hace, la lista muestra las otras acciones bloqueadas, con el motivo: pon LLAMAR PRESET en otro gesto antes.</p>"
+        "pt": "<p><strong>CHAMAR PRESET</strong>, <strong>PRÉVIA (STANDBY)</strong> (mostra o destino na tela sem trocar o som, e você confirma depois), <strong>SUBIR/DESCER BANCO</strong> (também <strong>EM PRÉVIA</strong>), <strong>SUBIR/DESCER PRESET</strong>, <strong>ENTRAR EM MODO LIVE</strong> (só no footswitch do preset ativo) e <strong>NENHUM</strong>. As ações <strong>SETLIST: …</strong> (PRÓXIMA/ANTERIOR PARTE, PRÓXIMA/ANTERIOR MÚSICA e CHAMAR PARTE) controlam o setlist do Modo Palco — CHAMAR PARTE conta como trocar de preset. Em SEGURAR e em PISAR DE NOVO existe ainda o <strong>FAVORITO</strong>: ir direto para um banco e preset fixos, chegando em PRESET ou LIVE.</p><p>Pelo menos um gesto precisa trocar de preset (CHAMAR PRESET ou SUBIR/DESCER BANCO EM PRÉVIA) — senão não sobraria como trocar de preset com o pé. Por isso, quando só um gesto faz isso, a lista mostra as outras ações bloqueadas, com o motivo: ponha CHAMAR PRESET em outro gesto antes.</p>",
+        "en": "<p><strong>CALL PRESET</strong>, <strong>PREVIEW (STANDBY)</strong> (shows the destination on screen without changing the sound, and you confirm afterward), <strong>BANK UP/DOWN</strong> (also <strong>IN PREVIEW</strong>), <strong>PRESET UP/DOWN</strong>, <strong>ENTER LIVE MODE</strong> (only on the active preset’s footswitch) and <strong>NONE</strong>. The <strong>SETLIST: …</strong> actions (NEXT/PREVIOUS PART, NEXT/PREVIOUS SONG and CALL PART) control the Stage Mode setlist — CALL PART counts as changing presets. On HOLD and PRESS AGAIN there’s also <strong>FAVORITE</strong>: go straight to a fixed bank and preset, arriving in PRESET or LIVE.</p><p>At least one gesture must change presets (CALL PRESET or BANK UP/DOWN IN PREVIEW) — otherwise there’d be no way left to change presets with your foot. That’s why, when only one gesture does it, the list shows the other actions locked, with the reason: put CALL PRESET on another gesture first.</p>",
+        "es": "<p><strong>LLAMAR PRESET</strong>, <strong>VISTA PREVIA (STANDBY)</strong> (muestra el destino en pantalla sin cambiar el sonido, y confirmas después), <strong>SUBIR/BAJAR BANCO</strong> (también <strong>EN VISTA PREVIA</strong>), <strong>SUBIR/BAJAR PRESET</strong>, <strong>ENTRAR EN MODO LIVE</strong> (solo en el footswitch del preset activo) y <strong>NINGUNO</strong>. Las acciones <strong>SETLIST: …</strong> (PRÓXIMA/ANTERIOR PARTE, PRÓXIMA/ANTERIOR CANCIÓN y LLAMAR PARTE) controlan el setlist del Modo Escenario — LLAMAR PARTE cuenta como cambiar de preset. En MANTENER y en PISAR DE NUEVO existe además el <strong>FAVORITO</strong>: ir directo a un banco y preset fijos, llegando en PRESET o en LIVE.</p><p>Al menos un gesto tiene que cambiar de preset (LLAMAR PRESET o SUBIR/BAJAR BANCO EN VISTA PREVIA) — si no, no quedaría forma de cambiar de preset con el pie. Por eso, cuando solo un gesto lo hace, la lista muestra las otras acciones bloqueadas, con el motivo: pon LLAMAR PRESET en otro gesto antes.</p>"
        }
       },
       {
@@ -8744,9 +9424,26 @@ const MN_CONTENT = {
         "es": "pestaña HARDWARE"
        },
        "desc": {
-        "pt": "<p>Testes de dez segundos para <strong>LEDS</strong>, <strong>DISPLAY</strong> e <strong>MIDI</strong>. Se os LEDs acendem no teste, o problema está na configuração, não no hardware.</p><p><strong>BOTÕES</strong>: pise em cada footswitch e veja o nome dele aparecer — enquanto o teste está aberto o pedal não manda MIDI nem troca de preset. <strong>RX</strong> (nas placas com USB Host): mostra o MIDI que sai pela saída MIDI da controladora; se as mensagens aparecem ali e o aparelho não responde, o problema está do cabo para fora.</p>",
-        "en": "<p>Ten-second tests for <strong>LEDS</strong>, <strong>DISPLAY</strong> and <strong>MIDI</strong>. If the LEDs light up in the test, the problem is in the setup, not the hardware.</p><p><strong>BUTTONS</strong>: step on each footswitch and see its name show up — while the test is open the pedal doesn't send MIDI or change presets. <strong>RX</strong> (on boards with USB Host): shows the MIDI going out of the controller's MIDI output; if the messages show up there and the device doesn't respond, the problem is from the cable onward.</p>",
-        "es": "<p>Pruebas de diez segundos para <strong>LEDS</strong>, <strong>DISPLAY</strong> y <strong>MIDI</strong>. Si los LEDs se encienden en la prueba, el problema está en la configuración, no en el hardware.</p><p><strong>BOTONES</strong>: pisa cada footswitch y verás aparecer su nombre — mientras la prueba está abierta el pedal no envía MIDI ni cambia de preset. <strong>RX</strong> (en las placas con USB Host): muestra el MIDI que sale por la salida MIDI de la controladora; si los mensajes aparecen ahí y el equipo no responde, el problema está del cable hacia afuera.</p>"
+        "pt": "<p>Testes de dez segundos para <strong>LEDS</strong>, <strong>DISPLAY</strong> e <strong>MIDI</strong>. Se os LEDs acendem no teste, o problema está na configuração, não no hardware.</p><p><strong>BOTÕES</strong>: pise em cada footswitch e veja o nome dele aparecer — enquanto o teste está aberto o pedal não manda MIDI nem troca de preset. <strong>RX</strong> (nas placas com USB Host): mostra o MIDI que sai pela saída MIDI da controladora; se as mensagens aparecem ali e o aparelho não responde, o problema está do cabo para fora. <strong>CABO</strong> (nas placas com entrada EXT SW): testa um cabo TRS — veja <strong>TESTE DE CABO TRS</strong>, logo abaixo.</p>",
+        "en": "<p>Ten-second tests for <strong>LEDS</strong>, <strong>DISPLAY</strong> and <strong>MIDI</strong>. If the LEDs light up in the test, the problem is in the setup, not the hardware.</p><p><strong>BUTTONS</strong>: step on each footswitch and see its name show up — while the test is open the pedal doesn't send MIDI or change presets. <strong>RX</strong> (on boards with USB Host): shows the MIDI going out of the controller's MIDI output; if the messages show up there and the device doesn't respond, the problem is from the cable onward. <strong>CABLE</strong> (on boards with an EXT SW input): tests a TRS cable — see <strong>TRS CABLE TEST</strong>, just below.</p>",
+        "es": "<p>Pruebas de diez segundos para <strong>LEDS</strong>, <strong>DISPLAY</strong> y <strong>MIDI</strong>. Si los LEDs se encienden en la prueba, el problema está en la configuración, no en el hardware.</p><p><strong>BOTONES</strong>: pisa cada footswitch y verás aparecer su nombre — mientras la prueba está abierta el pedal no envía MIDI ni cambia de preset. <strong>RX</strong> (en las placas con USB Host): muestra el MIDI que sale por la salida MIDI de la controladora; si los mensajes aparecen ahí y el equipo no responde, el problema está del cable hacia afuera. <strong>CABLE</strong> (en las placas con entrada EXT SW): prueba un cable TRS — mira <strong>PRUEBA DE CABLE TRS</strong>, justo abajo.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "TESTE DE CABO TRS",
+        "en": "TRS CABLE TEST",
+        "es": "PRUEBA DE CABLE TRS"
+       },
+       "type": {
+        "pt": "aba HARDWARE · botão CABO",
+        "en": "HARDWARE tab · CABLE button",
+        "es": "pestaña HARDWARE · botón CABLE"
+       },
+       "desc": {
+        "pt": "<p>Só nas placas com entrada <strong>EXT SW</strong> (a dos dois footswitches externos). A controladora vira um testador de cabo: ligue um cabo TRS (estéreo, de três contatos) da <strong>saída MIDI TRS</strong> na <strong>entrada EXT SW</strong> e toque em <strong>CABO</strong>. O resultado aparece no editor e no display do pedal.</p><p><strong>PASSOU</strong>, <strong>FALHOU</strong> ou <strong>SEM CABO</strong> (nada passa: confira os dois plugues) — o anel de LEDs fica verde, vermelho ou âmbar. Passando, diz se o cabo é <strong>reto</strong> (sai tipo A) ou <strong>cruzado</strong> (ponta e anel trocados: sai tipo B) — use o reto com aparelho tipo A e o cruzado com aparelho tipo B. O editor mostra também a <strong>ponta</strong> e o <strong>anel</strong>, cada um com OK, aberto ou em curto, e, falhando, diz o defeito.</p><p>Com o cabo aprovado, mexa nele e nos plugues: cada falha rápida conta como uma <strong>queda</strong> (mau contato). O display do pedal mostra o total em QUEDAS.</p><p>O <strong>corpo</strong> (a malha) não é testado: as duas pontas usam o mesmo terra da placa. Enquanto o teste roda, os footswitches, o pedal de expressão e o MIDI de saída ficam parados.</p><p><strong>Cabo mono</strong> (o anel aparece em curto): tire o cabo, porque assim a saída MIDI fica forçando corrente. Com a <strong>ponta em curto</strong>, a saída MIDI é desligada até o cabo sair (o pedal mostra TX DESLIGADO - TIRE O CABO). Ao concluir, tire o cabo da entrada EXT SW.</p>",
+        "en": "<p>Only on boards with an <strong>EXT SW</strong> input (the one for the two external footswitches). The controller becomes a cable tester: plug a TRS cable (stereo, three contacts) from the <strong>TRS MIDI output</strong> into the <strong>EXT SW input</strong> and tap <strong>CABLE</strong>. The result shows in the editor and on the pedal's display.</p><p><strong>Passed</strong>, <strong>Failed</strong> or <strong>No cable</strong> (nothing gets through: check both plugs) — the pedal's display shows them in Portuguese: <strong>PASSOU</strong>, <strong>FALHOU</strong>, <strong>SEM CABO</strong> — and the LED ring turns green, red or amber. When it passes, it tells whether the cable is <strong>straight</strong> (outputs type A; RETO on the pedal) or <strong>crossed</strong> (tip and ring swapped: outputs type B; CRUZADO on the pedal) — use the straight one with a type A device and the crossed one with a type B device. The editor also shows the <strong>tip</strong> and the <strong>ring</strong>, each one OK, open or shorted, and, when it fails, says what's wrong.</p><p>With the cable approved, wiggle it and the plugs: each brief failure counts as a <strong>dropout</strong> (bad contact). The pedal's display shows the total as QUEDAS (dropouts).</p><p>The <strong>sleeve</strong> (the shield) isn't tested: both ends share the board ground. While the test runs, the footswitches, the expression pedal and the MIDI output are paused.</p><p><strong>Mono cable</strong> (the ring shows as shorted): unplug the cable, because that way the MIDI output keeps driving current. With the <strong>tip shorted</strong>, the MIDI output is turned off until the cable comes out (the pedal shows TX DESLIGADO - TIRE O CABO, “TX off – unplug the cable”). When you're done, unplug the cable from the EXT SW input.</p>",
+        "es": "<p>Solo en las placas con entrada <strong>EXT SW</strong> (la de los dos footswitches externos). La controladora se convierte en un probador de cables: conecta un cable TRS (estéreo, de tres contactos) de la <strong>salida MIDI TRS</strong> a la <strong>entrada EXT SW</strong> y toca <strong>CABLE</strong>. El resultado aparece en el editor y en el display del pedal.</p><p><strong>Aprobado</strong>, <strong>Falló</strong> o <strong>Sin cable</strong> (no pasa nada: revisa los dos conectores) — el display del pedal los muestra en portugués: <strong>PASSOU</strong>, <strong>FALHOU</strong>, <strong>SEM CABO</strong> — y el anillo de LEDs se pone verde, rojo o ámbar. Si aprueba, dice si el cable es <strong>recto</strong> (sale tipo A; RETO en el pedal) o <strong>cruzado</strong> (punta y anillo invertidos: sale tipo B; CRUZADO en el pedal) — usa el recto con un equipo tipo A y el cruzado con un equipo tipo B. El editor muestra también la <strong>punta</strong> y el <strong>anillo</strong>, cada uno con OK, abierto o en corto, y, si falla, dice cuál es el defecto.</p><p>Con el cable aprobado, mueve el cable y los conectores: cada falla breve cuenta como una <strong>caída</strong> (mal contacto). El display del pedal muestra el total en QUEDAS (caídas).</p><p>El <strong>cuerpo</strong> (la malla) no se prueba: los dos extremos usan la misma tierra de la placa. Mientras la prueba corre, los footswitches, el pedal de expresión y la salida MIDI quedan detenidos.</p><p><strong>Cable mono</strong> (el anillo aparece en corto): desconecta el cable, porque así la salida MIDI sigue forzando corriente. Con la <strong>punta en corto</strong>, la salida MIDI se apaga hasta que el cable salga (el pedal muestra TX DESLIGADO - TIRE O CABO, “TX apagado – quita el cable”). Al terminar, desconecta el cable de la entrada EXT SW.</p>"
        }
       },
       {
@@ -8991,6 +9688,23 @@ const MN_CONTENT = {
       },
       {
        "name": {
+        "pt": "» SETLIST (NEXT/PREV PART, NEXT/PREV SONG, PART 1–8)",
+        "en": "» SETLIST (NEXT/PREV PART, NEXT/PREV SONG, PART 1–8)",
+        "es": "» SETLIST (NEXT/PREV PART, NEXT/PREV SONG, PART 1–8)"
+       },
+       "type": {
+        "pt": "comando",
+        "en": "command",
+        "es": "comando"
+       },
+       "desc": {
+        "pt": "<p>No fim da lista, sob <strong>── SETLIST ──</strong>: andam pelas partes e músicas do setlist aberto no Modo Palco do app. Sem setlist aberto, não fazem nada. Não precisam de canal. Veja <strong>Controlar o setlist com o pé</strong> no capítulo Modo Palco.</p>",
+        "en": "<p>At the end of the list, under <strong>── SETLIST ──</strong>: move through the parts and songs of the setlist open in the app’s Stage Mode. With no setlist open, they do nothing. They don’t need a channel. See <strong>Controlling the setlist with your foot</strong> in the Stage Mode chapter.</p>",
+        "es": "<p>Al final de la lista, bajo <strong>── SETLIST ──</strong>: avanzan por las partes y canciones del setlist abierto en el Modo Escenario de la app. Sin setlist abierto, no hacen nada. No necesitan canal. Mira <strong>Controlar el setlist con el pie</strong> en el capítulo Modo Escenario.</p>"
+       }
+      },
+      {
+       "name": {
         "pt": "Navegação em prévia (footswitches externos)",
         "en": "Preview navigation (external footswitches)",
         "es": "Navegación en vista previa (footswitches externos)"
@@ -9166,9 +9880,9 @@ const MN_CONTENT = {
         "es": "guía"
        },
        "desc": {
-        "pt": "<p>1. O cabo vai da BFMiDi para a pedaleira (MIDI OUT → MIDI IN)?<br>2. O canal do preset é o que a pedaleira escuta?<br>3. Use o <strong>DISPARO MIDI</strong> em CONFIGURAÇÕES › TESTES › DISPARO: se ali funciona, o problema está no preset; se nem ali, no cabo ou no aparelho.<br>4. A pedaleira perde as primeiras mensagens depois de trocar de preset? Use os <strong>TEMPOS DE DISPARO</strong> em CONFIGURAÇÕES › HARDWARE › TEMPOS.</p>",
-        "en": "<p>1. Does the cable go from the BFMiDi to the effects unit (MIDI OUT → MIDI IN)?<br>2. Is the preset's channel the one the effects unit listens to?<br>3. Use <strong>MIDI SEND</strong> in SETTINGS › TESTS › SEND: if it works there, the problem is in the preset; if it doesn't work even there, it's the cable or the device.<br>4. Does the effects unit miss the first messages after a preset change? Use <strong>SEND TIMING</strong> in SETTINGS › HARDWARE › TIMING.</p>",
-        "es": "<p>1. ¿El cable va de la BFMiDi a la pedalera (MIDI OUT → MIDI IN)?<br>2. ¿El canal del preset es el que escucha la pedalera?<br>3. Usa el <strong>DISPARO MIDI</strong> en CONFIGURACIÓN › PRUEBAS › ENVÍO: si ahí funciona, el problema está en el preset; si ni ahí funciona, está en el cable o en el equipo.<br>4. ¿La pedalera pierde los primeros mensajes después de cambiar de preset? Usa los <strong>TIEMPOS DE ENVÍO</strong> en CONFIGURACIÓN › HARDWARE › TIEMPOS.</p>"
+        "pt": "<p>1. O cabo vai da BFMiDi para a pedaleira (MIDI OUT → MIDI IN)?<br>2. O canal do preset é o que a pedaleira escuta?<br>3. Use o <strong>DISPARO MIDI</strong> em CONFIGURAÇÕES › TESTES › DISPARO: se ali funciona, o problema está no preset; se nem ali, no cabo ou no aparelho. Cabo TRS? Nas placas com entrada EXT SW, teste o cabo em CONFIGURAÇÕES › TESTES › HARDWARE › <strong>CABO</strong>.<br>4. A pedaleira perde as primeiras mensagens depois de trocar de preset? Use os <strong>TEMPOS DE DISPARO</strong> em CONFIGURAÇÕES › HARDWARE › TEMPOS.</p>",
+        "en": "<p>1. Does the cable go from the BFMiDi to the effects unit (MIDI OUT → MIDI IN)?<br>2. Is the preset's channel the one the effects unit listens to?<br>3. Use <strong>MIDI SEND</strong> in SETTINGS › TESTS › SEND: if it works there, the problem is in the preset; if it doesn't work even there, it's the cable or the device. TRS cable? On boards with an EXT SW input, test the cable in SETTINGS › TESTS › HARDWARE › <strong>CABLE</strong>.<br>4. Does the effects unit miss the first messages after a preset change? Use <strong>SEND TIMING</strong> in SETTINGS › HARDWARE › TIMING.</p>",
+        "es": "<p>1. ¿El cable va de la BFMiDi a la pedalera (MIDI OUT → MIDI IN)?<br>2. ¿El canal del preset es el que escucha la pedalera?<br>3. Usa el <strong>DISPARO MIDI</strong> en CONFIGURACIÓN › PRUEBAS › ENVÍO: si ahí funciona, el problema está en el preset; si ni ahí funciona, está en el cable o en el equipo. ¿Cable TRS? En las placas con entrada EXT SW, prueba el cable en CONFIGURACIÓN › PRUEBAS › HARDWARE › <strong>CABLE</strong>.<br>4. ¿La pedalera pierde los primeros mensajes después de cambiar de preset? Usa los <strong>TIEMPOS DE ENVÍO</strong> en CONFIGURACIÓN › HARDWARE › TIEMPOS.</p>"
        }
       },
       {
