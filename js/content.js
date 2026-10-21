@@ -4196,9 +4196,9 @@ const MN_CONTENT = {
     "es": "Una pantalla completa, en horizontal y con letras grandes para dejar el celular o la tablet en el atril durante el show: el preset que está sonando, los footswitches y el aparato conectado."
    },
    "intro": {
-    "pt": "<p>O <strong>MODO PALCO</strong> transforma o editor num painel para o show. São três telas: o <strong>PALCO BFMIDI</strong> mostra a BFMiDi — o nome do preset em letra enorme, a imagem de fundo e os footswitches, que você pode ligar e desligar com o dedo — e o <strong>PALCO ESPECIAL</strong> mostra o pedal dedicado plugado na controladora — a cadeia de efeitos e os knobs da GP-5, da TONEX ONE ou da Nano Cortex, editáveis ao vivo — e o <strong>SETLIST</strong> mostra a música do show, as partes dela e as anotações.</p><p>O Modo Palco existe nos <strong>aplicativos</strong> da BFMiDi (Android, iPhone/iPad, Mac e Windows) e no <strong>editor do site</strong>, inclusive instalado como ícone. O único lugar onde ele não aparece é o editor aberto pela própria controladora (<code>http://192.168.4.1</code> ou <code>http://bfmidi.local</code>). No site, o palco fala com o pedal pelo <strong>cabo USB</strong> (Chrome ou Edge no computador); sem cabo, abre no modo offline.</p><p>As configurações do palco (cores, fonte, imagens) ficam só no aparelho onde você abriu: nada disso vai para a controladora.</p>",
-    "en": "<p><strong>STAGE MODE</strong> turns the editor into a panel for the show. There are three screens: the <strong>BFMIDI STAGE</strong> shows the BFMiDi — the preset name in huge letters, the background image and the footswitches, which you can turn on and off with your finger — and the <strong>SPECIAL STAGE</strong> shows the dedicated pedal plugged into the controller — the effect chain and the knobs of the GP-5, the TONEX ONE or the Nano Cortex, editable live — and the <strong>SETLIST</strong> shows the song of the show, its parts and notes.</p><p>Stage Mode exists in the BFMiDi <strong>apps</strong> (Android, iPhone/iPad, Mac and Windows) and in the <strong>website editor</strong>, installed as an icon or not. The only place it does not appear is the editor opened from the controller itself (<code>http://192.168.4.1</code> or <code>http://bfmidi.local</code>). On the website, the stage talks to the pedal over the <strong>USB cable</strong> (Chrome or Edge on a computer); without the cable, it opens in offline mode.</p><p>The stage settings (colors, font, images) stay only on the device where you opened it: none of it goes to the controller.</p>",
-    "es": "<p>El <strong>MODO ESCENARIO</strong> convierte el editor en un panel para el show. Son tres pantallas: el <strong>ESCENARIO BFMIDI</strong> muestra la BFMiDi — el nombre del preset en letras enormes, la imagen de fondo y los footswitches, que puedes encender y apagar con el dedo — y el <strong>ESCENARIO ESPECIAL</strong> muestra el pedal dedicado conectado a la controladora — la cadena de efectos y los knobs de la GP-5, la TONEX ONE o la Nano Cortex, editables en vivo — y el <strong>SETLIST</strong> muestra la canción del show, sus partes y las notas.</p><p>El Modo Escenario existe en las <strong>apps</strong> de la BFMiDi (Android, iPhone/iPad, Mac y Windows) y en el <strong>editor del sitio web</strong>, también instalado como icono. El único lugar donde no aparece es el editor abierto desde la propia controladora (<code>http://192.168.4.1</code> o <code>http://bfmidi.local</code>). En el sitio, el escenario habla con el pedal por el <strong>cable USB</strong> (Chrome o Edge en la computadora); sin cable, abre en modo offline.</p><p>La configuración del escenario (colores, fuente, imágenes) queda solo en el aparato donde lo abriste: nada de esto va a la controladora.</p>"
+    "pt": "<p>O <strong>MODO PALCO</strong> transforma o editor num painel para o show. São três telas: o <strong>PALCO BFMIDI</strong> mostra a BFMiDi — o nome do preset em letra enorme, a imagem de fundo e os footswitches, que você pode ligar e desligar com o dedo — e o <strong>PALCO ESPECIAL</strong> mostra o pedal dedicado plugado na controladora — a cadeia de efeitos e os knobs da GP-5, da TONEX ONE ou da Nano Cortex, editáveis ao vivo — e o <strong>SETLIST</strong> mostra a música do show, as partes dela e as cifras ou anotações de cada uma.</p><p>O Modo Palco existe nos <strong>aplicativos</strong> da BFMiDi (Android, iPhone/iPad, Mac e Windows) e no <strong>editor do site</strong>, inclusive instalado como ícone. O único lugar onde ele não aparece é o editor aberto pela própria controladora (<code>http://192.168.4.1</code> ou <code>http://bfmidi.local</code>). No site, o palco fala com o pedal pelo <strong>cabo USB</strong> (Chrome ou Edge no computador); sem cabo, abre no modo offline.</p><p>As configurações do palco (cores, fonte, imagens) ficam só no aparelho onde você abriu: nada disso vai para a controladora.</p>",
+    "en": "<p><strong>STAGE MODE</strong> turns the editor into a panel for the show. There are three screens: the <strong>BFMIDI STAGE</strong> shows the BFMiDi — the preset name in huge letters, the background image and the footswitches, which you can turn on and off with your finger — and the <strong>SPECIAL STAGE</strong> shows the dedicated pedal plugged into the controller — the effect chain and the knobs of the GP-5, the TONEX ONE or the Nano Cortex, editable live — and the <strong>SETLIST</strong> shows the song of the show, its parts and the chords or notes of each one.</p><p>Stage Mode exists in the BFMiDi <strong>apps</strong> (Android, iPhone/iPad, Mac and Windows) and in the <strong>website editor</strong>, installed as an icon or not. The only place it does not appear is the editor opened from the controller itself (<code>http://192.168.4.1</code> or <code>http://bfmidi.local</code>). On the website, the stage talks to the pedal over the <strong>USB cable</strong> (Chrome or Edge on a computer); without the cable, it opens in offline mode.</p><p>The stage settings (colors, font, images) stay only on the device where you opened it: none of it goes to the controller.</p>",
+    "es": "<p>El <strong>MODO ESCENARIO</strong> convierte el editor en un panel para el show. Son tres pantallas: el <strong>ESCENARIO BFMIDI</strong> muestra la BFMiDi — el nombre del preset en letras enormes, la imagen de fondo y los footswitches, que puedes encender y apagar con el dedo — y el <strong>ESCENARIO ESPECIAL</strong> muestra el pedal dedicado conectado a la controladora — la cadena de efectos y los knobs de la GP-5, la TONEX ONE o la Nano Cortex, editables en vivo — y el <strong>SETLIST</strong> muestra la canción del show, sus partes y los acordes o notas de cada una.</p><p>El Modo Escenario existe en las <strong>apps</strong> de la BFMiDi (Android, iPhone/iPad, Mac y Windows) y en el <strong>editor del sitio web</strong>, también instalado como icono. El único lugar donde no aparece es el editor abierto desde la propia controladora (<code>http://192.168.4.1</code> o <code>http://bfmidi.local</code>). En el sitio, el escenario habla con el pedal por el <strong>cable USB</strong> (Chrome o Edge en la computadora); sin cable, abre en modo offline.</p><p>La configuración del escenario (colores, fuente, imágenes) queda solo en el aparato donde lo abriste: nada de esto va a la controladora.</p>"
    },
    "cards": [
     {
@@ -4220,9 +4220,9 @@ const MN_CONTENT = {
        "es": "En la pantalla PRESET, toca <strong>MODO ESCENARIO</strong> — siempre es el primer botón de la fila de atajos de la tarjeta PRINCIPAL."
       },
       {
-       "pt": "O palco abre no <strong>PALCO BFMIDI</strong>; para abrir no PALCO ESPECIAL ou no último usado, vá em <strong>CONFIGURAÇÕES › EDITOR › GERAL</strong>, card <strong>MODO PALCO</strong>. No celular ele ocupa a tela inteira e fica deitado.",
-       "en": "The stage opens on the <strong>BFMIDI STAGE</strong>; to open on the SPECIAL STAGE or on the last one used, go to <strong>SETTINGS › EDITOR › GENERAL</strong>, <strong>STAGE MODE</strong> card. On a phone it fills the whole screen in landscape.",
-       "es": "El escenario abre en el <strong>ESCENARIO BFMIDI</strong>; para abrir en el ESCENARIO ESPECIAL o en el último usado, ve a <strong>CONFIGURACIÓN › EDITOR › GENERAL</strong>, tarjeta <strong>MODO ESCENARIO</strong>. En el celular ocupa toda la pantalla y queda en horizontal."
+       "pt": "O palco abre perguntando o que mostrar: <strong>PALCO</strong> ou <strong>SETLIST</strong> (ESC fica no PALCO). Para abrir sempre na mesma tela — PALCO BFMIDI, PALCO ESPECIAL, SETLIST ou o último usado — vá em <strong>CONFIGURAÇÕES › EDITOR › GERAL</strong>, card <strong>MODO PALCO</strong>. No celular ele ocupa a tela inteira e fica deitado.",
+       "en": "The stage opens asking what to show: <strong>STAGE</strong> or <strong>SETLIST</strong> (ESC stays on the STAGE). To always open on the same screen — BFMIDI STAGE, SPECIAL STAGE, SETLIST or the last one used — go to <strong>SETTINGS › EDITOR › GENERAL</strong>, <strong>STAGE MODE</strong> card. On a phone it fills the whole screen in landscape.",
+       "es": "El escenario abre preguntando qué mostrar: <strong>ESCENARIO</strong> o <strong>SETLIST</strong> (ESC se queda en el ESCENARIO). Para abrir siempre en la misma pantalla — ESCENARIO BFMIDI, ESCENARIO ESPECIAL, SETLIST o el último usado — ve a <strong>CONFIGURACIÓN › EDITOR › GENERAL</strong>, tarjeta <strong>MODO ESCENARIO</strong>. En el celular ocupa toda la pantalla y queda en horizontal."
       },
       {
        "pt": "Toque num ícone de footswitch para ligar ou desligar o efeito; toque num preset da fileira de baixo para trocar de música.",
@@ -5939,14 +5939,14 @@ const MN_CONTENT = {
     {
      "id": "palco-setlist",
      "title": {
-      "pt": "SETLIST: a música, as partes e as anotações",
-      "en": "SETLIST: the song, its parts and notes",
-      "es": "SETLIST: la canción, las partes y las notas"
+      "pt": "SETLIST: a música, as partes e as cifras",
+      "en": "SETLIST: the song, its parts and chords",
+      "es": "SETLIST: la canción, las partes y los acordes"
      },
      "purpose": {
-      "pt": "A terceira tela do Modo Palco: a música atual em letra grande, as partes dela em ordem (INTRO, VERSO, REFRÃO…) com o preset que cada uma chama, e as anotações ou cifras da parte que está tocando.",
-      "en": "The third Stage Mode screen: the current song in big letters, its parts in order (INTRO, VERSE, CHORUS…) with the preset each one calls, and the notes or chords of the part that is playing.",
-      "es": "La tercera pantalla del Modo Escenario: la canción actual en letras grandes, sus partes en orden (INTRO, ESTROFA, ESTRIBILLO…) con el preset que llama cada una, y las notas o acordes de la parte que está sonando."
+      "pt": "A terceira tela do Modo Palco: a música atual em letra grande, as partes dela em ordem (INTRO, VERSO, REFRÃO…) com o preset que cada uma chama, e as cifras ou as anotações da parte que está tocando.",
+      "en": "The third Stage Mode screen: the current song in big letters, its parts in order (INTRO, VERSE, CHORUS…) with the preset each one calls, and the chords or notes of the part that is playing.",
+      "es": "La tercera pantalla del Modo Escenario: la canción actual en letras grandes, sus partes en orden (INTRO, ESTROFA, ESTRIBILLO…) con el preset que llama cada una, y los acordes o las notas de la parte que está sonando."
      },
      "howto": [
       {
@@ -5955,17 +5955,27 @@ const MN_CONTENT = {
        "es": "En la tarjeta PRINCIPAL, toca <strong>SETLIST</strong> (al lado del MODO ESCENARIO). Con el escenario ya abierto, elige <strong>SETLIST</strong> en el selector <strong>BFMIDI · ESPECIAL · SETLIST</strong> de la barra superior."
       },
       {
-       "pt": "Escolha um setlist (ou toque em <strong>ABRIR O EDITOR</strong> para criar o primeiro).",
-       "en": "Pick a setlist (or tap <strong>OPEN THE EDITOR</strong> to create the first one).",
-       "es": "Elige un setlist (o toca <strong>ABRIR EL EDITOR</strong> para crear el primero)."
+       "pt": "Primeira vez? O palco mostra dois blocos grandes, <strong>SETLISTS</strong> e <strong>MINHAS MÚSICAS</strong>. Em MINHAS MÚSICAS, <strong>NOVA MÚSICA</strong> abre o assistente (próximo card), que cria o setlist <strong>Meu setlist</strong>. Se você já tem setlists, escolha um.",
+       "en": "First time? The stage shows two big blocks, <strong>SETLISTS</strong> and <strong>MY SONGS</strong>. In MY SONGS, <strong>NEW SONG</strong> opens the step-by-step setup (next card), which creates the setlist <strong>My setlist</strong>. If you already have setlists, pick one.",
+       "es": "¿Primera vez? El escenario muestra dos bloques grandes, <strong>SETLISTS</strong> y <strong>MIS CANCIONES</strong>. En MIS CANCIONES, <strong>NUEVA CANCIÓN</strong> abre el asistente (próxima tarjeta), que crea el setlist <strong>Mi setlist</strong>. Si ya tienes setlists, elige uno."
       },
       {
-       "pt": "Toque numa parte para chamar o preset dela. As setas do rodapé trocam de música <strong>sem</strong> chamar preset — pela tela você pode só estar olhando a próxima.",
-       "en": "Tap a part to call its preset. The footer arrows change songs <strong>without</strong> calling a preset — on screen you may just be looking at the next one.",
-       "es": "Toca una parte para llamar su preset. Las flechas del pie cambian de canción <strong>sin</strong> llamar preset — en la pantalla puede que solo estés mirando la próxima."
+       "pt": "Toque numa parte para ver as cifras (ou as anotações) dela e chamar o preset, se ela tiver um. As setas do rodapé trocam de música <strong>sem</strong> chamar preset — pela tela você pode só estar olhando a próxima.",
+       "en": "Tap a part to see its chords (or notes) and call its preset, if it has one. The footer arrows change songs <strong>without</strong> calling a preset — on screen you may just be looking at the next one.",
+       "es": "Toca una parte para ver sus acordes (o notas) y llamar su preset, si tiene uno. Las flechas del pie cambian de canción <strong>sin</strong> llamar preset — en la pantalla puede que solo estés mirando la próxima."
+      },
+      {
+       "pt": "<strong>EDITAR</strong>, no cabeçalho, abre a ficha desta música no editor, ao lado do palco.",
+       "en": "<strong>EDIT</strong>, in the header, opens this song’s page in the editor, beside the stage.",
+       "es": "<strong>EDITAR</strong>, en la cabecera, abre la ficha de esta canción en el editor, al lado del escenario."
       }
      ],
      "shot": "stage-sl",
+     "mockTitle": {
+      "pt": "SETLIST — A TELA DO PALCO",
+      "en": "SETLIST — THE STAGE SCREEN",
+      "es": "SETLIST — LA PANTALLA DEL ESCENARIO"
+     },
      "hot": [
       {
        "n": 1,
@@ -5989,9 +5999,9 @@ const MN_CONTENT = {
        "n": 3,
        "sel": ".bf-sl-notes",
        "label": {
-        "pt": "anotações e cifras",
-        "en": "notes and chords",
-        "es": "notas y acordes"
+        "pt": "cifras ou anotações",
+        "en": "chords or notes",
+        "es": "acordes o notas"
        }
       },
       {
@@ -6005,6 +6015,15 @@ const MN_CONTENT = {
       },
       {
        "n": 5,
+       "sel": ".bf-sl-head-acts .bf-sl-chip:last-child",
+       "label": {
+        "pt": "EDITAR esta música",
+        "en": "EDIT this song",
+        "es": "EDITAR esta canción"
+       }
+      },
+      {
+       "n": 6,
        "sel": ".bf-stage-handle",
        "at": "c",
        "label": {
@@ -6044,9 +6063,26 @@ const MN_CONTENT = {
         "es": "comportamiento"
        },
        "desc": {
-        "pt": "<p>Trocou de preset por fora (um footswitch comum, o editor)? A tela marca sozinha a parte cujo preset é o que está tocando. Preset que nenhuma parte usa aparece como <strong>FORA DO SETLIST</strong>, e PRÓXIMA PARTE continua da última parte conhecida.</p>",
-        "en": "<p>Changed presets some other way (a regular footswitch, the editor)? The screen marks on its own the part whose preset is the one playing. A preset no part uses shows <strong>OUT OF THE SETLIST</strong>, and NEXT PART continues from the last known part.</p>",
-        "es": "<p>¿Cambiaste de preset por otro lado (un footswitch común, el editor)? La pantalla marca sola la parte cuyo preset es el que está sonando. Un preset que ninguna parte usa aparece como <strong>FUERA DEL SETLIST</strong>, y PRÓXIMA PARTE sigue desde la última parte conocida.</p>"
+        "pt": "<p>Trocou de preset por fora (um footswitch comum, o editor)? A tela marca sozinha a parte cujo preset é o que está tocando. Preset que nenhuma parte usa aparece como <strong>FORA DO SETLIST</strong>, e PRÓXIMA PARTE continua da última parte conhecida.</p><p>Numa música em que nenhuma parte chama preset (só cifras), não existe FORA DO SETLIST: a tela fica na parte que você tocou por último.</p>",
+        "en": "<p>Changed presets some other way (a regular footswitch, the editor)? The screen marks on its own the part whose preset is the one playing. A preset no part uses shows <strong>OUT OF THE SETLIST</strong>, and NEXT PART continues from the last known part.</p><p>In a song where no part calls a preset (chords only), there is no OUT OF THE SETLIST: the screen stays on the part you tapped last.</p>",
+        "es": "<p>¿Cambiaste de preset por otro lado (un footswitch común, el editor)? La pantalla marca sola la parte cuyo preset es el que está sonando. Un preset que ninguna parte usa aparece como <strong>FUERA DEL SETLIST</strong>, y PRÓXIMA PARTE sigue desde la última parte conocida.</p><p>En una canción en la que ninguna parte llama preset (solo acordes), no existe FUERA DEL SETLIST: la pantalla queda en la parte que tocaste por último.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Dicas da primeira vez",
+        "en": "First-time tips",
+        "es": "Consejos de la primera vez"
+       },
+       "type": {
+        "pt": "ajuda",
+        "en": "help",
+        "es": "ayuda"
+       },
+       "desc": {
+        "pt": "<p>Na primeira música aberta no palco, três dicas curtas aparecem uma de cada vez (<strong>PULAR</strong> fecha). Elas não voltam sozinhas: estão em <strong>AJUDA</strong>, no menu ⋯ do editor, junto com os comandos do pé.</p>",
+        "en": "<p>On the first song opened on stage, three short tips show up one at a time (<strong>SKIP</strong> closes them). They don’t come back on their own: they are in <strong>HELP</strong>, in the editor’s ⋯ menu, together with the foot commands.</p>",
+        "es": "<p>En la primera canción abierta en el escenario, tres consejos cortos aparecen uno a la vez (<strong>SALTAR</strong> los cierra). No vuelven solos: están en <strong>AYUDA</strong>, en el menú ⋯ del editor, junto con los comandos del pie.</p>"
        }
       },
       {
@@ -6086,48 +6122,215 @@ const MN_CONTENT = {
      ]
     },
     {
-     "id": "palco-setlist-editor",
+     "id": "palco-setlist-assistente",
      "title": {
-      "pt": "Banco de músicas e setlists",
-      "en": "Song bank and setlists",
-      "es": "Banco de canciones y setlists"
+      "pt": "Criar uma música (passo a passo)",
+      "en": "Creating a song (step by step)",
+      "es": "Crear una canción (paso a paso)"
      },
      "purpose": {
-      "pt": "Cada música é cadastrada uma vez no banco; um setlist é uma lista de músicas do banco. Tudo fica guardado no aparelho, sem precisar do pedal.",
-      "en": "Each song is entered once in the bank; a setlist is a list of songs from the bank. Everything is stored on the device, with no pedal needed.",
-      "es": "Cada canción se registra una vez en el banco; un setlist es una lista de canciones del banco. Todo queda guardado en el aparato, sin necesitar el pedal."
+      "pt": "Toda música nova nasce num assistente de poucos passos — o nome, o que aparece no palco, o tom, as partes, o preset de cada uma e o disparo do VS — e leva cerca de um minuto. Só o nome é obrigatório.",
+      "en": "Every new song starts in a short step-by-step setup — the name, what shows on stage, the key, the parts, the preset of each one and the backing-track trigger — and it takes about a minute. Only the name is required.",
+      "es": "Toda canción nueva nace en un asistente de pocos pasos — el nombre, lo que aparece en el escenario, el tono, las partes, el preset de cada una y el disparo del VS — y lleva cerca de un minuto. Solo el nombre es obligatorio."
      },
      "howto": [
       {
-       "pt": "Na tela SETLIST, abra a barra de cima e toque em <strong>EDITAR SETLIST</strong>. O editor abre ao lado do palco, com as abas <strong>SETLISTS</strong>, <strong>BANCO DE MÚSICAS</strong> e <strong>BACKUP</strong>.",
-       "en": "On the SETLIST screen, open the top bar and tap <strong>EDIT SETLIST</strong>. The editor opens beside the stage, with the <strong>SETLISTS</strong>, <strong>SONG BANK</strong> and <strong>BACKUP</strong> tabs.",
-       "es": "En la pantalla SETLIST, abre la barra superior y toca <strong>EDITAR SETLIST</strong>. El editor se abre al lado del escenario, con las pestañas <strong>SETLISTS</strong>, <strong>BANCO DE CANCIONES</strong> y <strong>BACKUP</strong>."
+       "pt": "Abra pelo palco (<strong>CRIAR MÚSICA</strong>, num setlist vazio) ou pelo editor: <strong>+ ADICIONAR MÚSICA</strong> dentro de um setlist, ou o bloco <strong>NOVA MÚSICA</strong> em MINHAS MÚSICAS.",
+       "en": "Open it from the stage (<strong>CREATE SONG</strong>, in an empty setlist) or from the editor: <strong>+ ADD SONG</strong> inside a setlist, or the <strong>NEW SONG</strong> block in MY SONGS.",
+       "es": "Ábrelo desde el escenario (<strong>CREAR CANCIÓN</strong>, en un setlist vacío) o desde el editor: <strong>+ AGREGAR CANCIÓN</strong> dentro de un setlist, o el bloque <strong>NUEVA CANCIÓN</strong> en MIS CANCIONES."
       },
       {
-       "pt": "Crie a música com nome, artista, tom e BPM, e acrescente as partes por tipo. Em cada parte escolha o <strong>preset</strong> da controladora que ela chama.",
-       "en": "Create the song with name, artist, key and BPM, and add the parts by type. In each part choose the controller <strong>preset</strong> it calls.",
-       "es": "Crea la canción con nombre, artista, tono y BPM, y agrega las partes por tipo. En cada parte elige el <strong>preset</strong> de la controladora que llama."
+       "pt": "Dê o nome e escolha o que aparece no palco: <strong>CIFRAS</strong> (os acordes em quadros grandes) ou <strong>NOTAS PESSOAIS</strong> (texto livre). Dá para trocar depois; as duas coisas ficam guardadas.",
+       "en": "Give it a name and choose what shows on stage: <strong>CHORDS</strong> (the chords in big boxes) or <strong>PERSONAL NOTES</strong> (free text). You can change it later; both are kept.",
+       "es": "Dale un nombre y elige lo que aparece en el escenario: <strong>ACORDES</strong> (los acordes en cuadros grandes) o <strong>NOTAS PERSONALES</strong> (texto libre). Se puede cambiar después; las dos cosas quedan guardadas."
       },
       {
-       "pt": "Ponha a música num setlist e acerte a ordem com ↑ ↓. Tudo grava sozinho.",
-       "en": "Put the song in a setlist and set the order with ↑ ↓. Everything saves on its own.",
-       "es": "Pon la canción en un setlist y ajusta el orden con ↑ ↓. Todo se guarda solo."
+       "pt": "Com cifras, escolha o tom — ou <strong>NÃO SEI · PULAR</strong>. Com o tom, os acordes da música aparecem primeiro na hora de montar.",
+       "en": "With chords, choose the key — or <strong>DON’T KNOW · SKIP</strong>. With the key, the song’s chords come first when you build it.",
+       "es": "Con acordes, elige el tono — o <strong>NO SÉ · SALTAR</strong>. Con el tono, los acordes de la canción aparecen primero al armarla."
+      },
+      {
+       "pt": "As partes já vêm montadas pelo <strong>MODELO</strong>. Tire (×), acrescente (+ VERSO, + REFRÃO…) ou arraste pela alça para mudar a ordem.",
+       "en": "The parts come already set up by the <strong>TEMPLATE</strong>. Remove (×), add (+ VERSE, + CHORUS…) or drag by the handle to change the order.",
+       "es": "Las partes ya vienen armadas por el <strong>MODELO</strong>. Quita (×), agrega (+ ESTROFA, + ESTRIBILLO…) o arrastra por la manija para cambiar el orden."
+      },
+      {
+       "pt": "Depois, parte por parte: o <strong>PRESET DA BFMIDI</strong> (o preset que a controladora chama quando a parte começa: toque em <strong>ESCOLHER PRESET</strong>; é opcional) e os acordes, tocando nos blocos. Partes repetidas (dois refrões) se preenchem uma vez só.",
+       "en": "Then, part by part: the <strong>BFMIDI PRESET</strong> (the preset the controller calls when the part starts: tap <strong>CHOOSE PRESET</strong>; it is optional) and the chords, by tapping the blocks. Repeated parts (two choruses) are filled in only once.",
+       "es": "Después, parte por parte: el <strong>PRESET DE LA BFMIDI</strong> (el preset que llama la controladora cuando empieza la parte: toca <strong>ELEGIR PRESET</strong>; es opcional) y los acordes, tocando los bloques. Las partes repetidas (dos estribillos) se llenan una sola vez."
+      },
+      {
+       "pt": "O último passo é o <strong>DISPARO EXTERNO</strong>: se a música toca com VS ou playback, toque em <strong>SIM, DISPARAR</strong> e escolha a mensagem (<strong>PC</strong> ou <strong>CC</strong>), o canal e a saída (<strong>BLUETOOTH</strong> do host ou <strong>TODAS AS SAÍDAS</strong>). Em cada parte, o quadrado liga ou desliga o disparo e os botões − + mudam o número; <strong>NUMERAR EM ORDEM</strong> numera as partes seguidas. Sem VS, toque em <strong>NÃO</strong>.",
+       "en": "The last step is the <strong>EXTERNAL TRIGGER</strong>: if the song plays with backing tracks (VS), tap <strong>YES, TRIGGER</strong> and choose the message (<strong>PC</strong> or <strong>CC</strong>), the channel and the output (host <strong>BLUETOOTH</strong> or <strong>ALL OUTPUTS</strong>). On each part, the box turns the trigger on or off and the − + buttons change the number; <strong>NUMBER IN ORDER</strong> numbers the parts one after another. Without backing tracks, tap <strong>NO</strong>.",
+       "es": "El último paso es el <strong>DISPARO EXTERNO</strong>: si la canción suena con VS o playback, toca <strong>SÍ, DISPARAR</strong> y elige el mensaje (<strong>PC</strong> o <strong>CC</strong>), el canal y la salida (<strong>BLUETOOTH</strong> del host o <strong>TODAS LAS SALIDAS</strong>). En cada parte, el cuadro activa o desactiva el disparo y los botones − + cambian el número; <strong>NUMERAR EN ORDEN</strong> numera las partes seguidas. Sin VS, toca <strong>NO</strong>."
+      },
+      {
+       "pt": "No fim, confira em qual setlist ela entrou (<strong>TROCAR</strong> muda) e escolha <strong>VER NO PALCO</strong>, <strong>CRIAR OUTRA MÚSICA</strong> ou <strong>AJUSTAR DETALHES</strong>.",
+       "en": "At the end, check which setlist it went into (<strong>CHANGE</strong> moves it) and choose <strong>SEE ON STAGE</strong>, <strong>CREATE ANOTHER SONG</strong> or <strong>ADJUST DETAILS</strong>.",
+       "es": "Al final, revisa en qué setlist entró (<strong>CAMBIAR</strong> lo mueve) y elige <strong>VER EN EL ESCENARIO</strong>, <strong>CREAR OTRA CANCIÓN</strong> o <strong>AJUSTAR DETALLES</strong>."
       }
      ],
-     "shot": "stage-sl-editor",
+     "shot": "stage-sl-wizard",
+     "mockTitle": {
+      "pt": "SETLIST — NOVA MÚSICA",
+      "en": "SETLIST — NEW SONG",
+      "es": "SETLIST — NUEVA CANCIÓN"
+     },
      "hot": [
       {
        "n": 1,
-       "sel": ".bf-sl-pe-num",
+       "sel": ".bf-sl-wz-prog",
        "label": {
-        "pt": "número da parte",
-        "en": "part number",
-        "es": "número de la parte"
+        "pt": "passos",
+        "en": "steps",
+        "es": "pasos"
        }
       },
       {
        "n": 2,
-       "sel": ".bf-sl-pe-pre",
+       "sel": ".bf-sl-wz-rows",
+       "label": {
+        "pt": "as partes",
+        "en": "the parts",
+        "es": "las partes"
+       }
+      },
+      {
+       "n": 3,
+       "sel": ".bf-sl-adds",
+       "label": {
+        "pt": "acrescentar parte",
+        "en": "add a part",
+        "es": "agregar parte"
+       }
+      },
+      {
+       "n": 4,
+       "sel": ".bf-sl-wz-model",
+       "label": {
+        "pt": "modelo",
+        "en": "template",
+        "es": "modelo"
+       }
+      },
+      {
+       "n": 5,
+       "sel": ".bf-sl-wz-next",
+       "label": {
+        "pt": "próximo passo",
+        "en": "next step",
+        "es": "próximo paso"
+       }
+      }
+     ],
+     "fields": [
+      {
+       "name": {
+        "pt": "Modelos",
+        "en": "Templates",
+        "es": "Modelos"
+       },
+       "type": {
+        "pt": "4 opções",
+        "en": "4 options",
+        "es": "4 opciones"
+       },
+       "desc": {
+        "pt": "<p><strong>COM PRÉ-REFRÃO</strong> (intro, verso, pré-refrão, refrão, final) é o que vem marcado; nas placas de 4 footswitches, <strong>SIMPLES</strong> (intro, verso, refrão, final). <strong>COM SOLO E PONTE</strong> tem 8 partes e <strong>EM BRANCO</strong> começa do zero. Trocar de modelo depois de preencher alguma parte pergunta antes de tirá-la.</p>",
+        "en": "<p><strong>WITH PRE-CHORUS</strong> (intro, verse, pre-chorus, chorus, outro) comes selected; on 4-footswitch boards, <strong>SIMPLE</strong> (intro, verse, chorus, outro). <strong>WITH SOLO AND BRIDGE</strong> has 8 parts and <strong>BLANK</strong> starts from scratch. Switching templates after filling in a part asks before removing it.</p>",
+        "es": "<p><strong>CON PRE-ESTRIBILLO</strong> (intro, estrofa, pre-estribillo, estribillo, final) viene marcado; en las placas de 4 footswitches, <strong>SIMPLE</strong> (intro, estrofa, estribillo, final). <strong>CON SOLO Y PUENTE</strong> tiene 8 partes y <strong>EN BLANCO</strong> empieza de cero. Cambiar de modelo después de llenar alguna parte pregunta antes de quitarla.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Parar no meio",
+        "en": "Stopping halfway",
+        "es": "Parar a la mitad"
+       },
+       "type": {
+        "pt": "regra",
+        "en": "rule",
+        "es": "regla"
+       },
+       "desc": {
+        "pt": "<p>A música passa a existir no primeiro <strong>PRÓXIMO</strong>. Fechar o assistente depois disso guarda o que já foi feito, e o resto se acerta na ficha da música (EDITAR). Sem nenhum setlist, a primeira música cria o <strong>Meu setlist</strong>.</p>",
+        "en": "<p>The song exists from the first <strong>NEXT</strong>. Closing the setup after that keeps what was done, and the rest is finished on the song page (EDIT). With no setlist yet, the first song creates <strong>My setlist</strong>.</p>",
+        "es": "<p>La canción existe desde el primer <strong>SIGUIENTE</strong>. Cerrar el asistente después de eso guarda lo que ya se hizo, y el resto se termina en la ficha de la canción (EDITAR). Sin ningún setlist, la primera canción crea <strong>Mi setlist</strong>.</p>"
+       }
+      }
+     ]
+    },
+    {
+     "id": "palco-setlist-ficha",
+     "title": {
+      "pt": "A ficha da música",
+      "en": "The song page",
+      "es": "La ficha de la canción"
+     },
+     "purpose": {
+      "pt": "Onde se mexe numa música pronta: o nome, o que aparece no palco e as partes, cada uma num bloco com os acordes e o preset.",
+      "en": "Where you change a finished song: the name, what shows on stage and the parts, each one in a block with its chords and preset.",
+      "es": "Donde se cambia una canción lista: el nombre, lo que aparece en el escenario y las partes, cada una en un bloque con sus acordes y su preset."
+     },
+     "howto": [
+      {
+       "pt": "No palco, toque em <strong>EDITAR</strong> no cabeçalho da música. No editor, toque na música (num setlist ou em MINHAS MÚSICAS).",
+       "en": "On stage, tap <strong>EDIT</strong> in the song header. In the editor, tap the song (in a setlist or in MY SONGS).",
+       "es": "En el escenario, toca <strong>EDITAR</strong> en la cabecera de la canción. En el editor, toca la canción (en un setlist o en MIS CANCIONES)."
+      },
+      {
+       "pt": "Toque no nome para renomear. Em <strong>NO PALCO</strong>, CIFRAS ou NOTAS PESSOAIS vale para a música inteira — nada se apaga ao trocar.",
+       "en": "Tap the name to rename it. Under <strong>ON STAGE</strong>, CHORDS or PERSONAL NOTES applies to the whole song — nothing is erased when you switch.",
+       "es": "Toca el nombre para cambiarlo. En <strong>EN EL ESCENARIO</strong>, ACORDES o NOTAS PERSONALES vale para toda la canción — nada se borra al cambiar."
+      },
+      {
+       "pt": "Toque num bloco para abrir a parte (próximo card). <strong>+ PARTE</strong> acrescenta uma; <strong>ORGANIZAR</strong> mostra as alças para mudar a ordem e o × para tirar.",
+       "en": "Tap a block to open the part (next card). <strong>+ PART</strong> adds one; <strong>ARRANGE</strong> shows the handles to change the order and the × to remove.",
+       "es": "Toca un bloque para abrir la parte (próxima tarjeta). <strong>+ PARTE</strong> agrega una; <strong>ORGANIZAR</strong> muestra las manijas para cambiar el orden y la × para quitar."
+      },
+      {
+       "pt": "<strong>DETALHES</strong> guarda o resto: artista, tom (com o TRANSPOR da música inteira), BPM, tags e as notas da música.",
+       "en": "<strong>DETAILS</strong> holds the rest: artist, key (with the whole-song TRANSPOSE), BPM, tags and the song notes.",
+       "es": "<strong>DETALLES</strong> guarda el resto: artista, tono (con el TRANSPONER de toda la canción), BPM, etiquetas y las notas de la canción."
+      }
+     ],
+     "shot": "stage-sl-editor",
+     "mockTitle": {
+      "pt": "SETLIST — A FICHA DA MÚSICA",
+      "en": "SETLIST — THE SONG PAGE",
+      "es": "SETLIST — LA FICHA DE LA CANCIÓN"
+     },
+     "hot": [
+      {
+       "n": 1,
+       "sel": ".bf-sl-sh-ttl",
+       "label": {
+        "pt": "nome da música",
+        "en": "song name",
+        "es": "nombre de la canción"
+       }
+      },
+      {
+       "n": 2,
+       "sel": ".bf-sl-sh-mode .bf-sl-seg",
+       "label": {
+        "pt": "no palco: cifras ou notas",
+        "en": "on stage: chords or notes",
+        "es": "en el escenario: acordes o notas"
+       }
+      },
+      {
+       "n": 3,
+       "sel": ".bf-sl-blk-main",
+       "label": {
+        "pt": "uma parte (toque para abrir)",
+        "en": "a part (tap to open)",
+        "es": "una parte (toca para abrir)"
+       }
+      },
+      {
+       "n": 4,
+       "sel": ".bf-sl-blk-pre",
        "label": {
         "pt": "preset da parte",
         "en": "part preset",
@@ -6135,21 +6338,30 @@ const MN_CONTENT = {
        }
       },
       {
-       "n": 3,
-       "sel": ".bf-sl-pe-ex.is-on",
+       "n": 5,
+       "sel": ".bf-sl-sh-sub .bf-sl-btn",
        "label": {
-        "pt": "disparos extras",
-        "en": "extra messages",
-        "es": "disparos extra"
+        "pt": "organizar",
+        "en": "arrange",
+        "es": "organizar"
        }
       },
       {
-       "n": 4,
-       "sel": ".bf-sl-pe.is-open .bf-sl-seg.is-nbox",
+       "n": 6,
+       "sel": ".bf-sl-sh-addbtn",
        "label": {
-        "pt": "notas ou cifras",
-        "en": "notes or chords",
-        "es": "notas o acordes"
+        "pt": "+ parte",
+        "en": "+ part",
+        "es": "+ parte"
+       }
+      },
+      {
+       "n": 7,
+       "sel": ".bf-sl-disc",
+       "label": {
+        "pt": "detalhes",
+        "en": "details",
+        "es": "detalles"
        }
       }
      ],
@@ -6166,33 +6378,214 @@ const MN_CONTENT = {
         "es": "orden"
        },
        "desc": {
-        "pt": "<p>É a posição da parte na música (1, 2, 3…), e é por ele que os comandos <strong>PARTE N</strong> e <strong>CHAMAR PARTE</strong> funcionam. Reordenar as partes muda os números — o editor avisa. Até 32 partes por música.</p>",
-        "en": "<p>It’s the part’s position in the song (1, 2, 3…), and it’s what the <strong>PART N</strong> and <strong>CALL PART</strong> commands use. Reordering the parts changes the numbers — the editor warns you. Up to 32 parts per song.</p>",
-        "es": "<p>Es la posición de la parte en la canción (1, 2, 3…), y es por él que funcionan los comandos <strong>PARTE N</strong> y <strong>LLAMAR PARTE</strong>. Reordenar las partes cambia los números — el editor avisa. Hasta 32 partes por canción.</p>"
+        "pt": "<p>É a posição da parte na música (1, 2, 3…), e é por ele que os comandos <strong>PARTE N</strong> e <strong>CHAMAR PARTE</strong> funcionam. Mudou a ordem, os números seguem a ordem nova. Partes repetidas ganham número na tela (REFRÃO 1, REFRÃO 2). Até 32 partes por música.</p>",
+        "en": "<p>It’s the part’s position in the song (1, 2, 3…), and it’s what the <strong>PART N</strong> and <strong>CALL PART</strong> commands use. Change the order and the numbers follow the new order. Repeated parts get a number on screen (CHORUS 1, CHORUS 2). Up to 32 parts per song.</p>",
+        "es": "<p>Es la posición de la parte en la canción (1, 2, 3…), y es por él que funcionan los comandos <strong>PARTE N</strong> y <strong>LLAMAR PARTE</strong>. Si cambias el orden, los números siguen el orden nuevo. Las partes repetidas ganan número en la pantalla (ESTRIBILLO 1, ESTRIBILLO 2). Hasta 32 partes por canción.</p>"
        }
       },
       {
        "name": {
-        "pt": "Notas pessoais ou cifras",
-        "en": "Personal notes or chords",
-        "es": "Notas personales o acordes"
+        "pt": "Ícone antes do preset",
+        "en": "Icon before the preset",
+        "es": "Ícono antes del preset"
        },
        "type": {
-        "pt": "anotações",
-        "en": "notes",
-        "es": "notas"
+        "pt": "MIDI extra",
+        "en": "extra MIDI",
+        "es": "MIDI extra"
        },
        "desc": {
-        "pt": "<p>Cada parte (e a música) tem um seletor <strong>NOTAS PESSOAIS | CIFRAS</strong>. As cifras se montam tocando em blocos: primeiro os acordes do tom da música, depois as 12 notas no tipo escolhido, e \"Outra cifra\" para digitar. No palco elas aparecem em quadros grandes. <strong>TRANSPOR</strong> muda as cifras de uma parte ou da música inteira.</p>",
-        "en": "<p>Each part (and the song) has a <strong>PERSONAL NOTES | CHORDS</strong> selector. Chords are built by tapping blocks: first the chords of the song’s key, then the 12 notes in the chosen type, and \"Other chord\" to type. On stage they show in big boxes. <strong>TRANSPOSE</strong> changes the chords of one part or of the whole song.</p>",
-        "es": "<p>Cada parte (y la canción) tiene un selector <strong>NOTAS PERSONALES | ACORDES</strong>. Los acordes se arman tocando bloques: primero los acordes del tono de la canción, después las 12 notas en el tipo elegido, y \"Otro acorde\" para escribir. En el escenario aparecen en cuadros grandes. <strong>TRANSPONER</strong> cambia los acordes de una parte o de la canción entera.</p>"
+        "pt": "<p>Aparece na parte que também manda mensagens MIDI para outro aparelho (<strong>MANDAR TAMBÉM</strong>, no próximo card).</p>",
+        "en": "<p>It shows on a part that also sends MIDI messages to another device (<strong>ALSO SEND</strong>, in the next card).</p>",
+        "es": "<p>Aparece en la parte que también envía mensajes MIDI a otro aparato (<strong>ENVIAR TAMBIÉN</strong>, en la próxima tarjeta).</p>"
        }
       },
       {
        "name": {
-        "pt": "Disparos extras",
-        "en": "Extra messages",
-        "es": "Disparos extra"
+        "pt": "Música com cifras e notas",
+        "en": "A song with chords and notes",
+        "es": "Canción con acordes y notas"
+       },
+       "type": {
+        "pt": "aviso",
+        "en": "notice",
+        "es": "aviso"
+       },
+       "desc": {
+        "pt": "<p>Se cada parte estiver de um jeito, NO PALCO fica sem nada marcado e avisa: escolha um lado para deixar a música toda igual (nada se apaga), ou mude parte por parte em MAIS OPÇÕES.</p>",
+        "en": "<p>If the parts are set differently, ON STAGE shows nothing selected and says so: pick one side to make the whole song the same (nothing is erased), or change part by part under MORE OPTIONS.</p>",
+        "es": "<p>Si cada parte está de una forma, EN EL ESCENARIO queda sin nada marcado y lo avisa: elige un lado para dejar toda la canción igual (nada se borra), o cambia parte por parte en MÁS OPCIONES.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "O menu ⋯ da música",
+        "en": "The song’s ⋯ menu",
+        "es": "El menú ⋯ de la canción"
+       },
+       "type": {
+        "pt": "opções",
+        "en": "options",
+        "es": "opciones"
+       },
+       "desc": {
+        "pt": "<p><strong>EXPORTAR MÚSICA</strong> (um arquivo só com ela), <strong>DUPLICAR</strong> e <strong>APAGAR MÚSICA</strong>. Apagar avisa em quais setlists ela está, e o DESFAZER (a seta curva) do cabeçalho traz de volta.</p>",
+        "en": "<p><strong>EXPORT SONG</strong> (a file with just this song), <strong>DUPLICATE</strong> and <strong>DELETE SONG</strong>. Deleting tells you which setlists it is in, and the header’s UNDO (the curved arrow) brings it back.</p>",
+        "es": "<p><strong>EXPORTAR CANCIÓN</strong> (un archivo solo con ella), <strong>DUPLICAR</strong> y <strong>BORRAR CANCIÓN</strong>. Borrar avisa en qué setlists está, y el DESHACER (la flecha curva) de la cabecera la trae de vuelta.</p>"
+       }
+      }
+     ]
+    },
+    {
+     "id": "palco-setlist-parte",
+     "title": {
+      "pt": "A tela da parte: preset e acordes",
+      "en": "The part screen: preset and chords",
+      "es": "La pantalla de la parte: preset y acordes"
+     },
+     "purpose": {
+      "pt": "Uma parte por vez: o preset que ela chama e os acordes que aparecem no palco, montados com toques — sem digitar.",
+      "en": "One part at a time: the preset it calls and the chords that show on stage, built with taps — no typing.",
+      "es": "Una parte a la vez: el preset que llama y los acordes que aparecen en el escenario, armados con toques — sin escribir."
+     },
+     "howto": [
+      {
+       "pt": "Na ficha, toque num bloco. No topo, uma faixa mostra todas as partes da música em ordem, com a que você está editando acesa e o preset de cada uma; toque em outra para ir direto a ela. As setas ‹ › ao lado do nome passam para a anterior e a próxima.",
+       "en": "On the song page, tap a block. At the top, a strip shows every part of the song in order, with the one you are editing lit and each one's preset; tap another to jump straight to it. The ‹ › arrows next to the name move to the previous and the next part.",
+       "es": "En la ficha, toca un bloque. Arriba, una franja muestra todas las partes de la canción en orden, con la que estás editando encendida y el preset de cada una; toca otra para ir directo a ella. Las flechas ‹ › al lado del nombre pasan a la anterior y a la siguiente."
+      },
+      {
+       "pt": "A tela tem três cards numerados. <strong>1 · Som</strong> é o preset da controladora que a parte chama: nasce em <strong>SEM TROCA</strong> (o som continua o que estava) e toque em ESCOLHER para apontar um preset — o card ganha um ✓ e mostra A2 · CRUNCH · TROCAR.",
+       "en": "The screen has three numbered cards. <strong>1 · Sound</strong> is the controller preset the part calls: it starts as <strong>NO CHANGE</strong> (the sound stays as it was); tap CHOOSE to point to a preset — the card gets a ✓ and shows A2 · CRUNCH · CHANGE.",
+       "es": "La pantalla tiene tres tarjetas numeradas. <strong>1 · Sonido</strong> es el preset de la controladora que llama la parte: nace en <strong>SIN CAMBIO</strong> (el sonido sigue como estaba); toca ELEGIR para apuntar a un preset — la tarjeta gana un ✓ y muestra A2 · CRUNCH · CAMBIAR."
+      },
+      {
+       "pt": "<strong>2 · Letra</strong> guarda uma linha da letra que marca onde a parte começa. No palco ela aparece grande, numa faixa clara em cima dos acordes — é a sua deixa. Opcional.",
+       "en": "<strong>2 · Lyrics</strong> holds one line of the lyrics marking where the part starts. On stage it shows big, on a light band above the chords — your cue. Optional.",
+       "es": "<strong>2 · Letra</strong> guarda una línea de la letra que marca dónde empieza la parte. En el escenario aparece grande, en una franja clara sobre los acordes — es tu entrada. Opcional."
+      },
+      {
+       "pt": "<strong>3 · Acordes</strong>: toque nos acordes de <strong>Toque para acrescentar</strong> (os do tom da música) para pôr no fim da lista. Para trocar, mover ou tirar um acorde, toque nele em <strong>Seus acordes</strong>. O ⌫ apaga o último.",
+       "en": "<strong>3 · Chords</strong>: tap the chords under <strong>Tap to add</strong> (the ones in the song’s key) to put them at the end of the list. To replace, move or remove a chord, tap it under <strong>Your chords</strong>. ⌫ deletes the last one.",
+       "es": "<strong>3 · Acordes</strong>: toca los acordes de <strong>Toca para agregar</strong> (los del tono de la canción) para ponerlos al final de la lista. Para cambiar, mover o quitar un acorde, tócalo en <strong>Tus acordes</strong>. El ⌫ borra el último."
+      },
+      {
+       "pt": "<strong>Mais acordes</strong> traz os tipos (m, 7, 7M, sus4…), as 12 notas e um campo para digitar qualquer cifra — com baixo (D/F#), N.C. ou %.",
+       "en": "<strong>More chords</strong> has the types (m, 7, 7M, sus4…), the 12 notes and a field to type any chord — with a bass note (D/F#), N.C. or %.",
+       "es": "<strong>Más acordes</strong> trae los tipos (m, 7, 7M, sus4…), las 12 notas y un campo para escribir cualquier acorde — con bajo (D/F#), N.C. o %."
+      }
+     ],
+     "shot": "stage-sl-parte",
+     "mockTitle": {
+      "pt": "SETLIST — A TELA DA PARTE",
+      "en": "SETLIST — THE PART SCREEN",
+      "es": "SETLIST — LA PANTALLA DE LA PARTE"
+     },
+     "hot": [
+      {
+       "n": 1,
+       "sel": ".bf-sl-pnav",
+       "label": {
+        "pt": "a parte e as setas",
+        "en": "the part and the arrows",
+        "es": "la parte y las flechas"
+       }
+      },
+      {
+       "n": 2,
+       "sel": ".bf-sl-qans",
+       "label": {
+        "pt": "card Som (SEM TROCA ou o preset)",
+        "en": "Sound card (NO CHANGE or the preset)",
+        "es": "tarjeta Sonido (SIN CAMBIO o el preset)"
+       }
+      },
+      {
+       "n": 3,
+       "sel": ".bf-sl-pad-stage",
+       "label": {
+        "pt": "os acordes no palco",
+        "en": "the chords on stage",
+        "es": "los acordes en el escenario"
+       }
+      },
+      {
+       "n": 4,
+       "sel": ".bf-sl-pad-bksp",
+       "label": {
+        "pt": "apagar o último",
+        "en": "delete the last one",
+        "es": "borrar el último"
+       }
+      },
+      {
+       "n": 5,
+       "sel": ".bf-sl-pad-keys",
+       "label": {
+        "pt": "acordes do tom",
+        "en": "chords in the key",
+        "es": "acordes del tono"
+       }
+      },
+      {
+       "n": 6,
+       "sel": ".bf-sl-pad-more",
+       "label": {
+        "pt": "outros acordes",
+        "en": "other chords",
+        "es": "otros acordes"
+       }
+      },
+      {
+       "n": 7,
+       "sel": ".bf-sl-disc",
+       "label": {
+        "pt": "mais opções",
+        "en": "more options",
+        "es": "más opciones"
+       }
+      }
+     ],
+     "fields": [
+      {
+       "name": {
+        "pt": "Notas pessoais",
+        "en": "Personal notes",
+        "es": "Notas personales"
+       },
+       "type": {
+        "pt": "texto",
+        "en": "text",
+        "es": "texto"
+       },
+       "desc": {
+        "pt": "<p>Numa parte em NOTAS PESSOAIS, o teclado de acordes dá lugar a um campo de texto livre: letra, lembrete, entrada.</p>",
+        "en": "<p>On a part set to PERSONAL NOTES, the chord keyboard gives way to a free-text field: lyrics, a reminder, a cue.</p>",
+        "es": "<p>En una parte en NOTAS PERSONALES, el teclado de acordes da lugar a un campo de texto libre: letra, recordatorio, entrada.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "MAIS OPÇÕES",
+        "en": "MORE OPTIONS",
+        "es": "MÁS OPCIONES"
+       },
+       "type": {
+        "pt": "a parte",
+        "en": "the part",
+        "es": "la parte"
+       },
+       "desc": {
+        "pt": "<p>O tipo da parte, o nome na tela (em branco, vale o automático), as repetições (o ×2 aparece no palco), a cor, o que esta parte mostra (cifras ou notas, só nela), <strong>TRANSPOR</strong> estas cifras (−½ +½), <strong>MANDAR TAMBÉM</strong>, <strong>DUPLICAR</strong> e <strong>APAGAR PARTE</strong>. A música inteira se transpõe na ficha, em DETALHES.</p>",
+        "en": "<p>The part type, the name on screen (left blank, the automatic one is used), the repeats (the ×2 shows on stage), the color, what this part shows (chords or notes, only for it), <strong>TRANSPOSE</strong> these chords (−½ +½), <strong>ALSO SEND</strong>, <strong>DUPLICATE</strong> and <strong>DELETE PART</strong>. The whole song is transposed on the song page, under DETAILS.</p>",
+        "es": "<p>El tipo de la parte, el nombre en la pantalla (en blanco, vale el automático), las repeticiones (el ×2 aparece en el escenario), el color, lo que muestra esta parte (acordes o notas, solo en ella), <strong>TRANSPONER</strong> estos acordes (−½ +½), <strong>ENVIAR TAMBIÉN</strong>, <strong>DUPLICAR</strong> y <strong>BORRAR PARTE</strong>. Toda la canción se transpone en la ficha, en DETALLES.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "MANDAR TAMBÉM",
+        "en": "ALSO SEND",
+        "es": "ENVIAR TAMBIÉN"
        },
        "type": {
         "pt": "PC / CC",
@@ -6200,9 +6593,185 @@ const MN_CONTENT = {
         "es": "PC / CC"
        },
        "desc": {
-        "pt": "<p>O ícone ao lado do preset de cada parte guarda até <strong>3 mensagens PC ou CC</strong> que a controladora manda junto com a parte — para um VS/playback, a luz ou outro aparelho. Saem a cada vez que a parte é chamada. Cada uma escolhe a saída: <strong>BLUETOOTH DO HOST</strong> (nas placas com USB host) ou <strong>TODAS AS SAÍDAS</strong>.</p>",
-        "en": "<p>The icon next to each part’s preset holds up to <strong>3 PC or CC messages</strong> the controller sends along with the part — for a backing track/VS, lights or another device. They go out every time the part is called. Each one picks the output: <strong>HOST BLUETOOTH</strong> (on boards with a USB host) or <strong>ALL OUTPUTS</strong>.</p>",
-        "es": "<p>El ícono al lado del preset de cada parte guarda hasta <strong>3 mensajes PC o CC</strong> que la controladora envía junto con la parte — para un VS/playback, la luz u otro aparato. Salen cada vez que se llama la parte. Cada uno elige la salida: <strong>BLUETOOTH DEL HOST</strong> (en las placas con USB host) o <strong>TODAS LAS SALIDAS</strong>.</p>"
+        "pt": "<p>Até <strong>3 mensagens PC ou CC</strong> que a controladora manda junto com a parte — para um VS/playback, a luz ou outro aparelho. Saem toda vez que a parte é chamada. Cada uma escolhe a saída: <strong>BLUETOOTH DO HOST</strong> (nas placas com USB host) ou <strong>TODAS AS SAÍDAS</strong>.</p>",
+        "en": "<p>Up to <strong>3 PC or CC messages</strong> the controller sends along with the part — for a backing track/VS, lights or another device. They go out every time the part is called. Each one picks the output: <strong>HOST BLUETOOTH</strong> (on boards with a USB host) or <strong>ALL OUTPUTS</strong>.</p>",
+        "es": "<p>Hasta <strong>3 mensajes PC o CC</strong> que la controladora envía junto con la parte — para un VS/playback, la luz u otro aparato. Salen cada vez que se llama la parte. Cada uno elige la salida: <strong>BLUETOOTH DEL HOST</strong> (en las placas con USB host) o <strong>TODAS LAS SALIDAS</strong>.</p>"
+       }
+      }
+     ]
+    },
+    {
+     "id": "palco-setlist-editor",
+     "title": {
+      "pt": "Setlists e minhas músicas",
+      "en": "Setlists and my songs",
+      "es": "Setlists y mis canciones"
+     },
+     "purpose": {
+      "pt": "Cada música é guardada uma vez, em MINHAS MÚSICAS; um setlist é uma lista dessas músicas na ordem do show. Tudo fica no aparelho, sem precisar do pedal.",
+      "en": "Each song is stored once, in MY SONGS; a setlist is a list of those songs in show order. Everything stays on the device, with no pedal needed.",
+      "es": "Cada canción se guarda una vez, en MIS CANCIONES; un setlist es una lista de esas canciones en el orden del show. Todo queda en el aparato, sin necesitar el pedal."
+     },
+     "howto": [
+      {
+       "pt": "Na tela SETLIST, abra a barra de cima e toque em <strong>EDITAR SETLIST</strong>: o editor abre ao lado do palco, no setlist que está na tela.",
+       "en": "On the SETLIST screen, open the top bar and tap <strong>EDIT SETLIST</strong>: the editor opens beside the stage, on the setlist that is on screen.",
+       "es": "En la pantalla SETLIST, abre la barra superior y toca <strong>EDITAR SETLIST</strong>: el editor se abre al lado del escenario, en el setlist que está en la pantalla."
+      },
+      {
+       "pt": "Toque numa música para abrir a ficha dela; arraste pela alça para mudar a ordem; o × tira a música do setlist (ela continua em MINHAS MÚSICAS).",
+       "en": "Tap a song to open its page; drag by the handle to change the order; the × removes the song from the setlist (it stays in MY SONGS).",
+       "es": "Toca una canción para abrir su ficha; arrastra por la manija para cambiar el orden; la × quita la canción del setlist (sigue en MIS CANCIONES)."
+      },
+      {
+       "pt": "<strong>+ ADICIONAR MÚSICA</strong> cria uma música nova ou escolhe uma das que você já tem.",
+       "en": "<strong>+ ADD SONG</strong> creates a new song or picks one you already have.",
+       "es": "<strong>+ AGREGAR CANCIÓN</strong> crea una canción nueva o elige una de las que ya tienes."
+      },
+      {
+       "pt": "A seta ‹ do cabeçalho volta um passo; no começo do editor ficam dois blocos grandes, <strong>SETLISTS</strong> e <strong>MINHAS MÚSICAS</strong>. Dentro de cada um, os blocos <strong>NOVO SETLIST</strong> / <strong>NOVA MÚSICA</strong> e <strong>CARREGAR SETLIST</strong> / <strong>CARREGAR MÚSICA</strong> (de um arquivo, que abre o resumo do BACKUP pra você escolher como juntar), e embaixo a lista do que já existe. <strong>USAR NO PALCO</strong> (dentro de um setlist) põe esse na tela.",
+       "en": "The header’s ‹ arrow goes back one step; the start of the editor has two big blocks, <strong>SETLISTS</strong> and <strong>MY SONGS</strong>. Inside each one, the <strong>NEW SETLIST</strong> / <strong>NEW SONG</strong> and <strong>LOAD SETLIST</strong> / <strong>LOAD SONG</strong> blocks (from a file, which opens the BACKUP summary so you choose how to merge), and below them the list of what already exists. <strong>USE ON STAGE</strong> (inside a setlist) puts it on screen.",
+       "es": "La flecha ‹ de la cabecera vuelve un paso; el comienzo del editor tiene dos bloques grandes, <strong>SETLISTS</strong> y <strong>MIS CANCIONES</strong>. Dentro de cada uno, los bloques <strong>NUEVO SETLIST</strong> / <strong>NUEVA CANCIÓN</strong> y <strong>CARGAR SETLIST</strong> / <strong>CARGAR CANCIÓN</strong> (de un archivo, que abre el resumen del BACKUP para elegir cómo juntar), y debajo la lista de lo que ya existe. <strong>USAR EN EL ESCENARIO</strong> (dentro de un setlist) lo pone en la pantalla."
+      }
+     ],
+     "shot": "stage-sl-lista",
+     "mockTitle": {
+      "pt": "SETLIST — O EDITOR AO LADO DO PALCO",
+      "en": "SETLIST — THE EDITOR BESIDE THE STAGE",
+      "es": "SETLIST — EL EDITOR AL LADO DEL ESCENARIO"
+     },
+     "hot": [
+      {
+       "n": 1,
+       "sel": ".bf-sl-sh-head .bf-sl-sh-ttl",
+       "label": {
+        "pt": "nome do setlist",
+        "en": "setlist name",
+        "es": "nombre del setlist"
+       }
+      },
+      {
+       "n": 2,
+       "sel": ".bf-sl-rows.is-songs .bf-sl-row-main",
+       "label": {
+        "pt": "música (abre a ficha)",
+        "en": "song (opens its page)",
+        "es": "canción (abre la ficha)"
+       }
+      },
+      {
+       "n": 3,
+       "sel": ".bf-sl-rows.is-songs .bf-sl-grip",
+       "label": {
+        "pt": "arrastar",
+        "en": "drag",
+        "es": "arrastrar"
+       }
+      },
+      {
+       "n": 4,
+       "sel": ".bf-sl-rows.is-songs .bf-sl-rx",
+       "label": {
+        "pt": "tirar do setlist",
+        "en": "remove from the setlist",
+        "es": "quitar del setlist"
+       }
+      },
+      {
+       "n": 5,
+       "sel": ".bf-sl-addsong",
+       "label": {
+        "pt": "adicionar música",
+        "en": "add song",
+        "es": "agregar canción"
+       }
+      },
+      {
+       "n": 6,
+       "sel": ".bf-sl-sh-head .bf-sl-more",
+       "label": {
+        "pt": "opções do setlist",
+        "en": "setlist options",
+        "es": "opciones del setlist"
+       }
+      },
+      {
+       "n": 7,
+       "sel": ".bf-sl-dock-head .is-undo",
+       "label": {
+        "pt": "desfazer",
+        "en": "undo",
+        "es": "deshacer"
+       }
+      }
+     ],
+     "fields": [
+      {
+       "name": {
+        "pt": "Tudo grava sozinho",
+        "en": "Everything saves on its own",
+        "es": "Todo se guarda solo"
+       },
+       "type": {
+        "pt": "regra",
+        "en": "rule",
+        "es": "regla"
+       },
+       "desc": {
+        "pt": "<p>Não existe botão de salvar: cada mudança fica guardada na hora. O DESFAZER (a seta curva) do cabeçalho volta as mudanças feitas desde que o editor abriu — inclusive apagar uma música ou um setlist.</p>",
+        "en": "<p>There is no save button: every change is stored right away. The header’s UNDO (the curved arrow) takes back the changes made since the editor opened — including deleting a song or a setlist.</p>",
+        "es": "<p>No hay botón de guardar: cada cambio queda guardado al instante. El DESHACER (la flecha curva) de la cabecera revierte los cambios hechos desde que se abrió el editor — incluso borrar una canción o un setlist.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "O menu ⋯ do setlist",
+        "en": "The setlist’s ⋯ menu",
+        "es": "El menú ⋯ del setlist"
+       },
+       "type": {
+        "pt": "opções",
+        "en": "options",
+        "es": "opciones"
+       },
+       "desc": {
+        "pt": "<p><strong>DUPLICAR</strong>, <strong>EXPORTAR</strong> (um arquivo com o setlist e as músicas dele), <strong>COMPARTILHAR COMO TEXTO</strong> (a lista com o tom de cada música, para mandar para a banda) e <strong>APAGAR SETLIST</strong> — as músicas continuam em MINHAS MÚSICAS.</p>",
+        "en": "<p><strong>DUPLICATE</strong>, <strong>EXPORT</strong> (a file with the setlist and its songs), <strong>SHARE AS TEXT</strong> (the list with each song’s key, to send to the band) and <strong>DELETE SETLIST</strong> — the songs stay in MY SONGS.</p>",
+        "es": "<p><strong>DUPLICAR</strong>, <strong>EXPORTAR</strong> (un archivo con el setlist y sus canciones), <strong>COMPARTIR COMO TEXTO</strong> (la lista con el tono de cada canción, para enviar a la banda) y <strong>BORRAR SETLIST</strong> — las canciones siguen en MIS CANCIONES.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "MINHAS MÚSICAS",
+        "en": "MY SONGS",
+        "es": "MIS CANCIONES"
+       },
+       "type": {
+        "pt": "aba",
+        "en": "tab",
+        "es": "pestaña"
+       },
+       "desc": {
+        "pt": "<p>Todas as músicas em ordem alfabética, com busca por nome, artista, tom ou tag e o <strong>FILTRO</strong> (as que não estão em nenhum setlist, ou uma tag). O ⋯ de cada uma duplica ou apaga; apagar avisa em quais setlists ela está.</p>",
+        "en": "<p>All the songs in alphabetical order, with search by name, artist, key or tag and the <strong>FILTER</strong> (those in no setlist, or a tag). Each one’s ⋯ duplicates or deletes it; deleting tells you which setlists it is in.</p>",
+        "es": "<p>Todas las canciones en orden alfabético, con búsqueda por nombre, artista, tono o etiqueta y el <strong>FILTRO</strong> (las que no están en ningún setlist, o una etiqueta). El ⋯ de cada una la duplica o la borra; borrar avisa en qué setlists está.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "O menu ⋯ do editor",
+        "en": "The editor’s ⋯ menu",
+        "es": "El menú ⋯ del editor"
+       },
+       "type": {
+        "pt": "backup e ajuda",
+        "en": "backup and help",
+        "es": "backup y ayuda"
+       },
+       "desc": {
+        "pt": "<p>No começo do editor (onde ficam as abas), o ⋯ abre o <strong>BACKUP</strong> (card adiante) e a <strong>AJUDA</strong>, com as dicas do palco e os comandos do pé. <strong>ESC</strong> volta um nível e, no começo, fecha o editor.</p>",
+        "en": "<p>At the start of the editor (where the tabs are), the ⋯ opens <strong>BACKUP</strong> (card further on) and <strong>HELP</strong>, with the stage tips and the foot commands. <strong>ESC</strong> goes back one level and, at the start, closes the editor.</p>",
+        "es": "<p>Al comienzo del editor (donde están las pestañas), el ⋯ abre el <strong>BACKUP</strong> (tarjeta más adelante) y la <strong>AYUDA</strong>, con los consejos del escenario y los comandos del pie. <strong>ESC</strong> vuelve un nivel y, al comienzo, cierra el editor.</p>"
        }
       }
      ]
@@ -6229,6 +6798,11 @@ const MN_CONTENT = {
        "pt": "Num footswitch do LIVE, do SW GLOBAL ou num externo: nas listas de CC, depois dos comandos de navegação, vem o grupo <strong>── SETLIST ──</strong>.",
        "en": "On a LIVE, SW GLOBAL or external footswitch: in the CC lists, after the navigation commands, comes the <strong>── SETLIST ──</strong> group.",
        "es": "En un footswitch del LIVE, del SW GLOBAL o externo: en las listas de CC, después de los comandos de navegación, viene el grupo <strong>── SETLIST ──</strong>."
+      },
+      {
+       "pt": "No mesmo grupo, <strong>STAGE / SETLIST SCREEN</strong> troca a tela do Modo Palco entre o PALCO e o SETLIST a cada toque — pra ir das letras e cifras aos knobs sem tirar a mão do instrumento.",
+       "en": "In the same group, <strong>STAGE / SETLIST SCREEN</strong> switches the Stage Mode screen between the STAGE and the SETLIST with each tap — to go from lyrics and chords to the knobs without taking your hands off the instrument.",
+       "es": "En el mismo grupo, <strong>STAGE / SETLIST SCREEN</strong> cambia la pantalla del Modo Escenario entre el ESCENARIO y el SETLIST con cada toque — para ir de las letras y acordes a los knobs sin soltar el instrumento."
       }
      ],
      "shot": "stage-sl-pe",
@@ -6313,7 +6887,12 @@ const MN_CONTENT = {
         "es": "<p>Llaman la parte con ese número; en una canción con menos partes, no hacen nada. Llamar la parte que ya está sonando no reenvía el preset (solo sus disparos extra).</p>"
        }
       }
-     ]
+     ],
+     "mockTitle": {
+      "pt": "CONFIGURAÇÕES › BANCOS › CHAMADA",
+      "en": "SETTINGS › BANKS › PRESET CALL",
+      "es": "CONFIGURACIÓN › BANCOS › LLAMADA"
+     }
     },
     {
      "id": "palco-setlist-tela",
@@ -6332,6 +6911,11 @@ const MN_CONTENT = {
        "pt": "Abra a barra de cima, toque em <strong>CONFIGURAÇÕES</strong> e escolha <strong>SETLIST</strong> no trilho da esquerda. Sem setlist com música, a prévia mostra um exemplo.",
        "en": "Open the top bar, tap <strong>SETTINGS</strong> and choose <strong>SETLIST</strong> on the left rail. Without a setlist with songs, the preview shows an example.",
        "es": "Abre la barra superior, toca <strong>CONFIGURACIÓN</strong> y elige <strong>SETLIST</strong> en el carril de la izquierda. Sin setlist con canciones, la vista previa muestra un ejemplo."
+      },
+      {
+       "pt": "A faixa da <strong>LETRA · REFERÊNCIA</strong> (a linha da letra em cima dos acordes) tem tamanho próprio, fundo (claro, cor da parte, destaque, escuro ou sem fundo) e, em MAIS OPÇÕES, a cor do texto.",
+       "en": "The <strong>LYRICS · CUE</strong> band (the lyrics line above the chords) has its own size, band color (light, part color, accent, dark or none) and, under MORE OPTIONS, the text color.",
+       "es": "La franja de <strong>LETRA · REFERENCIA</strong> (la línea de la letra sobre los acordes) tiene tamaño propio, fondo (claro, color de la parte, destaque, oscuro o sin fondo) y, en MÁS OPCIONES, el color del texto."
       }
      ],
      "shot": "stage-set-sl",
@@ -6356,11 +6940,11 @@ const MN_CONTENT = {
       },
       {
        "n": 3,
-       "sel": "[data-k=\"slNotesSize\"]",
+       "sel": "[data-k=\"slCurAnim\"]",
        "label": {
-        "pt": "tamanhos",
-        "en": "sizes",
-        "es": "tamaños"
+        "pt": "parte que está tocando",
+        "en": "part that is playing",
+        "es": "parte que está sonando"
        }
       },
       {
@@ -6393,6 +6977,23 @@ const MN_CONTENT = {
       },
       {
        "name": {
+        "pt": "Parte que está tocando",
+        "en": "Part that is playing",
+        "es": "Parte que está sonando"
+       },
+       "type": {
+        "pt": "animação, velocidade e marcas",
+        "en": "animation, speed and tags",
+        "es": "animación, velocidad y marcas"
+       },
+       "desc": {
+        "pt": "<p>O cartão da parte que está tocando se mexe pra ficar evidente de longe. <strong>Animação</strong>: <strong>BRILHO</strong> (o halo acende e apaga; é o padrão), <strong>CONTORNO</strong> (um traço de luz corre em volta), <strong>VARREDURA</strong> (uma faixa de luz atravessa o cartão), <strong>RESPIRAR</strong> (o cartão cresce e volta) ou <strong>SEM</strong>. <strong>VU</strong> põe poucas barras lisas e discretas na cor da parte <strong>NO CANTO</strong> do cartão ou <strong>NO BLOCO TODO</strong>, atrás das escritas, junto com qualquer animação. <strong>Velocidade</strong>: LENTA, NORMAL ou RÁPIDA (vale também pro VU). <strong>Marca AGORA</strong> põe a etiqueta na parte atual, e <strong>Apagar as outras partes</strong> escurece as que não estão tocando. A miniatura de cada opção mostra o efeito. Com \"reduzir movimento\" ligado no aparelho, a parte só fica acesa.</p>",
+        "en": "<p>The card of the part that is playing moves so it is obvious from a distance. <strong>Animation</strong>: <strong>GLOW</strong> (the halo lights up and fades; the default), <strong>OUTLINE</strong> (a streak of light runs around it), <strong>SWEEP</strong> (a band of light crosses the card), <strong>BREATHE</strong> (the card grows and shrinks) or <strong>NONE</strong>. <strong>VU meter</strong> adds a few plain, subtle bars in the part's color <strong>IN THE CORNER</strong> of the card or across the <strong>WHOLE CARD</strong>, behind the text, together with any animation. <strong>Speed</strong>: SLOW, NORMAL or FAST (also for the VU). <strong>NOW tag</strong> puts the label on the current part, and <strong>Dim the other parts</strong> darkens the ones not playing. The thumbnail of each option shows the effect. With \"reduce motion\" on in the device, the part just stays lit.</p>",
+        "es": "<p>La tarjeta de la parte que está sonando se mueve para quedar evidente de lejos. <strong>Animación</strong>: <strong>BRILLO</strong> (el halo se enciende y se apaga; es el estándar), <strong>CONTORNO</strong> (un trazo de luz corre alrededor), <strong>BARRIDO</strong> (una franja de luz cruza la tarjeta), <strong>RESPIRAR</strong> (la tarjeta crece y vuelve) o <strong>SIN</strong>. <strong>VU</strong> pone pocas barras lisas y discretas en el color de la parte <strong>EN LA ESQUINA</strong> de la tarjeta o <strong>EN TODO EL BLOQUE</strong>, detrás del texto, junto con cualquier animación. <strong>Velocidad</strong>: LENTA, NORMAL o RÁPIDA (también para el VU). <strong>Marca AHORA</strong> pone la etiqueta en la parte actual, y <strong>Apagar las otras partes</strong> oscurece las que no están sonando. La miniatura de cada opción muestra el efecto. Con \"reducir movimiento\" activado en el aparato, la parte solo queda encendida.</p>"
+       }
+      },
+      {
+       "name": {
         "pt": "Tamanhos e o que aparece",
         "en": "Sizes and what shows",
         "es": "Tamaños y lo que aparece"
@@ -6408,7 +7009,12 @@ const MN_CONTENT = {
         "es": "<p>Tamaño de las notas y de las partes; artista, tono y BPM; el preset de cada parte; el pie con las canciones vecinas (apagado, la lista del setlist pasa a la cabecera); y, en MÁS OPCIONES, el número de la canción y la marca A CONTINUACIÓN.</p>"
        }
       }
-     ]
+     ],
+     "mockTitle": {
+      "pt": "CONFIGURAÇÕES DO PALCO — SETLIST",
+      "en": "STAGE SETTINGS — SETLIST",
+      "es": "CONFIGURACIÓN DEL ESCENARIO — SETLIST"
+     }
     },
     {
      "id": "palco-setlist-backup",
@@ -6418,36 +7024,37 @@ const MN_CONTENT = {
       "es": "Backup del setlist"
      },
      "purpose": {
-      "pt": "O banco de músicas mora só no aparelho, então ele tem um backup próprio, separado do backup da controladora.",
-      "en": "The song bank lives only on the device, so it has its own backup, separate from the controller backup.",
-      "es": "El banco de canciones vive solo en el aparato, así que tiene un backup propio, separado del backup de la controladora."
+      "pt": "Suas músicas e setlists moram só no aparelho, então têm um backup próprio, separado do backup da controladora.",
+      "en": "Your songs and setlists live only on the device, so they have their own backup, separate from the controller backup.",
+      "es": "Tus canciones y setlists viven solo en el aparato, así que tienen un backup propio, separado del backup de la controladora."
      },
      "howto": [
       {
-       "pt": "Na aba <strong>BACKUP</strong> do editor do setlist (ou em <strong>CONFIGURAÇÕES › BACKUP › SETLIST</strong>, nos aplicativos e no site), toque em <strong>BACKUP COMPLETO</strong> e guarde o arquivo.",
-       "en": "On the <strong>BACKUP</strong> tab of the setlist editor (or in <strong>SETTINGS › BACKUP › SETLIST</strong>, in the apps and on the website), tap <strong>FULL BACKUP</strong> and keep the file.",
-       "es": "En la pestaña <strong>BACKUP</strong> del editor del setlist (o en <strong>CONFIGURACIÓN › BACKUP › SETLIST</strong>, en las apps y en el sitio), toca <strong>BACKUP COMPLETO</strong> y guarda el archivo."
+       "pt": "No editor do setlist, volte ao começo (os blocos SETLISTS e MINHAS MÚSICAS) e toque em <strong>⋯ › BACKUP</strong>. Nos aplicativos e no site ele também está em <strong>CONFIGURAÇÕES › BACKUP › SETLIST</strong>.",
+       "en": "In the setlist editor, go back to the start (the SETLISTS and MY SONGS blocks) and tap <strong>⋯ › BACKUP</strong>. In the apps and on the website it is also in <strong>SETTINGS › BACKUP › SETLIST</strong>.",
+       "es": "En el editor del setlist, vuelve al comienzo (los bloques SETLISTS y MIS CANCIONES) y toca <strong>⋯ › BACKUP</strong>. En las apps y en el sitio también está en <strong>CONFIGURACIÓN › BACKUP › SETLIST</strong>."
       },
       {
-       "pt": "Para voltar, <strong>ABRIR ARQUIVO</strong>: o app mostra um resumo (músicas e setlists novos, iguais e diferentes) antes de mexer em qualquer coisa, e oferece <strong>DESFAZER RESTAURAÇÃO</strong> no fim. O mesmo botão recebe os arquivos feitos no editor do site (próximo card).",
-       "en": "To bring it back, <strong>OPEN FILE</strong>: the app shows a summary (new, same and different songs and setlists) before touching anything, and offers <strong>UNDO RESTORE</strong> at the end. The same button takes the files made in the site editor (next card).",
-       "es": "Para volver, <strong>ABRIR ARCHIVO</strong>: la app muestra un resumen (canciones y setlists nuevos, iguales y diferentes) antes de tocar nada, y ofrece <strong>DESHACER RESTAURACIÓN</strong> al final. El mismo botón recibe los archivos hechos en el editor del sitio (próxima tarjeta)."
+       "pt": "Toque em <strong>BACKUP COMPLETO</strong> e guarde o arquivo.",
+       "en": "Tap <strong>FULL BACKUP</strong> and keep the file.",
+       "es": "Toca <strong>BACKUP COMPLETO</strong> y guarda el archivo."
+      },
+      {
+       "pt": "Para voltar, <strong>ABRIR ARQUIVO</strong>: o app mostra um resumo (músicas e setlists novos, iguais e diferentes) antes de mexer em qualquer coisa. Escolha <strong>SOMAR AO QUE JÁ TENHO</strong> ou <strong>SUBSTITUIR TUDO</strong> e toque em <strong>RESTAURAR AGORA</strong>; no fim aparece <strong>DESFAZER RESTAURAÇÃO</strong>. O mesmo botão recebe os arquivos feitos no editor do site (último card).",
+       "en": "To bring it back, <strong>OPEN FILE</strong>: the app shows a summary (new, same and different songs and setlists) before touching anything. Choose <strong>ADD TO WHAT I HAVE</strong> or <strong>REPLACE EVERYTHING</strong> and tap <strong>RESTORE NOW</strong>; at the end, <strong>UNDO RESTORE</strong> shows up. The same button takes the files made in the site editor (last card).",
+       "es": "Para volver, <strong>ABRIR ARCHIVO</strong>: la app muestra un resumen (canciones y setlists nuevos, iguales y diferentes) antes de tocar nada. Elige <strong>SUMAR A LO QUE YA TENGO</strong> o <strong>REEMPLAZAR TODO</strong> y toca <strong>RESTAURAR AHORA</strong>; al final aparece <strong>DESHACER RESTAURACIÓN</strong>. El mismo botón recibe los archivos hechos en el editor del sitio (última tarjeta)."
       }
      ],
      "shot": "stage-sl-backup",
+     "mockTitle": {
+      "pt": "SETLIST — BACKUP",
+      "en": "SETLIST — BACKUP",
+      "es": "SETLIST — BACKUP"
+     },
      "hot": [
       {
        "n": 1,
-       "sel": ".bf-sl-tab.is-on",
-       "label": {
-        "pt": "aba BACKUP",
-        "en": "BACKUP tab",
-        "es": "pestaña BACKUP"
-       }
-      },
-      {
-       "n": 2,
-       "sel": ".bf-sl-bk .bf-sl-btn.is-primary",
+       "sel": ".bf-sl-bk-sec:first-child .bf-sl-acts .bf-sl-btn.is-primary",
        "label": {
         "pt": "backup completo",
         "en": "full backup",
@@ -6455,7 +7062,7 @@ const MN_CONTENT = {
        }
       },
       {
-       "n": 3,
+       "n": 2,
        "sel": ".bf-sl-bk-sec:first-child .bf-sl-acts .bf-sl-btn:not(.is-primary)",
        "label": {
         "pt": "abrir arquivo",
@@ -6464,7 +7071,7 @@ const MN_CONTENT = {
        }
       },
       {
-       "n": 4,
+       "n": 3,
        "sel": ".bf-sl-rows.is-snaps",
        "label": {
         "pt": "cópias automáticas",
@@ -6486,9 +7093,26 @@ const MN_CONTENT = {
         "es": "protección"
        },
        "desc": {
-        "pt": "<p>O app guarda sozinho até 20 cópias do banco (uma por dia de uso, e antes de restaurar ou apagar). Elas protegem contra erro de edição — <strong>não</strong> contra desinstalar o app ou trocar de aparelho. Para isso, só o arquivo de backup.</p>",
-        "en": "<p>The app keeps up to 20 copies of the bank on its own (one per day of use, and before restoring or deleting). They protect against editing mistakes — <strong>not</strong> against uninstalling the app or changing devices. For that, only the backup file.</p>",
-        "es": "<p>La app guarda sola hasta 20 copias del banco (una por día de uso, y antes de restaurar o borrar). Protegen contra errores de edición — <strong>no</strong> contra desinstalar la app o cambiar de aparato. Para eso, solo el archivo de backup.</p>"
+        "pt": "<p>O app guarda sozinho até 20 cópias de tudo (uma por dia de uso, e antes de restaurar ou apagar). Elas protegem contra erro de edição — <strong>não</strong> contra desinstalar o app ou trocar de aparelho. Para isso, só o arquivo de backup.</p>",
+        "en": "<p>The app keeps up to 20 copies of everything on its own (one per day of use, and before restoring or deleting). They protect against editing mistakes — <strong>not</strong> against uninstalling the app or changing devices. For that, only the backup file.</p>",
+        "es": "<p>La app guarda sola hasta 20 copias de todo (una por día de uso, y antes de restaurar o borrar). Protegen contra errores de edición — <strong>no</strong> contra desinstalar la app o cambiar de aparato. Para eso, solo el archivo de backup.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Somar ou substituir",
+        "en": "Add or replace",
+        "es": "Sumar o reemplazar"
+       },
+       "type": {
+        "pt": "restauração",
+        "en": "restore",
+        "es": "restauración"
+       },
+       "desc": {
+        "pt": "<p><strong>SOMAR AO QUE JÁ TENHO</strong> acrescenta o que é novo e nunca apaga nada. Numa música (ou setlist) que existe dos dois lados com diferenças, fica <strong>A MAIS RECENTE</strong> — ou escolha <strong>MANTER AS DUAS</strong>. <strong>SUBSTITUIR TUDO</strong> (só com um backup completo) deixa o aparelho igual ao arquivo, e o resumo diz quantas músicas deixam de existir. Antes de gravar, o app guarda uma cópia automática de como estava.</p>",
+        "en": "<p><strong>ADD TO WHAT I HAVE</strong> adds what is new and never deletes anything. For a song (or setlist) that exists on both sides with differences, <strong>THE NEWEST</strong> stays — or choose <strong>KEEP BOTH</strong>. <strong>REPLACE EVERYTHING</strong> (only with a full backup) makes the device the same as the file, and the summary tells you how many songs will no longer exist. Before writing, the app keeps an automatic copy of how things were.</p>",
+        "es": "<p><strong>SUMAR A LO QUE YA TENGO</strong> agrega lo que es nuevo y nunca borra nada. En una canción (o setlist) que existe de los dos lados con diferencias, queda <strong>LA MÁS RECIENTE</strong> — o elige <strong>MANTENER LAS DOS</strong>. <strong>REEMPLAZAR TODO</strong> (solo con un backup completo) deja el aparato igual al archivo, y el resumen dice cuántas canciones dejan de existir. Antes de grabar, la app guarda una copia automática de cómo estaba.</p>"
        }
       },
       {
@@ -6518,15 +7142,15 @@ const MN_CONTENT = {
       "es": "Editar el setlist en la computadora (sitio)"
      },
      "purpose": {
-      "pt": "O mesmo editor do setlist, no navegador: monte o banco de músicas e os setlists com teclado e tela grande e leve para o app por um arquivo — e o contrário também.",
-      "en": "The same setlist editor, in the browser: build the song bank and the setlists with a keyboard and a big screen and take them to the app with a file — and the other way around.",
-      "es": "El mismo editor del setlist, en el navegador: arma el banco de canciones y los setlists con teclado y pantalla grande y llévalos a la app con un archivo — y al revés también."
+      "pt": "O mesmo editor do setlist, no navegador: monte suas músicas e setlists com teclado e tela grande e leve para o app por um arquivo — e o contrário também.",
+      "en": "The same setlist editor, in the browser: build your songs and setlists with a keyboard and a big screen and take them to the app with a file — and the other way around.",
+      "es": "El mismo editor del setlist, en el navegador: arma tus canciones y setlists con teclado y pantalla grande y llévalos a la app con un archivo — y al revés también."
      },
      "howto": [
       {
-       "pt": "Abra <a href=\"https://bffx.com.br/setlist/\" target=\"_blank\" rel=\"noopener\">bffx.com.br/setlist</a> em qualquer navegador (computador, tablet ou celular). Não precisa de conta nem da controladora.",
-       "en": "Open <a href=\"https://bffx.com.br/setlist/\" target=\"_blank\" rel=\"noopener\">bffx.com.br/setlist</a> in any browser (computer, tablet or phone). No account and no controller needed.",
-       "es": "Abre <a href=\"https://bffx.com.br/setlist/\" target=\"_blank\" rel=\"noopener\">bffx.com.br/setlist</a> en cualquier navegador (computadora, tablet o celular). No hace falta cuenta ni la controladora."
+       "pt": "Abra <a href=\"https://bffx.com.br/setlist/\" target=\"_blank\" rel=\"noopener\">bffx.com.br/setlist</a> em qualquer navegador (computador, tablet ou celular). Não precisa de conta nem da controladora. Sem nada salvo, a página oferece <strong>CRIAR A PRIMEIRA MÚSICA</strong> (o mesmo assistente do app) e <strong>VER UM EXEMPLO</strong>.",
+       "en": "Open <a href=\"https://bffx.com.br/setlist/\" target=\"_blank\" rel=\"noopener\">bffx.com.br/setlist</a> in any browser (computer, tablet or phone). No account and no controller needed. With nothing saved, the page offers <strong>CREATE THE FIRST SONG</strong> (the same step-by-step setup as the app) and <strong>SEE AN EXAMPLE</strong>.",
+       "es": "Abre <a href=\"https://bffx.com.br/setlist/\" target=\"_blank\" rel=\"noopener\">bffx.com.br/setlist</a> en cualquier navegador (computadora, tablet o celular). No hace falta cuenta ni la controladora. Sin nada guardado, la página ofrece <strong>CREAR LA PRIMERA CANCIÓN</strong> (el mismo asistente de la app) y <strong>VER UN EJEMPLO</strong>."
       },
       {
        "pt": "Para trazer o que já está no app: no app, <strong>CONFIGURAÇÕES › BACKUP › SETLIST › BACKUP COMPLETO</strong>; no site, <strong>ABRIR ARQUIVO</strong>, confira o resumo e toque em <strong>RESTAURAR AGORA</strong>.",
@@ -6534,14 +7158,14 @@ const MN_CONTENT = {
        "es": "Para traer lo que ya está en la app: en la app, <strong>CONFIGURACIÓN › BACKUP › SETLIST › BACKUP COMPLETO</strong>; en el sitio, <strong>ABRIR ARCHIVO</strong>, revisa el resumen y toca <strong>RESTAURAR AHORA</strong>."
       },
       {
-       "pt": "Edite como no app: setlists, músicas, partes, cifras e disparos extras. No computador a lista fica à esquerda e a música aberta à direita.",
-       "en": "Edit as in the app: setlists, songs, parts, chords and extra messages. On a computer the list stays on the left and the open song on the right.",
-       "es": "Edita como en la app: setlists, canciones, partes, acordes y disparos extra. En la computadora la lista queda a la izquierda y la canción abierta a la derecha."
+       "pt": "Edite como no app: setlists, músicas, partes, cifras e o MANDAR TAMBÉM. No computador a lista fica à esquerda e a música aberta à direita.",
+       "en": "Edit as in the app: setlists, songs, parts, chords and ALSO SEND. On a computer the list stays on the left and the open song on the right.",
+       "es": "Edita como en la app: setlists, canciones, partes, acordes y ENVIAR TAMBIÉN. En la computadora la lista queda a la izquierda y la canción abierta a la derecha."
       },
       {
-       "pt": "Para levar ao app: no site, <strong>BAIXAR</strong> (no celular, <strong>COMPARTILHAR</strong>); no app, <strong>CONFIGURAÇÕES › BACKUP › SETLIST › ABRIR ARQUIVO</strong>. No <strong>SOMAR AO BANCO</strong>, fica a versão mais recente de cada música e de cada setlist.",
-       "en": "To take it to the app: on the site, <strong>DOWNLOAD</strong> (on a phone, <strong>SHARE</strong>); in the app, <strong>SETTINGS › BACKUP › SETLIST › OPEN FILE</strong>. With <strong>ADD TO THE BANK</strong>, the newest version of each song and each setlist stays.",
-       "es": "Para llevarlo a la app: en el sitio, <strong>DESCARGAR</strong> (en el celular, <strong>COMPARTIR</strong>); en la app, <strong>CONFIGURACIÓN › BACKUP › SETLIST › ABRIR ARCHIVO</strong>. Con <strong>SUMAR AL BANCO</strong>, queda la versión más reciente de cada canción y de cada setlist."
+       "pt": "Para levar ao app: no site, <strong>BAIXAR</strong> (no celular, <strong>COMPARTILHAR</strong>); no app, <strong>CONFIGURAÇÕES › BACKUP › SETLIST › ABRIR ARQUIVO</strong>. No <strong>SOMAR AO QUE JÁ TENHO</strong>, fica a versão mais recente de cada música e de cada setlist.",
+       "en": "To take it to the app: on the site, <strong>DOWNLOAD</strong> (on a phone, <strong>SHARE</strong>); in the app, <strong>SETTINGS › BACKUP › SETLIST › OPEN FILE</strong>. With <strong>ADD TO WHAT I HAVE</strong>, the newest version of each song and each setlist stays.",
+       "es": "Para llevarlo a la app: en el sitio, <strong>DESCARGAR</strong> (en el celular, <strong>COMPARTIR</strong>); en la app, <strong>CONFIGURACIÓN › BACKUP › SETLIST › ABRIR ARCHIVO</strong>. Con <strong>SUMAR A LO QUE YA TENGO</strong>, queda la versión más reciente de cada canción y de cada setlist."
       }
      ],
      "noMock": true,
@@ -6575,9 +7199,9 @@ const MN_CONTENT = {
         "es": "regla"
        },
        "desc": {
-        "pt": "<p>Se a mesma música (ou o mesmo setlist) foi editada no site e no app, uma das versões ganha — a mais recente, por padrão. Para não perder nada, escolha <strong>MANTER AS DUAS</strong> no resumo. <strong>SOMAR</strong> nunca apaga: o que foi apagado de um lado continua no outro. Para deixar os dois iguais, use <strong>SUBSTITUIR O BANCO INTEIRO</strong> com um backup completo.</p>",
-        "en": "<p>If the same song (or the same setlist) was edited on the site and in the app, one version wins — the newest, by default. To lose nothing, choose <strong>KEEP BOTH</strong> in the summary. <strong>ADD</strong> never deletes: what was deleted on one side stays on the other. To make both the same, use <strong>REPLACE THE WHOLE BANK</strong> with a full backup.</p>",
-        "es": "<p>Si la misma canción (o el mismo setlist) se editó en el sitio y en la app, una versión gana — la más reciente, por defecto. Para no perder nada, elige <strong>MANTENER LAS DOS</strong> en el resumen. <strong>SUMAR</strong> nunca borra: lo que se borró de un lado sigue en el otro. Para dejar los dos iguales, usa <strong>REEMPLAZAR TODO EL BANCO</strong> con un backup completo.</p>"
+        "pt": "<p>Se a mesma música (ou o mesmo setlist) foi editada no site e no app, uma das versões ganha — a mais recente, por padrão. Para não perder nada, escolha <strong>MANTER AS DUAS</strong> no resumo. <strong>SOMAR AO QUE JÁ TENHO</strong> nunca apaga: o que foi apagado de um lado continua no outro. Para deixar os dois iguais, use <strong>SUBSTITUIR TUDO</strong> com um backup completo.</p>",
+        "en": "<p>If the same song (or the same setlist) was edited on the site and in the app, one version wins — the newest, by default. To lose nothing, choose <strong>KEEP BOTH</strong> in the summary. <strong>ADD TO WHAT I HAVE</strong> never deletes: what was deleted on one side stays on the other. To make both the same, use <strong>REPLACE EVERYTHING</strong> with a full backup.</p>",
+        "es": "<p>Si la misma canción (o el mismo setlist) se editó en el sitio y en la app, una versión gana — la más reciente, por defecto. Para no perder nada, elige <strong>MANTENER LAS DOS</strong> en el resumen. <strong>SUMAR A LO QUE YA TENGO</strong> nunca borra: lo que se borró de un lado sigue en el otro. Para dejar los dos iguales, usa <strong>REEMPLAZAR TODO</strong> con un backup completo.</p>"
        }
       },
       {
@@ -6609,9 +7233,9 @@ const MN_CONTENT = {
         "es": "ajuste"
        },
        "desc": {
-        "pt": "<p>O arquivo do app diz quantos presets o pé alcança em cada banco e se a placa tem USB host (para os disparos extras pelo Bluetooth do host); o site se acerta sozinho ao abri-lo. Para mudar à mão, toque em <strong>COMO LEVAR PARA O APP</strong>.</p>",
-        "en": "<p>The app file says how many presets the foot reaches in each bank and whether the board has a USB host (for extra messages over the host Bluetooth); the site sets itself when you open it. To change it by hand, tap <strong>HOW TO TAKE IT TO THE APP</strong>.</p>",
-        "es": "<p>El archivo de la app dice cuántos presets alcanza el pie en cada banco y si la placa tiene USB host (para los disparos extra por el Bluetooth del host); el sitio se ajusta solo al abrirlo. Para cambiarlo a mano, toca <strong>CÓMO LLEVARLO A LA APP</strong>.</p>"
+        "pt": "<p>O arquivo do app diz quantos presets o pé alcança em cada banco e se a placa tem USB host (para o MANDAR TAMBÉM pelo Bluetooth do host); o site se acerta sozinho ao abri-lo. Para mudar à mão, toque em <strong>COMO LEVAR PARA O APP</strong>.</p>",
+        "en": "<p>The app file says how many presets the foot reaches in each bank and whether the board has a USB host (for ALSO SEND over the host Bluetooth); the site sets itself when you open it. To change it by hand, tap <strong>HOW TO TAKE IT TO THE APP</strong>.</p>",
+        "es": "<p>El archivo de la app dice cuántos presets alcanza el pie en cada banco y si la placa tiene USB host (para el ENVIAR TAMBIÉN por el Bluetooth del host); el sitio se ajusta solo al abrirlo. Para cambiarlo a mano, toca <strong>CÓMO LLEVARLO A LA APP</strong>.</p>"
        }
       }
      ]
@@ -9701,6 +10325,23 @@ const MN_CONTENT = {
         "pt": "<p>No fim da lista, sob <strong>── SETLIST ──</strong>: andam pelas partes e músicas do setlist aberto no Modo Palco do app. Sem setlist aberto, não fazem nada. Não precisam de canal. Veja <strong>Controlar o setlist com o pé</strong> no capítulo Modo Palco.</p>",
         "en": "<p>At the end of the list, under <strong>── SETLIST ──</strong>: move through the parts and songs of the setlist open in the app’s Stage Mode. With no setlist open, they do nothing. They don’t need a channel. See <strong>Controlling the setlist with your foot</strong> in the Stage Mode chapter.</p>",
         "es": "<p>Al final de la lista, bajo <strong>── SETLIST ──</strong>: avanzan por las partes y canciones del setlist abierto en el Modo Escenario de la app. Sin setlist abierto, no hacen nada. No necesitan canal. Mira <strong>Controlar el setlist con el pie</strong> en el capítulo Modo Escenario.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "» STAGE / SETLIST SCREEN",
+        "en": "» STAGE / SETLIST SCREEN",
+        "es": "» STAGE / SETLIST SCREEN"
+       },
+       "type": {
+        "pt": "comando",
+        "en": "command",
+        "es": "comando"
+       },
+       "desc": {
+        "pt": "<p>Também sob <strong>── SETLIST ──</strong>: troca a tela do Modo Palco entre o <strong>PALCO</strong> e o <strong>SETLIST</strong> — cada toque alterna. Com o Modo Palco fechado, não faz nada. Não precisa de canal. Pede a controladora e o app atualizados; com firmware antigo a opção aparece desabilitada.</p>",
+        "en": "<p>Also under <strong>── SETLIST ──</strong>: switches the Stage Mode screen between the <strong>STAGE</strong> and the <strong>SETLIST</strong> — each tap toggles. With Stage Mode closed, it does nothing. It doesn’t need a channel. It needs an updated controller and app; with older firmware the option appears disabled.</p>",
+        "es": "<p>También bajo <strong>── SETLIST ──</strong>: cambia la pantalla del Modo Escenario entre el <strong>ESCENARIO</strong> y el <strong>SETLIST</strong> — cada toque alterna. Con el Modo Escenario cerrado, no hace nada. No necesita canal. Requiere la controladora y la app actualizadas; con firmware antiguo la opción aparece desactivada.</p>"
        }
       },
       {

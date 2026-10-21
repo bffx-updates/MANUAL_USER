@@ -59,12 +59,15 @@ SUMARIO
    7.12. Perfiles y visuales listos
    7.13. Configuración del escenario — ESCENARIO ESPECIAL
    7.14. En el celular y la tablet
-   7.15. SETLIST: la canción, las partes y las notas
-   7.16. Banco de canciones y setlists
-   7.17. Controlar el setlist con el pie
-   7.18. Ajustar la pantalla del setlist
-   7.19. Backup del setlist
-   7.20. Editar el setlist en la computadora (sitio)
+   7.15. SETLIST: la canción, las partes y los acordes
+   7.16. Crear una canción (paso a paso)
+   7.17. La ficha de la canción
+   7.18. La pantalla de la parte: preset y acordes
+   7.19. Setlists y mis canciones
+   7.20. Controlar el setlist con el pie
+   7.21. Ajustar la pantalla del setlist
+   7.22. Backup del setlist
+   7.23. Editar el setlist en la computadora (sitio)
 8. Editores de preset de los aparatos
    8.1. Dónde abrirlo
    8.2. Valeton GP-5 y GP-50
@@ -1174,7 +1177,7 @@ Introducción: El MODO ESCENARIO convierte el editor en un panel para el show. S
         fondo y los footswitches, que puedes encender y apagar con el dedo — y el ESCENARIO ESPECIAL
         muestra el pedal dedicado conectado a la controladora — la cadena de efectos y los knobs de
         la GP-5, la TONEX ONE o la Nano Cortex, editables en vivo — y el SETLIST muestra la canción
-        del show, sus partes y las notas.
+        del show, sus partes y los acordes o notas de cada una.
         El Modo Escenario existe en las apps de la BFMiDi (Android, iPhone/iPad, Mac y Windows) y en
         el editor del sitio web, también instalado como icono. El único lugar donde no aparece es el
         editor abierto desde la propia controladora (http://192.168.4.1 o http://bfmidi.local). En
@@ -1192,9 +1195,10 @@ Objetivo: El ESCENARIO BFMIDI es el panel general: el preset de la BFMiDi en let
 Cómo hacerlo:
 1. En la pantalla PRESET, toca MODO ESCENARIO — siempre es el primer botón de la fila de atajos de
    la tarjeta PRINCIPAL.
-2. El escenario abre en el ESCENARIO BFMIDI; para abrir en el ESCENARIO ESPECIAL o en el último
-   usado, ve a CONFIGURACIÓN › EDITOR › GENERAL, tarjeta MODO ESCENARIO. En el celular ocupa toda la
-   pantalla y queda en horizontal.
+2. El escenario abre preguntando qué mostrar: ESCENARIO o SETLIST (ESC se queda en el ESCENARIO).
+   Para abrir siempre en la misma pantalla — ESCENARIO BFMIDI, ESCENARIO ESPECIAL, SETLIST o el
+   último usado — ve a CONFIGURACIÓN › EDITOR › GENERAL, tarjeta MODO ESCENARIO. En el celular ocupa
+   toda la pantalla y queda en horizontal.
 3. Toca un ícono de footswitch para encender o apagar el efecto; toca un preset de la fila de abajo
    para cambiar de canción.
 Campos e ítems:
@@ -1616,17 +1620,22 @@ Campos e ítems:
   Descripción: Con Mantener la pantalla encendida activado (predeterminado), el aparato no apaga la
              pantalla en medio de la canción.
 
-7.15. SETLIST: la canción, las partes y las notas
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+7.15. SETLIST: la canción, las partes y los acordes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Pantalla/vista relacionada: SETLIST — LA PANTALLA DEL ESCENARIO
 Objetivo: La tercera pantalla del Modo Escenario: la canción actual en letras grandes, sus partes en
-          orden (INTRO, ESTROFA, ESTRIBILLO…) con el preset que llama cada una, y las notas o
-          acordes de la parte que está sonando.
+          orden (INTRO, ESTROFA, ESTRIBILLO…) con el preset que llama cada una, y los acordes o las
+          notas de la parte que está sonando.
 Cómo hacerlo:
 1. En la tarjeta PRINCIPAL, toca SETLIST (al lado del MODO ESCENARIO). Con el escenario ya abierto,
    elige SETLIST en el selector BFMIDI · ESPECIAL · SETLIST de la barra superior.
-2. Elige un setlist (o toca ABRIR EL EDITOR para crear el primero).
-3. Toca una parte para llamar su preset. Las flechas del pie cambian de canción sin llamar preset —
-   en la pantalla puede que solo estés mirando la próxima.
+2. ¿Primera vez? El escenario muestra dos bloques grandes, SETLISTS y MIS CANCIONES. En MIS
+   CANCIONES, NUEVA CANCIÓN abre el asistente (próxima tarjeta), que crea el setlist Mi setlist. Si
+   ya tienes setlists, elige uno.
+3. Toca una parte para ver sus acordes (o notas) y llamar su preset, si tiene uno. Las flechas del
+   pie cambian de canción sin llamar preset — en la pantalla puede que solo estés mirando la
+   próxima.
+4. EDITAR, en la cabecera, abre la ficha de esta canción en el editor, al lado del escenario.
 Campos e ítems:
 - El sello de la barra (estado)
   Descripción: EN LA CONTROLADORA: la controladora recibió las partes de la canción y los comandos
@@ -1637,6 +1646,12 @@ Campos e ítems:
   Descripción: ¿Cambiaste de preset por otro lado (un footswitch común, el editor)? La pantalla
              marca sola la parte cuyo preset es el que está sonando. Un preset que ninguna parte usa
              aparece como FUERA DEL SETLIST, y PRÓXIMA PARTE sigue desde la última parte conocida.
+             En una canción en la que ninguna parte llama preset (solo acordes), no existe FUERA DEL
+             SETLIST: la pantalla queda en la parte que tocaste por último.
+- Consejos de la primera vez (ayuda)
+  Descripción: En la primera canción abierta en el escenario, tres consejos cortos aparecen uno a la
+             vez (SALTAR los cierra). No vuelven solos: están en AYUDA, en el menú ⋯ del editor,
+             junto con los comandos del pie.
 - Solo con la app abierta (regla)
   Descripción: La controladora guarda solo la canción actual y las vecinas, en la memoria, y olvida
              todo al cerrar el escenario o después de 15 s sin noticias de la app (segundo plano,
@@ -1651,34 +1666,142 @@ Campos e ítems:
              preset — por ejemplo ESTRIBILLO sobre D4 — también cuando dos partes usan el mismo
              preset. El nombre va sin acentos y con hasta 12 letras.
 
-7.16. Banco de canciones y setlists
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Objetivo: Cada canción se registra una vez en el banco; un setlist es una lista de canciones del
-          banco. Todo queda guardado en el aparato, sin necesitar el pedal.
+7.16. Crear una canción (paso a paso)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Pantalla/vista relacionada: SETLIST — NUEVA CANCIÓN
+Objetivo: Toda canción nueva nace en un asistente de pocos pasos — el nombre, lo que aparece en el
+          escenario, el tono, las partes, el preset de cada una y el disparo del VS — y lleva cerca
+          de un minuto. Solo el nombre es obligatorio.
 Cómo hacerlo:
-1. En la pantalla SETLIST, abre la barra superior y toca EDITAR SETLIST. El editor se abre al lado
-   del escenario, con las pestañas SETLISTS, BANCO DE CANCIONES y BACKUP.
-2. Crea la canción con nombre, artista, tono y BPM, y agrega las partes por tipo. En cada parte
-   elige el preset de la controladora que llama.
-3. Pon la canción en un setlist y ajusta el orden con ↑ ↓. Todo se guarda solo.
+1. Ábrelo desde el escenario (CREAR CANCIÓN, en un setlist vacío) o desde el editor: + AGREGAR
+   CANCIÓN dentro de un setlist, o el bloque NUEVA CANCIÓN en MIS CANCIONES.
+2. Dale un nombre y elige lo que aparece en el escenario: ACORDES (los acordes en cuadros grandes) o
+   NOTAS PERSONALES (texto libre). Se puede cambiar después; las dos cosas quedan guardadas.
+3. Con acordes, elige el tono — o NO SÉ · SALTAR. Con el tono, los acordes de la canción aparecen
+   primero al armarla.
+4. Las partes ya vienen armadas por el MODELO. Quita (×), agrega (+ ESTROFA, + ESTRIBILLO…) o
+   arrastra por la manija para cambiar el orden.
+5. Después, parte por parte: el PRESET DE LA BFMIDI (el preset que llama la controladora cuando
+   empieza la parte: toca ELEGIR PRESET; es opcional) y los acordes, tocando los bloques. Las partes
+   repetidas (dos estribillos) se llenan una sola vez.
+6. El último paso es el DISPARO EXTERNO: si la canción suena con VS o playback, toca SÍ, DISPARAR y
+   elige el mensaje (PC o CC), el canal y la salida (BLUETOOTH del host o TODAS LAS SALIDAS). En
+   cada parte, el cuadro activa o desactiva el disparo y los botones − + cambian el número; NUMERAR
+   EN ORDEN numera las partes seguidas. Sin VS, toca NO.
+7. Al final, revisa en qué setlist entró (CAMBIAR lo mueve) y elige VER EN EL ESCENARIO, CREAR OTRA
+   CANCIÓN o AJUSTAR DETALLES.
+Campos e ítems:
+- Modelos (4 opciones)
+  Descripción: CON PRE-ESTRIBILLO (intro, estrofa, pre-estribillo, estribillo, final) viene marcado;
+             en las placas de 4 footswitches, SIMPLE (intro, estrofa, estribillo, final). CON SOLO Y
+             PUENTE tiene 8 partes y EN BLANCO empieza de cero. Cambiar de modelo después de llenar
+             alguna parte pregunta antes de quitarla.
+- Parar a la mitad (regla)
+  Descripción: La canción existe desde el primer SIGUIENTE. Cerrar el asistente después de eso
+             guarda lo que ya se hizo, y el resto se termina en la ficha de la canción (EDITAR). Sin
+             ningún setlist, la primera canción crea Mi setlist.
+
+7.17. La ficha de la canción
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Pantalla/vista relacionada: SETLIST — LA FICHA DE LA CANCIÓN
+Objetivo: Donde se cambia una canción lista: el nombre, lo que aparece en el escenario y las partes,
+          cada una en un bloque con sus acordes y su preset.
+Cómo hacerlo:
+1. En el escenario, toca EDITAR en la cabecera de la canción. En el editor, toca la canción (en un
+   setlist o en MIS CANCIONES).
+2. Toca el nombre para cambiarlo. En EN EL ESCENARIO, ACORDES o NOTAS PERSONALES vale para toda la
+   canción — nada se borra al cambiar.
+3. Toca un bloque para abrir la parte (próxima tarjeta). + PARTE agrega una; ORGANIZAR muestra las
+   manijas para cambiar el orden y la × para quitar.
+4. DETALLES guarda el resto: artista, tono (con el TRANSPONER de toda la canción), BPM, etiquetas y
+   las notas de la canción.
 Campos e ítems:
 - El número de la parte (orden)
   Descripción: Es la posición de la parte en la canción (1, 2, 3…), y es por él que funcionan los
-             comandos PARTE N y LLAMAR PARTE. Reordenar las partes cambia los números — el editor
-             avisa. Hasta 32 partes por canción.
-- Notas personales o acordes (notas)
-  Descripción: Cada parte (y la canción) tiene un selector NOTAS PERSONALES | ACORDES. Los acordes
-             se arman tocando bloques: primero los acordes del tono de la canción, después las 12
-             notas en el tipo elegido, y "Otro acorde" para escribir. En el escenario aparecen en
-             cuadros grandes. TRANSPONER cambia los acordes de una parte o de la canción entera.
-- Disparos extra (PC / CC)
-  Descripción: El ícono al lado del preset de cada parte guarda hasta 3 mensajes PC o CC que la
-             controladora envía junto con la parte — para un VS/playback, la luz u otro aparato.
-             Salen cada vez que se llama la parte. Cada uno elige la salida: BLUETOOTH DEL HOST (en
-             las placas con USB host) o TODAS LAS SALIDAS.
+             comandos PARTE N y LLAMAR PARTE. Si cambias el orden, los números siguen el orden
+             nuevo. Las partes repetidas ganan número en la pantalla (ESTRIBILLO 1, ESTRIBILLO 2).
+             Hasta 32 partes por canción.
+- Ícono antes del preset (MIDI extra)
+  Descripción: Aparece en la parte que también envía mensajes MIDI a otro aparato (ENVIAR TAMBIÉN,
+             en la próxima tarjeta).
+- Canción con acordes y notas (aviso)
+  Descripción: Si cada parte está de una forma, EN EL ESCENARIO queda sin nada marcado y lo avisa:
+             elige un lado para dejar toda la canción igual (nada se borra), o cambia parte por
+             parte en MÁS OPCIONES.
+- El menú ⋯ de la canción (opciones)
+  Descripción: EXPORTAR CANCIÓN (un archivo solo con ella), DUPLICAR y BORRAR CANCIÓN. Borrar avisa
+             en qué setlists está, y el DESHACER (la flecha curva) de la cabecera la trae de vuelta.
 
-7.17. Controlar el setlist con el pie
+7.18. La pantalla de la parte: preset y acordes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Pantalla/vista relacionada: SETLIST — LA PANTALLA DE LA PARTE
+Objetivo: Una parte a la vez: el preset que llama y los acordes que aparecen en el escenario,
+          armados con toques — sin escribir.
+Cómo hacerlo:
+1. En la ficha, toca un bloque. Arriba, una franja muestra todas las partes de la canción en orden,
+   con la que estás editando encendida y el preset de cada una; toca otra para ir directo a ella.
+   Las flechas ‹ › al lado del nombre pasan a la anterior y a la siguiente.
+2. La pantalla tiene tres tarjetas numeradas. 1 · Sonido es el preset de la controladora que llama
+   la parte: nace en SIN CAMBIO (el sonido sigue como estaba); toca ELEGIR para apuntar a un preset
+   — la tarjeta gana un ✓ y muestra A2 · CRUNCH · CAMBIAR.
+3. 2 · Letra guarda una línea de la letra que marca dónde empieza la parte. En el escenario aparece
+   grande, en una franja clara sobre los acordes — es tu entrada. Opcional.
+4. 3 · Acordes: toca los acordes de Toca para agregar (los del tono de la canción) para ponerlos al
+   final de la lista. Para cambiar, mover o quitar un acorde, tócalo en Tus acordes. El ⌫ borra el
+   último.
+5. Más acordes trae los tipos (m, 7, 7M, sus4…), las 12 notas y un campo para escribir cualquier
+   acorde — con bajo (D/F#), N.C. o %.
+Campos e ítems:
+- Notas personales (texto)
+  Descripción: En una parte en NOTAS PERSONALES, el teclado de acordes da lugar a un campo de texto
+             libre: letra, recordatorio, entrada.
+- MÁS OPCIONES (la parte)
+  Descripción: El tipo de la parte, el nombre en la pantalla (en blanco, vale el automático), las
+             repeticiones (el ×2 aparece en el escenario), el color, lo que muestra esta parte
+             (acordes o notas, solo en ella), TRANSPONER estos acordes (−½ +½), ENVIAR TAMBIÉN,
+             DUPLICAR y BORRAR PARTE. Toda la canción se transpone en la ficha, en DETALLES.
+- ENVIAR TAMBIÉN (PC / CC)
+  Descripción: Hasta 3 mensajes PC o CC que la controladora envía junto con la parte — para un
+             VS/playback, la luz u otro aparato. Salen cada vez que se llama la parte. Cada uno
+             elige la salida: BLUETOOTH DEL HOST (en las placas con USB host) o TODAS LAS SALIDAS.
+
+7.19. Setlists y mis canciones
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Pantalla/vista relacionada: SETLIST — EL EDITOR AL LADO DEL ESCENARIO
+Objetivo: Cada canción se guarda una vez, en MIS CANCIONES; un setlist es una lista de esas
+          canciones en el orden del show. Todo queda en el aparato, sin necesitar el pedal.
+Cómo hacerlo:
+1. En la pantalla SETLIST, abre la barra superior y toca EDITAR SETLIST: el editor se abre al lado
+   del escenario, en el setlist que está en la pantalla.
+2. Toca una canción para abrir su ficha; arrastra por la manija para cambiar el orden; la × quita la
+   canción del setlist (sigue en MIS CANCIONES).
+3. + AGREGAR CANCIÓN crea una canción nueva o elige una de las que ya tienes.
+4. La flecha ‹ de la cabecera vuelve un paso; el comienzo del editor tiene dos bloques grandes,
+   SETLISTS y MIS CANCIONES. Dentro de cada uno, los bloques NUEVO SETLIST / NUEVA CANCIÓN y CARGAR
+   SETLIST / CARGAR CANCIÓN (de un archivo, que abre el resumen del BACKUP para elegir cómo juntar),
+   y debajo la lista de lo que ya existe. USAR EN EL ESCENARIO (dentro de un setlist) lo pone en la
+   pantalla.
+Campos e ítems:
+- Todo se guarda solo (regla)
+  Descripción: No hay botón de guardar: cada cambio queda guardado al instante. El DESHACER (la
+             flecha curva) de la cabecera revierte los cambios hechos desde que se abrió el editor —
+             incluso borrar una canción o un setlist.
+- El menú ⋯ del setlist (opciones)
+  Descripción: DUPLICAR, EXPORTAR (un archivo con el setlist y sus canciones), COMPARTIR COMO TEXTO
+             (la lista con el tono de cada canción, para enviar a la banda) y BORRAR SETLIST — las
+             canciones siguen en MIS CANCIONES.
+- MIS CANCIONES (pestaña)
+  Descripción: Todas las canciones en orden alfabético, con búsqueda por nombre, artista, tono o
+             etiqueta y el FILTRO (las que no están en ningún setlist, o una etiqueta). El ⋯ de cada
+             una la duplica o la borra; borrar avisa en qué setlists está.
+- El menú ⋯ del editor (backup y ayuda)
+  Descripción: Al comienzo del editor (donde están las pestañas), el ⋯ abre el BACKUP (tarjeta más
+             adelante) y la AYUDA, con los consejos del escenario y los comandos del pie. ESC vuelve
+             un nivel y, al comienzo, cierra el editor.
+
+7.20. Controlar el setlist con el pie
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Pantalla/vista relacionada: CONFIGURACIÓN › BANCOS › LLAMADA
 Objetivo: Los footswitches nunca cambian solos: tú eliges en qué gesto de qué footswitch pones cada
           comando de setlist — o ninguno.
 Cómo hacerlo:
@@ -1686,6 +1809,9 @@ Cómo hacerlo:
    en MANTENER.
 2. En un footswitch del LIVE, del SW GLOBAL o externo: en las listas de CC, después de los comandos
    de navegación, viene el grupo ── SETLIST ──.
+3. En el mismo grupo, STAGE / SETLIST SCREEN cambia la pantalla del Modo Escenario entre el
+   ESCENARIO y el SETLIST con cada toque — para ir de las letras y acordes a los knobs sin soltar el
+   instrumento.
 Campos e ítems:
 - LLAMAR PARTE (acción)
   Descripción: En la LLAMADA DE PRESETS: el footswitch 3 llama la parte 3, y así sucesivamente. Sin
@@ -1699,58 +1825,82 @@ Campos e ítems:
   Descripción: Llaman la parte con ese número; en una canción con menos partes, no hacen nada.
              Llamar la parte que ya está sonando no reenvía el preset (solo sus disparos extra).
 
-7.18. Ajustar la pantalla del setlist
+7.21. Ajustar la pantalla del setlist
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Pantalla/vista relacionada: CONFIGURACIÓN DEL ESCENARIO — SETLIST
 Objetivo: En la configuración del escenario, la categoría SETLIST cambia la disposición y el tamaño
           de las piezas de la pantalla del setlist, con la vista previa al lado.
 Cómo hacerlo:
 1. Abre la barra superior, toca CONFIGURACIÓN y elige SETLIST en el carril de la izquierda. Sin
    setlist con canciones, la vista previa muestra un ejemplo.
+2. La franja de LETRA · REFERENCIA (la línea de la letra sobre los acordes) tiene tamaño propio,
+   fondo (claro, color de la parte, destaque, oscuro o sin fondo) y, en MÁS OPCIONES, el color del
+   texto.
 Campos e ítems:
 - Diseño de la pantalla (4 opciones)
   Descripción: COMPLETO (canción, franja de partes, notas y pie), PARTES AL LADO (las partes en una
              columna, las notas a la derecha — necesita pantalla ancha), NOTAS GRANDES (la canción
              en una sola línea y las notas ocupando la mayor parte de la pantalla) y SOLO LAS PARTES
              (las tarjetas de las partes ocupan la pantalla, sin notas).
+- Parte que está sonando (animación, velocidad y marcas)
+  Descripción: La tarjeta de la parte que está sonando se mueve para quedar evidente de lejos.
+             Animación: BRILLO (el halo se enciende y se apaga; es el estándar), CONTORNO (un trazo
+             de luz corre alrededor), BARRIDO (una franja de luz cruza la tarjeta), RESPIRAR (la
+             tarjeta crece y vuelve) o SIN. VU pone pocas barras lisas y discretas en el color de la
+             parte EN LA ESQUINA de la tarjeta o EN TODO EL BLOQUE, detrás del texto, junto con
+             cualquier animación. Velocidad: LENTA, NORMAL o RÁPIDA (también para el VU). Marca
+             AHORA pone la etiqueta en la parte actual, y Apagar las otras partes oscurece las que
+             no están sonando. La miniatura de cada opción muestra el efecto. Con "reducir
+             movimiento" activado en el aparato, la parte solo queda encendida.
 - Tamaños y lo que aparece (opciones)
   Descripción: Tamaño de las notas y de las partes; artista, tono y BPM; el preset de cada parte; el
              pie con las canciones vecinas (apagado, la lista del setlist pasa a la cabecera); y, en
              MÁS OPCIONES, el número de la canción y la marca A CONTINUACIÓN.
 
-7.19. Backup del setlist
+7.22. Backup del setlist
 ~~~~~~~~~~~~~~~~~~~~~~~~
-Objetivo: El banco de canciones vive solo en el aparato, así que tiene un backup propio, separado
-          del backup de la controladora.
+Pantalla/vista relacionada: SETLIST — BACKUP
+Objetivo: Tus canciones y setlists viven solo en el aparato, así que tienen un backup propio,
+          separado del backup de la controladora.
 Cómo hacerlo:
-1. En la pestaña BACKUP del editor del setlist (o en CONFIGURACIÓN › BACKUP › SETLIST, en las apps y
-   en el sitio), toca BACKUP COMPLETO y guarda el archivo.
-2. Para volver, ABRIR ARCHIVO: la app muestra un resumen (canciones y setlists nuevos, iguales y
-   diferentes) antes de tocar nada, y ofrece DESHACER RESTAURACIÓN al final. El mismo botón recibe
-   los archivos hechos en el editor del sitio (próxima tarjeta).
+1. En el editor del setlist, vuelve al comienzo (los bloques SETLISTS y MIS CANCIONES) y toca ⋯ ›
+   BACKUP. En las apps y en el sitio también está en CONFIGURACIÓN › BACKUP › SETLIST.
+2. Toca BACKUP COMPLETO y guarda el archivo.
+3. Para volver, ABRIR ARCHIVO: la app muestra un resumen (canciones y setlists nuevos, iguales y
+   diferentes) antes de tocar nada. Elige SUMAR A LO QUE YA TENGO o REEMPLAZAR TODO y toca RESTAURAR
+   AHORA; al final aparece DESHACER RESTAURACIÓN. El mismo botón recibe los archivos hechos en el
+   editor del sitio (última tarjeta).
 Campos e ítems:
 - Copias automáticas (protección)
-  Descripción: La app guarda sola hasta 20 copias del banco (una por día de uso, y antes de
-             restaurar o borrar). Protegen contra errores de edición — no contra desinstalar la app
-             o cambiar de aparato. Para eso, solo el archivo de backup.
+  Descripción: La app guarda sola hasta 20 copias de todo (una por día de uso, y antes de restaurar
+             o borrar). Protegen contra errores de edición — no contra desinstalar la app o cambiar
+             de aparato. Para eso, solo el archivo de backup.
+- Sumar o reemplazar (restauración)
+  Descripción: SUMAR A LO QUE YA TENGO agrega lo que es nuevo y nunca borra nada. En una canción (o
+             setlist) que existe de los dos lados con diferencias, queda LA MÁS RECIENTE — o elige
+             MANTENER LAS DOS. REEMPLAZAR TODO (solo con un backup completo) deja el aparato igual
+             al archivo, y el resumen dice cuántas canciones dejan de existir. Antes de grabar, la
+             app guarda una copia automática de cómo estaba.
 - Archivos separados (regla)
   Descripción: El backup del setlist no lleva presets de la controladora, y el backup de la
              controladora no lleva el setlist. Cada RESTAURAR rechaza el archivo del otro, diciendo
              dónde debe restaurarse.
 
-7.20. Editar el setlist en la computadora (sitio)
+7.23. Editar el setlist en la computadora (sitio)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Objetivo: El mismo editor del setlist, en el navegador: arma el banco de canciones y los setlists
-          con teclado y pantalla grande y llévalos a la app con un archivo — y al revés también.
+Objetivo: El mismo editor del setlist, en el navegador: arma tus canciones y setlists con teclado y
+          pantalla grande y llévalos a la app con un archivo — y al revés también.
 Cómo hacerlo:
 1. Abre bffx.com.br/setlist en cualquier navegador (computadora, tablet o celular). No hace falta
-   cuenta ni la controladora.
+   cuenta ni la controladora. Sin nada guardado, la página ofrece CREAR LA PRIMERA CANCIÓN (el mismo
+   asistente de la app) y VER UN EJEMPLO.
 2. Para traer lo que ya está en la app: en la app, CONFIGURACIÓN › BACKUP › SETLIST › BACKUP
    COMPLETO; en el sitio, ABRIR ARCHIVO, revisa el resumen y toca RESTAURAR AHORA.
-3. Edita como en la app: setlists, canciones, partes, acordes y disparos extra. En la computadora la
+3. Edita como en la app: setlists, canciones, partes, acordes y ENVIAR TAMBIÉN. En la computadora la
    lista queda a la izquierda y la canción abierta a la derecha.
 4. Para llevarlo a la app: en el sitio, DESCARGAR (en el celular, COMPARTIR); en la app,
-   CONFIGURACIÓN › BACKUP › SETLIST › ABRIR ARCHIVO. Con SUMAR AL BANCO, queda la versión más
-   reciente de cada canción y de cada setlist.
+   CONFIGURACIÓN › BACKUP › SETLIST › ABRIR ARCHIVO. Con SUMAR A LO QUE YA TENGO, queda la versión
+   más reciente de cada canción y de cada setlist.
 Campos e ítems:
 - Queda en este navegador (almacenamiento)
   Descripción: Lo que editas en el sitio queda solo en el navegador donde editaste: otro navegador,
@@ -1760,8 +1910,9 @@ Campos e ítems:
 - Ediciones de los dos lados (regla)
   Descripción: Si la misma canción (o el mismo setlist) se editó en el sitio y en la app, una
              versión gana — la más reciente, por defecto. Para no perder nada, elige MANTENER LAS
-             DOS en el resumen. SUMAR nunca borra: lo que se borró de un lado sigue en el otro. Para
-             dejar los dos iguales, usa REEMPLAZAR TODO EL BANCO con un backup completo.
+             DOS en el resumen. SUMAR A LO QUE YA TENGO nunca borra: lo que se borró de un lado
+             sigue en el otro. Para dejar los dos iguales, usa REEMPLAZAR TODO con un backup
+             completo.
 - Nombres de los presets (selector de preset)
   Descripción: Sin la controladora, el selector de preset muestra los nombres que vinieron en el
              archivo de la app. Un backup de la controladora (el de CONFIGURACIÓN › BACKUP ›
@@ -1770,7 +1921,7 @@ Campos e ítems:
              se toque el setlist.
 - Tu controladora (ajuste)
   Descripción: El archivo de la app dice cuántos presets alcanza el pie en cada banco y si la placa
-             tiene USB host (para los disparos extra por el Bluetooth del host); el sitio se ajusta
+             tiene USB host (para el ENVIAR TAMBIÉN por el Bluetooth del host); el sitio se ajusta
              solo al abrirlo. Para cambiarlo a mano, toca CÓMO LLEVARLO A LA APP.
 
 ========================================================================================
@@ -2661,6 +2812,11 @@ Campos e ítems:
   Descripción: Al final de la lista, bajo ── SETLIST ──: avanzan por las partes y canciones del
              setlist abierto en el Modo Escenario de la app. Sin setlist abierto, no hacen nada. No
              necesitan canal. Mira Controlar el setlist con el pie en el capítulo Modo Escenario.
+- » STAGE / SETLIST SCREEN (comando)
+  Descripción: También bajo ── SETLIST ──: cambia la pantalla del Modo Escenario entre el ESCENARIO
+             y el SETLIST — cada toque alterna. Con el Modo Escenario cerrado, no hace nada. No
+             necesita canal. Requiere la controladora y la app actualizadas; con firmware antiguo la
+             opción aparece desactivada.
 - Navegación en vista previa (footswitches externos) (comando)
   Descripción: Los footswitches externos tienen dos comandos exclusivos, » UP BANK PREVIEW y » DOWN
              BANK PREVIEW: suben y bajan de banco en vista previa, sin cambiar el sonido, y esperan

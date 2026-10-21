@@ -467,9 +467,9 @@ const MN_SHOTS = {
   "hot": {
    ".bf-stage-name-big": [
     0.0507,
-    0.1409,
+    0.1499,
     0.4186,
-    0.3049
+    0.2867
    ],
    ".bf-stage-img": [
     0.5,
@@ -495,7 +495,8 @@ const MN_SHOTS = {
     0.0719,
     0.0289
    ]
-  }
+  },
+  "light": "img/shots/stage-1.light.webp"
  },
  "stage-1-barra": {
   "img": "img/shots/stage-1-barra.webp",
@@ -503,60 +504,59 @@ const MN_SHOTS = {
   "h": 900,
   "hot": {
    ".bf-stage-top .bf-stage-pill:first-child": [
-    0.1958,
+    0.1084,
     0.0153,
-    0.0708,
-    0.0467
-   ],
-   ".bf-stage-view": [
-    0.2729,
-    0.0153,
-    0.1356,
+    0.0725,
     0.0467
    ],
    ".bf-stage-pill.is-tag": [
-    0.4147,
+    0.4844,
     0.0153,
-    0.0815,
+    0.0832,
     0.0467
    ],
    ".bf-stage-top button[aria-haspopup='dialog']": [
-    0.5025,
+    0.5739,
     0.0153,
-    0.1385,
+    0.1447,
     0.0467
    ],
    ".bf-stage-status": [
-    0.6472,
+    0.7249,
     0.0153,
-    0.157,
+    0.1667,
     0.0467
    ]
-  }
+  },
+  "light": "img/shots/stage-1-barra.light.webp"
  },
  "stage-set-p1": {
   "img": "img/shots/stage-set-p1.webp",
   "w": 1280,
   "h": 900,
-  "hot": {}
+  "hot": {},
+  "light": "img/shots/stage-set-p1.light.webp"
  },
  "stage-set-geral": {
   "img": "img/shots/stage-set-geral.webp",
   "w": 1280,
   "h": 900,
-  "hot": {}
+  "hot": {},
+  "light": "img/shots/stage-set-geral.light.webp"
  },
  "stage-set-visual": {
   "img": "img/shots/stage-set-visual.webp",
   "w": 1280,
   "h": 900,
-  "hot": {}
+  "hot": {},
+  "light": "img/shots/stage-set-visual.light.webp"
  },
  "stage-set-p2": {
   "img": "img/shots/stage-set-p2.webp",
   "w": 1280,
   "h": 900,
-  "hot": {}
+  "hot": {},
+  "light": "img/shots/stage-set-p2.light.webp"
  },
  "stage-2": {
   "img": "img/shots/stage-2.webp",
@@ -567,13 +567,13 @@ const MN_SHOTS = {
     0.02,
     0.022,
     0.96,
-    0.2084
+    0.2078
    ],
    ".bf-stage-chain": [
     0.02,
-    0.2524,
+    0.2518,
     0.96,
-    0.2795
+    0.2801
    ],
    ".bf-stage-model": [
     0.02,
@@ -593,7 +593,8 @@ const MN_SHOTS = {
     0.96,
     0.1577
    ]
-  }
+  },
+  "light": "img/shots/stage-2.light.webp"
  },
  "deved-nano": {
   "img": "img/shots/deved-nano.webp",
@@ -858,13 +859,15 @@ const MN_SHOTS = {
   "img": "img/shots/stage-set-perfis.webp",
   "w": 1280,
   "h": 900,
-  "hot": {}
+  "hot": {},
+  "light": "img/shots/stage-set-perfis.light.webp"
  },
  "stage-fav": {
   "img": "img/shots/stage-fav.webp",
   "w": 1280,
   "h": 900,
-  "hot": {}
+  "hot": {},
+  "light": "img/shots/stage-fav.light.webp"
  },
  "cfg-afinador": {
   "img": "img/shots/cfg-afinador.webp",
@@ -947,19 +950,25 @@ const MN_SHOTS = {
     0.02,
     0.2973,
     0.96,
-    0.1988
+    0.1701
    ],
    ".bf-sl-notes": [
     0.02,
-    0.5133,
+    0.4847,
     0.96,
-    0.3423
+    0.371
    ],
    ".bf-sl-foot": [
     0.02,
     0.8728,
     0.96,
     0.1052
+   ],
+   ".bf-sl-head-acts .bf-sl-chip:last-child": [
+    0.8634,
+    0.1558,
+    0.0936,
+    0.0669
    ],
    ".bf-stage-handle": [
     0.4641,
@@ -972,64 +981,76 @@ const MN_SHOTS = {
  },
  "stage-sl-editor": {
   "img": "img/shots/stage-sl-editor.webp",
-  "w": 1280,
-  "h": 900,
+  "w": 580,
+  "h": 895,
   "hot": {
-   ".bf-sl-pe-num": [
-    0.6453,
-    0.1443,
-    0.0187,
-    0.0167
+   ".bf-sl-sh-ttl": [
+    0.0241,
+    0.0838,
+    0.8759,
+    0.0573
    ],
-   ".bf-sl-pe-pre": [
-    0.8422,
-    0.1315,
-    0.0406,
-    0.0422
+   ".bf-sl-sh-mode .bf-sl-seg": [
+    0.0241,
+    0.176,
+    0.9517,
+    0.0559
    ],
-   ".bf-sl-pe-ex.is-on": [
-    0.8859,
-    0.3407,
-    0.0344,
-    0.0422
+   ".bf-sl-blk-main": [
+    0.0241,
+    0.2989,
+    0.9517,
+    0.0693
    ],
-   ".bf-sl-pe.is-open .bf-sl-seg.is-nbox": [
-    0.6469,
-    0.7495,
-    0.3328,
-    0.0489
+   ".bf-sl-blk-pre": [
+    0.8414,
+    0.3196,
+    0.069,
+    0.0279
+   ],
+   ".bf-sl-sh-sub .bf-sl-btn": [
+    0.8081,
+    0.2475,
+    0.1677,
+    0.038
+   ],
+   ".bf-sl-sh-addbtn": [
+    0.0241,
+    0.8612,
+    0.1466,
+    0.0447
+   ],
+   ".bf-sl-disc": [
+    0.0241,
+    0.9193,
+    0.9517,
+    0.0536
    ]
   },
   "light": "img/shots/stage-sl-editor.light.webp"
  },
  "stage-sl-backup": {
   "img": "img/shots/stage-sl-backup.webp",
-  "w": 1280,
-  "h": 900,
+  "w": 580,
+  "h": 454,
   "hot": {
-   ".bf-sl-tab.is-on": [
-    0.8729,
-    0.0856,
-    0.1146,
-    0.0422
-   ],
-   ".bf-sl-bk .bf-sl-btn.is-primary": [
-    0.6453,
-    0.2599,
-    0.128,
-    0.0444
+   ".bf-sl-bk-sec:first-child .bf-sl-acts .bf-sl-btn.is-primary": [
+    0.0448,
+    0.3918,
+    0.2826,
+    0.0881
    ],
    ".bf-sl-bk-sec:first-child .bf-sl-acts .bf-sl-btn:not(.is-primary)": [
-    0.7796,
-    0.2599,
-    0.1072,
-    0.0444
+    0.3412,
+    0.3918,
+    0.2366,
+    0.0881
    ],
    ".bf-sl-rows.is-snaps": [
-    0.6453,
-    0.4842,
-    0.3344,
-    0.1053
+    0.0448,
+    0.798,
+    0.9103,
+    0.1207
    ]
   },
   "light": "img/shots/stage-sl-backup.light.webp"
@@ -1051,7 +1072,7 @@ const MN_SHOTS = {
     0.2586,
     0.2334
    ],
-   "[data-k=\"slNotesSize\"]": [
+   "[data-k=\"slCurAnim\"]": [
     0.7305,
     0.3505,
     0.2586,
@@ -1091,5 +1112,143 @@ const MN_SHOTS = {
    ]
   },
   "light": "img/shots/stage-sl-pe.light.webp"
+ },
+ "stage-sl-parte": {
+  "img": "img/shots/stage-sl-parte.webp",
+  "w": 580,
+  "h": 999,
+  "hot": {
+   ".bf-sl-pnav": [
+    0.0241,
+    0.1389,
+    0.9517,
+    0.044
+   ],
+   ".bf-sl-qans": [
+    0.0552,
+    0.2581,
+    0.8966,
+    0.0521
+   ],
+   ".bf-sl-pad-stage": [
+    0.0552,
+    0.5549,
+    0.8034,
+    0.1361
+   ],
+   ".bf-sl-pad-bksp": [
+    0.8724,
+    0.5629,
+    0.0793,
+    0.0561
+   ],
+   ".bf-sl-pad-keys": [
+    0.0552,
+    0.7273,
+    0.8966,
+    0.1161
+   ],
+   ".bf-sl-pad-more": [
+    0.0552,
+    0.8554,
+    0.8966,
+    0.046
+   ],
+   ".bf-sl-disc": [
+    0.0241,
+    0.9275,
+    0.9517,
+    0.048
+   ]
+  },
+  "light": "img/shots/stage-sl-parte.light.webp"
+ },
+ "stage-sl-lista": {
+  "img": "img/shots/stage-sl-lista.webp",
+  "w": 1280,
+  "h": 900,
+  "hot": {
+   ".bf-sl-sh-head .bf-sl-sh-ttl": [
+    0.5578,
+    0.0833,
+    0.3969,
+    0.057
+   ],
+   ".bf-sl-rows.is-songs .bf-sl-row-main": [
+    0.5859,
+    0.1559,
+    0.3234,
+    0.052
+   ],
+   ".bf-sl-rows.is-songs .bf-sl-grip": [
+    0.9141,
+    0.1574,
+    0.0344,
+    0.0489
+   ],
+   ".bf-sl-rows.is-songs .bf-sl-rx": [
+    0.9531,
+    0.1597,
+    0.0313,
+    0.0444
+   ],
+   ".bf-sl-addsong": [
+    0.5578,
+    0.3585,
+    0.4313,
+    0.0533
+   ],
+   ".bf-sl-sh-head .bf-sl-more": [
+    0.9594,
+    0.0833,
+    0.0297,
+    0.0422
+   ],
+   ".bf-sl-dock-head .is-undo": [
+    0.9219,
+    0.0133,
+    0.0313,
+    0.0444
+   ]
+  },
+  "light": "img/shots/stage-sl-lista.light.webp"
+ },
+ "stage-sl-wizard": {
+  "img": "img/shots/stage-sl-wizard.webp",
+  "w": 584,
+  "h": 844,
+  "hot": {
+   ".bf-sl-wz-prog": [
+    0.0205,
+    0.0853,
+    0.9589,
+    0.0118
+   ],
+   ".bf-sl-wz-rows": [
+    0.0514,
+    0.2377,
+    0.8973,
+    0.3246
+   ],
+   ".bf-sl-adds": [
+    0.0514,
+    0.5789,
+    0.8973,
+    0.0924
+   ],
+   ".bf-sl-wz-model": [
+    0.0514,
+    0.6879,
+    0.8973,
+    0.0545
+   ],
+   ".bf-sl-wz-next": [
+    0.0514,
+    0.9076,
+    0.8973,
+    0.0592
+   ]
+  },
+  "light": "img/shots/stage-sl-wizard.light.webp"
  }
 };

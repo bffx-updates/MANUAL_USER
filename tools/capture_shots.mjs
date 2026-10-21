@@ -172,9 +172,9 @@ const PAGE_HELPERS = `(function(){
         x0 = Math.min(x0, r.left); y0 = Math.min(y0, r.top); x1 = Math.max(x1, r.right); y1 = Math.max(y1, r.bottom);
         if (opts.first) break; }
       if (x0 === Infinity) return null;
-      const p = opts.pad || 0;
+      const p = opts.pad || 0, pb = opts.padB == null ? p : opts.padB;
       return { x: Math.max(0, Math.floor(x0 - p + scrollX)), y: Math.max(0, Math.floor(y0 - p + scrollY)),
-               w: Math.ceil(x1 - x0 + 2 * p), h: Math.ceil(y1 - y0 + 2 * p) }; },
+               w: Math.ceil(x1 - x0 + 2 * p), h: Math.ceil(y1 - y0 + p + pb) }; },
     // filhos visiveis (nao fixos) de um container: a coluna de uma pagina de configuracao
     childrenRect(sel, pad) { const root = document.querySelector(sel); if (!root) return null;
       let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
@@ -300,6 +300,10 @@ async function main() {
     await ev(`(function(){ try {
       localStorage.setItem('bfmidi_system_theme', ${JSON.stringify(themeId)});
       localStorage.setItem('bfmidi_language', 'pt');
+      // MODO PALCO: desde 21/out/2026 o padrão é PERGUNTAR (PALCO × SETLIST)
+      // ao abrir; os prints do palco abrem direto no PALCO BFMIDI.
+      var sd = JSON.parse(localStorage.getItem('bfmidi_stage_v2') || 'null') || { v: 2 };
+      sd.open = 'p1'; sd.openV = 2; localStorage.setItem('bfmidi_stage_v2', JSON.stringify(sd));
     } catch(e){} return 1; })()`);
     // a preferência só vale depois de recarregar
     const cur = await ev(`document.querySelector('.bf-screen') ? (document.querySelector('.bf-screen').classList.contains('is-theme-light') ? 'light' : 'dark') : '?'`);
@@ -316,6 +320,7 @@ async function main() {
   //   opts.tall   — estica a janela até caber a página (configurações longas)
   //   opts.children — usa a união dos FILHOS do seletor (coluna de conteúdo)
   //   opts.kind   — 'phone' | 'landscape' (moldura de aparelho no manual)
+  //   opts.padB   — respiro só embaixo (o resto usa opts.pad)
   const shoot = async (id, sel, opts = {}) => {
     if (ONLY.length && !ONLY.includes(id)) return;
     if (!USED.has(id) && !argv.includes('--all')) return;
@@ -337,7 +342,7 @@ async function main() {
     } else if (opts.children) {
       clip = await H(`childrenRect(${JSON.stringify(sel)}, ${opts.pad ?? 14})`);
     } else {
-      clip = await H(`rect(${JSON.stringify(sel)}, ${JSON.stringify({ pad: opts.pad ?? 0, first: !!opts.first })})`);
+      clip = await H(`rect(${JSON.stringify(sel)}, ${JSON.stringify({ pad: opts.pad ?? 0, padB: opts.padB, first: !!opts.first })})`);
     }
     if (!clip || clip.w < 4 || clip.h < 4) {
       console.log('  ! ' + id + ' — sem região: ' + JSON.stringify(sel));
@@ -352,7 +357,7 @@ async function main() {
       await setVP(vpName, Math.min(clip.y + clip.h + 60, 7000)); await sleep(500);
       clip = opts.children
         ? await H(`childrenRect(${JSON.stringify(sel)}, ${opts.pad ?? 14})`)
-        : await H(`rect(${JSON.stringify(sel)}, ${JSON.stringify({ pad: opts.pad ?? 0, first: !!opts.first })})`);
+        : await H(`rect(${JSON.stringify(sel)}, ${JSON.stringify({ pad: opts.pad ?? 0, padB: opts.padB, first: !!opts.first })})`);
       opts.tall = true;   // devolve a janela no fim
     }
     const hot = HOTS[id] ? await H(`hot(${JSON.stringify(clip)}, ${JSON.stringify(HOTS[id])})`) : {};
@@ -518,34 +523,51 @@ const goPreset = async ({ H, sleep }) => {
   await sleep(900);
 };
 
-// Setlist de exemplo do MODO SETLIST (músicas e banda fictícias). O `target`
-// de cada parte é o preset plano da controladora (letra*6 + preset: 0 = A1).
+// Setlist de exemplo do MODO SETLIST (músicas e banda fictícias), do jeito
+// que o assistente NOVA MÚSICA monta: partes em CIFRAS, com o tom, e uma
+// música em NOTAS PESSOAIS. O `target` de cada parte é o preset plano da
+// controladora (letra*6 + preset: 0 = A1). tipsSeen: as dicas da primeira vez
+// não cobrem a tela no print.
 const SL_SEED = (() => {
   const now = Date.now();
   const P = (id, type, target, extra = {}) => ({ id, type, label: '', target, color: -1, reps: 1, notes: '',
-    mode: 'notes', chords: [], extras: [], ...extra });
+    mode: 'chords', chords: [], extras: [], ...extra });
+  const N = (id, type, target, notes) => P(id, type, target, { mode: 'notes', notes });
+  const BT = [{ t: 'pc', ch: 16, n: 4, v: 0, o: 'bt' }];
+  const CHORUS = ['Em', 'C', 'G', 'D', 'Em', 'C', 'Am', 'B7'];
   const songs = [
     { id: 'mnso1', name: 'Noite de Estrada', artist: 'Banda Aurora', key: 'Em', bpm: 120, tags: ['abertura'],
       notes: 'Afinação padrão. Começa sozinho no dedilhado.', notesMode: 'notes', chords: [], updated: now,
       parts: [
-        P('mnp11', 'intro', 0, { notes: 'Dedilhado limpo, 4 compassos.\nDelay curto.' }),
-        P('mnp12', 'verse', 1, { notes: 'Volume baixo, palhetada abafada.\nVoz entra no 2º compasso.', reps: 2 }),
-        P('mnp13', 'prechorus', 2, { notes: 'Crescendo — abre o volume no pedal.' }),
-        P('mnp14', 'chorus', 3, { mode: 'chords', chords: ['Em', 'C', 'G', 'D', 'Em', 'C', 'Am', 'B7'],
-          extras: [{ t: 'pc', ch: 16, n: 4, v: 0, o: 'bt' }] }),
-        P('mnp15', 'solo', 4, { notes: 'Solo: 8 compassos.\nBoost ligado, delay longo.' }),
-        P('mnp16', 'outro', 0, { notes: 'Volta ao dedilhado e termina no Em.' }),
+        P('mnp11', 'intro', 0, { chords: ['Em', 'C', 'G', 'D'] }),
+        P('mnp12', 'verse', 1, { chords: ['Em', 'C', 'G', 'D'], reps: 2 }),
+        P('mnp13', 'prechorus', 2, { chords: ['Am', 'C', 'D'] }),
+        P('mnp14', 'chorus', 3, { chords: CHORUS, extras: BT, lyric: 'Quando a noite cai na estrada' }),
+        P('mnp15', 'solo', 4, { chords: ['Em', 'D', 'C', 'B7'] }),
+        P('mnp16', 'chorus', 3, { chords: CHORUS, extras: BT }),
+        P('mnp17', 'outro', 0, { chords: ['Em', 'C', 'Em'] }),
       ] },
     { id: 'mnso2', name: 'Céu de Vidro', artist: 'Banda Aurora', key: 'A', bpm: 96, tags: [],
       notes: '', notesMode: 'notes', chords: [], updated: now,
-      parts: [P('mnp21', 'intro', 6), P('mnp22', 'verse', 7), P('mnp23', 'chorus', 8), P('mnp24', 'outro', 6)] },
+      parts: [
+        N('mnp21', 'intro', 6, 'Teclado sozinho, 4 compassos.'),
+        N('mnp22', 'verse', 7, 'Voz e violão. A guitarra entra na volta.'),
+        N('mnp23', 'chorus', 8, 'Abre o volume no pedal.\nSegura o último acorde.'),
+        N('mnp24', 'outro', 6, 'Termina junto com a bateria.'),
+      ] },
     { id: 'mnso3', name: 'Última Chamada', artist: 'Banda Aurora', key: 'D', bpm: 140, tags: [],
       notes: '', notesMode: 'notes', chords: [], updated: now,
-      parts: [P('mnp31', 'intro', 12), P('mnp32', 'verse', 13), P('mnp33', 'chorus', 14), P('mnp34', 'solo', 15), P('mnp35', 'outro', 12)] },
+      parts: [
+        P('mnp31', 'intro', 12, { chords: ['D', 'A', 'Bm', 'G'] }),
+        P('mnp32', 'verse', 13, { chords: ['D', 'A', 'Bm', 'G'] }),
+        P('mnp33', 'chorus', 14, { chords: ['G', 'A', 'D', 'Bm', 'G', 'A', 'D'] }),
+        P('mnp34', 'solo', 15, { chords: ['Bm', 'G', 'D', 'A'] }),
+        P('mnp35', 'outro', 12, { chords: ['D', 'G', 'D'] }),
+      ] },
   ];
   const setlists = [{ id: 'mnsl1', name: 'Show de Sábado', songs: songs.map((s) => s.id), updated: now }];
   const meta = { active: 'mnsl1', pos: { mnsl1: { song: 0, part: -1 } }, firstUse: now, lastChange: now - 1000,
-    lastFullBackup: now, lastSnap: now, lastDaily: now };
+    lastFullBackup: now, lastSnap: now, lastDaily: now, tipsSeen: now };
   // uma cópia automática de ontem, pra a aba BACKUP não abrir com a lista vazia
   const snap = { at: now - 86400000, reason: 'daily', counts: { songs: songs.length, setlists: setlists.length },
     data: { songs, setlists, meta: { active: meta.active, pos: meta.pos } } };
@@ -711,7 +733,7 @@ const STEPS = [
       }
       // PALCO ESPECIAL com a GP-5
       await c.H(`click('.bf-stage-handle')`); await c.sleep(500);
-      if (await c.H(`click('.bf-stage-view')`)) {
+      if (await c.H(`click('.bf-stage-vseg-b:nth-child(2)')`)) {
         await c.H(`wait('.bf-stage-frame.is-p2 .bf-stage-detail-row', 10000)`); await c.sleep(2500);
         await c.tap('.bf-stage-blk[data-blk="DLY"]'); await c.sleep(4800);
         await c.shoot('stage-2', '.bf-stage');
@@ -763,58 +785,101 @@ const STEPS = [
       await c.key('Escape'); await c.sleep(500);
       await c.key('Escape'); await c.sleep(500);
     } },
-  // MODO SETLIST (19/out/2026): a 3ª tela do palco, só no build dos apps (use
-  // --editor, ver o topo). O banco de músicas mora no IndexedDB do app
-  // ('bfmidi-setlist'), então a etapa o SEMEIA antes de abrir: um setlist de
-  // exemplo com três músicas. A tela, o editor ao lado (a música aberta), a
-  // categoria SETLIST das configurações do palco (a 6ª do trilho) e a aba
-  // BACKUP do editor.
-  { name: 'MODO SETLIST', ids: ['stage-sl', 'stage-sl-editor', 'stage-set-sl', 'stage-sl-backup'],
+  // MODO SETLIST (19/out/2026; editor guiado desde 20/out/2026, ver
+  // PLANO_SETLIST_GUIADO.md): a 3ª tela do palco, só no build dos apps (use
+  // --editor, ver o topo). As músicas moram no IndexedDB do app
+  // ('bfmidi-setlist'), então a etapa SEMEIA um setlist de exemplo antes de
+  // abrir. Prints: a tela; a FICHA da música (EDITAR); a TELA DA PARTE; a
+  // tela do setlist no editor (inteira, com o palco ao lado); o BACKUP (menu
+  // ⋯ do editor); a categoria SETLIST das configurações do palco; e o
+  // assistente NOVA MÚSICA — por último, porque ele cria uma música.
+  { name: 'MODO SETLIST', ids: ['stage-sl', 'stage-sl-editor', 'stage-sl-parte', 'stage-sl-lista', 'stage-sl-backup', 'stage-set-sl', 'stage-sl-wizard'],
     async run(c) {
       await c.scenario('default');
       await c.open('desk');
       await seedSetlist(c);
       await c.open('desk');
       await c.H(`wait('.bf-np-shortcut.is-accent', 12000)`); await c.sleep(600);
-      if (!await c.H(`click('.bf-np-shortcut', 'SETLIST')`)) { console.log('  ! atalho SETLIST ausente (use --editor com o build dos apps)'); return; }
+      // O atalho SETLIST do PRINCIPAL saiu em 21/out/2026 (só o MODO PALCO
+      // fica lá): o palco abre pelo MODO PALCO já na tela do setlist, pela
+      // preferência ABRIR EM = SETLIST — só nesta abertura, porque o open()
+      // devolve 'p1' na página seguinte.
+      await c.ev(`(function(){ try { var sd = JSON.parse(localStorage.getItem('bfmidi_stage_v2') || 'null') || { v: 2 }; sd.open = 'sl'; localStorage.setItem('bfmidi_stage_v2', JSON.stringify(sd)); } catch(e){} return 1; })()`);
+      if (!await c.H(`click('.bf-np-shortcut.is-accent')`)) { console.log('  ! atalho MODO PALCO ausente (use --editor com o build dos apps)'); return; }
       if (!await c.H(`wait('.bf-sl-screen .bf-sl-part', 8000)`)) { console.log('  ! tela do setlist sem partes (a semente nao entrou?)'); await c.key('Escape'); return; }
       await c.sleep(1200);
-      // chama o REFRÃO (cifras na área de anotações) e espera o mapa chegar na
-      // controladora simulada; a barra de cima fica escondida (o selo e o
+      // chama o REFRÃO 1 (cifras na área de anotações) e espera o mapa chegar
+      // na controladora simulada; a barra de cima fica escondida (o selo e o
       // EDITAR SETLIST moram nela — o marcador aponta a alcinha)
       await c.tap('.bf-sl-part:nth-child(4)'); await c.sleep(4800);
       await c.shoot('stage-sl', '.bf-stage');
-      // EDITAR (cabeçalho da música): o editor abre ao lado, na música
+      // voltar um nível no editor (a seta do cabeçalho só existe fora do 1º nível)
+      const back = async () => { const ok = await c.H(`click('.bf-sl-dock-head > .bf-sl-x:first-child')`); await c.sleep(600); return ok; };
+      // abre a barra de cima só se ela estiver escondida (a alcinha ALTERNA:
+      // depois de fechar as configurações a barra ainda está aberta)
+      const showBar = async () => {
+        if (!await c.ev(`!!document.querySelector('.bf-stage-top.is-open')`)) { await c.H(`click('.bf-stage-handle')`); await c.sleep(600); }
+      };
+      // EDITAR (cabeçalho da música): o editor abre ao lado, na FICHA da música
       if (await c.H(`clickIn('.bf-sl-head-acts', '.bf-sl-chip', 'EDITAR')`)) {
-        if (await c.H(`wait('.bf-sl-dock .bf-sl-parted', 5000)`)) {
-          await c.sleep(600);
-          // abre o REFRÃO (cifras) e rola até a lista de partes
-          await c.H(`click('.bf-sl-pe:nth-child(4) .bf-sl-pe-main')`); await c.sleep(600);
-          await c.ev(`(function(){ var b=document.querySelector('.bf-sl-dock-body'), h=document.querySelector('.bf-sl-subhead');
-            if(b&&h) b.scrollTop = h.offsetTop - b.offsetTop - 8; return 1; })()`);
-          await c.sleep(500);
-          await c.shoot('stage-sl-editor', null, { full: true });
-        } else console.log('  ! editor da musica nao abriu');
-        await c.key('Escape'); await c.sleep(600);
-      }
-      // aba BACKUP (EDITAR SETLIST na barra)
-      await c.H(`click('.bf-stage-handle')`); await c.sleep(500);
-      if (await c.H(`click('.bf-stage-pill', 'EDITAR SETLIST', true)`)) {
-        await c.H(`wait('.bf-sl-dock .bf-sl-tabs', 5000)`); await c.sleep(400);
-        if (await c.H(`click('.bf-sl-tab', 'BACKUP', true)`)) {
-          await c.H(`wait('.bf-sl-dock .bf-sl-bk', 4000)`); await c.sleep(700);
-          await c.shoot('stage-sl-backup', null, { full: true });
-        } else console.log('  ! aba BACKUP ausente');
-        await c.key('Escape'); await c.sleep(600);
-      } else console.log('  ! EDITAR SETLIST ausente na barra');
+        if (await c.H(`wait('.bf-sl-dock .bf-sl-sec.is-sheet', 5000)`)) {
+          await c.sleep(700);
+          await c.shoot('stage-sl-editor', ['.bf-sl-dock-head', '.bf-sl-dock .bf-sl-sec.is-sheet'], { padB: 24 });
+          // a TELA DA PARTE: o REFRÃO 1 (cifras e MANDAR TAMBÉM)
+          if (await c.H(`click('.bf-sl-blk-main[data-part="3"]')`) && await c.H(`wait('.bf-sl-dock .bf-sl-part-page', 4000)`)) {
+            await c.sleep(700);
+            await c.shoot('stage-sl-parte', ['.bf-sl-dock-head', '.bf-sl-dock .bf-sl-part-page'], { padB: 24 });
+            await back();
+          } else console.log('  ! tela da parte nao abriu');
+          // a tela do SETLIST no editor (a seta volta da ficha pra ele)
+          await back();
+          if (await c.H(`wait('.bf-sl-dock .bf-sl-sec.is-setlist', 4000)`)) {
+            await c.sleep(600);
+            await c.shoot('stage-sl-lista', null, { full: true });
+          } else console.log('  ! tela do setlist no editor nao abriu');
+          // BACKUP: no menu ⋯ do 1º nível do editor
+          await back();
+          if (await c.H(`click('.bf-sl-dock-head .is-more')`) && await c.H(`wait('.bf-sl-menu', 3000)`)) {
+            await c.sleep(300);
+            await c.H(`click('.bf-sl-menu-it', 'BACKUP')`);
+            if (await c.H(`wait('.bf-sl-dock .bf-sl-bk', 4000)`)) {
+              await c.sleep(700);
+              await c.shoot('stage-sl-backup', ['.bf-sl-dock-head', '.bf-sl-dock .bf-sl-bk'], { padB: 24 });
+            } else console.log('  ! painel de BACKUP nao abriu');
+          } else console.log('  ! menu ⋯ do editor ausente');
+        } else console.log('  ! ficha da musica nao abriu');
+        // fecha o editor (ESC volta um nível; no 1º nível, fecha)
+        for (let k = 0; k < 4 && await c.ev(`!!document.querySelector('.bf-sl-dock')`); k++) { await c.key('Escape'); await c.sleep(500); }
+      } else console.log('  ! EDITAR ausente no cabeçalho da musica');
       // configurações do palco, categoria SETLIST (a 6ª do trilho)
-      await c.H(`click('.bf-stage-handle')`); await c.sleep(500);
+      await showBar();
       if (await c.H(`click('.bf-stage-top button[aria-haspopup="dialog"]')`)) {
         await c.H(`wait('.bf-stage-sheet', 4000)`); await c.sleep(700);
         await c.H(`click('.bf-stage-rail [role=tab]:nth-child(6)')`); await c.sleep(1200);
         await c.shoot('stage-set-sl', '.bf-stage');
         await c.key('Escape'); await c.sleep(500);
       }
+      // assistente NOVA MÚSICA: EDITAR SETLIST › ADICIONAR MÚSICA; nome, CIFRAS,
+      // tom G e o passo das PARTES (já montadas pelo modelo)
+      await showBar();
+      if (await c.H(`click('.bf-stage-pill', 'EDITAR SETLIST', true)`) && await c.H(`wait('.bf-sl-dock .bf-sl-addsong', 5000)`)) {
+        await c.sleep(400);
+        await c.H(`click('.bf-sl-addsong')`);
+        if (await c.H(`wait('.bf-sl-wz #bf-sl-wz-name', 4000)`)) {
+          await c.ev(`(function(){ var e=document.getElementById('bf-sl-wz-name'); if(e) e.focus(); return 1; })()`);
+          await c.cdp.send('Input.insertText', { text: 'Luz da Manhã' }); await c.sleep(400);
+          await c.H(`click('.bf-sl-wz-next')`); await c.H(`wait('.bf-sl-wz-choices', 3000)`); await c.sleep(400);
+          await c.H(`click('.bf-sl-wz-next')`); await c.H(`wait('.bf-sl-keys', 3000)`); await c.sleep(400);
+          await c.H(`click('.bf-sl-key', 'G')`); await c.sleep(300);
+          await c.H(`click('.bf-sl-wz-foot2 .bf-sl-btn.is-primary')`);
+          if (await c.H(`wait('.bf-sl-wz-rows', 3000)`)) {
+            await c.sleep(700);
+            await c.shoot('stage-sl-wizard', '.bf-sl-wz-card', { pad: 12 });
+          } else console.log('  ! passo das PARTES do assistente nao abriu');
+          await c.H(`click('.bf-sl-wz-head .bf-sl-x:last-child')`); await c.sleep(500);
+        } else console.log('  ! assistente NOVA MUSICA nao abriu');
+        for (let k = 0; k < 4 && await c.ev(`!!document.querySelector('.bf-sl-dock')`); k++) { await c.key('Escape'); await c.sleep(500); }
+      } else console.log('  ! EDITAR SETLIST ausente na barra');
       await c.key('Escape'); await c.sleep(500);
     } },
   // Os comandos de setlist na CHAMADA DE PRESETS (CONFIGURAÇÕES › BANCOS):
@@ -846,7 +911,7 @@ const STEPS = [
       if (await c.H(`click('.bf-np-shortcut.is-accent')`)) {
         await c.H(`wait('.bf-stage-frame.is-p1', 8000)`); await c.sleep(1200);
         await c.H(`click('.bf-stage-handle')`); await c.sleep(500);
-        await c.H(`click('.bf-stage-view')`);
+        await c.H(`click('.bf-stage-vseg-b:nth-child(2)')`);
         await c.H(`wait('.bf-stage-frame.is-p2 .bf-stage-detail-row', 10000)`); await c.sleep(4800);
         await c.shoot('stage-2-nano', '.bf-stage');
         await c.key('Escape'); await c.sleep(500);
@@ -890,7 +955,7 @@ const STEPS = [
         await c.H(`wait('.bf-stage-frame.is-p1', 8000)`); await c.sleep(2500);
         await c.shoot('stage-land', null, { full: true, kind: 'landscape' });
         await c.H(`click('.bf-stage-handle')`); await c.sleep(500);
-        await c.H(`click('.bf-stage-view')`);
+        await c.H(`click('.bf-stage-vseg-b:nth-child(2)')`);
         await c.H(`wait('.bf-stage-frame.is-p2 .bf-stage-detail-row', 10000)`); await c.sleep(4800);
         await c.shoot('stage-land-2', null, { full: true, kind: 'landscape' });
         await c.key('Escape');
@@ -937,7 +1002,7 @@ const STEPS = [
       if (await c.H(`click('.bf-np-shortcut.is-accent')`)) {
         await c.H(`wait('.bf-stage-frame.is-p1', 8000)`); await c.sleep(1200);
         await c.H(`click('.bf-stage-handle')`); await c.sleep(500);
-        await c.H(`click('.bf-stage-view')`);
+        await c.H(`click('.bf-stage-vseg-b:nth-child(2)')`);
         await c.H(`wait('.bf-stage-frame.is-p2', 8000)`); await c.sleep(4800);
         await c.shoot('stage-kemper', '.bf-stage');
         await c.key('Escape'); await c.sleep(500);

@@ -59,12 +59,15 @@ CONTENTS
    7.12. Profiles and ready-made looks
    7.13. Stage settings — SPECIAL STAGE
    7.14. On phones and tablets
-   7.15. SETLIST: the song, its parts and notes
-   7.16. Song bank and setlists
-   7.17. Controlling the setlist with your foot
-   7.18. Adjusting the setlist screen
-   7.19. Setlist backup
-   7.20. Editing the setlist on a computer (website)
+   7.15. SETLIST: the song, its parts and chords
+   7.16. Creating a song (step by step)
+   7.17. The song page
+   7.18. The part screen: preset and chords
+   7.19. Setlists and my songs
+   7.20. Controlling the setlist with your foot
+   7.21. Adjusting the setlist screen
+   7.22. Setlist backup
+   7.23. Editing the setlist on a computer (website)
 8. Device preset editors
    8.1. Where to open it
    8.2. Valeton GP-5 and GP-50
@@ -1154,7 +1157,7 @@ Introduction: STAGE MODE turns the editor into a panel for the show. There are t
         the footswitches, which you can turn on and off with your finger — and the SPECIAL STAGE
         shows the dedicated pedal plugged into the controller — the effect chain and the knobs of
         the GP-5, the TONEX ONE or the Nano Cortex, editable live — and the SETLIST shows the song
-        of the show, its parts and notes.
+        of the show, its parts and the chords or notes of each one.
         Stage Mode exists in the BFMiDi apps (Android, iPhone/iPad, Mac and Windows) and in the
         website editor, installed as an icon or not. The only place it does not appear is the editor
         opened from the controller itself (http://192.168.4.1 or http://bfmidi.local). On the
@@ -1171,8 +1174,9 @@ Purpose: The BFMIDI STAGE is the general-purpose panel: the BFMiDi preset in big
 How to:
 1. On the PRESET screen, tap STAGE MODE — it's always the first button in the shortcut row of the
    MAIN card.
-2. The stage opens on the BFMIDI STAGE; to open on the SPECIAL STAGE or on the last one used, go to
-   SETTINGS › EDITOR › GENERAL, STAGE MODE card. On a phone it fills the whole screen in landscape.
+2. The stage opens asking what to show: STAGE or SETLIST (ESC stays on the STAGE). To always open on
+   the same screen — BFMIDI STAGE, SPECIAL STAGE, SETLIST or the last one used — go to SETTINGS ›
+   EDITOR › GENERAL, STAGE MODE card. On a phone it fills the whole screen in landscape.
 3. Tap a footswitch icon to turn the effect on or off; tap a preset in the bottom row to switch
    songs.
 Fields and items:
@@ -1578,17 +1582,21 @@ Fields and items:
   Description: With Keep the screen on enabled (default), the device won't turn off the screen in
              the middle of a song.
 
-7.15. SETLIST: the song, its parts and notes
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+7.15. SETLIST: the song, its parts and chords
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Related screen/preview: SETLIST — THE STAGE SCREEN
 Purpose: The third Stage Mode screen: the current song in big letters, its parts in order (INTRO,
-          VERSE, CHORUS…) with the preset each one calls, and the notes or chords of the part that
+          VERSE, CHORUS…) with the preset each one calls, and the chords or notes of the part that
           is playing.
 How to:
 1. On the MAIN card, tap SETLIST (next to STAGE MODE). With the stage already open, choose SETLIST
    in the BFMIDI · SPECIAL · SETLIST selector on the top bar.
-2. Pick a setlist (or tap OPEN THE EDITOR to create the first one).
-3. Tap a part to call its preset. The footer arrows change songs without calling a preset — on
-   screen you may just be looking at the next one.
+2. First time? The stage shows two big blocks, SETLISTS and MY SONGS. In MY SONGS, NEW SONG opens
+   the step-by-step setup (next card), which creates the setlist My setlist. If you already have
+   setlists, pick one.
+3. Tap a part to see its chords (or notes) and call its preset, if it has one. The footer arrows
+   change songs without calling a preset — on screen you may just be looking at the next one.
+4. EDIT, in the header, opens this song’s page in the editor, beside the stage.
 Fields and items:
 - The bar badge (status)
   Description: ON THE CONTROLLER: the controller received the song’s parts and the foot commands
@@ -1599,6 +1607,12 @@ Fields and items:
   Description: Changed presets some other way (a regular footswitch, the editor)? The screen marks
              on its own the part whose preset is the one playing. A preset no part uses shows OUT OF
              THE SETLIST, and NEXT PART continues from the last known part.
+             In a song where no part calls a preset (chords only), there is no OUT OF THE SETLIST:
+             the screen stays on the part you tapped last.
+- First-time tips (help)
+  Description: On the first song opened on stage, three short tips show up one at a time (SKIP
+             closes them). They don’t come back on their own: they are in HELP, in the editor’s ⋯
+             menu, together with the foot commands.
 - Only with the app open (rule)
   Description: The controller keeps only the current song and its neighbors, in memory, and forgets
              everything when you close the stage or after 15 s without hearing from the app
@@ -1613,40 +1627,148 @@ Fields and items:
              also when two parts use the same preset. The name goes without accents and with up to
              12 letters.
 
-7.16. Song bank and setlists
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Purpose: Each song is entered once in the bank; a setlist is a list of songs from the bank.
-          Everything is stored on the device, with no pedal needed.
+7.16. Creating a song (step by step)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Related screen/preview: SETLIST — NEW SONG
+Purpose: Every new song starts in a short step-by-step setup — the name, what shows on stage, the
+          key, the parts, the preset of each one and the backing-track trigger — and it takes about
+          a minute. Only the name is required.
 How to:
-1. On the SETLIST screen, open the top bar and tap EDIT SETLIST. The editor opens beside the stage,
-   with the SETLISTS, SONG BANK and BACKUP tabs.
-2. Create the song with name, artist, key and BPM, and add the parts by type. In each part choose
-   the controller preset it calls.
-3. Put the song in a setlist and set the order with ↑ ↓. Everything saves on its own.
+1. Open it from the stage (CREATE SONG, in an empty setlist) or from the editor: + ADD SONG inside a
+   setlist, or the NEW SONG block in MY SONGS.
+2. Give it a name and choose what shows on stage: CHORDS (the chords in big boxes) or PERSONAL NOTES
+   (free text). You can change it later; both are kept.
+3. With chords, choose the key — or DON’T KNOW · SKIP. With the key, the song’s chords come first
+   when you build it.
+4. The parts come already set up by the TEMPLATE. Remove (×), add (+ VERSE, + CHORUS…) or drag by
+   the handle to change the order.
+5. Then, part by part: the BFMIDI PRESET (the preset the controller calls when the part starts: tap
+   CHOOSE PRESET; it is optional) and the chords, by tapping the blocks. Repeated parts (two
+   choruses) are filled in only once.
+6. The last step is the EXTERNAL TRIGGER: if the song plays with backing tracks (VS), tap YES,
+   TRIGGER and choose the message (PC or CC), the channel and the output (host BLUETOOTH or ALL
+   OUTPUTS). On each part, the box turns the trigger on or off and the − + buttons change the
+   number; NUMBER IN ORDER numbers the parts one after another. Without backing tracks, tap NO.
+7. At the end, check which setlist it went into (CHANGE moves it) and choose SEE ON STAGE, CREATE
+   ANOTHER SONG or ADJUST DETAILS.
+Fields and items:
+- Templates (4 options)
+  Description: WITH PRE-CHORUS (intro, verse, pre-chorus, chorus, outro) comes selected; on
+             4-footswitch boards, SIMPLE (intro, verse, chorus, outro). WITH SOLO AND BRIDGE has 8
+             parts and BLANK starts from scratch. Switching templates after filling in a part asks
+             before removing it.
+- Stopping halfway (rule)
+  Description: The song exists from the first NEXT. Closing the setup after that keeps what was
+             done, and the rest is finished on the song page (EDIT). With no setlist yet, the first
+             song creates My setlist.
+
+7.17. The song page
+~~~~~~~~~~~~~~~~~~~
+Related screen/preview: SETLIST — THE SONG PAGE
+Purpose: Where you change a finished song: the name, what shows on stage and the parts, each one in
+          a block with its chords and preset.
+How to:
+1. On stage, tap EDIT in the song header. In the editor, tap the song (in a setlist or in MY SONGS).
+2. Tap the name to rename it. Under ON STAGE, CHORDS or PERSONAL NOTES applies to the whole song —
+   nothing is erased when you switch.
+3. Tap a block to open the part (next card). + PART adds one; ARRANGE shows the handles to change
+   the order and the × to remove.
+4. DETAILS holds the rest: artist, key (with the whole-song TRANSPOSE), BPM, tags and the song
+   notes.
 Fields and items:
 - The part number (order)
   Description: It’s the part’s position in the song (1, 2, 3…), and it’s what the PART N and CALL
-             PART commands use. Reordering the parts changes the numbers — the editor warns you. Up
-             to 32 parts per song.
-- Personal notes or chords (notes)
-  Description: Each part (and the song) has a PERSONAL NOTES | CHORDS selector. Chords are built by
-             tapping blocks: first the chords of the song’s key, then the 12 notes in the chosen
-             type, and "Other chord" to type. On stage they show in big boxes. TRANSPOSE changes the
-             chords of one part or of the whole song.
-- Extra messages (PC / CC)
-  Description: The icon next to each part’s preset holds up to 3 PC or CC messages the controller
-             sends along with the part — for a backing track/VS, lights or another device. They go
-             out every time the part is called. Each one picks the output: HOST BLUETOOTH (on boards
-             with a USB host) or ALL OUTPUTS.
+             PART commands use. Change the order and the numbers follow the new order. Repeated
+             parts get a number on screen (CHORUS 1, CHORUS 2). Up to 32 parts per song.
+- Icon before the preset (extra MIDI)
+  Description: It shows on a part that also sends MIDI messages to another device (ALSO SEND, in the
+             next card).
+- A song with chords and notes (notice)
+  Description: If the parts are set differently, ON STAGE shows nothing selected and says so: pick
+             one side to make the whole song the same (nothing is erased), or change part by part
+             under MORE OPTIONS.
+- The song’s ⋯ menu (options)
+  Description: EXPORT SONG (a file with just this song), DUPLICATE and DELETE SONG. Deleting tells
+             you which setlists it is in, and the header’s UNDO (the curved arrow) brings it back.
 
-7.17. Controlling the setlist with your foot
+7.18. The part screen: preset and chords
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Related screen/preview: SETLIST — THE PART SCREEN
+Purpose: One part at a time: the preset it calls and the chords that show on stage, built with taps
+          — no typing.
+How to:
+1. On the song page, tap a block. At the top, a strip shows every part of the song in order, with
+   the one you are editing lit and each one's preset; tap another to jump straight to it. The ‹ ›
+   arrows next to the name move to the previous and the next part.
+2. The screen has three numbered cards. 1 · Sound is the controller preset the part calls: it starts
+   as NO CHANGE (the sound stays as it was); tap CHOOSE to point to a preset — the card gets a ✓ and
+   shows A2 · CRUNCH · CHANGE.
+3. 2 · Lyrics holds one line of the lyrics marking where the part starts. On stage it shows big, on
+   a light band above the chords — your cue. Optional.
+4. 3 · Chords: tap the chords under Tap to add (the ones in the song’s key) to put them at the end
+   of the list. To replace, move or remove a chord, tap it under Your chords. ⌫ deletes the last
+   one.
+5. More chords has the types (m, 7, 7M, sus4…), the 12 notes and a field to type any chord — with a
+   bass note (D/F#), N.C. or %.
+Fields and items:
+- Personal notes (text)
+  Description: On a part set to PERSONAL NOTES, the chord keyboard gives way to a free-text field:
+             lyrics, a reminder, a cue.
+- MORE OPTIONS (the part)
+  Description: The part type, the name on screen (left blank, the automatic one is used), the
+             repeats (the ×2 shows on stage), the color, what this part shows (chords or notes, only
+             for it), TRANSPOSE these chords (−½ +½), ALSO SEND, DUPLICATE and DELETE PART. The
+             whole song is transposed on the song page, under DETAILS.
+- ALSO SEND (PC / CC)
+  Description: Up to 3 PC or CC messages the controller sends along with the part — for a backing
+             track/VS, lights or another device. They go out every time the part is called. Each one
+             picks the output: HOST BLUETOOTH (on boards with a USB host) or ALL OUTPUTS.
+
+7.19. Setlists and my songs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Related screen/preview: SETLIST — THE EDITOR BESIDE THE STAGE
+Purpose: Each song is stored once, in MY SONGS; a setlist is a list of those songs in show order.
+          Everything stays on the device, with no pedal needed.
+How to:
+1. On the SETLIST screen, open the top bar and tap EDIT SETLIST: the editor opens beside the stage,
+   on the setlist that is on screen.
+2. Tap a song to open its page; drag by the handle to change the order; the × removes the song from
+   the setlist (it stays in MY SONGS).
+3. + ADD SONG creates a new song or picks one you already have.
+4. The header’s ‹ arrow goes back one step; the start of the editor has two big blocks, SETLISTS and
+   MY SONGS. Inside each one, the NEW SETLIST / NEW SONG and LOAD SETLIST / LOAD SONG blocks (from a
+   file, which opens the BACKUP summary so you choose how to merge), and below them the list of what
+   already exists. USE ON STAGE (inside a setlist) puts it on screen.
+Fields and items:
+- Everything saves on its own (rule)
+  Description: There is no save button: every change is stored right away. The header’s UNDO (the
+             curved arrow) takes back the changes made since the editor opened — including deleting
+             a song or a setlist.
+- The setlist’s ⋯ menu (options)
+  Description: DUPLICATE, EXPORT (a file with the setlist and its songs), SHARE AS TEXT (the list
+             with each song’s key, to send to the band) and DELETE SETLIST — the songs stay in MY
+             SONGS.
+- MY SONGS (tab)
+  Description: All the songs in alphabetical order, with search by name, artist, key or tag and the
+             FILTER (those in no setlist, or a tag). Each one’s ⋯ duplicates or deletes it; deleting
+             tells you which setlists it is in.
+- The editor’s ⋯ menu (backup and help)
+  Description: At the start of the editor (where the tabs are), the ⋯ opens BACKUP (card further on)
+             and HELP, with the stage tips and the foot commands. ESC goes back one level and, at
+             the start, closes the editor.
+
+7.20. Controlling the setlist with your foot
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Related screen/preview: SETTINGS › BANKS › PRESET CALL
 Purpose: The footswitches never change on their own: you choose which gesture of which footswitch
           gets each setlist command — or none at all.
 How to:
 1. On the BANK footswitches: SETTINGS › BANKS › CALL, the SETLIST: … actions on TAP or HOLD.
 2. On a LIVE, SW GLOBAL or external footswitch: in the CC lists, after the navigation commands,
    comes the ── SETLIST ── group.
+3. In the same group, STAGE / SETLIST SCREEN switches the Stage Mode screen between the STAGE and
+   the SETLIST with each tap — to go from lyrics and chords to the knobs without taking your hands
+   off the instrument.
 Fields and items:
 - CALL PART (action)
   Description: In PRESET CALL: footswitch 3 calls part 3, and so on. Without a setlist open it acts
@@ -1660,57 +1782,80 @@ Fields and items:
   Description: Call the part with that number; in a song with fewer parts, they do nothing. Calling
              the part that is already playing doesn’t resend the preset (only its extra messages).
 
-7.18. Adjusting the setlist screen
+7.21. Adjusting the setlist screen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Related screen/preview: STAGE SETTINGS — SETLIST
 Purpose: In the stage settings, the SETLIST category changes the arrangement and the size of the
           setlist screen pieces, with the preview beside it.
 How to:
 1. Open the top bar, tap SETTINGS and choose SETLIST on the left rail. Without a setlist with songs,
    the preview shows an example.
+2. The LYRICS · CUE band (the lyrics line above the chords) has its own size, band color (light,
+   part color, accent, dark or none) and, under MORE OPTIONS, the text color.
 Fields and items:
 - Screen layout (4 options)
   Description: FULL (song, parts strip, notes and footer), PARTS ON THE SIDE (the parts in a column,
              the notes on the right — needs a wide screen), BIG NOTES (the song on a single line and
              the notes taking most of the screen) and PARTS ONLY (the part cards fill the screen, no
              notes).
+- Part that is playing (animation, speed and tags)
+  Description: The card of the part that is playing moves so it is obvious from a distance.
+             Animation: GLOW (the halo lights up and fades; the default), OUTLINE (a streak of light
+             runs around it), SWEEP (a band of light crosses the card), BREATHE (the card grows and
+             shrinks) or NONE. VU meter adds a few plain, subtle bars in the part's color IN THE
+             CORNER of the card or across the WHOLE CARD, behind the text, together with any
+             animation. Speed: SLOW, NORMAL or FAST (also for the VU). NOW tag puts the label on the
+             current part, and Dim the other parts darkens the ones not playing. The thumbnail of
+             each option shows the effect. With "reduce motion" on in the device, the part just
+             stays lit.
 - Sizes and what shows (options)
   Description: Size of the notes and of the parts; artist, key and BPM; each part’s preset; the
              footer with the nearby songs (turned off, the setlist list moves to the header); and,
              under MORE OPTIONS, the song number and the UP NEXT tag.
 
-7.19. Setlist backup
+7.22. Setlist backup
 ~~~~~~~~~~~~~~~~~~~~
-Purpose: The song bank lives only on the device, so it has its own backup, separate from the
-          controller backup.
+Related screen/preview: SETLIST — BACKUP
+Purpose: Your songs and setlists live only on the device, so they have their own backup, separate
+          from the controller backup.
 How to:
-1. On the BACKUP tab of the setlist editor (or in SETTINGS › BACKUP › SETLIST, in the apps and on
-   the website), tap FULL BACKUP and keep the file.
-2. To bring it back, OPEN FILE: the app shows a summary (new, same and different songs and setlists)
-   before touching anything, and offers UNDO RESTORE at the end. The same button takes the files
-   made in the site editor (next card).
+1. In the setlist editor, go back to the start (the SETLISTS and MY SONGS blocks) and tap ⋯ ›
+   BACKUP. In the apps and on the website it is also in SETTINGS › BACKUP › SETLIST.
+2. Tap FULL BACKUP and keep the file.
+3. To bring it back, OPEN FILE: the app shows a summary (new, same and different songs and setlists)
+   before touching anything. Choose ADD TO WHAT I HAVE or REPLACE EVERYTHING and tap RESTORE NOW; at
+   the end, UNDO RESTORE shows up. The same button takes the files made in the site editor (last
+   card).
 Fields and items:
 - Automatic copies (protection)
-  Description: The app keeps up to 20 copies of the bank on its own (one per day of use, and before
-             restoring or deleting). They protect against editing mistakes — not against
+  Description: The app keeps up to 20 copies of everything on its own (one per day of use, and
+             before restoring or deleting). They protect against editing mistakes — not against
              uninstalling the app or changing devices. For that, only the backup file.
+- Add or replace (restore)
+  Description: ADD TO WHAT I HAVE adds what is new and never deletes anything. For a song (or
+             setlist) that exists on both sides with differences, THE NEWEST stays — or choose KEEP
+             BOTH. REPLACE EVERYTHING (only with a full backup) makes the device the same as the
+             file, and the summary tells you how many songs will no longer exist. Before writing,
+             the app keeps an automatic copy of how things were.
 - Separate files (rule)
   Description: The setlist backup doesn’t carry controller presets, and the controller backup
              doesn’t carry the setlist. Each RESTORE refuses the other’s file, saying where it
              should be restored.
 
-7.20. Editing the setlist on a computer (website)
+7.23. Editing the setlist on a computer (website)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Purpose: The same setlist editor, in the browser: build the song bank and the setlists with a
-          keyboard and a big screen and take them to the app with a file — and the other way around.
+Purpose: The same setlist editor, in the browser: build your songs and setlists with a keyboard and
+          a big screen and take them to the app with a file — and the other way around.
 How to:
 1. Open bffx.com.br/setlist in any browser (computer, tablet or phone). No account and no controller
-   needed.
+   needed. With nothing saved, the page offers CREATE THE FIRST SONG (the same step-by-step setup as
+   the app) and SEE AN EXAMPLE.
 2. To bring what is already in the app: in the app, SETTINGS › BACKUP › SETLIST › FULL BACKUP; on
    the site, OPEN FILE, check the summary and tap RESTORE NOW.
-3. Edit as in the app: setlists, songs, parts, chords and extra messages. On a computer the list
-   stays on the left and the open song on the right.
+3. Edit as in the app: setlists, songs, parts, chords and ALSO SEND. On a computer the list stays on
+   the left and the open song on the right.
 4. To take it to the app: on the site, DOWNLOAD (on a phone, SHARE); in the app, SETTINGS › BACKUP ›
-   SETLIST › OPEN FILE. With ADD TO THE BANK, the newest version of each song and each setlist
+   SETLIST › OPEN FILE. With ADD TO WHAT I HAVE, the newest version of each song and each setlist
    stays.
 Fields and items:
 - It stays in this browser (storage)
@@ -1721,8 +1866,8 @@ Fields and items:
 - Edits on both sides (rule)
   Description: If the same song (or the same setlist) was edited on the site and in the app, one
              version wins — the newest, by default. To lose nothing, choose KEEP BOTH in the
-             summary. ADD never deletes: what was deleted on one side stays on the other. To make
-             both the same, use REPLACE THE WHOLE BANK with a full backup.
+             summary. ADD TO WHAT I HAVE never deletes: what was deleted on one side stays on the
+             other. To make both the same, use REPLACE EVERYTHING with a full backup.
 - Preset names (preset picker)
   Description: Without the controller, the preset picker shows the names that came in the app file.
              A controller backup (the one from SETTINGS › BACKUP › FULL) also works: when you open
@@ -1730,8 +1875,8 @@ Fields and items:
              it calls B3 on the controller where the setlist is played.
 - Your controller (setting)
   Description: The app file says how many presets the foot reaches in each bank and whether the
-             board has a USB host (for extra messages over the host Bluetooth); the site sets itself
-             when you open it. To change it by hand, tap HOW TO TAKE IT TO THE APP.
+             board has a USB host (for ALSO SEND over the host Bluetooth); the site sets itself when
+             you open it. To change it by hand, tap HOW TO TAKE IT TO THE APP.
 
 ========================================================================================
 
@@ -2592,6 +2737,11 @@ Fields and items:
   Description: At the end of the list, under ── SETLIST ──: move through the parts and songs of the
              setlist open in the app’s Stage Mode. With no setlist open, they do nothing. They don’t
              need a channel. See Controlling the setlist with your foot in the Stage Mode chapter.
+- » STAGE / SETLIST SCREEN (command)
+  Description: Also under ── SETLIST ──: switches the Stage Mode screen between the STAGE and the
+             SETLIST — each tap toggles. With Stage Mode closed, it does nothing. It doesn’t need a
+             channel. It needs an updated controller and app; with older firmware the option appears
+             disabled.
 - Preview navigation (external footswitches) (command)
   Description: The external footswitches have two commands of their own, » UP BANK PREVIEW and »
              DOWN BANK PREVIEW: they move up and down through banks in preview, without changing the
