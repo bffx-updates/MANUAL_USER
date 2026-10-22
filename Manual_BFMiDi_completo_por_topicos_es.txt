@@ -86,7 +86,7 @@ SUMARIO
    9.8. BANCOS — bancos activos y cómo arranca la controladora
    9.9. LLAMADA — qué hace cada footswitch en el modo PRESET
    9.10. COMBOS — dos footswitches juntos
-   9.11. PANTALLA — Gig View, BPM y cambio de preset
+   9.11. PANTALLA — Gig View, BPM, cambio de preset y giro de los íconos
    9.12. LEDS — brillo y colores de los anillos
    9.13. IMÁGENES — tus propios fondos e íconos
    9.14. HARDWARE — modelo, tiempos de envío y memoria
@@ -2399,13 +2399,13 @@ Observaciones:
 - Los combos vienen vacíos de fábrica: ENCENDER/APAGAR WI-FI, por ejemplo, tiene que configurarse
    aquí.
 
-9.11. PANTALLA — Gig View, BPM y cambio de preset
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+9.11. PANTALLA — Gig View, BPM, cambio de preset y giro de los íconos
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Pantalla/vista relacionada: CONFIGURACIÓN › PANTALLA
 Objetivo: Lo que la pantalla de la controladora muestra en cualquier preset: las pantallas de cada
-          modo, la tarjeta de BPM y el aviso de cambio de preset. El layout, las posiciones, la
-          forma de los íconos y los nombres de los presets en los íconos están en el CONFIGURAR
-          PANTALLA de cada preset.
+          modo, la tarjeta de BPM, el aviso de cambio de preset y el giro de los íconos. El layout,
+          las posiciones, la forma de los íconos y los nombres de los presets en los íconos están en
+          el CONFIGURAR PANTALLA de cada preset.
 Campos e ítems:
 - GIG VIEW (PANTALLA)
   Descripción: ESTÁNDAR (las dos pantallas), SOLO PRESET o SOLO LIVE. El nombre del preset en
@@ -2417,6 +2417,13 @@ Campos e ítems:
 - BANK AL CAMBIAR DE PRESET (PANTALLA)
   Descripción: Activado, en cada cambio de preset la pantalla muestra la letra y el número del
              preset nuevo (ej.: A1) en el centro, durante el tiempo elegido.
+- GIRAR ÍCONOS (PANTALLA)
+  Descripción: Para quien usa la controladora en vertical o al revés: el ícono y el nombre de cada
+             footswitch giran sobre su propio eje, sin girar la pantalla. 90° (controladora de pie,
+             con el lado izquierdo abajo), 180° (al revés) o 270° (de pie, con el lado derecho
+             abajo). El fondo y el borde de cada ícono, el nombre del preset y los avisos de la
+             pantalla siguen en la posición normal. Vale para todos los presets, en las pantallas
+             PRESET y LIVE.
 
 9.12. LEDS — brillo y colores de los anillos
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

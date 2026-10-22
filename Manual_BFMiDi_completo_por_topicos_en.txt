@@ -86,7 +86,7 @@ CONTENTS
    9.8. BANKS — active banks and how the controller starts
    9.9. PRESET CALL — what each footswitch does in PRESET mode
    9.10. COMBOS — two footswitches together
-   9.11. DISPLAY — Gig View, BPM and preset change
+   9.11. DISPLAY — Gig View, BPM, preset change and icon rotation
    9.12. LEDS — brightness and ring colors
    9.13. IMAGES — your own backgrounds and icons
    9.14. HARDWARE — model, send timing and memory
@@ -2342,12 +2342,12 @@ Notes:
    lets you land the pair with both feet.
 - Combos come empty from the factory: WI-FI ON/OFF, for example, has to be set up here.
 
-9.11. DISPLAY — Gig View, BPM and preset change
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+9.11. DISPLAY — Gig View, BPM, preset change and icon rotation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Related screen/preview: SETTINGS › DISPLAY
-Purpose: What the controller's screen shows in any preset: the screens of each mode, the BPM card
-          and the preset change notice. Layout, positions, icon shape and preset names on the icons
-          are in each preset's CONFIGURE DISPLAY.
+Purpose: What the controller's screen shows in any preset: the screens of each mode, the BPM card,
+          the preset change notice and the icon rotation. Layout, positions, icon shape and preset
+          names on the icons are in each preset's CONFIGURE DISPLAY.
 Fields and items:
 - GIG VIEW (DISPLAY)
   Description: DEFAULT (both screens), ONLY PRESET or ONLY LIVE. The preset name on screen is turned
@@ -2359,6 +2359,12 @@ Fields and items:
 - BANK ON PRESET CHANGE (DISPLAY)
   Description: When on, every preset change shows the new preset's letter and number (e.g. A1) in
              the middle of the screen, for the time you pick.
+- ROTATE ICONS (DISPLAY)
+  Description: For when the controller sits vertically or upside down: each footswitch icon and name
+             turns on its own axis, without turning the screen. 90° (controller standing on its left
+             side), 180° (upside down) or 270° (standing on its right side). Each icon's background
+             and border, the preset name and the screen cards stay in the normal position. Applies
+             to every preset, on the PRESET and LIVE screens.
 
 9.12. LEDS — brightness and ring colors
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

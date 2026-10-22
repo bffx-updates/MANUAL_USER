@@ -424,6 +424,7 @@ export function createMockDevices(opts = {}) {
       last_ack: 0, restart: '', reqId: 10,
     },
     tonexFilters: [2, 0],
+    tonexCab: [true, true],
     devices: [],
     kemperPresent: true,
     editors: {},
@@ -511,7 +512,9 @@ function buildStatus(state) {
     tonex_count: 2, tonex_reported: true, tonex,
     devices_reported: true,
     devices: devs.map((d) => ({ kind: d.kind, index: d.index, port: d.port, vid: d.vid, pid: d.pid,
-      ready: d.ready, vendor: d.vendor, editor: d.editor, manufacturer: d.manufacturer,
+      ready: d.ready, vendor: d.vendor, editor: d.editor,
+      cab_known: d.kind === 'tonex', cab_bypass: d.kind === 'tonex' && !state.tonexCab[d.index],
+      manufacturer: d.manufacturer,
       product: d.product, diag: d.diag })),
   };
 }
@@ -671,6 +674,13 @@ export function handleMock(state, method, pathname, query, body) {
     if (ch < 0 || ch > 16) return withStatus(400, { error: 'INVALID CHANNEL' });
     state.tonexFilters[slot - 1] = ch;
     return { sent: true, request_id: reqId(), slot, channel: ch };
+  }
+  if (p === '/usb_host/tonex_cab') {
+    if (!has(a, 'slot') || !has(a, 'cab')) return withStatus(400, { error: 'SLOT/CAB REQUIRED' });
+    const slot = toInt(a.slot), cab = toInt(a.cab);
+    if (slot < 1 || slot > 2 || (cab !== 0 && cab !== 1)) return withStatus(400, { error: 'INVALID SLOT/CAB' });
+    state.tonexCab[slot - 1] = cab === 1;
+    return { sent: true, slot, cab };
   }
   if (p === '/usb_host/update_mode') return { sent: true, request_id: reqId() };
   if (p === '/usb_host/restart') { h.restart = 'done'; return { sent: true, request_id: reqId() }; }

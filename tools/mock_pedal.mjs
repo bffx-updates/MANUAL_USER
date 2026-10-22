@@ -64,6 +64,8 @@ export function buildDemoSeed(seedPath = path.join(REPO, 'production', 'backup_p
     auto_live: '0', auto_live_ms: '2000',
     // idem no card BANK NA TROCA DE PRESET (GLOBAL > TELA > GERAL)
     preset_card: '0', preset_card_ms: '2000',
+    // idem no card GIRAR ÍCONES (GLOBAL > TELA)
+    icon_rotation: '0',
     exp_enabled: '1', exp_cc: '7', exp_channel: '1',
   });
   return b;

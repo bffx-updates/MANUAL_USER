@@ -86,7 +86,7 @@ SUMÁRIO
    9.8. BANCOS — bancos ativos e como a controladora liga
    9.9. CHAMADA — o que cada footswitch faz no modo PRESET
    9.10. COMBOS — dois footswitches juntos
-   9.11. TELA — Gig View, BPM e troca de preset
+   9.11. TELA — Gig View, BPM, troca de preset e giro dos ícones
    9.12. LEDS — brilho e cores dos anéis
    9.13. IMAGENS — fundos e ícones seus
    9.14. HARDWARE — modelo, tempos de disparo e memória
@@ -2309,12 +2309,12 @@ Observações:
 - Os combos vêm vazios de fábrica: o LIGAR/DESLIGAR WI-FI, por exemplo, precisa ser configurado
    aqui.
 
-9.11. TELA — Gig View, BPM e troca de preset
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+9.11. TELA — Gig View, BPM, troca de preset e giro dos ícones
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Tela/preview relacionado: CONFIGURAÇÕES › TELA
 Objetivo: O que a tela da controladora mostra em qualquer preset: as telas de cada modo, o card de
-          BPM e o aviso de troca de preset. O layout, as posições, o formato dos ícones e os nomes
-          dos presets nos ícones ficam no CONFIGURAR DISPLAY de cada preset.
+          BPM, o aviso de troca de preset e o giro dos ícones. O layout, as posições, o formato dos
+          ícones e os nomes dos presets nos ícones ficam no CONFIGURAR DISPLAY de cada preset.
 Campos e itens:
 - GIG VIEW (TELA)
   Descrição: PADRÃO (as duas telas), SÓ PRESET ou SÓ LIVE. O nome do preset na tela se liga por
@@ -2326,6 +2326,12 @@ Campos e itens:
 - BANK NA TROCA DE PRESET (TELA)
   Descrição: Ligado, a cada troca de preset a tela mostra a letra e o número do preset novo (ex.:
              A1) no meio, pelo tempo escolhido.
+- GIRAR ÍCONES (TELA)
+  Descrição: Para quem usa a controladora na vertical ou de cabeça pra baixo: o ícone e o nome de
+             cada footswitch giram no próprio eixo, sem girar a tela. 90° (controladora em pé, com o
+             lado esquerdo para baixo), 180° (de cabeça pra baixo) ou 270° (em pé, com o lado
+             direito para baixo). O fundo e a borda de cada ícone, o nome do preset e os avisos da
+             tela continuam na posição normal. Vale para todos os presets, nas telas PRESET e LIVE.
 
 9.12. LEDS — brilho e cores dos anéis
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

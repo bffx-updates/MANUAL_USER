@@ -8884,14 +8884,14 @@ const MN_CONTENT = {
     {
      "id": "cfg-tela",
      "title": {
-      "pt": "TELA — Gig View, BPM e troca de preset",
-      "en": "DISPLAY — Gig View, BPM and preset change",
-      "es": "PANTALLA — Gig View, BPM y cambio de preset"
+      "pt": "TELA — Gig View, BPM, troca de preset e giro dos ícones",
+      "en": "DISPLAY — Gig View, BPM, preset change and icon rotation",
+      "es": "PANTALLA — Gig View, BPM, cambio de preset y giro de los íconos"
      },
      "purpose": {
-      "pt": "O que a tela da controladora mostra em qualquer preset: as telas de cada modo, o card de BPM e o aviso de troca de preset. O layout, as posições, o formato dos ícones e os nomes dos presets nos ícones ficam no <strong>CONFIGURAR DISPLAY</strong> de cada preset.",
-      "en": "What the controller's screen shows in any preset: the screens of each mode, the BPM card and the preset change notice. Layout, positions, icon shape and preset names on the icons are in each preset's <strong>CONFIGURE DISPLAY</strong>.",
-      "es": "Lo que la pantalla de la controladora muestra en cualquier preset: las pantallas de cada modo, la tarjeta de BPM y el aviso de cambio de preset. El layout, las posiciones, la forma de los íconos y los nombres de los presets en los íconos están en el <strong>CONFIGURAR PANTALLA</strong> de cada preset."
+      "pt": "O que a tela da controladora mostra em qualquer preset: as telas de cada modo, o card de BPM, o aviso de troca de preset e o giro dos ícones. O layout, as posições, o formato dos ícones e os nomes dos presets nos ícones ficam no <strong>CONFIGURAR DISPLAY</strong> de cada preset.",
+      "en": "What the controller's screen shows in any preset: the screens of each mode, the BPM card, the preset change notice and the icon rotation. Layout, positions, icon shape and preset names on the icons are in each preset's <strong>CONFIGURE DISPLAY</strong>.",
+      "es": "Lo que la pantalla de la controladora muestra en cualquier preset: las pantallas de cada modo, la tarjeta de BPM, el aviso de cambio de preset y el giro de los íconos. El layout, las posiciones, la forma de los íconos y los nombres de los presets en los íconos están en el <strong>CONFIGURAR PANTALLA</strong> de cada preset."
      },
      "shot": "cfg-tela",
      "mockTitle": {
@@ -8949,6 +8949,23 @@ const MN_CONTENT = {
         "pt": "<p>Ligado, a cada troca de preset a tela mostra a letra e o número do preset novo (ex.: A1) no meio, pelo tempo escolhido.</p>",
         "en": "<p>When on, every preset change shows the new preset's letter and number (e.g. A1) in the middle of the screen, for the time you pick.</p>",
         "es": "<p>Activado, en cada cambio de preset la pantalla muestra la letra y el número del preset nuevo (ej.: A1) en el centro, durante el tiempo elegido.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "GIRAR ÍCONES",
+        "en": "ROTATE ICONS",
+        "es": "GIRAR ÍCONOS"
+       },
+       "type": {
+        "pt": "TELA",
+        "en": "DISPLAY",
+        "es": "PANTALLA"
+       },
+       "desc": {
+        "pt": "<p>Para quem usa a controladora na vertical ou de cabeça pra baixo: o ícone e o nome de cada footswitch giram no próprio eixo, sem girar a tela. <strong>90°</strong> (controladora em pé, com o lado esquerdo para baixo), <strong>180°</strong> (de cabeça pra baixo) ou <strong>270°</strong> (em pé, com o lado direito para baixo). O fundo e a borda de cada ícone, o nome do preset e os avisos da tela continuam na posição normal. Vale para todos os presets, nas telas PRESET e LIVE.</p>",
+        "en": "<p>For when the controller sits vertically or upside down: each footswitch icon and name turns on its own axis, without turning the screen. <strong>90°</strong> (controller standing on its left side), <strong>180°</strong> (upside down) or <strong>270°</strong> (standing on its right side). Each icon's background and border, the preset name and the screen cards stay in the normal position. Applies to every preset, on the PRESET and LIVE screens.</p>",
+        "es": "<p>Para quien usa la controladora en vertical o al revés: el ícono y el nombre de cada footswitch giran sobre su propio eje, sin girar la pantalla. <strong>90°</strong> (controladora de pie, con el lado izquierdo abajo), <strong>180°</strong> (al revés) o <strong>270°</strong> (de pie, con el lado derecho abajo). El fondo y el borde de cada ícono, el nombre del preset y los avisos de la pantalla siguen en la posición normal. Vale para todos los presets, en las pantallas PRESET y LIVE.</p>"
        }
       }
      ]

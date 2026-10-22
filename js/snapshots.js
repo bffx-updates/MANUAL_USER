@@ -1,4 +1,4 @@
-/* BFMiDi · Manual — PRINTS do editor (v15.0).
+/* BFMiDi · Manual — PRINTS do editor (v15.1).
    Gerado por tools/capture_shots.mjs. NAO editar a mao: quando a tela
    do editor mudar, rode a captura de novo.
    { img, light?, w, h, kind?, hot: { seletor: [x, y, w, h] em fracao } } */
@@ -779,8 +779,9 @@ const MN_SHOTS = {
  "cfg-tela": {
   "img": "img/shots/cfg-tela.webp",
   "w": 696,
-  "h": 748,
-  "hot": {}
+  "h": 1253,
+  "hot": {},
+  "light": "img/shots/cfg-tela.light.webp"
  },
  "cfg-leds": {
   "img": "img/shots/cfg-leds.webp",
