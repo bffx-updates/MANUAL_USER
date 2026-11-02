@@ -66,7 +66,11 @@ export function buildDemoSeed(seedPath = path.join(REPO, 'production', 'backup_p
     preset_card: '0', preset_card_ms: '2000',
     // idem no card GIRAR ÍCONES (GLOBAL > TELA)
     icon_rotation: '0',
+    // idem no AJUSTE FINO do card BPM NO DISPLAY (GLOBAL > TELA)
+    bpm_card_trim: '0',
     exp_enabled: '1', exp_cc: '7', exp_channel: '1',
+    // idem na RESPOSTA DO PEDAL (curva do EXP, blob v58)
+    exp_curve: '0', exp_curve_pts: '0,25,50,75,100',
   });
   return b;
 }
@@ -91,6 +95,13 @@ function installShims(seed) {
   };
 }
 
+// Certificado de teste do pedal simulado (ver /hardtest/cert abaixo).
+let mockSerial = process.env.BFMIDI_MOCK_NOCERT === '1' ? '' : 'BFX-261023-143207';
+let mockCert = process.env.BFMIDI_MOCK_NOCERT === '1' ? null : {
+  supported: 1, present: 1, serial: 'BFX-261023-143207', date: '2026-10-23 14:32 -03:00', fw: '15.3', board: 'BFMIDI-S3 8SW+',
+  by: 'ADM BFX', id: 'A1B2C3', items: { screen: 1, leds: 1, buttons: 1, exp: 1, midi: 1, wifi: 1, usb: 1, usbhost: 1 },
+};
+
 const CORS = {
   'access-control-allow-origin': '*',
   'access-control-allow-methods': 'GET, POST, OPTIONS',
@@ -110,8 +121,12 @@ export async function startMockPedal({ port = 8932, seedPath, quiet = false } = 
   // valores de demonstração que o dispositivo virtual não tem
   const live = { bpm: 120, pedalName: '' };
   const identity = {
-    '/ping': () => ({ ok: true, product: 'BFMIDI', device_id: 'A1B2C3', mdns: 'bfmidi.local',
-      mdns_short: 'bfmidi.local', via_ap: false }),
+    // mac + device_id_legacy: o firmware publica desde out/2026 (o ID antigo era o
+    // prefixo da MAC, repetido entre placas). BFMIDI_MOCK_OLDID=1 imita o de antes.
+    '/ping': () => (process.env.BFMIDI_MOCK_OLDID === '1'
+      ? { ok: true, product: 'BFMIDI', device_id: 'A0ED30', mdns: 'bfmidi.local', mdns_short: 'bfmidi.local', via_ap: false }
+      : { ok: true, product: 'BFMIDI', device_id: 'A1B2C3', mdns: 'bfmidi.local',
+          mdns_short: 'bfmidi.local', via_ap: false, mac: '30EDA0A1B2C3', device_id_legacy: 'A0ED30' }),
     // BFMIDI_MOCK_FW=14.9 faz o pedal simulado se dizer em dia (pra testar a aba
     // USB HOST do card ATUALIZACAO, que espera a controladora atualizada).
     '/version': () => ({ fw: process.env.BFMIDI_MOCK_FW || '14.5', webapp: process.env.BFMIDI_MOCK_FW || '14.5', chip: 's3', board: 'BFMIDI-S3 8SW+',
@@ -120,7 +135,8 @@ export async function startMockPedal({ port = 8932, seedPath, quiet = false } = 
     '/wifi/status': () => ({ product: 'BFMIDI', device_id: 'A1B2C3', mdns: 'bfmidi.local',
       mdns_short: 'bfmidi.local', ap_ssid: 'BFMIDI_WIFI', ap_ip: '192.168.4.1', sta_connected: true,
       sta_ssid: 'MINHA REDE', sta_ip: '192.168.0.100', rssi: -54, status_code: 3, reason: 0,
-      saved: true, sta_state: 'connected', attempt: 1, legacy: false }),
+      saved: true, sta_state: 'connected', attempt: 1, legacy: false,
+      mac: '30EDA0A1B2C3', device_id_legacy: 'A0ED30' }),
     '/wifi/scan': () => ({ scanning: false, networks: [
       { ssid: 'MINHA REDE', rssi: -54, secure: true, enc: 3 },
       { ssid: 'ESTUDIO 2.4G', rssi: -68, secure: true, enc: 3 },
@@ -187,6 +203,21 @@ export async function startMockPedal({ port = 8932, seedPath, quiet = false } = 
       if (u.pathname === '/log') {
         res.writeHead(200, { ...CORS, 'content-type': 'text/plain' }).end('');
         return;
+      }
+      // CERTIFICADO DE TESTE (HARD_TEST.h): o pedal simulado ja vem com um,
+      // pra o card do editor aparecer (BFMIDI_MOCK_NOCERT=1 tira). O POST da
+      // pagina TESTE_HARDWARE grava/apaga so na memoria.
+      if (u.pathname === '/hardtest/cert') {
+        if (req.method === 'POST') {
+          const a = { ...Object.fromEntries(u.searchParams), ...bodyObj };
+          if (Number(a.clear) === 1) { mockCert = null; return send(200, { ok: true, present: 0, persisted: true, serial: mockSerial }); }
+          const items = {};
+          for (const k of ['screen', 'leds', 'buttons', 'exp', 'midi', 'wifi', 'usb', 'usbhost']) items[k] = Number(a[k] || 0);
+          // O serial e da unidade: como no firmware, so grava se ainda nao tem.
+          if (!mockSerial && a.serial) mockSerial = String(a.serial).toUpperCase();
+          mockCert = { supported: 1, present: 1, date: String(a.date || ''), fw: 'mock', board: 'BFMIDI-S3 8SW+', by: String(a.by || ''), id: 'A1B2C3', items };
+        }
+        return send(200, mockCert ? { ...mockCert, serial: mockSerial } : { supported: 1, present: 0, serial: mockSerial });
       }
 
       const init = { method: req.method };

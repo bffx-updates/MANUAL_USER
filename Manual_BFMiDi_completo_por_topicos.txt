@@ -50,7 +50,7 @@ SUMÁRIO
    7.3. A barra de controles
    7.4. PALCO ESPECIAL — o pedal dedicado
    7.5. PALCO ESPECIAL com a Nano Cortex
-   7.6. PALCO ESPECIAL com o Kemper Player
+   7.6. PALCO ESPECIAL com o Kemper
    7.7. Favoritos do PALCO ESPECIAL
    7.8. Configurações do palco — GERAL
    7.9. Configurações do palco — VISUAL
@@ -337,7 +337,8 @@ Objetivo: Escolher o preset, dizer qual som ele chama, dar um nome e pisar. O sa
 Como fazer:
 1. No console, à esquerda, toque no mostrador A1 para escolher o banco e numa das teclas 1 a 6 para
    escolher o preset. A controladora vai junto.
-2. No card PRINCIPAL, escolha o PC (o som da sua pedaleira) e confira o CANAL. Na dúvida, canal 1.
+2. No card PRINCIPAL, escolha o PC (o som da sua pedaleira). Com um aparelho só, o editor já sabe o
+   canal; com mais de um, aparece também o campo CANAL.
 3. Escreva o nome na pílula do nome, logo abaixo das teclas — é o que aparece na tela da
    controladora.
 4. Pise no footswitch do preset: a pedaleira pula para o som escolhido.
@@ -348,10 +349,12 @@ Campos e itens:
              Acima de 127 a BFMiDi manda junto o Bank Select que cada aparelho espera — você só
              escolhe o som.
 - CANAL (seleção)
-  Descrição: O canal MIDI é “qual aparelho escuta”. A maioria vem no canal 1. Com mais de um
-             aparelho na corrente, cada um fica num canal.
-             OFF quer dizer que o preset não manda PC nenhum — útil quando ele só serve para
-             preparar o modo LIVE.
+  Descrição: O canal MIDI é “qual aparelho escuta”. Com um aparelho só no Modo Amigável (ou nenhum —
+             aí vale o canal 1, de onde a maioria sai de fábrica), o editor usa esse canal sozinho e
+             o campo CANAL nem aparece: no lugar, a linha Vai para diz o aparelho e o canal. Com
+             mais de um aparelho na corrente, cada um fica num canal e o campo aparece.
+             Para o preset não mandar PC nenhum, escolha NENHUM no topo da lista do PC (com o campo
+             CANAL à vista, é o OFF) — útil quando ele só serve para preparar o modo LIVE.
 - Nome do preset (texto)
   Descrição: Até 16 caracteres. Serve de etiqueta para a tela da controladora; a pedaleira não vê
              esse nome. Normalmente é o nome da música.
@@ -521,20 +524,21 @@ Campos e itens:
 5.5. O card PRINCIPAL
 ~~~~~~~~~~~~~~~~~~~~~
 Tela/preview relacionado: CARD PRINCIPAL
-Objetivo: O que o preset manda quando é chamado — PC, canal e envios extras — e a fileira de atalhos
-          para o resto do editor.
+Objetivo: O que o preset manda quando é chamado — o PC e os envios extras (e o canal, quando você
+          usa mais de um aparelho) — e a fileira de atalhos para o resto do editor.
 Campos e itens:
 - PC (seleção)
   Descrição: O som que a pedaleira carrega quando o preset é chamado. Vai até 600: acima de 127 a
              BFMiDi manda junto o Bank Select no formato do aparelho escolhido no Modo Amigável.
-- CANAL (seleção)
-  Descrição: O canal MIDI do aparelho que recebe o PC: o campo mostra o número, ou o nome do
-             aparelho quando o canal está no Modo Amigável. OFF = o preset não manda PC, e o card
-             avisa isso logo embaixo.
+             Com um aparelho só, o topo da lista tem NENHUM: o preset não manda PC.
+- VAI PARA (aviso)
+  Descrição: Com um aparelho só no Modo Amigável, o editor usa o canal dele sozinho: o campo CANAL
+             não aparece e esta linha diz para onde o PC vai — por exemplo Vai para: Valeton GP-5
+             (canal 1). Sem aparelho escolhido, tudo vai no canal 1 e a linha não aparece.
 - EXTRAS (botão)
   Descrição: Cada toque acrescenta um envio extra: uma mensagem a mais que sai junto com o PC
-             (começa como PC no canal 1). Com pelo menos um extra, a lista aparece embaixo do CANAL.
-             Veja o card seguinte.
+             (começa como PC no mesmo canal do preset). Com pelo menos um extra, a lista aparece
+             logo embaixo. Veja o card seguinte.
 - MODO PALCO (atalho)
   Descrição: Sempre o primeiro da fileira: abre a tela cheia de palco. Tem um tópico só para ele
              neste manual.
@@ -544,12 +548,22 @@ Campos e itens:
              cor do aparelho que abre o editor de preset dele. Esses botões não ocupam o lugar dos
              seus atalhos.
 - Os seus atalhos (atalhos)
-  Descrição: Botões para as telas de configuração que você mais usa. Você escolhe quais aparecem em
-             CONFIGURAÇÕES › EDITOR › ATALHOS. No computador o atalho abre a configuração na
-             terceira coluna, ao lado do preset; no celular ele leva à tela de configuração.
+  Descrição: Botões para as telas de configuração que você mais usa — só no editor aberto pela
+             controladora (nos aplicativos e no site, a fileira tem o MODO PALCO e os editores dos
+             aparelhos). Você escolhe quais aparecem em CONFIGURAÇÕES › EDITOR › ATALHOS. No
+             computador o atalho abre a configuração na terceira coluna, ao lado do preset; no
+             celular ele leva à tela de configuração.
+- CANAL (seleção)
+  Descrição: Só aparece quando o Modo Amigável tem mais de um canal em uso (dois aparelhos, ou um
+             canal acrescentado com + ADICIONAR CANAL). O campo mostra o número, ou o nome do
+             aparelho quando o canal está no Modo Amigável. OFF = o preset não manda PC, e o card
+             avisa isso logo embaixo.
+             Um preset antigo que manda o PC num canal fora do Modo Amigável também mostra o campo,
+             com um aviso e dois botões: USAR O CANAL n passa o preset para o seu canal; ADICIONAR O
+             CANAL n passa a usar os dois.
 Observações:
-- No alto do card, uma frase resume o que sai ao chamar o preset: o PC no canal escolhido e, logo
-   depois, os extras na ordem da lista.
+- No alto do card, uma frase resume o que sai ao chamar o preset: o PC e, logo depois, os extras na
+   ordem da lista.
 - Os atalhos só aparecem no modo PRESET. No modo LIVE o card do meio é o do footswitch.
 
 5.6. Envios extras
@@ -558,14 +572,16 @@ Tela/preview relacionado: ENVIOS EXTRAS ABERTOS
 Objetivo: Além do PC principal, o preset pode mandar até mais 12 mensagens ao ser chamado — e é
           assim que você prepara a cena inteira num toque.
 Como fazer:
-1. Toque em EXTRAS, ao lado do CANAL: cada toque acrescenta uma linha, que começa como PC no canal
-   1.
+1. Toque em EXTRAS, ao lado do PC (ou do CANAL, quando ele aparece): cada toque acrescenta uma
+   linha, que começa como PC no mesmo canal do preset.
 2. Em cada linha, o disco ao lado do número troca entre PC e CC.
 3. Escolha número, valor (no CC) e canal de cada linha.
 Campos e itens:
 - Até 12 envios (lista)
   Descrição: Cada linha é um PC ou um CC, com o seu canal. Trocar o som da pedaleira, ligar o delay,
              ajustar o volume de outro aparelho e mudar a cena da mesa — tudo no mesmo preset.
+             Os extras sempre mostram o canal, mesmo quando o card esconde o do PC: muitas vezes
+             eles existem justamente para falar com outro aparelho.
 - Valor EXP — o pedal de expressão neste preset (valor especial)
   Descrição: Nas placas com entrada de expressão, a lista de valores de uma linha CC termina com EXP
              (PEDAL DE EXPRESSÃO). Essa linha não manda MIDI: ela diz para onde o pedal de expressão
@@ -727,11 +743,21 @@ Campos e itens:
              para deixar um footswitch com o comando » OUT LIVE MODE.
 - Sem canal, sem ícone (tela do pedal)
   Descrição: Um footswitch cuja função não tem canal MIDI não aparece na tela da controladora (nem
-             na prévia do editor). Por isso, com o pacote de fábrica — footswitches em STOMP com
-             canal OFF — a tela LIVE começa vazia: ela vai se preenchendo conforme você dá canal aos
-             footswitches.
+             na prévia do editor). Por isso, com o pacote de fábrica — footswitches em STOMP sem
+             canal — a tela LIVE começa vazia: ela vai se preenchendo conforme você escolhe os
+             comandos.
              As exceções são o FAVORITO, que navega em vez de mandar MIDI, e o MUTE (só em presets
              antigos), que nunca aparece.
+- O CANAL dos comandos (canal)
+  Descrição: Com um aparelho só no Modo Amigável (ou nenhum, e aí vale o canal 1), os editores dos
+             modos não mostram o campo CANAL: escolher o comando já o manda no canal desse aparelho,
+             e NENHUM, no topo da lista do comando, deixa o gesto sem função. Com dois ou mais
+             canais em uso, o campo CANAL aparece em cada comando.
+             Se um footswitch manda num canal que não está no Modo Amigável (de um preset antigo,
+             por exemplo), o campo daquele comando aparece e o card avisa no topo, com USAR O CANAL
+             n (passa tudo para o seu canal) e ADICIONAR O CANAL n (passa a usar os dois). O mesmo
+             vale nos cards SW GLOBAL e External SW e no editor que abre ao segurar um footswitch no
+             MODO PALCO.
 Observações:
 - Configurar o LIVE é opcional: um preset que só chama o som já é útil e já toca.
 
@@ -761,9 +787,10 @@ Campos e itens:
   Descrição: Não. Os parâmetros de cada modo ficam guardados separadamente: se você experimentar o
              SPIN e voltar para o STOMP, o STOMP continua como estava.
 - E o MUTE? (detalhe)
-  Descrição: O MUTE saiu da lista. Para deixar um footswitch sem função, use qualquer modo com o
-             CANAL em OFF: ele não manda MIDI e some da tela da controladora. Footswitches novos já
-             nascem assim, em STOMP com canal OFF.
+  Descrição: O MUTE saiu da lista. Para deixar um footswitch sem função, use qualquer modo com
+             NENHUM na lista do comando (ou o CANAL em OFF, quando o campo CANAL aparece): ele não
+             manda MIDI e some da tela da controladora. Footswitches novos já nascem assim, em STOMP
+             sem canal.
 Observações:
 - STEPS vale só para os footswitches do preset. O SW GLOBAL usa todos os outros menos o CONTROL; os
    footswitches externos usam todos os outros, inclusive o CONTROL.
@@ -774,7 +801,7 @@ Tela/preview relacionado: SW — MODO STOMP
 Objetivo: O modo clássico: o pé liga e desliga um efeito, como um pedal de verdade. Um mesmo STOMP
           pode ter até três seções, cada uma num gesto do pé.
 Como fazer:
-1. Na aba TOQUE, escolha o CC e o CANAL do efeito.
+1. Na aba TOQUE, escolha o CC do efeito (e o CANAL, quando você usa mais de um aparelho).
 2. Quer mais funções no mesmo pé? Configure também SEGURAR e PISAR DE NOVO.
 3. Ajuste a cor do LED e o comportamento na faixa de opções, embaixo.
 Campos e itens:
@@ -784,15 +811,18 @@ Campos e itens:
              duas ou três seções = dois ou três efeitos no mesmo pé.
              Com o PISAR DE NOVO preenchido, o toque espera um instante (cerca de um terço de
              segundo) para saber se vem um segundo toque.
-             Embaixo das abas, um aviso mostra quando o gesto ainda não tem canal e por isso não
-             manda nada. No TOQUE, sem canal, o ícone do footswitch some da tela do pedal.
-- CC ou PC (disco)
-  Descrição: O disco ao lado do número troca o tipo da mensagem: CC (o normal para ligar e desligar
+             Os gestos ficam no quadro Gestos, um bloco grande para cada um (o escolhido acende em
+             azul). Embaixo dele, um aviso mostra quando o gesto ainda não tem comando e por isso
+             não manda nada. No TOQUE, sem canal, o ícone do footswitch some da tela do pedal.
+- ALTERAR COMANDO — CC ou PC (disco)
+  Descrição: O botão ALTERAR COMANDO, na fileira logo abaixo do comando, troca o tipo da mensagem (a
+             etiqueta verde do campo mostra qual está valendo): CC (o normal para ligar e desligar
              efeitos) ou PC (para chamar um som). Com o Modo Amigável, a lista mostra o nome de cada
              comando.
-- CUSTOM — valores próprios (disco)
-  Descrição: Normalmente ligado manda 127 e desligado manda 0. O disco de controles ao lado do CANAL
-             abre VALORES CUSTOM para escolher outros valores — veja o card seguinte.
+- AJUSTES — valores próprios (disco)
+  Descrição: Normalmente ligado manda 127 e desligado manda 0. O botão AJUSTES, na fileira logo
+             abaixo do comando, abre VALORES CUSTOM para escolher outros valores — veja o card
+             seguinte.
 - FAVORITO (disco)
   Descrição: A estrela transforma a seção num atalho: em vez de mandar MIDI, pisar leva a outro
              banco e preset, chegando no modo PRESET ou LIVE (e, no LIVE, na layer 1 ou 2). Serve
@@ -820,7 +850,7 @@ Tela/preview relacionado: VALORES CUSTOM
 Objetivo: Para aparelhos que não usam 127 para ligar e 0 para desligar. Cada valor tem campo,
           porcentagem e slider — os três mexem no mesmo número.
 Como fazer:
-1. Toque no disco de controles ao lado do CANAL.
+1. Toque em AJUSTES, na fileira logo abaixo do comando.
 2. Ajuste o VALOR OFF (em cima) e o VALOR ON (embaixo): digitando, arrastando o slider ou arrastando
    o próprio número.
 Campos e itens:
@@ -835,14 +865,15 @@ Tela/preview relacionado: SW — MODO TAP TEMPO
 Objetivo: Você bate o tempo da música com o pé e a controladora manda o andamento para o delay — ou
           para até três destinos.
 Como fazer:
-1. Escolha o CC de tap do seu aparelho e o canal. ADICIONAR TAP acrescenta até três destinos.
+1. Escolha o CC de tap do seu aparelho. ADICIONAR TAP acrescenta até três destinos.
 2. Para cada um, escolha MODO 1 (manda CC + 127) ou MODO 2 (CC + 127 seguido de CC + 0) — depende do
    que o seu aparelho espera.
 3. Bata o tempo com o pé no ritmo da música. O LED pisca no tempo batido.
 Campos e itens:
 - SEGURAR (gesto)
   Descrição: Segurar o footswitch pode mandar outro comando, com CC, canal e valores próprios — por
-             exemplo, ligar o afinador. Sem canal no SEGURAR, segurar não muda o ícone da tela.
+             exemplo, ligar o afinador. Sem comando no SEGURAR (NENHUM, ou canal OFF), segurar não
+             muda o ícone da tela.
 - O BPM na tela (visual)
   Descrição: Ao bater o tempo, a controladora mostra o BPM num card temporário. O tempo que ele fica
              e se mostra a média ou os dois últimos toques se ajusta em CONFIGURAÇÕES › TELA ›
@@ -859,7 +890,7 @@ Objetivo: Cada gesto manda sempre a mesma coisa. Sem liga/desliga — é um bot�
           até quatro mensagens por gesto.
 Como fazer:
 1. Escolha a aba do gesto: TOQUE, SEGURAR ou PISAR DE NOVO (dois toques rápidos).
-2. Preencha até quatro slots, cada um CC ou PC, com valor e canal.
+2. Preencha até quatro slots, cada um CC ou PC, com o seu valor.
 Campos e itens:
 - Quando usar (uso)
   Descrição: Para comandos que não têm dois estados: chamar uma cena, disparar um sample, avançar a
@@ -876,7 +907,8 @@ Tela/preview relacionado: SW — MODO MOMENTARY
 Objetivo: Liga ao pisar e desliga ao soltar: é um botão de campainha, não um interruptor. Até quatro
           mensagens por toque.
 Como fazer:
-1. Preencha até quatro slots com CC e canal; use os valores custom se o aparelho não usar 127/0.
+1. Preencha até quatro slots com o CC de cada um; use os valores custom se o aparelho não usar
+   127/0.
 2. Se quiser, ajuste o comportamento do LED em TRAVA e Fade do LED.
 Campos e itens:
 - Para que serve (uso)
@@ -913,7 +945,7 @@ Tela/preview relacionado: SW — MODO SPIN
 Objetivo: Cada toque avança para o próximo de três valores, em ciclo. O anel de LED mostra em qual
           você está.
 Como fazer:
-1. Escolha o CC e o canal e defina os três valores. Até três slots mandam juntos a cada toque.
+1. Escolha o CC e defina os três valores. Até três slots mandam juntos a cada toque.
 2. Se quiser, use o SEGURAR para mandar um comando diferente ao segurar o pé.
 Campos e itens:
 - Os três estados (ciclo)
@@ -950,7 +982,7 @@ Tela/preview relacionado: SW — MODO STEPS
 Objetivo: Ligado, o footswitch varre quatro valores num mesmo CC, em loop, sozinho — como se você
           girasse um knob no ritmo da música.
 Como fazer:
-1. Em SEQUÊNCIA, escolha o CC e o canal e preencha os quatro valores.
+1. Em SEQUÊNCIA, escolha o CC e preencha os quatro valores.
 2. Escolha o ritmo: MS (um tempo em milissegundos por step) ou NO TEMPO (uma figura musical por
    step, sobre a batida).
 3. Se quiser, preencha LIGAR EFEITO: um segundo CC que recebe ON ao começar e OFF ao parar.
@@ -979,7 +1011,7 @@ Tela/preview relacionado: SW — MODO CONTROL
 Objetivo: Um clique revezando dois destinos: quem entra recebe 127, quem sai recebe 0. Nunca ficam
           os dois ligados nem os dois desligados.
 Como fazer:
-1. Na aba FX 1, escolha o CC, o canal e a cor do LED do primeiro destino.
+1. Na aba FX 1, escolha o CC e a cor do LED do primeiro destino.
 2. Na aba FX 2, faça o mesmo para o segundo.
 3. Em COMEÇA EM, escolha qual dos dois entra ativo quando o preset é chamado.
 Campos e itens:
@@ -1036,7 +1068,7 @@ Objetivo: Uma chave com mola: pisar manda o valor de AÇÃO e soltar devolve o v
           destino só (CC ou PC). Para um boost de solo enquanto o pé está em cima, um freeze, um
           kill switch.
 Como fazer:
-1. Escolha o canal e o CC (ou troque para PC no disco ao lado).
+1. Escolha o CC (ou troque para PC em ALTERAR COMANDO, logo abaixo).
 2. Em Valores, ajuste o Repouso (sai ao soltar) e a Ação (sai ao pisar).
 3. Escolha a cor do LED: ele acende enquanto o pé está pisado.
 Campos e itens:
@@ -1062,7 +1094,7 @@ Tela/preview relacionado: SW — MODO ONDA
 Objetivo: Enquanto ligada, a onda manda o CC sozinha entre o MÍNIMO e o MÁXIMO, na forma escolhida —
           tremolo, filtro ou pan automático no tempo da música.
 Como fazer:
-1. Escolha o canal e o CC que a onda vai mexer.
+1. Escolha o CC que a onda vai mexer.
 2. Toque numa Forma: Senoide, Triângulo, Quadrada, Serra ↑, Serra ↓, Aleatória, Suave ou Pulso.
 3. Ajuste o Mínimo e o Máximo.
 4. Em Velocidade, escolha NO TEMPO (o ciclo dura uma figura musical) ou MS (um tempo fixo).
@@ -1092,10 +1124,10 @@ Objetivo: O MUTE não aparece mais na lista de modos. Um footswitch que já esta
           assim — sem MIDI, sem LED e sem ícone na tela — até você escolher outro modo.
 Campos e itens:
 - Como deixar um footswitch sem função (uso)
-  Descrição: Use qualquer modo com o CANAL em OFF. O resultado é o mesmo do MUTE — o pé não manda
-             nada e some da tela da controladora —, mas o footswitch fica pronto para ganhar uma
-             função quando você quiser. É assim que os footswitches novos já vêm: STOMP com canal
-             OFF.
+  Descrição: Use qualquer modo com NENHUM na lista do comando (ou o CANAL em OFF, quando o campo
+             CANAL aparece). O resultado é o mesmo do MUTE — o pé não manda nada e some da tela da
+             controladora —, mas o footswitch fica pronto para ganhar uma função quando você quiser.
+             É assim que os footswitches novos já vêm: STOMP sem canal.
 
 6.17. A aparência de cada footswitch
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1135,9 +1167,9 @@ Resumo: Uma tela cheia, deitada e de letra grande para deixar o celular ou o tab
 Introdução: O MODO PALCO transforma o editor num painel para o show. São três telas: o PALCO BFMIDI
         mostra a BFMiDi — o nome do preset em letra enorme, a imagem de fundo e os footswitches, que
         você pode ligar e desligar com o dedo — e o PALCO ESPECIAL mostra o pedal dedicado plugado
-        na controladora — a cadeia de efeitos e os knobs da GP-5, da TONEX ONE ou da Nano Cortex,
-        editáveis ao vivo — e o SETLIST mostra a música do show, as partes dela e as cifras ou
-        anotações de cada uma.
+        na controladora — a cadeia de efeitos e os knobs da GP-5, da TONEX ONE, da Nano Cortex ou do
+        rig do Kemper, editáveis ao vivo — e o SETLIST mostra a música do show, as partes dela e as
+        cifras ou anotações de cada uma.
         O Modo Palco existe nos aplicativos da BFMiDi (Android, iPhone/iPad, Mac e Windows) e no
         editor do site, inclusive instalado como ícone. O único lugar onde ele não aparece é o
         editor aberto pela própria controladora (http://192.168.4.1 ou http://bfmidi.local). No
@@ -1183,7 +1215,9 @@ Campos e itens:
 - A alcinha do topo (barra escondida)
   Descrição: A barra de controles fica escondida para não roubar espaço. Toque na alcinha do topo —
              ou em qualquer área vazia da tela — para mostrá-la. Ela some sozinha depois de alguns
-             segundos.
+             segundos. Para ir direto às configurações do palco, toque na engrenagem do canto
+             direito (no PALCO BFMIDI e no PALCO ESPECIAL; ela some com a barra aberta e com a trava
+             de toque fechada).
 Observações:
 - Ligar e desligar footswitches pelo palco exige a controladora atualizada. Com firmware antigo o
    ícone avisa “Atualize a controladora para usar”.
@@ -1213,7 +1247,8 @@ Campos e itens:
              Com Acionar footswitch pela tela em SEGURAR, o segurar já é do footswitch e esta opção
              fica apagada.
 Observações:
-- No palco do Kemper, segurar um stomp abre o mesmo painel.
+- No PALCO ESPECIAL do Kemper os blocos são os do rig, não os footswitches: lá, segurar um bloco
+   liga ou desliga o efeito.
 
 7.3. A barra de controles
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1229,8 +1264,8 @@ Campos e itens:
 - PRESET A1 (informação)
   Descrição: O banco e o preset que estão tocando na controladora.
 - CONFIGURAÇÕES (botão)
-  Descrição: Abre as configurações do palco, num painel lateral com seis categorias. Veja os cards
-             seguintes.
+  Descrição: Abre as configurações do palco, num painel lateral com seis categorias. A engrenagem do
+             canto direito do palco faz o mesmo sem abrir a barra. Veja os cards seguintes.
 - Conexão, BPM e relógio (status)
   Descrição: Como você está conectado (STA, AP ou USB), o BPM do último TAP TEMPO batido na BFMiDi
              e, se você ligar, o relógio. Sem pedal, a conexão vira o botão OFFLINE.
@@ -1295,24 +1330,39 @@ Campos e itens:
              ligado pelo pé ou na própria Nano. FECHAR (ou ESC) desliga o afinador. Precisa da
              controladora atualizada.
 
-7.6. PALCO ESPECIAL com o Kemper Player
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Tela/preview relacionado: PALCO ESPECIAL — KEMPER PLAYER
-Objetivo: Com o Modo Amigável em KEMPER PLAYER, o PALCO ESPECIAL mostra o nome do rig em letra
-          grande e os footswitches da BFMiDi como botões de stomp do Kemper.
+7.6. PALCO ESPECIAL com o Kemper
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Tela/preview relacionado: PALCO ESPECIAL — KEMPER
+Objetivo: Com o Modo Amigável num Kemper (Player ou Stage), o PALCO ESPECIAL mostra o rig que está
+          tocando: o nome, os blocos do rig e os knobs do bloco tocado. Os footswitches da BFMiDi
+          ficam no PALCO BFMIDI.
 Campos e itens:
-- O nome do rig (letreiro)
-  Descrição: Vem do GET NAMES do Kemper. Ligue-o em CONFIGURAÇÕES › MODO AMIGÁVEL › AVANÇADO, no
-             card do Kemper Player.
-- Os stomps (footswitches)
-  Descrição: Cada footswitch da BFMiDi vira um botão no padrão do Kemper, com ícone e os dois LEDs
-             (estado e categoria). Comandos como Delay, Reverb e Wah ganham a cor da categoria do
-             Kemper; STOMP A a D, EFFECT X e MOD mostram o nome do slot. Tocar liga e desliga, como
-             no PALCO BFMIDI.
+- O rig (letreiro)
+  Descrição: O nome do rig, com o amplificador e o gabinete embaixo, lidos do próprio Kemper pela
+             controladora. Para isso o cabo da controladora fica na porta USB-A do Kemper e o app
+             conversa com a controladora pelo Wi‑Fi. Enquanto essa leitura não existe, aparece o
+             nome do GET NAMES, se ele estiver ligado em CONFIGURAÇÕES › MODO AMIGÁVEL › AVANÇADO.
+- Os blocos do rig (cadeia)
+  Descrição: Os blocos do rig na ordem do Kemper (STOMPS A a D, AMP, EQ, CAB, EFEITOS X e MOD, DLY e
+             REV), cada um com o ícone e a cor do efeito carregado; apagado é desligado. Quantos
+             aparecem depende do NÍVEL DO PLAYER, em CONFIGURAÇÕES › MODO AMIGÁVEL › AVANÇADO: nos
+             níveis I e II, A, B, AMP, EQ, CAB, DLY e REV; no nível III, também C, D, X e MOD. Com
+             um Kemper Stage aparecem sempre todos. Tocar num bloco mostra os knobs dele; segurar
+             liga ou desliga o efeito.
+- Os knobs (controles)
+  Descrição: Os parâmetros do bloco tocado. Arrastar pra cima ou pra baixo muda o Kemper na hora, e
+             o valor aparece no formato do próprio Kemper. A mudança não fica salva sozinha: salve
+             no Kemper (no Player, segure o botão do rig até piscar e aperte de novo; no Stage,
+             botão STORE). Trocar de rig antes disso descarta.
 - EDITAR RIG (botão)
-  Descrição: Abre o editor do Kemper por cima do palco. Os footswitches da controladora continuam
-             funcionando com ele aberto — trocar de preset pelo pé troca o rig no Player e o editor
-             relê.
+  Descrição: Abre o editor completo do Kemper por cima do palco; ao fechar, o palco volta a ler o
+             rig. Os footswitches da controladora continuam funcionando — trocar de preset pelo pé
+             troca o rig no Kemper e a tela relê sozinha. Ao lado, a seta circular relê o rig na
+             hora.
+Observações:
+- Os layouts do Kemper ficam em CONFIGURAÇÕES do palco › PALCO ESPECIAL: COMPLETO, SÓ A CADEIA, SÓ
+   OS KNOBS (tocar no cartão do bloco passa para o próximo; segurar liga ou desliga) e SÓ O RIG.
+- Com o afinador do Kemper aberto pelo pé, a leitura do rig pausa e volta quando ele fecha.
 
 7.7. Favoritos do PALCO ESPECIAL
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1507,13 +1557,17 @@ Campos e itens:
              SÓ A CADEIA (blocos grandes; segurar liga e desliga), SÓ OS KNOBS, SÓ O PRESET (o nome
              em letra gigante) e CADEIA LATERAL (a cadeia em coluna e os knobs ao lado — pede tela
              de tablet ou computador), além de FAVORITOS (até oito controles de qualquer bloco,
-             fixos na tela). O Kemper Player tem os dele: RIG + STOMPS, SÓ OS STOMPS e SÓ O RIG.
-- Modo visual: PADRÃO ou REALISTA (visual)
-  Descrição: REALISTA troca os knobs e as chaves por imagens de equipamento de verdade, deixa os
-             blocos da cadeia sem moldura e põe uma chapa de metal atrás dos knobs, dos blocos e do
-             nome do preset. Escolha o estilo (MODERNO ou CLÁSSICO), o knob (REDONDO ou CHICKEN
-             HEAD) e se quer os Painéis de metal. No REALISTA o Estilo dos knobs fica apagado. Nos
-             aplicativos e no site.
+             fixos na tela). O Kemper tem a escolha dele, com os mesmos COMPLETO, SÓ A CADEIA e SÓ
+             OS KNOBS e mais SÓ O RIG.
+- Modo visual: PADRÃO, ALUMÍNIO, VINTAGE ou RACK (visual)
+  Descrição: No PALCO ESPECIAL, três visuais que imitam aparelho de verdade, feitos só com desenho
+             (sem imagens): ALUMÍNIO (pedal boutique: chapa escovada com parafusos, knobs pretos,
+             blocos como pedaizinhos pintados), VINTAGE (amplificador: tolex com friso creme, painel
+             dourado, knobs com tampa dourada) e RACK (unidade de rack: alumínio preto, display
+             âmbar, knobs com anel de LED, botões de borracha iluminados). Cada um troca os painéis,
+             os knobs, as chaves e os blocos da cadeia. Com um deles o Estilo dos knobs fica
+             apagado; com o alto contraste ligado vale o PADRÃO. O PALCO BFMIDI e o setlist não
+             mudam. Nos aplicativos e no site.
 - Visual do aparelho (tema)
   Descrição: Ligado, cada aparelho usa as suas cores e o seu estilo. Desligado, o PALCO ESPECIAL
              segue a categoria VISUAL. Com Com o meu fundo e destaque ligado, ficam a fonte e o
@@ -2089,7 +2143,8 @@ Objetivo: Dizer qual aparelho está em cada canal, para o editor mostrar “Dela
           dos sons em vez de números.
 Como fazer:
 1. Na linha CH 1, escolha o seu aparelho na lista (ela é organizada por marca e tem busca).
-2. Tem mais de um aparelho? Toque em + CANAL e mapeie cada canal.
+2. Manda MIDI para mais de um aparelho? Toque em + ADICIONAR CANAL e escolha o aparelho de cada
+   canal.
 3. A partir daí, todo seletor de PC e CC do editor mostra os nomes daquele aparelho, conforme o
    canal do comando.
 Campos e itens:
@@ -2100,6 +2155,22 @@ Campos e itens:
 - Um aparelho por canal (mapa)
   Descrição: Cada linha é um canal MIDI (CH 1 a CH 16) com o aparelho que escuta nele. GLOBAL quer
              dizer “sem aparelho”: os comandos aparecem só por número.
+- Um canal ou vários (frase do topo)
+  Descrição: A frase logo abaixo do título diz como o editor está trabalhando. Com um canal em uso —
+             um aparelho só, ou nenhum (aí vale o canal 1) —, ela diz para onde tudo vai, e o editor
+             não pergunta o canal no card PRINCIPAL nem nos footswitches do LIVE: cada comando sai
+             sozinho nesse canal. Com dois ou mais, ela diz quantos, e o campo CANAL aparece em cada
+             comando.
+             Conta como canal em uso: ter um aparelho, ter o CC no LIVE ligado ou ter sido
+             acrescentado com + ADICIONAR CANAL — mesmo em GLOBAL. Esse é o jeito de dizer “mando
+             MIDI para mais de um equipamento” sem escolher aparelho. − CANAL tira a última linha.
+- Mover os presets de canal (aviso)
+  Descrição: Trocou o aparelho de canal (do CH 1 para o CH 2, por exemplo)? Os presets que já
+             existem continuam mandando no canal antigo, e o card avisa. MOVER OS PRESETS PARA O
+             CANAL n abre uma janela que conta quantos envios mudam e, ao confirmar, passa para o
+             canal novo o PC dos presets, os extras e os footswitches de todos os bancos. O pedal de
+             expressão e os footswitches de fora dos presets (SW GLOBAL, externos), se mandavam no
+             canal antigo, vão junto já no toque em MOVER. AGORA NÃO deixa tudo como está.
 - A lista de aparelhos (seleção)
   Descrição: Organizada por marca (Valeton, Hotone, Line 6, Fractal, IK, Neural DSP, Kemper, BOSS,
              Strymon, ZOOM…), com busca por marca ou modelo. Os aparelhos que você mesmo cadastrou
@@ -2110,7 +2181,8 @@ Campos e itens:
              acompanharem a controladora.
 - Omitir PC/CC sem nome (interruptor)
   Descrição: Esconde dos seletores os números que o aparelho não usa: a lista fica só com o que
-             existe.
+             existe. Sem aparelho escolhido em canal nenhum, fica inativo: não há nomes para
+             mostrar.
 Observações:
 - Não achou o seu aparelho? Toque em CRIAR APARELHO, no fim do card: ele leva à aba AVANÇADO, onde
    fica o APARELHO PERSONALIZADO.
@@ -2220,8 +2292,8 @@ Como fazer:
 1. Em FOOTSWITCHES › EXTERNOS, toque em EDITAR no card EXPRESSÃO EXTERNA. Fechado, o card já diz
    numa frase para onde o pedal manda e mostra o valor ao vivo.
 2. Passo 1 Ligar: ligue o pedal e salve — só depois de salvar a BFMiDi começa a ler. Passo 2 Para
-   onde vai: escolha primeiro o aparelho (o canal) e depois o parâmetro (volume, wah, mix do
-   delay…).
+   onde vai: escolha o parâmetro (volume, wah, mix do delay…). Quando você usa um canal só, o card
+   já sabe o aparelho; com mais de um aparelho, escolha antes o aparelho (o canal).
 3. Passo 3 CALIBRAÇÃO: recolha o pedal e toque em GRAVAR CALCANHAR; pise até o fim e toque em GRAVAR
    PONTA. O passo da vez fica destacado.
 Campos e itens:
@@ -2230,6 +2302,12 @@ Campos e itens:
              LEITURA (a BFMiDi não está lendo o pedal: confira o cabo na entrada EXP) e, antes de
              calibrar, até onde o seu pedal vai de verdade — por exemplo “Seu pedal vai de 6 a 120”
              —, para você saber que vale a pena calibrar.
+- O canal do pedal (aviso)
+  Descrição: Quando você usa um canal só (veja o MODO AMIGÁVEL), o campo do aparelho não aparece: o
+             pedal manda nesse canal, e o card diz Vai para: … com o nome do aparelho. Se o pedal
+             estiver gravado em outro canal, o campo volta e o card avisa no topo, mesmo fechado,
+             com USAR O CANAL n (traz o pedal para o seu canal) e ADICIONAR O CANAL n (passa a usar
+             os dois). O editor nunca troca esse canal sozinho.
 - Ajuste fino (recolhido)
   Descrição: Embaixo dos passos, recolhido. No calcanhar manda e Na ponta manda: quanto do MIDI o
              pedal percorre, em porcentagem (50% = 64). Inverter o sentido troca os dois. Os números
@@ -2322,7 +2400,10 @@ Campos e itens:
 - BPM NO DISPLAY (TELA)
   Descrição: Por quanto tempo o card de BPM fica na tela ao bater o tap tempo (OFF, 2, 5 ou 10 s) e
              se o número é o ABSOLUTO (dois últimos toques) ou o MÉDIO (média da sequência). OFF só
-             esconde o card; o tempo continua valendo.
+             esconde o card; o tempo continua valendo. O AJUSTE FINO soma de −5 a +5 BPM ao tempo
+             batido, pra o número da BFMiDi bater com o do pedal: se você bate 80 e o pedal mostra
+             81, coloque +1. Vale também para o tempo que o editor mostra e para os modos
+             sincronizados; o MIDI do tap não muda.
 - BANK NA TROCA DE PRESET (TELA)
   Descrição: Ligado, a cada troca de preset a tela mostra a letra e o número do preset novo (ex.:
              A1) no meio, pelo tempo escolhido.
@@ -2460,6 +2541,9 @@ Campos e itens:
   Descrição: Fabricante, produto, porta do hub, ID USB, status e o canal que aquele aparelho escuta.
              Cada TONEX ONE tem o seu canal; os pedais MIDI comuns dividem um filtro. GP-5, TONEX
              ONE e Nano Cortex ganham o botão EDITAR PRESET.
+             Se o filtro deixa passar só um canal e o aparelho está em outro no Modo Amigável (ou os
+             seus comandos saem em outro), o card avisa que nada chega a ele e oferece AJUSTAR O
+             FILTRO PARA O CANAL n.
 - MIDI BFMIDI (host → controladora) (aba MIDI)
   Descrição: Habilitar MIDI reverso repete o MIDI que chega dos aparelhos plugados nas saídas da
              controladora (USB DEVICE e DIN5), como um thru/merge. MIDI Control Host BFMIDI deixa um

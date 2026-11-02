@@ -877,9 +877,9 @@ const MN_CONTENT = {
        "es": "En la consola, a la izquierda, toca el visor <strong>A1</strong> para elegir el banco y una de las teclas <strong>1 a 6</strong> para elegir el preset. La controladora acompaña."
       },
       {
-       "pt": "No card <strong>PRINCIPAL</strong>, escolha o <strong>PC</strong> (o som da sua pedaleira) e confira o <strong>CANAL</strong>. Na dúvida, canal 1.",
-       "en": "On the <strong>MAIN</strong> card, choose the <strong>PC</strong> (the sound on your effects unit) and check the <strong>CHANNEL</strong>. If in doubt, channel 1.",
-       "es": "En la tarjeta <strong>PRINCIPAL</strong>, elige el <strong>PC</strong> (el sonido de tu pedalera) y revisa el <strong>CANAL</strong>. En caso de duda, canal 1."
+       "pt": "No card <strong>PRINCIPAL</strong>, escolha o <strong>PC</strong> (o som da sua pedaleira). Com um aparelho só, o editor já sabe o canal; com mais de um, aparece também o campo <strong>CANAL</strong>.",
+       "en": "On the <strong>MAIN</strong> card, choose the <strong>PC</strong> (the sound on your effects unit). With a single device, the editor already knows the channel; with more than one, the <strong>CHANNEL</strong> field shows up too.",
+       "es": "En la tarjeta <strong>PRINCIPAL</strong>, elige el <strong>PC</strong> (el sonido de tu pedalera). Con un solo equipo, el editor ya sabe el canal; con más de uno, aparece también el campo <strong>CANAL</strong>."
       },
       {
        "pt": "Escreva o nome na <strong>pílula do nome</strong>, logo abaixo das teclas — é o que aparece na tela da controladora.",
@@ -937,11 +937,11 @@ const MN_CONTENT = {
       },
       {
        "n": 5,
-       "sel": ".bf-studio-np-ch-row",
+       "sel": ".bf-np-sendsto",
        "label": {
-        "pt": "canal",
-        "en": "channel",
-        "es": "canal"
+        "pt": "para onde vai",
+        "en": "where it goes",
+        "es": "a dónde va"
        }
       },
       {
@@ -985,9 +985,9 @@ const MN_CONTENT = {
         "es": "selección"
        },
        "desc": {
-        "pt": "<p>O canal MIDI é “qual aparelho escuta”. A maioria vem no canal 1. Com mais de um aparelho na corrente, cada um fica num canal.</p><p><strong>OFF</strong> quer dizer que o preset não manda PC nenhum — útil quando ele só serve para preparar o modo LIVE.</p>",
-        "en": "<p>The MIDI channel is “which device listens”. Most come set to channel 1. With more than one device in the chain, each one goes on its own channel.</p><p><strong>OFF</strong> means the preset doesn't send any PC — useful when it's only there to set up LIVE mode.</p>",
-        "es": "<p>El canal MIDI es “qué aparato escucha”. La mayoría viene en el canal 1. Con más de un aparato en la cadena, cada uno va en un canal.</p><p><strong>OFF</strong> significa que el preset no envía ningún PC — útil cuando solo sirve para preparar el modo LIVE.</p>"
+        "pt": "<p>O canal MIDI é “qual aparelho escuta”. Com um aparelho só no Modo Amigável (ou nenhum — aí vale o canal 1, de onde a maioria sai de fábrica), o editor usa esse canal sozinho e o campo CANAL nem aparece: no lugar, a linha <strong>Vai para</strong> diz o aparelho e o canal. Com mais de um aparelho na corrente, cada um fica num canal e o campo aparece.</p><p>Para o preset não mandar PC nenhum, escolha <strong>NENHUM</strong> no topo da lista do PC (com o campo CANAL à vista, é o <strong>OFF</strong>) — útil quando ele só serve para preparar o modo LIVE.</p>",
+        "en": "<p>The MIDI channel is “which device listens”. With a single device in Friendly Mode (or none — then channel 1 applies, which is where most devices come set from the factory), the editor uses that channel on its own and the CHANNEL field doesn't even show up: instead, the <strong>Goes to</strong> line tells you the device and the channel. With more than one device in the chain, each one goes on its own channel and the field appears.</p><p>To keep the preset from sending any PC, pick <strong>NONE</strong> at the top of the PC list (with the CHANNEL field visible, that's <strong>OFF</strong>) — useful when it's only there to set up LIVE mode.</p>",
+        "es": "<p>El canal MIDI es “qué aparato escucha”. Con un solo equipo en el Modo Amigable (o ninguno — entonces vale el canal 1, en el que viene la mayoría de fábrica), el editor usa ese canal solo y el campo CANAL ni aparece: en su lugar, la línea <strong>Va a</strong> dice el equipo y el canal. Con más de un aparato en la cadena, cada uno va en un canal y el campo aparece.</p><p>Para que el preset no envíe ningún PC, elige <strong>NINGUNO</strong> arriba en la lista del PC (con el campo CANAL a la vista, es el <strong>OFF</strong>) — útil cuando solo sirve para preparar el modo LIVE.</p>"
        }
       },
       {
@@ -1762,9 +1762,9 @@ const MN_CONTENT = {
       "es": "La tarjeta PRINCIPAL"
      },
      "purpose": {
-      "pt": "O que o preset manda quando é chamado — PC, canal e envios extras — e a fileira de atalhos para o resto do editor.",
-      "en": "What the preset sends when it's called up — PC, channel and extra messages — and the row of shortcuts to the rest of the editor.",
-      "es": "Lo que envía el preset cuando se llama — PC, canal y envíos extra — y la fila de atajos al resto del editor."
+      "pt": "O que o preset manda quando é chamado — o PC e os envios extras (e o canal, quando você usa mais de um aparelho) — e a fileira de atalhos para o resto do editor.",
+      "en": "What the preset sends when it's called up — the PC and the extra messages (and the channel, when you use more than one device) — and the row of shortcuts to the rest of the editor.",
+      "es": "Lo que envía el preset cuando se llama — el PC y los envíos extra (y el canal, cuando usas más de un equipo) — y la fila de atajos al resto del editor."
      },
      "shot": "preset-principal",
      "mockTitle": {
@@ -1784,11 +1784,11 @@ const MN_CONTENT = {
       },
       {
        "n": 2,
-       "sel": ".bf-studio-np-ch-row",
+       "sel": ".bf-np-sendsto",
        "label": {
-        "pt": "CANAL",
-        "en": "CHANNEL",
-        "es": "CANAL"
+        "pt": "VAI PARA",
+        "en": "GOES TO",
+        "es": "VA A"
        }
       },
       {
@@ -1842,26 +1842,26 @@ const MN_CONTENT = {
         "es": "selección"
        },
        "desc": {
-        "pt": "<p>O som que a pedaleira carrega quando o preset é chamado. Vai até 600: acima de 127 a BFMiDi manda junto o <em>Bank Select</em> no formato do aparelho escolhido no Modo Amigável.</p>",
-        "en": "<p>The sound your multi-effects unit loads when the preset is called up. It goes up to 600: above 127 the BFMiDi also sends <em>Bank Select</em> in the format of the device chosen in Friendly Mode.</p>",
-        "es": "<p>El sonido que carga la pedalera cuando se llama el preset. Llega hasta 600: por encima de 127 la BFMiDi envía también el <em>Bank Select</em> en el formato del equipo elegido en el Modo Amigable.</p>"
+        "pt": "<p>O som que a pedaleira carrega quando o preset é chamado. Vai até 600: acima de 127 a BFMiDi manda junto o <em>Bank Select</em> no formato do aparelho escolhido no Modo Amigável.</p><p>Com um aparelho só, o topo da lista tem <strong>NENHUM</strong>: o preset não manda PC.</p>",
+        "en": "<p>The sound your multi-effects unit loads when the preset is called up. It goes up to 600: above 127 the BFMiDi also sends <em>Bank Select</em> in the format of the device chosen in Friendly Mode.</p><p>With a single device, the top of the list has <strong>NONE</strong>: the preset sends no PC.</p>",
+        "es": "<p>El sonido que carga la pedalera cuando se llama el preset. Llega hasta 600: por encima de 127 la BFMiDi envía también el <em>Bank Select</em> en el formato del equipo elegido en el Modo Amigable.</p><p>Con un solo equipo, arriba en la lista está <strong>NINGUNO</strong>: el preset no envía PC.</p>"
        }
       },
       {
        "name": {
-        "pt": "CANAL",
-        "en": "CHANNEL",
-        "es": "CANAL"
+        "pt": "VAI PARA",
+        "en": "GOES TO",
+        "es": "VA A"
        },
        "type": {
-        "pt": "seleção",
-        "en": "selection",
-        "es": "selección"
+        "pt": "aviso",
+        "en": "note",
+        "es": "aviso"
        },
        "desc": {
-        "pt": "<p>O canal MIDI do aparelho que recebe o PC: o campo mostra o número, ou o nome do aparelho quando o canal está no Modo Amigável. <strong>OFF</strong> = o preset não manda PC, e o card avisa isso logo embaixo.</p>",
-        "en": "<p>The MIDI channel of the device that receives the PC: the field shows the number, or the device’s name when the channel is in Friendly Mode. <strong>OFF</strong> = the preset sends no PC, and the card says so right below.</p>",
-        "es": "<p>El canal MIDI del equipo que recibe el PC: el campo muestra el número, o el nombre del equipo cuando el canal está en el Modo Amigable. <strong>OFF</strong> = el preset no envía PC, y la tarjeta lo avisa justo abajo.</p>"
+        "pt": "<p>Com um aparelho só no Modo Amigável, o editor usa o canal dele sozinho: o campo CANAL não aparece e esta linha diz para onde o PC vai — por exemplo <em>Vai para: Valeton GP-5 (canal 1)</em>. Sem aparelho escolhido, tudo vai no canal 1 e a linha não aparece.</p>",
+        "en": "<p>With a single device in Friendly Mode, the editor uses that device's channel on its own: the CHANNEL field doesn't show up and this line tells you where the PC goes — for example <em>Goes to: Valeton GP-5 (channel 1)</em>. With no device chosen, everything goes on channel 1 and the line doesn't show up.</p>",
+        "es": "<p>Con un solo equipo en el Modo Amigable, el editor usa el canal de ese equipo solo: el campo CANAL no aparece y esta línea dice a dónde va el PC — por ejemplo <em>Va a: Valeton GP-5 (canal 1)</em>. Sin equipo elegido, todo va en el canal 1 y la línea no aparece.</p>"
        }
       },
       {
@@ -1876,9 +1876,9 @@ const MN_CONTENT = {
         "es": "botón"
        },
        "desc": {
-        "pt": "<p>Cada toque acrescenta um envio extra: uma mensagem a mais que sai junto com o PC (começa como PC no canal 1). Com pelo menos um extra, a lista aparece embaixo do CANAL. Veja o card seguinte.</p>",
-        "en": "<p>Each tap adds an extra message that goes out together with the PC (it starts as a PC on channel 1). Once there is at least one extra, the list shows up below CHANNEL. See the next card.</p>",
-        "es": "<p>Cada toque agrega un envío extra: un mensaje más que sale junto con el PC (empieza como PC en el canal 1). Con al menos un extra, la lista aparece debajo de CANAL. Mira la tarjeta siguiente.</p>"
+        "pt": "<p>Cada toque acrescenta um envio extra: uma mensagem a mais que sai junto com o PC (começa como PC no mesmo canal do preset). Com pelo menos um extra, a lista aparece logo embaixo. Veja o card seguinte.</p>",
+        "en": "<p>Each tap adds an extra message that goes out together with the PC (it starts as a PC on the preset's own channel). Once there is at least one extra, the list shows up right below. See the next card.</p>",
+        "es": "<p>Cada toque agrega un envío extra: un mensaje más que sale junto con el PC (empieza como PC en el mismo canal del preset). Con al menos un extra, la lista aparece justo abajo. Mira la tarjeta siguiente.</p>"
        }
       },
       {
@@ -1927,17 +1927,34 @@ const MN_CONTENT = {
         "es": "atajos"
        },
        "desc": {
-        "pt": "<p>Botões para as telas de configuração que você mais usa. Você escolhe quais aparecem em <strong>CONFIGURAÇÕES › EDITOR › ATALHOS</strong>. No computador o atalho abre a configuração na terceira coluna, ao lado do preset; no celular ele leva à tela de configuração.</p>",
-        "en": "<p>Buttons for the settings screens you use most. You choose which ones appear in <strong>SETTINGS › EDITOR › SHORTCUTS</strong>. On a computer the shortcut opens the settings in the third column, next to the preset; on a phone it takes you to the settings screen.</p>",
-        "es": "<p>Botones para las pantallas de configuración que más usas. Eliges cuáles aparecen en <strong>CONFIGURACIÓN › EDITOR › ATAJOS</strong>. En la computadora el atajo abre la configuración en la tercera columna, junto al preset; en el celular te lleva a la pantalla de configuración.</p>"
+        "pt": "<p>Botões para as telas de configuração que você mais usa — só no editor aberto pela controladora (nos aplicativos e no site, a fileira tem o MODO PALCO e os editores dos aparelhos). Você escolhe quais aparecem em <strong>CONFIGURAÇÕES › EDITOR › ATALHOS</strong>. No computador o atalho abre a configuração na terceira coluna, ao lado do preset; no celular ele leva à tela de configuração.</p>",
+        "en": "<p>Buttons for the settings screens you use most — only in the editor opened from the controller (in the apps and on the website, the row has STAGE MODE and the device editors). You choose which ones appear in <strong>SETTINGS › EDITOR › SHORTCUTS</strong>. On a computer the shortcut opens the settings in the third column, next to the preset; on a phone it takes you to the settings screen.</p>",
+        "es": "<p>Botones para las pantallas de configuración que más usas — solo en el editor abierto desde la controladora (en las aplicaciones y en el sitio, la fila tiene el MODO ESCENARIO y los editores de los equipos). Eliges cuáles aparecen en <strong>CONFIGURACIÓN › EDITOR › ATAJOS</strong>. En la computadora el atajo abre la configuración en la tercera columna, junto al preset; en el celular te lleva a la pantalla de configuración.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "CANAL",
+        "en": "CHANNEL",
+        "es": "CANAL"
+       },
+       "type": {
+        "pt": "seleção",
+        "en": "selection",
+        "es": "selección"
+       },
+       "desc": {
+        "pt": "<p>Só aparece quando o Modo Amigável tem mais de um canal em uso (dois aparelhos, ou um canal acrescentado com <strong>+ ADICIONAR CANAL</strong>). O campo mostra o número, ou o nome do aparelho quando o canal está no Modo Amigável. <strong>OFF</strong> = o preset não manda PC, e o card avisa isso logo embaixo.</p><p>Um preset antigo que manda o PC num canal fora do Modo Amigável também mostra o campo, com um aviso e dois botões: <strong>USAR O CANAL n</strong> passa o preset para o seu canal; <strong>ADICIONAR O CANAL n</strong> passa a usar os dois.</p>",
+        "en": "<p>Only shows up when Friendly Mode has more than one channel in use (two devices, or a channel added with <strong>+ ADD CHANNEL</strong>). The field shows the number, or the device’s name when the channel is in Friendly Mode. <strong>OFF</strong> = the preset sends no PC, and the card says so right below.</p><p>An older preset that sends its PC on a channel outside Friendly Mode also shows the field, with a warning and two buttons: <strong>USE CHANNEL n</strong> moves the preset to your channel; <strong>ADD CHANNEL n</strong> starts using both.</p>",
+        "es": "<p>Solo aparece cuando el Modo Amigable tiene más de un canal en uso (dos equipos, o un canal añadido con <strong>+ AÑADIR CANAL</strong>). El campo muestra el número, o el nombre del equipo cuando el canal está en el Modo Amigable. <strong>OFF</strong> = el preset no envía PC, y la tarjeta lo avisa justo abajo.</p><p>Un preset antiguo que envía el PC en un canal fuera del Modo Amigable también muestra el campo, con un aviso y dos botones: <strong>USAR EL CANAL n</strong> pasa el preset a tu canal; <strong>AGREGAR EL CANAL n</strong> pasa a usar los dos.</p>"
        }
       }
      ],
      "notes": [
       {
-       "pt": "No alto do card, uma frase resume o que sai ao chamar o preset: o PC no canal escolhido e, logo depois, os extras na ordem da lista.",
-       "en": "At the top of the card, a sentence sums up what goes out when the preset is called: the PC on the chosen channel and, right after, the extras in list order.",
-       "es": "Arriba de la tarjeta, una frase resume lo que sale al llamar el preset: el PC en el canal elegido y, justo después, los extras en el orden de la lista."
+       "pt": "No alto do card, uma frase resume o que sai ao chamar o preset: o PC e, logo depois, os extras na ordem da lista.",
+       "en": "At the top of the card, a sentence sums up what goes out when the preset is called: the PC and, right after, the extras in list order.",
+       "es": "Arriba de la tarjeta, una frase resume lo que sale al llamar el preset: el PC y, justo después, los extras en el orden de la lista."
       },
       {
        "pt": "Os atalhos só aparecem no modo PRESET. No modo LIVE o card do meio é o do footswitch.",
@@ -1960,9 +1977,9 @@ const MN_CONTENT = {
      },
      "howto": [
       {
-       "pt": "Toque em <strong>EXTRAS</strong>, ao lado do CANAL: cada toque acrescenta uma linha, que começa como PC no canal 1.",
-       "en": "Tap <strong>EXTRAS</strong>, next to CHANNEL: each tap adds a line, which starts as a PC on channel 1.",
-       "es": "Toca <strong>EXTRAS</strong>, junto a CANAL: cada toque agrega una línea, que empieza como PC en el canal 1."
+       "pt": "Toque em <strong>EXTRAS</strong>, ao lado do PC (ou do CANAL, quando ele aparece): cada toque acrescenta uma linha, que começa como PC no mesmo canal do preset.",
+       "en": "Tap <strong>EXTRAS</strong>, next to the PC (or to CHANNEL, when it shows up): each tap adds a line, which starts as a PC on the preset's own channel.",
+       "es": "Toca <strong>EXTRAS</strong>, junto al PC (o al CANAL, cuando aparece): cada toque agrega una línea, que empieza como PC en el mismo canal del preset."
       },
       {
        "pt": "Em cada linha, o disco ao lado do número troca entre PC e CC.",
@@ -1994,9 +2011,9 @@ const MN_CONTENT = {
         "es": "lista"
        },
        "desc": {
-        "pt": "<p>Cada linha é um PC ou um CC, com o seu canal. Trocar o som da pedaleira, ligar o delay, ajustar o volume de outro aparelho e mudar a cena da mesa — tudo no mesmo preset.</p>",
-        "en": "<p>Each row is a PC or a CC, with its own channel. Change the sound on your multi-effects unit, turn on the delay, set the volume of another device and change the mixer scene — all in the same preset.</p>",
-        "es": "<p>Cada fila es un PC o un CC, con su propio canal. Cambiar el sonido de la pedalera, activar el delay, ajustar el volumen de otro equipo y cambiar la escena de la mezcladora — todo en el mismo preset.</p>"
+        "pt": "<p>Cada linha é um PC ou um CC, com o seu canal. Trocar o som da pedaleira, ligar o delay, ajustar o volume de outro aparelho e mudar a cena da mesa — tudo no mesmo preset.</p><p>Os extras sempre mostram o canal, mesmo quando o card esconde o do PC: muitas vezes eles existem justamente para falar com outro aparelho.</p>",
+        "en": "<p>Each row is a PC or a CC, with its own channel. Change the sound on your multi-effects unit, turn on the delay, set the volume of another device and change the mixer scene — all in the same preset.</p><p>Extras always show their channel, even when the card hides the PC's: they are often there precisely to talk to another device.</p>",
+        "es": "<p>Cada fila es un PC o un CC, con su propio canal. Cambiar el sonido de la pedalera, activar el delay, ajustar el volumen de otro equipo y cambiar la escena de la mezcladora — todo en el mismo preset.</p><p>Los extras siempre muestran el canal, aunque la tarjeta oculte el del PC: muchas veces existen justamente para hablar con otro equipo.</p>"
        }
       },
       {
@@ -2687,9 +2704,26 @@ const MN_CONTENT = {
         "es": "pantalla del pedal"
        },
        "desc": {
-        "pt": "<p>Um footswitch cuja função não tem canal MIDI <strong>não aparece na tela da controladora</strong> (nem na prévia do editor). Por isso, com o pacote de fábrica — footswitches em STOMP com canal OFF — a tela LIVE começa vazia: ela vai se preenchendo conforme você dá canal aos footswitches.</p><p>As exceções são o FAVORITO, que navega em vez de mandar MIDI, e o MUTE (só em presets antigos), que nunca aparece.</p>",
-        "en": "<p>A footswitch whose function has no MIDI channel <strong>doesn't show up on the controller's screen</strong> (or in the editor preview). That's why, with the factory pack — footswitches in STOMP with the channel OFF — the LIVE screen starts out empty: it fills in as you give the footswitches a channel.</p><p>The exceptions are FAVORITE, which navigates instead of sending MIDI, and MUTE (only in older presets), which never shows up.</p>",
-        "es": "<p>Un footswitch cuya función no tiene canal MIDI <strong>no aparece en la pantalla de la controladora</strong> (ni en la vista previa del editor). Por eso, con el paquete de fábrica — footswitches en STOMP con canal OFF — la pantalla LIVE empieza vacía: se va llenando a medida que les das canal a los footswitches.</p><p>Las excepciones son el FAVORITO, que navega en vez de enviar MIDI, y el MUTE (solo en presets antiguos), que nunca aparece.</p>"
+        "pt": "<p>Um footswitch cuja função não tem canal MIDI <strong>não aparece na tela da controladora</strong> (nem na prévia do editor). Por isso, com o pacote de fábrica — footswitches em STOMP sem canal — a tela LIVE começa vazia: ela vai se preenchendo conforme você escolhe os comandos.</p><p>As exceções são o FAVORITO, que navega em vez de mandar MIDI, e o MUTE (só em presets antigos), que nunca aparece.</p>",
+       "en": "<p>A footswitch whose function has no MIDI channel <strong>doesn't show up on the controller's screen</strong> (or in the editor preview). That's why, with the factory pack — footswitches in STOMP with no channel — the LIVE screen starts out empty: it fills in as you choose the commands.</p><p>The exceptions are FAVORITE, which navigates instead of sending MIDI, and MUTE (only in older presets), which never shows up.</p>",
+       "es": "<p>Un footswitch cuya función no tiene canal MIDI <strong>no aparece en la pantalla de la controladora</strong> (ni en la vista previa del editor). Por eso, con el paquete de fábrica — footswitches en STOMP sin canal — la pantalla LIVE empieza vacía: se va llenando a medida que eliges los comandos.</p><p>Las excepciones son el FAVORITO, que navega en vez de enviar MIDI, y el MUTE (solo en presets antiguos), que nunca aparece.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "O CANAL dos comandos",
+        "en": "The commands' CHANNEL",
+        "es": "El CANAL de los comandos"
+       },
+       "type": {
+        "pt": "canal",
+        "en": "channel",
+        "es": "canal"
+       },
+       "desc": {
+        "pt": "<p>Com um aparelho só no Modo Amigável (ou nenhum, e aí vale o canal 1), os editores dos modos <strong>não mostram o campo CANAL</strong>: escolher o comando já o manda no canal desse aparelho, e <strong>NENHUM</strong>, no topo da lista do comando, deixa o gesto sem função. Com dois ou mais canais em uso, o campo CANAL aparece em cada comando.</p><p>Se um footswitch manda num canal que não está no Modo Amigável (de um preset antigo, por exemplo), o campo daquele comando aparece e o card avisa no topo, com <strong>USAR O CANAL n</strong> (passa tudo para o seu canal) e <strong>ADICIONAR O CANAL n</strong> (passa a usar os dois). O mesmo vale nos cards SW GLOBAL e External SW e no editor que abre ao segurar um footswitch no MODO PALCO.</p>",
+        "en": "<p>With a single device in Friendly Mode (or none, and then channel 1 applies), the mode editors <strong>don't show the CHANNEL field</strong>: choosing the command already sends it on that device's channel, and <strong>NONE</strong>, at the top of the command list, leaves the gesture with no function. With two or more channels in use, the CHANNEL field shows up on each command.</p><p>If a footswitch sends on a channel that isn't in Friendly Mode (from an older preset, for example), that command's field shows up and the card warns at the top, with <strong>USE CHANNEL n</strong> (moves everything to your channel) and <strong>ADD CHANNEL n</strong> (starts using both). The same goes for the SW GLOBAL and External SW cards and for the editor that opens when you hold a footswitch in STAGE MODE.</p>",
+        "es": "<p>Con un solo equipo en el Modo Amigable (o ninguno, y entonces vale el canal 1), los editores de los modos <strong>no muestran el campo CANAL</strong>: elegir el comando ya lo envía en el canal de ese equipo, y <strong>NINGUNO</strong>, arriba en la lista del comando, deja el gesto sin función. Con dos o más canales en uso, el campo CANAL aparece en cada comando.</p><p>Si un footswitch envía en un canal que no está en el Modo Amigable (de un preset antiguo, por ejemplo), el campo de ese comando aparece y la tarjeta avisa arriba, con <strong>USAR EL CANAL n</strong> (pasa todo a tu canal) y <strong>AGREGAR EL CANAL n</strong> (pasa a usar los dos). Lo mismo vale en las tarjetas SW GLOBAL y External SW y en el editor que se abre al mantener un footswitch en el MODO ESCENARIO.</p>"
        }
       }
      ],
@@ -2773,9 +2807,9 @@ const MN_CONTENT = {
         "es": "detalle"
        },
        "desc": {
-        "pt": "<p>O MUTE saiu da lista. Para deixar um footswitch sem função, use qualquer modo com o <strong>CANAL em OFF</strong>: ele não manda MIDI e some da tela da controladora. Footswitches novos já nascem assim, em STOMP com canal OFF.</p>",
-        "en": "<p>MUTE is no longer on the list. To leave a footswitch with no function, use any mode with the <strong>CHANNEL set to OFF</strong>: it sends no MIDI and disappears from the controller's screen. New footswitches already start that way, in STOMP with the channel OFF.</p>",
-        "es": "<p>El MUTE salió de la lista. Para dejar un footswitch sin función, usa cualquier modo con el <strong>CANAL en OFF</strong>: no envía MIDI y desaparece de la pantalla de la controladora. Los footswitches nuevos ya nacen así, en STOMP con canal OFF.</p>"
+        "pt": "<p>O MUTE saiu da lista. Para deixar um footswitch sem função, use qualquer modo com <strong>NENHUM</strong> na lista do comando (ou o <strong>CANAL em OFF</strong>, quando o campo CANAL aparece): ele não manda MIDI e some da tela da controladora. Footswitches novos já nascem assim, em STOMP sem canal.</p>",
+        "en": "<p>MUTE is no longer on the list. To leave a footswitch with no function, use any mode with <strong>NONE</strong> in the command list (or the <strong>CHANNEL set to OFF</strong>, when the CHANNEL field shows up): it sends no MIDI and disappears from the controller's screen. New footswitches already start that way, in STOMP with no channel.</p>",
+        "es": "<p>El MUTE salió de la lista. Para dejar un footswitch sin función, usa cualquier modo con <strong>NINGUNO</strong> en la lista del comando (o el <strong>CANAL en OFF</strong>, cuando aparece el campo CANAL): no envía MIDI y desaparece de la pantalla de la controladora. Los footswitches nuevos ya nacen así, en STOMP sin canal.</p>"
        }
       }
      ],
@@ -2801,9 +2835,9 @@ const MN_CONTENT = {
      },
      "howto": [
       {
-       "pt": "Na aba <strong>TOQUE</strong>, escolha o CC e o CANAL do efeito.",
-       "en": "On the <strong>TAP</strong> tab, choose the effect's CC and CHANNEL.",
-       "es": "En la pestaña <strong>TOQUE</strong>, elige el CC y el CANAL del efecto."
+       "pt": "Na aba <strong>TOQUE</strong>, escolha o CC do efeito (e o CANAL, quando você usa mais de um aparelho).",
+       "en": "On the <strong>TAP</strong> tab, choose the effect's CC (and the CHANNEL, when you use more than one device).",
+       "es": "En la pestaña <strong>TOQUE</strong>, elige el CC del efecto (y el CANAL, cuando usas más de un equipo)."
       },
       {
        "pt": "Quer mais funções no mesmo pé? Configure também <strong>SEGURAR</strong> e <strong>PISAR DE NOVO</strong>.",
@@ -2825,7 +2859,7 @@ const MN_CONTENT = {
      "hot": [
       {
        "n": 1,
-       "sel": ".bf-sw-fx2-tabs",
+       "sel": ".bf-sw-gest",
        "label": {
         "pt": "gestos",
         "en": "gestures",
@@ -2836,18 +2870,18 @@ const MN_CONTENT = {
        "n": 2,
        "sel": ".bf-typebtn-row",
        "label": {
-        "pt": "CC ou PC",
-        "en": "CC or PC",
-        "es": "CC o PC"
+        "pt": "comando",
+        "en": "command",
+        "es": "comando"
        }
       },
       {
        "n": 3,
-       "sel": ".bf-sw-fx1-chrow",
+       "sel": ".bf-sw-acts",
        "label": {
-        "pt": "canal, CUSTOM e FAVORITO",
-        "en": "channel, CUSTOM and FAVORITE",
-        "es": "canal, CUSTOM y FAVORITO"
+        "pt": "AJUSTES, ALTERAR COMANDO e FAVORITO",
+        "en": "ADJUST, CHANGE COMMAND and FAVORITE",
+        "es": "AJUSTES, CAMBIAR COMANDO y FAVORITO"
        }
       },
       {
@@ -2873,16 +2907,16 @@ const MN_CONTENT = {
         "es": "secciones"
        },
        "desc": {
-        "pt": "<p>Três funções no mesmo footswitch: toque rápido, toque segurado e toque duplo. O comportamento se adapta ao que você preencher: só a primeira seção = stomp clássico; duas ou três seções = dois ou três efeitos no mesmo pé.</p><p>Com o PISAR DE NOVO preenchido, o toque espera um instante (cerca de um terço de segundo) para saber se vem um segundo toque.</p><p>Embaixo das abas, um aviso mostra quando o gesto ainda não tem canal e por isso não manda nada. No TOQUE, sem canal, o ícone do footswitch some da tela do pedal.</p>",
-        "en": "<p>Three functions on the same footswitch: quick press, held press and double press. The behavior adapts to what you fill in: only the first section = classic stomp; two or three sections = two or three effects on the same footswitch.</p><p>With PRESS AGAIN filled in, the tap waits a moment (about a third of a second) to see whether a second press is coming.</p><p>Below the tabs, a notice shows when a gesture has no channel yet and so sends nothing. On TAP, with no channel, the footswitch’s icon disappears from the pedal screen.</p>",
-        "es": "<p>Tres funciones en el mismo footswitch: toque rápido, toque mantenido y doble toque. El comportamiento se adapta a lo que completes: solo la primera sección = stomp clásico; dos o tres secciones = dos o tres efectos en el mismo pie.</p><p>Con el PISAR DE NUEVO completado, el toque espera un instante (cerca de un tercio de segundo) para saber si viene un segundo toque.</p><p>Debajo de las pestañas, un aviso muestra cuando el gesto todavía no tiene canal y por eso no envía nada. En el TOQUE, sin canal, el ícono del footswitch desaparece de la pantalla del pedal.</p>"
+        "pt": "<p>Três funções no mesmo footswitch: toque rápido, toque segurado e toque duplo. O comportamento se adapta ao que você preencher: só a primeira seção = stomp clássico; duas ou três seções = dois ou três efeitos no mesmo pé.</p><p>Com o PISAR DE NOVO preenchido, o toque espera um instante (cerca de um terço de segundo) para saber se vem um segundo toque.</p><p>Os gestos ficam no quadro <strong>Gestos</strong>, um bloco grande para cada um (o escolhido acende em azul). Embaixo dele, um aviso mostra quando o gesto ainda não tem comando e por isso não manda nada. No TOQUE, sem canal, o ícone do footswitch some da tela do pedal.</p>",
+        "en": "<p>Three functions on the same footswitch: quick press, held press and double press. The behavior adapts to what you fill in: only the first section = classic stomp; two or three sections = two or three effects on the same footswitch.</p><p>With PRESS AGAIN filled in, the tap waits a moment (about a third of a second) to see whether a second press is coming.</p><p>The gestures sit in the <strong>Gestures</strong> box, one large block for each (the chosen one lights up in blue). Below it, a notice shows when a gesture has no command yet and so sends nothing. On TAP, with no channel, the footswitch’s icon disappears from the pedal screen.</p>",
+        "es": "<p>Tres funciones en el mismo footswitch: toque rápido, toque mantenido y doble toque. El comportamiento se adapta a lo que completes: solo la primera sección = stomp clásico; dos o tres secciones = dos o tres efectos en el mismo pie.</p><p>Con el PISAR DE NUEVO completado, el toque espera un instante (cerca de un tercio de segundo) para saber si viene un segundo toque.</p><p>Los gestos están en el cuadro <strong>Gestos</strong>, un bloque grande para cada uno (el elegido se enciende en azul). Debajo, un aviso muestra cuando el gesto todavía no tiene comando y por eso no envía nada. En el TOQUE, sin canal, el ícono del footswitch desaparece de la pantalla del pedal.</p>"
        }
       },
       {
        "name": {
-        "pt": "CC ou PC",
-        "en": "CC or PC",
-        "es": "CC o PC"
+        "pt": "ALTERAR COMANDO — CC ou PC",
+        "en": "CHANGE COMMAND — CC or PC",
+        "es": "CAMBIAR COMANDO — CC o PC"
        },
        "type": {
         "pt": "disco",
@@ -2890,16 +2924,16 @@ const MN_CONTENT = {
         "es": "botón redondo"
        },
        "desc": {
-        "pt": "<p>O disco ao lado do número troca o tipo da mensagem: <strong>CC</strong> (o normal para ligar e desligar efeitos) ou <strong>PC</strong> (para chamar um som). Com o Modo Amigável, a lista mostra o nome de cada comando.</p>",
-        "en": "<p>The round button next to the number switches the message type: <strong>CC</strong> (the usual choice for turning effects on and off) or <strong>PC</strong> (to call up a sound). With Friendly Mode, the list shows the name of each command.</p>",
-        "es": "<p>El botón redondo junto al número cambia el tipo de mensaje: <strong>CC</strong> (lo normal para encender y apagar efectos) o <strong>PC</strong> (para llamar un sonido). Con el Modo Amigable, la lista muestra el nombre de cada comando.</p>"
+        "pt": "<p>O botão <strong>ALTERAR COMANDO</strong>, na fileira logo abaixo do comando, troca o tipo da mensagem (a etiqueta verde do campo mostra qual está valendo): <strong>CC</strong> (o normal para ligar e desligar efeitos) ou <strong>PC</strong> (para chamar um som). Com o Modo Amigável, a lista mostra o nome de cada comando.</p>",
+        "en": "<p>The <strong>CHANGE COMMAND</strong> button, in the row right below the command, switches the message type (the green tag on the field shows which one is in use): <strong>CC</strong> (the usual choice for turning effects on and off) or <strong>PC</strong> (to call up a sound). With Friendly Mode, the list shows the name of each command.</p>",
+        "es": "<p>El botón <strong>CAMBIAR COMANDO</strong>, en la fila justo debajo del comando, cambia el tipo de mensaje (la etiqueta verde del campo muestra cuál está activo): <strong>CC</strong> (lo normal para encender y apagar efectos) o <strong>PC</strong> (para llamar un sonido). Con el Modo Amigable, la lista muestra el nombre de cada comando.</p>"
        }
       },
       {
        "name": {
-        "pt": "CUSTOM — valores próprios",
-        "en": "CUSTOM — your own values",
-        "es": "CUSTOM — valores propios"
+        "pt": "AJUSTES — valores próprios",
+        "en": "ADJUST — your own values",
+        "es": "AJUSTES — valores propios"
        },
        "type": {
         "pt": "disco",
@@ -2907,9 +2941,9 @@ const MN_CONTENT = {
         "es": "botón redondo"
        },
        "desc": {
-        "pt": "<p>Normalmente ligado manda 127 e desligado manda 0. O disco de controles ao lado do CANAL abre <strong>VALORES CUSTOM</strong> para escolher outros valores — veja o card seguinte.</p>",
-        "en": "<p>Normally, on sends 127 and off sends 0. The controls button next to CHANNEL opens <strong>CUSTOM VALUES</strong> so you can pick other values — see the next card.</p>",
-        "es": "<p>Normalmente, encendido envía 127 y apagado envía 0. El botón de controles junto a CANAL abre <strong>VALORES CUSTOM</strong> para elegir otros valores — mira la tarjeta siguiente.</p>"
+        "pt": "<p>Normalmente ligado manda 127 e desligado manda 0. O botão <strong>AJUSTES</strong>, na fileira logo abaixo do comando, abre <strong>VALORES CUSTOM</strong> para escolher outros valores — veja o card seguinte.</p>",
+        "en": "<p>Normally, on sends 127 and off sends 0. The <strong>ADJUST</strong> button, in the row right below the command, opens <strong>CUSTOM VALUES</strong> so you can pick other values — see the next card.</p>",
+        "es": "<p>Normalmente, encendido envía 127 y apagado envía 0. El botón <strong>AJUSTES</strong>, en la fila justo debajo del comando, abre <strong>VALORES CUSTOM</strong> para elegir otros valores — mira la tarjeta siguiente.</p>"
        }
       },
       {
@@ -2986,9 +3020,9 @@ const MN_CONTENT = {
      },
      "howto": [
       {
-       "pt": "Toque no disco de controles ao lado do CANAL.",
-       "en": "Tap the controls button next to CHANNEL.",
-       "es": "Toca el botón de controles junto a CANAL."
+       "pt": "Toque em <strong>AJUSTES</strong>, na fileira logo abaixo do comando.",
+       "en": "Tap <strong>ADJUST</strong>, in the row right below the command.",
+       "es": "Toca <strong>AJUSTES</strong>, en la fila justo debajo del comando."
       },
       {
        "pt": "Ajuste o <strong>VALOR OFF</strong> (em cima) e o <strong>VALOR ON</strong> (embaixo): digitando, arrastando o slider ou arrastando o próprio número.",
@@ -3036,9 +3070,9 @@ const MN_CONTENT = {
      },
      "howto": [
       {
-       "pt": "Escolha o CC de tap do seu aparelho e o canal. <strong>ADICIONAR TAP</strong> acrescenta até três destinos.",
-       "en": "Choose your device's tap CC and the channel. <strong>ADD TAP</strong> adds up to three targets.",
-       "es": "Elige el CC de tap de tu equipo y el canal. <strong>AÑADIR TAP</strong> agrega hasta tres destinos."
+       "pt": "Escolha o CC de tap do seu aparelho. <strong>ADICIONAR TAP</strong> acrescenta até três destinos.",
+       "en": "Choose your device's tap CC. <strong>ADD TAP</strong> adds up to three targets.",
+       "es": "Elige el CC de tap de tu equipo. <strong>AÑADIR TAP</strong> agrega hasta tres destinos."
       },
       {
        "pt": "Para cada um, escolha <strong>MODO 1</strong> (manda CC + 127) ou <strong>MODO 2</strong> (CC + 127 seguido de CC + 0) — depende do que o seu aparelho espera.",
@@ -3070,9 +3104,9 @@ const MN_CONTENT = {
         "es": "gesto"
        },
        "desc": {
-        "pt": "<p>Segurar o footswitch pode mandar outro comando, com CC, canal e valores próprios — por exemplo, ligar o afinador. Sem canal no SEGURAR, segurar não muda o ícone da tela.</p>",
-        "en": "<p>Holding the footswitch can send another command, with its own CC, channel and values — for example, turning on the tuner. With no channel on LONG PRESS, holding doesn't change the icon on the screen.</p>",
-        "es": "<p>Mantener pisado el footswitch puede enviar otro comando, con CC, canal y valores propios — por ejemplo, encender el afinador. Sin canal en MANTENER, mantenerlo pisado no cambia el ícono de la pantalla.</p>"
+        "pt": "<p>Segurar o footswitch pode mandar outro comando, com CC, canal e valores próprios — por exemplo, ligar o afinador. Sem comando no SEGURAR (NENHUM, ou canal OFF), segurar não muda o ícone da tela.</p>",
+        "en": "<p>Holding the footswitch can send another command, with its own CC, channel and values — for example, turning on the tuner. With no command on HOLD (NONE, or channel OFF), holding doesn't change the icon on the screen.</p>",
+        "es": "<p>Mantener pisado el footswitch puede enviar otro comando, con CC, canal y valores propios — por ejemplo, encender el afinador. Sin comando en MANTENER (NINGUNO, o canal OFF), mantenerlo pisado no cambia el ícono de la pantalla.</p>"
        }
       },
       {
@@ -3130,9 +3164,9 @@ const MN_CONTENT = {
        "es": "Elige la pestaña del gesto: <strong>TOQUE</strong>, <strong>MANTENER</strong> o <strong>PISAR DE NUEVO</strong> (dos toques rápidos)."
       },
       {
-       "pt": "Preencha até quatro slots, cada um CC ou PC, com valor e canal.",
-       "en": "Fill in up to four slots, each one CC or PC, with a value and a channel.",
-       "es": "Completa hasta cuatro slots, cada uno CC o PC, con valor y canal."
+       "pt": "Preencha até quatro slots, cada um CC ou PC, com o seu valor.",
+       "en": "Fill in up to four slots, each one CC or PC, with its value.",
+       "es": "Completa hasta cuatro slots, cada uno CC o PC, con su valor."
       }
      ],
      "shot": "sw-single",
@@ -3192,9 +3226,9 @@ const MN_CONTENT = {
      },
      "howto": [
       {
-       "pt": "Preencha até quatro slots com CC e canal; use os valores custom se o aparelho não usar 127/0.",
-       "en": "Fill in up to four slots with CC and channel; use custom values if the device doesn't use 127/0.",
-       "es": "Completa hasta cuatro slots con CC y canal; usa los valores custom si el equipo no usa 127/0."
+       "pt": "Preencha até quatro slots com o CC de cada um; use os valores custom se o aparelho não usar 127/0.",
+       "en": "Fill in up to four slots with a CC each; use custom values if the device doesn't use 127/0.",
+       "es": "Completa hasta cuatro slots con el CC de cada uno; usa los valores custom si el equipo no usa 127/0."
       },
       {
        "pt": "Se quiser, ajuste o comportamento do LED em <strong>TRAVA</strong> e <strong>Fade do LED</strong>.",
@@ -3343,9 +3377,9 @@ const MN_CONTENT = {
      },
      "howto": [
       {
-       "pt": "Escolha o CC e o canal e defina os três valores. Até três slots mandam juntos a cada toque.",
-       "en": "Choose the CC and channel and set the three values. Up to three slots send together on each press.",
-       "es": "Elige el CC y el canal y define los tres valores. Hasta tres slots envían juntos con cada toque."
+       "pt": "Escolha o CC e defina os três valores. Até três slots mandam juntos a cada toque.",
+       "en": "Choose the CC and set the three values. Up to three slots send together on each press.",
+       "es": "Elige el CC y define los tres valores. Hasta tres slots envían juntos con cada toque."
       },
       {
        "pt": "Se quiser, use o <strong>SEGURAR</strong> para mandar um comando diferente ao segurar o pé.",
@@ -3501,9 +3535,9 @@ const MN_CONTENT = {
      },
      "howto": [
       {
-       "pt": "Em <strong>SEQUÊNCIA</strong>, escolha o CC e o canal e preencha os quatro valores.",
-       "en": "In <strong>SEQUENCE</strong>, choose the CC and channel and fill in the four values.",
-       "es": "En <strong>SECUENCIA</strong>, elige el CC y el canal y completa los cuatro valores."
+       "pt": "Em <strong>SEQUÊNCIA</strong>, escolha o CC e preencha os quatro valores.",
+       "en": "In <strong>SEQUENCE</strong>, choose the CC and fill in the four values.",
+       "es": "En <strong>SECUENCIA</strong>, elige el CC y completa los cuatro valores."
       },
       {
        "pt": "Escolha o ritmo: <strong>MS</strong> (um tempo em milissegundos por step) ou <strong>NO TEMPO</strong> (uma figura musical por step, sobre a batida).",
@@ -3607,9 +3641,9 @@ const MN_CONTENT = {
      },
      "howto": [
       {
-       "pt": "Na aba <strong>FX 1</strong>, escolha o CC, o canal e a cor do LED do primeiro destino.",
-       "en": "On the <strong>FX 1</strong> tab, choose the CC, the channel and the LED color for the first target.",
-       "es": "En la pestaña <strong>FX 1</strong>, elige el CC, el canal y el color del LED del primer destino."
+       "pt": "Na aba <strong>FX 1</strong>, escolha o CC e a cor do LED do primeiro destino.",
+       "en": "On the <strong>FX 1</strong> tab, choose the CC and the LED color for the first target.",
+       "es": "En la pestaña <strong>FX 1</strong>, elige el CC y el color del LED del primer destino."
       },
       {
        "pt": "Na aba <strong>FX 2</strong>, faça o mesmo para o segundo.",
@@ -3797,9 +3831,9 @@ const MN_CONTENT = {
      },
      "howto": [
       {
-       "pt": "Escolha o canal e o CC (ou troque para PC no disco ao lado).",
-       "en": "Choose the channel and the CC (or switch to PC with the disc next to it).",
-       "es": "Elige el canal y el CC (o cambia a PC con el disco de al lado)."
+       "pt": "Escolha o CC (ou troque para PC em <strong>ALTERAR COMANDO</strong>, logo abaixo).",
+       "en": "Choose the CC (or switch to PC with <strong>CHANGE COMMAND</strong>, right below).",
+       "es": "Elige el CC (o cambia a PC con <strong>CAMBIAR COMANDO</strong>, justo debajo)."
       },
       {
        "pt": "Em <strong>Valores</strong>, ajuste o <strong>Repouso</strong> (sai ao soltar) e a <strong>Ação</strong> (sai ao pisar).",
@@ -3898,9 +3932,9 @@ const MN_CONTENT = {
      },
      "howto": [
       {
-       "pt": "Escolha o canal e o CC que a onda vai mexer.",
-       "en": "Choose the channel and the CC the wave will move.",
-       "es": "Elige el canal y el CC que la onda va a mover."
+       "pt": "Escolha o CC que a onda vai mexer.",
+       "en": "Choose the CC the wave will move.",
+       "es": "Elige el CC que la onda va a mover."
       },
       {
        "pt": "Toque numa <strong>Forma</strong>: Senoide, Triângulo, Quadrada, Serra ↑, Serra ↓, Aleatória, Suave ou Pulso.",
@@ -4038,9 +4072,9 @@ const MN_CONTENT = {
         "es": "uso"
        },
        "desc": {
-        "pt": "<p>Use qualquer modo com o <strong>CANAL em OFF</strong>. O resultado é o mesmo do MUTE — o pé não manda nada e some da tela da controladora —, mas o footswitch fica pronto para ganhar uma função quando você quiser. É assim que os footswitches novos já vêm: STOMP com canal OFF.</p>",
-        "en": "<p>Use any mode with the <strong>CHANNEL set to OFF</strong>. The result is the same as MUTE — the foot sends nothing and disappears from the controller's screen — but the footswitch is ready to get a function whenever you want. That's how new footswitches already come: STOMP with the channel OFF.</p>",
-        "es": "<p>Usa cualquier modo con el <strong>CANAL en OFF</strong>. El resultado es el mismo del MUTE — el pie no envía nada y desaparece de la pantalla de la controladora —, pero el footswitch queda listo para tener una función cuando quieras. Así vienen los footswitches nuevos: STOMP con canal OFF.</p>"
+        "pt": "<p>Use qualquer modo com <strong>NENHUM</strong> na lista do comando (ou o <strong>CANAL em OFF</strong>, quando o campo CANAL aparece). O resultado é o mesmo do MUTE — o pé não manda nada e some da tela da controladora —, mas o footswitch fica pronto para ganhar uma função quando você quiser. É assim que os footswitches novos já vêm: STOMP sem canal.</p>",
+        "en": "<p>Use any mode with <strong>NONE</strong> in the command list (or the <strong>CHANNEL set to OFF</strong>, when the CHANNEL field shows up). The result is the same as MUTE — the foot sends nothing and disappears from the controller's screen — but the footswitch is ready to get a function whenever you want. That's how new footswitches already come: STOMP with no channel.</p>",
+        "es": "<p>Usa cualquier modo con <strong>NINGUNO</strong> en la lista del comando (o el <strong>CANAL en OFF</strong>, cuando aparece el campo CANAL). El resultado es el mismo del MUTE — el pie no envía nada y desaparece de la pantalla de la controladora —, pero el footswitch queda listo para tener una función cuando quieras. Así vienen los footswitches nuevos: STOMP sin canal.</p>"
        }
       }
      ]
@@ -4196,9 +4230,9 @@ const MN_CONTENT = {
     "es": "Una pantalla completa, en horizontal y con letras grandes para dejar el celular o la tablet en el atril durante el show: el preset que está sonando, los footswitches y el aparato conectado."
    },
    "intro": {
-    "pt": "<p>O <strong>MODO PALCO</strong> transforma o editor num painel para o show. São três telas: o <strong>PALCO BFMIDI</strong> mostra a BFMiDi — o nome do preset em letra enorme, a imagem de fundo e os footswitches, que você pode ligar e desligar com o dedo — e o <strong>PALCO ESPECIAL</strong> mostra o pedal dedicado plugado na controladora — a cadeia de efeitos e os knobs da GP-5, da TONEX ONE ou da Nano Cortex, editáveis ao vivo — e o <strong>SETLIST</strong> mostra a música do show, as partes dela e as cifras ou anotações de cada uma.</p><p>O Modo Palco existe nos <strong>aplicativos</strong> da BFMiDi (Android, iPhone/iPad, Mac e Windows) e no <strong>editor do site</strong>, inclusive instalado como ícone. O único lugar onde ele não aparece é o editor aberto pela própria controladora (<code>http://192.168.4.1</code> ou <code>http://bfmidi.local</code>). No site, o palco fala com o pedal pelo <strong>cabo USB</strong> (Chrome ou Edge no computador); sem cabo, abre no modo offline.</p><p>As configurações do palco (cores, fonte, imagens) ficam só no aparelho onde você abriu: nada disso vai para a controladora.</p>",
-    "en": "<p><strong>STAGE MODE</strong> turns the editor into a panel for the show. There are three screens: the <strong>BFMIDI STAGE</strong> shows the BFMiDi — the preset name in huge letters, the background image and the footswitches, which you can turn on and off with your finger — and the <strong>SPECIAL STAGE</strong> shows the dedicated pedal plugged into the controller — the effect chain and the knobs of the GP-5, the TONEX ONE or the Nano Cortex, editable live — and the <strong>SETLIST</strong> shows the song of the show, its parts and the chords or notes of each one.</p><p>Stage Mode exists in the BFMiDi <strong>apps</strong> (Android, iPhone/iPad, Mac and Windows) and in the <strong>website editor</strong>, installed as an icon or not. The only place it does not appear is the editor opened from the controller itself (<code>http://192.168.4.1</code> or <code>http://bfmidi.local</code>). On the website, the stage talks to the pedal over the <strong>USB cable</strong> (Chrome or Edge on a computer); without the cable, it opens in offline mode.</p><p>The stage settings (colors, font, images) stay only on the device where you opened it: none of it goes to the controller.</p>",
-    "es": "<p>El <strong>MODO ESCENARIO</strong> convierte el editor en un panel para el show. Son tres pantallas: el <strong>ESCENARIO BFMIDI</strong> muestra la BFMiDi — el nombre del preset en letras enormes, la imagen de fondo y los footswitches, que puedes encender y apagar con el dedo — y el <strong>ESCENARIO ESPECIAL</strong> muestra el pedal dedicado conectado a la controladora — la cadena de efectos y los knobs de la GP-5, la TONEX ONE o la Nano Cortex, editables en vivo — y el <strong>SETLIST</strong> muestra la canción del show, sus partes y los acordes o notas de cada una.</p><p>El Modo Escenario existe en las <strong>apps</strong> de la BFMiDi (Android, iPhone/iPad, Mac y Windows) y en el <strong>editor del sitio web</strong>, también instalado como icono. El único lugar donde no aparece es el editor abierto desde la propia controladora (<code>http://192.168.4.1</code> o <code>http://bfmidi.local</code>). En el sitio, el escenario habla con el pedal por el <strong>cable USB</strong> (Chrome o Edge en la computadora); sin cable, abre en modo offline.</p><p>La configuración del escenario (colores, fuente, imágenes) queda solo en el aparato donde lo abriste: nada de esto va a la controladora.</p>"
+    "pt": "<p>O <strong>MODO PALCO</strong> transforma o editor num painel para o show. São três telas: o <strong>PALCO BFMIDI</strong> mostra a BFMiDi — o nome do preset em letra enorme, a imagem de fundo e os footswitches, que você pode ligar e desligar com o dedo — e o <strong>PALCO ESPECIAL</strong> mostra o pedal dedicado plugado na controladora — a cadeia de efeitos e os knobs da GP-5, da TONEX ONE, da Nano Cortex ou do rig do Kemper, editáveis ao vivo — e o <strong>SETLIST</strong> mostra a música do show, as partes dela e as cifras ou anotações de cada uma.</p><p>O Modo Palco existe nos <strong>aplicativos</strong> da BFMiDi (Android, iPhone/iPad, Mac e Windows) e no <strong>editor do site</strong>, inclusive instalado como ícone. O único lugar onde ele não aparece é o editor aberto pela própria controladora (<code>http://192.168.4.1</code> ou <code>http://bfmidi.local</code>). No site, o palco fala com o pedal pelo <strong>cabo USB</strong> (Chrome ou Edge no computador); sem cabo, abre no modo offline.</p><p>As configurações do palco (cores, fonte, imagens) ficam só no aparelho onde você abriu: nada disso vai para a controladora.</p>",
+    "en": "<p><strong>STAGE MODE</strong> turns the editor into a panel for the show. There are three screens: the <strong>BFMIDI STAGE</strong> shows the BFMiDi — the preset name in huge letters, the background image and the footswitches, which you can turn on and off with your finger — and the <strong>SPECIAL STAGE</strong> shows the dedicated pedal plugged into the controller — the effect chain and the knobs of the GP-5, the TONEX ONE, the Nano Cortex or the Kemper rig, editable live — and the <strong>SETLIST</strong> shows the song of the show, its parts and the chords or notes of each one.</p><p>Stage Mode exists in the BFMiDi <strong>apps</strong> (Android, iPhone/iPad, Mac and Windows) and in the <strong>website editor</strong>, installed as an icon or not. The only place it does not appear is the editor opened from the controller itself (<code>http://192.168.4.1</code> or <code>http://bfmidi.local</code>). On the website, the stage talks to the pedal over the <strong>USB cable</strong> (Chrome or Edge on a computer); without the cable, it opens in offline mode.</p><p>The stage settings (colors, font, images) stay only on the device where you opened it: none of it goes to the controller.</p>",
+    "es": "<p>El <strong>MODO ESCENARIO</strong> convierte el editor en un panel para el show. Son tres pantallas: el <strong>ESCENARIO BFMIDI</strong> muestra la BFMiDi — el nombre del preset en letras enormes, la imagen de fondo y los footswitches, que puedes encender y apagar con el dedo — y el <strong>ESCENARIO ESPECIAL</strong> muestra el pedal dedicado conectado a la controladora — la cadena de efectos y los knobs de la GP-5, la TONEX ONE, la Nano Cortex o el rig del Kemper, editables en vivo — y el <strong>SETLIST</strong> muestra la canción del show, sus partes y los acordes o notas de cada una.</p><p>El Modo Escenario existe en las <strong>apps</strong> de la BFMiDi (Android, iPhone/iPad, Mac y Windows) y en el <strong>editor del sitio web</strong>, también instalado como icono. El único lugar donde no aparece es el editor abierto desde la propia controladora (<code>http://192.168.4.1</code> o <code>http://bfmidi.local</code>). En el sitio, el escenario habla con el pedal por el <strong>cable USB</strong> (Chrome o Edge en la computadora); sin cable, abre en modo offline.</p><p>La configuración del escenario (colores, fuente, imágenes) queda solo en el aparato donde lo abriste: nada de esto va a la controladora.</p>"
    },
    "cards": [
     {
@@ -4365,9 +4399,9 @@ const MN_CONTENT = {
         "es": "barra oculta"
        },
        "desc": {
-        "pt": "<p>A barra de controles fica escondida para não roubar espaço. Toque na alcinha do topo — ou em qualquer área vazia da tela — para mostrá-la. Ela some sozinha depois de alguns segundos.</p>",
-        "en": "<p>The control bar stays hidden so it doesn't take up space. Tap the handle at the top — or any empty area of the screen — to show it. It hides again on its own after a few seconds.</p>",
-        "es": "<p>La barra de controles queda oculta para no robar espacio. Toca la lengüeta de arriba — o cualquier área vacía de la pantalla — para mostrarla. Se oculta sola después de unos segundos.</p>"
+        "pt": "<p>A barra de controles fica escondida para não roubar espaço. Toque na alcinha do topo — ou em qualquer área vazia da tela — para mostrá-la. Ela some sozinha depois de alguns segundos. Para ir direto às configurações do palco, toque na <strong>engrenagem</strong> do canto direito (no PALCO BFMIDI e no PALCO ESPECIAL; ela some com a barra aberta e com a trava de toque fechada).</p>",
+        "en": "<p>The control bar stays hidden so it doesn't take up space. Tap the handle at the top — or any empty area of the screen — to show it. It hides again on its own after a few seconds. To go straight to the stage settings, tap the <strong>gear</strong> in the right corner (on the BFMIDI STAGE and the SPECIAL STAGE; it hides while the bar is open and while the touch lock is closed).</p>",
+        "es": "<p>La barra de controles queda oculta para no robar espacio. Toca la lengüeta de arriba — o cualquier área vacía de la pantalla — para mostrarla. Se oculta sola después de unos segundos. Para ir directo a la configuración del escenario, toca el <strong>engranaje</strong> de la esquina derecha (en el ESCENARIO BFMIDI y en el ESCENARIO ESPECIAL; se oculta con la barra abierta y con el bloqueo táctil cerrado).</p>"
        }
       }
      ],
@@ -4474,9 +4508,9 @@ const MN_CONTENT = {
      ],
      "notes": [
       {
-       "pt": "No palco do Kemper, segurar um stomp abre o mesmo painel.",
-       "en": "On the Kemper stage, holding a stomp opens the same panel.",
-       "es": "En el escenario del Kemper, mantener un stomp abre el mismo panel."
+       "pt": "No PALCO ESPECIAL do Kemper os blocos são os do rig, não os footswitches: lá, segurar um bloco liga ou desliga o efeito.",
+       "en": "On the Kemper SPECIAL STAGE the blocks are the rig's, not the footswitches: there, holding a block turns the effect on or off.",
+       "es": "En el ESCENARIO ESPECIAL del Kemper los bloques son los del rig, no los footswitches: allí, mantener un bloque enciende o apaga el efecto."
       }
      ]
     },
@@ -4614,9 +4648,9 @@ const MN_CONTENT = {
         "es": "botón"
        },
        "desc": {
-        "pt": "<p>Abre as configurações do palco, num painel lateral com seis categorias. Veja os cards seguintes.</p>",
-        "en": "<p>Opens the stage settings, in a side panel with six categories. See the following cards.</p>",
-        "es": "<p>Abre la configuración del escenario, en un panel lateral con seis categorías. Mira las tarjetas siguientes.</p>"
+        "pt": "<p>Abre as configurações do palco, num painel lateral com seis categorias. A engrenagem do canto direito do palco faz o mesmo sem abrir a barra. Veja os cards seguintes.</p>",
+        "en": "<p>Opens the stage settings, in a side panel with six categories. The gear in the right corner of the stage does the same without opening the bar. See the following cards.</p>",
+        "es": "<p>Abre la configuración del escenario, en un panel lateral con seis categorías. El engranaje de la esquina derecha del escenario hace lo mismo sin abrir la barra. Mira las tarjetas siguientes.</p>"
        }
       },
       {
@@ -4929,27 +4963,27 @@ const MN_CONTENT = {
     {
      "id": "palco-kemper",
      "title": {
-      "pt": "PALCO ESPECIAL com o Kemper Player",
-      "en": "SPECIAL STAGE with the Kemper Player",
-      "es": "ESCENARIO ESPECIAL con el Kemper Player"
+      "pt": "PALCO ESPECIAL com o Kemper",
+      "en": "SPECIAL STAGE with the Kemper",
+      "es": "ESCENARIO ESPECIAL con el Kemper"
      },
      "purpose": {
-      "pt": "Com o Modo Amigável em KEMPER PLAYER, o PALCO ESPECIAL mostra o nome do rig em letra grande e os footswitches da BFMiDi como botões de stomp do Kemper.",
-      "en": "With Friendly Mode set to KEMPER PLAYER, the SPECIAL STAGE shows the rig name in big letters and the BFMiDi footswitches as Kemper stomp buttons.",
-      "es": "Con el Modo Amigable en KEMPER PLAYER, el ESCENARIO ESPECIAL muestra el nombre del rig en letras grandes y los footswitches de la BFMiDi como botones de stomp del Kemper."
+      "pt": "Com o Modo Amigável num Kemper (Player ou Stage), o PALCO ESPECIAL mostra o rig que está tocando: o nome, os blocos do rig e os knobs do bloco tocado. Os footswitches da BFMiDi ficam no PALCO BFMIDI.",
+      "en": "With Friendly Mode set to a Kemper (Player or Stage), the SPECIAL STAGE shows the rig that is playing: its name, the rig's blocks and the knobs of the block you tap. The BFMiDi footswitches stay on the BFMIDI STAGE.",
+      "es": "Con el Modo Amigable en un Kemper (Player o Stage), el ESCENARIO ESPECIAL muestra el rig que está sonando: el nombre, los bloques del rig y los knobs del bloque tocado. Los footswitches de la BFMiDi quedan en el ESCENARIO BFMIDI."
      },
      "shot": "stage-kemper",
      "mockTitle": {
-      "pt": "PALCO ESPECIAL — KEMPER PLAYER",
-      "en": "SPECIAL STAGE — KEMPER PLAYER",
-      "es": "ESCENARIO ESPECIAL — KEMPER PLAYER"
+      "pt": "PALCO ESPECIAL — KEMPER",
+      "en": "SPECIAL STAGE — KEMPER",
+      "es": "ESCENARIO ESPECIAL — KEMPER"
      },
      "fields": [
       {
        "name": {
-        "pt": "O nome do rig",
-        "en": "The rig name",
-        "es": "El nombre del rig"
+        "pt": "O rig",
+        "en": "The rig",
+        "es": "El rig"
        },
        "type": {
         "pt": "letreiro",
@@ -4957,26 +4991,43 @@ const MN_CONTENT = {
         "es": "letrero"
        },
        "desc": {
-        "pt": "<p>Vem do <strong>GET NAMES</strong> do Kemper. Ligue-o em <strong>CONFIGURAÇÕES › MODO AMIGÁVEL › AVANÇADO</strong>, no card do Kemper Player.</p>",
-        "en": "<p>It comes from the Kemper's <strong>GET NAMES</strong>. Turn it on in <strong>SETTINGS › FRIENDLY MODE › ADVANCED</strong>, in the Kemper Player card.</p>",
-        "es": "<p>Viene del <strong>GET NAMES</strong> del Kemper. Actívalo en <strong>CONFIGURACIÓN › MODO AMIGABLE › AVANZADO</strong>, en la tarjeta del Kemper Player.</p>"
+        "pt": "<p>O nome do rig, com o amplificador e o gabinete embaixo, lidos do próprio Kemper pela controladora. Para isso o cabo da controladora fica na porta USB-A do Kemper e o app conversa com a controladora pelo Wi‑Fi. Enquanto essa leitura não existe, aparece o nome do <strong>GET NAMES</strong>, se ele estiver ligado em <strong>CONFIGURAÇÕES › MODO AMIGÁVEL › AVANÇADO</strong>.</p>",
+        "en": "<p>The rig name, with the amp and cab below it, read from the Kemper itself by the controller. For that, the controller cable goes into the Kemper's USB-A port and the app talks to the controller over Wi‑Fi. While there is no reading, the name from <strong>GET NAMES</strong> shows instead, if it is on in <strong>SETTINGS › FRIENDLY MODE › ADVANCED</strong>.</p>",
+        "es": "<p>El nombre del rig, con el amplificador y el gabinete debajo, leídos del propio Kemper por la controladora. Para eso el cable de la controladora va en el puerto USB-A del Kemper y la app habla con la controladora por Wi‑Fi. Mientras no hay lectura, aparece el nombre del <strong>GET NAMES</strong>, si está activado en <strong>CONFIGURACIÓN › MODO AMIGABLE › AVANZADO</strong>.</p>"
        }
       },
       {
        "name": {
-        "pt": "Os stomps",
-        "en": "The stomps",
-        "es": "Los stomps"
+        "pt": "Os blocos do rig",
+        "en": "The rig blocks",
+        "es": "Los bloques del rig"
        },
        "type": {
-        "pt": "footswitches",
-        "en": "footswitches",
-        "es": "footswitches"
+        "pt": "cadeia",
+        "en": "chain",
+        "es": "cadena"
        },
        "desc": {
-        "pt": "<p>Cada footswitch da BFMiDi vira um botão no padrão do Kemper, com ícone e os dois LEDs (estado e categoria). Comandos como Delay, Reverb e Wah ganham a cor da categoria do Kemper; STOMP A a D, EFFECT X e MOD mostram o nome do slot. Tocar liga e desliga, como no PALCO BFMIDI.</p>",
-        "en": "<p>Each BFMiDi footswitch becomes a Kemper-style button, with an icon and the two LEDs (state and category). Commands like Delay, Reverb and Wah get the Kemper category color; STOMP A to D, EFFECT X and MOD show the slot name. Tapping turns it on and off, just like on the BFMIDI STAGE.</p>",
-        "es": "<p>Cada footswitch de la BFMiDi se convierte en un botón al estilo Kemper, con ícono y los dos LEDs (estado y categoría). Comandos como Delay, Reverb y Wah toman el color de la categoría del Kemper; STOMP A a D, EFFECT X y MOD muestran el nombre del slot. Tocar enciende y apaga, como en el ESCENARIO BFMIDI.</p>"
+        "pt": "<p>Os blocos do rig na ordem do Kemper (STOMPS A a D, AMP, EQ, CAB, EFEITOS X e MOD, DLY e REV), cada um com o ícone e a cor do efeito carregado; apagado é desligado. Quantos aparecem depende do <strong>NÍVEL DO PLAYER</strong>, em <strong>CONFIGURAÇÕES › MODO AMIGÁVEL › AVANÇADO</strong>: nos níveis I e II, A, B, AMP, EQ, CAB, DLY e REV; no nível III, também C, D, X e MOD. Com um Kemper Stage aparecem sempre todos. <strong>Tocar</strong> num bloco mostra os knobs dele; <strong>segurar</strong> liga ou desliga o efeito.</p>",
+        "en": "<p>The rig blocks in the Kemper's order (STOMPS A to D, AMP, EQ, CAB, EFFECTS X and MOD, DLY and REV), each with the icon and color of the effect loaded; dimmed means off. How many show up depends on the <strong>PLAYER LEVEL</strong>, in <strong>SETTINGS › FRIENDLY MODE › ADVANCED</strong>: at levels I and II, A, B, AMP, EQ, CAB, DLY and REV; at level III, also C, D, X and MOD. With a Kemper Stage they all show. <strong>Tap</strong> a block to see its knobs; <strong>hold</strong> it to turn the effect on or off.</p>",
+        "es": "<p>Los bloques del rig en el orden del Kemper (STOMPS A a D, AMP, EQ, CAB, EFECTOS X y MOD, DLY y REV), cada uno con el ícono y el color del efecto cargado; apagado significa desactivado. Cuántos aparecen depende del <strong>NIVEL DEL PLAYER</strong>, en <strong>CONFIGURACIÓN › MODO AMIGABLE › AVANZADO</strong>: en los niveles I y II, A, B, AMP, EQ, CAB, DLY y REV; en el nivel III, también C, D, X y MOD. Con un Kemper Stage aparecen siempre todos. <strong>Toca</strong> un bloque para ver sus knobs; <strong>mantenlo</strong> para encender o apagar el efecto.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Os knobs",
+        "en": "The knobs",
+        "es": "Los knobs"
+       },
+       "type": {
+        "pt": "controles",
+        "en": "controls",
+        "es": "controles"
+       },
+       "desc": {
+        "pt": "<p>Os parâmetros do bloco tocado. Arrastar pra cima ou pra baixo muda o Kemper na hora, e o valor aparece no formato do próprio Kemper. A mudança não fica salva sozinha: salve no Kemper (no Player, segure o botão do rig até piscar e aperte de novo; no Stage, botão STORE). Trocar de rig antes disso descarta.</p>",
+        "en": "<p>The parameters of the block you tapped. Dragging up or down changes the Kemper right away, and the value shows in the Kemper's own format. The change is not saved on its own: save it on the Kemper (on the Player, hold the rig button until it blinks and press it again; on the Stage, the STORE button). Changing rig before that discards it.</p>",
+        "es": "<p>Los parámetros del bloque tocado. Arrastrar hacia arriba o hacia abajo cambia el Kemper al instante, y el valor aparece en el formato del propio Kemper. El cambio no se guarda solo: guárdalo en el Kemper (en el Player, mantén el botón del rig hasta que parpadee y púlsalo de nuevo; en el Stage, el botón STORE). Cambiar de rig antes lo descarta.</p>"
        }
       },
       {
@@ -4991,10 +5042,22 @@ const MN_CONTENT = {
         "es": "botón"
        },
        "desc": {
-        "pt": "<p>Abre o editor do Kemper por cima do palco. Os footswitches da controladora continuam funcionando com ele aberto — trocar de preset pelo pé troca o rig no Player e o editor relê.</p>",
-        "en": "<p>Opens the Kemper editor on top of the stage. The controller's footswitches keep working while it's open — changing preset by foot changes the rig on the Player and the editor reloads it.</p>",
-        "es": "<p>Abre el editor del Kemper encima del escenario. Los footswitches de la controladora siguen funcionando con él abierto — cambiar de preset con el pie cambia el rig en el Player y el editor lo vuelve a leer.</p>"
+        "pt": "<p>Abre o editor completo do Kemper por cima do palco; ao fechar, o palco volta a ler o rig. Os footswitches da controladora continuam funcionando — trocar de preset pelo pé troca o rig no Kemper e a tela relê sozinha. Ao lado, a seta circular relê o rig na hora.</p>",
+        "en": "<p>Opens the full Kemper editor on top of the stage; when you close it, the stage reads the rig again. The controller's footswitches keep working — changing preset by foot changes the rig on the Kemper and the screen reloads on its own. Next to it, the circular arrow re-reads the rig right away.</p>",
+        "es": "<p>Abre el editor completo del Kemper encima del escenario; al cerrarlo, el escenario vuelve a leer el rig. Los footswitches de la controladora siguen funcionando — cambiar de preset con el pie cambia el rig en el Kemper y la pantalla lo vuelve a leer sola. Al lado, la flecha circular vuelve a leer el rig al instante.</p>"
        }
+      }
+     ],
+     "notes": [
+      {
+       "pt": "Os layouts do Kemper ficam em CONFIGURAÇÕES do palco › PALCO ESPECIAL: COMPLETO, SÓ A CADEIA, SÓ OS KNOBS (tocar no cartão do bloco passa para o próximo; segurar liga ou desliga) e SÓ O RIG.",
+       "en": "The Kemper layouts are in the stage SETTINGS › SPECIAL STAGE: FULL, CHAIN ONLY, KNOBS ONLY (tap the block card to go to the next one; hold to turn it on or off) and RIG ONLY.",
+       "es": "Los diseños del Kemper están en CONFIGURACIÓN del escenario › ESCENARIO ESPECIAL: COMPLETO, SOLO LA CADENA, SOLO LOS KNOBS (tocar la tarjeta del bloque pasa al siguiente; mantener enciende o apaga) y SOLO EL RIG."
+      },
+      {
+       "pt": "Com o afinador do Kemper aberto pelo pé, a leitura do rig pausa e volta quando ele fecha.",
+       "en": "With the Kemper tuner opened by foot, the rig reading pauses and comes back when it closes.",
+       "es": "Con el afinador del Kemper abierto con el pie, la lectura del rig se pausa y vuelve cuando se cierra."
       }
      ]
     },
@@ -5721,16 +5784,16 @@ const MN_CONTENT = {
         "es": "diseño"
        },
        "desc": {
-        "pt": "<p>Seis jeitos de arrumar o palco do pedal: <strong>COMPLETO</strong> (preset, cadeia de efeitos e knobs), <strong>SÓ A CADEIA</strong> (blocos grandes; segurar liga e desliga), <strong>SÓ OS KNOBS</strong>, <strong>SÓ O PRESET</strong> (o nome em letra gigante) e <strong>CADEIA LATERAL</strong> (a cadeia em coluna e os knobs ao lado — pede tela de tablet ou computador), além de <strong>FAVORITOS</strong> (até oito controles de qualquer bloco, fixos na tela). O <strong>Kemper Player</strong> tem os dele: <strong>RIG + STOMPS</strong>, <strong>SÓ OS STOMPS</strong> e <strong>SÓ O RIG</strong>.</p>",
-        "en": "<p>Six ways to arrange the pedal's stage: <strong>FULL</strong> (preset, effect chain and knobs), <strong>CHAIN ONLY</strong> (big blocks; hold to turn on and off), <strong>KNOBS ONLY</strong>, <strong>PRESET ONLY</strong> (the name in giant letters) and <strong>SIDE CHAIN</strong> (the chain as a column with the knobs beside it — needs a tablet or computer screen), plus <strong>FAVORITES</strong> (up to eight controls from any block, fixed on screen). The <strong>Kemper Player</strong> has its own: <strong>RIG + STOMPS</strong>, <strong>STOMPS ONLY</strong> and <strong>RIG ONLY</strong>.</p>",
-        "es": "<p>Seis formas de organizar el escenario del pedal: <strong>COMPLETO</strong> (preset, cadena de efectos y knobs), <strong>SOLO LA CADENA</strong> (bloques grandes; mantener enciende y apaga), <strong>SOLO LOS KNOBS</strong>, <strong>SOLO EL PRESET</strong> (el nombre en letras gigantes) y <strong>CADENA LATERAL</strong> (la cadena en columna y los knobs al lado — pide pantalla de tablet o computadora), además de <strong>FAVORITOS</strong> (hasta ocho controles de cualquier bloque, fijos en la pantalla). El <strong>Kemper Player</strong> tiene los suyos: <strong>RIG + STOMPS</strong>, <strong>SOLO LOS STOMPS</strong> y <strong>SOLO EL RIG</strong>.</p>"
+        "pt": "<p>Seis jeitos de arrumar o palco do pedal: <strong>COMPLETO</strong> (preset, cadeia de efeitos e knobs), <strong>SÓ A CADEIA</strong> (blocos grandes; segurar liga e desliga), <strong>SÓ OS KNOBS</strong>, <strong>SÓ O PRESET</strong> (o nome em letra gigante) e <strong>CADEIA LATERAL</strong> (a cadeia em coluna e os knobs ao lado — pede tela de tablet ou computador), além de <strong>FAVORITOS</strong> (até oito controles de qualquer bloco, fixos na tela). O <strong>Kemper</strong> tem a escolha dele, com os mesmos <strong>COMPLETO</strong>, <strong>SÓ A CADEIA</strong> e <strong>SÓ OS KNOBS</strong> e mais <strong>SÓ O RIG</strong>.</p>",
+        "en": "<p>Six ways to arrange the pedal's stage: <strong>FULL</strong> (preset, effect chain and knobs), <strong>CHAIN ONLY</strong> (big blocks; hold to turn on and off), <strong>KNOBS ONLY</strong>, <strong>PRESET ONLY</strong> (the name in giant letters) and <strong>SIDE CHAIN</strong> (the chain as a column with the knobs beside it — needs a tablet or computer screen), plus <strong>FAVORITES</strong> (up to eight controls from any block, fixed on screen). The <strong>Kemper</strong> has its own choice, with the same <strong>FULL</strong>, <strong>CHAIN ONLY</strong> and <strong>KNOBS ONLY</strong> plus <strong>RIG ONLY</strong>.</p>",
+        "es": "<p>Seis formas de organizar el escenario del pedal: <strong>COMPLETO</strong> (preset, cadena de efectos y knobs), <strong>SOLO LA CADENA</strong> (bloques grandes; mantener enciende y apaga), <strong>SOLO LOS KNOBS</strong>, <strong>SOLO EL PRESET</strong> (el nombre en letras gigantes) y <strong>CADENA LATERAL</strong> (la cadena en columna y los knobs al lado — pide pantalla de tablet o computadora), además de <strong>FAVORITOS</strong> (hasta ocho controles de cualquier bloque, fijos en la pantalla). El <strong>Kemper</strong> tiene su propia elección, con los mismos <strong>COMPLETO</strong>, <strong>SOLO LA CADENA</strong> y <strong>SOLO LOS KNOBS</strong> y además <strong>SOLO EL RIG</strong>.</p>"
        }
       },
       {
        "name": {
-        "pt": "Modo visual: PADRÃO ou REALISTA",
-        "en": "Visual mode: STANDARD or REALISTIC",
-        "es": "Modo visual: ESTÁNDAR o REALISTA"
+        "pt": "Modo visual: PADRÃO, ALUMÍNIO, VINTAGE ou RACK",
+        "en": "Visual mode: STANDARD, ALUMINUM, VINTAGE or RACK",
+        "es": "Modo visual: ESTÁNDAR, ALUMINIO, VINTAGE o RACK"
        },
        "type": {
         "pt": "visual",
@@ -5738,9 +5801,9 @@ const MN_CONTENT = {
         "es": "visual"
        },
        "desc": {
-        "pt": "<p><strong>REALISTA</strong> troca os knobs e as chaves por imagens de equipamento de verdade, deixa os blocos da cadeia sem moldura e põe uma chapa de metal atrás dos knobs, dos blocos e do nome do preset. Escolha o estilo (<strong>MODERNO</strong> ou <strong>CLÁSSICO</strong>), o knob (<strong>REDONDO</strong> ou <strong>CHICKEN HEAD</strong>) e se quer os <strong>Painéis de metal</strong>. No REALISTA o Estilo dos knobs fica apagado. Nos aplicativos e no site.</p>",
-        "en": "<p><strong>REALISTIC</strong> swaps the knobs and switches for pictures of real gear, leaves the chain blocks without a frame and puts a metal plate behind the knobs, the blocks and the preset name. Choose the style (<strong>MODERN</strong> or <strong>CLASSIC</strong>), the knob (<strong>ROUND</strong> or <strong>CHICKEN HEAD</strong>) and whether you want the <strong>Metal panels</strong>. In REALISTIC, Knob style is greyed out. In the apps and on the website.</p>",
-        "es": "<p><strong>REALISTA</strong> cambia los knobs y los interruptores por imágenes de equipos de verdad, deja los bloques de la cadena sin marco y pone una chapa de metal detrás de los knobs, los bloques y el nombre del preset. Elige el estilo (<strong>MODERNO</strong> o <strong>CLÁSICO</strong>), el knob (<strong>REDONDO</strong> o <strong>CHICKEN HEAD</strong>) y si quieres los <strong>Paneles de metal</strong>. En REALISTA el Estilo de los knobs queda apagado. En las apps y en el sitio.</p>"
+        "pt": "<p>No <strong>PALCO ESPECIAL</strong>, três visuais que imitam aparelho de verdade, feitos só com desenho (sem imagens): <strong>ALUMÍNIO</strong> (pedal boutique: chapa escovada com parafusos, knobs pretos, blocos como pedaizinhos pintados), <strong>VINTAGE</strong> (amplificador: tolex com friso creme, painel dourado, knobs com tampa dourada) e <strong>RACK</strong> (unidade de rack: alumínio preto, display âmbar, knobs com anel de LED, botões de borracha iluminados). Cada um troca os painéis, os knobs, as chaves e os blocos da cadeia. Com um deles o Estilo dos knobs fica apagado; com o alto contraste ligado vale o PADRÃO. O PALCO BFMIDI e o setlist não mudam. Nos aplicativos e no site.</p>",
+        "en": "<p>On the <strong>SPECIAL STAGE</strong>, three looks that imitate real gear, made only with drawing (no pictures): <strong>ALUMINUM</strong> (boutique pedal: brushed plate with screws, black knobs, blocks like little painted pedals), <strong>VINTAGE</strong> (amplifier: tolex with cream piping, gold panel, gold-capped knobs) and <strong>RACK</strong> (rack unit: black aluminum, amber display, knobs with an LED ring, lit rubber buttons). Each one changes the panels, knobs, switches and chain blocks. With one of them, Knob style is greyed out; with high contrast on, STANDARD applies. The BFMIDI STAGE and the setlist do not change. In the apps and on the website.</p>",
+        "es": "<p>En el <strong>ESCENARIO ESPECIAL</strong>, tres aspectos que imitan equipos de verdad, hechos solo con dibujo (sin imágenes): <strong>ALUMINIO</strong> (pedal boutique: chapa cepillada con tornillos, knobs negros, bloques como pedalitos pintados), <strong>VINTAGE</strong> (amplificador: tolex con ribete crema, panel dorado, knobs con tapa dorada) y <strong>RACK</strong> (unidad de rack: aluminio negro, display ámbar, knobs con anillo de LED, botones de goma iluminados). Cada uno cambia los paneles, los knobs, los interruptores y los bloques de la cadena. Con uno de ellos el Estilo de los knobs queda apagado; con el alto contraste activado vale ESTÁNDAR. El ESCENARIO BFMIDI y el setlist no cambian. En las apps y en el sitio.</p>"
        }
       },
       {
@@ -8117,9 +8180,9 @@ const MN_CONTENT = {
        "es": "En la fila <strong>CH 1</strong>, elige tu equipo en la lista (está organizada por marca y tiene búsqueda)."
       },
       {
-       "pt": "Tem mais de um aparelho? Toque em <strong>+ CANAL</strong> e mapeie cada canal.",
-       "en": "Have more than one device? Tap <strong>+ CHANNEL</strong> and map each channel.",
-       "es": "¿Tienes más de un equipo? Toca <strong>+ CANAL</strong> y asigna cada canal."
+       "pt": "Manda MIDI para mais de um aparelho? Toque em <strong>+ ADICIONAR CANAL</strong> e escolha o aparelho de cada canal.",
+       "en": "Sending MIDI to more than one device? Tap <strong>+ ADD CHANNEL</strong> and choose the device on each channel.",
+       "es": "¿Envías MIDI a más de un equipo? Toca <strong>+ AÑADIR CANAL</strong> y elige el equipo de cada canal."
       },
       {
        "pt": "A partir daí, todo seletor de PC e CC do editor mostra os nomes daquele aparelho, conforme o canal do comando.",
@@ -8170,6 +8233,40 @@ const MN_CONTENT = {
       },
       {
        "name": {
+        "pt": "Um canal ou vários",
+        "en": "One channel or several",
+        "es": "Un canal o varios"
+       },
+       "type": {
+        "pt": "frase do topo",
+        "en": "sentence at the top",
+        "es": "frase de arriba"
+       },
+       "desc": {
+        "pt": "<p>A frase logo abaixo do título diz como o editor está trabalhando. Com <strong>um canal em uso</strong> — um aparelho só, ou nenhum (aí vale o canal 1) —, ela diz para onde tudo vai, e o editor <strong>não pergunta o canal</strong> no card PRINCIPAL nem nos footswitches do LIVE: cada comando sai sozinho nesse canal. Com <strong>dois ou mais</strong>, ela diz quantos, e o campo CANAL aparece em cada comando.</p><p>Conta como canal em uso: ter um aparelho, ter o CC no LIVE ligado ou ter sido acrescentado com <strong>+ ADICIONAR CANAL</strong> — mesmo em GLOBAL. Esse é o jeito de dizer “mando MIDI para mais de um equipamento” sem escolher aparelho. <strong>− CANAL</strong> tira a última linha.</p>",
+        "en": "<p>The sentence right below the title tells you how the editor is working. With <strong>one channel in use</strong> — a single device, or none (then channel 1 applies) —, it tells you where everything goes, and the editor <strong>doesn't ask for the channel</strong> on the MAIN card or on the LIVE footswitches: every command goes out on that channel on its own. With <strong>two or more</strong>, it tells you how many, and the CHANNEL field shows up on each command.</p><p>A channel counts as in use when it has a device, has LIVE CC turned on or was added with <strong>+ ADD CHANNEL</strong> — even on GLOBAL. That's how you say “I send MIDI to more than one piece of gear” without choosing a device. <strong>− CHANNEL</strong> removes the last row.</p>",
+        "es": "<p>La frase justo debajo del título dice cómo está trabajando el editor. Con <strong>un canal en uso</strong> — un solo equipo, o ninguno (entonces vale el canal 1) —, dice a dónde va todo, y el editor <strong>no pregunta el canal</strong> en la tarjeta PRINCIPAL ni en los footswitches del LIVE: cada comando sale solo en ese canal. Con <strong>dos o más</strong>, dice cuántos, y el campo CANAL aparece en cada comando.</p><p>Cuenta como canal en uso: tener un equipo, tener el CC en LIVE activado o haber sido añadido con <strong>+ AÑADIR CANAL</strong> — aunque esté en GLOBAL. Es la forma de decir “envío MIDI a más de un equipo” sin elegir aparato. <strong>− CANAL</strong> quita la última fila.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Mover os presets de canal",
+        "en": "Moving presets to another channel",
+        "es": "Mover los presets de canal"
+       },
+       "type": {
+        "pt": "aviso",
+        "en": "notice",
+        "es": "aviso"
+       },
+       "desc": {
+        "pt": "<p>Trocou o aparelho de canal (do CH 1 para o CH 2, por exemplo)? Os presets que já existem continuam mandando no canal antigo, e o card avisa. <strong>MOVER OS PRESETS PARA O CANAL n</strong> abre uma janela que conta quantos envios mudam e, ao confirmar, passa para o canal novo o PC dos presets, os extras e os footswitches de todos os bancos. O pedal de expressão e os footswitches de fora dos presets (SW GLOBAL, externos), se mandavam no canal antigo, vão junto já no toque em MOVER. <strong>AGORA NÃO</strong> deixa tudo como está.</p>",
+        "en": "<p>Moved your device to another channel (from CH 1 to CH 2, for example)? The presets you already have keep sending on the old channel, and the card tells you so. <strong>MOVE PRESETS TO CHANNEL n</strong> opens a window that counts how many messages change and, once you confirm, moves the presets' PC, the extras and the footswitches of every bank to the new channel. The expression pedal and the footswitches outside the presets (SW GLOBAL, external), if they sent on the old channel, move along as soon as you tap MOVE. <strong>NOT NOW</strong> leaves everything as it is.</p>",
+        "es": "<p>¿Cambiaste el equipo de canal (del CH 1 al CH 2, por ejemplo)? Los presets que ya existen siguen enviando en el canal anterior, y la tarjeta lo avisa. <strong>MOVER LOS PRESETS AL CANAL n</strong> abre una ventana que cuenta cuántos envíos cambian y, al confirmar, pasa al canal nuevo el PC de los presets, los extras y los footswitches de todos los bancos. El pedal de expresión y los footswitches fuera de los presets (SW GLOBAL, externos), si enviaban en el canal anterior, van junto ya al tocar MOVER. <strong>AHORA NO</strong> deja todo como está.</p>"
+       }
+      },
+      {
+       "name": {
         "pt": "A lista de aparelhos",
         "en": "The device list",
         "es": "La lista de equipos"
@@ -8214,9 +8311,9 @@ const MN_CONTENT = {
         "es": "interruptor"
        },
        "desc": {
-        "pt": "<p>Esconde dos seletores os números que o aparelho não usa: a lista fica só com o que existe.</p>",
-        "en": "<p>Hides the numbers the device doesn't use from the selectors: the list keeps only what actually exists.</p>",
-        "es": "<p>Oculta de los selectores los números que el equipo no usa: la lista queda solo con lo que existe.</p>"
+        "pt": "<p>Esconde dos seletores os números que o aparelho não usa: a lista fica só com o que existe. Sem aparelho escolhido em canal nenhum, fica inativo: não há nomes para mostrar.</p>",
+        "en": "<p>Hides the numbers the device doesn't use from the selectors: the list keeps only what actually exists. With no device chosen on any channel, it stays inactive: there are no names to show.</p>",
+        "es": "<p>Oculta de los selectores los números que el equipo no usa: la lista queda solo con lo que existe. Sin equipo elegido en ningún canal, queda inactivo: no hay nombres que mostrar.</p>"
        }
       }
      ],
@@ -8617,9 +8714,9 @@ const MN_CONTENT = {
        "es": "En <strong>FOOTSWITCHES › EXTERNOS</strong>, toca <strong>EDITAR</strong> en la tarjeta <strong>EXPRESIÓN EXTERNA</strong>. Cerrada, la tarjeta ya dice en una frase adónde envía el pedal y muestra el valor en vivo."
       },
       {
-       "pt": "Passo <strong>1 Ligar</strong>: ligue o pedal e salve — só depois de salvar a BFMiDi começa a ler. Passo <strong>2 Para onde vai</strong>: escolha primeiro o aparelho (o canal) e depois o parâmetro (volume, wah, mix do delay…).",
-       "en": "Step <strong>1 Turn on</strong>: turn the pedal on and save — the BFMiDi only starts reading after you save. Step <strong>2 Where it goes</strong>: choose the device (the channel) first and then the parameter (volume, wah, delay mix…).",
-       "es": "Paso <strong>1 Encender</strong>: enciende el pedal y guarda — la BFMiDi solo empieza a leer después de guardar. Paso <strong>2 Adónde va</strong>: elige primero el equipo (el canal) y después el parámetro (volumen, wah, mix del delay…)."
+       "pt": "Passo <strong>1 Ligar</strong>: ligue o pedal e salve — só depois de salvar a BFMiDi começa a ler. Passo <strong>2 Para onde vai</strong>: escolha o parâmetro (volume, wah, mix do delay…). Quando você usa um canal só, o card já sabe o aparelho; com mais de um aparelho, escolha antes o aparelho (o canal).",
+       "en": "Step <strong>1 Turn on</strong>: turn the pedal on and save — the BFMiDi only starts reading after you save. Step <strong>2 Where it goes</strong>: choose the parameter (volume, wah, delay mix…). When you use a single channel, the card already knows the device; with more than one device, choose the device (the channel) first.",
+       "es": "Paso <strong>1 Encender</strong>: enciende el pedal y guarda — la BFMiDi solo empieza a leer después de guardar. Paso <strong>2 Adónde va</strong>: elige el parámetro (volumen, wah, mix del delay…). Cuando usas un solo canal, la tarjeta ya sabe el equipo; con más de un equipo, elige antes el equipo (el canal)."
       },
       {
        "pt": "Passo <strong>3 CALIBRAÇÃO</strong>: recolha o pedal e toque em <strong>GRAVAR CALCANHAR</strong>; pise até o fim e toque em <strong>GRAVAR PONTA</strong>. O passo da vez fica destacado.",
@@ -8649,6 +8746,23 @@ const MN_CONTENT = {
         "pt": "<p>O card diz o que falta, sempre à vista: <strong>SALVE PARA LER</strong> (ligou e ainda não salvou), <strong>SEM LEITURA</strong> (a BFMiDi não está lendo o pedal: confira o cabo na entrada EXP) e, antes de calibrar, até onde o seu pedal vai de verdade — por exemplo “Seu pedal vai de 6 a 120” —, para você saber que vale a pena calibrar.</p>",
         "en": "<p>The card tells you what’s missing, always in view: <strong>SAVE TO READ</strong> (you turned it on and haven’t saved yet), <strong>NO READING</strong> (the BFMiDi isn’t reading the pedal: check the cable in the EXP input) and, before calibration, how far your pedal really goes — for example “Your pedal goes from 6 to 120” — so you know it’s worth calibrating.</p>",
         "es": "<p>La tarjeta dice lo que falta, siempre a la vista: <strong>GUARDA PARA LEER</strong> (lo encendiste y aún no guardaste), <strong>SIN LECTURA</strong> (la BFMiDi no está leyendo el pedal: revisa el cable en la entrada EXP) y, antes de calibrar, hasta dónde llega tu pedal de verdad — por ejemplo “Tu pedal va de 6 a 120” —, para que sepas que vale la pena calibrar.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "O canal do pedal",
+        "en": "The pedal's channel",
+        "es": "El canal del pedal"
+       },
+       "type": {
+        "pt": "aviso",
+        "en": "notice",
+        "es": "aviso"
+       },
+       "desc": {
+        "pt": "<p>Quando você usa um canal só (veja o MODO AMIGÁVEL), o campo do aparelho não aparece: o pedal manda nesse canal, e o card diz <strong>Vai para: …</strong> com o nome do aparelho. Se o pedal estiver gravado em outro canal, o campo volta e o card avisa no topo, mesmo fechado, com <strong>USAR O CANAL n</strong> (traz o pedal para o seu canal) e <strong>ADICIONAR O CANAL n</strong> (passa a usar os dois). O editor nunca troca esse canal sozinho.</p>",
+        "en": "<p>When you use a single channel (see FRIENDLY MODE), the device field doesn't show: the pedal sends on that channel, and the card says <strong>Goes to: …</strong> with the device's name. If the pedal is saved on another channel, the field comes back and the card warns at the top, even when closed, with <strong>USE CHANNEL n</strong> (brings the pedal to your channel) and <strong>ADD CHANNEL n</strong> (you start using both). The editor never changes this channel on its own.</p>",
+        "es": "<p>Cuando usas un solo canal (mira el MODO AMIGABLE), el campo del equipo no aparece: el pedal envía en ese canal, y la tarjeta dice <strong>Va a: …</strong> con el nombre del equipo. Si el pedal está grabado en otro canal, el campo vuelve y la tarjeta avisa arriba, incluso cerrada, con <strong>USAR EL CANAL n</strong> (trae el pedal a tu canal) y <strong>AGREGAR EL CANAL n</strong> (pasas a usar los dos). El editor nunca cambia este canal solo.</p>"
        }
       },
       {
@@ -8929,9 +9043,9 @@ const MN_CONTENT = {
         "es": "PANTALLA"
        },
        "desc": {
-        "pt": "<p>Por quanto tempo o card de BPM fica na tela ao bater o tap tempo (<strong>OFF</strong>, 2, 5 ou 10 s) e se o número é o <strong>ABSOLUTO</strong> (dois últimos toques) ou o <strong>MÉDIO</strong> (média da sequência). OFF só esconde o card; o tempo continua valendo.</p>",
-        "en": "<p>How long the BPM card stays on screen when you tap the tempo (<strong>OFF</strong>, 2, 5 or 10 s) and whether the number is the <strong>ABSOLUTE</strong> (last two taps) or the <strong>AVERAGE</strong> (average of the sequence). OFF only hides the card; the tempo still applies.</p>",
-        "es": "<p>Cuánto tiempo queda la tarjeta de BPM en pantalla al marcar el tap tempo (<strong>OFF</strong>, 2, 5 o 10 s) y si el número es el <strong>ABSOLUTO</strong> (los dos últimos toques) o el <strong>PROMEDIO</strong> (promedio de la secuencia). OFF solo oculta la tarjeta; el tempo sigue valiendo.</p>"
+        "pt": "<p>Por quanto tempo o card de BPM fica na tela ao bater o tap tempo (<strong>OFF</strong>, 2, 5 ou 10 s) e se o número é o <strong>ABSOLUTO</strong> (dois últimos toques) ou o <strong>MÉDIO</strong> (média da sequência). OFF só esconde o card; o tempo continua valendo. O <strong>AJUSTE FINO</strong> soma de −5 a +5 BPM ao tempo batido, pra o número da BFMiDi bater com o do pedal: se você bate 80 e o pedal mostra 81, coloque +1. Vale também para o tempo que o editor mostra e para os modos sincronizados; o MIDI do tap não muda.</p>",
+        "en": "<p>How long the BPM card stays on screen when you tap the tempo (<strong>OFF</strong>, 2, 5 or 10 s) and whether the number is the <strong>ABSOLUTE</strong> (last two taps) or the <strong>AVERAGE</strong> (average of the sequence). OFF only hides the card; the tempo still applies. <strong>FINE TUNE</strong> adds −5 to +5 BPM to the tapped tempo, so the BFMiDi number matches the pedal: if you tap 80 and the pedal shows 81, set +1. It also applies to the tempo the editor shows and to the synced modes; the tap MIDI does not change.</p>",
+        "es": "<p>Cuánto tiempo queda la tarjeta de BPM en pantalla al marcar el tap tempo (<strong>OFF</strong>, 2, 5 o 10 s) y si el número es el <strong>ABSOLUTO</strong> (los dos últimos toques) o el <strong>PROMEDIO</strong> (promedio de la secuencia). OFF solo oculta la tarjeta; el tempo sigue valiendo. El <strong>AJUSTE FINO</strong> suma de −5 a +5 BPM al tempo marcado, para que el número de la BFMiDi coincida con el del pedal: si marcas 80 y el pedal muestra 81, pon +1. También vale para el tempo que muestra el editor y para los modos sincronizados; el MIDI del tap no cambia.</p>"
        }
       },
       {
@@ -9483,9 +9597,9 @@ const MN_CONTENT = {
         "es": "pestaña APARATOS"
        },
        "desc": {
-        "pt": "<p>Fabricante, produto, porta do hub, ID USB, status e o <strong>canal</strong> que aquele aparelho escuta. Cada TONEX ONE tem o seu canal; os pedais MIDI comuns dividem um filtro. GP-5, TONEX ONE e Nano Cortex ganham o botão <strong>EDITAR PRESET</strong>.</p>",
-        "en": "<p>Manufacturer, product, hub port, USB ID, status and the <strong>channel</strong> that device listens on. Each TONEX ONE has its own channel; regular MIDI pedals share one filter. GP-5, TONEX ONE and Nano Cortex get the <strong>EDIT PRESET</strong> button.</p>",
-        "es": "<p>Fabricante, producto, puerto del hub, ID USB, estado y el <strong>canal</strong> que escucha ese equipo. Cada TONEX ONE tiene su propio canal; los pedales MIDI comunes comparten un filtro. GP-5, TONEX ONE y Nano Cortex tienen el botón <strong>EDITAR PRESET</strong>.</p>"
+        "pt": "<p>Fabricante, produto, porta do hub, ID USB, status e o <strong>canal</strong> que aquele aparelho escuta. Cada TONEX ONE tem o seu canal; os pedais MIDI comuns dividem um filtro. GP-5, TONEX ONE e Nano Cortex ganham o botão <strong>EDITAR PRESET</strong>.</p><p>Se o filtro deixa passar só um canal e o aparelho está em outro no Modo Amigável (ou os seus comandos saem em outro), o card avisa que nada chega a ele e oferece <strong>AJUSTAR O FILTRO PARA O CANAL n</strong>.</p>",
+        "en": "<p>Manufacturer, product, hub port, USB ID, status and the <strong>channel</strong> that device listens on. Each TONEX ONE has its own channel; regular MIDI pedals share one filter. GP-5, TONEX ONE and Nano Cortex get the <strong>EDIT PRESET</strong> button.</p><p>If the filter only lets one channel through and the device is on another one in Friendly Mode (or your commands go out on another one), the card warns that nothing reaches it and offers <strong>SET THE FILTER TO CHANNEL n</strong>.</p>",
+        "es": "<p>Fabricante, producto, puerto del hub, ID USB, estado y el <strong>canal</strong> que escucha ese equipo. Cada TONEX ONE tiene su propio canal; los pedales MIDI comunes comparten un filtro. GP-5, TONEX ONE y Nano Cortex tienen el botón <strong>EDITAR PRESET</strong>.</p><p>Si el filtro deja pasar un solo canal y el equipo está en otro en el Modo Amigable (o tus comandos salen en otro), la tarjeta avisa que no le llega nada y ofrece <strong>AJUSTAR EL FILTRO AL CANAL n</strong>.</p>"
        }
       },
       {

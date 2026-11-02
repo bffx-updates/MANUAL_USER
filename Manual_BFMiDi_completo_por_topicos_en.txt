@@ -50,7 +50,7 @@ CONTENTS
    7.3. The control bar
    7.4. SPECIAL STAGE — the dedicated pedal
    7.5. SPECIAL STAGE with the Nano Cortex
-   7.6. SPECIAL STAGE with the Kemper Player
+   7.6. SPECIAL STAGE with the Kemper
    7.7. SPECIAL STAGE favorites
    7.8. Stage settings — GENERAL
    7.9. Stage settings — VISUAL
@@ -338,8 +338,8 @@ Purpose: Choose the preset, say which sound it calls, give it a name and step on
 How to:
 1. On the console, on the left, tap the A1 readout to choose the bank and one of the keys 1 to 6 to
    choose the preset. The controller follows along.
-2. On the MAIN card, choose the PC (the sound on your effects unit) and check the CHANNEL. If in
-   doubt, channel 1.
+2. On the MAIN card, choose the PC (the sound on your effects unit). With a single device, the
+   editor already knows the channel; with more than one, the CHANNEL field shows up too.
 3. Type the name in the name pill, right below the keys — it's what shows on the controller's
    display.
 4. Step on the preset's footswitch: your effects unit jumps to the chosen sound.
@@ -351,10 +351,13 @@ Fields and items:
              Above 127, the BFMiDi also sends the Bank Select each device expects — you just choose
              the sound.
 - CHANNEL (selection)
-  Description: The MIDI channel is “which device listens”. Most come set to channel 1. With more
-             than one device in the chain, each one goes on its own channel.
-             OFF means the preset doesn't send any PC — useful when it's only there to set up LIVE
-             mode.
+  Description: The MIDI channel is “which device listens”. With a single device in Friendly Mode (or
+             none — then channel 1 applies, which is where most devices come set from the factory),
+             the editor uses that channel on its own and the CHANNEL field doesn't even show up:
+             instead, the Goes to line tells you the device and the channel. With more than one
+             device in the chain, each one goes on its own channel and the field appears.
+             To keep the preset from sending any PC, pick NONE at the top of the PC list (with the
+             CHANNEL field visible, that's OFF) — useful when it's only there to set up LIVE mode.
 - Preset name (text)
   Description: Up to 16 characters. It works as a label for the controller's display; your effects
              unit doesn't see this name. Usually it's the song's name.
@@ -527,21 +530,23 @@ Fields and items:
 5.5. The MAIN card
 ~~~~~~~~~~~~~~~~~~
 Related screen/preview: MAIN CARD
-Purpose: What the preset sends when it's called up — PC, channel and extra messages — and the row of
-          shortcuts to the rest of the editor.
+Purpose: What the preset sends when it's called up — the PC and the extra messages (and the channel,
+          when you use more than one device) — and the row of shortcuts to the rest of the editor.
 Fields and items:
 - PC (selection)
   Description: The sound your multi-effects unit loads when the preset is called up. It goes up to
              600: above 127 the BFMiDi also sends Bank Select in the format of the device chosen in
              Friendly Mode.
-- CHANNEL (selection)
-  Description: The MIDI channel of the device that receives the PC: the field shows the number, or
-             the device’s name when the channel is in Friendly Mode. OFF = the preset sends no PC,
-             and the card says so right below.
+             With a single device, the top of the list has NONE: the preset sends no PC.
+- GOES TO (note)
+  Description: With a single device in Friendly Mode, the editor uses that device's channel on its
+             own: the CHANNEL field doesn't show up and this line tells you where the PC goes — for
+             example Goes to: Valeton GP-5 (channel 1). With no device chosen, everything goes on
+             channel 1 and the line doesn't show up.
 - EXTRAS (button)
   Description: Each tap adds an extra message that goes out together with the PC (it starts as a PC
-             on channel 1). Once there is at least one extra, the list shows up below CHANNEL. See
-             the next card.
+             on the preset's own channel). Once there is at least one extra, the list shows up right
+             below. See the next card.
 - STAGE MODE (shortcut)
   Description: Always the first in the row: opens the full-screen stage view. It has its own topic
              in this manual.
@@ -551,12 +556,22 @@ Fields and items:
              color appears that opens its preset editor. These buttons don't take the place of your
              shortcuts.
 - Your shortcuts (shortcuts)
-  Description: Buttons for the settings screens you use most. You choose which ones appear in
-             SETTINGS › EDITOR › SHORTCUTS. On a computer the shortcut opens the settings in the
-             third column, next to the preset; on a phone it takes you to the settings screen.
+  Description: Buttons for the settings screens you use most — only in the editor opened from the
+             controller (in the apps and on the website, the row has STAGE MODE and the device
+             editors). You choose which ones appear in SETTINGS › EDITOR › SHORTCUTS. On a computer
+             the shortcut opens the settings in the third column, next to the preset; on a phone it
+             takes you to the settings screen.
+- CHANNEL (selection)
+  Description: Only shows up when Friendly Mode has more than one channel in use (two devices, or a
+             channel added with + ADD CHANNEL). The field shows the number, or the device’s name
+             when the channel is in Friendly Mode. OFF = the preset sends no PC, and the card says
+             so right below.
+             An older preset that sends its PC on a channel outside Friendly Mode also shows the
+             field, with a warning and two buttons: USE CHANNEL n moves the preset to your channel;
+             ADD CHANNEL n starts using both.
 Notes:
-- At the top of the card, a sentence sums up what goes out when the preset is called: the PC on the
-   chosen channel and, right after, the extras in list order.
+- At the top of the card, a sentence sums up what goes out when the preset is called: the PC and,
+   right after, the extras in list order.
 - Shortcuts only appear in PRESET mode. In LIVE mode the middle card is the footswitch card.
 
 5.6. Extra messages
@@ -565,7 +580,8 @@ Related screen/preview: EXTRA MESSAGES OPEN
 Purpose: Besides the main PC, the preset can send up to 12 more messages when it's called up —
           that's how you set up the whole scene in one tap.
 How to:
-1. Tap EXTRAS, next to CHANNEL: each tap adds a line, which starts as a PC on channel 1.
+1. Tap EXTRAS, next to the PC (or to CHANNEL, when it shows up): each tap adds a line, which starts
+   as a PC on the preset's own channel.
 2. On each line, the round button next to the number switches between PC and CC.
 3. Choose the number, value (for a CC) and channel of each line.
 Fields and items:
@@ -573,6 +589,8 @@ Fields and items:
   Description: Each row is a PC or a CC, with its own channel. Change the sound on your
              multi-effects unit, turn on the delay, set the volume of another device and change the
              mixer scene — all in the same preset.
+             Extras always show their channel, even when the card hides the PC's: they are often
+             there precisely to talk to another device.
 - EXP value — the expression pedal in this preset (special value)
   Description: On boards with an expression input, the value list of a CC row ends with EXP (PEDAL
              DE EXPRESSÃO) (expression pedal). That row doesn't send MIDI: it tells the expression
@@ -738,10 +756,20 @@ Fields and items:
 - No channel, no icon (pedal screen)
   Description: A footswitch whose function has no MIDI channel doesn't show up on the controller's
              screen (or in the editor preview). That's why, with the factory pack — footswitches in
-             STOMP with the channel OFF — the LIVE screen starts out empty: it fills in as you give
-             the footswitches a channel.
+             STOMP with no channel — the LIVE screen starts out empty: it fills in as you choose the
+             commands.
              The exceptions are FAVORITE, which navigates instead of sending MIDI, and MUTE (only in
              older presets), which never shows up.
+- The commands' CHANNEL (channel)
+  Description: With a single device in Friendly Mode (or none, and then channel 1 applies), the mode
+             editors don't show the CHANNEL field: choosing the command already sends it on that
+             device's channel, and NONE, at the top of the command list, leaves the gesture with no
+             function. With two or more channels in use, the CHANNEL field shows up on each command.
+             If a footswitch sends on a channel that isn't in Friendly Mode (from an older preset,
+             for example), that command's field shows up and the card warns at the top, with USE
+             CHANNEL n (moves everything to your channel) and ADD CHANNEL n (starts using both). The
+             same goes for the SW GLOBAL and External SW cards and for the editor that opens when
+             you hold a footswitch in STAGE MODE.
 Notes:
 - Setting up LIVE is optional: a preset that just calls up the sound is already useful and ready to
    play.
@@ -773,8 +801,9 @@ Fields and items:
              STOMP, STOMP is just as you left it.
 - What about MUTE? (detail)
   Description: MUTE is no longer on the list. To leave a footswitch with no function, use any mode
-             with the CHANNEL set to OFF: it sends no MIDI and disappears from the controller's
-             screen. New footswitches already start that way, in STOMP with the channel OFF.
+             with NONE in the command list (or the CHANNEL set to OFF, when the CHANNEL field shows
+             up): it sends no MIDI and disappears from the controller's screen. New footswitches
+             already start that way, in STOMP with no channel.
 Notes:
 - STEPS is only for the preset's footswitches. SW GLOBAL uses all the others except CONTROL; the
    external footswitches use all the others, CONTROL included.
@@ -785,7 +814,7 @@ Related screen/preview: SW — STOMP MODE
 Purpose: The classic mode: your foot turns an effect on and off, like a real pedal. A single STOMP
           can have up to three sections, each on a different foot gesture.
 How to:
-1. On the TAP tab, choose the effect's CC and CHANNEL.
+1. On the TAP tab, choose the effect's CC (and the CHANNEL, when you use more than one device).
 2. Want more functions on the same footswitch? Also set up HOLD and PRESS AGAIN.
 3. Set the LED color and the behavior in the options strip below.
 Fields and items:
@@ -795,15 +824,18 @@ Fields and items:
              three sections = two or three effects on the same footswitch.
              With PRESS AGAIN filled in, the tap waits a moment (about a third of a second) to see
              whether a second press is coming.
-             Below the tabs, a notice shows when a gesture has no channel yet and so sends nothing.
-             On TAP, with no channel, the footswitch’s icon disappears from the pedal screen.
-- CC or PC (round button)
-  Description: The round button next to the number switches the message type: CC (the usual choice
-             for turning effects on and off) or PC (to call up a sound). With Friendly Mode, the
-             list shows the name of each command.
-- CUSTOM — your own values (round button)
-  Description: Normally, on sends 127 and off sends 0. The controls button next to CHANNEL opens
-             CUSTOM VALUES so you can pick other values — see the next card.
+             The gestures sit in the Gestures box, one large block for each (the chosen one lights
+             up in blue). Below it, a notice shows when a gesture has no command yet and so sends
+             nothing. On TAP, with no channel, the footswitch’s icon disappears from the pedal
+             screen.
+- CHANGE COMMAND — CC or PC (round button)
+  Description: The CHANGE COMMAND button, in the row right below the command, switches the message
+             type (the green tag on the field shows which one is in use): CC (the usual choice for
+             turning effects on and off) or PC (to call up a sound). With Friendly Mode, the list
+             shows the name of each command.
+- ADJUST — your own values (round button)
+  Description: Normally, on sends 127 and off sends 0. The ADJUST button, in the row right below the
+             command, opens CUSTOM VALUES so you can pick other values — see the next card.
 - FAVORITE (round button)
   Description: The star turns the section into a shortcut: instead of sending MIDI, stepping on it
              takes you to another bank and preset, landing in PRESET or LIVE mode (and, in LIVE, on
@@ -831,7 +863,7 @@ Related screen/preview: CUSTOM VALUES
 Purpose: For devices that don't use 127 for on and 0 for off. Each value has a field, a percentage
           and a slider — all three change the same number.
 How to:
-1. Tap the controls button next to CHANNEL.
+1. Tap ADJUST, in the row right below the command.
 2. Set VALUE OFF (top) and VALUE ON (bottom) by typing, dragging the slider or dragging the number
    itself.
 Fields and items:
@@ -846,15 +878,15 @@ Related screen/preview: SW — TAP TEMPO MODE
 Purpose: You tap the song's tempo with your foot and the controller sends it to the delay — or to up
           to three targets.
 How to:
-1. Choose your device's tap CC and the channel. ADD TAP adds up to three targets.
+1. Choose your device's tap CC. ADD TAP adds up to three targets.
 2. For each one, choose MODE 1 (sends CC + 127) or MODE 2 (CC + 127 followed by CC + 0) — it depends
    on what your device expects.
 3. Tap the tempo with your foot in time with the song. The LED blinks at the tapped tempo.
 Fields and items:
 - LONG PRESS (gesture)
   Description: Holding the footswitch can send another command, with its own CC, channel and values
-             — for example, turning on the tuner. With no channel on LONG PRESS, holding doesn't
-             change the icon on the screen.
+             — for example, turning on the tuner. With no command on HOLD (NONE, or channel OFF),
+             holding doesn't change the icon on the screen.
 - BPM on the screen (visual)
   Description: When you tap the tempo, the controller shows the BPM on a temporary card. How long it
              stays up, and whether it shows the average or the last two taps, is set in SETTINGS ›
@@ -871,7 +903,7 @@ Purpose: Each gesture always sends the same thing. No on/off — it's a pure com
           to four messages per gesture.
 How to:
 1. Choose the gesture tab: TAP, HOLD or PRESS AGAIN (two quick taps).
-2. Fill in up to four slots, each one CC or PC, with a value and a channel.
+2. Fill in up to four slots, each one CC or PC, with its value.
 Fields and items:
 - When to use it (use)
   Description: For commands that don't have two states: calling up a scene, firing a sample,
@@ -888,7 +920,7 @@ Related screen/preview: SW — MOMENTARY MODE
 Purpose: On when you press, off when you let go: it's a doorbell button, not a switch. Up to four
           messages per press.
 How to:
-1. Fill in up to four slots with CC and channel; use custom values if the device doesn't use 127/0.
+1. Fill in up to four slots with a CC each; use custom values if the device doesn't use 127/0.
 2. If you like, adjust the LED behavior in LATCH and LED fade.
 Fields and items:
 - What it's for (use)
@@ -926,8 +958,7 @@ Related screen/preview: SW — SPIN MODE
 Purpose: Each press moves on to the next of three values, in a cycle. The LED ring shows which one
           you're on.
 How to:
-1. Choose the CC and channel and set the three values. Up to three slots send together on each
-   press.
+1. Choose the CC and set the three values. Up to three slots send together on each press.
 2. If you like, use LONG PRESS to send a different command when you hold the footswitch down.
 Fields and items:
 - The three states (cycle)
@@ -965,7 +996,7 @@ Related screen/preview: SW — STEPS MODE
 Purpose: When it's on, the footswitch steps through four values on the same CC, in a loop, by itself
           — as if you were turning a knob in time with the song.
 How to:
-1. In SEQUENCE, choose the CC and channel and fill in the four values.
+1. In SEQUENCE, choose the CC and fill in the four values.
 2. Choose the timing: MS (a time in milliseconds per step) or IN TIME (a note value per step, based
    on the beat).
 3. If you like, fill in TURN EFFECT ON: a second CC that gets ON when the sequence starts and OFF
@@ -996,7 +1027,7 @@ Related screen/preview: SW — CONTROL MODE
 Purpose: One click alternates between two targets: the one coming in gets 127, the one going out
           gets 0. They're never both on or both off.
 How to:
-1. On the FX 1 tab, choose the CC, the channel and the LED color for the first target.
+1. On the FX 1 tab, choose the CC and the LED color for the first target.
 2. On the FX 2 tab, do the same for the second one.
 3. In STARTS ON, choose which of the two is active when the preset is called.
 Fields and items:
@@ -1053,7 +1084,7 @@ Purpose: A spring-loaded switch: pressing sends the ACTION value and releasing s
           value, to a single target (CC or PC). For a solo boost while your foot is down, a freeze,
           a kill switch.
 How to:
-1. Choose the channel and the CC (or switch to PC with the disc next to it).
+1. Choose the CC (or switch to PC with CHANGE COMMAND, right below).
 2. In Values, set Rest (sent on release) and Action (sent on press).
 3. Pick the LED color: it lights while your foot is down.
 Fields and items:
@@ -1080,7 +1111,7 @@ Related screen/preview: SW — ONDA MODE
 Purpose: While it's on, the wave sends the CC by itself between MINIMUM and MAXIMUM, in the shape
           you choose — automatic tremolo, filter or pan in time with the music.
 How to:
-1. Choose the channel and the CC the wave will move.
+1. Choose the CC the wave will move.
 2. Tap a Shape: Sine, Triangle, Square, Saw ↑, Saw ↓, Random, Smooth or Pulse.
 3. Set the Minimum and Maximum.
 4. In Speed, choose IN TIME (the cycle lasts a musical note value) or MS (a fixed time).
@@ -1112,10 +1143,10 @@ Purpose: MUTE no longer appears in the list of modes. A footswitch that was alre
           that way — no MIDI, no LED and no icon on the screen — until you pick another mode.
 Fields and items:
 - How to leave a footswitch with no function (use)
-  Description: Use any mode with the CHANNEL set to OFF. The result is the same as MUTE — the foot
-             sends nothing and disappears from the controller's screen — but the footswitch is ready
-             to get a function whenever you want. That's how new footswitches already come: STOMP
-             with the channel OFF.
+  Description: Use any mode with NONE in the command list (or the CHANNEL set to OFF, when the
+             CHANNEL field shows up). The result is the same as MUTE — the foot sends nothing and
+             disappears from the controller's screen — but the footswitch is ready to get a function
+             whenever you want. That's how new footswitches already come: STOMP with no channel.
 
 6.17. How each footswitch looks
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1156,8 +1187,8 @@ Introduction: STAGE MODE turns the editor into a panel for the show. There are t
         BFMIDI STAGE shows the BFMiDi — the preset name in huge letters, the background image and
         the footswitches, which you can turn on and off with your finger — and the SPECIAL STAGE
         shows the dedicated pedal plugged into the controller — the effect chain and the knobs of
-        the GP-5, the TONEX ONE or the Nano Cortex, editable live — and the SETLIST shows the song
-        of the show, its parts and the chords or notes of each one.
+        the GP-5, the TONEX ONE, the Nano Cortex or the Kemper rig, editable live — and the SETLIST
+        shows the song of the show, its parts and the chords or notes of each one.
         Stage Mode exists in the BFMiDi apps (Android, iPhone/iPad, Mac and Windows) and in the
         website editor, installed as an icon or not. The only place it does not appear is the editor
         opened from the controller itself (http://192.168.4.1 or http://bfmidi.local). On the
@@ -1204,7 +1235,9 @@ Fields and items:
 - The top handle (hidden bar)
   Description: The control bar stays hidden so it doesn't take up space. Tap the handle at the top —
              or any empty area of the screen — to show it. It hides again on its own after a few
-             seconds.
+             seconds. To go straight to the stage settings, tap the gear in the right corner (on the
+             BFMIDI STAGE and the SPECIAL STAGE; it hides while the bar is open and while the touch
+             lock is closed).
 Notes:
 - Turning footswitches on and off from the stage requires an up-to-date controller. With older
    firmware the icon shows “Update the controller to use this”.
@@ -1233,7 +1266,8 @@ Fields and items:
              With Trigger footswitch from the screen set to HOLD, holding already belongs to the
              footswitch and this option is greyed out.
 Notes:
-- On the Kemper stage, holding a stomp opens the same panel.
+- On the Kemper SPECIAL STAGE the blocks are the rig's, not the footswitches: there, holding a block
+   turns the effect on or off.
 
 7.3. The control bar
 ~~~~~~~~~~~~~~~~~~~~
@@ -1250,8 +1284,8 @@ Fields and items:
 - PRESET A1 (info)
   Description: The bank and preset currently playing on the controller.
 - SETTINGS (button)
-  Description: Opens the stage settings, in a side panel with six categories. See the following
-             cards.
+  Description: Opens the stage settings, in a side panel with six categories. The gear in the right
+             corner of the stage does the same without opening the bar. See the following cards.
 - Connection, BPM and clock (status)
   Description: How you're connected (STA, AP or USB), the BPM of the last TAP TEMPO tapped on the
              BFMiDi and, if you turn it on, the clock. With no pedal, the connection turns into the
@@ -1318,24 +1352,39 @@ Fields and items:
              turned on by foot or on the Nano itself. CLOSE (or ESC) turns the tuner off. Requires
              an updated controller.
 
-7.6. SPECIAL STAGE with the Kemper Player
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Related screen/preview: SPECIAL STAGE — KEMPER PLAYER
-Purpose: With Friendly Mode set to KEMPER PLAYER, the SPECIAL STAGE shows the rig name in big
-          letters and the BFMiDi footswitches as Kemper stomp buttons.
+7.6. SPECIAL STAGE with the Kemper
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Related screen/preview: SPECIAL STAGE — KEMPER
+Purpose: With Friendly Mode set to a Kemper (Player or Stage), the SPECIAL STAGE shows the rig that
+          is playing: its name, the rig's blocks and the knobs of the block you tap. The BFMiDi
+          footswitches stay on the BFMIDI STAGE.
 Fields and items:
-- The rig name (marquee)
-  Description: It comes from the Kemper's GET NAMES. Turn it on in SETTINGS › FRIENDLY MODE ›
-             ADVANCED, in the Kemper Player card.
-- The stomps (footswitches)
-  Description: Each BFMiDi footswitch becomes a Kemper-style button, with an icon and the two LEDs
-             (state and category). Commands like Delay, Reverb and Wah get the Kemper category
-             color; STOMP A to D, EFFECT X and MOD show the slot name. Tapping turns it on and off,
-             just like on the BFMIDI STAGE.
+- The rig (marquee)
+  Description: The rig name, with the amp and cab below it, read from the Kemper itself by the
+             controller. For that, the controller cable goes into the Kemper's USB-A port and the
+             app talks to the controller over Wi‑Fi. While there is no reading, the name from GET
+             NAMES shows instead, if it is on in SETTINGS › FRIENDLY MODE › ADVANCED.
+- The rig blocks (chain)
+  Description: The rig blocks in the Kemper's order (STOMPS A to D, AMP, EQ, CAB, EFFECTS X and MOD,
+             DLY and REV), each with the icon and color of the effect loaded; dimmed means off. How
+             many show up depends on the PLAYER LEVEL, in SETTINGS › FRIENDLY MODE › ADVANCED: at
+             levels I and II, A, B, AMP, EQ, CAB, DLY and REV; at level III, also C, D, X and MOD.
+             With a Kemper Stage they all show. Tap a block to see its knobs; hold it to turn the
+             effect on or off.
+- The knobs (controls)
+  Description: The parameters of the block you tapped. Dragging up or down changes the Kemper right
+             away, and the value shows in the Kemper's own format. The change is not saved on its
+             own: save it on the Kemper (on the Player, hold the rig button until it blinks and
+             press it again; on the Stage, the STORE button). Changing rig before that discards it.
 - EDIT RIG (button)
-  Description: Opens the Kemper editor on top of the stage. The controller's footswitches keep
-             working while it's open — changing preset by foot changes the rig on the Player and the
-             editor reloads it.
+  Description: Opens the full Kemper editor on top of the stage; when you close it, the stage reads
+             the rig again. The controller's footswitches keep working — changing preset by foot
+             changes the rig on the Kemper and the screen reloads on its own. Next to it, the
+             circular arrow re-reads the rig right away.
+Notes:
+- The Kemper layouts are in the stage SETTINGS › SPECIAL STAGE: FULL, CHAIN ONLY, KNOBS ONLY (tap
+   the block card to go to the next one; hold to turn it on or off) and RIG ONLY.
+- With the Kemper tuner opened by foot, the rig reading pauses and comes back when it closes.
 
 7.7. SPECIAL STAGE favorites
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1531,13 +1580,17 @@ Fields and items:
              ONLY (big blocks; hold to turn on and off), KNOBS ONLY, PRESET ONLY (the name in giant
              letters) and SIDE CHAIN (the chain as a column with the knobs beside it — needs a
              tablet or computer screen), plus FAVORITES (up to eight controls from any block, fixed
-             on screen). The Kemper Player has its own: RIG + STOMPS, STOMPS ONLY and RIG ONLY.
-- Visual mode: STANDARD or REALISTIC (visual)
-  Description: REALISTIC swaps the knobs and switches for pictures of real gear, leaves the chain
-             blocks without a frame and puts a metal plate behind the knobs, the blocks and the
-             preset name. Choose the style (MODERN or CLASSIC), the knob (ROUND or CHICKEN HEAD) and
-             whether you want the Metal panels. In REALISTIC, Knob style is greyed out. In the apps
-             and on the website.
+             on screen). The Kemper has its own choice, with the same FULL, CHAIN ONLY and KNOBS
+             ONLY plus RIG ONLY.
+- Visual mode: STANDARD, ALUMINUM, VINTAGE or RACK (visual)
+  Description: On the SPECIAL STAGE, three looks that imitate real gear, made only with drawing (no
+             pictures): ALUMINUM (boutique pedal: brushed plate with screws, black knobs, blocks
+             like little painted pedals), VINTAGE (amplifier: tolex with cream piping, gold panel,
+             gold-capped knobs) and RACK (rack unit: black aluminum, amber display, knobs with an
+             LED ring, lit rubber buttons). Each one changes the panels, knobs, switches and chain
+             blocks. With one of them, Knob style is greyed out; with high contrast on, STANDARD
+             applies. The BFMIDI STAGE and the setlist do not change. In the apps and on the
+             website.
 - Device look (theme)
   Description: When on, each device uses its own colors and style. When off, the SPECIAL STAGE
              follows the VISUAL category. With With my background and accent on, the pedal font and
@@ -2123,7 +2176,7 @@ Purpose: Tell the editor which device is on each channel, so it shows “Delay�
           names of your sounds instead of numbers.
 How to:
 1. On the CH 1 row, choose your device from the list (it's organized by brand and has a search).
-2. Have more than one device? Tap + CHANNEL and map each channel.
+2. Sending MIDI to more than one device? Tap + ADD CHANNEL and choose the device on each channel.
 3. From then on, every PC and CC selector in the editor shows that device's names, based on the
    command's channel.
 Fields and items:
@@ -2134,6 +2187,23 @@ Fields and items:
 - One device per channel (map)
   Description: Each row is a MIDI channel (CH 1 to CH 16) with the device that listens on it. GLOBAL
              means “no device”: commands show up by number only.
+- One channel or several (sentence at the top)
+  Description: The sentence right below the title tells you how the editor is working. With one
+             channel in use — a single device, or none (then channel 1 applies) —, it tells you
+             where everything goes, and the editor doesn't ask for the channel on the MAIN card or
+             on the LIVE footswitches: every command goes out on that channel on its own. With two
+             or more, it tells you how many, and the CHANNEL field shows up on each command.
+             A channel counts as in use when it has a device, has LIVE CC turned on or was added
+             with + ADD CHANNEL — even on GLOBAL. That's how you say “I send MIDI to more than one
+             piece of gear” without choosing a device. − CHANNEL removes the last row.
+- Moving presets to another channel (notice)
+  Description: Moved your device to another channel (from CH 1 to CH 2, for example)? The presets
+             you already have keep sending on the old channel, and the card tells you so. MOVE
+             PRESETS TO CHANNEL n opens a window that counts how many messages change and, once you
+             confirm, moves the presets' PC, the extras and the footswitches of every bank to the
+             new channel. The expression pedal and the footswitches outside the presets (SW GLOBAL,
+             external), if they sent on the old channel, move along as soon as you tap MOVE. NOT NOW
+             leaves everything as it is.
 - The device list (selection)
   Description: Organized by brand (Valeton, Hotone, Line 6, Fractal, IK, Neural DSP, Kemper, BOSS,
              Strymon, ZOOM…), with search by brand or model. The devices you registered yourself
@@ -2144,7 +2214,8 @@ Fields and items:
              mode” and a “stomp mode” follow the controller.
 - Omit unnamed PC/CC (switch)
   Description: Hides the numbers the device doesn't use from the selectors: the list keeps only what
-             actually exists.
+             actually exists. With no device chosen on any channel, it stays inactive: there are no
+             names to show.
 Notes:
 - Can't find your device? Tap CREATE DEVICE at the end of the card: it takes you to the ADVANCED
    tab, where the CUSTOM DEVICE card is.
@@ -2255,8 +2326,9 @@ How to:
 1. In FOOTSWITCHES › EXTERNAL, tap EDIT on the EXTERNAL EXPRESSION card. Closed, the card already
    says in one sentence where the pedal sends and shows the live value.
 2. Step 1 Turn on: turn the pedal on and save — the BFMiDi only starts reading after you save. Step
-   2 Where it goes: choose the device (the channel) first and then the parameter (volume, wah, delay
-   mix…).
+   2 Where it goes: choose the parameter (volume, wah, delay mix…). When you use a single channel,
+   the card already knows the device; with more than one device, choose the device (the channel)
+   first.
 3. Step 3 CALIBRATION: rock the pedal back and tap SAVE HEEL; push it all the way and tap SAVE TOE.
    The current step is highlighted.
 Fields and items:
@@ -2265,6 +2337,12 @@ Fields and items:
              haven’t saved yet), NO READING (the BFMiDi isn’t reading the pedal: check the cable in
              the EXP input) and, before calibration, how far your pedal really goes — for example
              “Your pedal goes from 6 to 120” — so you know it’s worth calibrating.
+- The pedal's channel (notice)
+  Description: When you use a single channel (see FRIENDLY MODE), the device field doesn't show: the
+             pedal sends on that channel, and the card says Goes to: … with the device's name. If
+             the pedal is saved on another channel, the field comes back and the card warns at the
+             top, even when closed, with USE CHANNEL n (brings the pedal to your channel) and ADD
+             CHANNEL n (you start using both). The editor never changes this channel on its own.
 - Fine tuning (folded)
   Description: Below the steps, folded away. At the heel it sends and At the toe it sends: how much
              of the MIDI range the pedal covers, in percent (50% = 64). Reverse direction swaps the
@@ -2355,7 +2433,10 @@ Fields and items:
 - BPM ON DISPLAY (DISPLAY)
   Description: How long the BPM card stays on screen when you tap the tempo (OFF, 2, 5 or 10 s) and
              whether the number is the ABSOLUTE (last two taps) or the AVERAGE (average of the
-             sequence). OFF only hides the card; the tempo still applies.
+             sequence). OFF only hides the card; the tempo still applies. FINE TUNE adds −5 to +5
+             BPM to the tapped tempo, so the BFMiDi number matches the pedal: if you tap 80 and the
+             pedal shows 81, set +1. It also applies to the tempo the editor shows and to the synced
+             modes; the tap MIDI does not change.
 - BANK ON PRESET CHANGE (DISPLAY)
   Description: When on, every preset change shows the new preset's letter and number (e.g. A1) in
              the middle of the screen, for the time you pick.
@@ -2495,6 +2576,9 @@ Fields and items:
   Description: Manufacturer, product, hub port, USB ID, status and the channel that device listens
              on. Each TONEX ONE has its own channel; regular MIDI pedals share one filter. GP-5,
              TONEX ONE and Nano Cortex get the EDIT PRESET button.
+             If the filter only lets one channel through and the device is on another one in
+             Friendly Mode (or your commands go out on another one), the card warns that nothing
+             reaches it and offers SET THE FILTER TO CHANNEL n.
 - BFMiDi MIDI (host → controller) (MIDI tab)
   Description: Enable reverse MIDI repeats the MIDI coming from the plugged-in devices on the
              controller’s outputs (USB DEVICE and DIN5), like a thru/merge. BFMIDI MIDI Control Host
