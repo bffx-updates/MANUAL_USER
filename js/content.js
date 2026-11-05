@@ -7429,9 +7429,9 @@ const MN_CONTENT = {
         "es": "límite"
        },
        "desc": {
-        "pt": "<p>Num hub USB cabem dois aparelhos — por exemplo GP-5 + TONEX ONE. A <strong>Nano Cortex</strong> precisa de mais canais USB e funciona <strong>sozinha</strong> no USB Host.</p>",
-        "en": "<p>A USB hub fits two devices — for example GP-5 + TONEX ONE. The <strong>Nano Cortex</strong> needs more USB channels and works <strong>on its own</strong> on the USB Host.</p>",
-        "es": "<p>En un hub USB caben dos aparatos — por ejemplo GP-5 + TONEX ONE. La <strong>Nano Cortex</strong> necesita más canales USB y funciona <strong>sola</strong> en el USB Host.</p>"
+        "pt": "<p>Num hub USB cabem dois aparelhos — por exemplo GP-5 + TONEX ONE. A <strong>Nano Cortex</strong> precisa de mais canais USB e funciona <strong>sozinha</strong> no USB Host. Em CONFIGURAÇÕES › HOST › STATUS, uma barra mostra quantos canais cada aparelho ocupa.</p>",
+        "en": "<p>A USB hub fits two devices — for example GP-5 + TONEX ONE. The <strong>Nano Cortex</strong> needs more USB channels and works <strong>on its own</strong> on the USB Host. In SETTINGS › HOST › STATUS, a bar shows how many channels each device takes.</p>",
+        "es": "<p>En un hub USB caben dos aparatos — por ejemplo GP-5 + TONEX ONE. La <strong>Nano Cortex</strong> necesita más canales USB y funciona <strong>sola</strong> en el USB Host. En CONFIGURACIÓN › HOST › ESTADO, una barra muestra cuántos canales ocupa cada equipo.</p>"
        }
       }
      ]
@@ -7595,9 +7595,9 @@ const MN_CONTENT = {
      ],
      "notes": [
       {
-       "pt": "Com o <strong>Modo transmissão</strong> do USB Host ligado (CONFIGURAÇÕES › HOST › STATUS), o editor da GP-5 fica indisponível: sem ele o host não consegue ler o preset.",
-       "en": "With the USB Host's <strong>Transmit-only mode</strong> on (SETTINGS › HOST › STATUS), the GP-5 editor is unavailable: in that mode the host can't read the preset.",
-       "es": "Con el <strong>Modo transmisión</strong> del USB Host activado (CONFIGURACIÓN › HOST › ESTADO), el editor de la GP-5 no está disponible: en ese modo el host no puede leer el preset."
+       "pt": "Num USB Host antigo que ainda tenha o <strong>Modo transmissão</strong> ligado, o editor da GP-5 fica indisponível: CONFIGURAÇÕES › HOST › STATUS avisa e tem o botão para desligá-lo. A partir do USB Host 4.0 esse modo não existe mais.",
+       "en": "On an older USB Host that still has <strong>Transmit-only mode</strong> on, the GP-5 editor is unavailable: SETTINGS › HOST › STATUS warns you and has the button to turn it off. From USB Host 4.0 on, that mode no longer exists.",
+       "es": "En un USB Host antiguo que todavía tenga el <strong>Modo transmisión</strong> activado, el editor de la GP-5 no está disponible: CONFIGURACIÓN › HOST › ESTADO lo avisa y tiene el botón para apagarlo. Desde el USB Host 4.0 ese modo ya no existe."
       }
      ]
     },
@@ -7963,9 +7963,9 @@ const MN_CONTENT = {
         "es": "guía"
        },
        "desc": {
-        "pt": "<p>Confira: (1) a tela PRESET está em modo PRESET (os atalhos não aparecem no LIVE); (2) o editor está conectado à controladora, não no modo offline; (3) o aparelho aparece em <strong>CONFIGURAÇÕES › HOST › APARELHOS</strong> como conectado; (4) o modelo da placa é BFMIDI-3 ou BFMIDI-S3; (5) na GP-5, o <strong>Modo transmissão</strong> está desligado.</p>",
-        "en": "<p>Check: (1) the PRESET screen is in PRESET mode (shortcuts don’t show in LIVE); (2) the editor is connected to the controller, not in offline mode; (3) the device shows up as connected in <strong>SETTINGS › HOST › DEVICES</strong>; (4) the board model is BFMIDI-3 or BFMIDI-S3; (5) for the GP-5, <strong>Transmit-only mode</strong> is off.</p>",
-        "es": "<p>Revisa: (1) la pantalla PRESET está en modo PRESET (los atajos no aparecen en LIVE); (2) el editor está conectado a la controladora, no en el modo offline; (3) el equipo aparece como conectado en <strong>CONFIGURACIÓN › HOST › APARATOS</strong>; (4) el modelo de la placa es BFMIDI-3 o BFMIDI-S3; (5) en la GP-5, el <strong>Modo transmisión</strong> está apagado.</p>"
+        "pt": "<p>Confira: (1) a tela PRESET está em modo PRESET (os atalhos não aparecem no LIVE); (2) o editor está conectado à controladora, não no modo offline; (3) o aparelho aparece em <strong>CONFIGURAÇÕES › HOST › APARELHOS</strong> como conectado; (4) o modelo da placa é BFMIDI-3 ou BFMIDI-S3; (5) na GP-5 com um USB Host antigo, o <strong>Modo transmissão</strong> está desligado (CONFIGURAÇÕES › HOST › STATUS avisa).</p>",
+        "en": "<p>Check: (1) the PRESET screen is in PRESET mode (shortcuts don’t show in LIVE); (2) the editor is connected to the controller, not in offline mode; (3) the device shows up as connected in <strong>SETTINGS › HOST › DEVICES</strong>; (4) the board model is BFMIDI-3 or BFMIDI-S3; (5) for the GP-5 with an older USB Host, <strong>Transmit-only mode</strong> is off (SETTINGS › HOST › STATUS warns you).</p>",
+        "es": "<p>Revisa: (1) la pantalla PRESET está en modo PRESET (los atajos no aparecen en LIVE); (2) el editor está conectado a la controladora, no en el modo offline; (3) el equipo aparece como conectado en <strong>CONFIGURACIÓN › HOST › APARATOS</strong>; (4) el modelo de la placa es BFMIDI-3 o BFMIDI-S3; (5) en la GP-5 con un USB Host antiguo, el <strong>Modo transmisión</strong> está apagado (CONFIGURACIÓN › HOST › ESTADO lo avisa).</p>"
        }
       },
       {
@@ -8294,9 +8294,9 @@ const MN_CONTENT = {
         "es": "engranaje"
        },
        "desc": {
-        "pt": "<p>A engrenagem no fim de cada linha manda um CC naquele canal <strong>AO ENTRAR</strong> e <strong>AO SAIR</strong> do modo LIVE (valores ajustáveis). Serve para aparelhos com “modo cena” e “modo stomp” acompanharem a controladora.</p>",
-        "en": "<p>The gear at the end of each row sends a CC on that channel when entering (<strong>ON ENTER</strong>) and leaving (<strong>ON EXIT</strong>) LIVE mode (adjustable values). It lets devices with a “scene mode” and a “stomp mode” follow the controller.</p>",
-        "es": "<p>El engranaje al final de cada fila envía un CC en ese canal <strong>AL ENTRAR</strong> y <strong>AL SALIR</strong> del modo LIVE (valores ajustables). Sirve para que los equipos con “modo escena” y “modo stomp” acompañen a la controladora.</p>"
+        "pt": "<p>A engrenagem no fim de cada linha manda um CC naquele canal <strong>AO ENTRAR</strong> e <strong>AO SAIR</strong> do modo LIVE (valores ajustáveis). Serve para aparelhos com “modo cena” e “modo stomp” acompanharem a controladora. A lista de CC mostra os nomes do aparelho escolhido naquele canal.</p>",
+        "en": "<p>The gear at the end of each row sends a CC on that channel when entering (<strong>ON ENTER</strong>) and leaving (<strong>ON EXIT</strong>) LIVE mode (adjustable values). It lets devices with a “scene mode” and a “stomp mode” follow the controller. The CC list shows the names of the device chosen on that channel.</p>",
+        "es": "<p>El engranaje al final de cada fila envía un CC en ese canal <strong>AL ENTRAR</strong> y <strong>AL SALIR</strong> del modo LIVE (valores ajustables). Sirve para que los equipos con “modo escena” y “modo stomp” acompañen a la controladora. La lista de CC muestra los nombres del equipo elegido en ese canal.</p>"
        }
       },
       {
@@ -9546,16 +9546,16 @@ const MN_CONTENT = {
         "es": "pestaña ESTADO"
        },
        "desc": {
-        "pt": "<p>O USB Host reconhece sozinho o que foi plugado: pedais MIDI USB comuns e a IK TONEX ONE funcionam juntos, até <strong>dois aparelhos</strong> num hub. Não há modo para escolher.</p>",
-        "en": "<p>The USB Host recognizes what you plugged in on its own: regular USB MIDI pedals and the IK TONEX ONE work together, up to <strong>two devices</strong> on a hub. There's no mode to choose.</p>",
-        "es": "<p>El USB Host reconoce solo lo que conectaste: los pedales MIDI USB comunes y la IK TONEX ONE funcionan juntos, hasta <strong>dos equipos</strong> en un hub. No hay modo que elegir.</p>"
+        "pt": "<p>O USB Host reconhece sozinho o que foi plugado: pedais MIDI USB comuns e a IK TONEX ONE funcionam juntos, até <strong>dois aparelhos</strong> num hub. Não há modo para escolher. O <strong>BOSS MS-3</strong> também é reconhecido sozinho, e o host traduz os comandos para o formato da Boss.</p>",
+        "en": "<p>The USB Host recognizes what you plugged in on its own: regular USB MIDI pedals and the IK TONEX ONE work together, up to <strong>two devices</strong> on a hub. There's no mode to choose. The <strong>BOSS MS-3</strong> is recognized on its own too, and the host translates the commands into Boss's format.</p>",
+        "es": "<p>El USB Host reconoce solo lo que conectaste: los pedales MIDI USB comunes y la IK TONEX ONE funcionan juntos, hasta <strong>dos equipos</strong> en un hub. No hay modo que elegir. El <strong>BOSS MS-3</strong> también se reconoce solo, y el host traduce los comandos al formato de Boss.</p>"
        }
       },
       {
        "name": {
-        "pt": "Traduzir Boss MS-3",
-        "en": "Translate Boss MS-3",
-        "es": "Traducir Boss MS-3"
+        "pt": "Canais USB",
+        "en": "USB channels",
+        "es": "Canales USB"
        },
        "type": {
         "pt": "aba STATUS",
@@ -9563,26 +9563,9 @@ const MN_CONTENT = {
         "es": "pestaña ESTADO"
        },
        "desc": {
-        "pt": "<p>O MS-3 (e a Katana) não entendem CC de parâmetro comum: o host converte para o formato da Boss. Ligue só com eles plugados.</p>",
-        "en": "<p>The MS-3 (and the Katana) don't understand regular parameter CCs: the host converts them to Boss's format. Only turn it on with them plugged in.</p>",
-        "es": "<p>El MS-3 (y el Katana) no entienden los CC de parámetro comunes: el host los convierte al formato de Boss. Actívalo solo con ellos conectados.</p>"
-       }
-      },
-      {
-       "name": {
-        "pt": "Modo transmissão (mais pedais)",
-        "en": "Transmit-only mode (more pedals)",
-        "es": "Modo transmisión (más pedales)"
-       },
-       "type": {
-        "pt": "aba STATUS",
-        "en": "STATUS tab",
-        "es": "pestaña ESTADO"
-       },
-       "desc": {
-        "pt": "<p>Deixa o host mandar MIDI para até <strong>quatro</strong> pedais num hub, em vez de dois — em troca, nada volta dos pedais: afinador, nome do rig, SEGUIR O KEMPER e o editor da GP-5 param de funcionar. Com uma TONEX ONE plugada o limite continua dois.</p>",
-        "en": "<p>Lets the host send MIDI to up to <strong>four</strong> pedals on a hub, instead of two — in exchange, nothing comes back from the pedals: the tuner, the rig name, FOLLOW THE KEMPER and the GP-5 editor stop working. With a TONEX ONE plugged in, the limit stays at two.</p>",
-        "es": "<p>Permite que el host envíe MIDI a hasta <strong>cuatro</strong> pedales en un hub, en lugar de dos — a cambio, nada vuelve de los pedales: el afinador, el nombre del rig, SEGUIR EL KEMPER y el editor de la GP-5 dejan de funcionar. Con una TONEX ONE conectada, el límite sigue siendo dos.</p>"
+        "pt": "<p>Uma barra com os <strong>8 canais USB</strong> do host e quanto cada aparelho ocupa: o hub 2, um pedal comum ou uma TONEX ONE 3, a Nano Cortex 4. Embaixo, os canais livres e o que ainda cabe. É por isso que num hub cabem dois aparelhos de 3 canais.</p>",
+        "en": "<p>A bar with the host's <strong>8 USB channels</strong> and how many each device takes: the hub 2, a regular pedal or a TONEX ONE 3, the Nano Cortex 4. Below it, the free channels and what still fits. That's why a hub fits two 3-channel devices.</p>",
+        "es": "<p>Una barra con los <strong>8 canales USB</strong> del host y cuántos ocupa cada equipo: el hub 2, un pedal común o una TONEX ONE 3, la Nano Cortex 4. Debajo, los canales libres y lo que todavía cabe. Por eso en un hub caben dos equipos de 3 canales.</p>"
        }
       },
       {
@@ -9597,9 +9580,9 @@ const MN_CONTENT = {
         "es": "pestaña APARATOS"
        },
        "desc": {
-        "pt": "<p>Fabricante, produto, porta do hub, ID USB, status e o <strong>canal</strong> que aquele aparelho escuta. Cada TONEX ONE tem o seu canal; os pedais MIDI comuns dividem um filtro. GP-5, TONEX ONE e Nano Cortex ganham o botão <strong>EDITAR PRESET</strong>.</p><p>Se o filtro deixa passar só um canal e o aparelho está em outro no Modo Amigável (ou os seus comandos saem em outro), o card avisa que nada chega a ele e oferece <strong>AJUSTAR O FILTRO PARA O CANAL n</strong>.</p>",
-        "en": "<p>Manufacturer, product, hub port, USB ID, status and the <strong>channel</strong> that device listens on. Each TONEX ONE has its own channel; regular MIDI pedals share one filter. GP-5, TONEX ONE and Nano Cortex get the <strong>EDIT PRESET</strong> button.</p><p>If the filter only lets one channel through and the device is on another one in Friendly Mode (or your commands go out on another one), the card warns that nothing reaches it and offers <strong>SET THE FILTER TO CHANNEL n</strong>.</p>",
-        "es": "<p>Fabricante, producto, puerto del hub, ID USB, estado y el <strong>canal</strong> que escucha ese equipo. Cada TONEX ONE tiene su propio canal; los pedales MIDI comunes comparten un filtro. GP-5, TONEX ONE y Nano Cortex tienen el botón <strong>EDITAR PRESET</strong>.</p><p>Si el filtro deja pasar un solo canal y el equipo está en otro en el Modo Amigable (o tus comandos salen en otro), la tarjeta avisa que no le llega nada y ofrece <strong>AJUSTAR EL FILTRO AL CANAL n</strong>.</p>"
+        "pt": "<p>Fabricante, produto, porta do hub, ID USB, status e o <strong>canal</strong> que aquele aparelho escuta. <strong>Cada aparelho tem o seu canal</strong>: mudar o da GP-5 não mexe no de outro pedal. O canal fica guardado pelo modelo do aparelho — dois pedais iguais dividem o mesmo canal —, e o pedal que nunca teve um canal escolhido segue o filtro padrão. Com um USB Host anterior ao 4.0, os pedais MIDI comuns dividem um filtro só, e o card avisa. GP-5, TONEX ONE e Nano Cortex ganham o botão <strong>EDITAR PRESET</strong>.</p><p>Se o filtro deixa passar só um canal e o aparelho está em outro no Modo Amigável (ou os seus comandos saem em outro), o card avisa que nada chega a ele e oferece <strong>AJUSTAR O FILTRO PARA O CANAL n</strong>.</p>",
+        "en": "<p>Manufacturer, product, hub port, USB ID, status and the <strong>channel</strong> that device listens on. <strong>Each device has its own channel</strong>: changing the GP-5's doesn't touch another pedal's. The channel is kept by device model — two identical pedals share the same channel —, and a pedal that never had a channel chosen follows the default filter. With a USB Host older than 4.0, regular MIDI pedals share a single filter, and the card says so. GP-5, TONEX ONE and Nano Cortex get the <strong>EDIT PRESET</strong> button.</p><p>If the filter only lets one channel through and the device is on another one in Friendly Mode (or your commands go out on another one), the card warns that nothing reaches it and offers <strong>SET THE FILTER TO CHANNEL n</strong>.</p>",
+        "es": "<p>Fabricante, producto, puerto del hub, ID USB, estado y el <strong>canal</strong> que escucha ese equipo. <strong>Cada equipo tiene su propio canal</strong>: cambiar el de la GP-5 no toca el de otro pedal. El canal se guarda por modelo del equipo — dos pedales iguales comparten el mismo canal —, y el pedal que nunca tuvo un canal elegido sigue el filtro predeterminado. Con un USB Host anterior a la 4.0, los pedales MIDI comunes comparten un solo filtro, y la tarjeta lo avisa. GP-5, TONEX ONE y Nano Cortex tienen el botón <strong>EDITAR PRESET</strong>.</p><p>Si el filtro deja pasar un solo canal y el equipo está en otro en el Modo Amigable (o tus comandos salen en otro), la tarjeta avisa que no le llega nada y ofrece <strong>AJUSTAR EL FILTRO AL CANAL n</strong>.</p>"
        }
       },
       {
@@ -9630,6 +9613,11 @@ const MN_CONTENT = {
        "pt": "A Nano Cortex funciona sozinha no USB Host: ela não cabe num hub junto com outro aparelho.",
        "en": "The Nano Cortex works on its own on the USB Host: it doesn't fit on a hub alongside another device.",
        "es": "La Nano Cortex funciona sola en el USB Host: no cabe en un hub junto con otro equipo."
+      },
+      {
+       "pt": "Desde o USB Host 4.0, a <strong>Hotone Ampero II Stomp</strong> funciona ligada direto na porta USB HOST, sem hub.",
+       "en": "Since USB Host 4.0, the <strong>Hotone Ampero II Stomp</strong> works plugged straight into the USB HOST port, without a hub.",
+       "es": "Desde el USB Host 4.0, la <strong>Hotone Ampero II Stomp</strong> funciona conectada directo al puerto USB HOST, sin hub."
       }
      ]
     },
@@ -10602,9 +10590,9 @@ const MN_CONTENT = {
       },
       {
        "name": {
-        "pt": "BOSS MS-3 e Katana",
-        "en": "BOSS MS-3 and Katana",
-        "es": "BOSS MS-3 y Katana"
+        "pt": "BOSS MS-3",
+        "en": "BOSS MS-3",
+        "es": "BOSS MS-3"
        },
        "type": {
         "pt": "integração",
@@ -10612,9 +10600,9 @@ const MN_CONTENT = {
         "es": "integración"
        },
        "desc": {
-        "pt": "<p>Com <strong>Traduzir Boss MS-3</strong> ligado (CONFIGURAÇÕES › HOST › STATUS), o USB Host converte os comandos para o formato próprio da Boss.</p>",
-        "en": "<p>With <strong>Translate Boss MS-3</strong> turned on (SETTINGS › HOST › STATUS), the USB Host converts commands into Boss's own format.</p>",
-        "es": "<p>Con <strong>Traducir Boss MS-3</strong> activado (CONFIGURACIÓN › HOST › ESTADO), el USB Host convierte los comandos al formato propio de Boss.</p>"
+        "pt": "<p>O MS-3 não entende CC de parâmetro comum. Plugado no USB Host, ele é reconhecido sozinho e o host converte os comandos para o formato próprio da Boss — não há chave para ligar. Outros aparelhos Roland e BOSS, como a Katana, recebem os CC e PC como qualquer pedal comum. Exige o USB Host 4.0.</p>",
+        "en": "<p>The MS-3 doesn't understand regular parameter CCs. Plugged into the USB Host, it's recognized on its own and the host converts the commands into Boss's own format — there's no switch to turn on. Other Roland and BOSS devices, such as the Katana, get CCs and PCs like any regular pedal. Requires USB Host 4.0.</p>",
+        "es": "<p>El MS-3 no entiende los CC de parámetro comunes. Conectado al USB Host, se reconoce solo y el host convierte los comandos al formato propio de Boss — no hay interruptor que activar. Otros equipos Roland y BOSS, como el Katana, reciben los CC y PC como cualquier pedal común. Requiere el USB Host 4.0.</p>"
        }
       }
      ],
@@ -10652,9 +10640,9 @@ const MN_CONTENT = {
         "es": "guía"
        },
        "desc": {
-        "pt": "<p>1. O cabo vai da BFMiDi para a pedaleira (MIDI OUT → MIDI IN)?<br>2. O canal do preset é o que a pedaleira escuta?<br>3. Use o <strong>DISPARO MIDI</strong> em CONFIGURAÇÕES › TESTES › DISPARO: se ali funciona, o problema está no preset; se nem ali, no cabo ou no aparelho. Cabo TRS? Nas placas com entrada EXT SW, teste o cabo em CONFIGURAÇÕES › TESTES › HARDWARE › <strong>CABO</strong>.<br>4. A pedaleira perde as primeiras mensagens depois de trocar de preset? Use os <strong>TEMPOS DE DISPARO</strong> em CONFIGURAÇÕES › HARDWARE › TEMPOS.</p>",
-        "en": "<p>1. Does the cable go from the BFMiDi to the effects unit (MIDI OUT → MIDI IN)?<br>2. Is the preset's channel the one the effects unit listens to?<br>3. Use <strong>MIDI SEND</strong> in SETTINGS › TESTS › SEND: if it works there, the problem is in the preset; if it doesn't work even there, it's the cable or the device. TRS cable? On boards with an EXT SW input, test the cable in SETTINGS › TESTS › HARDWARE › <strong>CABLE</strong>.<br>4. Does the effects unit miss the first messages after a preset change? Use <strong>SEND TIMING</strong> in SETTINGS › HARDWARE › TIMING.</p>",
-        "es": "<p>1. ¿El cable va de la BFMiDi a la pedalera (MIDI OUT → MIDI IN)?<br>2. ¿El canal del preset es el que escucha la pedalera?<br>3. Usa el <strong>DISPARO MIDI</strong> en CONFIGURACIÓN › PRUEBAS › ENVÍO: si ahí funciona, el problema está en el preset; si ni ahí funciona, está en el cable o en el equipo. ¿Cable TRS? En las placas con entrada EXT SW, prueba el cable en CONFIGURACIÓN › PRUEBAS › HARDWARE › <strong>CABLE</strong>.<br>4. ¿La pedalera pierde los primeros mensajes después de cambiar de preset? Usa los <strong>TIEMPOS DE ENVÍO</strong> en CONFIGURACIÓN › HARDWARE › TIEMPOS.</p>"
+        "pt": "<p>1. O cabo vai da BFMiDi para a pedaleira (MIDI OUT → MIDI IN)?<br>2. O canal do preset é o que a pedaleira escuta?<br>3. Use o <strong>DISPARO MIDI</strong> em CONFIGURAÇÕES › TESTES › DISPARO: se ali funciona, o problema está no preset; se nem ali, no cabo ou no aparelho. Cabo TRS? Nas placas com entrada EXT SW, teste o cabo em CONFIGURAÇÕES › TESTES › HARDWARE › <strong>CABO</strong>.<br>4. A pedaleira perde as primeiras mensagens depois de trocar de preset? Use os <strong>TEMPOS DE DISPARO</strong> em CONFIGURAÇÕES › HARDWARE › TEMPOS.<br>5. Pedaleira ligada no USB HOST? Confira o canal do filtro dela no card do aparelho, em CONFIGURAÇÕES › HOST › APARELHOS.</p>",
+        "en": "<p>1. Does the cable go from the BFMiDi to the effects unit (MIDI OUT → MIDI IN)?<br>2. Is the preset's channel the one the effects unit listens to?<br>3. Use <strong>MIDI SEND</strong> in SETTINGS › TESTS › SEND: if it works there, the problem is in the preset; if it doesn't work even there, it's the cable or the device. TRS cable? On boards with an EXT SW input, test the cable in SETTINGS › TESTS › HARDWARE › <strong>CABLE</strong>.<br>4. Does the effects unit miss the first messages after a preset change? Use <strong>SEND TIMING</strong> in SETTINGS › HARDWARE › TIMING.<br>5. Effects unit plugged into the USB HOST? Check its filter channel on the device card, in SETTINGS › HOST › DEVICES.</p>",
+        "es": "<p>1. ¿El cable va de la BFMiDi a la pedalera (MIDI OUT → MIDI IN)?<br>2. ¿El canal del preset es el que escucha la pedalera?<br>3. Usa el <strong>DISPARO MIDI</strong> en CONFIGURACIÓN › PRUEBAS › ENVÍO: si ahí funciona, el problema está en el preset; si ni ahí funciona, está en el cable o en el equipo. ¿Cable TRS? En las placas con entrada EXT SW, prueba el cable en CONFIGURACIÓN › PRUEBAS › HARDWARE › <strong>CABLE</strong>.<br>4. ¿La pedalera pierde los primeros mensajes después de cambiar de preset? Usa los <strong>TIEMPOS DE ENVÍO</strong> en CONFIGURACIÓN › HARDWARE › TIEMPOS.<br>5. ¿La pedalera está en el USB HOST? Revisa el canal de su filtro en la tarjeta del equipo, en CONFIGURACIÓN › HOST › APARATOS.</p>"
        }
       },
       {

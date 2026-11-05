@@ -405,8 +405,14 @@ const DEV_TONEX = { kind: 'tonex', index: 0, port: 4, vid: '1963', pid: '00D1', 
   editor: true, manufacturer: 'IK Multimedia', product: 'TONEX ONE', diag: '' };
 const DEV_NANO = { kind: 'midi', index: 0, port: 0, vid: '152A', pid: '88E7', ready: true, vendor: false,
   editor: true, manufacturer: 'Neural DSP', product: 'Nano Cortex', diag: 'HID ok fw 2.2.1 #1' };
+// Segundo pedal USB MIDI comum, pra ver os filtros POR PEDAL (nov/2026): a
+// GP-50 na outra porta do hub, com index 1 (o slot do driver MIDI no host).
+const DEV_GP50_B = { ...DEV_GP50, index: 1, port: 2 };
 const SCENARIOS = {
   default: { devices: [DEV_GP5, DEV_TONEX], kemper: true },
+  // GP-5 + GP-50 + TONEX: dois pedais USB MIDI comuns, cada um com o seu
+  // filtro (BFMIDI_MOCK_SCENARIO=duo ou /__mock/scenario?name=duo).
+  duo: { devices: [DEV_GP5, DEV_GP50_B, DEV_TONEX], kemper: true },
   gp50: { devices: [DEV_GP50, DEV_TONEX], kemper: true },
   nano: { devices: [DEV_NANO], kemper: true },
   kemper: { devices: [], kemper: true },
@@ -418,19 +424,24 @@ export function createMockDevices(opts = {}) {
     editorsAlwaysLoaded: !!opts.editorsAlwaysLoaded,
     scenario: 'default',
     host: {
-      online: true, protocol_ok: true, host_version: '3.0', status_seen: true,
+      online: true, protocol_ok: true, host_version: '4.0', status_seen: true,
       midi_filter_channel: 1, ble_enabled: false, ble_connected: false, ble_mode: 1,
       ble_filter_channel: 0, ble_filter_reported: true, ms3_translate: false, tx_only: false,
       last_ack: 0, restart: '', reqId: 10,
     },
     tonexFilters: [2, 0],
+    // FILTRO POR PEDAL USB MIDI comum (host novo): 'VID:PID' -> canal proprio,
+    // na ordem em que foi gravado (ate 8; cheio, sai o mais antigo). Pedal sem
+    // entrada segue o filtro padrao (midi_filter_channel). Sobrevive a troca
+    // de cenario, como a NVS do host.
+    devFilters: new Map(),
     tonexCab: [true, true],
     devices: [],
     kemperPresent: true,
     editors: {},
     kemper: null,
   };
-  setScenario(state, opts.scenario || 'default');
+  setScenario(state, opts.scenario || process.env.BFMIDI_MOCK_SCENARIO || 'default');
   return state;
 }
 
@@ -511,8 +522,14 @@ function buildStatus(state) {
     pending_update: false, restart: h.restart,
     tonex_count: 2, tonex_reported: true, tonex,
     devices_reported: true,
+    device_filters: true,
     devices: devs.map((d) => ({ kind: d.kind, index: d.index, port: d.port, vid: d.vid, pid: d.pid,
       ready: d.ready, vendor: d.vendor, editor: d.editor,
+      ...(d.kind === 'tonex' ? {} : (() => {
+        const own = state.devFilters.get(`${d.vid}:${d.pid}`);
+        return { filter_channel: own ?? h.midi_filter_channel, filter_own: own !== undefined,
+                 pending_filter: -1 };
+      })()),
       cab_known: d.kind === 'tonex', cab_bypass: d.kind === 'tonex' && !state.tonexCab[d.index],
       manufacturer: d.manufacturer,
       product: d.product, diag: d.diag })),
@@ -674,6 +691,22 @@ export function handleMock(state, method, pathname, query, body) {
     if (ch < 0 || ch > 16) return withStatus(400, { error: 'INVALID CHANNEL' });
     state.tonexFilters[slot - 1] = ch;
     return { sent: true, request_id: reqId(), slot, channel: ch };
+  }
+  if (p === '/usb_host/device_filter') {
+    if (!has(a, 'vid') || !has(a, 'pid') || !has(a, 'channel')) {
+      return withStatus(400, { error: 'VID/PID/CHANNEL REQUIRED' });
+    }
+    const vid = String(a.vid).toUpperCase(), pid = String(a.pid).toUpperCase();
+    if (!/^[0-9A-F]{4}$/.test(vid) || !/^[0-9A-F]{4}$/.test(pid)) {
+      return withStatus(400, { error: 'INVALID VID/PID' });
+    }
+    const ch = toInt(a.channel);
+    if (ch < 0 || ch > 16) return withStatus(400, { error: 'INVALID CHANNEL' });
+    const key = `${vid}:${pid}`;
+    state.devFilters.delete(key);
+    state.devFilters.set(key, ch);
+    while (state.devFilters.size > 8) state.devFilters.delete(state.devFilters.keys().next().value);
+    return { sent: true, request_id: reqId(), vid, pid, channel: ch };
   }
   if (p === '/usb_host/tonex_cab') {
     if (!has(a, 'slot') || !has(a, 'cab')) return withStatus(400, { error: 'SLOT/CAB REQUIRED' });

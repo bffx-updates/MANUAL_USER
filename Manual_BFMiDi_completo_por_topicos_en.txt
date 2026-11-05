@@ -1969,7 +1969,8 @@ Fields and items:
              update.
 - Two devices at once (limit)
   Description: A USB hub fits two devices — for example GP-5 + TONEX ONE. The Nano Cortex needs more
-             USB channels and works on its own on the USB Host.
+             USB channels and works on its own on the USB Host. In SETTINGS › HOST › STATUS, a bar
+             shows how many channels each device takes.
 
 8.2. Valeton GP-5 and GP-50
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -2003,8 +2004,9 @@ Fields and items:
              Closing with an unsaved edit asks what to do: save, discard, CLOSE WITHOUT SAVING (the
              edit keeps playing until the next preset change) or keep editing.
 Notes:
-- With the USB Host's Transmit-only mode on (SETTINGS › HOST › STATUS), the GP-5 editor is
-   unavailable: in that mode the host can't read the preset.
+- On an older USB Host that still has Transmit-only mode on, the GP-5 editor is unavailable:
+   SETTINGS › HOST › STATUS warns you and has the button to turn it off. From USB Host 4.0 on, that
+   mode no longer exists.
 
 8.3. IK TONEX ONE
 ~~~~~~~~~~~~~~~~~
@@ -2094,7 +2096,8 @@ Fields and items:
   Description: Check: (1) the PRESET screen is in PRESET mode (shortcuts don’t show in LIVE); (2)
              the editor is connected to the controller, not in offline mode; (3) the device shows up
              as connected in SETTINGS › HOST › DEVICES; (4) the board model is BFMIDI-3 or
-             BFMIDI-S3; (5) for the GP-5, Transmit-only mode is off.
+             BFMIDI-S3; (5) for the GP-5 with an older USB Host, Transmit-only mode is off (SETTINGS
+             › HOST › STATUS warns you).
 - It stays on “reading” and won't load (checklist)
   Description: Update the USB Host (SETTINGS › UPDATES › USB HOST). On the Nano Cortex, disconnect
              Cortex Cloud.
@@ -2211,7 +2214,8 @@ Fields and items:
 - LIVE CC (gear)
   Description: The gear at the end of each row sends a CC on that channel when entering (ON ENTER)
              and leaving (ON EXIT) LIVE mode (adjustable values). It lets devices with a “scene
-             mode” and a “stomp mode” follow the controller.
+             mode” and a “stomp mode” follow the controller. The CC list shows the names of the
+             device chosen on that channel.
 - Omit unnamed PC/CC (switch)
   Description: Hides the numbers the device doesn't use from the selectors: the list keeps only what
              actually exists. With no device chosen on any channel, it stays inactive: there are no
@@ -2565,16 +2569,18 @@ Fields and items:
 - Automatic detection (STATUS tab)
   Description: The USB Host recognizes what you plugged in on its own: regular USB MIDI pedals and
              the IK TONEX ONE work together, up to two devices on a hub. There's no mode to choose.
-- Translate Boss MS-3 (STATUS tab)
-  Description: The MS-3 (and the Katana) don't understand regular parameter CCs: the host converts
-             them to Boss's format. Only turn it on with them plugged in.
-- Transmit-only mode (more pedals) (STATUS tab)
-  Description: Lets the host send MIDI to up to four pedals on a hub, instead of two — in exchange,
-             nothing comes back from the pedals: the tuner, the rig name, FOLLOW THE KEMPER and the
-             GP-5 editor stop working. With a TONEX ONE plugged in, the limit stays at two.
+             The BOSS MS-3 is recognized on its own too, and the host translates the commands into
+             Boss's format.
+- USB channels (STATUS tab)
+  Description: A bar with the host's 8 USB channels and how many each device takes: the hub 2, a
+             regular pedal or a TONEX ONE 3, the Nano Cortex 4. Below it, the free channels and what
+             still fits. That's why a hub fits two 3-channel devices.
 - One card per device (DEVICES tab)
   Description: Manufacturer, product, hub port, USB ID, status and the channel that device listens
-             on. Each TONEX ONE has its own channel; regular MIDI pedals share one filter. GP-5,
+             on. Each device has its own channel: changing the GP-5's doesn't touch another pedal's.
+             The channel is kept by device model — two identical pedals share the same channel —,
+             and a pedal that never had a channel chosen follows the default filter. With a USB Host
+             older than 4.0, regular MIDI pedals share a single filter, and the card says so. GP-5,
              TONEX ONE and Nano Cortex get the EDIT PRESET button.
              If the filter only lets one channel through and the device is on another one in
              Friendly Mode (or your commands go out on another one), the card warns that nothing
@@ -2587,6 +2593,8 @@ Notes:
 - The HOST screen only works on models with USB Host: BFMIDI-3 and BFMIDI-S3.
 - The Nano Cortex works on its own on the USB Host: it doesn't fit on a hub alongside another
    device.
+- Since USB Host 4.0, the Hotone Ampero II Stomp works plugged straight into the USB HOST port,
+   without a hub.
 
 9.17. BLUETOOTH — wireless
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -2874,9 +2882,11 @@ Fields and items:
              EFEITOS, the ◈ FX 1, FX 2 and FX 3 Liga/Desliga (on/off) commands — the first three
              effects in the chain, which the controller turns on and off using Zoom's own protocol
              (value 64 or more turns on). Requires the controller and the USB Host to be up to date.
-- BOSS MS-3 and Katana (integration)
-  Description: With Translate Boss MS-3 turned on (SETTINGS › HOST › STATUS), the USB Host converts
-             commands into Boss's own format.
+- BOSS MS-3 (integration)
+  Description: The MS-3 doesn't understand regular parameter CCs. Plugged into the USB Host, it's
+             recognized on its own and the host converts the commands into Boss's own format —
+             there's no switch to turn on. Other Roland and BOSS devices, such as the Katana, get
+             CCs and PCs like any regular pedal. Requires USB Host 4.0.
 Notes:
 - The preset editors are explained in the Device preset editors chapter.
 
@@ -2893,6 +2903,8 @@ Fields and items:
              boards with an EXT SW input, test the cable in SETTINGS › TESTS › HARDWARE › CABLE.
              4. Does the effects unit miss the first messages after a preset change? Use SEND TIMING
              in SETTINGS › HARDWARE › TIMING.
+             5. Effects unit plugged into the USB HOST? Check its filter channel on the device card,
+             in SETTINGS › HOST › DEVICES.
 - I can't open the editor (checklist)
   Description: 1. The pedal's Wi-Fi turns itself off 90 seconds after power-up if nobody connects:
              turn the controller off and on again.

@@ -2019,7 +2019,8 @@ Campos e ítems:
              e indica que actualices.
 - Dos aparatos a la vez (límite)
   Descripción: En un hub USB caben dos aparatos — por ejemplo GP-5 + TONEX ONE. La Nano Cortex
-             necesita más canales USB y funciona sola en el USB Host.
+             necesita más canales USB y funciona sola en el USB Host. En CONFIGURACIÓN › HOST ›
+             ESTADO, una barra muestra cuántos canales ocupa cada equipo.
 
 8.2. Valeton GP-5 y GP-50
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -2055,8 +2056,9 @@ Campos e ítems:
              Cerrar con una edición pendiente pregunta qué hacer: guardar, descartar, CERRAR SIN
              GUARDAR (la edición sigue sonando hasta el próximo cambio de preset) o seguir editando.
 Observaciones:
-- Con el Modo transmisión del USB Host activado (CONFIGURACIÓN › HOST › ESTADO), el editor de la
-   GP-5 no está disponible: en ese modo el host no puede leer el preset.
+- En un USB Host antiguo que todavía tenga el Modo transmisión activado, el editor de la GP-5 no
+   está disponible: CONFIGURACIÓN › HOST › ESTADO lo avisa y tiene el botón para apagarlo. Desde el
+   USB Host 4.0 ese modo ya no existe.
 
 8.3. IK TONEX ONE
 ~~~~~~~~~~~~~~~~~
@@ -2146,7 +2148,8 @@ Campos e ítems:
   Descripción: Revisa: (1) la pantalla PRESET está en modo PRESET (los atajos no aparecen en LIVE);
              (2) el editor está conectado a la controladora, no en el modo offline; (3) el equipo
              aparece como conectado en CONFIGURACIÓN › HOST › APARATOS; (4) el modelo de la placa es
-             BFMIDI-3 o BFMIDI-S3; (5) en la GP-5, el Modo transmisión está apagado.
+             BFMIDI-3 o BFMIDI-S3; (5) en la GP-5 con un USB Host antiguo, el Modo transmisión está
+             apagado (CONFIGURACIÓN › HOST › ESTADO lo avisa).
 - Se queda “leyendo” y no carga (guía)
   Descripción: Actualiza el USB Host (CONFIGURACIÓN › ACTUALIZAR › USB HOST). En la Nano Cortex,
              desconecta Cortex Cloud.
@@ -2265,7 +2268,8 @@ Campos e ítems:
 - CC en LIVE (engranaje)
   Descripción: El engranaje al final de cada fila envía un CC en ese canal AL ENTRAR y AL SALIR del
              modo LIVE (valores ajustables). Sirve para que los equipos con “modo escena” y “modo
-             stomp” acompañen a la controladora.
+             stomp” acompañen a la controladora. La lista de CC muestra los nombres del equipo
+             elegido en ese canal.
 - Omitir PC/CC sin nombre (interruptor)
   Descripción: Oculta de los selectores los números que el equipo no usa: la lista queda solo con lo
              que existe. Sin equipo elegido en ningún canal, queda inactivo: no hay nombres que
@@ -2632,19 +2636,20 @@ Campos e ítems:
              firmware, con un botón que lleva a ACTUALIZAR.
 - Detección automática (pestaña ESTADO)
   Descripción: El USB Host reconoce solo lo que conectaste: los pedales MIDI USB comunes y la IK
-             TONEX ONE funcionan juntos, hasta dos equipos en un hub. No hay modo que elegir.
-- Traducir Boss MS-3 (pestaña ESTADO)
-  Descripción: El MS-3 (y el Katana) no entienden los CC de parámetro comunes: el host los convierte
-             al formato de Boss. Actívalo solo con ellos conectados.
-- Modo transmisión (más pedales) (pestaña ESTADO)
-  Descripción: Permite que el host envíe MIDI a hasta cuatro pedales en un hub, en lugar de dos — a
-             cambio, nada vuelve de los pedales: el afinador, el nombre del rig, SEGUIR EL KEMPER y
-             el editor de la GP-5 dejan de funcionar. Con una TONEX ONE conectada, el límite sigue
-             siendo dos.
+             TONEX ONE funcionan juntos, hasta dos equipos en un hub. No hay modo que elegir. El
+             BOSS MS-3 también se reconoce solo, y el host traduce los comandos al formato de Boss.
+- Canales USB (pestaña ESTADO)
+  Descripción: Una barra con los 8 canales USB del host y cuántos ocupa cada equipo: el hub 2, un
+             pedal común o una TONEX ONE 3, la Nano Cortex 4. Debajo, los canales libres y lo que
+             todavía cabe. Por eso en un hub caben dos equipos de 3 canales.
 - Una tarjeta por equipo (pestaña APARATOS)
   Descripción: Fabricante, producto, puerto del hub, ID USB, estado y el canal que escucha ese
-             equipo. Cada TONEX ONE tiene su propio canal; los pedales MIDI comunes comparten un
-             filtro. GP-5, TONEX ONE y Nano Cortex tienen el botón EDITAR PRESET.
+             equipo. Cada equipo tiene su propio canal: cambiar el de la GP-5 no toca el de otro
+             pedal. El canal se guarda por modelo del equipo — dos pedales iguales comparten el
+             mismo canal —, y el pedal que nunca tuvo un canal elegido sigue el filtro
+             predeterminado. Con un USB Host anterior a la 4.0, los pedales MIDI comunes comparten
+             un solo filtro, y la tarjeta lo avisa. GP-5, TONEX ONE y Nano Cortex tienen el botón
+             EDITAR PRESET.
              Si el filtro deja pasar un solo canal y el equipo está en otro en el Modo Amigable (o
              tus comandos salen en otro), la tarjeta avisa que no le llega nada y ofrece AJUSTAR EL
              FILTRO AL CANAL n.
@@ -2656,6 +2661,8 @@ Campos e ítems:
 Observaciones:
 - La pantalla HOST solo funciona en los modelos con USB Host: BFMIDI-3 y BFMIDI-S3.
 - La Nano Cortex funciona sola en el USB Host: no cabe en un hub junto con otro equipo.
+- Desde el USB Host 4.0, la Hotone Ampero II Stomp funciona conectada directo al puerto USB HOST,
+   sin hub.
 
 9.17. BLUETOOTH — inalámbrico
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -2953,9 +2960,11 @@ Campos e ítems:
              primeros efectos de la cadena, que la controladora enciende y apaga con el protocolo de
              la propia Zoom (valor 64 o más enciende). Requiere la controladora y el USB Host
              actualizados.
-- BOSS MS-3 y Katana (integración)
-  Descripción: Con Traducir Boss MS-3 activado (CONFIGURACIÓN › HOST › ESTADO), el USB Host
-             convierte los comandos al formato propio de Boss.
+- BOSS MS-3 (integración)
+  Descripción: El MS-3 no entiende los CC de parámetro comunes. Conectado al USB Host, se reconoce
+             solo y el host convierte los comandos al formato propio de Boss — no hay interruptor
+             que activar. Otros equipos Roland y BOSS, como el Katana, reciben los CC y PC como
+             cualquier pedal común. Requiere el USB Host 4.0.
 Observaciones:
 - Los editores de preset se explican en el capítulo Editores de preset de los aparatos.
 
@@ -2973,6 +2982,8 @@ Campos e ítems:
              CABLE.
              4. ¿La pedalera pierde los primeros mensajes después de cambiar de preset? Usa los
              TIEMPOS DE ENVÍO en CONFIGURACIÓN › HARDWARE › TIEMPOS.
+             5. ¿La pedalera está en el USB HOST? Revisa el canal de su filtro en la tarjeta del
+             equipo, en CONFIGURACIÓN › HOST › APARATOS.
 - No puedo abrir el editor (guía)
   Descripción: 1. El Wi-Fi del pedal se apaga solo 90 segundos después de encenderlo si nadie se
              conecta: apaga y enciende la controladora.

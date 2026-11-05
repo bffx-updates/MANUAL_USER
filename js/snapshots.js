@@ -1,4 +1,4 @@
-/* BFMiDi · Manual — PRINTS do editor (v15.3).
+/* BFMiDi · Manual — PRINTS do editor (v15.6).
    Gerado por tools/capture_shots.mjs. NAO editar a mao: quando a tela
    do editor mudar, rode a captura de novo.
    { img, light?, w, h, kind?, hot: { seletor: [x, y, w, h] em fracao } } */
@@ -826,7 +826,7 @@ const MN_SHOTS = {
  "cfg-host": {
   "img": "img/shots/cfg-host.webp",
   "w": 696,
-  "h": 987,
+  "h": 1138,
   "hot": {},
   "light": "img/shots/cfg-host.light.webp"
  },
