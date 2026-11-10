@@ -7211,9 +7211,9 @@ const MN_CONTENT = {
      },
      "howto": [
       {
-       "pt": "Abra <a href=\"https://bffx.com.br/setlist/\" target=\"_blank\" rel=\"noopener\">bffx.com.br/setlist</a> em qualquer navegador (computador, tablet ou celular). Não precisa de conta nem da controladora. Sem nada salvo, a página oferece <strong>CRIAR A PRIMEIRA MÚSICA</strong> (o mesmo assistente do app) e <strong>VER UM EXEMPLO</strong>.",
-       "en": "Open <a href=\"https://bffx.com.br/setlist/\" target=\"_blank\" rel=\"noopener\">bffx.com.br/setlist</a> in any browser (computer, tablet or phone). No account and no controller needed. With nothing saved, the page offers <strong>CREATE THE FIRST SONG</strong> (the same step-by-step setup as the app) and <strong>SEE AN EXAMPLE</strong>.",
-       "es": "Abre <a href=\"https://bffx.com.br/setlist/\" target=\"_blank\" rel=\"noopener\">bffx.com.br/setlist</a> en cualquier navegador (computadora, tablet o celular). No hace falta cuenta ni la controladora. Sin nada guardado, la página ofrece <strong>CREAR LA PRIMERA CANCIÓN</strong> (el mismo asistente de la app) y <strong>VER UN EJEMPLO</strong>."
+       "pt": "Abra <a href=\"https://bfmidi.com.br/setlist/\" target=\"_blank\" rel=\"noopener\">bfmidi.com.br/setlist</a> em qualquer navegador (computador, tablet ou celular). Não precisa de conta nem da controladora. Sem nada salvo, a página oferece <strong>CRIAR A PRIMEIRA MÚSICA</strong> (o mesmo assistente do app) e <strong>VER UM EXEMPLO</strong>.",
+       "en": "Open <a href=\"https://bfmidi.com.br/setlist/\" target=\"_blank\" rel=\"noopener\">bfmidi.com.br/setlist</a> in any browser (computer, tablet or phone). No account and no controller needed. With nothing saved, the page offers <strong>CREATE THE FIRST SONG</strong> (the same step-by-step setup as the app) and <strong>SEE AN EXAMPLE</strong>.",
+       "es": "Abre <a href=\"https://bfmidi.com.br/setlist/\" target=\"_blank\" rel=\"noopener\">bfmidi.com.br/setlist</a> en cualquier navegador (computadora, tablet o celular). No hace falta cuenta ni la controladora. Sin nada guardado, la página ofrece <strong>CREAR LA PRIMERA CANCIÓN</strong> (el mismo asistente de la app) y <strong>VER UN EJEMPLO</strong>."
       },
       {
        "pt": "Para trazer o que já está no app: no app, <strong>CONFIGURAÇÕES › BACKUP › SETLIST › BACKUP COMPLETO</strong>; no site, <strong>ABRIR ARQUIVO</strong>, confira o resumo e toque em <strong>RESTAURAR AGORA</strong>.",

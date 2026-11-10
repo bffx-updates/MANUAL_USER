@@ -1900,9 +1900,9 @@ Fields and items:
 Purpose: The same setlist editor, in the browser: build your songs and setlists with a keyboard and
           a big screen and take them to the app with a file — and the other way around.
 How to:
-1. Open bffx.com.br/setlist in any browser (computer, tablet or phone). No account and no controller
-   needed. With nothing saved, the page offers CREATE THE FIRST SONG (the same step-by-step setup as
-   the app) and SEE AN EXAMPLE.
+1. Open bfmidi.com.br/setlist in any browser (computer, tablet or phone). No account and no
+   controller needed. With nothing saved, the page offers CREATE THE FIRST SONG (the same
+   step-by-step setup as the app) and SEE AN EXAMPLE.
 2. To bring what is already in the app: in the app, SETTINGS › BACKUP › SETLIST › FULL BACKUP; on
    the site, OPEN FILE, check the summary and tap RESTORE NOW.
 3. Edit as in the app: setlists, songs, parts, chords and ALSO SEND. On a computer the list stays on

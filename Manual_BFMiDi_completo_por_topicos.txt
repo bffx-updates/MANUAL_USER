@@ -1875,7 +1875,7 @@ Campos e itens:
 Objetivo: O mesmo editor do setlist, no navegador: monte suas músicas e setlists com teclado e tela
           grande e leve para o app por um arquivo — e o contrário também.
 Como fazer:
-1. Abra bffx.com.br/setlist em qualquer navegador (computador, tablet ou celular). Não precisa de
+1. Abra bfmidi.com.br/setlist em qualquer navegador (computador, tablet ou celular). Não precisa de
    conta nem da controladora. Sem nada salvo, a página oferece CRIAR A PRIMEIRA MÚSICA (o mesmo
    assistente do app) e VER UM EXEMPLO.
 2. Para trazer o que já está no app: no app, CONFIGURAÇÕES › BACKUP › SETLIST › BACKUP COMPLETO; no

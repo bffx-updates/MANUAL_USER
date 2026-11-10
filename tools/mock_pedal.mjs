@@ -95,6 +95,9 @@ function installShims(seed) {
   };
 }
 
+// STATUS / ULTIMOS MOVIMENTOS (ver /diag/status e /activity abaixo).
+const MOCK_T0 = Date.now() - 2 * 3600 * 1000;
+let mockActivity = null;
 // Certificado de teste do pedal simulado (ver /hardtest/cert abaixo).
 let mockSerial = process.env.BFMIDI_MOCK_NOCERT === '1' ? '' : 'BFX-261023-143207';
 let mockCert = process.env.BFMIDI_MOCK_NOCERT === '1' ? null : {
@@ -203,6 +206,40 @@ export async function startMockPedal({ port = 8932, seedPath, quiet = false } = 
       if (u.pathname === '/log') {
         res.writeHead(200, { ...CORS, 'content-type': 'text/plain' }).end('');
         return;
+      }
+      // STATUS e ULTIMOS MOVIMENTOS (SYSTEM > HARDWARE > STATUS, 07/nov/2026):
+      // numeros de mentira e uma lista de exemplo relativa a agora.
+      if (u.pathname === '/diag/status') {
+        const up = Date.now() - MOCK_T0;
+        return send(200, { v: 1, fw: 'mock', boot: 1, up, rst: 'LIGOU',
+          heap: 151000, heapMin: 138000, heapTot: 338000, heapBlk: 118000,
+          psram: 7600000, psramMin: 7400000, psramBlk: 7300000, psramTot: 8388608,
+          fsFreeKB: 3920, fsTotKB: 5120, fsFmt: 0, nvsUsed: 114, nvsTot: 756,
+          wifi: 2, apSta: 1, apRssi: -48, staRssi: 0, loopMax: 92, loopPh: 'WEB', slowEp: 0,
+          stalls: 0, stallMax: 0, nvsStalls: 0, crash: 0, heapLow: 0, staDown: 0, apLeave: 0,
+          pressN: 37, pressAvg: 36, pressMax: 61, pressSlow: 0, httpN: 412, httpSlow: 1, httpDrops: 0, httpMax: 380,
+          loopPct: 9, idle: 82, top: 'wifi', topPct: 6, allocFail: 0, heapCorrupt: 0, fsFail: 0, nvsFail: 0,
+          stackMin: 2810, stackName: 'loopTask' });
+      }
+      if (u.pathname === '/clock') return send(200, { ok: true });
+      if (u.pathname === '/activity/clear') { mockActivity = []; return send(200, { ok: true }); }
+      if (u.pathname === '/activity') {
+        const now = Math.floor(Date.now() / 1000), up = Math.floor((Date.now() - MOCK_T0) / 1000);
+        if (!mockActivity) {
+          const ago = (s) => [now - s, 3, Math.max(0, up - s)];
+          mockActivity = [
+            [now - 86400 * 2, 1, 120, 'u', 'upd', '', 0, -1, 1, 'fw'],
+            [now - 86400 * 2 + 60, 2, 30, 'w', 'glb', '', 0, -1, 2, 'match_channels,brightness'],
+            [now - 86400 + 300, 2, 900, 'w', 'img', '', 0, -1, 3, '+3,+4,+5'],
+            [...ago(3600), 'w', 'pre', 'A1', 0, -1, 1, 'name,bank'],
+            [...ago(3300), 'w', 'mode', 'A1', 3, 0, 1, '1>9'],
+            [...ago(3290), 'w', 'par', 'A1', 3, 0, 4, 'tap_tempo:num,ch,color'],
+            [...ago(3280), 'w', 'dsp', 'A1', 3, 0, 2, 'i,a,A'],
+            [...ago(1200), 'u', 'dsp', 'B2', 1, 1, 1, 's,f'],
+            [...ago(600), 'w', 'ico', '', 0, -1, 1, '-7'],
+          ];
+        }
+        return send(200, { v: 1, ses: 3, up, clock: 1, now, max: 80, items: mockActivity });
       }
       // CERTIFICADO DE TESTE (HARD_TEST.h): o pedal simulado ja vem com um,
       // pra o card do editor aparecer (BFMIDI_MOCK_NOCERT=1 tira). O POST da
