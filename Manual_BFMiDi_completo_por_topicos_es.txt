@@ -2653,6 +2653,27 @@ Campos e ítems:
              Si el filtro deja pasar un solo canal y el equipo está en otro en el Modo Amigable (o
              tus comandos salen en otro), la tarjeta avisa que no le llega nada y ofrece AJUSTAR EL
              FILTRO AL CANAL n.
+- AVANZADO (pestaña APARATOS)
+  Descripción: Para cuando un equipo aparece en la lista y no obedece. Abre una ventana con todo lo
+             que el USB Host sabe de él: número de serie, versión, las interfaces que anuncia, cuál
+             está usando el host y cuántos mensajes aceptó, cuántos dieron error y cuántos envió de
+             vuelta. Arriba están los avisos de lo que llamó la atención, en lenguaje sencillo.
+             Importante: el USB Host envía todos los comandos por el canal 1. El canal elegido en la
+             controladora solo decide qué equipo lo recibe. Por eso el equipo conectado al USB Host
+             debe estar en el canal 1 o en omni.
+             Pruebas (cada una envía el mensaje solo a ese equipo, tal como lo elijas): ENVIAR un PC
+             o CC; RECORRER LOS 16 PUERTOS y RECORRER LOS 16 CANALES, mirando el equipo para ver en
+             cuál reacciona; PEDIR IDENTIDAD, que muestra la versión del firmware cuando el equipo
+             responde; ESCUCHAR 10 s, que muestra lo que envía; PROBAR ESTA INTERFAZ y REABRIR CON
+             SET_INTERFACE, para equipos con más de una interfaz MIDI. El preset o el efecto del
+             equipo puede cambiar durante las pruebas.
+             Ajuste guardado de este equipo: cuando una prueba muestra qué hace reaccionar al
+             equipo, guarda ahí el puerto MIDI, la interfaz, el SET_INTERFACE o no enviar Bank
+             Select. El ajuste queda guardado en el USB Host para ese modelo y vale en todos los
+             comandos. BORRAR AJUSTE vuelve al valor por defecto.
+             COPIAR INFORME copia todo en texto para enviarlo al soporte. El informe de los equipos
+             que abriste también va dentro del backup hecho a continuación.
+             Necesita la controladora y el USB Host actualizados (USB Host 4.2 o más nuevo).
 - MIDI BFMiDi (host → controladora) (pestaña MIDI)
   Descripción: Habilitar MIDI reverso repite el MIDI que llega de los equipos conectados en las
              salidas de la controladora (USB DEVICE y DIN5), como un thru/merge. MIDI Control Host

@@ -2585,6 +2585,28 @@ Fields and items:
              If the filter only lets one channel through and the device is on another one in
              Friendly Mode (or your commands go out on another one), the card warns that nothing
              reaches it and offers SET THE FILTER TO CHANNEL n.
+- ADVANCED (DEVICES tab)
+  Description: For when a device shows up in the list and does not obey. It opens a window with
+             everything the USB Host knows about it: serial number, version, the interfaces it
+             announces, which one the host is using and how many messages it accepted, how many
+             failed and how many it sent back. At the top are the warnings about what stood out, in
+             plain language.
+             Important: the USB Host sends every command on channel 1. The channel chosen on the
+             controller only decides which device receives it. So a device on the USB Host must be
+             on channel 1 or omni.
+             Tests (each one sends the message only to that device, exactly as you choose): SEND a
+             PC or CC; SWEEP THE 16 PORTS and SWEEP THE 16 CHANNELS, watching the device to see on
+             which one it reacts; ASK IDENTITY, which shows the firmware version when the device
+             answers; LISTEN 10 s, which shows what it sends; TEST THIS INTERFACE and REOPEN WITH
+             SET_INTERFACE, for devices with more than one MIDI interface. The device preset or
+             effect may change during the tests.
+             Saved setting for this device: when a test shows what makes the device react, save the
+             MIDI port, the interface, SET_INTERFACE or do not send Bank Select there. The setting
+             is stored in the USB Host for that model and applies to every command. ERASE SETTING
+             goes back to the default.
+             COPY REPORT copies everything as text to send to support. The report of the devices you
+             opened also goes inside the backup made right after.
+             It needs the controller and the USB Host up to date (USB Host 4.2 or newer).
 - BFMiDi MIDI (host → controller) (MIDI tab)
   Description: Enable reverse MIDI repeats the MIDI coming from the plugged-in devices on the
              controller’s outputs (USB DEVICE and DIN5), like a thru/merge. BFMIDI MIDI Control Host

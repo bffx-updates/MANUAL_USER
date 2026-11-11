@@ -424,7 +424,7 @@ export function createMockDevices(opts = {}) {
     editorsAlwaysLoaded: !!opts.editorsAlwaysLoaded,
     scenario: 'default',
     host: {
-      online: true, protocol_ok: true, host_version: '4.0', status_seen: true,
+      online: true, protocol_ok: true, host_version: '4.2', status_seen: true,
       midi_filter_channel: 1, ble_enabled: false, ble_connected: false, ble_mode: 1,
       ble_filter_channel: 0, ble_filter_reported: true, ms3_translate: false, tx_only: false,
       last_ack: 0, restart: '', reqId: 10,
@@ -512,7 +512,7 @@ function buildStatus(state) {
     ble_enabled: h.ble_enabled, ble_connected: h.ble_connected, ble_mode: h.ble_mode,
     ble_filter_channel: h.ble_filter_channel, ble_filter_reported: h.ble_filter_reported,
     ms3_translate: h.ms3_translate, tx_only: h.tx_only,
-    host_version: h.host_version, status_seen: h.status_seen, bridge_flash: true,
+    host_version: h.host_version, status_seen: h.status_seen, bridge_flash: true, device_diag: true, device_test: true, device_reopen: true, device_quirk: true,
     bridge_runs: 0, bridge_up: 0, bridge_down: 0, bridge_ms: 0, bridge_why: '',
     manufacturer: midiDev ? midiDev.manufacturer : tonexDev ? 'IK Multimedia' : 'USB MIDI',
     product: midiDev ? midiDev.product : tonexDev ? 'TONEX ONE' : 'Aguardando dispositivo',
@@ -633,6 +633,65 @@ function kemperQueueRenders(state, items) {
   return added;
 }
 
+// ─── relatorio do aparelho (0x3B) ───────────────────────────────────────────
+// Contadores e ultimos recebidos que os TESTES DIRIGIDOS mexem (0x3C).
+function mockDevDyn(state, index) {
+  const all = state.devDyn || (state.devDyn = {});
+  return all[index] || (all[index] = { ok: 0, ring: [], ovr: 0, iface: -1, goneUntil: 0 });
+}
+function mockDeviceDiagHex(state, index) {
+  const midi = state.devices.filter((d) => d.kind !== 'tonex');
+  const dev = midi.find((d) => Number(d.index || 0) === index);
+  const hx = (arr) => arr.map((b) => (b & 0xFF).toString(16).padStart(2, '0')).join('');
+  if (!dev || mockDevDyn(state, index).goneUntil > Date.now()) return hx([1, index & 0x7F, 0]);
+  const dyn = mockDevDyn(state, index);
+  const odd = midi.indexOf(dev) > 0;       // o 2o em diante = caso "nao reage"
+  const le16 = (v) => [v & 0xFF, (v >> 8) & 0xFF];
+  const le32 = (v) => [v & 0xFF, (v >> 8) & 0xFF, (v >> 16) & 0xFF, (v >>> 24) & 0xFF];
+  const ifMidi = (num, epOut, epIn, cables) => [
+    9, 4, num, 0, 2, 1, 3, 0, 0,                       // interface MIDIStreaming
+    7, 0x24, 1, 0x00, 0x01, 0x41, 0x00,                // MS header 1.00
+    6, 0x24, 2, 1, 1, 0,  6, 0x24, 3, 1, 2, 0,         // jacks embutidos
+    9, 5, epOut, 2, 64, 0, 0, 0, 0,                    // EP OUT bulk 64
+    4 + cables, 0x25, 1, cables, ...Array.from({ length: cables }, (_, k) => 1 + k),
+    9, 5, epIn, 2, 64, 0, 0, 0, 0,                     // EP IN bulk 64
+    5, 0x25, 1, 1, 2,
+  ];
+  const body = odd
+    ? [9, 4, 0, 0, 0, 1, 1, 0, 0, ...ifMidi(1, 0x01, 0x81, 2), ...ifMidi(2, 0x02, 0x82, 1)]
+    : [9, 4, 0, 0, 0, 1, 1, 0, 0, ...ifMidi(1, 0x02, 0x82, 1)];
+  const total = 9 + body.length;
+  const cfg = [9, 2, ...le16(total), odd ? 3 : 2, 1, 0, 0x80, 50, ...body];
+  const vid = parseInt(dev.vid || '0', 16), pid = parseInt(dev.pid || '0', 16);
+  const serial = odd ? 'BFX-SIM-0002' : 'BFX-SIM-0001';
+  const head = [1, index & 0x7F, 0x01, 1, 2 + index, Number(dev.port || 0),
+    ...le16(vid), ...le16(pid), ...le16(odd ? 0x0203 : 0x0110), ...le16(0x0200),
+    0, 0, 0, 64, 1,
+    1, 0, odd ? 0x01 : 0x02, odd ? 0x81 : 0x82, ...le16(64), ...le16(64),
+    ...le32((odd ? 37 : 412) + dyn.ok), ...le16(0), ...le32((odd ? 0 : 18) + dyn.ring.length), 0, 0, 0,
+    serial.length];
+  const ring = dyn.ring.slice(-16);
+  // Ajuste GRAVADO (0x3E), por VID:PID: [flags | 0x40][cabo][if][alt].
+  const q = (state.devQuirks || {})[`${dev.vid}:${dev.pid}`];
+  const quirkBytes = q ? [q.flags | 0x40, q.cable, q.iface, q.alt] : [0, 0, 0, 0];
+  if (q) {
+    head[39] = q.cable;
+    if ((q.flags & 1) && dyn.iface < 0) {
+      head[19] = q.iface;
+      head[21] = q.iface === 2 ? 0x02 : 0x01;
+      head[22] = q.iface === 2 ? 0x82 : 0x81;
+    }
+  }
+  // Ajuste de teste (0x3D): interface escolhida e o byte de ajuste no fim.
+  if (dyn.iface >= 0) {
+    head[19] = dyn.iface;
+    head[21] = dyn.iface === 2 ? 0x02 : 0x01;
+    head[22] = dyn.iface === 2 ? 0x82 : 0x81;
+  }
+  return hx([...head, ...Array.from(serial).map((c) => c.charCodeAt(0)), ...le16(cfg.length), ...cfg,
+    ring.length, ...ring.flat(), dyn.ovr, ...quirkBytes]);
+}
+
 // ─── roteador ────────────────────────────────────────────────────────────────
 export function handleMock(state, method, pathname, query, body) {
   const M = String(method || 'GET').toUpperCase();
@@ -658,6 +717,85 @@ export function handleMock(state, method, pathname, query, body) {
   // ── USB host: status e acoes ──
   if (p === '/usb_host/status') return buildStatus(state);
   if (p === '/usb_host/refresh') return { sent: true, request_id: reqId() };
+  // Relatorio do aparelho (popup AVANCADO, host 4.2): layout do 0x3B no
+  // USB_HOST_BRIDGE_SYSEX.h. O 1o pedal USB MIDI sai "saudavel"; os outros
+  // saem como "aceita os bytes e nao reage" (2 portas MIDI na saida e duas
+  // interfaces MIDI), pra a tela mostrar os avisos.
+  // Teste dirigido: o pedal "aceita" tudo. O 1o pedal responde a identidade e
+  // devolve um eco de CC (como quem mexeu num knob); os outros ficam mudos.
+  if (p === '/usb_host/device/test') {
+    const index = toInt(a.index);
+    const hex = String(a.hex || '').replace(/\s+/g, '');
+    const bytes = (hex.match(/../g) || []).map((x) => parseInt(x, 16));
+    if (!bytes.length || bytes[0] < 0x80 || bytes.length > 6) return withStatus(400, { error: 'INDEX/CABLE/HEX INVALID' });
+    const midi = state.devices.filter((d) => d.kind !== 'tonex');
+    const dev = midi.find((d) => Number(d.index || 0) === index);
+    if (dev) {
+      const dyn = mockDevDyn(state, index);
+      dyn.ok += bytes[0] === 0xF0 ? Math.ceil(bytes.length / 3) : 1;
+      if (midi.indexOf(dev) === 0) {
+        if (bytes[0] === 0xF0 && bytes[1] === 0x7E && bytes[3] === 0x06 && bytes[4] === 0x01) {
+          // F0 7E 00 06 02 | 00 21 1B | 05 00 | 01 00 | 01 02 00 00 | F7
+          dyn.ring.push([0x04, 0xF0, 0x7E, 0x00], [0x04, 0x06, 0x02, 0x00], [0x04, 0x21, 0x1B, 0x05],
+            [0x04, 0x00, 0x01, 0x00], [0x04, 0x01, 0x02, 0x00], [0x06, 0x00, 0xF7, 0x00]);
+        } else if ((bytes[0] & 0xF0) === 0xB0) {
+          dyn.ring.push([0x0B, bytes[0], bytes[1], bytes[2]]);
+        }
+      }
+    }
+    return { sent: true };
+  }
+  // Reabrir com ajuste de teste: o aparelho "some" 2 s e volta. Interface que
+  // o aparelho de mentira nao tem (so o "nao reage" tem a 2) = ajuste desfeito.
+  if (p === '/usb_host/device/reopen') {
+    const index = toInt(a.index);
+    const iface = has(a, 'iface') ? toInt(a.iface) : -1;
+    const setif = String(a.setif || '') === '1';
+    const midi = state.devices.filter((d) => d.kind !== 'tonex');
+    const dev = midi.find((d) => Number(d.index || 0) === index);
+    if (dev) {
+      const dyn = mockDevDyn(state, index);
+      const odd = midi.indexOf(dev) > 0;
+      const okIface = iface < 0 || (odd && (iface === 1 || iface === 2));
+      dyn.ok = 0; dyn.ring = [];
+      dyn.goneUntil = Date.now() + 2000;
+      if (iface < 0 && !setif) { dyn.ovr = 0; dyn.iface = -1; }
+      else if (!okIface) { dyn.ovr = 0; dyn.iface = -1; }
+      else { dyn.iface = iface; dyn.ovr = 1 | ((setif || toInt(a.alt) !== 0) ? 2 : 0); }
+    }
+    return { sent: true };
+  }
+  // Ajuste gravado por aparelho (VID:PID); tudo zerado apaga.
+  if (p === '/usb_host/device/quirk') {
+    const index = toInt(a.index);
+    const midi = state.devices.filter((d) => d.kind !== 'tonex');
+    const dev = midi.find((d) => Number(d.index || 0) === index);
+    if (dev) {
+      const all = state.devQuirks || (state.devQuirks = {});
+      const iface = has(a, 'iface') ? toInt(a.iface) : -1;
+      const flags = (iface >= 0 ? 1 : 0) | (String(a.setif || '') === '1' ? 2 : 0) | (String(a.nobank || '') === '1' ? 4 : 0);
+      const cable = toInt(a.cable) & 15;
+      const key = `${dev.vid}:${dev.pid}`;
+      if (!flags && !cable) delete all[key];
+      else all[key] = { flags, cable, iface: iface >= 0 ? iface : 0, alt: iface >= 0 ? toInt(a.alt) : 0 };
+      const dyn = mockDevDyn(state, index);
+      dyn.ovr = 0; dyn.iface = -1;
+      dyn.goneUntil = Date.now() + 1200;
+    }
+    return { sent: true };
+  }
+  if (p === '/usb_host/device/diag') {
+    const index = toInt(a.index);
+    const D = state.devDiag || (state.devDiag = { seq: 0, index: -1, hex: '', due: 0 });
+    if (String(a.refresh || '') === '1') { D.due = Date.now() + 500; D.want = index; }
+    if (D.due && Date.now() >= D.due) {
+      D.due = 0; D.seq++; D.index = D.want;
+      D.hex = mockDeviceDiagHex(state, D.want);
+    }
+    const have = D.index === index && D.hex;
+    return { supported: true, index, seq: D.seq, age_ms: 0, req_ms: 0,
+      len: have ? D.hex.length / 2 : 0, hex: have ? D.hex : '' };
+  }
   if (p === '/usb_host/mode') {
     if (!has(a, 'mode')) return withStatus(400, { error: 'MODE REQUIRED' });
     return { sent: true, request_id: reqId(), mode: toInt(a.mode) };   // automatico: no-op
