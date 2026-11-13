@@ -2586,6 +2586,14 @@ Campos e ítems:
              cuenta como uno solo).
              Usa el mínimo que lo resuelva: durante la pausa la controladora espera, y un pedal de
              expresión en ese canal queda “escalonado”.
+- USB A MIDI OUT (pestaña TIEMPOS)
+  Descripción: Activado, el MIDI que el ordenador envía por el puerto USB de la controladora
+             (Reaper, Ableton u otro DAW) sale por MIDI OUT (TRS/DIN5) y llega también a los pedales
+             del USB HOST, por el filtro de canal de cada uno. Pasan PC, CC, notas y clock; SysEx no
+             pasa. Viene desactivado.
+             La controladora solo reenvía: un PC del ordenador no cambia su preset. En el DAW, no
+             devuelvas a la BFMiDi lo que ella misma envía, o los mensajes salen duplicados. Con un
+             Kemper en MODO AMIGABLE el reenvío queda parado, porque el puerto USB es del Kemper.
 - MEMORIA (pestaña MEMORIA)
   Descripción: Cuánta memoria de la controladora está en uso, en una sola barra: Editor y sistema,
              Presets, Imágenes e iconos y Libre. Es la misma tarjeta de IMÁGENES › MEMORIA. La

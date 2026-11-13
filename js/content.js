@@ -9351,6 +9351,23 @@ const MN_CONTENT = {
       },
       {
        "name": {
+        "pt": "USB PARA MIDI OUT",
+        "en": "USB TO MIDI OUT",
+        "es": "USB A MIDI OUT"
+       },
+       "type": {
+        "pt": "aba TEMPOS",
+        "en": "TIMING tab",
+        "es": "pestaña TIEMPOS"
+       },
+       "desc": {
+        "pt": "<p>Ligado, o MIDI que o computador manda pela porta USB da controladora (Reaper, Ableton ou outro DAW) sai pelo <strong>MIDI OUT</strong> (TRS/DIN5) e chega também aos pedais do <strong>USB HOST</strong>, pelo filtro de canal de cada um. Passam PC, CC, notas e clock; SysEx não passa. Vem desligado.</p><p>A controladora só repassa: um PC do computador não troca o preset dela. No DAW, não devolva para a BFMiDi o que ela mesma envia, senão as mensagens saem em dobro. Com um Kemper no MODO AMIGÁVEL o repasse fica parado, porque a porta USB é do Kemper.</p>",
+        "en": "<p>When on, the MIDI the computer sends through the controller's USB port (Reaper, Ableton or another DAW) goes out on <strong>MIDI OUT</strong> (TRS/DIN5) and also reaches the <strong>USB HOST</strong> pedals, through each pedal's channel filter. PC, CC, notes and clock pass; SysEx does not. It is off by default.</p><p>The controller only passes it along: a PC from the computer does not change its preset. In the DAW, do not send back to the BFMiDi what it sends itself, or messages go out twice. With a Kemper in FRIENDLY MODE the pass-through is paused, because the USB port belongs to the Kemper.</p>",
+        "es": "<p>Activado, el MIDI que el ordenador envía por el puerto USB de la controladora (Reaper, Ableton u otro DAW) sale por <strong>MIDI OUT</strong> (TRS/DIN5) y llega también a los pedales del <strong>USB HOST</strong>, por el filtro de canal de cada uno. Pasan PC, CC, notas y clock; SysEx no pasa. Viene desactivado.</p><p>La controladora solo reenvía: un PC del ordenador no cambia su preset. En el DAW, no devuelvas a la BFMiDi lo que ella misma envía, o los mensajes salen duplicados. Con un Kemper en MODO AMIGABLE el reenvío queda parado, porque el puerto USB es del Kemper.</p>"
+       }
+      },
+      {
+       "name": {
         "pt": "MEMÓRIA",
         "en": "MEMORY",
         "es": "MEMORIA"

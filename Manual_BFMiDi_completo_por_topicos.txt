@@ -2485,6 +2485,14 @@ Campos e itens:
              como uma só).
              Use o mínimo que resolver: durante a pausa a controladora espera, e um pedal de
              expressão nesse canal fica “degrau”.
+- USB PARA MIDI OUT (aba TEMPOS)
+  Descrição: Ligado, o MIDI que o computador manda pela porta USB da controladora (Reaper, Ableton
+             ou outro DAW) sai pelo MIDI OUT (TRS/DIN5) e chega também aos pedais do USB HOST, pelo
+             filtro de canal de cada um. Passam PC, CC, notas e clock; SysEx não passa. Vem
+             desligado.
+             A controladora só repassa: um PC do computador não troca o preset dela. No DAW, não
+             devolva para a BFMiDi o que ela mesma envia, senão as mensagens saem em dobro. Com um
+             Kemper no MODO AMIGÁVEL o repasse fica parado, porque a porta USB é do Kemper.
 - MEMÓRIA (aba MEMÓRIA)
   Descrição: Quanto da memória da controladora está em uso, numa barra só: Editor e sistema,
              Presets, Imagens e ícones e Livre. É o mesmo card de IMAGENS › MEMÓRIA. As

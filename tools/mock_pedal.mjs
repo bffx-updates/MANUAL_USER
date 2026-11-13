@@ -63,7 +63,7 @@ export function buildDemoSeed(seedPath = path.join(REPO, 'production', 'backup_p
     // editor mostra "atualize o firmware" no card ENTRADA AUTOMÁTICA NO LIVE
     auto_live: '0', auto_live_ms: '2000',
     // idem no card BANK NA TROCA DE PRESET (GLOBAL > TELA > GERAL)
-    preset_card: '0', preset_card_ms: '2000',
+    preset_card: '0', preset_card_ms: '2000', usb_thru: '0',
     // idem no card GIRAR ÍCONES (GLOBAL > TELA)
     icon_rotation: '0',
     // idem no AJUSTE FINO do card BPM NO DISPLAY (GLOBAL > TELA)

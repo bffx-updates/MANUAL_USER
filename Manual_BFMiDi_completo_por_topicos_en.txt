@@ -2519,6 +2519,15 @@ Fields and items:
              Select + PC counts as one).
              Use the smallest value that fixes it: during the pause the controller waits, and an
              expression pedal on that channel becomes “steppy”.
+- USB TO MIDI OUT (TIMING tab)
+  Description: When on, the MIDI the computer sends through the controller's USB port (Reaper,
+             Ableton or another DAW) goes out on MIDI OUT (TRS/DIN5) and also reaches the USB HOST
+             pedals, through each pedal's channel filter. PC, CC, notes and clock pass; SysEx does
+             not. It is off by default.
+             The controller only passes it along: a PC from the computer does not change its preset.
+             In the DAW, do not send back to the BFMiDi what it sends itself, or messages go out
+             twice. With a Kemper in FRIENDLY MODE the pass-through is paused, because the USB port
+             belongs to the Kemper.
 - MEMORY (MEMORY tab)
   Description: How much of the controller's memory is in use, in a single bar: Editor and system,
              Presets, Images and icons and Free. It's the same card as IMAGES › MEMORY. The global

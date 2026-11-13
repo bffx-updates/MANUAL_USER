@@ -424,7 +424,7 @@ export function createMockDevices(opts = {}) {
     editorsAlwaysLoaded: !!opts.editorsAlwaysLoaded,
     scenario: 'default',
     host: {
-      online: true, protocol_ok: true, host_version: '4.2', status_seen: true,
+      online: true, protocol_ok: true, host_version: '4.3', status_seen: true,
       midi_filter_channel: 1, ble_enabled: false, ble_connected: false, ble_mode: 1,
       ble_filter_channel: 0, ble_filter_reported: true, ms3_translate: false, tx_only: false,
       last_ack: 0, restart: '', reqId: 10,
@@ -839,7 +839,7 @@ export function handleMock(state, method, pathname, query, body) {
       return withStatus(400, { error: 'INVALID VID/PID' });
     }
     const ch = toInt(a.channel);
-    if (ch < 0 || ch > 16) return withStatus(400, { error: 'INVALID CHANNEL' });
+    if (ch < 0 || ch > 17) return withStatus(400, { error: 'INVALID CHANNEL' });
     const key = `${vid}:${pid}`;
     state.devFilters.delete(key);
     state.devFilters.set(key, ch);
