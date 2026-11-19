@@ -1915,15 +1915,14 @@ Campos e ítems:
              no cambia: es para la noche en que la banda toca en otro tono. Tocar en TONO abre la
              ventana con VOLVER AL ORIGINAL, que lo deshace. El mismo ajuste está en la ficha, en
              DETALLES › Tono en el escenario; allí también están −½ y +½, que reescriben la canción.
-- Tarjeta Hoja: letra, cifra, líneas por pantalla y el final de las pantallas (opción)
+- Tarjeta Hoja: letra, cifra y líneas por pantalla (opción)
   Descripción: En los ajustes del escenario, categoría SETLIST, tarjeta Hoja. Tamaño de la letra
              (hoja): PP a GG; mayor pone menos líneas en cada pantalla (la letra crece y la parte
              gana más pantallas). Tamaño de la cifra (hoja): PP a GG, solo las etiquetas de acorde.
-             Líneas por pantalla (hoja): 4 a 16, vale para las partes en AUTO. En la última
-             pantalla, SIGUIENTE PANTALLA…: VA A LA PARTE SIGUIENTE (por defecto: un solo pie
-             recorre toda la canción, pasa las pantallas y, en la última, llama a la parte
-             siguiente; PANTALLA ANTERIOR, en la primera, vuelve a la parte anterior) o VUELVE A LA
-             1ª.
+             Líneas por pantalla (hoja): 4 a 16, vale para las partes en AUTO.
+             SIGUIENTE PANTALLA con el pie recorre toda la canción: pasa las pantallas de la parte
+             y, en la última, llama a la parte siguiente. PANTALLA ANTERIOR, en la primera pantalla,
+             vuelve a la parte anterior (en su última pantalla).
              Cada pantalla de la hoja ocupa toda la altura del área; una línea muy larga deja de
              crecer al llegar al ancho.
 - Diseño de la pantalla (5 opciones)
@@ -2405,11 +2404,14 @@ Campos e ítems:
              y adónde envía; sin canal, avisa que todavía no envía nada. Toca EDITAR para abrirlo.
              VOLVER AL INICIO AL CAMBIAR DE PRESET devuelve el LED y la pantalla al estado inicial
              en cada cambio de preset, sin enviar MIDI.
+             En SINGLE tiene los tres gestos, como los footswitches del preset: CLICK, LONG CLICK y
+             RECLICK, cada uno con sus comandos y su color del anillo.
 - EXTERNAL SW1 y SW2 (pestaña EXTERNOS)
   Descripción: Los dos footswitches externos (entrada 2SW), sin LED, con los modos del SW GLOBAL y
              también el CONTROL y válidos en cualquier preset. Cada uno puede tener un indicador en
              pantalla (sigla, colores y posición) y la misma vuelta al inicio al cambiar de preset.
-             También tienen dos comandos exclusivos para recorrer bancos en vista previa.
+             También tienen dos comandos exclusivos para recorrer bancos en vista previa. En SINGLE
+             tienen CLICK, LONG CLICK y RECLICK.
 Observaciones:
 - Las tarjetas que dependen del hardware (botón LIVE, expresión, footswitches externos) solo
    aparecen en los modelos que tienen esas entradas; en una placa sin ellas, la pestaña EXTERNOS lo
@@ -2982,8 +2984,8 @@ Campos e ítems:
   Descripción: Pasan las pantallas de la parte que está en la pantalla del setlist de la app (la
              hoja de acordes del estribillo en 3 pantallas, por ejemplo). La controladora solo avisa
              a la app; sin el Modo Escenario abierto en el setlist, no hacen nada. No necesitan
-             canal. Lo que pasa en la última pantalla se elige en los ajustes del escenario (SETLIST
-             › En la última pantalla).
+             canal. En la última pantalla, SIGUIENTE PANTALLA llama a la parte siguiente; en la
+             primera, PANTALLA ANTERIOR vuelve a la parte anterior.
 - » STAGE / SETLIST SCREEN (comando)
   Descripción: También bajo ── SETLIST ──: cambia la pantalla del Modo Escenario entre el ESCENARIO
              y el SETLIST — cada toque alterna. Con el Modo Escenario cerrado, no hace nada. No

@@ -1872,14 +1872,14 @@ Fields and items:
              is for the night the band plays in another key. Tapping KEY opens the window with BACK
              TO ORIGINAL, which undoes it. The same setting is on the song page, under DETAILS › Key
              on stage; −½ and +½, which rewrite the song for good, are there too.
-- Sheet card: lyrics, chords, lines per screen and the end of the screens (option)
+- Sheet card: lyrics, chords and lines per screen (option)
   Description: In the stage settings, SETLIST category, Sheet card. Lyrics size (sheet): PP to GG;
              bigger puts fewer lines on each screen (the lyrics grow and the part gets more
              screens). Chord size (sheet): PP to GG, only the chord tags. Lines per screen (sheet):
-             4 to 16, used by the parts set to AUTO. On the last screen, NEXT PAGE…: GOES TO THE
-             NEXT PART (default: a single foot walks the whole song, turns the screens and, on the
-             last one, calls the next part; PREVIOUS PAGE on the first one goes back to the previous
-             part) or BACK TO SCREEN 1.
+             4 to 16, used by the parts set to AUTO.
+             NEXT PAGE on the footswitch walks the whole song: it turns the part's screens and, on
+             the last one, calls the next part. PREVIOUS PAGE on the first screen goes back to the
+             previous part (on its last screen).
              Each sheet screen fills the whole height of the area; a very long line stops growing
              when it reaches the width.
 - Screen layout (5 options)
@@ -2350,11 +2350,14 @@ Fields and items:
              to open it.
              RETURN TO START ON PRESET CHANGE returns the LED and the screen to their initial state
              on every preset change, without sending MIDI.
+             In SINGLE it has all three gestures, like the preset footswitches: CLICK, LONG CLICK
+             and RECLICK, each with its own commands and ring color.
 - EXTERNAL SW1 and SW2 (EXTERNAL tab)
   Description: The two external footswitches (2SW input), with no LED, with the GLOBAL SW modes plus
              CONTROL and working in any preset. Each one can have an on-screen indicator (label,
              colors and position) and the same return to start on preset change. They also have two
-             exclusive commands for browsing banks in preview.
+             exclusive commands for browsing banks in preview. In SINGLE they have CLICK, LONG CLICK
+             and RECLICK.
 Notes:
 - The cards that depend on hardware (LIVE button, expression, external footswitches) only show up on
    models that have those inputs; on a board without them, the EXTERNAL tab says so.
@@ -2906,8 +2909,9 @@ Fields and items:
 - » SETLIST NEXT PAGE / PREV PAGE (command)
   Description: Turn the screens of the part shown on the app’s setlist screen (the chorus chord
              sheet in 3 screens, for example). The controller only tells the app; without Stage Mode
-             open on the setlist, they do nothing. They don’t need a channel. What happens on the
-             last screen is chosen in the stage settings (SETLIST › On the last screen).
+             open on the setlist, they do nothing. They don’t need a channel. On the last screen,
+             NEXT PAGE calls the next part; on the first, PREVIOUS PAGE goes back to the previous
+             part.
 - » STAGE / SETLIST SCREEN (command)
   Description: Also under ── SETLIST ──: switches the Stage Mode screen between the STAGE and the
              SETLIST — each tap toggles. With Stage Mode closed, it does nothing. It doesn’t need a

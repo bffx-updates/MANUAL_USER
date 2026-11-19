@@ -1850,14 +1850,14 @@ Campos e itens:
              em que a banda toca em outro tom. Tocar no TOM abre a janela com VOLTAR AO ORIGINAL,
              que desfaz. O mesmo ajuste está na ficha, em DETALHES › Tom no palco; ali também ficam
              −½ e +½, que reescrevem a música de vez.
-- Cartão Folha: letra, cifra, linhas por tela e o fim das telas (opção)
+- Cartão Folha: letra, cifra e linhas por tela (opção)
   Descrição: Nas configurações do palco, categoria SETLIST, cartão Folha. Tamanho da letra (folha):
              PP a GG; maior põe menos linhas em cada tela (a letra cresce e a parte ganha mais
              telas). Tamanho da cifra (folha): PP a GG, só as etiquetas de acorde. Linhas por tela
-             (folha): 4 a 16, vale para as partes em AUTO. Na última tela, PRÓXIMA TELA…: VAI PRA
-             PRÓXIMA PARTE (padrão: um pé só percorre a música inteira, passa as telas e, na última,
-             chama a parte seguinte; TELA ANTERIOR, na primeira, volta à parte anterior) ou VOLTA À
-             1ª TELA.
+             (folha): 4 a 16, vale para as partes em AUTO.
+             PRÓXIMA TELA pelo pé percorre a música inteira: passa as telas da parte e, na última,
+             chama a parte seguinte. TELA ANTERIOR, na primeira tela, volta à parte anterior (na
+             última tela dela).
              Cada tela da folha ocupa toda a altura da área; uma linha muito comprida para de
              crescer quando chega na largura.
 - Layout da tela (5 opções)
@@ -2319,11 +2319,14 @@ Campos e itens:
              avisa que ele ainda não manda nada. Toque em EDITAR para abrir.
              VOLTAR AO INÍCIO AO TROCAR DE PRESET devolve o LED e a tela ao estado inicial a cada
              troca de preset, sem mandar MIDI.
+             No SINGLE ele tem os três gestos, como nos footswitches do preset: CLICK, LONG CLICK e
+             RECLICK, cada um com os seus comandos e a sua cor do anel.
 - EXTERNAL SW1 e SW2 (aba EXTERNOS)
   Descrição: Os dois footswitches externos (entrada 2SW), sem LED, com os modos do SW GLOBAL e
              também o CONTROL e valendo em qualquer preset. Cada um pode ter um indicador na tela
              (sigla, cores e posição) e a mesma volta ao início ao trocar de preset. Também têm dois
-             comandos exclusivos para navegar bancos em prévia.
+             comandos exclusivos para navegar bancos em prévia. No SINGLE têm CLICK, LONG CLICK e
+             RECLICK.
 Observações:
 - Os cards que dependem de hardware (botão LIVE, expressão, footswitches externos) só aparecem nos
    modelos que têm essas entradas; numa placa sem elas, a aba EXTERNOS explica isso.
@@ -2861,8 +2864,8 @@ Campos e itens:
 - » SETLIST NEXT PAGE / PREV PAGE (comando)
   Descrição: Passam as telas da parte que está na tela do setlist do app (a folha de cifra do refrão
              em 3 telas, por exemplo). A controladora só avisa o app; sem o Modo Palco aberto no
-             setlist, não fazem nada. Não precisam de canal. O que acontece na última tela é
-             escolhido nas configurações do palco (SETLIST › Na última tela).
+             setlist, não fazem nada. Não precisam de canal. Na última tela, PRÓXIMA TELA chama a
+             parte seguinte; na primeira, TELA ANTERIOR volta à parte anterior.
 - » STAGE / SETLIST SCREEN (comando)
   Descrição: Também sob ── SETLIST ──: troca a tela do Modo Palco entre o PALCO e o SETLIST — cada
              toque alterna. Com o Modo Palco fechado, não faz nada. Não precisa de canal. Pede a
