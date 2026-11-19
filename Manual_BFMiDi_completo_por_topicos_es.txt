@@ -2960,7 +2960,8 @@ Objetivo: Además de enviar MIDI hacia afuera, un footswitch puede enviarle un c
 Cómo hacerlo:
 1. En cualquier lista de CC de un footswitch (STOMP, SINGLE, MACROS, MOMENTARY, SPIN, TAP TEMPO),
    desplázate hasta el final: los comandos de navegación vienen después de los CC normales, marcados
-   con ».
+   con ». No necesitan canal y funcionan en cualquier gesto: TOQUE, MANTENER (LONG CLICK) o PISAR DE
+   NUEVO (RECLICK).
 Campos e ítems:
 - » UP BANK y » DOWN BANK (comando)
   Descripción: Suben y bajan una letra, llamando el preset del banco nuevo. Los bancos desactivados

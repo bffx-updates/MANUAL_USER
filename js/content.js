@@ -10392,9 +10392,9 @@ const MN_CONTENT = {
      },
      "howto": [
       {
-       "pt": "Em qualquer lista de CC de um footswitch (STOMP, SINGLE, MACROS, MOMENTARY, SPIN, TAP TEMPO), role até o fim: os comandos de navegação vêm depois dos CCs normais, marcados com <strong>»</strong>.",
-       "en": "In any footswitch CC list (STOMP, SINGLE, MACROS, MOMENTARY, SPIN, TAP TEMPO), scroll to the end: the navigation commands come after the regular CCs, marked with <strong>»</strong>.",
-       "es": "En cualquier lista de CC de un footswitch (STOMP, SINGLE, MACROS, MOMENTARY, SPIN, TAP TEMPO), desplázate hasta el final: los comandos de navegación vienen después de los CC normales, marcados con <strong>»</strong>."
+       "pt": "Em qualquer lista de CC de um footswitch (STOMP, SINGLE, MACROS, MOMENTARY, SPIN, TAP TEMPO), role até o fim: os comandos de navegação vêm depois dos CCs normais, marcados com <strong>»</strong>. Eles não precisam de canal e funcionam em qualquer gesto: TOQUE, SEGURAR (LONG CLICK) ou PISAR DE NOVO (RECLICK).",
+       "en": "In any footswitch CC list (STOMP, SINGLE, MACROS, MOMENTARY, SPIN, TAP TEMPO), scroll to the end: the navigation commands come after the regular CCs, marked with <strong>»</strong>. They don’t need a channel and work on any gesture: TAP, HOLD (LONG CLICK) or PRESS AGAIN (RECLICK).",
+       "es": "En cualquier lista de CC de un footswitch (STOMP, SINGLE, MACROS, MOMENTARY, SPIN, TAP TEMPO), desplázate hasta el final: los comandos de navegación vienen después de los CC normales, marcados con <strong>»</strong>. No necesitan canal y funcionan en cualquier gesto: TOQUE, MANTENER (LONG CLICK) o PISAR DE NUEVO (RECLICK)."
       }
      ],
      "noMock": true,

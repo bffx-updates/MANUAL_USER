@@ -2842,7 +2842,9 @@ Objetivo: Além de mandar MIDI para fora, um footswitch pode mandar um comando p
           controladora — trocar de banco, de preset ou de camada sem sair do LIVE.
 Como fazer:
 1. Em qualquer lista de CC de um footswitch (STOMP, SINGLE, MACROS, MOMENTARY, SPIN, TAP TEMPO),
-   role até o fim: os comandos de navegação vêm depois dos CCs normais, marcados com ».
+   role até o fim: os comandos de navegação vêm depois dos CCs normais, marcados com ». Eles não
+   precisam de canal e funcionam em qualquer gesto: TOQUE, SEGURAR (LONG CLICK) ou PISAR DE NOVO
+   (RECLICK).
 Campos e itens:
 - » UP BANK e » DOWN BANK (comando)
   Descrição: Sobem e descem uma letra, chamando o preset do banco novo. Bancos desligados em BANCOS

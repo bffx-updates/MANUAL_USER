@@ -2887,7 +2887,8 @@ Purpose: Besides sending MIDI out, a footswitch can send a command to the contro
           bank, preset or layer without leaving LIVE.
 How to:
 1. In any footswitch CC list (STOMP, SINGLE, MACROS, MOMENTARY, SPIN, TAP TEMPO), scroll to the end:
-   the navigation commands come after the regular CCs, marked with ».
+   the navigation commands come after the regular CCs, marked with ». They don’t need a channel and
+   work on any gesture: TAP, HOLD (LONG CLICK) or PRESS AGAIN (RECLICK).
 Fields and items:
 - » UP BANK and » DOWN BANK (command)
   Description: Move up or down one letter, calling up the preset in the new bank. Banks turned off
