@@ -1859,9 +1859,11 @@ Fields and items:
   Description: When the part does not fit on one screen (a long sheet, many chords), a strip with
              arrows, dots and the screen number appears below the notes. Turn the screens with the
              arrows, with the Page Down / Page Up or → / ← keys (a Bluetooth page-turner pedal sends
-             these keys) or with your foot: put SETLIST NEXT PAGE and SETLIST PREV PAGE on a
-             footswitch (special commands, at the end of the CC list). On a part set to PERSONAL
-             NOTES the same command scrolls the text.
+             these keys) or with your foot: in PRESET CALLING (BANKS › CALLING) or in the COMBOS,
+             pick SETLIST: NEXT PAGE and SETLIST: PREVIOUS PAGE for a gesture; on a footswitch in
+             LIVE, GLOBAL FS or external, the special commands SETLIST NEXT PAGE and SETLIST PREV
+             PAGE (at the end of the CC list). On a part set to PERSONAL NOTES the same command
+             scrolls the text.
              Changing parts goes back to the first screen.
 - KEY (key on stage) (button)
   Description: In the header, the − KEY + capsule: each tap on − or + moves what the screen shows a
@@ -1870,11 +1872,16 @@ Fields and items:
              is for the night the band plays in another key. Tapping KEY opens the window with BACK
              TO ORIGINAL, which undoes it. The same setting is on the song page, under DETAILS › Key
              on stage; −½ and +½, which rewrite the song for good, are there too.
-- Lines per screen (sheet) and the end of the screens (option)
-  Description: In the stage settings, SETLIST category. Lines per screen (sheet): 4 to 16, used by
-             the parts set to AUTO. On the last screen, NEXT PAGE…: STOPS (default), GOES TO THE
-             NEXT PART (a single foot walks the whole song: it turns the screens and, on the last
-             one, calls the next part) or BACK TO SCREEN 1.
+- Sheet card: lyrics, chords, lines per screen and the end of the screens (option)
+  Description: In the stage settings, SETLIST category, Sheet card. Lyrics size (sheet): PP to GG;
+             bigger puts fewer lines on each screen (the lyrics grow and the part gets more
+             screens). Chord size (sheet): PP to GG, only the chord tags. Lines per screen (sheet):
+             4 to 16, used by the parts set to AUTO. On the last screen, NEXT PAGE…: GOES TO THE
+             NEXT PART (default: a single foot walks the whole song, turns the screens and, on the
+             last one, calls the next part; PREVIOUS PAGE on the first one goes back to the previous
+             part), STOPS or BACK TO SCREEN 1.
+             Each sheet screen fills the whole height of the area; a very long line stops growing
+             when it reaches the width.
 - Screen layout (5 options)
   Description: FULL (song, parts strip, notes and footer), PARTS ON THE SIDE (the parts in a column,
              the notes on the right — needs a wide screen), BIG NOTES (the song on a single line and

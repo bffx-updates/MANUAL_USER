@@ -1838,9 +1838,10 @@ Campos e itens:
   Descrição: Quando a parte não cabe numa tela (folha comprida, muitos acordes), aparece embaixo das
              anotações uma faixa com setas, pontinhos e o número da tela. Passe as telas pelas
              setas, pelas teclas Page Down / Page Up ou → / ← (um pedal Bluetooth de virar página
-             manda essas teclas) ou pelo pé: ponha SETLIST NEXT PAGE e SETLIST PREV PAGE num
-             footswitch (comandos especiais, no fim da lista de CC). Numa parte em NOTAS PESSOAIS o
-             mesmo comando rola o texto.
+             manda essas teclas) ou pelo pé: na CHAMADA DE PRESETS (BANCOS › CHAMADA) ou nos COMBOS,
+             escolha SETLIST: PRÓXIMA TELA e SETLIST: TELA ANTERIOR num gesto; num footswitch em
+             LIVE, SW GLOBAL ou externo, os comandos especiais SETLIST NEXT PAGE e SETLIST PREV PAGE
+             (no fim da lista de CC). Numa parte em NOTAS PESSOAIS o mesmo comando rola o texto.
              Trocar de parte volta para a primeira tela.
 - TOM (tom no palco) (botão)
   Descrição: No cabeçalho, a cápsula − TOM +: cada toque em − ou + sobe ou desce meio tom o que a
@@ -1849,11 +1850,16 @@ Campos e itens:
              em que a banda toca em outro tom. Tocar no TOM abre a janela com VOLTAR AO ORIGINAL,
              que desfaz. O mesmo ajuste está na ficha, em DETALHES › Tom no palco; ali também ficam
              −½ e +½, que reescrevem a música de vez.
-- Linhas por tela (folha) e o fim das telas (opção)
-  Descrição: Nas configurações do palco, categoria SETLIST. Linhas por tela (folha): 4 a 16, vale
-             para as partes em AUTO. Na última tela, PRÓXIMA TELA…: PARA (padrão), VAI PRA PRÓXIMA
-             PARTE (um pé só percorre a música inteira: passa as telas e, na última, chama a parte
-             seguinte) ou VOLTA À 1ª TELA.
+- Cartão Folha: letra, cifra, linhas por tela e o fim das telas (opção)
+  Descrição: Nas configurações do palco, categoria SETLIST, cartão Folha. Tamanho da letra (folha):
+             PP a GG; maior põe menos linhas em cada tela (a letra cresce e a parte ganha mais
+             telas). Tamanho da cifra (folha): PP a GG, só as etiquetas de acorde. Linhas por tela
+             (folha): 4 a 16, vale para as partes em AUTO. Na última tela, PRÓXIMA TELA…: VAI PRA
+             PRÓXIMA PARTE (padrão: um pé só percorre a música inteira, passa as telas e, na última,
+             chama a parte seguinte; TELA ANTERIOR, na primeira, volta à parte anterior), PARA ou
+             VOLTA À 1ª TELA.
+             Cada tela da folha ocupa toda a altura da área; uma linha muito comprida para de
+             crescer quando chega na largura.
 - Layout da tela (5 opções)
   Descrição: COMPLETO (música, faixa de partes, anotações e rodapé), PARTES AO LADO (as partes numa
              coluna, as anotações à direita — precisa de tela larga), ANOTAÇÕES GRANDES (a música

@@ -1902,8 +1902,10 @@ Campos e ítems:
   Descripción: Cuando la parte no cabe en una pantalla (hoja larga, muchos acordes), aparece debajo
              de las notas una franja con flechas, puntos y el número de pantalla. Pasa las pantallas
              con las flechas, con las teclas Page Down / Page Up o → / ← (un pedal Bluetooth de
-             pasar página envía esas teclas) o con el pie: pon SETLIST NEXT PAGE y SETLIST PREV PAGE
-             en un footswitch (comandos especiales, al final de la lista de CC). En una parte en
+             pasar página envía esas teclas) o con el pie: en el LLAMADO DE PRESETS (BANCOS ›
+             LLAMADO) o en los COMBOS, elige SETLIST: PRÓXIMA PANTALLA y SETLIST: PANTALLA ANTERIOR
+             en un gesto; en un footswitch en LIVE, FS GLOBAL o externo, los comandos especiales
+             SETLIST NEXT PAGE y SETLIST PREV PAGE (al final de la lista de CC). En una parte en
              NOTAS PERSONALES el mismo comando desplaza el texto.
              Cambiar de parte vuelve a la primera pantalla.
 - TONO (tono en el escenario) (botón)
@@ -1913,11 +1915,17 @@ Campos e ítems:
              no cambia: es para la noche en que la banda toca en otro tono. Tocar en TONO abre la
              ventana con VOLVER AL ORIGINAL, que lo deshace. El mismo ajuste está en la ficha, en
              DETALLES › Tono en el escenario; allí también están −½ y +½, que reescriben la canción.
-- Líneas por pantalla (hoja) y el final de las pantallas (opción)
-  Descripción: En los ajustes del escenario, categoría SETLIST. Líneas por pantalla (hoja): 4 a 16,
-             vale para las partes en AUTO. En la última pantalla, SIGUIENTE PANTALLA…: PARA (por
-             defecto), VA A LA PARTE SIGUIENTE (un solo pie recorre toda la canción: pasa las
-             pantallas y, en la última, llama a la parte siguiente) o VUELVE A LA 1ª.
+- Tarjeta Hoja: letra, cifra, líneas por pantalla y el final de las pantallas (opción)
+  Descripción: En los ajustes del escenario, categoría SETLIST, tarjeta Hoja. Tamaño de la letra
+             (hoja): PP a GG; mayor pone menos líneas en cada pantalla (la letra crece y la parte
+             gana más pantallas). Tamaño de la cifra (hoja): PP a GG, solo las etiquetas de acorde.
+             Líneas por pantalla (hoja): 4 a 16, vale para las partes en AUTO. En la última
+             pantalla, SIGUIENTE PANTALLA…: VA A LA PARTE SIGUIENTE (por defecto: un solo pie
+             recorre toda la canción, pasa las pantallas y, en la última, llama a la parte
+             siguiente; PANTALLA ANTERIOR, en la primera, vuelve a la parte anterior), PARA o VUELVE
+             A LA 1ª.
+             Cada pantalla de la hoja ocupa toda la altura del área; una línea muy larga deja de
+             crecer al llegar al ancho.
 - Diseño de la pantalla (5 opciones)
   Descripción: COMPLETO (canción, franja de partes, notas y pie), PARTES AL LADO (las partes en una
              columna, las notas a la derecha — necesita pantalla ancha), NOTAS GRANDES (la canción
