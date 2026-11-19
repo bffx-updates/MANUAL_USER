@@ -1879,7 +1879,7 @@ Fields and items:
              4 to 16, used by the parts set to AUTO. On the last screen, NEXT PAGE…: GOES TO THE
              NEXT PART (default: a single foot walks the whole song, turns the screens and, on the
              last one, calls the next part; PREVIOUS PAGE on the first one goes back to the previous
-             part), STOPS or BACK TO SCREEN 1.
+             part) or BACK TO SCREEN 1.
              Each sheet screen fills the whole height of the area; a very long line stops growing
              when it reaches the width.
 - Screen layout (5 options)

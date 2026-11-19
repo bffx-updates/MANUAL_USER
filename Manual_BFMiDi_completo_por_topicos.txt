@@ -1856,8 +1856,8 @@ Campos e itens:
              telas). Tamanho da cifra (folha): PP a GG, só as etiquetas de acorde. Linhas por tela
              (folha): 4 a 16, vale para as partes em AUTO. Na última tela, PRÓXIMA TELA…: VAI PRA
              PRÓXIMA PARTE (padrão: um pé só percorre a música inteira, passa as telas e, na última,
-             chama a parte seguinte; TELA ANTERIOR, na primeira, volta à parte anterior), PARA ou
-             VOLTA À 1ª TELA.
+             chama a parte seguinte; TELA ANTERIOR, na primeira, volta à parte anterior) ou VOLTA À
+             1ª TELA.
              Cada tela da folha ocupa toda a altura da área; uma linha muito comprida para de
              crescer quando chega na largura.
 - Layout da tela (5 opções)

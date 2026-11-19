@@ -1922,8 +1922,8 @@ Campos e ítems:
              Líneas por pantalla (hoja): 4 a 16, vale para las partes en AUTO. En la última
              pantalla, SIGUIENTE PANTALLA…: VA A LA PARTE SIGUIENTE (por defecto: un solo pie
              recorre toda la canción, pasa las pantallas y, en la última, llama a la parte
-             siguiente; PANTALLA ANTERIOR, en la primera, vuelve a la parte anterior), PARA o VUELVE
-             A LA 1ª.
+             siguiente; PANTALLA ANTERIOR, en la primera, vuelve a la parte anterior) o VUELVE A LA
+             1ª.
              Cada pantalla de la hoja ocupa toda la altura del área; una línea muy larga deja de
              crecer al llegar al ancho.
 - Diseño de la pantalla (5 opciones)
