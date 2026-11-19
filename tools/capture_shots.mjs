@@ -710,16 +710,16 @@ const STEPS = [
         // painel lateral (Fase 1 do plano do palco): o print pega o palco
         // INTEIRO — a prévia reduzida + o painel —, que é o que o usuário vê.
         await c.shoot('stage-set-p1', '.bf-stage');
-        const tabs = [['stage-set-geral', 1], ['stage-set-visual', 2], ['stage-set-p2', 4]];
+        const tabs = [['stage-set-geral', 'g'], ['stage-set-visual', 'v'], ['stage-set-p2', 'p2']];
         for (const [id, n] of tabs) {
-          await c.H(`click('.bf-stage-rail [role=tab]:nth-child(${n})')`); await c.sleep(id === 'stage-set-p2' ? 2600 : 900);
+          await c.H(`click('.bf-stage-rail [data-cat="${n}"]')`); await c.sleep(id === 'stage-set-p2' ? 2600 : 900);
           await c.shoot(id, '.bf-stage');
         }
-        // categoria PERFIS (a 7ª desde a categoria SETLIST, a 6ª): cria dois
+        // categoria PERFIS (as categorias são achadas pelo id, data-cat): cria dois
         // perfis só pro print e apaga depois, pra as outras etapas continuarem
         // no perfil único (sem a pílula na barra).
-        await c.H(`click('.bf-stage-rail [role=tab]:nth-child(3)')`); await c.sleep(700);
-        await c.H(`click('.bf-stage-rail [role=tab]:nth-child(7)')`); await c.sleep(900);
+        await c.H(`click('.bf-stage-rail [data-cat="p1"]')`); await c.sleep(700);
+        await c.H(`click('.bf-stage-rail [data-cat="pf"]')`); await c.sleep(900);
         const pfAct = (i) => `(function(){ var b=document.querySelectorAll('.bf-stage-pf-acts button')[${i}]; if(b&&!b.disabled){ b.click(); return true; } return false; })()`;
         const pfPick = (last) => `(function(){ var a=document.querySelectorAll('.bf-stage-pf-pick'); var b=a[${last ? 'a.length-1' : '0'}]; if(b) b.click(); })()`;
         for (let k = 0; k < 2; k++) { await c.ev(pfAct(2)); await c.sleep(500); }
@@ -744,14 +744,15 @@ const STEPS = [
           await c.H(`click('.bf-stage-handle')`); await c.sleep(500);
           if (!await c.H(`click('.bf-stage-top button[aria-haspopup="dialog"]')`)) return false;
           await c.H(`wait('.bf-stage-sheet', 4000)`); await c.sleep(600);
-          await c.H(`click('.bf-stage-rail [role=tab]:nth-child(4)')`); await c.sleep(2600);
-          await c.ev(`(function(){ var b=document.querySelectorAll('[data-k="p2Layout"] .bf-stage-card')[${i}]; if(b) b.click(); })()`);
+          await c.H(`click('.bf-stage-rail [data-cat="p2"]')`); await c.sleep(2600);
+          // pelo valor (data-v): alguns layouts saíram da tela e os índices mudaram
+          await c.ev(`(function(){ var b=document.querySelector('[data-k="p2Layout"] .bf-stage-card[data-v="${i}"]'); if(b) b.click(); })()`);
           await c.sleep(600);
           await c.key('Escape'); await c.sleep(900);
           return true;
         };
         const favPick = (label) => `(function(){ var b=document.querySelector('.bf-studio-picker-backdrop'); if(!b) return false; var it=[].slice.call(b.querySelectorAll('.bf-studio-picker-item')).find(function(e){ return e.textContent.trim() === ${JSON.stringify(label)}; }); if(it) it.click(); return !!it; })()`;
-        if (await p2Lay(5)) {
+        if (await p2Lay('fav')) {
           for (const label of ['AMP · Gain', 'AMP · Bass', 'AMP · Treble', 'DST · Ligado', 'DST · Gain', 'DLY · Mix', 'DLY · Time', 'RVB · Mix']) {
             await c.ev(`(function(){ var b=document.querySelector('.bf-stage-favbtn'); if(b&&!b.disabled) b.click(); })()`); await c.sleep(800);
             await c.ev(favPick(label)); await c.sleep(500);
@@ -760,7 +761,7 @@ const STEPS = [
           }
           await c.sleep(4800);   // a barra de cima some
           await c.shoot('stage-fav', '.bf-stage');
-          await p2Lay(0);
+          await p2Lay('full');
         }
       } else console.log('  ! botao do PALCO ESPECIAL ausente');
       await c.key('Escape'); await c.sleep(600);
@@ -855,7 +856,7 @@ const STEPS = [
       await showBar();
       if (await c.H(`click('.bf-stage-top button[aria-haspopup="dialog"]')`)) {
         await c.H(`wait('.bf-stage-sheet', 4000)`); await c.sleep(700);
-        await c.H(`click('.bf-stage-rail [role=tab]:nth-child(6)')`); await c.sleep(1200);
+        await c.H(`click('.bf-stage-rail [data-cat="sl"]')`); await c.sleep(1200);
         await c.shoot('stage-set-sl', '.bf-stage');
         await c.key('Escape'); await c.sleep(500);
       }
@@ -892,11 +893,16 @@ const STEPS = [
       if (!await settingsOpen(c, 'BANCOS')) { console.log('  ! opcao ausente: BANCOS'); return; }
       if (!await settingsTab(c, 'CHAMADA')) { console.log('  ! aba CHAMADA ausente'); return; }
       if (!await c.H(`click('.bf-ck-pc-cell')`)) { console.log('  ! celula da CHAMADA ausente'); return; }
-      await c.H(`wait('.bf-ck-pc-pick', 4000)`); await c.sleep(600);
-      await c.H(`mark('.bf-ck-pc-opt', 'SETLIST: CHAMAR PARTE', 'sl-call')`);
-      await c.H(`mark('.bf-ck-pc-opt', 'SETLIST: PRÓXIMA PARTE', 'sl-next')`);
-      await c.H(`mark('.bf-ck-pc-opt', 'SETLIST: PRÓXIMA MÚSICA', 'sl-song')`);
-      await c.shoot('stage-sl-pe', '.bf-ck-pc-pick', { pad: 10 });
+      // Desde 09/nov/2026 a lista de ações é um POPUP por grupo (.bf-pcp); no
+      // grupo SETLIST os nomes vêm sem o prefixo "SETLIST: ".
+      await c.H(`wait('.bf-pcp', 4000)`); await c.sleep(600);
+      await c.ev(`(function(){ var g=document.querySelector('.bf-pcp-grp[data-grp="setlist"]'); if(g) g.scrollIntoView({block:'start'}); })()`);
+      await c.sleep(500);
+      const opt = '.bf-pcp-grp[data-grp="setlist"] .bf-pcp-opt';
+      await c.H(`mark('${opt}', 'CHAMAR PARTE', 'sl-call')`);
+      await c.H(`mark('${opt}', 'PRÓXIMA PARTE', 'sl-next')`);
+      await c.H(`mark('${opt}', 'PRÓXIMA MÚSICA', 'sl-song')`);
+      await c.shoot('stage-sl-pe', '.bf-studio-picker-modal.bf-pcp', { pad: 10 });
     } },
   { name: 'NANO CORTEX', ids: ['deved-nano', 'stage-2-nano'],
     async run(c) {
@@ -931,8 +937,8 @@ const STEPS = [
         await c.H(`click('.bf-stage-handle')`); await c.sleep(500);
         if (await c.H(`click('.bf-stage-top button[aria-haspopup="dialog"]')`)) {
           await c.H(`wait('.bf-stage-sheet', 4000)`); await c.sleep(900);
-          // categoria IMAGENS (a 5ª do trilho): galeria + recorte
-          await c.H(`click('.bf-stage-rail [role=tab]:nth-child(5)')`); await c.sleep(1400);
+          // categoria IMAGENS: galeria + recorte
+          await c.H(`click('.bf-stage-rail [data-cat="img"]')`); await c.sleep(1400);
           await c.shoot('stage-set-img', '.bf-stage');
           // escolhe uma imagem da galeria e mostra o palco com ela
           const ok = await c.ev(`(function(){ var t=[...document.querySelectorAll('.bf-stage-imgtile')].find(function(x){ return (x.innerText||'').trim() === 'Holofotes'; }); var b = t && (t.querySelector('button') || t); if(b){ b.click(); return true;} return false; })()`);

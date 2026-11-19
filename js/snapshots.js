@@ -1,4 +1,4 @@
-/* BFMiDi · Manual — PRINTS do editor (v15.6).
+/* BFMiDi · Manual — PRINTS do editor (v15.13).
    Gerado por tools/capture_shots.mjs. NAO editar a mao: quando a tela
    do editor mudar, rode a captura de novo.
    { img, light?, w, h, kind?, hot: { seletor: [x, y, w, h] em fracao } } */
@@ -517,6 +517,12 @@ const MN_SHOTS = {
     0.0725,
     0.0467
    ],
+   ".bf-stage-vseg": [
+    0.1872,
+    0.0153,
+    0.291,
+    0.0467
+   ],
    ".bf-stage-pill.is-tag": [
     0.4844,
     0.0153,
@@ -621,7 +627,8 @@ const MN_SHOTS = {
   "img": "img/shots/stage-set-img.webp",
   "w": 1280,
   "h": 900,
-  "hot": {}
+  "hot": {},
+  "light": "img/shots/stage-set-img.light.webp"
  },
  "stage-land": {
   "img": "img/shots/stage-land.webp",
@@ -953,7 +960,8 @@ const MN_SHOTS = {
   "img": "img/shots/stage-swedit.webp",
   "w": 1280,
   "h": 900,
-  "hot": {}
+  "hot": {},
+  "light": "img/shots/stage-swedit.light.webp"
  },
  "stage-sl": {
   "img": "img/shots/stage-sl.webp",
@@ -985,8 +993,8 @@ const MN_SHOTS = {
     0.1052
    ],
    ".bf-sl-head-acts .bf-sl-chip:last-child": [
-    0.8634,
-    0.1558,
+    0.7123,
+    0.194,
     0.0936,
     0.0669
    ],
@@ -1080,9 +1088,9 @@ const MN_SHOTS = {
   "w": 1280,
   "h": 900,
   "hot": {
-   ".bf-stage-rail [role=tab]:nth-child(6)": [
+   ".bf-stage-rail [data-cat=\"sl\"]": [
     0.6609,
-    0.4033,
+    0.2744,
     0.0531,
     0.06
    ],
@@ -1090,13 +1098,13 @@ const MN_SHOTS = {
     0.7305,
     0.1171,
     0.2586,
-    0.2334
+    0.4797
    ],
-   "[data-k=\"slCurAnim\"]": [
+   "[data-k=\"#slCur\"]": [
     0.7305,
-    0.3505,
+    0.6124,
     0.2586,
-    0.2578
+    0.4274
    ],
    ".bf-sl-screen": [
     0.0221,
@@ -1109,26 +1117,26 @@ const MN_SHOTS = {
  },
  "stage-sl-pe": {
   "img": "img/shots/stage-sl-pe.webp",
-  "w": 646,
-  "h": 891,
+  "w": 610,
+  "h": 611,
   "hot": {
    "[data-mn-mark=\"sl-call\"]": [
-    0.031,
-    0.9191,
-    0.9381,
-    0.0584
+    0.0721,
+    0.2394,
+    0.6098,
+    0.1191
    ],
    "[data-mn-mark=\"sl-next\"]": [
-    0.031,
-    0.6764,
-    0.9381,
-    0.0584
+    0.0721,
+    0.3651,
+    0.6098,
+    0.1191
    ],
    "[data-mn-mark=\"sl-song\"]": [
-    0.031,
-    0.7978,
-    0.9381,
-    0.0584
+    0.0721,
+    0.6164,
+    0.6098,
+    0.1191
    ]
   },
   "light": "img/shots/stage-sl-pe.light.webp"

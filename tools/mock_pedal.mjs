@@ -177,6 +177,11 @@ export async function startMockPedal({ port = 8932, seedPath, quiet = false } = 
       if (u.pathname === '/__mock/set') {
         if (u.searchParams.has('bpm')) live.bpm = +u.searchParams.get('bpm') || 120;
         if (u.searchParams.has('pedal_name')) live.pedalName = u.searchParams.get('pedal_name');
+        // SETLIST: um "pé" de mentira nos comandos PRÓXIMA / ANTERIOR TELA (CC 150/151).
+        if (u.searchParams.has('page')) {
+          if (+u.searchParams.get('page') < 0) live.pgp = ((live.pgp || 0) + 1) & 255;
+          else live.pgn = ((live.pgn || 0) + 1) & 255;
+        }
         return send(200, { ok: true });
       }
       if (u.pathname === '/__mock/global') {
@@ -268,6 +273,7 @@ export async function startMockPedal({ port = 8932, seedPath, quiet = false } = 
           if (u.pathname === '/bank/live' || u.pathname === '/bank/current') {
             j.tap_bpm = live.bpm; j.tap_ms = Math.round(60000 / live.bpm);
             if (live.pedalName) j.pedal_name = live.pedalName;
+            if (u.pathname === '/bank/live') { j.sl_pgn = live.pgn || 0; j.sl_pgp = live.pgp || 0; }
           }
         }
         return send(r.status, j);

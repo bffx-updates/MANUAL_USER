@@ -4389,9 +4389,9 @@ const MN_CONTENT = {
       },
       {
        "name": {
-        "pt": "A alcinha do topo",
-        "en": "The top handle",
-        "es": "La lengüeta superior"
+        "pt": "A alcinha do topo e os botões do canto",
+        "en": "The top handle and the corner buttons",
+        "es": "La lengüeta superior y los botones de la esquina"
        },
        "type": {
         "pt": "barra escondida",
@@ -4399,9 +4399,9 @@ const MN_CONTENT = {
         "es": "barra oculta"
        },
        "desc": {
-        "pt": "<p>A barra de controles fica escondida para não roubar espaço. Toque na alcinha do topo — ou em qualquer área vazia da tela — para mostrá-la. Ela some sozinha depois de alguns segundos. Para ir direto às configurações do palco, toque na <strong>engrenagem</strong> do canto direito (no PALCO BFMIDI e no PALCO ESPECIAL; ela some com a barra aberta e com a trava de toque fechada).</p>",
-        "en": "<p>The control bar stays hidden so it doesn't take up space. Tap the handle at the top — or any empty area of the screen — to show it. It hides again on its own after a few seconds. To go straight to the stage settings, tap the <strong>gear</strong> in the right corner (on the BFMIDI STAGE and the SPECIAL STAGE; it hides while the bar is open and while the touch lock is closed).</p>",
-        "es": "<p>La barra de controles queda oculta para no robar espacio. Toca la lengüeta de arriba — o cualquier área vacía de la pantalla — para mostrarla. Se oculta sola después de unos segundos. Para ir directo a la configuración del escenario, toca el <strong>engranaje</strong> de la esquina derecha (en el ESCENARIO BFMIDI y en el ESCENARIO ESPECIAL; se oculta con la barra abierta y con el bloqueo táctil cerrado).</p>"
+        "pt": "<p>A barra de controles fica escondida para não roubar espaço. Toque na alcinha do topo — ou em qualquer área vazia da tela — para mostrá-la. Ela some sozinha depois de alguns segundos. No canto direito ficam três botões redondos, sem precisar abrir a barra: <strong>PALCO ↔ SETLIST</strong> (troca entre o palco e a tela do setlist), a <strong>engrenagem</strong> (as configurações do palco) e <strong>VOLTAR AO APLICATIVO</strong> (fecha o palco). Eles aparecem nos dois palcos e no setlist, e somem com a barra aberta e com a trava de toque fechada.</p>",
+        "en": "<p>The control bar stays hidden so it doesn't take up space. Tap the handle at the top — or any empty area of the screen — to show it. It hides again on its own after a few seconds. In the right corner there are three round buttons, no need to open the bar: <strong>STAGE ↔ SETLIST</strong> (switches between the stage and the setlist screen), the <strong>gear</strong> (the stage settings) and <strong>BACK TO THE APP</strong> (closes the stage). They show on both stages and on the setlist, and hide while the bar is open and while the touch lock is closed.</p>",
+        "es": "<p>La barra de controles queda oculta para no robar espacio. Toca la lengüeta de arriba — o cualquier área vacía de la pantalla — para mostrarla. Se oculta sola después de unos segundos. En la esquina derecha hay tres botones redondos, sin necesidad de abrir la barra: <strong>ESCENARIO ↔ SETLIST</strong> (cambia entre el escenario y la pantalla del setlist), el <strong>engranaje</strong> (la configuración del escenario) y <strong>VOLVER A LA APP</strong> (cierra el escenario). Aparecen en los dos escenarios y en el setlist, y se ocultan con la barra abierta y con el bloqueo táctil cerrado.</p>"
        }
       }
      ],
@@ -4500,9 +4500,9 @@ const MN_CONTENT = {
         "es": "configuración"
        },
        "desc": {
-        "pt": "<p>Em CONFIGURAÇÕES do palco › PALCO BFMIDI, <strong>Segurar o ícone</strong> vem em EDITAR O FOOTSWITCH. Com <strong>Acionar footswitch pela tela</strong> em SEGURAR, o segurar já é do footswitch e esta opção fica apagada.</p>",
-        "en": "<p>In the stage SETTINGS › BFMIDI STAGE, <strong>Hold the icon</strong> is set to EDIT THE FOOTSWITCH. With <strong>Trigger footswitch from the screen</strong> set to HOLD, holding already belongs to the footswitch and this option is greyed out.</p>",
-        "es": "<p>En CONFIGURACIÓN del escenario › ESCENARIO BFMIDI, <strong>Mantener el ícono</strong> viene en EDITAR EL FOOTSWITCH. Con <strong>Accionar footswitch desde la pantalla</strong> en MANTENER, mantener ya es del footswitch y esta opción queda apagada.</p>"
+        "pt": "<p>Em CONFIGURAÇÕES do palco › AJUSTES › Acionar com, <strong>Segurar o ícone</strong> vem em EDITAR O FOOTSWITCH. Com os footswitches acionados por SEGURAR, o segurar já é do footswitch e esta opção fica apagada.</p>",
+        "en": "<p>In the stage SETTINGS › SETTINGS › Trigger by, <strong>Hold the icon</strong> is set to EDIT THE FOOTSWITCH. With the footswitches triggered by HOLD, holding already belongs to the footswitch and this option is greyed out.</p>",
+        "es": "<p>En CONFIGURACIÓN del escenario › AJUSTES › Activar con, <strong>Mantener el ícono</strong> viene en EDITAR EL FOOTSWITCH. Con los footswitches activados por MANTENER, mantener ya es del footswitch y esta opción queda apagada.</p>"
        }
       }
      ],
@@ -4545,7 +4545,7 @@ const MN_CONTENT = {
       },
       {
        "n": 2,
-       "sel": ".bf-stage-view",
+       "sel": ".bf-stage-vseg",
        "at": "c",
        "label": {
         "pt": "PALCO BFMIDI / ESPECIAL",
@@ -4648,9 +4648,9 @@ const MN_CONTENT = {
         "es": "botón"
        },
        "desc": {
-        "pt": "<p>Abre as configurações do palco, num painel lateral com seis categorias. A engrenagem do canto direito do palco faz o mesmo sem abrir a barra. Veja os cards seguintes.</p>",
-        "en": "<p>Opens the stage settings, in a side panel with six categories. The gear in the right corner of the stage does the same without opening the bar. See the following cards.</p>",
-        "es": "<p>Abre la configuración del escenario, en un panel lateral con seis categorías. El engranaje de la esquina derecha del escenario hace lo mismo sin abrir la barra. Mira las tarjetas siguientes.</p>"
+        "pt": "<p>Abre as configurações do palco, num painel lateral com sete abas. A engrenagem do canto direito do palco faz o mesmo sem abrir a barra, ao lado dos botões PALCO ↔ SETLIST e VOLTAR AO APLICATIVO. Veja os cards seguintes.</p>",
+        "en": "<p>Opens the stage settings, in a side panel with seven tabs. The gear in the right corner of the stage does the same without opening the bar, next to the STAGE ↔ SETLIST and BACK TO THE APP buttons. See the following cards.</p>",
+        "es": "<p>Abre la configuración del escenario, en un panel lateral con siete pestañas. El engranaje de la esquina derecha del escenario hace lo mismo sin abrir la barra, junto a los botones ESCENARIO ↔ SETLIST y VOLVER A LA APP. Mira las tarjetas siguientes.</p>"
        }
       },
       {
@@ -5156,176 +5156,63 @@ const MN_CONTENT = {
      ]
     },
     {
-     "id": "palco-geral",
-     "title": {
-      "pt": "Configurações do palco — GERAL",
-      "en": "Stage settings — GENERAL",
-      "es": "Configuración del escenario — GENERAL"
-     },
-     "purpose": {
-      "pt": "O que aparece nos dois palcos e como a tela se comporta. As configurações abrem num painel ao lado do palco: a prévia mostra cada mudança na hora, cada opção tem uma miniatura do que ela mexe e tocar numa área da prévia abre as opções dela. DESFAZER volta a última mudança e MAIS OPÇÕES mostra as menos usadas.",
-      "en": "What appears on both stages and how the screen behaves. The settings open in a panel beside the stage: the preview shows every change right away, each option has a thumbnail of what it changes, and tapping an area of the preview opens its options. UNDO reverts the last change and MORE OPTIONS shows the less used ones.",
-      "es": "Lo que aparece en los dos escenarios y cómo se comporta la pantalla. La configuración abre en un panel al lado del escenario: la vista previa muestra cada cambio al instante, cada opción tiene una miniatura de lo que cambia y tocar un área de la vista previa abre sus opciones. DESHACER revierte el último cambio y MÁS OPCIONES muestra las menos usadas."
-     },
-     "shot": "stage-set-geral",
-     "mockTitle": {
-      "pt": "CONFIGURAÇÕES DO PALCO — GERAL",
-      "en": "STAGE SETTINGS — GENERAL",
-      "es": "CONFIGURACIÓN DEL ESCENARIO — GENERAL"
-     },
-     "fields": [
-      {
-       "name": {
-        "pt": "Barra de presets da BFMIDI",
-        "en": "BFMIDI preset bar",
-        "es": "Barra de presets de la BFMIDI"
-       },
-       "type": {
-        "pt": "barra",
-        "en": "bar",
-        "es": "barra"
-       },
-       "desc": {
-        "pt": "<p>A fileira para trocar de preset, nos dois palcos. Os botões mostram <strong>NÚMERO + NOME</strong>, <strong>SÓ NÚMERO</strong> ou <strong>SÓ NOME</strong>. Em <strong>MAIS OPÇÕES</strong>: a posição (<strong>EMBAIXO</strong>, <strong>EM CIMA</strong> ou <strong>NA LATERAL</strong>), a altura (P, M, G), a cor (o LED de cada preset ou a cor de destaque) e como o preset é chamado pela tela — <strong>UM TOQUE</strong> ou <strong>SEGURAR</strong>, para não trocar sem querer.</p>",
-        "en": "<p>The row used to change presets, on both stages. The buttons show <strong>NUMBER + NAME</strong>, <strong>NUMBER ONLY</strong> or <strong>NAME ONLY</strong>. Under <strong>MORE OPTIONS</strong>: the position (<strong>BOTTOM</strong>, <strong>TOP</strong> or <strong>SIDE</strong>), the height (S, M, L), the color (each preset's LED or the accent color) and how a preset is called from the screen — <strong>ONE TAP</strong> or <strong>HOLD</strong>, to avoid changing by accident.</p>",
-        "es": "<p>La fila para cambiar de preset, en los dos escenarios. Los botones muestran <strong>NÚMERO + NOMBRE</strong>, <strong>SOLO NÚMERO</strong> o <strong>SOLO NOMBRE</strong>. En <strong>MÁS OPCIONES</strong>: la posición (<strong>ABAJO</strong>, <strong>ARRIBA</strong> o <strong>AL COSTADO</strong>), la altura (P, M, G), el color (el LED de cada preset o el color de acento) y cómo se llama el preset desde la pantalla — <strong>UN TOQUE</strong> o <strong>MANTENER</strong>, para no cambiar sin querer.</p>"
-       }
-      },
-      {
-       "name": {
-        "pt": "Conexão, BPM e relógio",
-        "en": "Connection, BPM and clock",
-        "es": "Conexión, BPM y reloj"
-       },
-       "type": {
-        "pt": "interruptores",
-        "en": "switches",
-        "es": "interruptores"
-       },
-       "desc": {
-        "pt": "<p>O que a barra de cima mostra. O relógio vem desligado.</p>",
-        "en": "<p>What the top bar shows. The clock is off by default.</p>",
-        "es": "<p>Lo que muestra la barra de arriba. El reloj viene apagado.</p>"
-       }
-      },
-      {
-       "name": {
-        "pt": "Manter a tela acesa",
-        "en": "Keep the screen on",
-        "es": "Mantener la pantalla encendida"
-       },
-       "type": {
-        "pt": "interruptor",
-        "en": "switch",
-        "es": "interruptor"
-       },
-       "desc": {
-        "pt": "<p>Pede ao celular ou ao tablet para não apagar a tela enquanto o palco estiver aberto (nos aparelhos e navegadores que permitem). Ligado por padrão.</p>",
-        "en": "<p>Asks the phone or tablet not to turn the screen off while the stage is open (on devices and browsers that allow it). On by default.</p>",
-        "es": "<p>Le pide al celular o a la tablet que no apague la pantalla mientras el escenario esté abierto (en los equipos y navegadores que lo permiten). Activado por defecto.</p>"
-       }
-      },
-      {
-       "name": {
-        "pt": "Vibrar ao tocar",
-        "en": "Vibrate on touch",
-        "es": "Vibrar al tocar"
-       },
-       "type": {
-        "pt": "interruptor",
-        "en": "switch",
-        "es": "interruptor"
-       },
-       "desc": {
-        "pt": "<p>Uma vibração curta confirma o toque, nos aparelhos que vibram.</p>",
-        "en": "<p>A short vibration confirms each tap, on devices that can vibrate.</p>",
-        "es": "<p>Una vibración corta confirma el toque, en los aparatos que vibran.</p>"
-       }
-      },
-      {
-       "name": {
-        "pt": "Desempenho",
-        "en": "Performance",
-        "es": "Rendimiento"
-       },
-       "type": {
-        "pt": "escolha",
-        "en": "choice",
-        "es": "opción"
-       },
-       "desc": {
-        "pt": "<p><strong>AUTOMÁTICO</strong> (padrão) escolhe pelo aparelho; <strong>LEVE</strong> tira desfoque, brilhos e animações, para celular mais fraco ou para poupar bateria; <strong>COMPLETO</strong> mantém tudo.</p>",
-        "en": "<p><strong>AUTO</strong> (default) decides by device; <strong>LIGHT</strong> removes blur, glows and animations, for slower phones or to save battery; <strong>FULL</strong> keeps everything.</p>",
-        "es": "<p><strong>AUTOMÁTICO</strong> (predeterminado) elige según el aparato; <strong>LIGERO</strong> quita desenfoque, brillos y animaciones, para celulares más lentos o para ahorrar batería; <strong>COMPLETO</strong> mantiene todo.</p>"
-       }
-      },
-      {
-       "name": {
-        "pt": "Trava de toque",
-        "en": "Touch lock",
-        "es": "Bloqueo táctil"
-       },
-       "type": {
-        "pt": "segurança",
-        "en": "safety",
-        "es": "seguridad"
-       },
-       "desc": {
-        "pt": "<p>Em <strong>SEGURAR PARA DESTRAVAR</strong> o palco abre travado: toques em footswitch, preset, bloco e knob não fazem nada. Segure o cadeado no canto para destravar; 8 segundos depois do último toque ele trava de novo (uma linha embaixo mostra o tempo).</p>",
-        "en": "<p>With <strong>HOLD TO UNLOCK</strong> the stage opens locked: touches on footswitches, presets, blocks and knobs do nothing. Hold the padlock in the corner to unlock; 8 seconds after the last touch it locks again (a line at the bottom shows the time left).</p>",
-        "es": "<p>En <strong>MANTENER PARA DESBLOQUEAR</strong> el escenario abre bloqueado: los toques en footswitch, preset, bloque y knob no hacen nada. Mantén el candado de la esquina para desbloquear; 8 segundos después del último toque se bloquea de nuevo (una línea abajo muestra el tiempo).</p>"
-       }
-      },
-      {
-       "name": {
-        "pt": "Barra de cima e animação",
-        "en": "Top bar and animation",
-        "es": "Barra superior y animación"
-       },
-       "type": {
-        "pt": "tempo",
-        "en": "time",
-        "es": "tiempo"
-       },
-       "desc": {
-        "pt": "<p>Quanto tempo a barra de cima fica à mostra: 2, 4 ou 8 segundos, ou <strong>FIXA</strong> (sempre visível, com o palco começando embaixo dela). E a animação do nome ao trocar de preset: <strong>NENHUMA</strong>, <strong>SUAVE</strong> ou <strong>LETREIRO</strong>.</p>",
-        "en": "<p>How long the top bar stays visible: 2, 4 or 8 seconds, or <strong>PINNED</strong> (always visible, with the stage starting below it). And the name animation on preset change: <strong>NONE</strong>, <strong>SOFT</strong> or <strong>MARQUEE</strong>.</p>",
-        "es": "<p>Cuánto tiempo queda visible la barra superior: 2, 4 u 8 segundos, o <strong>FIJA</strong> (siempre visible, con el escenario empezando debajo). Y la animación del nombre al cambiar de preset: <strong>NINGUNA</strong>, <strong>SUAVE</strong> o <strong>MARQUESINA</strong>.</p>"
-       }
-      }
-     ],
-     "notes": [
-      {
-       "pt": "Tudo nas configurações do palco fica salvo só neste aplicativo, neste aparelho. <strong>RESTAURAR PADRÃO</strong> volta os ajustes de fábrica sem apagar as imagens escolhidas.",
-       "en": "Everything in the stage settings is saved only in this app, on this device. <strong>RESTORE DEFAULTS</strong> brings back the factory settings without erasing the images you chose.",
-       "es": "Todo en la configuración del escenario se guarda solo en esta app, en este aparato. <strong>RESTAURAR PREDETERMINADO</strong> vuelve a los ajustes de fábrica sin borrar las imágenes elegidas."
-      }
-     ]
-    },
-    {
      "id": "palco-visual",
      "title": {
-      "pt": "Configurações do palco — VISUAL",
-      "en": "Stage settings — VISUAL",
-      "es": "Configuración del escenario — VISUAL"
+      "pt": "Configurações do palco — APARÊNCIA",
+      "en": "Stage settings — LOOK",
+      "es": "Configuración del escenario — APARIENCIA"
      },
      "purpose": {
-      "pt": "A cara do palco: fundo, cor de destaque, fonte, tamanho dos textos, cantos e painéis.",
-      "en": "The stage's look: background, accent color, font, text size, corners and panels.",
-      "es": "El aspecto del escenario: fondo, color de acento, fuente, tamaño de los textos, esquinas y paneles."
+      "pt": "As configurações abrem num painel ao lado do palco, em sete abas: APARÊNCIA, BFMIDI, ESPECIAL, SETLIST, IMAGENS, AJUSTES e PERFIS. Cada opção é um cartão com o desenho do palco: a peça que ela muda fica acesa, com um contorno, e o resto fica apagado. A prévia ao lado mostra a mudança na hora, e tocar numa área da prévia abre as opções dela. DESFAZER volta a última mudança, o ⓘ mostra mais detalhes e MAIS OPÇÕES guarda as menos usadas. A APARÊNCIA é a cara do palco.",
+      "en": "The settings open in a panel beside the stage, in seven tabs: LOOK, BFMIDI, SPECIAL, SETLIST, IMAGES, SETTINGS and PROFILES. Each option is a card with a drawing of the stage: the piece it changes is lit, with an outline, and the rest is dimmed. The preview beside it shows the change right away, and tapping an area of the preview opens its options. UNDO reverts the last change, the ⓘ shows more details and MORE OPTIONS keeps the less used ones. LOOK is how the stage looks.",
+      "es": "La configuración abre en un panel al lado del escenario, en siete pestañas: APARIENCIA, BFMIDI, ESPECIAL, SETLIST, IMÁGENES, AJUSTES y PERFILES. Cada opción es una tarjeta con el dibujo del escenario: la pieza que cambia queda encendida, con un contorno, y el resto queda apagado. La vista previa al lado muestra el cambio al instante, y tocar un área de la vista previa abre sus opciones. DESHACER revierte el último cambio, el ⓘ muestra más detalles y MÁS OPCIONES guarda las menos usadas. APARIENCIA es la cara del escenario."
      },
      "shot": "stage-set-visual",
      "mockTitle": {
-      "pt": "CONFIGURAÇÕES DO PALCO — VISUAL",
-      "en": "STAGE SETTINGS — VISUAL",
-      "es": "CONFIGURACIÓN DEL ESCENARIO — VISUAL"
+      "pt": "CONFIGURAÇÕES DO PALCO — APARÊNCIA",
+      "en": "STAGE SETTINGS — LOOK",
+      "es": "CONFIGURACIÓN DEL ESCENARIO — APARIENCIA"
      },
      "fields": [
       {
        "name": {
-        "pt": "Fundo e cor de destaque",
-        "en": "Background and accent color",
-        "es": "Fondo y color de acento"
+        "pt": "Visuais prontos",
+        "en": "Ready-made looks",
+        "es": "Visuales listos"
+       },
+       "type": {
+        "pt": "cartões",
+        "en": "cards",
+        "es": "tarjetas"
+       },
+       "desc": {
+        "pt": "<p><strong>PADRÃO</strong>, <strong>ALTO CONTRASTE</strong>, <strong>OLED PRETO</strong>, <strong>ÂMBAR</strong>, <strong>NEON</strong>, <strong>AÇO</strong>, <strong>COR DO PRESET</strong> e <strong>LIMPO</strong>. Um toque troca fundo, destaque, fonte, cantos e painéis de uma vez; layouts e imagens não mudam, e o DESFAZER volta.</p>",
+        "en": "<p><strong>DEFAULT</strong>, <strong>HIGH CONTRAST</strong>, <strong>OLED BLACK</strong>, <strong>AMBER</strong>, <strong>NEON</strong>, <strong>STEEL</strong>, <strong>PRESET COLOR</strong> and <strong>CLEAN</strong>. One tap changes background, accent, font, corners and panels at once; layouts and images do not change, and UNDO brings it back.</p>",
+        "es": "<p><strong>PREDETERMINADO</strong>, <strong>ALTO CONTRASTE</strong>, <strong>OLED NEGRO</strong>, <strong>ÁMBAR</strong>, <strong>NEÓN</strong>, <strong>ACERO</strong>, <strong>COLOR DEL PRESET</strong> y <strong>LIMPIO</strong>. Un toque cambia fondo, acento, fuente, esquinas y paneles de una vez; los layouts y las imágenes no cambian, y DESHACER lo revierte.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Quem manda no visual do PALCO ESPECIAL?",
+        "en": "Who sets the look of the SPECIAL STAGE?",
+        "es": "¿Quién define el aspecto del ESCENARIO ESPECIAL?"
+       },
+       "type": {
+        "pt": "cartões",
+        "en": "cards",
+        "es": "tarjetas"
+       },
+       "desc": {
+        "pt": "<p><strong>O PEDAL</strong>: cada aparelho com as cores e o estilo dele. <strong>EU</strong>: o fundo, o destaque e a letra escolhidos nesta aba. Ou um painel que imita aparelho de verdade, feito só com desenho: <strong>ALUMÍNIO</strong> (pedal boutique), <strong>VINTAGE</strong> (amplificador com painel dourado) ou <strong>RACK</strong> (alumínio preto, display âmbar). Em PERSONALIZAR fica “o pedal com o meu fundo e destaque”.</p>",
+        "en": "<p><strong>THE PEDAL</strong>: each device with its own colors and style. <strong>ME</strong>: the background, accent and font chosen in this tab. Or a panel that looks like real gear, made only with drawing: <strong>ALUMINUM</strong> (boutique pedal), <strong>VINTAGE</strong> (amplifier with a gold panel) or <strong>RACK</strong> (black aluminum, amber display). CUSTOMIZE has “the pedal with my background and accent”.</p>",
+        "es": "<p><strong>EL PEDAL</strong>: cada aparato con sus colores y su estilo. <strong>YO</strong>: el fondo, el acento y la letra elegidos en esta pestaña. O un panel que imita un aparato de verdad, hecho solo con dibujo: <strong>ALUMINIO</strong> (pedal boutique), <strong>VINTAGE</strong> (amplificador con panel dorado) o <strong>RACK</strong> (aluminio negro, display ámbar). En PERSONALIZAR está “el pedal con mi fondo y acento”.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Fundo e escurecer a imagem",
+        "en": "Background and dimming the image",
+        "es": "Fondo y oscurecer la imagen"
        },
        "type": {
         "pt": "cores",
@@ -5333,16 +5220,33 @@ const MN_CONTENT = {
         "es": "colores"
        },
        "desc": {
-        "pt": "<p>Oito fundos prontos e o <strong>PERSONALIZADO</strong>, com duas cores à sua escolha (em cima e embaixo). Nove cores de destaque e a <strong>cor livre</strong>, ajustada por matiz, saturação e brilho. Os dois também podem <strong>acompanhar a cor do LED do preset</strong> — a tela muda de cor a cada troca de preset. O fundo também pode ser a <strong>IMAGEM</strong> do palco na tela inteira (a que foi escolhida na categoria IMAGENS), escurecida um pouco, médio ou bastante para o texto continuar legível.</p>",
-        "en": "<p>Eight ready-made backgrounds plus <strong>CUSTOM</strong>, with two colors of your choice (top and bottom). Nine accent colors plus a <strong>free color</strong>, set by hue, saturation and lightness. Both can also <strong>follow the preset LED color</strong> — the screen changes color on every preset change. The background can also be the stage <strong>IMAGE</strong>, full screen (the one chosen in the IMAGES category), dimmed a little, medium or a lot so the text stays readable.</p>",
-        "es": "<p>Ocho fondos listos y el <strong>PERSONALIZADO</strong>, con dos colores a elección (arriba y abajo). Nueve colores de acento y el <strong>color libre</strong>, ajustado por matiz, saturación y brillo. Los dos también pueden <strong>seguir el color del LED del preset</strong> — la pantalla cambia de color en cada cambio de preset. El fondo también puede ser la <strong>IMAGEN</strong> del escenario a pantalla completa (la elegida en la categoría IMÁGENES), oscurecida un poco, medio o mucho para que el texto siga legible.</p>"
+        "pt": "<p>Oito fundos prontos, <strong>LIVRE</strong> (duas cores à sua escolha) e <strong>IMAGEM</strong> (a imagem do palco na tela inteira, escolhida na aba IMAGENS). Com imagem, <strong>Escurecer a imagem</strong>: NÃO, UM POUCO, MÉDIO ou BASTANTE — a mesma escala da imagem do cabeçalho do PALCO BFMIDI (em MAIS OPÇÕES).</p>",
+        "en": "<p>Eight ready-made backgrounds, <strong>FREE</strong> (two colors of your choice) and <strong>IMAGE</strong> (the stage image on the whole screen, chosen in the IMAGES tab). With an image, <strong>Dim the image</strong>: NO, A LITTLE, MEDIUM or A LOT — the same scale as the BFMIDI STAGE header image (under MORE OPTIONS).</p>",
+        "es": "<p>Ocho fondos listos, <strong>LIBRE</strong> (dos colores a elección) e <strong>IMAGEN</strong> (la imagen del escenario en toda la pantalla, elegida en la pestaña IMÁGENES). Con imagen, <strong>Oscurecer la imagen</strong>: NO, UN POCO, MEDIO o MUCHO — la misma escala de la imagen del encabezado del ESCENARIO BFMIDI (en MÁS OPCIONES).</p>"
        }
       },
       {
        "name": {
-        "pt": "Fonte e nome do preset",
-        "en": "Font and preset name",
-        "es": "Fuente y nombre del preset"
+        "pt": "Cor de destaque e cores do LED",
+        "en": "Accent color and LED colors",
+        "es": "Color de acento y colores del LED"
+       },
+       "type": {
+        "pt": "cores",
+        "en": "colors",
+        "es": "colores"
+       },
+       "desc": {
+        "pt": "<p>Nove cores e a livre (matiz, saturação e brilho). <strong>Cores seguem o LED do preset</strong>: <strong>NÃO</strong>, <strong>SÓ O DESTAQUE</strong> ou <strong>FUNDO E DESTAQUE</strong> — a tela muda de cor junto com o anel a cada troca de preset.</p>",
+        "en": "<p>Nine colors and a free one (hue, saturation and brightness). <strong>Colors follow the preset LED</strong>: <strong>NO</strong>, <strong>ACCENT ONLY</strong> or <strong>BACKGROUND AND ACCENT</strong> — the screen changes color with the ring at each preset change.</p>",
+        "es": "<p>Nueve colores y el libre (tono, saturación y brillo). <strong>Los colores siguen el LED del preset</strong>: <strong>NO</strong>, <strong>SOLO EL ACENTO</strong> o <strong>FONDO Y ACENTO</strong> — la pantalla cambia de color junto con el anillo en cada cambio de preset.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Letra, tamanho e nome do preset",
+        "en": "Font, size and preset name",
+        "es": "Letra, tamaño y nombre del preset"
        },
        "type": {
         "pt": "texto",
@@ -5350,16 +5254,16 @@ const MN_CONTENT = {
         "es": "texto"
        },
        "desc": {
-        "pt": "<p>Fonte <strong>Padrão</strong>, <strong>Arredondada</strong>, <strong>Estreita</strong>, <strong>Mono</strong> ou <strong>Serifada</strong> — todas do próprio sistema — e duas que vêm dentro dos aplicativos: <strong>BIG SHOULDERS</strong> (condensada, de palco) e <strong>LED (DSEG14)</strong>, que imita um display de segmentos e vale só para os nomes e números grandes. Nada é baixado: o palco abre sem internet. O botão <strong>VER AS LICENÇAS DAS FONTES</strong> mostra a licença de cada uma. Peso dos títulos, tamanho dos textos (P, M, G, GG) e nomes em maiúsculas. O <strong>nome do preset</strong> tem ajustes só dele: tamanho, alinhamento (esquerda, centro, direita) e número de linhas (1 a 3).</p>",
-        "en": "<p><strong>Default</strong>, <strong>Rounded</strong>, <strong>Narrow</strong>, <strong>Mono</strong> or <strong>Serif</strong> font — all from the system itself — plus two that ship inside the apps: <strong>BIG SHOULDERS</strong> (a condensed stage font) and <strong>LED (DSEG14)</strong>, which mimics a segment display and applies only to names and big numbers. Nothing is downloaded: the stage opens without internet. The <strong>SHOW THE FONT LICENSES</strong> button shows the license of each one. Title weight, text size (S, M, L, XL) and uppercase names. The <strong>preset name</strong> has its own settings: size, alignment (left, center, right) and number of lines (1 to 3).</p>",
-        "es": "<p>Fuente <strong>Estándar</strong>, <strong>Redondeada</strong>, <strong>Estrecha</strong>, <strong>Mono</strong> o <strong>Con serifa</strong> — todas del propio sistema — y dos que vienen dentro de las apps: <strong>BIG SHOULDERS</strong> (condensada, de escenario) y <strong>LED (DSEG14)</strong>, que imita un display de segmentos y vale solo para los nombres y números grandes. No se descarga nada: el escenario abre sin internet. El botón <strong>VER LAS LICENCIAS DE LAS FUENTES</strong> muestra la licencia de cada una. Peso de los títulos, tamaño de los textos (P, M, G, GG) y nombres en mayúsculas. El <strong>nombre del preset</strong> tiene ajustes propios: tamaño, alineación (izquierda, centro, derecha) y número de líneas (1 a 3).</p>"
+        "pt": "<p>Fontes do próprio sistema (Padrão, Arredondada, Estreita, Mono, Serifada) e duas que vêm dentro dos aplicativos: <strong>BIG SHOULDERS</strong> (condensada) e <strong>LED (DSEG14)</strong>, que imita um display de segmentos e vale só para os nomes e números grandes. Nada é baixado: o palco abre sem internet; VER AS LICENÇAS DAS FONTES mostra a licença de cada uma. <strong>Tamanho dos textos</strong>: P, M, G, GG. <strong>Nome do preset</strong>: tamanho, alinhamento e a animação ao trocar de preset (NENHUMA, SUAVE ou LETREIRO).</p>",
+        "en": "<p>System fonts (Default, Rounded, Narrow, Mono, Serif) and two that come inside the apps: <strong>BIG SHOULDERS</strong> (condensed) and <strong>LED (DSEG14)</strong>, which imitates a segment display and applies only to big names and numbers. Nothing is downloaded: the stage opens without internet; SEE THE FONT LICENSES shows each license. <strong>Text size</strong>: S, M, L, XL. <strong>Preset name</strong>: size, alignment and the animation when the preset changes (NONE, SOFT or MARQUEE).</p>",
+        "es": "<p>Fuentes del propio sistema (Predeterminada, Redondeada, Estrecha, Mono, Serif) y dos que vienen dentro de las apps: <strong>BIG SHOULDERS</strong> (condensada) y <strong>LED (DSEG14)</strong>, que imita un display de segmentos y vale solo para los nombres y números grandes. No se descarga nada: el escenario abre sin internet; VER LAS LICENCIAS DE LAS FUENTES muestra la licencia de cada una. <strong>Tamaño de los textos</strong>: P, M, G, GG. <strong>Nombre del preset</strong>: tamaño, alineación y la animación al cambiar de preset (NINGUNA, SUAVE o MARQUESINA).</p>"
        }
       },
       {
        "name": {
-        "pt": "Painéis, brilho e contraste",
-        "en": "Panels, glow and contrast",
-        "es": "Paneles, brillo y contraste"
+        "pt": "Alto contraste e mais opções",
+        "en": "High contrast and more options",
+        "es": "Alto contraste y más opciones"
        },
        "type": {
         "pt": "estilo",
@@ -5367,19 +5271,26 @@ const MN_CONTENT = {
         "es": "estilo"
        },
        "desc": {
-        "pt": "<p>Painéis <strong>SÓLIDOS</strong>, de <strong>VIDRO</strong> ou <strong>SEM PAINEL</strong> (só o conteúdo sobre o fundo); brilho dos itens ativos <strong>SEM</strong>, <strong>SUAVE</strong> ou <strong>FORTE</strong>; cantos retos, suaves ou redondos; contorno; e espaçamento justo, normal ou amplo. <strong>Alto contraste</strong> deixa tudo em preto e branco fortes, para palco aberto e sol.</p>",
-        "en": "<p><strong>SOLID</strong>, <strong>GLASS</strong> or <strong>NO PANEL</strong> (content straight over the background); glow on active items <strong>NONE</strong>, <strong>SOFT</strong> or <strong>STRONG</strong>; square, soft or round corners; outline; and compact, normal or wide spacing. <strong>High contrast</strong> turns everything into strong black and white, for outdoor stages and sunlight.</p>",
-        "es": "<p>Paneles <strong>SÓLIDOS</strong>, de <strong>VIDRIO</strong> o <strong>SIN PANEL</strong> (solo el contenido sobre el fondo); brillo de los elementos activos <strong>SIN</strong>, <strong>SUAVE</strong> o <strong>FUERTE</strong>; esquinas rectas, suaves o redondas; contorno; y espaciado justo, normal o amplio. <strong>Alto contraste</strong> deja todo en negro y blanco fuertes, para escenario al aire libre y sol.</p>"
+        "pt": "<p><strong>Alto contraste</strong> deixa tudo em preto e branco fortes, para palco aberto e sol. Em <strong>MAIS OPÇÕES</strong>: painéis (SÓLIDOS, de VIDRO ou SEM PAINEL), cantos, brilho dos itens ativos e a cor dos blocos do PALCO ESPECIAL (a do aparelho ou a de destaque).</p>",
+        "en": "<p><strong>High contrast</strong> makes everything strong black and white, for open-air stages and sunlight. Under <strong>MORE OPTIONS</strong>: panels (SOLID, GLASS or NO PANEL), corners, the glow of active items and the color of the SPECIAL STAGE blocks (the device color or the accent).</p>",
+        "es": "<p><strong>Alto contraste</strong> deja todo en blanco y negro fuertes, para escenario abierto y sol. En <strong>MÁS OPCIONES</strong>: paneles (SÓLIDOS, de VIDRIO o SIN PANEL), esquinas, brillo de los elementos activos y el color de los bloques del ESCENARIO ESPECIAL (el del aparato o el de acento).</p>"
        }
+      }
+     ],
+     "notes": [
+      {
+       "pt": "Peso da letra, maiúsculas, contorno, espaçamento e linhas do nome saíram da tela: os visuais prontos ainda os usam, e quem tinha mudado algum deles o encontra em <strong>MAIS OPÇÕES</strong>, com o aviso de que está fora do padrão.",
+       "en": "Font weight, uppercase, outline, spacing and name lines left the screen: the ready-made looks still use them, and if you had changed one of them you will find it under <strong>MORE OPTIONS</strong>, with a note that it is not on the default.",
+       "es": "Peso de la letra, mayúsculas, contorno, espaciado y líneas del nombre salieron de la pantalla: los visuales listos todavía los usan, y quien había cambiado alguno lo encuentra en <strong>MÁS OPCIONES</strong>, con el aviso de que no está en el valor estándar."
       }
      ]
     },
     {
      "id": "palco-p1",
      "title": {
-      "pt": "Configurações do palco — PALCO BFMIDI",
-      "en": "Stage settings — BFMIDI STAGE",
-      "es": "Configuración del escenario — ESCENARIO BFMIDI"
+      "pt": "Configurações do palco — BFMIDI",
+      "en": "Stage settings — BFMIDI",
+      "es": "Configuración del escenario — BFMIDI"
      },
      "purpose": {
       "pt": "Como o PALCO BFMIDI arruma o nome, a imagem e os footswitches.",
@@ -5388,33 +5299,33 @@ const MN_CONTENT = {
      },
      "shot": "stage-set-p1",
      "mockTitle": {
-      "pt": "CONFIGURAÇÕES DO PALCO — PALCO BFMIDI",
-      "en": "STAGE SETTINGS — BFMIDI STAGE",
-      "es": "CONFIGURACIÓN DEL ESCENARIO — ESCENARIO BFMIDI"
+      "pt": "CONFIGURAÇÕES DO PALCO — BFMIDI",
+      "en": "STAGE SETTINGS — BFMIDI",
+      "es": "CONFIGURACIÓN DEL ESCENARIO — BFMIDI"
      },
      "fields": [
       {
        "name": {
         "pt": "Layout da tela",
         "en": "Screen layout",
-        "es": "Diseño de la pantalla"
+        "es": "Layout de la pantalla"
        },
        "type": {
         "pt": "layout",
         "en": "layout",
-        "es": "diseño"
+        "es": "layout"
        },
        "desc": {
-        "pt": "<p>Oito jeitos de arrumar o palco: <strong>CLÁSSICO</strong> (nome e imagem em cima, footswitches e presets embaixo), <strong>LETREIRO</strong> (o nome ocupa a tela; os footswitches viram uma faixa de LEDs), <strong>PEDALEIRA</strong> (footswitches grandes em duas fileiras, na ordem do pedal), <strong>COLUNA</strong> (os presets do banco em lista na lateral, com o nome inteiro), <strong>SEQUÊNCIA</strong> (o preset anterior e o próximo ao lado do atual; tocar chama), <strong>TEMPO</strong> (o BPM em letra grande e o relógio), <strong>MÍNIMO</strong> (só o preset) e <strong>PÔSTER</strong> (a imagem do palco na tela inteira, com o nome por cima e sem painéis). Cada cartão mostra um desenho do layout. As opções que não valem no layout escolhido ficam apagadas, com o motivo.</p>",
-        "en": "<p>Eight ways to arrange the stage: <strong>CLASSIC</strong> (name and image on top, footswitches and presets below), <strong>MARQUEE</strong> (the name fills the screen; the footswitches become a strip of LEDs), <strong>PEDALBOARD</strong> (big footswitches in two rows, in the pedal's order), <strong>COLUMN</strong> (the bank's presets listed on the side, with the full name), <strong>SETLIST</strong> (the previous and the next preset beside the current one; tap to call), <strong>TEMPO</strong> (the BPM in big digits and the clock), <strong>MINIMAL</strong> (the preset only) and <strong>POSTER</strong> (the stage image full screen, with the name on top and no panels). Each card shows a drawing of the layout. Options that do not apply to the chosen layout are dimmed, with the reason.</p>",
-        "es": "<p>Ocho formas de organizar el escenario: <strong>CLÁSICO</strong> (nombre e imagen arriba, footswitches y presets abajo), <strong>MARQUESINA</strong> (el nombre ocupa la pantalla; los footswitches se vuelven una franja de LEDs), <strong>PEDALERA</strong> (footswitches grandes en dos filas, en el orden del pedal), <strong>COLUMNA</strong> (los presets del banco en lista al costado, con el nombre completo), <strong>SECUENCIA</strong> (el preset anterior y el siguiente al lado del actual; tocar lo llama), <strong>TEMPO</strong> (el BPM en grande y el reloj), <strong>MÍNIMO</strong> (solo el preset) y <strong>PÓSTER</strong> (la imagen del escenario a pantalla completa, con el nombre encima y sin paneles). Cada tarjeta muestra un dibujo del diseño. Las opciones que no valen en el diseño elegido quedan apagadas, con el motivo.</p>"
+        "pt": "<p>Seis jeitos de arrumar o palco: <strong>CLÁSSICO</strong> (nome e imagem em cima, footswitches e presets embaixo), <strong>LETREIRO</strong> (o nome ocupa a tela; os footswitches viram uma faixa de LEDs), <strong>PEDALEIRA</strong> (footswitches grandes em duas fileiras, na ordem do pedal), <strong>SEQUÊNCIA</strong> (o preset anterior e o próximo ao lado do atual; tocar chama), <strong>TEMPO</strong> (o BPM em letra grande e o relógio) e <strong>MÍNIMO</strong> (só o preset). Os presets em lista na lateral são o CLÁSSICO com a barra de presets <strong>NA LATERAL</strong> (aba AJUSTES), e a imagem na tela inteira é o fundo <strong>IMAGEM</strong> da APARÊNCIA.</p>",
+        "en": "<p>Six ways to arrange the stage: <strong>CLASSIC</strong> (name and image on top, footswitches and presets below), <strong>MARQUEE</strong> (the name fills the screen; the footswitches become a strip of LEDs), <strong>PEDALBOARD</strong> (big footswitches in two rows, in the pedal order), <strong>SEQUENCE</strong> (the previous and next presets beside the current one; tap to call), <strong>TEMPO</strong> (the BPM in big type and the clock) and <strong>MINIMAL</strong> (only the preset). Presets listed on the side are CLASSIC with the preset bar <strong>ON THE SIDE</strong> (SETTINGS tab), and the image on the whole screen is the <strong>IMAGE</strong> background in LOOK.</p>",
+        "es": "<p>Seis formas de organizar el escenario: <strong>CLÁSICO</strong> (nombre e imagen arriba, footswitches y presets abajo), <strong>MARQUESINA</strong> (el nombre ocupa la pantalla; los footswitches se vuelven una franja de LEDs), <strong>PEDALERA</strong> (footswitches grandes en dos filas, en el orden del pedal), <strong>SECUENCIA</strong> (el preset anterior y el siguiente al lado del actual; tocar lo llama), <strong>TEMPO</strong> (el BPM en letra grande y el reloj) y <strong>MÍNIMO</strong> (solo el preset). Los presets en lista al costado son el CLÁSICO con la barra de presets <strong>AL COSTADO</strong> (pestaña AJUSTES), y la imagen en toda la pantalla es el fondo <strong>IMAGEN</strong> de APARIENCIA.</p>"
        }
       },
       {
        "name": {
-        "pt": "Imagem e Layout do topo",
-        "en": "Image and Top layout",
-        "es": "Imagen y Diseño de arriba"
+        "pt": "Imagem do cabeçalho",
+        "en": "Header image",
+        "es": "Imagen del encabezado"
        },
        "type": {
         "pt": "imagem",
@@ -5422,26 +5333,26 @@ const MN_CONTENT = {
         "es": "imagen"
        },
        "desc": {
-        "pt": "<p>Com a imagem ligada, escolha <strong>LADO A LADO</strong> (nome de um lado, imagem do outro — com o lado da imagem e o espaço do nome de 25 a 75%, num controle deslizante) ou <strong>NOME SOBRE A IMAGEM</strong>. Em <strong>MAIS OPÇÕES</strong>: a borda da imagem (esmaecida ou reta) e escurecer a imagem (não, um pouco, bastante), para o nome ler melhor.</p>",
-        "en": "<p>With the image on, choose <strong>SIDE BY SIDE</strong> (name on one side, image on the other — with a choice of image side and a name width from 25 to 75%, on a slider) or <strong>NAME OVER IMAGE</strong>. Under <strong>MORE OPTIONS</strong>: the image edge (faded or straight) and dimming the image (no, a little, a lot), so the name reads better.</p>",
-        "es": "<p>Con la imagen encendida, elige <strong>LADO A LADO</strong> (nombre de un lado, imagen del otro — con el lado de la imagen y el espacio del nombre de 25 a 75%, en un control deslizante) o <strong>NOMBRE SOBRE LA IMAGEN</strong>. En <strong>MÁS OPCIONES</strong>: el borde de la imagen (difuminado o recto) y oscurecer la imagen (no, un poco, mucho), para que el nombre se lea mejor.</p>"
+        "pt": "<p><strong>À DIREITA</strong>, <strong>À ESQUERDA</strong>, <strong>ATRÁS DO NOME</strong> ou <strong>SEM IMAGEM</strong>. Com a imagem ao lado, <strong>Espaço do nome</strong> divide o cabeçalho de 25 a 75%. Escurecer a imagem do cabeçalho fica na APARÊNCIA, em MAIS OPÇÕES.</p>",
+        "en": "<p><strong>RIGHT</strong>, <strong>LEFT</strong>, <strong>BEHIND THE NAME</strong> or <strong>NO IMAGE</strong>. With the image on the side, <strong>Name space</strong> splits the header from 25 to 75%. Dimming the header image is in LOOK, under MORE OPTIONS.</p>",
+        "es": "<p><strong>A LA DERECHA</strong>, <strong>A LA IZQUIERDA</strong>, <strong>DETRÁS DEL NOMBRE</strong> o <strong>SIN IMAGEN</strong>. Con la imagen al costado, <strong>Espacio del nombre</strong> divide el encabezado de 25 a 75%. Oscurecer la imagen del encabezado está en APARIENCIA, en MÁS OPCIONES.</p>"
        }
       },
       {
        "name": {
-        "pt": "Imagem sempre do PRESET",
-        "en": "Always the PRESET image",
-        "es": "Imagen siempre del PRESET"
+        "pt": "O que os footswitches mostram",
+        "en": "What the footswitches show",
+        "es": "Qué muestran los footswitches"
        },
        "type": {
-        "pt": "interruptor",
-        "en": "switch",
-        "es": "interruptor"
+        "pt": "escolha",
+        "en": "choice",
+        "es": "opción"
        },
        "desc": {
-        "pt": "<p>Ligada (padrão), a imagem do palco é o fundo da tela PRESET mesmo com o pedal em LIVE. Desligada, em LIVE aparece o fundo da tela LIVE. Só vale quando a imagem vem do display da controladora.</p>",
-        "en": "<p>On (default), the stage image is the PRESET screen background even with the pedal in LIVE. Off, LIVE shows the LIVE screen background. Only applies when the image comes from the controller's display.</p>",
-        "es": "<p>Activada (por defecto), la imagen del escenario es el fondo de la pantalla PRESET incluso con el pedal en LIVE. Desactivada, en LIVE aparece el fondo de la pantalla LIVE. Solo vale cuando la imagen viene del display de la controladora.</p>"
+        "pt": "<p><strong>ÍCONES DO LIVE</strong>, como o display, ou <strong>FUNDOS DOS PRESETS</strong>: cada footswitch mostra o fundo do preset de mesmo número, e tocar nele chama aquele preset.</p>",
+        "en": "<p><strong>LIVE ICONS</strong>, like the display, or <strong>PRESET BACKGROUNDS</strong>: each footswitch shows the background of the preset with the same number, and tapping it calls that preset.</p>",
+        "es": "<p><strong>ÍCONOS DEL LIVE</strong>, como el display, o <strong>FONDOS DE LOS PRESETS</strong>: cada footswitch muestra el fondo del preset del mismo número, y tocarlo llama ese preset.</p>"
        }
       },
       {
@@ -5456,78 +5367,130 @@ const MN_CONTENT = {
         "es": "disposición y forma"
        },
        "desc": {
-        "pt": "<p>Arranjo: <strong>UMA LINHA</strong> (em ordem, 1 a 6), <strong>COMO NO PEDAL</strong> (duas fileiras, imitando a controladora) ou <strong>EM COLUNA</strong> (ao lado do nome). Tamanho em cinco passos (PP a GG). Forma: <strong>COMO NO DISPLAY</strong>, <strong>CÍRCULO</strong> ou <strong>SÓ LED</strong> (um anel na cor do LED com o nome). Em <strong>MAIS OPÇÕES</strong>, a legenda embaixo de cada ícone: o <strong>MODO</strong> do footswitch ou o <strong>COMANDO</strong> que ele manda.</p>",
-        "en": "<p>Arrangement: <strong>ONE ROW</strong> (in order, 1 to 6), <strong>LIKE THE PEDAL</strong> (two rows, mirroring the controller) or <strong>COLUMN</strong> (beside the name). Size in five steps (XS to XL). Shape: <strong>AS ON THE DISPLAY</strong>, <strong>CIRCLE</strong> or <strong>LED ONLY</strong> (a ring in the LED color with the name). Under <strong>MORE OPTIONS</strong>, the caption under each icon: the footswitch <strong>MODE</strong> or the <strong>COMMAND</strong> it sends.</p>",
-        "es": "<p>Disposición: <strong>UNA FILA</strong> (en orden, 1 a 6), <strong>COMO EN EL PEDAL</strong> (dos filas, imitando la controladora) o <strong>EN COLUMNA</strong> (al lado del nombre). Tamaño en cinco pasos (PP a GG). Forma: <strong>COMO EN EL DISPLAY</strong>, <strong>CÍRCULO</strong> o <strong>SOLO LED</strong> (un anillo del color del LED con el nombre). En <strong>MÁS OPCIONES</strong>, la leyenda bajo cada ícono: el <strong>MODO</strong> del footswitch o el <strong>COMANDO</strong> que envía.</p>"
+        "pt": "<p>Arranjo: <strong>UMA LINHA</strong> (1 a 6), <strong>COMO NO PEDAL</strong> (duas fileiras) ou <strong>EM COLUNA</strong> (ao lado do nome). Tamanho P, M, G. Forma: <strong>COMO NO DISPLAY</strong>, <strong>CÍRCULO</strong> ou <strong>SÓ LED</strong>. Desligados: <strong>NORMAIS</strong>, <strong>ESCURECIDOS</strong> (o que está ligado salta aos olhos) ou <strong>OCULTOS</strong>.</p>",
+        "en": "<p>Arrangement: <strong>ONE ROW</strong> (1 to 6), <strong>LIKE THE PEDAL</strong> (two rows) or <strong>IN A COLUMN</strong> (beside the name). Size S, M, L. Shape: <strong>LIKE THE DISPLAY</strong>, <strong>CIRCLE</strong> or <strong>LED ONLY</strong>. Off footswitches: <strong>NORMAL</strong>, <strong>DIMMED</strong> (what is on stands out) or <strong>HIDDEN</strong>.</p>",
+        "es": "<p>Disposición: <strong>UNA FILA</strong> (1 a 6), <strong>COMO EN EL PEDAL</strong> (dos filas) o <strong>EN COLUMNA</strong> (al lado del nombre). Tamaño P, M, G. Forma: <strong>COMO EN EL DISPLAY</strong>, <strong>CÍRCULO</strong> o <strong>SOLO LED</strong>. Apagados: <strong>NORMALES</strong>, <strong>OSCURECIDOS</strong> (lo que está encendido resalta) u <strong>OCULTOS</strong>.</p>"
        }
       },
       {
        "name": {
-        "pt": "O que mostrar",
-        "en": "What to show",
-        "es": "Qué mostrar"
+        "pt": "Mostrar na tela",
+        "en": "Show on screen",
+        "es": "Mostrar en pantalla"
        },
        "type": {
-        "pt": "interruptores",
-        "en": "switches",
-        "es": "interruptores"
+        "pt": "chips numerados",
+        "en": "numbered chips",
+        "es": "chips numerados"
        },
        "desc": {
-        "pt": "<p><strong>MODO PRESET / LIVE</strong>, o modo amigável, a etiqueta do preset (A1: pequena, grande ou oculta), o número dos footswitches e a barra do LED.</p>",
-        "en": "<p><strong>PRESET / LIVE MODE</strong>, the friendly mode, the preset tag (A1: small, big or hidden), the footswitch number and the LED bar.</p>",
-        "es": "<p><strong>MODO PRESET / LIVE</strong>, el modo amigable, la etiqueta del preset (A1: pequeña, grande u oculta), el número de los footswitches y la barra del LED.</p>"
+        "pt": "<p>O número dos footswitches, a barra do LED, <strong>MODO PRESET / LIVE</strong> e o modo amigável. Cada número do chip aponta a peça no desenho; desligada, a peça fica tracejada. Em MAIS OPÇÕES: a legenda embaixo de cada ícone (o MODO ou o COMANDO) e a etiqueta A1 (pequena ou oculta).</p>",
+        "en": "<p>The footswitch numbers, the LED bar, <strong>PRESET / LIVE MODE</strong> and the friendly mode. Each chip number points to the piece in the drawing; when off, the piece is dashed. Under MORE OPTIONS: the caption under each icon (the MODE or the COMMAND) and the A1 tag (small or hidden).</p>",
+        "es": "<p>El número de los footswitches, la barra del LED, <strong>MODO PRESET / LIVE</strong> y el modo amigable. Cada número del chip señala la pieza en el dibujo; apagada, la pieza queda punteada. En MÁS OPCIONES: la leyenda debajo de cada ícono (el MODO o el COMANDO) y la etiqueta A1 (pequeña u oculta).</p>"
+       }
+      }
+     ],
+     "notes": [
+      {
+       "pt": "Acionar o footswitch com um toque ou segurando, e segurar o ícone para editar, estão na aba <strong>AJUSTES</strong>, em Acionar com.",
+       "en": "Triggering the footswitch with a tap or by holding, and holding the icon to edit it, are in the <strong>SETTINGS</strong> tab, under Trigger by.",
+       "es": "Activar el footswitch con un toque o manteniendo, y mantener el ícono para editarlo, están en la pestaña <strong>AJUSTES</strong>, en Activar con."
+      }
+     ]
+    },
+    {
+     "id": "palco-p2",
+     "title": {
+      "pt": "Configurações do palco — ESPECIAL",
+      "en": "Stage settings — SPECIAL",
+      "es": "Configuración del escenario — ESPECIAL"
+     },
+     "purpose": {
+      "pt": "Como o PALCO ESPECIAL mostra a cadeia e os knobs do aparelho.",
+      "en": "How the SPECIAL STAGE shows the device's chain and knobs.",
+      "es": "Cómo el ESCENARIO ESPECIAL muestra la cadena y los knobs del aparato."
+     },
+     "shot": "stage-set-p2",
+     "mockTitle": {
+      "pt": "CONFIGURAÇÕES DO PALCO — ESPECIAL",
+      "en": "STAGE SETTINGS — SPECIAL",
+      "es": "CONFIGURACIÓN DEL ESCENARIO — ESPECIAL"
+     },
+     "fields": [
+      {
+       "name": {
+        "pt": "Layout da tela",
+        "en": "Screen layout",
+        "es": "Layout de la pantalla"
+       },
+       "type": {
+        "pt": "layout",
+        "en": "layout",
+        "es": "layout"
+       },
+       "desc": {
+        "pt": "<p><strong>COMPLETO</strong> (preset, cadeia de efeitos e knobs), <strong>SÓ A CADEIA</strong> (blocos grandes; segurar liga e desliga), <strong>SÓ O PRESET</strong> (o nome em letra gigante), <strong>CADEIA LATERAL</strong> (a cadeia em coluna e os knobs ao lado — pede tela de tablet ou computador) e <strong>FAVORITOS</strong> (até oito controles de qualquer bloco, fixos na tela). O Kemper segue a mesma escolha; nele, CADEIA LATERAL e FAVORITOS viram COMPLETO.</p>",
+        "en": "<p><strong>FULL</strong> (preset, effects chain and knobs), <strong>CHAIN ONLY</strong> (big blocks; hold to turn on and off), <strong>PRESET ONLY</strong> (the name in giant type), <strong>SIDE CHAIN</strong> (the chain in a column and the knobs beside it — needs a tablet or computer screen) and <strong>FAVORITES</strong> (up to eight controls from any block, fixed on screen). The Kemper follows the same choice; on it, SIDE CHAIN and FAVORITES become FULL.</p>",
+        "es": "<p><strong>COMPLETO</strong> (preset, cadena de efectos y knobs), <strong>SOLO LA CADENA</strong> (bloques grandes; mantener enciende y apaga), <strong>SOLO EL PRESET</strong> (el nombre en letra gigante), <strong>CADENA LATERAL</strong> (la cadena en columna y los knobs al lado — pide pantalla de tablet o computadora) y <strong>FAVORITOS</strong> (hasta ocho controles de cualquier bloque, fijos en la pantalla). El Kemper sigue la misma elección; en él, CADENA LATERAL y FAVORITOS pasan a COMPLETO.</p>"
        }
       },
       {
        "name": {
-        "pt": "Footswitches desligados",
-        "en": "Footswitches that are off",
-        "es": "Footswitches apagados"
+        "pt": "Knobs",
+        "en": "Knobs",
+        "es": "Knobs"
        },
        "type": {
-        "pt": "escolha",
-        "en": "choice",
-        "es": "opción"
+        "pt": "tamanho, estilo e arranjo",
+        "en": "size, style and arrangement",
+        "es": "tamaño, estilo y disposición"
        },
        "desc": {
-        "pt": "<p><strong>NORMAIS</strong>, <strong>ESCURECIDOS</strong> (o que está ligado salta aos olhos) ou <strong>OCULTOS</strong> — some o ícone e fica só o número, para a tela mostrar apenas o que está ligado.</p>",
-        "en": "<p><strong>NORMAL</strong>, <strong>DIMMED</strong> (what is on stands out) or <strong>HIDDEN</strong> — the icon disappears and only the number stays, so the screen shows just what is on.</p>",
-        "es": "<p><strong>NORMALES</strong>, <strong>OSCURECIDOS</strong> (lo encendido salta a la vista) u <strong>OCULTOS</strong> — desaparece el ícono y queda solo el número, para que la pantalla muestre apenas lo encendido.</p>"
+        "pt": "<p>Tamanho P, M, G. Estilo: <strong>ARCO</strong>, <strong>PONTEIRO</strong>, <strong>CHICKEN HEAD</strong>, <strong>BARRA</strong> vertical ou <strong>NÚMERO</strong> grande. Valor <strong>EMBAIXO</strong> ou <strong>DENTRO</strong> do knob. Os que não cabem: <strong>EM LINHA</strong> (páginas com setas) ou <strong>TODOS À VISTA</strong>.</p>",
+        "en": "<p>Size S, M, L. Style: <strong>ARC</strong>, <strong>POINTER</strong>, <strong>CHICKEN HEAD</strong>, vertical <strong>BAR</strong> or big <strong>NUMBER</strong>. Value <strong>BELOW</strong> or <strong>INSIDE</strong> the knob. Those that do not fit: <strong>IN A ROW</strong> (pages with arrows) or <strong>ALL IN VIEW</strong>.</p>",
+        "es": "<p>Tamaño P, M, G. Estilo: <strong>ARCO</strong>, <strong>PUNTERO</strong>, <strong>CHICKEN HEAD</strong>, <strong>BARRA</strong> vertical o <strong>NÚMERO</strong> grande. Valor <strong>DEBAJO</strong> o <strong>DENTRO</strong> del knob. Los que no caben: <strong>EN FILA</strong> (páginas con flechas) o <strong>TODOS A LA VISTA</strong>.</p>"
        }
       },
       {
        "name": {
-        "pt": "Acionar footswitch pela tela",
-        "en": "Trigger a footswitch from the screen",
-        "es": "Accionar footswitch desde la pantalla"
+        "pt": "Mostrar na tela",
+        "en": "Show on screen",
+        "es": "Mostrar en pantalla"
        },
        "type": {
-        "pt": "escolha",
-        "en": "choice",
-        "es": "opción"
+        "pt": "chips numerados",
+        "en": "numbered chips",
+        "es": "chips numerados"
        },
        "desc": {
-        "pt": "<p><strong>UM TOQUE</strong> (padrão), <strong>SEGURAR</strong> — o footswitch só aciona depois de meio segundo com o dedo na tela, para não acionar sem querer — ou <strong>DESLIGADO</strong>: os ícones só mostram o estado, útil quando o celular fica ao alcance de outras pessoas no palco.</p>",
-        "en": "<p><strong>ONE TAP</strong> (default), <strong>HOLD</strong> — the footswitch only triggers after half a second with the finger on the screen, to avoid accidents — or <strong>OFF</strong>: the icons only show the state, useful when the phone is within reach of other people on stage.</p>",
-        "es": "<p><strong>UN TOQUE</strong> (predeterminado), <strong>MANTENER</strong> — el footswitch solo se acciona tras medio segundo con el dedo en la pantalla, para no accionarlo sin querer — o <strong>APAGADO</strong>: los íconos solo muestran el estado, útil cuando el celular queda al alcance de otras personas en el escenario.</p>"
+        "pt": "<p>O número do preset do aparelho, o botão <strong>SALVAR</strong> (quem não quer correr o risco de gravar no palco pode tirá-lo) e as siglas dos blocos.</p>",
+        "en": "<p>The device preset number, the <strong>SAVE</strong> button (if you do not want the risk of saving on stage, remove it) and the block labels.</p>",
+        "es": "<p>El número del preset del aparato, el botón <strong>GUARDAR</strong> (quien no quiere arriesgarse a grabar en el escenario puede quitarlo) y las siglas de los bloques.</p>"
        }
       },
       {
        "name": {
-        "pt": "Segurar o ícone",
-        "en": "Hold the icon",
-        "es": "Mantener el ícono"
+        "pt": "Mais opções",
+        "en": "More options",
+        "es": "Más opciones"
        },
        "type": {
-        "pt": "escolha",
-        "en": "choice",
-        "es": "elección"
+        "pt": "ajustes",
+        "en": "adjustments",
+        "es": "ajustes"
        },
        "desc": {
-        "pt": "<p><strong>EDITAR O FOOTSWITCH</strong> (padrão): segurar um ícone abre as configurações MIDI dele ao lado do palco — veja <strong>Editar um footswitch sem sair do palco</strong>.</p>",
-        "en": "<p><strong>EDIT THE FOOTSWITCH</strong> (default): holding an icon opens its MIDI settings next to the stage — see <strong>Editing a footswitch without leaving the stage</strong>.</p>",
-        "es": "<p><strong>EDITAR EL FOOTSWITCH</strong> (por defecto): mantener un ícono abre su configuración MIDI al lado del escenario — mira <strong>Editar un footswitch sin salir del escenario</strong>.</p>"
+        "pt": "<p><strong>Imagem atrás do preset</strong> (a imagem do palco atrás do nome do preset do aparelho); <strong>bloco aberto ao entrar</strong> (o AMP, O ÚLTIMO que você abriu ou O PRIMEIRO LIGADO); <strong>sensibilidade do arraste</strong> dos knobs (fino, normal, rápido); e <strong>ajustes por aparelho</strong> — o layout e os knobs guardados para cada pedal (a dica de cada opção diz para qual aparelho ela vale).</p>",
+        "en": "<p><strong>Image behind the preset</strong> (the stage image behind the device preset name); <strong>block open on entry</strong> (the AMP, THE LAST one you opened or THE FIRST ONE ON); knob <strong>drag sensitivity</strong> (fine, normal, fast); and <strong>per-device settings</strong> — the layout and knobs saved for each pedal (each option hint says which device it applies to).</p>",
+        "es": "<p><strong>Imagen detrás del preset</strong> (la imagen del escenario detrás del nombre del preset del aparato); <strong>bloque abierto al entrar</strong> (el AMP, EL ÚLTIMO que abriste o EL PRIMERO ENCENDIDO); <strong>sensibilidad del arrastre</strong> de los knobs (fino, normal, rápido); y <strong>ajustes por aparato</strong> — el layout y los knobs guardados para cada pedal (la pista de cada opción dice a qué aparato vale).</p>"
        }
+      }
+     ],
+     "notes": [
+      {
+       "pt": "O visual do PALCO ESPECIAL (as cores do aparelho, as suas ou um painel realista) está na <strong>APARÊNCIA</strong>, em Quem manda no visual. O tempo de segurar para ligar e desligar um bloco está em <strong>AJUSTES</strong>, em Acionar com.",
+       "en": "The SPECIAL STAGE look (the device colors, yours or a realistic panel) is in <strong>LOOK</strong>, under Who sets the look. The hold time to turn a block on and off is in <strong>SETTINGS</strong>, under Trigger by.",
+       "es": "El aspecto del ESCENARIO ESPECIAL (los colores del aparato, los tuyos o un panel realista) está en <strong>APARIENCIA</strong>, en Quién define el aspecto. El tiempo para mantener y encender o apagar un bloque está en <strong>AJUSTES</strong>, en Activar con."
       }
      ]
     },
@@ -5539,9 +5502,9 @@ const MN_CONTENT = {
       "es": "Las imágenes del escenario"
      },
      "purpose": {
-      "pt": "Nos aplicativos e no site, o fundo do PALCO BFMIDI pode ser a imagem da controladora, uma imagem da galeria do app ou uma foto sua. O recorte vale em qualquer caso. A mesma imagem é a do fundo de tela cheia, do layout Pôster e da opção Imagem atrás do preset.",
-      "en": "In the apps and on the website, the BFMIDI STAGE background can be the controller's image, an image from the app gallery or one of your own photos. Cropping works in every case. The same image is used by the full-screen background, the Poster layout and the Image behind the preset option.",
-      "es": "En las apps y en el sitio, el fondo del ESCENARIO BFMIDI puede ser la imagen de la controladora, una imagen de la galería de la app o una foto tuya. El recorte vale en cualquier caso. La misma imagen es la del fondo a pantalla completa, del diseño Póster y de la opción Imagen detrás del preset."
+      "pt": "Nos aplicativos e no site, a imagem do palco pode ser a da controladora, uma da galeria do app ou uma foto sua. O recorte vale em qualquer caso. A mesma imagem é a do cabeçalho do PALCO BFMIDI, a do fundo de tela cheia (APARÊNCIA › Fundo: IMAGEM) e a da opção Imagem atrás do preset.",
+      "en": "In the apps and on the website, the stage image can be the controller one, one from the app gallery or a photo of yours. Cropping works in every case. The same image is the BFMIDI STAGE header image, the full-screen background (LOOK › Background: IMAGE) and the Image behind the preset option.",
+      "es": "En las apps y en el sitio, la imagen del escenario puede ser la de la controladora, una de la galería de la app o una foto tuya. El recorte vale en cualquier caso. La misma imagen es la del encabezado del ESCENARIO BFMIDI, la del fondo de pantalla completa (APARIENCIA › Fondo: IMAGEN) y la de la opción Imagen detrás del preset."
      },
      "howto": [
       {
@@ -5639,6 +5602,136 @@ const MN_CONTENT = {
         "en": "<p>Each image keeps its own framing: drag to choose the focus point, use the zoom (100 to 300%) and <strong>CENTER</strong> to go back to the middle.</p>",
         "es": "<p>Cada imagen guarda su propio encuadre: arrastra para elegir el punto, usa el zoom (100 a 300%) y <strong>CENTRAR</strong> para volver al centro.</p>"
        }
+      },
+      {
+       "name": {
+        "pt": "Sempre a imagem da tela PRESET",
+        "en": "Always the PRESET screen image",
+        "es": "Siempre la imagen de la pantalla PRESET"
+       },
+       "type": {
+        "pt": "interruptor",
+        "en": "switch",
+        "es": "interruptor"
+       },
+       "desc": {
+        "pt": "<p>Ligada (padrão), a imagem do palco é o fundo da tela PRESET mesmo com o pedal em LIVE. Desligada, em LIVE aparece o fundo da tela LIVE. Só vale quando a imagem vem do display da controladora.</p>",
+        "en": "<p>On (default), the stage image is the PRESET screen background even with the pedal in LIVE. Off, in LIVE the LIVE screen background shows. Only applies when the image comes from the controller display.</p>",
+        "es": "<p>Activada (predeterminado), la imagen del escenario es el fondo de la pantalla PRESET aun con el pedal en LIVE. Desactivada, en LIVE aparece el fondo de la pantalla LIVE. Solo vale cuando la imagen viene del display de la controladora.</p>"
+       }
+      }
+     ]
+    },
+    {
+     "id": "palco-geral",
+     "title": {
+      "pt": "Configurações do palco — AJUSTES",
+      "en": "Stage settings — SETTINGS",
+      "es": "Configuración del escenario — AJUSTES"
+     },
+     "purpose": {
+      "pt": "Como a tela se comporta e como se toca nela, nos dois palcos.",
+      "en": "How the screen behaves and how you touch it, on both stages.",
+      "es": "Cómo se comporta la pantalla y cómo se toca, en los dos escenarios."
+     },
+     "shot": "stage-set-geral",
+     "mockTitle": {
+      "pt": "CONFIGURAÇÕES DO PALCO — AJUSTES",
+      "en": "STAGE SETTINGS — SETTINGS",
+      "es": "CONFIGURACIÓN DEL ESCENARIO — AJUSTES"
+     },
+     "fields": [
+      {
+       "name": {
+        "pt": "Barra de presets da BFMIDI",
+        "en": "BFMIDI preset bar",
+        "es": "Barra de presets de la BFMIDI"
+       },
+       "type": {
+        "pt": "barra",
+        "en": "bar",
+        "es": "barra"
+       },
+       "desc": {
+        "pt": "<p>A fileira para trocar de preset, nos dois palcos. Ligada, escolha o que os botões mostram (<strong>NÚMERO + NOME</strong>, <strong>SÓ NÚMERO</strong> ou <strong>SÓ NOME</strong>), a posição (<strong>EMBAIXO</strong>, <strong>EM CIMA</strong> ou <strong>NA LATERAL</strong>) e o tamanho (P, M, G).</p>",
+        "en": "<p>The row used to change presets, on both stages. When on, choose what the buttons show (<strong>NUMBER + NAME</strong>, <strong>NUMBER ONLY</strong> or <strong>NAME ONLY</strong>), the position (<strong>BOTTOM</strong>, <strong>TOP</strong> or <strong>SIDE</strong>) and the size (S, M, L).</p>",
+        "es": "<p>La fila para cambiar de preset, en los dos escenarios. Activada, elige qué muestran los botones (<strong>NÚMERO + NOMBRE</strong>, <strong>SOLO NÚMERO</strong> o <strong>SOLO NOMBRE</strong>), la posición (<strong>ABAJO</strong>, <strong>ARRIBA</strong> o <strong>AL COSTADO</strong>) y el tamaño (P, M, G).</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Acionar com",
+        "en": "Trigger by",
+        "es": "Activar con"
+       },
+       "type": {
+        "pt": "segurança",
+        "en": "safety",
+        "es": "seguridad"
+       },
+       "desc": {
+        "pt": "<p><strong>UM TOQUE</strong> ou <strong>SEGURAR</strong>, para não trocar de preset nem acionar um footswitch sem querer — vale para a barra de presets e para os footswitches da tela (PERSONALIZAR separa os dois e tem DESLIGADO, em que os footswitches só mostram o estado). <strong>Tempo de segurar</strong>: 0,3 s, 0,45 s (padrão), 0,7 s ou 1 s — o mesmo para presets, footswitches e o liga/desliga dos blocos do PALCO ESPECIAL. <strong>Segurar o ícone</strong>: EDITAR O FOOTSWITCH abre as configurações MIDI dele ao lado do palco.</p>",
+        "en": "<p><strong>ONE TAP</strong> or <strong>HOLD</strong>, to avoid changing preset or triggering a footswitch by accident — applies to the preset bar and to the screen footswitches (CUSTOMIZE separates the two and has OFF, where the footswitches only show their state). <strong>Hold time</strong>: 0.3 s, 0.45 s (default), 0.7 s or 1 s — the same for presets, footswitches and turning SPECIAL STAGE blocks on and off. <strong>Hold the icon</strong>: EDIT THE FOOTSWITCH opens its MIDI settings beside the stage.</p>",
+        "es": "<p><strong>UN TOQUE</strong> o <strong>MANTENER</strong>, para no cambiar de preset ni activar un footswitch sin querer — vale para la barra de presets y para los footswitches de la pantalla (PERSONALIZAR separa los dos y tiene DESACTIVADO, en el que los footswitches solo muestran el estado). <strong>Tiempo para mantener</strong>: 0,3 s, 0,45 s (predeterminado), 0,7 s o 1 s — el mismo para presets, footswitches y encender/apagar los bloques del ESCENARIO ESPECIAL. <strong>Mantener el ícono</strong>: EDITAR EL FOOTSWITCH abre su configuración MIDI al lado del escenario.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Trava de toque",
+        "en": "Touch lock",
+        "es": "Bloqueo táctil"
+       },
+       "type": {
+        "pt": "segurança",
+        "en": "safety",
+        "es": "seguridad"
+       },
+       "desc": {
+        "pt": "<p>Em <strong>SEGURAR PARA DESTRAVAR</strong> o palco abre travado: toques em footswitch, preset, bloco e knob não fazem nada. Segure o cadeado no canto para destravar; 8 segundos depois do último toque ele trava de novo (uma linha embaixo mostra o tempo).</p>",
+        "en": "<p>With <strong>HOLD TO UNLOCK</strong> the stage opens locked: touches on footswitches, presets, blocks and knobs do nothing. Hold the padlock in the corner to unlock; 8 seconds after the last touch it locks again (a line at the bottom shows the time left).</p>",
+        "es": "<p>En <strong>MANTENER PARA DESBLOQUEAR</strong> el escenario abre bloqueado: los toques en footswitch, preset, bloque y knob no hacen nada. Mantén el candado de la esquina para desbloquear; 8 segundos después del último toque se bloquea de nuevo (una línea abajo muestra el tiempo).</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Barra de cima",
+        "en": "Top bar",
+        "es": "Barra superior"
+       },
+       "type": {
+        "pt": "chips e tempo",
+        "en": "chips and time",
+        "es": "chips y tiempo"
+       },
+       "desc": {
+        "pt": "<p>O que a barra de cima mostra: conexão, BPM e relógio (o relógio vem desligado). E quanto tempo ela fica à mostra: 2, 4 ou 8 segundos, ou FIXA (sempre visível, com o palco começando embaixo dela).</p>",
+        "en": "<p>What the top bar shows: connection, BPM and clock (the clock is off by default). And how long it stays visible: 2, 4 or 8 seconds, or FIXED (always visible, with the stage starting below it).</p>",
+        "es": "<p>Lo que muestra la barra superior: conexión, BPM y reloj (el reloj viene apagado). Y cuánto tiempo queda a la vista: 2, 4 u 8 segundos, o FIJA (siempre visible, con el escenario empezando debajo de ella).</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Aparelho",
+        "en": "Device",
+        "es": "Aparato"
+       },
+       "type": {
+        "pt": "interruptores",
+        "en": "switches",
+        "es": "interruptores"
+       },
+       "desc": {
+        "pt": "<p><strong>Manter a tela acesa</strong> (ligado por padrão, nos aparelhos e navegadores que permitem), <strong>Vibrar ao tocar</strong> e <strong>Desempenho</strong>: AUTOMÁTICO (padrão) escolhe pelo aparelho; LEVE tira desfoque, brilhos e animações, para celular mais fraco ou para poupar bateria; COMPLETO mantém tudo.</p>",
+        "en": "<p><strong>Keep the screen on</strong> (on by default, on devices and browsers that allow it), <strong>Vibrate on touch</strong> and <strong>Performance</strong>: AUTO (default) decides by device; LIGHT removes blur, glows and animations, for slower phones or to save battery; FULL keeps everything.</p>",
+        "es": "<p><strong>Mantener la pantalla encendida</strong> (activado por defecto, en los equipos y navegadores que lo permiten), <strong>Vibrar al tocar</strong> y <strong>Rendimiento</strong>: AUTOMÁTICO (predeterminado) elige según el aparato; LIGERO quita desenfoque, brillos y animaciones, para celulares más lentos o para ahorrar batería; COMPLETO mantiene todo.</p>"
+       }
+      }
+     ],
+     "notes": [
+      {
+       "pt": "Tudo nas configurações do palco fica salvo só neste aplicativo, neste aparelho. <strong>RESTAURAR PADRÃO</strong> volta os ajustes de fábrica sem apagar as imagens escolhidas.",
+       "en": "Everything in the stage settings is saved only in this app, on this device. <strong>RESTORE DEFAULTS</strong> brings back the factory settings without erasing the images you chose.",
+       "es": "Todo en la configuración del escenario se guarda solo en esta app, en este aparato. <strong>RESTAURAR PREDETERMINADO</strong> vuelve a los ajustes de fábrica sin borrar las imágenes elegidas."
       }
      ]
     },
@@ -5650,9 +5743,9 @@ const MN_CONTENT = {
       "es": "Perfiles y visuales listos"
      },
      "purpose": {
-      "pt": "Guarde até seis jeitos de deixar o palco (Ensaio, Show, Estúdio) e passe de um para o outro com um toque. Os visuais prontos trocam cores, fonte e painéis de uma vez.",
-      "en": "Keep up to six ways of setting up the stage (Rehearsal, Show, Studio) and go from one to the other with one tap. The ready-made looks change colors, font and panels at once.",
-      "es": "Guarda hasta seis formas de dejar el escenario (Ensayo, Show, Estudio) y pasa de una a otra con un toque. Los visuales listos cambian colores, fuente y paneles de una vez."
+      "pt": "Guarde até seis jeitos de deixar o palco (Ensaio, Show, Estúdio) e passe de um para o outro com um toque. Os visuais prontos ficam na APARÊNCIA.",
+      "en": "Save up to six ways of setting the stage (Rehearsal, Show, Studio) and switch between them with one tap. The ready-made looks are in LOOK.",
+      "es": "Guarda hasta seis formas de dejar el escenario (Ensayo, Show, Estudio) y pasa de una a otra con un toque. Los visuales listos están en APARIENCIA."
      },
      "howto": [
       {
@@ -5732,197 +5825,6 @@ const MN_CONTENT = {
         "pt": "<p>Pede um segundo toque (<strong>APAGAR MESMO?</strong>) e apaga o perfil marcado. O último perfil não pode ser apagado.</p>",
         "en": "<p>Asks for a second tap (<strong>REALLY DELETE?</strong>) and deletes the selected profile. The last profile cannot be deleted.</p>",
         "es": "<p>Pide un segundo toque (<strong>¿BORRAR DE VERDAD?</strong>) y borra el perfil marcado. El último perfil no se puede borrar.</p>"
-       }
-      },
-      {
-       "name": {
-        "pt": "Visuais prontos",
-        "en": "Ready-made looks",
-        "es": "Visuales listos"
-       },
-       "type": {
-        "pt": "cartões",
-        "en": "cards",
-        "es": "tarjetas"
-       },
-       "desc": {
-        "pt": "<p><strong>PADRÃO</strong>, <strong>ALTO CONTRASTE</strong>, <strong>OLED PRETO</strong>, <strong>ÂMBAR</strong>, <strong>NEON</strong>, <strong>AÇO</strong>, <strong>COR DO PRESET</strong> (fundo e destaque seguem a cor do LED do preset) e <strong>LIMPO</strong>. Um toque troca fundo, destaque, fonte, cantos e painéis do perfil marcado; layouts e imagens não mudam, e o <strong>DESFAZER</strong> volta.</p>",
-        "en": "<p><strong>DEFAULT</strong>, <strong>HIGH CONTRAST</strong>, <strong>OLED BLACK</strong>, <strong>AMBER</strong>, <strong>NEON</strong>, <strong>STEEL</strong>, <strong>PRESET COLOR</strong> (background and accent follow the preset LED color) and <strong>CLEAN</strong>. One tap changes the background, accent, font, corners and panels of the selected profile; layouts and images stay, and <strong>UNDO</strong> brings it back.</p>",
-        "es": "<p><strong>PREDETERMINADO</strong>, <strong>ALTO CONTRASTE</strong>, <strong>OLED NEGRO</strong>, <strong>ÁMBAR</strong>, <strong>NEÓN</strong>, <strong>ACERO</strong>, <strong>COLOR DEL PRESET</strong> (fondo y acento siguen el color del LED del preset) y <strong>LIMPIO</strong>. Un toque cambia fondo, acento, fuente, esquinas y paneles del perfil marcado; los diseños y las imágenes no cambian, y <strong>DESHACER</strong> vuelve atrás.</p>"
-       }
-      }
-     ]
-    },
-    {
-     "id": "palco-p2",
-     "title": {
-      "pt": "Configurações do palco — PALCO ESPECIAL",
-      "en": "Stage settings — SPECIAL STAGE",
-      "es": "Configuración del escenario — ESCENARIO ESPECIAL"
-     },
-     "purpose": {
-      "pt": "Como o PALCO ESPECIAL mostra a cadeia e os knobs do aparelho.",
-      "en": "How the SPECIAL STAGE shows the device's chain and knobs.",
-      "es": "Cómo el ESCENARIO ESPECIAL muestra la cadena y los knobs del aparato."
-     },
-     "shot": "stage-set-p2",
-     "mockTitle": {
-      "pt": "CONFIGURAÇÕES DO PALCO — PALCO ESPECIAL",
-      "en": "STAGE SETTINGS — SPECIAL STAGE",
-      "es": "CONFIGURACIÓN DEL ESCENARIO — ESCENARIO ESPECIAL"
-     },
-     "fields": [
-      {
-       "name": {
-        "pt": "Layout da tela",
-        "en": "Screen layout",
-        "es": "Diseño de la pantalla"
-       },
-       "type": {
-        "pt": "layout",
-        "en": "layout",
-        "es": "diseño"
-       },
-       "desc": {
-        "pt": "<p>Seis jeitos de arrumar o palco do pedal: <strong>COMPLETO</strong> (preset, cadeia de efeitos e knobs), <strong>SÓ A CADEIA</strong> (blocos grandes; segurar liga e desliga), <strong>SÓ OS KNOBS</strong>, <strong>SÓ O PRESET</strong> (o nome em letra gigante) e <strong>CADEIA LATERAL</strong> (a cadeia em coluna e os knobs ao lado — pede tela de tablet ou computador), além de <strong>FAVORITOS</strong> (até oito controles de qualquer bloco, fixos na tela). O <strong>Kemper</strong> tem a escolha dele, com os mesmos <strong>COMPLETO</strong>, <strong>SÓ A CADEIA</strong> e <strong>SÓ OS KNOBS</strong> e mais <strong>SÓ O RIG</strong>.</p>",
-        "en": "<p>Six ways to arrange the pedal's stage: <strong>FULL</strong> (preset, effect chain and knobs), <strong>CHAIN ONLY</strong> (big blocks; hold to turn on and off), <strong>KNOBS ONLY</strong>, <strong>PRESET ONLY</strong> (the name in giant letters) and <strong>SIDE CHAIN</strong> (the chain as a column with the knobs beside it — needs a tablet or computer screen), plus <strong>FAVORITES</strong> (up to eight controls from any block, fixed on screen). The <strong>Kemper</strong> has its own choice, with the same <strong>FULL</strong>, <strong>CHAIN ONLY</strong> and <strong>KNOBS ONLY</strong> plus <strong>RIG ONLY</strong>.</p>",
-        "es": "<p>Seis formas de organizar el escenario del pedal: <strong>COMPLETO</strong> (preset, cadena de efectos y knobs), <strong>SOLO LA CADENA</strong> (bloques grandes; mantener enciende y apaga), <strong>SOLO LOS KNOBS</strong>, <strong>SOLO EL PRESET</strong> (el nombre en letras gigantes) y <strong>CADENA LATERAL</strong> (la cadena en columna y los knobs al lado — pide pantalla de tablet o computadora), además de <strong>FAVORITOS</strong> (hasta ocho controles de cualquier bloque, fijos en la pantalla). El <strong>Kemper</strong> tiene su propia elección, con los mismos <strong>COMPLETO</strong>, <strong>SOLO LA CADENA</strong> y <strong>SOLO LOS KNOBS</strong> y además <strong>SOLO EL RIG</strong>.</p>"
-       }
-      },
-      {
-       "name": {
-        "pt": "Modo visual: PADRÃO, ALUMÍNIO, VINTAGE ou RACK",
-        "en": "Visual mode: STANDARD, ALUMINUM, VINTAGE or RACK",
-        "es": "Modo visual: ESTÁNDAR, ALUMINIO, VINTAGE o RACK"
-       },
-       "type": {
-        "pt": "visual",
-        "en": "visual",
-        "es": "visual"
-       },
-       "desc": {
-        "pt": "<p>No <strong>PALCO ESPECIAL</strong>, três visuais que imitam aparelho de verdade, feitos só com desenho (sem imagens): <strong>ALUMÍNIO</strong> (pedal boutique: chapa escovada com parafusos, knobs pretos, blocos como pedaizinhos pintados), <strong>VINTAGE</strong> (amplificador: tolex com friso creme, painel dourado, knobs com tampa dourada) e <strong>RACK</strong> (unidade de rack: alumínio preto, display âmbar, knobs com anel de LED, botões de borracha iluminados). Cada um troca os painéis, os knobs, as chaves e os blocos da cadeia. Com um deles o Estilo dos knobs fica apagado; com o alto contraste ligado vale o PADRÃO. O PALCO BFMIDI e o setlist não mudam. Nos aplicativos e no site.</p>",
-        "en": "<p>On the <strong>SPECIAL STAGE</strong>, three looks that imitate real gear, made only with drawing (no pictures): <strong>ALUMINUM</strong> (boutique pedal: brushed plate with screws, black knobs, blocks like little painted pedals), <strong>VINTAGE</strong> (amplifier: tolex with cream piping, gold panel, gold-capped knobs) and <strong>RACK</strong> (rack unit: black aluminum, amber display, knobs with an LED ring, lit rubber buttons). Each one changes the panels, knobs, switches and chain blocks. With one of them, Knob style is greyed out; with high contrast on, STANDARD applies. The BFMIDI STAGE and the setlist do not change. In the apps and on the website.</p>",
-        "es": "<p>En el <strong>ESCENARIO ESPECIAL</strong>, tres aspectos que imitan equipos de verdad, hechos solo con dibujo (sin imágenes): <strong>ALUMINIO</strong> (pedal boutique: chapa cepillada con tornillos, knobs negros, bloques como pedalitos pintados), <strong>VINTAGE</strong> (amplificador: tolex con ribete crema, panel dorado, knobs con tapa dorada) y <strong>RACK</strong> (unidad de rack: aluminio negro, display ámbar, knobs con anillo de LED, botones de goma iluminados). Cada uno cambia los paneles, los knobs, los interruptores y los bloques de la cadena. Con uno de ellos el Estilo de los knobs queda apagado; con el alto contraste activado vale ESTÁNDAR. El ESCENARIO BFMIDI y el setlist no cambian. En las apps y en el sitio.</p>"
-       }
-      },
-      {
-       "name": {
-        "pt": "Visual do aparelho",
-        "en": "Device look",
-        "es": "Aspecto del aparato"
-       },
-       "type": {
-        "pt": "tema",
-        "en": "theme",
-        "es": "tema"
-       },
-       "desc": {
-        "pt": "<p>Ligado, cada aparelho usa as suas cores e o seu estilo. Desligado, o PALCO ESPECIAL segue a categoria VISUAL. Com <strong>Com o meu fundo e destaque</strong> ligado, ficam a fonte e o desenho do pedal, mas o fundo e a cor de destaque são os da categoria VISUAL.</p>",
-        "en": "<p>When on, each device uses its own colors and style. When off, the SPECIAL STAGE follows the VISUAL category. With <strong>With my background and accent</strong> on, the pedal font and drawing stay, but the background and the accent color are the ones from the VISUAL category.</p>",
-        "es": "<p>Encendido, cada aparato usa sus propios colores y su estilo. Apagado, el ESCENARIO ESPECIAL sigue la categoría VISUAL. Con <strong>Con mi fondo y acento</strong> encendido, quedan la fuente y el dibujo del pedal, pero el fondo y el color de acento son los de la categoría VISUAL.</p>"
-       }
-      },
-      {
-       "name": {
-        "pt": "Siglas e cor dos blocos",
-        "en": "Labels and block color",
-        "es": "Siglas y color de los bloques"
-       },
-       "type": {
-        "pt": "cadeia",
-        "en": "chain",
-        "es": "cadena"
-       },
-       "desc": {
-        "pt": "<p>Mostrar ou não as siglas nos blocos, e se os blocos usam a cor do aparelho ou a cor de destaque. (Mostrar ou esconder a cadeia agora é o <strong>Layout da tela</strong>.)</p>",
-        "en": "<p>Whether to show the labels on the blocks, and whether the blocks use the device color or the accent color. (Showing or hiding the chain is now the <strong>Screen layout</strong>.)</p>",
-        "es": "<p>Mostrar o no las siglas en los bloques, y si los bloques usan el color del aparato o el color de acento. (Mostrar u ocultar la cadena ahora es el <strong>Diseño de la pantalla</strong>.)</p>"
-       }
-      },
-      {
-       "name": {
-        "pt": "Knobs",
-        "en": "Knobs",
-        "es": "Knobs"
-       },
-       "type": {
-        "pt": "tamanho, estilo e arranjo",
-        "en": "size, style and arrangement",
-        "es": "tamaño, estilo y disposición"
-       },
-       "desc": {
-        "pt": "<p>Tamanho (P, M, G); estilo: oito knobs (<strong>ARCO</strong>, <strong>PONTEIRO</strong>, <strong>LEDS</strong>, <strong>ANEL</strong>, <strong>COLORIDO</strong>, <strong>METAL</strong>, <strong>VINTAGE</strong> e <strong>CHICKEN HEAD</strong>), <strong>BARRA</strong> vertical ou <strong>NÚMERO</strong> grande; arranjo: <strong>EM LINHA</strong> (com setas para os que não cabem) ou <strong>TODOS À VISTA</strong>. Em <strong>MAIS OPÇÕES</strong>: onde o valor aparece (embaixo, em cima ou dentro do knob) e a sensibilidade do arraste (fino, normal, rápido).</p>",
-        "en": "<p>Size (S, M, L); style: eight knobs (<strong>ARC</strong>, <strong>POINTER</strong>, <strong>LEDS</strong>, <strong>RING</strong>, <strong>COLORED</strong>, <strong>METAL</strong>, <strong>VINTAGE</strong> and <strong>CHICKEN HEAD</strong>), vertical <strong>BAR</strong> or big <strong>NUMBER</strong>; arrangement: <strong>IN A ROW</strong> (with arrows for the ones that do not fit) or <strong>ALL VISIBLE</strong>. Under <strong>MORE OPTIONS</strong>: where the value appears (below, above or inside the knob) and the drag sensitivity (fine, normal, fast).</p>",
-        "es": "<p>Tamaño (P, M, G); estilo: ocho knobs (<strong>ARCO</strong>, <strong>PUNTERO</strong>, <strong>LEDS</strong>, <strong>ANILLO</strong>, <strong>COLOR</strong>, <strong>METAL</strong>, <strong>VINTAGE</strong> y <strong>CHICKEN HEAD</strong>), <strong>BARRA</strong> vertical o <strong>NÚMERO</strong> grande; disposición: <strong>EN LÍNEA</strong> (con flechas para los que no caben) o <strong>TODOS A LA VISTA</strong>. En <strong>MÁS OPCIONES</strong>: dónde aparece el valor (abajo, arriba o dentro del knob) y la sensibilidad del arrastre (fino, normal, rápido).</p>"
-       }
-      },
-      {
-       "name": {
-        "pt": "Segurar para ligar/desligar",
-        "en": "Hold to turn on/off",
-        "es": "Mantener para encender/apagar"
-       },
-       "type": {
-        "pt": "tempo",
-        "en": "time",
-        "es": "tiempo"
-       },
-       "desc": {
-        "pt": "<p>Quanto tempo o dedo precisa ficar no bloco para ligar ou desligar o efeito: 0,3 s, 0,45 s (padrão), 0,7 s ou 1 s.</p>",
-        "en": "<p>How long your finger has to stay on the block to turn the effect on or off: 0.3 s, 0.45 s (default), 0.7 s or 1 s.</p>",
-        "es": "<p>Cuánto tiempo debe quedar el dedo en el bloque para encender o apagar el efecto: 0,3 s, 0,45 s (predeterminado), 0,7 s o 1 s.</p>"
-       }
-      },
-      {
-       "name": {
-        "pt": "Botão de salvar e número do preset",
-        "en": "Save button and preset number",
-        "es": "Botón de guardar y número del preset"
-       },
-       "type": {
-        "pt": "interruptores",
-        "en": "switches",
-        "es": "interruptores"
-       },
-       "desc": {
-        "pt": "<p>Mostra ou esconde o disquete do cabeçalho — quem não quer correr o risco de gravar no palco pode tirá-lo — e o número do preset do aparelho. <strong>Imagem atrás do preset</strong> põe a imagem do palco atrás do nome do preset do aparelho.</p>",
-        "en": "<p>Shows or hides the floppy-disk button in the header — remove it if you do not want to risk saving on stage — and the device preset number. <strong>Image behind the preset</strong> puts the stage image behind the device preset name.</p>",
-        "es": "<p>Muestra u oculta el disquete del encabezado — quien no quiera arriesgarse a guardar en el escenario puede quitarlo — y el número del preset del aparato. <strong>Imagen detrás del preset</strong> pone la imagen del escenario detrás del nombre del preset del aparato.</p>"
-       }
-      },
-      {
-       "name": {
-        "pt": "Ajustes por aparelho",
-        "en": "Per-device settings",
-        "es": "Ajustes por aparato"
-       },
-       "type": {
-        "pt": "interruptor",
-        "en": "switch",
-        "es": "interruptor"
-       },
-       "desc": {
-        "pt": "<p>Ligado, o layout da tela e o tamanho, o estilo e o arranjo dos knobs passam a ser guardados para <strong>cada pedal</strong> (TONEX ONE, Nano Cortex, GP-5): a TONEX pode abrir em Só os knobs e a GP-5 no Completo. A dica de cada opção diz para qual aparelho ela vale.</p>",
-        "en": "<p>When on, the screen layout and the knob size, style and arrangement are saved for <strong>each pedal</strong> (TONEX ONE, Nano Cortex, GP-5): the TONEX can open in Knobs only and the GP-5 in Full. The hint under each option says which device it applies to.</p>",
-        "es": "<p>Encendido, el diseño de la pantalla y el tamaño, el estilo y la disposición de los knobs se guardan para <strong>cada pedal</strong> (TONEX ONE, Nano Cortex, GP-5): la TONEX puede abrir en Solo los knobs y la GP-5 en Completo. La pista de cada opción dice para qué aparato vale.</p>"
-       }
-      },
-      {
-       "name": {
-        "pt": "Bloco aberto ao entrar",
-        "en": "Block open on entry",
-        "es": "Bloque abierto al entrar"
-       },
-       "type": {
-        "pt": "escolha",
-        "en": "choice",
-        "es": "opción"
-       },
-       "desc": {
-        "pt": "<p>Qual bloco já aparece com os knobs quando o Palco Especial abre: o <strong>AMP</strong>, <strong>O ÚLTIMO</strong> que você abriu naquele aparelho ou <strong>O PRIMEIRO LIGADO</strong> da cadeia.</p>",
-        "en": "<p>Which block already shows its knobs when the Special Stage opens: the <strong>AMP</strong>, <strong>THE LAST ONE</strong> you opened on that device or the <strong>FIRST ONE ON</strong> in the chain.</p>",
-        "es": "<p>Qué bloque ya aparece con los knobs cuando abre el Escenario Especial: el <strong>AMP</strong>, <strong>EL ÚLTIMO</strong> que abriste en ese aparato o <strong>EL PRIMERO ENCENDIDO</strong> de la cadena.</p>"
        }
       }
      ]
@@ -6612,6 +6514,57 @@ const MN_CONTENT = {
      "fields": [
       {
        "name": {
+        "pt": "FOLHA (letra e cifra em linhas)",
+        "en": "SHEET (lyrics and chords in lines)",
+        "es": "HOJA (letra y acordes en líneas)"
+       },
+       "type": {
+        "pt": "texto",
+        "en": "text",
+        "es": "texto"
+       },
+       "desc": {
+        "pt": "<p>Em <strong>MAIS OPÇÕES › Esta parte mostra</strong> (ou na ficha, em NO PALCO, para a música toda) escolha <strong>FOLHA</strong>. O card 3 vira um campo de texto de largura fixa: escreva ou cole a parte em linhas, com a linha de acordes em cima da linha da letra, como numa folha de cifra. Pode colar direto de um site de cifra: os caracteres invisíveis que vêm junto são tirados. No palco a letra sai grande e cada acorde vira uma etiqueta em cima da sílaba onde ele cai (a primeira da tela, cheia); só as linhas de acordes acompanham a troca de tom. Uma linha só com <strong>---</strong> começa outra tela.</p><p>Quem vinha de CIFRAS já encontra os acordes da parte no começo da folha; os quadros de cifras continuam guardados.</p>",
+        "en": "<p>Under <strong>MORE OPTIONS › This part shows</strong> (or on the song page, under ON STAGE, for the whole song) choose <strong>SHEET</strong>. Card 3 becomes a fixed-width text field: type or paste the part in lines, with the chord line above the lyric line, like a chord sheet. You can paste straight from a chord website: the invisible characters that come along are removed. On stage the lyrics are large and each chord becomes a tag above the syllable it falls on (the first one on the screen, filled); only the chord lines follow the key change. A line with only <strong>---</strong> starts another screen.</p><p>Coming from CHORDS, the part’s chords are already at the top of the sheet; the chord boxes stay saved.</p>",
+        "es": "<p>En <strong>MÁS OPCIONES › Esta parte muestra</strong> (o en la ficha, en EN EL ESCENARIO, para toda la canción) elige <strong>HOJA</strong>. La tarjeta 3 pasa a ser un campo de texto de ancho fijo: escribe o pega la parte en líneas, con la línea de acordes sobre la línea de la letra, como una hoja de acordes. Puedes pegar directo desde un sitio de acordes: los caracteres invisibles que vienen junto se quitan. En el escenario la letra sale grande y cada acorde se vuelve una etiqueta sobre la sílaba donde cae (la primera de la pantalla, llena); solo las líneas de acordes siguen el cambio de tono. Una línea solo con <strong>---</strong> empieza otra pantalla.</p><p>Si venías de ACORDES, los acordes de la parte ya están al principio de la hoja; los cuadros de acordes siguen guardados.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Linhas por tela",
+        "en": "Lines per screen",
+        "es": "Líneas por pantalla"
+       },
+       "type": {
+        "pt": "opção",
+        "en": "option",
+        "es": "opción"
+       },
+       "desc": {
+        "pt": "<p>Quantas linhas da folha aparecem de cada vez no palco: 2, 3, 4, 6, 8, 10, 12 ou 16. A letra enche a altura da área, então <strong>menos linhas = letra maior e mais telas</strong>. Um refrão de 12 linhas com 4 por tela vira 3 telas, iguais em qualquer aparelho. O editor mostra quantas telas a parte tem. <strong>AUTO</strong> usa o número das configurações do palco (SETLIST › Linhas por tela).</p><p>A linha de acordes nunca se separa da linha de letra logo abaixo, e a letra encolhe sozinha se uma linha for comprida demais para a largura.</p>",
+        "en": "<p>How many lines of the sheet show at a time on stage: 2, 3, 4, 6, 8, 10, 12 or 16. The text fills the height of the area, so <strong>fewer lines = bigger text and more screens</strong>. A 12-line chorus at 4 per screen becomes 3 screens, the same on every device. The editor shows how many screens the part has. <strong>AUTO</strong> uses the number from the stage settings (SETLIST › Lines per screen).</p><p>A chord line is never separated from the lyric line right below it, and the text shrinks by itself if a line is too long for the width.</p>",
+        "es": "<p>Cuántas líneas de la hoja aparecen cada vez en el escenario: 2, 3, 4, 6, 8, 10, 12 o 16. La letra llena la altura del área, así que <strong>menos líneas = letra más grande y más pantallas</strong>. Un estribillo de 12 líneas con 4 por pantalla son 3 pantallas, iguales en cualquier aparato. El editor muestra cuántas pantallas tiene la parte. <strong>AUTO</strong> usa el número de los ajustes del escenario (SETLIST › Líneas por pantalla).</p><p>La línea de acordes nunca se separa de la línea de letra de abajo, y la letra se reduce sola si una línea es demasiado larga.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Acordes por tela",
+        "en": "Chords per screen",
+        "es": "Acordes por pantalla"
+       },
+       "type": {
+        "pt": "opção",
+        "en": "option",
+        "es": "opción"
+       },
+       "desc": {
+        "pt": "<p>Numa parte em CIFRAS, em MAIS OPÇÕES: 4, 8, 12, 16 ou 24 quadros por tela (AUTO = até 24). Menos acordes = quadros maiores e mais telas para passar. Parte com mais acordes do que cabe numa tela não rola mais: vira telas.</p>",
+        "en": "<p>On a part set to CHORDS, under MORE OPTIONS: 4, 8, 12, 16 or 24 boxes per screen (AUTO = up to 24). Fewer chords = bigger boxes and more screens to turn. A part with more chords than fit on a screen no longer scrolls: it becomes screens.</p>",
+        "es": "<p>En una parte en ACORDES, en MÁS OPCIONES: 4, 8, 12, 16 o 24 cuadros por pantalla (AUTO = hasta 24). Menos acordes = cuadros más grandes y más pantallas. Una parte con más acordes de los que caben ya no se desplaza: se divide en pantallas.</p>"
+       }
+      },
+      {
+       "name": {
         "pt": "Notas pessoais",
         "en": "Personal notes",
         "es": "Notas personales"
@@ -6985,7 +6938,7 @@ const MN_CONTENT = {
      "hot": [
       {
        "n": 1,
-       "sel": ".bf-stage-rail [role=tab]:nth-child(6)",
+       "sel": ".bf-stage-rail [data-cat=\"sl\"]",
        "label": {
         "pt": "categoria SETLIST",
         "en": "SETLIST category",
@@ -7003,7 +6956,7 @@ const MN_CONTENT = {
       },
       {
        "n": 3,
-       "sel": "[data-k=\"slCurAnim\"]",
+       "sel": "[data-k=\"#slCur\"]",
        "label": {
         "pt": "parte que está tocando",
         "en": "part that is playing",
@@ -7023,19 +6976,70 @@ const MN_CONTENT = {
      "fields": [
       {
        "name": {
+        "pt": "Telas da parte (‹ 2/3 ›)",
+        "en": "Screens of the part (‹ 2/3 ›)",
+        "es": "Pantallas de la parte (‹ 2/3 ›)"
+       },
+       "type": {
+        "pt": "botão",
+        "en": "button",
+        "es": "botón"
+       },
+       "desc": {
+        "pt": "<p>Quando a parte não cabe numa tela (folha comprida, muitos acordes), aparece embaixo das anotações uma faixa com setas, pontinhos e o número da tela. Passe as telas pelas setas, pelas teclas <strong>Page Down / Page Up</strong> ou <strong>→ / ←</strong> (um pedal Bluetooth de virar página manda essas teclas) ou pelo pé: ponha <strong>SETLIST NEXT PAGE</strong> e <strong>SETLIST PREV PAGE</strong> num footswitch (comandos especiais, no fim da lista de CC). Numa parte em NOTAS PESSOAIS o mesmo comando rola o texto.</p><p>Trocar de parte volta para a primeira tela.</p>",
+        "en": "<p>When the part does not fit on one screen (a long sheet, many chords), a strip with arrows, dots and the screen number appears below the notes. Turn the screens with the arrows, with the <strong>Page Down / Page Up</strong> or <strong>→ / ←</strong> keys (a Bluetooth page-turner pedal sends these keys) or with your foot: put <strong>SETLIST NEXT PAGE</strong> and <strong>SETLIST PREV PAGE</strong> on a footswitch (special commands, at the end of the CC list). On a part set to PERSONAL NOTES the same command scrolls the text.</p><p>Changing parts goes back to the first screen.</p>",
+        "es": "<p>Cuando la parte no cabe en una pantalla (hoja larga, muchos acordes), aparece debajo de las notas una franja con flechas, puntos y el número de pantalla. Pasa las pantallas con las flechas, con las teclas <strong>Page Down / Page Up</strong> o <strong>→ / ←</strong> (un pedal Bluetooth de pasar página envía esas teclas) o con el pie: pon <strong>SETLIST NEXT PAGE</strong> y <strong>SETLIST PREV PAGE</strong> en un footswitch (comandos especiales, al final de la lista de CC). En una parte en NOTAS PERSONALES el mismo comando desplaza el texto.</p><p>Cambiar de parte vuelve a la primera pantalla.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "TOM (tom no palco)",
+        "en": "KEY (key on stage)",
+        "es": "TONO (tono en el escenario)"
+       },
+       "type": {
+        "pt": "botão",
+        "en": "button",
+        "es": "botón"
+       },
+       "desc": {
+        "pt": "<p>No cabeçalho, a cápsula <strong>− TOM +</strong>: cada toque em − ou + sobe ou desce meio tom o que a tela mostra (os quadros de cifras, as linhas de acordes da folha e o tom do cabeçalho, que passa a dizer por exemplo “Tom G (+2)”). <strong>A música gravada não muda</strong>: é para a noite em que a banda toca em outro tom. Tocar no TOM abre a janela com VOLTAR AO ORIGINAL, que desfaz. O mesmo ajuste está na ficha, em DETALHES › Tom no palco; ali também ficam −½ e +½, que reescrevem a música de vez.</p>",
+        "en": "<p>In the header, the <strong>− KEY +</strong> capsule: each tap on − or + moves what the screen shows a half step up or down (the chord boxes, the chord lines of the sheet and the key in the header, which then reads for example “Key G (+2)”). <strong>The saved song does not change</strong>: it is for the night the band plays in another key. Tapping KEY opens the window with BACK TO ORIGINAL, which undoes it. The same setting is on the song page, under DETAILS › Key on stage; −½ and +½, which rewrite the song for good, are there too.</p>",
+        "es": "<p>En el encabezado, la cápsula <strong>− TONO +</strong>: cada toque en − o + sube o baja medio tono lo que muestra la pantalla (los cuadros de acordes, las líneas de acordes de la hoja y el tono del encabezado, que pasa a decir por ejemplo “Tono G (+2)”). <strong>La canción guardada no cambia</strong>: es para la noche en que la banda toca en otro tono. Tocar en TONO abre la ventana con VOLVER AL ORIGINAL, que lo deshace. El mismo ajuste está en la ficha, en DETALLES › Tono en el escenario; allí también están −½ y +½, que reescriben la canción.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Linhas por tela (folha) e o fim das telas",
+        "en": "Lines per screen (sheet) and the end of the screens",
+        "es": "Líneas por pantalla (hoja) y el final de las pantallas"
+       },
+       "type": {
+        "pt": "opção",
+        "en": "option",
+        "es": "opción"
+       },
+       "desc": {
+        "pt": "<p>Nas configurações do palco, categoria SETLIST. <strong>Linhas por tela (folha)</strong>: 4 a 16, vale para as partes em AUTO. <strong>Na última tela, PRÓXIMA TELA…</strong>: PARA (padrão), VAI PRA PRÓXIMA PARTE (um pé só percorre a música inteira: passa as telas e, na última, chama a parte seguinte) ou VOLTA À 1ª TELA.</p>",
+        "en": "<p>In the stage settings, SETLIST category. <strong>Lines per screen (sheet)</strong>: 4 to 16, used by the parts set to AUTO. <strong>On the last screen, NEXT PAGE…</strong>: STOPS (default), GOES TO THE NEXT PART (a single foot walks the whole song: it turns the screens and, on the last one, calls the next part) or BACK TO SCREEN 1.</p>",
+        "es": "<p>En los ajustes del escenario, categoría SETLIST. <strong>Líneas por pantalla (hoja)</strong>: 4 a 16, vale para las partes en AUTO. <strong>En la última pantalla, SIGUIENTE PANTALLA…</strong>: PARA (por defecto), VA A LA PARTE SIGUIENTE (un solo pie recorre toda la canción: pasa las pantallas y, en la última, llama a la parte siguiente) o VUELVE A LA 1ª.</p>"
+       }
+      },
+      {
+       "name": {
         "pt": "Layout da tela",
         "en": "Screen layout",
         "es": "Diseño de la pantalla"
        },
        "type": {
-        "pt": "4 opções",
-        "en": "4 options",
-        "es": "4 opciones"
+        "pt": "5 opções",
+        "en": "5 options",
+        "es": "5 opciones"
        },
        "desc": {
-        "pt": "<p><strong>COMPLETO</strong> (música, faixa de partes, anotações e rodapé), <strong>PARTES AO LADO</strong> (as partes numa coluna, as anotações à direita — precisa de tela larga), <strong>ANOTAÇÕES GRANDES</strong> (a música numa linha só e as anotações com a maior parte da tela) e <strong>SÓ AS PARTES</strong> (os cartões das partes ocupam a tela, sem anotações).</p>",
-        "en": "<p><strong>FULL</strong> (song, parts strip, notes and footer), <strong>PARTS ON THE SIDE</strong> (the parts in a column, the notes on the right — needs a wide screen), <strong>BIG NOTES</strong> (the song on a single line and the notes taking most of the screen) and <strong>PARTS ONLY</strong> (the part cards fill the screen, no notes).</p>",
-        "es": "<p><strong>COMPLETO</strong> (canción, franja de partes, notas y pie), <strong>PARTES AL LADO</strong> (las partes en una columna, las notas a la derecha — necesita pantalla ancha), <strong>NOTAS GRANDES</strong> (la canción en una sola línea y las notas ocupando la mayor parte de la pantalla) y <strong>SOLO LAS PARTES</strong> (las tarjetas de las partes ocupan la pantalla, sin notas).</p>"
+        "pt": "<p><strong>COMPLETO</strong> (música, faixa de partes, anotações e rodapé), <strong>PARTES AO LADO</strong> (as partes numa coluna, as anotações à direita — precisa de tela larga), <strong>ANOTAÇÕES GRANDES</strong> (a música numa linha só e as anotações com a maior parte da tela) , <strong>SÓ AS PARTES</strong> (os cartões das partes ocupam a tela, sem anotações) e <strong>LETRA E CIFRA</strong> (a música numa linha, a folha com a maior parte da tela e as partes numa barra baixa embaixo — feito para a FOLHA).</p>",
+        "en": "<p><strong>FULL</strong> (song, parts strip, notes and footer), <strong>PARTS ON THE SIDE</strong> (the parts in a column, the notes on the right — needs a wide screen), <strong>BIG NOTES</strong> (the song on a single line and the notes taking most of the screen) <strong>PARTS ONLY</strong> (the part cards fill the screen, no notes) and <strong>LYRICS + CHORDS</strong> (the song on one line, the sheet taking most of the screen and the parts in a low bar below — made for the SHEET).</p>",
+        "es": "<p><strong>COMPLETO</strong> (canción, franja de partes, notas y pie), <strong>PARTES AL LADO</strong> (las partes en una columna, las notas a la derecha — necesita pantalla ancha), <strong>NOTAS GRANDES</strong> (la canción en una sola línea y las notas ocupando la mayor parte de la pantalla) , <strong>SOLO LAS PARTES</strong> (las tarjetas de las partes ocupan la pantalla, sin notas) y <strong>LETRA Y CIFRA</strong> (la canción en una línea, la hoja ocupando la mayor parte de la pantalla y las partes en una barra baja abajo — hecho para la HOJA).</p>"
        }
       },
       {
@@ -7050,16 +7054,16 @@ const MN_CONTENT = {
         "es": "animación, velocidad y marcas"
        },
        "desc": {
-        "pt": "<p>O cartão da parte que está tocando se mexe pra ficar evidente de longe. <strong>Animação</strong>: <strong>BRILHO</strong> (o halo acende e apaga; é o padrão), <strong>CONTORNO</strong> (um traço de luz corre em volta), <strong>VARREDURA</strong> (uma faixa de luz atravessa o cartão), <strong>RESPIRAR</strong> (o cartão cresce e volta) ou <strong>SEM</strong>. <strong>VU</strong> põe poucas barras lisas e discretas na cor da parte <strong>NO CANTO</strong> do cartão ou <strong>NO BLOCO TODO</strong>, atrás das escritas, junto com qualquer animação. <strong>Velocidade</strong>: LENTA, NORMAL ou RÁPIDA (vale também pro VU). <strong>Marca AGORA</strong> põe a etiqueta na parte atual, e <strong>Apagar as outras partes</strong> escurece as que não estão tocando. A miniatura de cada opção mostra o efeito. Com \"reduzir movimento\" ligado no aparelho, a parte só fica acesa.</p>",
-        "en": "<p>The card of the part that is playing moves so it is obvious from a distance. <strong>Animation</strong>: <strong>GLOW</strong> (the halo lights up and fades; the default), <strong>OUTLINE</strong> (a streak of light runs around it), <strong>SWEEP</strong> (a band of light crosses the card), <strong>BREATHE</strong> (the card grows and shrinks) or <strong>NONE</strong>. <strong>VU meter</strong> adds a few plain, subtle bars in the part's color <strong>IN THE CORNER</strong> of the card or across the <strong>WHOLE CARD</strong>, behind the text, together with any animation. <strong>Speed</strong>: SLOW, NORMAL or FAST (also for the VU). <strong>NOW tag</strong> puts the label on the current part, and <strong>Dim the other parts</strong> darkens the ones not playing. The thumbnail of each option shows the effect. With \"reduce motion\" on in the device, the part just stays lit.</p>",
-        "es": "<p>La tarjeta de la parte que está sonando se mueve para quedar evidente de lejos. <strong>Animación</strong>: <strong>BRILLO</strong> (el halo se enciende y se apaga; es el estándar), <strong>CONTORNO</strong> (un trazo de luz corre alrededor), <strong>BARRIDO</strong> (una franja de luz cruza la tarjeta), <strong>RESPIRAR</strong> (la tarjeta crece y vuelve) o <strong>SIN</strong>. <strong>VU</strong> pone pocas barras lisas y discretas en el color de la parte <strong>EN LA ESQUINA</strong> de la tarjeta o <strong>EN TODO EL BLOQUE</strong>, detrás del texto, junto con cualquier animación. <strong>Velocidad</strong>: LENTA, NORMAL o RÁPIDA (también para el VU). <strong>Marca AHORA</strong> pone la etiqueta en la parte actual, y <strong>Apagar las otras partes</strong> oscurece las que no están sonando. La miniatura de cada opción muestra el efecto. Con \"reducir movimiento\" activado en el aparato, la parte solo queda encendida.</p>"
+        "pt": "<p>Quatro jeitos prontos de deixar a parte atual evidente de longe: <strong>SEM</strong>, <strong>DISCRETO</strong> (brilho lento), <strong>DESTACADO</strong> (o padrão: o halo acende e apaga, com a marca AGORA) e <strong>SHOW</strong> (um traço de luz corre em volta, poucas barras de VU no canto e as outras partes apagadas). <strong>PERSONALIZAR</strong> abre cada peça: o efeito (BRILHO, CONTORNO, VARREDURA ou SEM), a velocidade, o VU (no canto ou no bloco todo), a marca AGORA e apagar as outras partes. Com “reduzir movimento” ligado no aparelho, a parte só fica acesa.</p>",
+        "en": "<p>Four ready-made ways to make the current part easy to see from afar: <strong>NONE</strong>, <strong>SUBTLE</strong> (slow glow), <strong>HIGHLIGHTED</strong> (the default: the halo fades in and out, with the NOW tag) and <strong>SHOW</strong> (a line of light runs around it, a few VU bars in the corner and the other parts dimmed). <strong>CUSTOMIZE</strong> opens each piece: the effect (GLOW, OUTLINE, SWEEP or NONE), the speed, the VU (in the corner or across the whole block), the NOW tag and dimming the other parts. With “reduce motion” on in the device, the part just stays lit.</p>",
+        "es": "<p>Cuatro formas listas de dejar la parte actual evidente de lejos: <strong>SIN</strong>, <strong>DISCRETO</strong> (brillo lento), <strong>DESTACADO</strong> (el predeterminado: el halo se enciende y se apaga, con la marca AHORA) y <strong>SHOW</strong> (un trazo de luz corre alrededor, pocas barras de VU en la esquina y las otras partes apagadas). <strong>PERSONALIZAR</strong> abre cada pieza: el efecto (BRILLO, CONTORNO, BARRIDO o SIN), la velocidad, el VU (en la esquina o en todo el bloque), la marca AHORA y apagar las otras partes. Con “reducir movimiento” activado en el aparato, la parte solo queda encendida.</p>"
        }
       },
       {
        "name": {
-        "pt": "Tamanhos e o que aparece",
-        "en": "Sizes and what shows",
-        "es": "Tamaños y lo que aparece"
+        "pt": "Tamanho da letra e o que aparece",
+        "en": "Text size and what shows",
+        "es": "Tamaño de la letra y lo que aparece"
        },
        "type": {
         "pt": "opções",
@@ -7067,9 +7071,9 @@ const MN_CONTENT = {
         "es": "opciones"
        },
        "desc": {
-        "pt": "<p>Tamanho das anotações e das partes; artista, tom e BPM; o preset de cada parte; o rodapé com as músicas vizinhas (desligado, a lista do setlist vai para o cabeçalho); e, em MAIS OPÇÕES, o número da música e a marca A SEGUIR.</p>",
-        "en": "<p>Size of the notes and of the parts; artist, key and BPM; each part’s preset; the footer with the nearby songs (turned off, the setlist list moves to the header); and, under MORE OPTIONS, the song number and the UP NEXT tag.</p>",
-        "es": "<p>Tamaño de las notas y de las partes; artista, tono y BPM; el preset de cada parte; el pie con las canciones vecinas (apagado, la lista del setlist pasa a la cabecera); y, en MÁS OPCIONES, el número de la canción y la marca A CONTINUACIÓN.</p>"
+        "pt": "<p><strong>Tamanho da letra</strong>: um só para as anotações, a letra e os acordes da folha e a faixa da letra. <strong>Mostrar na tela</strong> (chips numerados): artista, tom e BPM; o preset de cada parte; a marca A SEGUIR; o número da música e o nome do setlist; e o rodapé com as músicas vizinhas (desligado, a lista do setlist vai para o cabeçalho). O fundo da faixa da letra é claro, da cor da parte, escuro ou sem fundo — a cor do texto acompanha sozinha. Em MAIS OPÇÕES, o tamanho dos cartões das partes.</p>",
+        "en": "<p><strong>Text size</strong>: one for the notes, the lyrics and chords of the sheet and the lyric strip. <strong>Show on screen</strong> (numbered chips): artist, key and BPM; the preset of each part; the UP NEXT tag; the song number and the setlist name; and the footer with the neighbouring songs (when off, the setlist list goes to the header). The lyric strip background is light, the part color, dark or none — the text color follows by itself. Under MORE OPTIONS, the size of the part cards.</p>",
+        "es": "<p><strong>Tamaño de la letra</strong>: uno solo para las notas, la letra y los acordes de la hoja y la franja de la letra. <strong>Mostrar en pantalla</strong> (chips numerados): artista, tono y BPM; el preset de cada parte; la marca A CONTINUACIÓN; el número de la canción y el nombre del setlist; y el pie con las canciones vecinas (desactivado, la lista del setlist va al encabezado). El fondo de la franja de la letra es claro, del color de la parte, oscuro o sin fondo — el color del texto acompaña solo. En MÁS OPCIONES, el tamaño de las tarjetas de las partes.</p>"
        }
       }
      ],
@@ -10478,6 +10482,23 @@ const MN_CONTENT = {
         "pt": "<p>No fim da lista, sob <strong>── SETLIST ──</strong>: andam pelas partes e músicas do setlist aberto no Modo Palco do app. Sem setlist aberto, não fazem nada. Não precisam de canal. Veja <strong>Controlar o setlist com o pé</strong> no capítulo Modo Palco.</p>",
         "en": "<p>At the end of the list, under <strong>── SETLIST ──</strong>: move through the parts and songs of the setlist open in the app’s Stage Mode. With no setlist open, they do nothing. They don’t need a channel. See <strong>Controlling the setlist with your foot</strong> in the Stage Mode chapter.</p>",
         "es": "<p>Al final de la lista, bajo <strong>── SETLIST ──</strong>: avanzan por las partes y canciones del setlist abierto en el Modo Escenario de la app. Sin setlist abierto, no hacen nada. No necesitan canal. Mira <strong>Controlar el setlist con el pie</strong> en el capítulo Modo Escenario.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "» SETLIST NEXT PAGE / PREV PAGE",
+        "en": "» SETLIST NEXT PAGE / PREV PAGE",
+        "es": "» SETLIST NEXT PAGE / PREV PAGE"
+       },
+       "type": {
+        "pt": "comando",
+        "en": "command",
+        "es": "comando"
+       },
+       "desc": {
+        "pt": "<p>Passam as <strong>telas</strong> da parte que está na tela do setlist do app (a folha de cifra do refrão em 3 telas, por exemplo). A controladora só avisa o app; sem o Modo Palco aberto no setlist, não fazem nada. Não precisam de canal. O que acontece na última tela é escolhido nas configurações do palco (SETLIST › Na última tela).</p>",
+        "en": "<p>Turn the <strong>screens</strong> of the part shown on the app’s setlist screen (the chorus chord sheet in 3 screens, for example). The controller only tells the app; without Stage Mode open on the setlist, they do nothing. They don’t need a channel. What happens on the last screen is chosen in the stage settings (SETLIST › On the last screen).</p>",
+        "es": "<p>Pasan las <strong>pantallas</strong> de la parte que está en la pantalla del setlist de la app (la hoja de acordes del estribillo en 3 pantallas, por ejemplo). La controladora solo avisa a la app; sin el Modo Escenario abierto en el setlist, no hacen nada. No necesitan canal. Lo que pasa en la última pantalla se elige en los ajustes del escenario (SETLIST › En la última pantalla).</p>"
        }
       },
       {

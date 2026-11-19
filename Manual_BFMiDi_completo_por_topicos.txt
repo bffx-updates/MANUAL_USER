@@ -52,12 +52,12 @@ SUMÁRIO
    7.5. PALCO ESPECIAL com a Nano Cortex
    7.6. PALCO ESPECIAL com o Kemper
    7.7. Favoritos do PALCO ESPECIAL
-   7.8. Configurações do palco — GERAL
-   7.9. Configurações do palco — VISUAL
-   7.10. Configurações do palco — PALCO BFMIDI
+   7.8. Configurações do palco — APARÊNCIA
+   7.9. Configurações do palco — BFMIDI
+   7.10. Configurações do palco — ESPECIAL
    7.11. As imagens do palco
-   7.12. Perfis e visuais prontos
-   7.13. Configurações do palco — PALCO ESPECIAL
+   7.12. Configurações do palco — AJUSTES
+   7.13. Perfis e visuais prontos
    7.14. No celular e no tablet
    7.15. SETLIST: a música, as partes e as cifras
    7.16. Criar uma música (passo a passo)
@@ -1212,12 +1212,13 @@ Campos e itens:
 - Presets do banco (fileira)
   Descrição: Os seis presets do banco atual, com número e nome. Tocar chama o preset na
              controladora, exatamente como pisar no footswitch dele.
-- A alcinha do topo (barra escondida)
+- A alcinha do topo e os botões do canto (barra escondida)
   Descrição: A barra de controles fica escondida para não roubar espaço. Toque na alcinha do topo —
              ou em qualquer área vazia da tela — para mostrá-la. Ela some sozinha depois de alguns
-             segundos. Para ir direto às configurações do palco, toque na engrenagem do canto
-             direito (no PALCO BFMIDI e no PALCO ESPECIAL; ela some com a barra aberta e com a trava
-             de toque fechada).
+             segundos. No canto direito ficam três botões redondos, sem precisar abrir a barra:
+             PALCO ↔ SETLIST (troca entre o palco e a tela do setlist), a engrenagem (as
+             configurações do palco) e VOLTAR AO APLICATIVO (fecha o palco). Eles aparecem nos dois
+             palcos e no setlist, e somem com a barra aberta e com a trava de toque fechada.
 Observações:
 - Ligar e desligar footswitches pelo palco exige a controladora atualizada. Com firmware antigo o
    ícone avisa “Atualize a controladora para usar”.
@@ -1243,9 +1244,9 @@ Campos e itens:
   Descrição: Com o painel aberto, tocar num ícone ainda liga e desliga o efeito — dá para ouvir a
              mudança na hora. O footswitch que está sendo editado ganha um contorno.
 - Segurar o ícone (opção) (configuração)
-  Descrição: Em CONFIGURAÇÕES do palco › PALCO BFMIDI, Segurar o ícone vem em EDITAR O FOOTSWITCH.
-             Com Acionar footswitch pela tela em SEGURAR, o segurar já é do footswitch e esta opção
-             fica apagada.
+  Descrição: Em CONFIGURAÇÕES do palco › AJUSTES › Acionar com, Segurar o ícone vem em EDITAR O
+             FOOTSWITCH. Com os footswitches acionados por SEGURAR, o segurar já é do footswitch e
+             esta opção fica apagada.
 Observações:
 - No PALCO ESPECIAL do Kemper os blocos são os do rig, não os footswitches: lá, segurar um bloco
    liga ou desliga o efeito.
@@ -1264,8 +1265,9 @@ Campos e itens:
 - PRESET A1 (informação)
   Descrição: O banco e o preset que estão tocando na controladora.
 - CONFIGURAÇÕES (botão)
-  Descrição: Abre as configurações do palco, num painel lateral com seis categorias. A engrenagem do
-             canto direito do palco faz o mesmo sem abrir a barra. Veja os cards seguintes.
+  Descrição: Abre as configurações do palco, num painel lateral com sete abas. A engrenagem do canto
+             direito do palco faz o mesmo sem abrir a barra, ao lado dos botões PALCO ↔ SETLIST e
+             VOLTAR AO APLICATIVO. Veja os cards seguintes.
 - Conexão, BPM e relógio (status)
   Descrição: Como você está conectado (STA, AP ou USB), o BPM do último TAP TEMPO batido na BFMiDi
              e, se você ligar, o relógio. Sem pedal, a conexão vira o botão OFFLINE.
@@ -1389,115 +1391,118 @@ Campos e itens:
              modelo novo não tiver aquele controle, o lugar dele mostra Não existe neste modelo e
              volta sozinho quando o controle existir de novo.
 
-7.8. Configurações do palco — GERAL
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Tela/preview relacionado: CONFIGURAÇÕES DO PALCO — GERAL
-Objetivo: O que aparece nos dois palcos e como a tela se comporta. As configurações abrem num painel
-          ao lado do palco: a prévia mostra cada mudança na hora, cada opção tem uma miniatura do
-          que ela mexe e tocar numa área da prévia abre as opções dela. DESFAZER volta a última
-          mudança e MAIS OPÇÕES mostra as menos usadas.
+7.8. Configurações do palco — APARÊNCIA
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Tela/preview relacionado: CONFIGURAÇÕES DO PALCO — APARÊNCIA
+Objetivo: As configurações abrem num painel ao lado do palco, em sete abas: APARÊNCIA, BFMIDI,
+          ESPECIAL, SETLIST, IMAGENS, AJUSTES e PERFIS. Cada opção é um cartão com o desenho do
+          palco: a peça que ela muda fica acesa, com um contorno, e o resto fica apagado. A prévia
+          ao lado mostra a mudança na hora, e tocar numa área da prévia abre as opções dela.
+          DESFAZER volta a última mudança, o ⓘ mostra mais detalhes e MAIS OPÇÕES guarda as menos
+          usadas. A APARÊNCIA é a cara do palco.
 Campos e itens:
-- Barra de presets da BFMIDI (barra)
-  Descrição: A fileira para trocar de preset, nos dois palcos. Os botões mostram NÚMERO + NOME, SÓ
-             NÚMERO ou SÓ NOME. Em MAIS OPÇÕES: a posição (EMBAIXO, EM CIMA ou NA LATERAL), a altura
-             (P, M, G), a cor (o LED de cada preset ou a cor de destaque) e como o preset é chamado
-             pela tela — UM TOQUE ou SEGURAR, para não trocar sem querer.
-- Conexão, BPM e relógio (interruptores)
-  Descrição: O que a barra de cima mostra. O relógio vem desligado.
-- Manter a tela acesa (interruptor)
-  Descrição: Pede ao celular ou ao tablet para não apagar a tela enquanto o palco estiver aberto
-             (nos aparelhos e navegadores que permitem). Ligado por padrão.
-- Vibrar ao tocar (interruptor)
-  Descrição: Uma vibração curta confirma o toque, nos aparelhos que vibram.
-- Desempenho (escolha)
-  Descrição: AUTOMÁTICO (padrão) escolhe pelo aparelho; LEVE tira desfoque, brilhos e animações,
-             para celular mais fraco ou para poupar bateria; COMPLETO mantém tudo.
-- Trava de toque (segurança)
-  Descrição: Em SEGURAR PARA DESTRAVAR o palco abre travado: toques em footswitch, preset, bloco e
-             knob não fazem nada. Segure o cadeado no canto para destravar; 8 segundos depois do
-             último toque ele trava de novo (uma linha embaixo mostra o tempo).
-- Barra de cima e animação (tempo)
-  Descrição: Quanto tempo a barra de cima fica à mostra: 2, 4 ou 8 segundos, ou FIXA (sempre
-             visível, com o palco começando embaixo dela). E a animação do nome ao trocar de preset:
-             NENHUMA, SUAVE ou LETREIRO.
+- Visuais prontos (cartões)
+  Descrição: PADRÃO, ALTO CONTRASTE, OLED PRETO, ÂMBAR, NEON, AÇO, COR DO PRESET e LIMPO. Um toque
+             troca fundo, destaque, fonte, cantos e painéis de uma vez; layouts e imagens não mudam,
+             e o DESFAZER volta.
+- Quem manda no visual do PALCO ESPECIAL? (cartões)
+  Descrição: O PEDAL: cada aparelho com as cores e o estilo dele. EU: o fundo, o destaque e a letra
+             escolhidos nesta aba. Ou um painel que imita aparelho de verdade, feito só com desenho:
+             ALUMÍNIO (pedal boutique), VINTAGE (amplificador com painel dourado) ou RACK (alumínio
+             preto, display âmbar). Em PERSONALIZAR fica “o pedal com o meu fundo e destaque”.
+- Fundo e escurecer a imagem (cores)
+  Descrição: Oito fundos prontos, LIVRE (duas cores à sua escolha) e IMAGEM (a imagem do palco na
+             tela inteira, escolhida na aba IMAGENS). Com imagem, Escurecer a imagem: NÃO, UM POUCO,
+             MÉDIO ou BASTANTE — a mesma escala da imagem do cabeçalho do PALCO BFMIDI (em MAIS
+             OPÇÕES).
+- Cor de destaque e cores do LED (cores)
+  Descrição: Nove cores e a livre (matiz, saturação e brilho). Cores seguem o LED do preset: NÃO, SÓ
+             O DESTAQUE ou FUNDO E DESTAQUE — a tela muda de cor junto com o anel a cada troca de
+             preset.
+- Letra, tamanho e nome do preset (texto)
+  Descrição: Fontes do próprio sistema (Padrão, Arredondada, Estreita, Mono, Serifada) e duas que
+             vêm dentro dos aplicativos: BIG SHOULDERS (condensada) e LED (DSEG14), que imita um
+             display de segmentos e vale só para os nomes e números grandes. Nada é baixado: o palco
+             abre sem internet; VER AS LICENÇAS DAS FONTES mostra a licença de cada uma. Tamanho dos
+             textos: P, M, G, GG. Nome do preset: tamanho, alinhamento e a animação ao trocar de
+             preset (NENHUMA, SUAVE ou LETREIRO).
+- Alto contraste e mais opções (estilo)
+  Descrição: Alto contraste deixa tudo em preto e branco fortes, para palco aberto e sol. Em MAIS
+             OPÇÕES: painéis (SÓLIDOS, de VIDRO ou SEM PAINEL), cantos, brilho dos itens ativos e a
+             cor dos blocos do PALCO ESPECIAL (a do aparelho ou a de destaque).
 Observações:
-- Tudo nas configurações do palco fica salvo só neste aplicativo, neste aparelho. RESTAURAR PADRÃO
-   volta os ajustes de fábrica sem apagar as imagens escolhidas.
+- Peso da letra, maiúsculas, contorno, espaçamento e linhas do nome saíram da tela: os visuais
+   prontos ainda os usam, e quem tinha mudado algum deles o encontra em MAIS OPÇÕES, com o aviso de
+   que está fora do padrão.
 
-7.9. Configurações do palco — VISUAL
+7.9. Configurações do palco — BFMIDI
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Tela/preview relacionado: CONFIGURAÇÕES DO PALCO — VISUAL
-Objetivo: A cara do palco: fundo, cor de destaque, fonte, tamanho dos textos, cantos e painéis.
-Campos e itens:
-- Fundo e cor de destaque (cores)
-  Descrição: Oito fundos prontos e o PERSONALIZADO, com duas cores à sua escolha (em cima e
-             embaixo). Nove cores de destaque e a cor livre, ajustada por matiz, saturação e brilho.
-             Os dois também podem acompanhar a cor do LED do preset — a tela muda de cor a cada
-             troca de preset. O fundo também pode ser a IMAGEM do palco na tela inteira (a que foi
-             escolhida na categoria IMAGENS), escurecida um pouco, médio ou bastante para o texto
-             continuar legível.
-- Fonte e nome do preset (texto)
-  Descrição: Fonte Padrão, Arredondada, Estreita, Mono ou Serifada — todas do próprio sistema — e
-             duas que vêm dentro dos aplicativos: BIG SHOULDERS (condensada, de palco) e LED
-             (DSEG14), que imita um display de segmentos e vale só para os nomes e números grandes.
-             Nada é baixado: o palco abre sem internet. O botão VER AS LICENÇAS DAS FONTES mostra a
-             licença de cada uma. Peso dos títulos, tamanho dos textos (P, M, G, GG) e nomes em
-             maiúsculas. O nome do preset tem ajustes só dele: tamanho, alinhamento (esquerda,
-             centro, direita) e número de linhas (1 a 3).
-- Painéis, brilho e contraste (estilo)
-  Descrição: Painéis SÓLIDOS, de VIDRO ou SEM PAINEL (só o conteúdo sobre o fundo); brilho dos itens
-             ativos SEM, SUAVE ou FORTE; cantos retos, suaves ou redondos; contorno; e espaçamento
-             justo, normal ou amplo. Alto contraste deixa tudo em preto e branco fortes, para palco
-             aberto e sol.
-
-7.10. Configurações do palco — PALCO BFMIDI
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Tela/preview relacionado: CONFIGURAÇÕES DO PALCO — PALCO BFMIDI
+Tela/preview relacionado: CONFIGURAÇÕES DO PALCO — BFMIDI
 Objetivo: Como o PALCO BFMIDI arruma o nome, a imagem e os footswitches.
 Campos e itens:
 - Layout da tela (layout)
-  Descrição: Oito jeitos de arrumar o palco: CLÁSSICO (nome e imagem em cima, footswitches e presets
+  Descrição: Seis jeitos de arrumar o palco: CLÁSSICO (nome e imagem em cima, footswitches e presets
              embaixo), LETREIRO (o nome ocupa a tela; os footswitches viram uma faixa de LEDs),
-             PEDALEIRA (footswitches grandes em duas fileiras, na ordem do pedal), COLUNA (os
-             presets do banco em lista na lateral, com o nome inteiro), SEQUÊNCIA (o preset anterior
-             e o próximo ao lado do atual; tocar chama), TEMPO (o BPM em letra grande e o relógio),
-             MÍNIMO (só o preset) e PÔSTER (a imagem do palco na tela inteira, com o nome por cima e
-             sem painéis). Cada cartão mostra um desenho do layout. As opções que não valem no
-             layout escolhido ficam apagadas, com o motivo.
-- Imagem e Layout do topo (imagem)
-  Descrição: Com a imagem ligada, escolha LADO A LADO (nome de um lado, imagem do outro — com o lado
-             da imagem e o espaço do nome de 25 a 75%, num controle deslizante) ou NOME SOBRE A
-             IMAGEM. Em MAIS OPÇÕES: a borda da imagem (esmaecida ou reta) e escurecer a imagem
-             (não, um pouco, bastante), para o nome ler melhor.
-- Imagem sempre do PRESET (interruptor)
-  Descrição: Ligada (padrão), a imagem do palco é o fundo da tela PRESET mesmo com o pedal em LIVE.
-             Desligada, em LIVE aparece o fundo da tela LIVE. Só vale quando a imagem vem do display
-             da controladora.
+             PEDALEIRA (footswitches grandes em duas fileiras, na ordem do pedal), SEQUÊNCIA (o
+             preset anterior e o próximo ao lado do atual; tocar chama), TEMPO (o BPM em letra
+             grande e o relógio) e MÍNIMO (só o preset). Os presets em lista na lateral são o
+             CLÁSSICO com a barra de presets NA LATERAL (aba AJUSTES), e a imagem na tela inteira é
+             o fundo IMAGEM da APARÊNCIA.
+- Imagem do cabeçalho (imagem)
+  Descrição: À DIREITA, À ESQUERDA, ATRÁS DO NOME ou SEM IMAGEM. Com a imagem ao lado, Espaço do
+             nome divide o cabeçalho de 25 a 75%. Escurecer a imagem do cabeçalho fica na APARÊNCIA,
+             em MAIS OPÇÕES.
+- O que os footswitches mostram (escolha)
+  Descrição: ÍCONES DO LIVE, como o display, ou FUNDOS DOS PRESETS: cada footswitch mostra o fundo
+             do preset de mesmo número, e tocar nele chama aquele preset.
 - Footswitches (arranjo e forma)
-  Descrição: Arranjo: UMA LINHA (em ordem, 1 a 6), COMO NO PEDAL (duas fileiras, imitando a
-             controladora) ou EM COLUNA (ao lado do nome). Tamanho em cinco passos (PP a GG). Forma:
-             COMO NO DISPLAY, CÍRCULO ou SÓ LED (um anel na cor do LED com o nome). Em MAIS OPÇÕES,
-             a legenda embaixo de cada ícone: o MODO do footswitch ou o COMANDO que ele manda.
-- O que mostrar (interruptores)
-  Descrição: MODO PRESET / LIVE, o modo amigável, a etiqueta do preset (A1: pequena, grande ou
-             oculta), o número dos footswitches e a barra do LED.
-- Footswitches desligados (escolha)
-  Descrição: NORMAIS, ESCURECIDOS (o que está ligado salta aos olhos) ou OCULTOS — some o ícone e
-             fica só o número, para a tela mostrar apenas o que está ligado.
-- Acionar footswitch pela tela (escolha)
-  Descrição: UM TOQUE (padrão), SEGURAR — o footswitch só aciona depois de meio segundo com o dedo
-             na tela, para não acionar sem querer — ou DESLIGADO: os ícones só mostram o estado,
-             útil quando o celular fica ao alcance de outras pessoas no palco.
-- Segurar o ícone (escolha)
-  Descrição: EDITAR O FOOTSWITCH (padrão): segurar um ícone abre as configurações MIDI dele ao lado
-             do palco — veja Editar um footswitch sem sair do palco.
+  Descrição: Arranjo: UMA LINHA (1 a 6), COMO NO PEDAL (duas fileiras) ou EM COLUNA (ao lado do
+             nome). Tamanho P, M, G. Forma: COMO NO DISPLAY, CÍRCULO ou SÓ LED. Desligados: NORMAIS,
+             ESCURECIDOS (o que está ligado salta aos olhos) ou OCULTOS.
+- Mostrar na tela (chips numerados)
+  Descrição: O número dos footswitches, a barra do LED, MODO PRESET / LIVE e o modo amigável. Cada
+             número do chip aponta a peça no desenho; desligada, a peça fica tracejada. Em MAIS
+             OPÇÕES: a legenda embaixo de cada ícone (o MODO ou o COMANDO) e a etiqueta A1 (pequena
+             ou oculta).
+Observações:
+- Acionar o footswitch com um toque ou segurando, e segurar o ícone para editar, estão na aba
+   AJUSTES, em Acionar com.
+
+7.10. Configurações do palco — ESPECIAL
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Tela/preview relacionado: CONFIGURAÇÕES DO PALCO — ESPECIAL
+Objetivo: Como o PALCO ESPECIAL mostra a cadeia e os knobs do aparelho.
+Campos e itens:
+- Layout da tela (layout)
+  Descrição: COMPLETO (preset, cadeia de efeitos e knobs), SÓ A CADEIA (blocos grandes; segurar liga
+             e desliga), SÓ O PRESET (o nome em letra gigante), CADEIA LATERAL (a cadeia em coluna e
+             os knobs ao lado — pede tela de tablet ou computador) e FAVORITOS (até oito controles
+             de qualquer bloco, fixos na tela). O Kemper segue a mesma escolha; nele, CADEIA LATERAL
+             e FAVORITOS viram COMPLETO.
+- Knobs (tamanho, estilo e arranjo)
+  Descrição: Tamanho P, M, G. Estilo: ARCO, PONTEIRO, CHICKEN HEAD, BARRA vertical ou NÚMERO grande.
+             Valor EMBAIXO ou DENTRO do knob. Os que não cabem: EM LINHA (páginas com setas) ou
+             TODOS À VISTA.
+- Mostrar na tela (chips numerados)
+  Descrição: O número do preset do aparelho, o botão SALVAR (quem não quer correr o risco de gravar
+             no palco pode tirá-lo) e as siglas dos blocos.
+- Mais opções (ajustes)
+  Descrição: Imagem atrás do preset (a imagem do palco atrás do nome do preset do aparelho); bloco
+             aberto ao entrar (o AMP, O ÚLTIMO que você abriu ou O PRIMEIRO LIGADO); sensibilidade
+             do arraste dos knobs (fino, normal, rápido); e ajustes por aparelho — o layout e os
+             knobs guardados para cada pedal (a dica de cada opção diz para qual aparelho ela vale).
+Observações:
+- O visual do PALCO ESPECIAL (as cores do aparelho, as suas ou um painel realista) está na
+   APARÊNCIA, em Quem manda no visual. O tempo de segurar para ligar e desligar um bloco está em
+   AJUSTES, em Acionar com.
 
 7.11. As imagens do palco
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 Tela/preview relacionado: IMAGEM DO PALCO E RECORTE
-Objetivo: Nos aplicativos e no site, o fundo do PALCO BFMIDI pode ser a imagem da controladora, uma
-          imagem da galeria do app ou uma foto sua. O recorte vale em qualquer caso. A mesma imagem
-          é a do fundo de tela cheia, do layout Pôster e da opção Imagem atrás do preset.
+Objetivo: Nos aplicativos e no site, a imagem do palco pode ser a da controladora, uma da galeria do
+          app ou uma foto sua. O recorte vale em qualquer caso. A mesma imagem é a do cabeçalho do
+          PALCO BFMIDI, a do fundo de tela cheia (APARÊNCIA › Fundo: IMAGEM) e a da opção Imagem
+          atrás do preset.
 Como fazer:
 1. Em CONFIGURAÇÕES, abra a categoria IMAGENS.
 2. Escolha se vale para TODOS OS PRESETS ou SÓ O A1 (o preset atual).
@@ -1517,12 +1522,49 @@ Campos e itens:
 - Recorte (ajuste)
   Descrição: Cada imagem guarda o seu enquadramento: arraste para escolher o ponto, use o zoom (100
              a 300%) e CENTRALIZAR para voltar ao meio.
+- Sempre a imagem da tela PRESET (interruptor)
+  Descrição: Ligada (padrão), a imagem do palco é o fundo da tela PRESET mesmo com o pedal em LIVE.
+             Desligada, em LIVE aparece o fundo da tela LIVE. Só vale quando a imagem vem do display
+             da controladora.
 
-7.12. Perfis e visuais prontos
+7.12. Configurações do palco — AJUSTES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Tela/preview relacionado: CONFIGURAÇÕES DO PALCO — AJUSTES
+Objetivo: Como a tela se comporta e como se toca nela, nos dois palcos.
+Campos e itens:
+- Barra de presets da BFMIDI (barra)
+  Descrição: A fileira para trocar de preset, nos dois palcos. Ligada, escolha o que os botões
+             mostram (NÚMERO + NOME, SÓ NÚMERO ou SÓ NOME), a posição (EMBAIXO, EM CIMA ou NA
+             LATERAL) e o tamanho (P, M, G).
+- Acionar com (segurança)
+  Descrição: UM TOQUE ou SEGURAR, para não trocar de preset nem acionar um footswitch sem querer —
+             vale para a barra de presets e para os footswitches da tela (PERSONALIZAR separa os
+             dois e tem DESLIGADO, em que os footswitches só mostram o estado). Tempo de segurar:
+             0,3 s, 0,45 s (padrão), 0,7 s ou 1 s — o mesmo para presets, footswitches e o
+             liga/desliga dos blocos do PALCO ESPECIAL. Segurar o ícone: EDITAR O FOOTSWITCH abre as
+             configurações MIDI dele ao lado do palco.
+- Trava de toque (segurança)
+  Descrição: Em SEGURAR PARA DESTRAVAR o palco abre travado: toques em footswitch, preset, bloco e
+             knob não fazem nada. Segure o cadeado no canto para destravar; 8 segundos depois do
+             último toque ele trava de novo (uma linha embaixo mostra o tempo).
+- Barra de cima (chips e tempo)
+  Descrição: O que a barra de cima mostra: conexão, BPM e relógio (o relógio vem desligado). E
+             quanto tempo ela fica à mostra: 2, 4 ou 8 segundos, ou FIXA (sempre visível, com o
+             palco começando embaixo dela).
+- Aparelho (interruptores)
+  Descrição: Manter a tela acesa (ligado por padrão, nos aparelhos e navegadores que permitem),
+             Vibrar ao tocar e Desempenho: AUTOMÁTICO (padrão) escolhe pelo aparelho; LEVE tira
+             desfoque, brilhos e animações, para celular mais fraco ou para poupar bateria; COMPLETO
+             mantém tudo.
+Observações:
+- Tudo nas configurações do palco fica salvo só neste aplicativo, neste aparelho. RESTAURAR PADRÃO
+   volta os ajustes de fábrica sem apagar as imagens escolhidas.
+
+7.13. Perfis e visuais prontos
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Tela/preview relacionado: PERFIS E VISUAIS PRONTOS
 Objetivo: Guarde até seis jeitos de deixar o palco (Ensaio, Show, Estúdio) e passe de um para o
-          outro com um toque. Os visuais prontos trocam cores, fonte e painéis de uma vez.
+          outro com um toque. Os visuais prontos ficam na APARÊNCIA.
 Como fazer:
 1. Em CONFIGURAÇÕES, abra a categoria PERFIS.
 2. Toque em NOVO (começa do padrão) ou em DUPLICAR (cópia do perfil marcado) e depois em RENOMEAR
@@ -1542,58 +1584,6 @@ Campos e itens:
 - Apagar (botão)
   Descrição: Pede um segundo toque (APAGAR MESMO?) e apaga o perfil marcado. O último perfil não
              pode ser apagado.
-- Visuais prontos (cartões)
-  Descrição: PADRÃO, ALTO CONTRASTE, OLED PRETO, ÂMBAR, NEON, AÇO, COR DO PRESET (fundo e destaque
-             seguem a cor do LED do preset) e LIMPO. Um toque troca fundo, destaque, fonte, cantos e
-             painéis do perfil marcado; layouts e imagens não mudam, e o DESFAZER volta.
-
-7.13. Configurações do palco — PALCO ESPECIAL
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Tela/preview relacionado: CONFIGURAÇÕES DO PALCO — PALCO ESPECIAL
-Objetivo: Como o PALCO ESPECIAL mostra a cadeia e os knobs do aparelho.
-Campos e itens:
-- Layout da tela (layout)
-  Descrição: Seis jeitos de arrumar o palco do pedal: COMPLETO (preset, cadeia de efeitos e knobs),
-             SÓ A CADEIA (blocos grandes; segurar liga e desliga), SÓ OS KNOBS, SÓ O PRESET (o nome
-             em letra gigante) e CADEIA LATERAL (a cadeia em coluna e os knobs ao lado — pede tela
-             de tablet ou computador), além de FAVORITOS (até oito controles de qualquer bloco,
-             fixos na tela). O Kemper tem a escolha dele, com os mesmos COMPLETO, SÓ A CADEIA e SÓ
-             OS KNOBS e mais SÓ O RIG.
-- Modo visual: PADRÃO, ALUMÍNIO, VINTAGE ou RACK (visual)
-  Descrição: No PALCO ESPECIAL, três visuais que imitam aparelho de verdade, feitos só com desenho
-             (sem imagens): ALUMÍNIO (pedal boutique: chapa escovada com parafusos, knobs pretos,
-             blocos como pedaizinhos pintados), VINTAGE (amplificador: tolex com friso creme, painel
-             dourado, knobs com tampa dourada) e RACK (unidade de rack: alumínio preto, display
-             âmbar, knobs com anel de LED, botões de borracha iluminados). Cada um troca os painéis,
-             os knobs, as chaves e os blocos da cadeia. Com um deles o Estilo dos knobs fica
-             apagado; com o alto contraste ligado vale o PADRÃO. O PALCO BFMIDI e o setlist não
-             mudam. Nos aplicativos e no site.
-- Visual do aparelho (tema)
-  Descrição: Ligado, cada aparelho usa as suas cores e o seu estilo. Desligado, o PALCO ESPECIAL
-             segue a categoria VISUAL. Com Com o meu fundo e destaque ligado, ficam a fonte e o
-             desenho do pedal, mas o fundo e a cor de destaque são os da categoria VISUAL.
-- Siglas e cor dos blocos (cadeia)
-  Descrição: Mostrar ou não as siglas nos blocos, e se os blocos usam a cor do aparelho ou a cor de
-             destaque. (Mostrar ou esconder a cadeia agora é o Layout da tela.)
-- Knobs (tamanho, estilo e arranjo)
-  Descrição: Tamanho (P, M, G); estilo: oito knobs (ARCO, PONTEIRO, LEDS, ANEL, COLORIDO, METAL,
-             VINTAGE e CHICKEN HEAD), BARRA vertical ou NÚMERO grande; arranjo: EM LINHA (com setas
-             para os que não cabem) ou TODOS À VISTA. Em MAIS OPÇÕES: onde o valor aparece (embaixo,
-             em cima ou dentro do knob) e a sensibilidade do arraste (fino, normal, rápido).
-- Segurar para ligar/desligar (tempo)
-  Descrição: Quanto tempo o dedo precisa ficar no bloco para ligar ou desligar o efeito: 0,3 s, 0,45
-             s (padrão), 0,7 s ou 1 s.
-- Botão de salvar e número do preset (interruptores)
-  Descrição: Mostra ou esconde o disquete do cabeçalho — quem não quer correr o risco de gravar no
-             palco pode tirá-lo — e o número do preset do aparelho. Imagem atrás do preset põe a
-             imagem do palco atrás do nome do preset do aparelho.
-- Ajustes por aparelho (interruptor)
-  Descrição: Ligado, o layout da tela e o tamanho, o estilo e o arranjo dos knobs passam a ser
-             guardados para cada pedal (TONEX ONE, Nano Cortex, GP-5): a TONEX pode abrir em Só os
-             knobs e a GP-5 no Completo. A dica de cada opção diz para qual aparelho ela vale.
-- Bloco aberto ao entrar (escolha)
-  Descrição: Qual bloco já aparece com os knobs quando o Palco Especial abre: o AMP, O ÚLTIMO que
-             você abriu naquele aparelho ou O PRIMEIRO LIGADO da cadeia.
 
 7.14. No celular e no tablet
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1740,6 +1730,28 @@ Como fazer:
 5. Mais acordes traz os tipos (m, 7, 7M, sus4…), as 12 notas e um campo para digitar qualquer cifra
    — com baixo (D/F#), N.C. ou %.
 Campos e itens:
+- FOLHA (letra e cifra em linhas) (texto)
+  Descrição: Em MAIS OPÇÕES › Esta parte mostra (ou na ficha, em NO PALCO, para a música toda)
+             escolha FOLHA. O card 3 vira um campo de texto de largura fixa: escreva ou cole a parte
+             em linhas, com a linha de acordes em cima da linha da letra, como numa folha de cifra.
+             Pode colar direto de um site de cifra: os caracteres invisíveis que vêm junto são
+             tirados. No palco a letra sai grande e cada acorde vira uma etiqueta em cima da sílaba
+             onde ele cai (a primeira da tela, cheia); só as linhas de acordes acompanham a troca de
+             tom. Uma linha só com --- começa outra tela.
+             Quem vinha de CIFRAS já encontra os acordes da parte no começo da folha; os quadros de
+             cifras continuam guardados.
+- Linhas por tela (opção)
+  Descrição: Quantas linhas da folha aparecem de cada vez no palco: 2, 3, 4, 6, 8, 10, 12 ou 16. A
+             letra enche a altura da área, então menos linhas = letra maior e mais telas. Um refrão
+             de 12 linhas com 4 por tela vira 3 telas, iguais em qualquer aparelho. O editor mostra
+             quantas telas a parte tem. AUTO usa o número das configurações do palco (SETLIST ›
+             Linhas por tela).
+             A linha de acordes nunca se separa da linha de letra logo abaixo, e a letra encolhe
+             sozinha se uma linha for comprida demais para a largura.
+- Acordes por tela (opção)
+  Descrição: Numa parte em CIFRAS, em MAIS OPÇÕES: 4, 8, 12, 16 ou 24 quadros por tela (AUTO = até
+             24). Menos acordes = quadros maiores e mais telas para passar. Parte com mais acordes
+             do que cabe numa tela não rola mais: vira telas.
 - Notas pessoais (texto)
   Descrição: Numa parte em NOTAS PESSOAIS, o teclado de acordes dá lugar a um campo de texto livre:
              letra, lembrete, entrada.
@@ -1822,24 +1834,46 @@ Como fazer:
 2. A faixa da LETRA · REFERÊNCIA (a linha da letra em cima dos acordes) tem tamanho próprio, fundo
    (claro, cor da parte, destaque, escuro ou sem fundo) e, em MAIS OPÇÕES, a cor do texto.
 Campos e itens:
-- Layout da tela (4 opções)
+- Telas da parte (‹ 2/3 ›) (botão)
+  Descrição: Quando a parte não cabe numa tela (folha comprida, muitos acordes), aparece embaixo das
+             anotações uma faixa com setas, pontinhos e o número da tela. Passe as telas pelas
+             setas, pelas teclas Page Down / Page Up ou → / ← (um pedal Bluetooth de virar página
+             manda essas teclas) ou pelo pé: ponha SETLIST NEXT PAGE e SETLIST PREV PAGE num
+             footswitch (comandos especiais, no fim da lista de CC). Numa parte em NOTAS PESSOAIS o
+             mesmo comando rola o texto.
+             Trocar de parte volta para a primeira tela.
+- TOM (tom no palco) (botão)
+  Descrição: No cabeçalho, a cápsula − TOM +: cada toque em − ou + sobe ou desce meio tom o que a
+             tela mostra (os quadros de cifras, as linhas de acordes da folha e o tom do cabeçalho,
+             que passa a dizer por exemplo “Tom G (+2)”). A música gravada não muda: é para a noite
+             em que a banda toca em outro tom. Tocar no TOM abre a janela com VOLTAR AO ORIGINAL,
+             que desfaz. O mesmo ajuste está na ficha, em DETALHES › Tom no palco; ali também ficam
+             −½ e +½, que reescrevem a música de vez.
+- Linhas por tela (folha) e o fim das telas (opção)
+  Descrição: Nas configurações do palco, categoria SETLIST. Linhas por tela (folha): 4 a 16, vale
+             para as partes em AUTO. Na última tela, PRÓXIMA TELA…: PARA (padrão), VAI PRA PRÓXIMA
+             PARTE (um pé só percorre a música inteira: passa as telas e, na última, chama a parte
+             seguinte) ou VOLTA À 1ª TELA.
+- Layout da tela (5 opções)
   Descrição: COMPLETO (música, faixa de partes, anotações e rodapé), PARTES AO LADO (as partes numa
              coluna, as anotações à direita — precisa de tela larga), ANOTAÇÕES GRANDES (a música
-             numa linha só e as anotações com a maior parte da tela) e SÓ AS PARTES (os cartões das
-             partes ocupam a tela, sem anotações).
+             numa linha só e as anotações com a maior parte da tela) , SÓ AS PARTES (os cartões das
+             partes ocupam a tela, sem anotações) e LETRA E CIFRA (a música numa linha, a folha com
+             a maior parte da tela e as partes numa barra baixa embaixo — feito para a FOLHA).
 - Parte que está tocando (animação, velocidade e marcas)
-  Descrição: O cartão da parte que está tocando se mexe pra ficar evidente de longe. Animação:
-             BRILHO (o halo acende e apaga; é o padrão), CONTORNO (um traço de luz corre em volta),
-             VARREDURA (uma faixa de luz atravessa o cartão), RESPIRAR (o cartão cresce e volta) ou
-             SEM. VU põe poucas barras lisas e discretas na cor da parte NO CANTO do cartão ou NO
-             BLOCO TODO, atrás das escritas, junto com qualquer animação. Velocidade: LENTA, NORMAL
-             ou RÁPIDA (vale também pro VU). Marca AGORA põe a etiqueta na parte atual, e Apagar as
-             outras partes escurece as que não estão tocando. A miniatura de cada opção mostra o
-             efeito. Com "reduzir movimento" ligado no aparelho, a parte só fica acesa.
-- Tamanhos e o que aparece (opções)
-  Descrição: Tamanho das anotações e das partes; artista, tom e BPM; o preset de cada parte; o
-             rodapé com as músicas vizinhas (desligado, a lista do setlist vai para o cabeçalho); e,
-             em MAIS OPÇÕES, o número da música e a marca A SEGUIR.
+  Descrição: Quatro jeitos prontos de deixar a parte atual evidente de longe: SEM, DISCRETO (brilho
+             lento), DESTACADO (o padrão: o halo acende e apaga, com a marca AGORA) e SHOW (um traço
+             de luz corre em volta, poucas barras de VU no canto e as outras partes apagadas).
+             PERSONALIZAR abre cada peça: o efeito (BRILHO, CONTORNO, VARREDURA ou SEM), a
+             velocidade, o VU (no canto ou no bloco todo), a marca AGORA e apagar as outras partes.
+             Com “reduzir movimento” ligado no aparelho, a parte só fica acesa.
+- Tamanho da letra e o que aparece (opções)
+  Descrição: Tamanho da letra: um só para as anotações, a letra e os acordes da folha e a faixa da
+             letra. Mostrar na tela (chips numerados): artista, tom e BPM; o preset de cada parte; a
+             marca A SEGUIR; o número da música e o nome do setlist; e o rodapé com as músicas
+             vizinhas (desligado, a lista do setlist vai para o cabeçalho). O fundo da faixa da
+             letra é claro, da cor da parte, escuro ou sem fundo — a cor do texto acompanha sozinha.
+             Em MAIS OPÇÕES, o tamanho dos cartões das partes.
 
 7.22. Backup do setlist
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -2818,6 +2852,11 @@ Campos e itens:
   Descrição: No fim da lista, sob ── SETLIST ──: andam pelas partes e músicas do setlist aberto no
              Modo Palco do app. Sem setlist aberto, não fazem nada. Não precisam de canal. Veja
              Controlar o setlist com o pé no capítulo Modo Palco.
+- » SETLIST NEXT PAGE / PREV PAGE (comando)
+  Descrição: Passam as telas da parte que está na tela do setlist do app (a folha de cifra do refrão
+             em 3 telas, por exemplo). A controladora só avisa o app; sem o Modo Palco aberto no
+             setlist, não fazem nada. Não precisam de canal. O que acontece na última tela é
+             escolhido nas configurações do palco (SETLIST › Na última tela).
 - » STAGE / SETLIST SCREEN (comando)
   Descrição: Também sob ── SETLIST ──: troca a tela do Modo Palco entre o PALCO e o SETLIST — cada
              toque alterna. Com o Modo Palco fechado, não faz nada. Não precisa de canal. Pede a

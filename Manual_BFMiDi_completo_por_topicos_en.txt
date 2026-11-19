@@ -52,12 +52,12 @@ CONTENTS
    7.5. SPECIAL STAGE with the Nano Cortex
    7.6. SPECIAL STAGE with the Kemper
    7.7. SPECIAL STAGE favorites
-   7.8. Stage settings — GENERAL
-   7.9. Stage settings — VISUAL
-   7.10. Stage settings — BFMIDI STAGE
+   7.8. Stage settings — LOOK
+   7.9. Stage settings — BFMIDI
+   7.10. Stage settings — SPECIAL
    7.11. Stage images
-   7.12. Profiles and ready-made looks
-   7.13. Stage settings — SPECIAL STAGE
+   7.12. Stage settings — SETTINGS
+   7.13. Profiles and ready-made looks
    7.14. On phones and tablets
    7.15. SETLIST: the song, its parts and chords
    7.16. Creating a song (step by step)
@@ -1232,12 +1232,13 @@ Fields and items:
 - Bank presets (row)
   Description: The six presets of the current bank, with number and name. Tapping one calls that
              preset on the controller, exactly like stepping on its footswitch.
-- The top handle (hidden bar)
+- The top handle and the corner buttons (hidden bar)
   Description: The control bar stays hidden so it doesn't take up space. Tap the handle at the top —
              or any empty area of the screen — to show it. It hides again on its own after a few
-             seconds. To go straight to the stage settings, tap the gear in the right corner (on the
-             BFMIDI STAGE and the SPECIAL STAGE; it hides while the bar is open and while the touch
-             lock is closed).
+             seconds. In the right corner there are three round buttons, no need to open the bar:
+             STAGE ↔ SETLIST (switches between the stage and the setlist screen), the gear (the
+             stage settings) and BACK TO THE APP (closes the stage). They show on both stages and on
+             the setlist, and hide while the bar is open and while the touch lock is closed.
 Notes:
 - Turning footswitches on and off from the stage requires an up-to-date controller. With older
    firmware the icon shows “Update the controller to use this”.
@@ -1262,8 +1263,8 @@ Fields and items:
   Description: With the panel open, tapping an icon still turns the effect on and off — you can hear
              the change right away. The footswitch being edited gets an outline.
 - Hold the icon (option) (setting)
-  Description: In the stage SETTINGS › BFMIDI STAGE, Hold the icon is set to EDIT THE FOOTSWITCH.
-             With Trigger footswitch from the screen set to HOLD, holding already belongs to the
+  Description: In the stage SETTINGS › SETTINGS › Trigger by, Hold the icon is set to EDIT THE
+             FOOTSWITCH. With the footswitches triggered by HOLD, holding already belongs to the
              footswitch and this option is greyed out.
 Notes:
 - On the Kemper SPECIAL STAGE the blocks are the rig's, not the footswitches: there, holding a block
@@ -1284,8 +1285,9 @@ Fields and items:
 - PRESET A1 (info)
   Description: The bank and preset currently playing on the controller.
 - SETTINGS (button)
-  Description: Opens the stage settings, in a side panel with six categories. The gear in the right
-             corner of the stage does the same without opening the bar. See the following cards.
+  Description: Opens the stage settings, in a side panel with seven tabs. The gear in the right
+             corner of the stage does the same without opening the bar, next to the STAGE ↔ SETLIST
+             and BACK TO THE APP buttons. See the following cards.
 - Connection, BPM and clock (status)
   Description: How you're connected (STA, AP or USB), the BPM of the last TAP TEMPO tapped on the
              BFMiDi and, if you turn it on, the clock. With no pedal, the connection turns into the
@@ -1411,115 +1413,118 @@ Fields and items:
              new model; if the new model does not have that control, its place shows Not in this
              model and comes back by itself when the control exists again.
 
-7.8. Stage settings — GENERAL
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Related screen/preview: STAGE SETTINGS — GENERAL
-Purpose: What appears on both stages and how the screen behaves. The settings open in a panel beside
-          the stage: the preview shows every change right away, each option has a thumbnail of what
-          it changes, and tapping an area of the preview opens its options. UNDO reverts the last
-          change and MORE OPTIONS shows the less used ones.
+7.8. Stage settings — LOOK
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+Related screen/preview: STAGE SETTINGS — LOOK
+Purpose: The settings open in a panel beside the stage, in seven tabs: LOOK, BFMIDI, SPECIAL,
+          SETLIST, IMAGES, SETTINGS and PROFILES. Each option is a card with a drawing of the stage:
+          the piece it changes is lit, with an outline, and the rest is dimmed. The preview beside
+          it shows the change right away, and tapping an area of the preview opens its options. UNDO
+          reverts the last change, the ⓘ shows more details and MORE OPTIONS keeps the less used
+          ones. LOOK is how the stage looks.
 Fields and items:
-- BFMIDI preset bar (bar)
-  Description: The row used to change presets, on both stages. The buttons show NUMBER + NAME,
-             NUMBER ONLY or NAME ONLY. Under MORE OPTIONS: the position (BOTTOM, TOP or SIDE), the
-             height (S, M, L), the color (each preset's LED or the accent color) and how a preset is
-             called from the screen — ONE TAP or HOLD, to avoid changing by accident.
-- Connection, BPM and clock (switches)
-  Description: What the top bar shows. The clock is off by default.
-- Keep the screen on (switch)
-  Description: Asks the phone or tablet not to turn the screen off while the stage is open (on
-             devices and browsers that allow it). On by default.
-- Vibrate on touch (switch)
-  Description: A short vibration confirms each tap, on devices that can vibrate.
-- Performance (choice)
-  Description: AUTO (default) decides by device; LIGHT removes blur, glows and animations, for
-             slower phones or to save battery; FULL keeps everything.
-- Touch lock (safety)
-  Description: With HOLD TO UNLOCK the stage opens locked: touches on footswitches, presets, blocks
-             and knobs do nothing. Hold the padlock in the corner to unlock; 8 seconds after the
-             last touch it locks again (a line at the bottom shows the time left).
-- Top bar and animation (time)
-  Description: How long the top bar stays visible: 2, 4 or 8 seconds, or PINNED (always visible,
-             with the stage starting below it). And the name animation on preset change: NONE, SOFT
-             or MARQUEE.
+- Ready-made looks (cards)
+  Description: DEFAULT, HIGH CONTRAST, OLED BLACK, AMBER, NEON, STEEL, PRESET COLOR and CLEAN. One
+             tap changes background, accent, font, corners and panels at once; layouts and images do
+             not change, and UNDO brings it back.
+- Who sets the look of the SPECIAL STAGE? (cards)
+  Description: THE PEDAL: each device with its own colors and style. ME: the background, accent and
+             font chosen in this tab. Or a panel that looks like real gear, made only with drawing:
+             ALUMINUM (boutique pedal), VINTAGE (amplifier with a gold panel) or RACK (black
+             aluminum, amber display). CUSTOMIZE has “the pedal with my background and accent”.
+- Background and dimming the image (colors)
+  Description: Eight ready-made backgrounds, FREE (two colors of your choice) and IMAGE (the stage
+             image on the whole screen, chosen in the IMAGES tab). With an image, Dim the image: NO,
+             A LITTLE, MEDIUM or A LOT — the same scale as the BFMIDI STAGE header image (under MORE
+             OPTIONS).
+- Accent color and LED colors (colors)
+  Description: Nine colors and a free one (hue, saturation and brightness). Colors follow the preset
+             LED: NO, ACCENT ONLY or BACKGROUND AND ACCENT — the screen changes color with the ring
+             at each preset change.
+- Font, size and preset name (text)
+  Description: System fonts (Default, Rounded, Narrow, Mono, Serif) and two that come inside the
+             apps: BIG SHOULDERS (condensed) and LED (DSEG14), which imitates a segment display and
+             applies only to big names and numbers. Nothing is downloaded: the stage opens without
+             internet; SEE THE FONT LICENSES shows each license. Text size: S, M, L, XL. Preset
+             name: size, alignment and the animation when the preset changes (NONE, SOFT or
+             MARQUEE).
+- High contrast and more options (style)
+  Description: High contrast makes everything strong black and white, for open-air stages and
+             sunlight. Under MORE OPTIONS: panels (SOLID, GLASS or NO PANEL), corners, the glow of
+             active items and the color of the SPECIAL STAGE blocks (the device color or the
+             accent).
 Notes:
-- Everything in the stage settings is saved only in this app, on this device. RESTORE DEFAULTS
-   brings back the factory settings without erasing the images you chose.
+- Font weight, uppercase, outline, spacing and name lines left the screen: the ready-made looks
+   still use them, and if you had changed one of them you will find it under MORE OPTIONS, with a
+   note that it is not on the default.
 
-7.9. Stage settings — VISUAL
+7.9. Stage settings — BFMIDI
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Related screen/preview: STAGE SETTINGS — VISUAL
-Purpose: The stage's look: background, accent color, font, text size, corners and panels.
-Fields and items:
-- Background and accent color (colors)
-  Description: Eight ready-made backgrounds plus CUSTOM, with two colors of your choice (top and
-             bottom). Nine accent colors plus a free color, set by hue, saturation and lightness.
-             Both can also follow the preset LED color — the screen changes color on every preset
-             change. The background can also be the stage IMAGE, full screen (the one chosen in the
-             IMAGES category), dimmed a little, medium or a lot so the text stays readable.
-- Font and preset name (text)
-  Description: Default, Rounded, Narrow, Mono or Serif font — all from the system itself — plus two
-             that ship inside the apps: BIG SHOULDERS (a condensed stage font) and LED (DSEG14),
-             which mimics a segment display and applies only to names and big numbers. Nothing is
-             downloaded: the stage opens without internet. The SHOW THE FONT LICENSES button shows
-             the license of each one. Title weight, text size (S, M, L, XL) and uppercase names. The
-             preset name has its own settings: size, alignment (left, center, right) and number of
-             lines (1 to 3).
-- Panels, glow and contrast (style)
-  Description: SOLID, GLASS or NO PANEL (content straight over the background); glow on active items
-             NONE, SOFT or STRONG; square, soft or round corners; outline; and compact, normal or
-             wide spacing. High contrast turns everything into strong black and white, for outdoor
-             stages and sunlight.
-
-7.10. Stage settings — BFMIDI STAGE
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Related screen/preview: STAGE SETTINGS — BFMIDI STAGE
+Related screen/preview: STAGE SETTINGS — BFMIDI
 Purpose: How the BFMIDI STAGE arranges the name, the image and the footswitches.
 Fields and items:
 - Screen layout (layout)
-  Description: Eight ways to arrange the stage: CLASSIC (name and image on top, footswitches and
+  Description: Six ways to arrange the stage: CLASSIC (name and image on top, footswitches and
              presets below), MARQUEE (the name fills the screen; the footswitches become a strip of
-             LEDs), PEDALBOARD (big footswitches in two rows, in the pedal's order), COLUMN (the
-             bank's presets listed on the side, with the full name), SETLIST (the previous and the
-             next preset beside the current one; tap to call), TEMPO (the BPM in big digits and the
-             clock), MINIMAL (the preset only) and POSTER (the stage image full screen, with the
-             name on top and no panels). Each card shows a drawing of the layout. Options that do
-             not apply to the chosen layout are dimmed, with the reason.
-- Image and Top layout (image)
-  Description: With the image on, choose SIDE BY SIDE (name on one side, image on the other — with a
-             choice of image side and a name width from 25 to 75%, on a slider) or NAME OVER IMAGE.
-             Under MORE OPTIONS: the image edge (faded or straight) and dimming the image (no, a
-             little, a lot), so the name reads better.
-- Always the PRESET image (switch)
-  Description: On (default), the stage image is the PRESET screen background even with the pedal in
-             LIVE. Off, LIVE shows the LIVE screen background. Only applies when the image comes
-             from the controller's display.
+             LEDs), PEDALBOARD (big footswitches in two rows, in the pedal order), SEQUENCE (the
+             previous and next presets beside the current one; tap to call), TEMPO (the BPM in big
+             type and the clock) and MINIMAL (only the preset). Presets listed on the side are
+             CLASSIC with the preset bar ON THE SIDE (SETTINGS tab), and the image on the whole
+             screen is the IMAGE background in LOOK.
+- Header image (image)
+  Description: RIGHT, LEFT, BEHIND THE NAME or NO IMAGE. With the image on the side, Name space
+             splits the header from 25 to 75%. Dimming the header image is in LOOK, under MORE
+             OPTIONS.
+- What the footswitches show (choice)
+  Description: LIVE ICONS, like the display, or PRESET BACKGROUNDS: each footswitch shows the
+             background of the preset with the same number, and tapping it calls that preset.
 - Footswitches (arrangement and shape)
-  Description: Arrangement: ONE ROW (in order, 1 to 6), LIKE THE PEDAL (two rows, mirroring the
-             controller) or COLUMN (beside the name). Size in five steps (XS to XL). Shape: AS ON
-             THE DISPLAY, CIRCLE or LED ONLY (a ring in the LED color with the name). Under MORE
-             OPTIONS, the caption under each icon: the footswitch MODE or the COMMAND it sends.
-- What to show (switches)
-  Description: PRESET / LIVE MODE, the friendly mode, the preset tag (A1: small, big or hidden), the
-             footswitch number and the LED bar.
-- Footswitches that are off (choice)
-  Description: NORMAL, DIMMED (what is on stands out) or HIDDEN — the icon disappears and only the
-             number stays, so the screen shows just what is on.
-- Trigger a footswitch from the screen (choice)
-  Description: ONE TAP (default), HOLD — the footswitch only triggers after half a second with the
-             finger on the screen, to avoid accidents — or OFF: the icons only show the state,
-             useful when the phone is within reach of other people on stage.
-- Hold the icon (choice)
-  Description: EDIT THE FOOTSWITCH (default): holding an icon opens its MIDI settings next to the
-             stage — see Editing a footswitch without leaving the stage.
+  Description: Arrangement: ONE ROW (1 to 6), LIKE THE PEDAL (two rows) or IN A COLUMN (beside the
+             name). Size S, M, L. Shape: LIKE THE DISPLAY, CIRCLE or LED ONLY. Off footswitches:
+             NORMAL, DIMMED (what is on stands out) or HIDDEN.
+- Show on screen (numbered chips)
+  Description: The footswitch numbers, the LED bar, PRESET / LIVE MODE and the friendly mode. Each
+             chip number points to the piece in the drawing; when off, the piece is dashed. Under
+             MORE OPTIONS: the caption under each icon (the MODE or the COMMAND) and the A1 tag
+             (small or hidden).
+Notes:
+- Triggering the footswitch with a tap or by holding, and holding the icon to edit it, are in the
+   SETTINGS tab, under Trigger by.
+
+7.10. Stage settings — SPECIAL
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Related screen/preview: STAGE SETTINGS — SPECIAL
+Purpose: How the SPECIAL STAGE shows the device's chain and knobs.
+Fields and items:
+- Screen layout (layout)
+  Description: FULL (preset, effects chain and knobs), CHAIN ONLY (big blocks; hold to turn on and
+             off), PRESET ONLY (the name in giant type), SIDE CHAIN (the chain in a column and the
+             knobs beside it — needs a tablet or computer screen) and FAVORITES (up to eight
+             controls from any block, fixed on screen). The Kemper follows the same choice; on it,
+             SIDE CHAIN and FAVORITES become FULL.
+- Knobs (size, style and arrangement)
+  Description: Size S, M, L. Style: ARC, POINTER, CHICKEN HEAD, vertical BAR or big NUMBER. Value
+             BELOW or INSIDE the knob. Those that do not fit: IN A ROW (pages with arrows) or ALL IN
+             VIEW.
+- Show on screen (numbered chips)
+  Description: The device preset number, the SAVE button (if you do not want the risk of saving on
+             stage, remove it) and the block labels.
+- More options (adjustments)
+  Description: Image behind the preset (the stage image behind the device preset name); block open
+             on entry (the AMP, THE LAST one you opened or THE FIRST ONE ON); knob drag sensitivity
+             (fine, normal, fast); and per-device settings — the layout and knobs saved for each
+             pedal (each option hint says which device it applies to).
+Notes:
+- The SPECIAL STAGE look (the device colors, yours or a realistic panel) is in LOOK, under Who sets
+   the look. The hold time to turn a block on and off is in SETTINGS, under Trigger by.
 
 7.11. Stage images
 ~~~~~~~~~~~~~~~~~~
 Related screen/preview: STAGE IMAGE AND CROP
-Purpose: In the apps and on the website, the BFMIDI STAGE background can be the controller's image,
-          an image from the app gallery or one of your own photos. Cropping works in every case. The
-          same image is used by the full-screen background, the Poster layout and the Image behind
-          the preset option.
+Purpose: In the apps and on the website, the stage image can be the controller one, one from the app
+          gallery or a photo of yours. Cropping works in every case. The same image is the BFMIDI
+          STAGE header image, the full-screen background (LOOK › Background: IMAGE) and the Image
+          behind the preset option.
 How to:
 1. In SETTINGS, open the IMAGES category.
 2. Choose whether it applies to ALL PRESETS or ONLY A1 (the current preset).
@@ -1539,12 +1544,48 @@ Fields and items:
 - Crop (adjustment)
   Description: Each image keeps its own framing: drag to choose the focus point, use the zoom (100
              to 300%) and CENTER to go back to the middle.
+- Always the PRESET screen image (switch)
+  Description: On (default), the stage image is the PRESET screen background even with the pedal in
+             LIVE. Off, in LIVE the LIVE screen background shows. Only applies when the image comes
+             from the controller display.
 
-7.12. Profiles and ready-made looks
+7.12. Stage settings — SETTINGS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Related screen/preview: STAGE SETTINGS — SETTINGS
+Purpose: How the screen behaves and how you touch it, on both stages.
+Fields and items:
+- BFMIDI preset bar (bar)
+  Description: The row used to change presets, on both stages. When on, choose what the buttons show
+             (NUMBER + NAME, NUMBER ONLY or NAME ONLY), the position (BOTTOM, TOP or SIDE) and the
+             size (S, M, L).
+- Trigger by (safety)
+  Description: ONE TAP or HOLD, to avoid changing preset or triggering a footswitch by accident —
+             applies to the preset bar and to the screen footswitches (CUSTOMIZE separates the two
+             and has OFF, where the footswitches only show their state). Hold time: 0.3 s, 0.45 s
+             (default), 0.7 s or 1 s — the same for presets, footswitches and turning SPECIAL STAGE
+             blocks on and off. Hold the icon: EDIT THE FOOTSWITCH opens its MIDI settings beside
+             the stage.
+- Touch lock (safety)
+  Description: With HOLD TO UNLOCK the stage opens locked: touches on footswitches, presets, blocks
+             and knobs do nothing. Hold the padlock in the corner to unlock; 8 seconds after the
+             last touch it locks again (a line at the bottom shows the time left).
+- Top bar (chips and time)
+  Description: What the top bar shows: connection, BPM and clock (the clock is off by default). And
+             how long it stays visible: 2, 4 or 8 seconds, or FIXED (always visible, with the stage
+             starting below it).
+- Device (switches)
+  Description: Keep the screen on (on by default, on devices and browsers that allow it), Vibrate on
+             touch and Performance: AUTO (default) decides by device; LIGHT removes blur, glows and
+             animations, for slower phones or to save battery; FULL keeps everything.
+Notes:
+- Everything in the stage settings is saved only in this app, on this device. RESTORE DEFAULTS
+   brings back the factory settings without erasing the images you chose.
+
+7.13. Profiles and ready-made looks
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Related screen/preview: PROFILES AND READY-MADE LOOKS
-Purpose: Keep up to six ways of setting up the stage (Rehearsal, Show, Studio) and go from one to
-          the other with one tap. The ready-made looks change colors, font and panels at once.
+Purpose: Save up to six ways of setting the stage (Rehearsal, Show, Studio) and switch between them
+          with one tap. The ready-made looks are in LOOK.
 How to:
 1. In SETTINGS, open the PROFILES category.
 2. Tap NEW (starts from the default) or DUPLICATE (a copy of the selected profile), then RENAME to
@@ -1564,60 +1605,6 @@ Fields and items:
 - Delete (button)
   Description: Asks for a second tap (REALLY DELETE?) and deletes the selected profile. The last
              profile cannot be deleted.
-- Ready-made looks (cards)
-  Description: DEFAULT, HIGH CONTRAST, OLED BLACK, AMBER, NEON, STEEL, PRESET COLOR (background and
-             accent follow the preset LED color) and CLEAN. One tap changes the background, accent,
-             font, corners and panels of the selected profile; layouts and images stay, and UNDO
-             brings it back.
-
-7.13. Stage settings — SPECIAL STAGE
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Related screen/preview: STAGE SETTINGS — SPECIAL STAGE
-Purpose: How the SPECIAL STAGE shows the device's chain and knobs.
-Fields and items:
-- Screen layout (layout)
-  Description: Six ways to arrange the pedal's stage: FULL (preset, effect chain and knobs), CHAIN
-             ONLY (big blocks; hold to turn on and off), KNOBS ONLY, PRESET ONLY (the name in giant
-             letters) and SIDE CHAIN (the chain as a column with the knobs beside it — needs a
-             tablet or computer screen), plus FAVORITES (up to eight controls from any block, fixed
-             on screen). The Kemper has its own choice, with the same FULL, CHAIN ONLY and KNOBS
-             ONLY plus RIG ONLY.
-- Visual mode: STANDARD, ALUMINUM, VINTAGE or RACK (visual)
-  Description: On the SPECIAL STAGE, three looks that imitate real gear, made only with drawing (no
-             pictures): ALUMINUM (boutique pedal: brushed plate with screws, black knobs, blocks
-             like little painted pedals), VINTAGE (amplifier: tolex with cream piping, gold panel,
-             gold-capped knobs) and RACK (rack unit: black aluminum, amber display, knobs with an
-             LED ring, lit rubber buttons). Each one changes the panels, knobs, switches and chain
-             blocks. With one of them, Knob style is greyed out; with high contrast on, STANDARD
-             applies. The BFMIDI STAGE and the setlist do not change. In the apps and on the
-             website.
-- Device look (theme)
-  Description: When on, each device uses its own colors and style. When off, the SPECIAL STAGE
-             follows the VISUAL category. With With my background and accent on, the pedal font and
-             drawing stay, but the background and the accent color are the ones from the VISUAL
-             category.
-- Labels and block color (chain)
-  Description: Whether to show the labels on the blocks, and whether the blocks use the device color
-             or the accent color. (Showing or hiding the chain is now the Screen layout.)
-- Knobs (size, style and arrangement)
-  Description: Size (S, M, L); style: eight knobs (ARC, POINTER, LEDS, RING, COLORED, METAL, VINTAGE
-             and CHICKEN HEAD), vertical BAR or big NUMBER; arrangement: IN A ROW (with arrows for
-             the ones that do not fit) or ALL VISIBLE. Under MORE OPTIONS: where the value appears
-             (below, above or inside the knob) and the drag sensitivity (fine, normal, fast).
-- Hold to turn on/off (time)
-  Description: How long your finger has to stay on the block to turn the effect on or off: 0.3 s,
-             0.45 s (default), 0.7 s or 1 s.
-- Save button and preset number (switches)
-  Description: Shows or hides the floppy-disk button in the header — remove it if you do not want to
-             risk saving on stage — and the device preset number. Image behind the preset puts the
-             stage image behind the device preset name.
-- Per-device settings (switch)
-  Description: When on, the screen layout and the knob size, style and arrangement are saved for
-             each pedal (TONEX ONE, Nano Cortex, GP-5): the TONEX can open in Knobs only and the
-             GP-5 in Full. The hint under each option says which device it applies to.
-- Block open on entry (choice)
-  Description: Which block already shows its knobs when the Special Stage opens: the AMP, THE LAST
-             ONE you opened on that device or the FIRST ONE ON in the chain.
 
 7.14. On phones and tablets
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1764,6 +1751,28 @@ How to:
 5. More chords has the types (m, 7, 7M, sus4…), the 12 notes and a field to type any chord — with a
    bass note (D/F#), N.C. or %.
 Fields and items:
+- SHEET (lyrics and chords in lines) (text)
+  Description: Under MORE OPTIONS › This part shows (or on the song page, under ON STAGE, for the
+             whole song) choose SHEET. Card 3 becomes a fixed-width text field: type or paste the
+             part in lines, with the chord line above the lyric line, like a chord sheet. You can
+             paste straight from a chord website: the invisible characters that come along are
+             removed. On stage the lyrics are large and each chord becomes a tag above the syllable
+             it falls on (the first one on the screen, filled); only the chord lines follow the key
+             change. A line with only --- starts another screen.
+             Coming from CHORDS, the part’s chords are already at the top of the sheet; the chord
+             boxes stay saved.
+- Lines per screen (option)
+  Description: How many lines of the sheet show at a time on stage: 2, 3, 4, 6, 8, 10, 12 or 16. The
+             text fills the height of the area, so fewer lines = bigger text and more screens. A
+             12-line chorus at 4 per screen becomes 3 screens, the same on every device. The editor
+             shows how many screens the part has. AUTO uses the number from the stage settings
+             (SETLIST › Lines per screen).
+             A chord line is never separated from the lyric line right below it, and the text
+             shrinks by itself if a line is too long for the width.
+- Chords per screen (option)
+  Description: On a part set to CHORDS, under MORE OPTIONS: 4, 8, 12, 16 or 24 boxes per screen
+             (AUTO = up to 24). Fewer chords = bigger boxes and more screens to turn. A part with
+             more chords than fit on a screen no longer scrolls: it becomes screens.
 - Personal notes (text)
   Description: On a part set to PERSONAL NOTES, the chord keyboard gives way to a free-text field:
              lyrics, a reminder, a cue.
@@ -1846,25 +1855,46 @@ How to:
 2. The LYRICS · CUE band (the lyrics line above the chords) has its own size, band color (light,
    part color, accent, dark or none) and, under MORE OPTIONS, the text color.
 Fields and items:
-- Screen layout (4 options)
+- Screens of the part (‹ 2/3 ›) (button)
+  Description: When the part does not fit on one screen (a long sheet, many chords), a strip with
+             arrows, dots and the screen number appears below the notes. Turn the screens with the
+             arrows, with the Page Down / Page Up or → / ← keys (a Bluetooth page-turner pedal sends
+             these keys) or with your foot: put SETLIST NEXT PAGE and SETLIST PREV PAGE on a
+             footswitch (special commands, at the end of the CC list). On a part set to PERSONAL
+             NOTES the same command scrolls the text.
+             Changing parts goes back to the first screen.
+- KEY (key on stage) (button)
+  Description: In the header, the − KEY + capsule: each tap on − or + moves what the screen shows a
+             half step up or down (the chord boxes, the chord lines of the sheet and the key in the
+             header, which then reads for example “Key G (+2)”). The saved song does not change: it
+             is for the night the band plays in another key. Tapping KEY opens the window with BACK
+             TO ORIGINAL, which undoes it. The same setting is on the song page, under DETAILS › Key
+             on stage; −½ and +½, which rewrite the song for good, are there too.
+- Lines per screen (sheet) and the end of the screens (option)
+  Description: In the stage settings, SETLIST category. Lines per screen (sheet): 4 to 16, used by
+             the parts set to AUTO. On the last screen, NEXT PAGE…: STOPS (default), GOES TO THE
+             NEXT PART (a single foot walks the whole song: it turns the screens and, on the last
+             one, calls the next part) or BACK TO SCREEN 1.
+- Screen layout (5 options)
   Description: FULL (song, parts strip, notes and footer), PARTS ON THE SIDE (the parts in a column,
              the notes on the right — needs a wide screen), BIG NOTES (the song on a single line and
-             the notes taking most of the screen) and PARTS ONLY (the part cards fill the screen, no
-             notes).
+             the notes taking most of the screen) PARTS ONLY (the part cards fill the screen, no
+             notes) and LYRICS + CHORDS (the song on one line, the sheet taking most of the screen
+             and the parts in a low bar below — made for the SHEET).
 - Part that is playing (animation, speed and tags)
-  Description: The card of the part that is playing moves so it is obvious from a distance.
-             Animation: GLOW (the halo lights up and fades; the default), OUTLINE (a streak of light
-             runs around it), SWEEP (a band of light crosses the card), BREATHE (the card grows and
-             shrinks) or NONE. VU meter adds a few plain, subtle bars in the part's color IN THE
-             CORNER of the card or across the WHOLE CARD, behind the text, together with any
-             animation. Speed: SLOW, NORMAL or FAST (also for the VU). NOW tag puts the label on the
-             current part, and Dim the other parts darkens the ones not playing. The thumbnail of
-             each option shows the effect. With "reduce motion" on in the device, the part just
-             stays lit.
-- Sizes and what shows (options)
-  Description: Size of the notes and of the parts; artist, key and BPM; each part’s preset; the
-             footer with the nearby songs (turned off, the setlist list moves to the header); and,
-             under MORE OPTIONS, the song number and the UP NEXT tag.
+  Description: Four ready-made ways to make the current part easy to see from afar: NONE, SUBTLE
+             (slow glow), HIGHLIGHTED (the default: the halo fades in and out, with the NOW tag) and
+             SHOW (a line of light runs around it, a few VU bars in the corner and the other parts
+             dimmed). CUSTOMIZE opens each piece: the effect (GLOW, OUTLINE, SWEEP or NONE), the
+             speed, the VU (in the corner or across the whole block), the NOW tag and dimming the
+             other parts. With “reduce motion” on in the device, the part just stays lit.
+- Text size and what shows (options)
+  Description: Text size: one for the notes, the lyrics and chords of the sheet and the lyric strip.
+             Show on screen (numbered chips): artist, key and BPM; the preset of each part; the UP
+             NEXT tag; the song number and the setlist name; and the footer with the neighbouring
+             songs (when off, the setlist list goes to the header). The lyric strip background is
+             light, the part color, dark or none — the text color follows by itself. Under MORE
+             OPTIONS, the size of the part cards.
 
 7.22. Setlist backup
 ~~~~~~~~~~~~~~~~~~~~
@@ -2866,6 +2896,11 @@ Fields and items:
   Description: At the end of the list, under ── SETLIST ──: move through the parts and songs of the
              setlist open in the app’s Stage Mode. With no setlist open, they do nothing. They don’t
              need a channel. See Controlling the setlist with your foot in the Stage Mode chapter.
+- » SETLIST NEXT PAGE / PREV PAGE (command)
+  Description: Turn the screens of the part shown on the app’s setlist screen (the chorus chord
+             sheet in 3 screens, for example). The controller only tells the app; without Stage Mode
+             open on the setlist, they do nothing. They don’t need a channel. What happens on the
+             last screen is chosen in the stage settings (SETLIST › On the last screen).
 - » STAGE / SETLIST SCREEN (command)
   Description: Also under ── SETLIST ──: switches the Stage Mode screen between the STAGE and the
              SETLIST — each tap toggles. With Stage Mode closed, it does nothing. It doesn’t need a

@@ -52,12 +52,12 @@ SUMARIO
    7.5. ESCENARIO ESPECIAL con la Nano Cortex
    7.6. ESCENARIO ESPECIAL con el Kemper
    7.7. Favoritos del ESCENARIO ESPECIAL
-   7.8. Configuración del escenario — GENERAL
-   7.9. Configuración del escenario — VISUAL
-   7.10. Configuración del escenario — ESCENARIO BFMIDI
+   7.8. Configuración del escenario — APARIENCIA
+   7.9. Configuración del escenario — BFMIDI
+   7.10. Configuración del escenario — ESPECIAL
    7.11. Las imágenes del escenario
-   7.12. Perfiles y visuales listos
-   7.13. Configuración del escenario — ESCENARIO ESPECIAL
+   7.12. Configuración del escenario — AJUSTES
+   7.13. Perfiles y visuales listos
    7.14. En el celular y la tablet
    7.15. SETLIST: la canción, las partes y los acordes
    7.16. Crear una canción (paso a paso)
@@ -1254,12 +1254,14 @@ Campos e ítems:
 - Presets del banco (fila)
   Descripción: Los seis presets del banco actual, con número y nombre. Tocar uno llama ese preset en
              la controladora, exactamente como pisar su footswitch.
-- La lengüeta superior (barra oculta)
+- La lengüeta superior y los botones de la esquina (barra oculta)
   Descripción: La barra de controles queda oculta para no robar espacio. Toca la lengüeta de arriba
              — o cualquier área vacía de la pantalla — para mostrarla. Se oculta sola después de
-             unos segundos. Para ir directo a la configuración del escenario, toca el engranaje de
-             la esquina derecha (en el ESCENARIO BFMIDI y en el ESCENARIO ESPECIAL; se oculta con la
-             barra abierta y con el bloqueo táctil cerrado).
+             unos segundos. En la esquina derecha hay tres botones redondos, sin necesidad de abrir
+             la barra: ESCENARIO ↔ SETLIST (cambia entre el escenario y la pantalla del setlist), el
+             engranaje (la configuración del escenario) y VOLVER A LA APP (cierra el escenario).
+             Aparecen en los dos escenarios y en el setlist, y se ocultan con la barra abierta y con
+             el bloqueo táctil cerrado.
 Observaciones:
 - Encender y apagar footswitches desde el escenario requiere la controladora actualizada. Con
    firmware antiguo el ícono avisa “Actualice la controladora para usarlo”.
@@ -1286,9 +1288,9 @@ Campos e ítems:
   Descripción: Con el panel abierto, tocar un ícono todavía enciende y apaga el efecto — se oye el
              cambio al instante. El footswitch que se está editando tiene un contorno.
 - Mantener el ícono (opción) (configuración)
-  Descripción: En CONFIGURACIÓN del escenario › ESCENARIO BFMIDI, Mantener el ícono viene en EDITAR
-             EL FOOTSWITCH. Con Accionar footswitch desde la pantalla en MANTENER, mantener ya es
-             del footswitch y esta opción queda apagada.
+  Descripción: En CONFIGURACIÓN del escenario › AJUSTES › Activar con, Mantener el ícono viene en
+             EDITAR EL FOOTSWITCH. Con los footswitches activados por MANTENER, mantener ya es del
+             footswitch y esta opción queda apagada.
 Observaciones:
 - En el ESCENARIO ESPECIAL del Kemper los bloques son los del rig, no los footswitches: allí,
    mantener un bloque enciende o apaga el efecto.
@@ -1307,9 +1309,9 @@ Campos e ítems:
 - PRESET A1 (información)
   Descripción: El banco y el preset que están sonando en la controladora.
 - AJUSTES (botón)
-  Descripción: Abre la configuración del escenario, en un panel lateral con seis categorías. El
-             engranaje de la esquina derecha del escenario hace lo mismo sin abrir la barra. Mira
-             las tarjetas siguientes.
+  Descripción: Abre la configuración del escenario, en un panel lateral con siete pestañas. El
+             engranaje de la esquina derecha del escenario hace lo mismo sin abrir la barra, junto a
+             los botones ESCENARIO ↔ SETLIST y VOLVER A LA APP. Mira las tarjetas siguientes.
 - Conexión, BPM y reloj (estado)
   Descripción: Cómo estás conectado (STA, AP o USB), el BPM del último TAP TEMPO marcado en la
              BFMiDi y, si lo activas, el reloj. Sin pedal, la conexión se convierte en el botón
@@ -1442,123 +1444,120 @@ Campos e ítems:
              nuevo; si el modelo nuevo no tiene ese control, su lugar muestra No existe en este
              modelo y vuelve solo cuando el control exista de nuevo.
 
-7.8. Configuración del escenario — GENERAL
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Pantalla/vista relacionada: CONFIGURACIÓN DEL ESCENARIO — GENERAL
-Objetivo: Lo que aparece en los dos escenarios y cómo se comporta la pantalla. La configuración abre
-          en un panel al lado del escenario: la vista previa muestra cada cambio al instante, cada
-          opción tiene una miniatura de lo que cambia y tocar un área de la vista previa abre sus
-          opciones. DESHACER revierte el último cambio y MÁS OPCIONES muestra las menos usadas.
+7.8. Configuración del escenario — APARIENCIA
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Pantalla/vista relacionada: CONFIGURACIÓN DEL ESCENARIO — APARIENCIA
+Objetivo: La configuración abre en un panel al lado del escenario, en siete pestañas: APARIENCIA,
+          BFMIDI, ESPECIAL, SETLIST, IMÁGENES, AJUSTES y PERFILES. Cada opción es una tarjeta con el
+          dibujo del escenario: la pieza que cambia queda encendida, con un contorno, y el resto
+          queda apagado. La vista previa al lado muestra el cambio al instante, y tocar un área de
+          la vista previa abre sus opciones. DESHACER revierte el último cambio, el ⓘ muestra más
+          detalles y MÁS OPCIONES guarda las menos usadas. APARIENCIA es la cara del escenario.
 Campos e ítems:
-- Barra de presets de la BFMIDI (barra)
-  Descripción: La fila para cambiar de preset, en los dos escenarios. Los botones muestran NÚMERO +
-             NOMBRE, SOLO NÚMERO o SOLO NOMBRE. En MÁS OPCIONES: la posición (ABAJO, ARRIBA o AL
-             COSTADO), la altura (P, M, G), el color (el LED de cada preset o el color de acento) y
-             cómo se llama el preset desde la pantalla — UN TOQUE o MANTENER, para no cambiar sin
-             querer.
-- Conexión, BPM y reloj (interruptores)
-  Descripción: Lo que muestra la barra de arriba. El reloj viene apagado.
-- Mantener la pantalla encendida (interruptor)
-  Descripción: Le pide al celular o a la tablet que no apague la pantalla mientras el escenario esté
-             abierto (en los equipos y navegadores que lo permiten). Activado por defecto.
-- Vibrar al tocar (interruptor)
-  Descripción: Una vibración corta confirma el toque, en los aparatos que vibran.
-- Rendimiento (opción)
-  Descripción: AUTOMÁTICO (predeterminado) elige según el aparato; LIGERO quita desenfoque, brillos
-             y animaciones, para celulares más lentos o para ahorrar batería; COMPLETO mantiene
-             todo.
-- Bloqueo táctil (seguridad)
-  Descripción: En MANTENER PARA DESBLOQUEAR el escenario abre bloqueado: los toques en footswitch,
-             preset, bloque y knob no hacen nada. Mantén el candado de la esquina para desbloquear;
-             8 segundos después del último toque se bloquea de nuevo (una línea abajo muestra el
-             tiempo).
-- Barra superior y animación (tiempo)
-  Descripción: Cuánto tiempo queda visible la barra superior: 2, 4 u 8 segundos, o FIJA (siempre
-             visible, con el escenario empezando debajo). Y la animación del nombre al cambiar de
-             preset: NINGUNA, SUAVE o MARQUESINA.
+- Visuales listos (tarjetas)
+  Descripción: PREDETERMINADO, ALTO CONTRASTE, OLED NEGRO, ÁMBAR, NEÓN, ACERO, COLOR DEL PRESET y
+             LIMPIO. Un toque cambia fondo, acento, fuente, esquinas y paneles de una vez; los
+             layouts y las imágenes no cambian, y DESHACER lo revierte.
+- ¿Quién define el aspecto del ESCENARIO ESPECIAL? (tarjetas)
+  Descripción: EL PEDAL: cada aparato con sus colores y su estilo. YO: el fondo, el acento y la
+             letra elegidos en esta pestaña. O un panel que imita un aparato de verdad, hecho solo
+             con dibujo: ALUMINIO (pedal boutique), VINTAGE (amplificador con panel dorado) o RACK
+             (aluminio negro, display ámbar). En PERSONALIZAR está “el pedal con mi fondo y acento”.
+- Fondo y oscurecer la imagen (colores)
+  Descripción: Ocho fondos listos, LIBRE (dos colores a elección) e IMAGEN (la imagen del escenario
+             en toda la pantalla, elegida en la pestaña IMÁGENES). Con imagen, Oscurecer la imagen:
+             NO, UN POCO, MEDIO o MUCHO — la misma escala de la imagen del encabezado del ESCENARIO
+             BFMIDI (en MÁS OPCIONES).
+- Color de acento y colores del LED (colores)
+  Descripción: Nueve colores y el libre (tono, saturación y brillo). Los colores siguen el LED del
+             preset: NO, SOLO EL ACENTO o FONDO Y ACENTO — la pantalla cambia de color junto con el
+             anillo en cada cambio de preset.
+- Letra, tamaño y nombre del preset (texto)
+  Descripción: Fuentes del propio sistema (Predeterminada, Redondeada, Estrecha, Mono, Serif) y dos
+             que vienen dentro de las apps: BIG SHOULDERS (condensada) y LED (DSEG14), que imita un
+             display de segmentos y vale solo para los nombres y números grandes. No se descarga
+             nada: el escenario abre sin internet; VER LAS LICENCIAS DE LAS FUENTES muestra la
+             licencia de cada una. Tamaño de los textos: P, M, G, GG. Nombre del preset: tamaño,
+             alineación y la animación al cambiar de preset (NINGUNA, SUAVE o MARQUESINA).
+- Alto contraste y más opciones (estilo)
+  Descripción: Alto contraste deja todo en blanco y negro fuertes, para escenario abierto y sol. En
+             MÁS OPCIONES: paneles (SÓLIDOS, de VIDRIO o SIN PANEL), esquinas, brillo de los
+             elementos activos y el color de los bloques del ESCENARIO ESPECIAL (el del aparato o el
+             de acento).
 Observaciones:
-- Todo en la configuración del escenario se guarda solo en esta app, en este aparato. RESTAURAR
-   PREDETERMINADO vuelve a los ajustes de fábrica sin borrar las imágenes elegidas.
+- Peso de la letra, mayúsculas, contorno, espaciado y líneas del nombre salieron de la pantalla: los
+   visuales listos todavía los usan, y quien había cambiado alguno lo encuentra en MÁS OPCIONES, con
+   el aviso de que no está en el valor estándar.
 
-7.9. Configuración del escenario — VISUAL
+7.9. Configuración del escenario — BFMIDI
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Pantalla/vista relacionada: CONFIGURACIÓN DEL ESCENARIO — VISUAL
-Objetivo: El aspecto del escenario: fondo, color de acento, fuente, tamaño de los textos, esquinas y
-          paneles.
-Campos e ítems:
-- Fondo y color de acento (colores)
-  Descripción: Ocho fondos listos y el PERSONALIZADO, con dos colores a elección (arriba y abajo).
-             Nueve colores de acento y el color libre, ajustado por matiz, saturación y brillo. Los
-             dos también pueden seguir el color del LED del preset — la pantalla cambia de color en
-             cada cambio de preset. El fondo también puede ser la IMAGEN del escenario a pantalla
-             completa (la elegida en la categoría IMÁGENES), oscurecida un poco, medio o mucho para
-             que el texto siga legible.
-- Fuente y nombre del preset (texto)
-  Descripción: Fuente Estándar, Redondeada, Estrecha, Mono o Con serifa — todas del propio sistema —
-             y dos que vienen dentro de las apps: BIG SHOULDERS (condensada, de escenario) y LED
-             (DSEG14), que imita un display de segmentos y vale solo para los nombres y números
-             grandes. No se descarga nada: el escenario abre sin internet. El botón VER LAS
-             LICENCIAS DE LAS FUENTES muestra la licencia de cada una. Peso de los títulos, tamaño
-             de los textos (P, M, G, GG) y nombres en mayúsculas. El nombre del preset tiene ajustes
-             propios: tamaño, alineación (izquierda, centro, derecha) y número de líneas (1 a 3).
-- Paneles, brillo y contraste (estilo)
-  Descripción: Paneles SÓLIDOS, de VIDRIO o SIN PANEL (solo el contenido sobre el fondo); brillo de
-             los elementos activos SIN, SUAVE o FUERTE; esquinas rectas, suaves o redondas;
-             contorno; y espaciado justo, normal o amplio. Alto contraste deja todo en negro y
-             blanco fuertes, para escenario al aire libre y sol.
-
-7.10. Configuración del escenario — ESCENARIO BFMIDI
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Pantalla/vista relacionada: CONFIGURACIÓN DEL ESCENARIO — ESCENARIO BFMIDI
+Pantalla/vista relacionada: CONFIGURACIÓN DEL ESCENARIO — BFMIDI
 Objetivo: Cómo el ESCENARIO BFMIDI organiza el nombre, la imagen y los footswitches.
 Campos e ítems:
-- Diseño de la pantalla (diseño)
-  Descripción: Ocho formas de organizar el escenario: CLÁSICO (nombre e imagen arriba, footswitches
+- Layout de la pantalla (layout)
+  Descripción: Seis formas de organizar el escenario: CLÁSICO (nombre e imagen arriba, footswitches
              y presets abajo), MARQUESINA (el nombre ocupa la pantalla; los footswitches se vuelven
              una franja de LEDs), PEDALERA (footswitches grandes en dos filas, en el orden del
-             pedal), COLUMNA (los presets del banco en lista al costado, con el nombre completo),
-             SECUENCIA (el preset anterior y el siguiente al lado del actual; tocar lo llama), TEMPO
-             (el BPM en grande y el reloj), MÍNIMO (solo el preset) y PÓSTER (la imagen del
-             escenario a pantalla completa, con el nombre encima y sin paneles). Cada tarjeta
-             muestra un dibujo del diseño. Las opciones que no valen en el diseño elegido quedan
-             apagadas, con el motivo.
-- Imagen y Diseño de arriba (imagen)
-  Descripción: Con la imagen encendida, elige LADO A LADO (nombre de un lado, imagen del otro — con
-             el lado de la imagen y el espacio del nombre de 25 a 75%, en un control deslizante) o
-             NOMBRE SOBRE LA IMAGEN. En MÁS OPCIONES: el borde de la imagen (difuminado o recto) y
-             oscurecer la imagen (no, un poco, mucho), para que el nombre se lea mejor.
-- Imagen siempre del PRESET (interruptor)
-  Descripción: Activada (por defecto), la imagen del escenario es el fondo de la pantalla PRESET
-             incluso con el pedal en LIVE. Desactivada, en LIVE aparece el fondo de la pantalla
-             LIVE. Solo vale cuando la imagen viene del display de la controladora.
+             pedal), SECUENCIA (el preset anterior y el siguiente al lado del actual; tocar lo
+             llama), TEMPO (el BPM en letra grande y el reloj) y MÍNIMO (solo el preset). Los
+             presets en lista al costado son el CLÁSICO con la barra de presets AL COSTADO (pestaña
+             AJUSTES), y la imagen en toda la pantalla es el fondo IMAGEN de APARIENCIA.
+- Imagen del encabezado (imagen)
+  Descripción: A LA DERECHA, A LA IZQUIERDA, DETRÁS DEL NOMBRE o SIN IMAGEN. Con la imagen al
+             costado, Espacio del nombre divide el encabezado de 25 a 75%. Oscurecer la imagen del
+             encabezado está en APARIENCIA, en MÁS OPCIONES.
+- Qué muestran los footswitches (opción)
+  Descripción: ÍCONOS DEL LIVE, como el display, o FONDOS DE LOS PRESETS: cada footswitch muestra el
+             fondo del preset del mismo número, y tocarlo llama ese preset.
 - Footswitches (disposición y forma)
-  Descripción: Disposición: UNA FILA (en orden, 1 a 6), COMO EN EL PEDAL (dos filas, imitando la
-             controladora) o EN COLUMNA (al lado del nombre). Tamaño en cinco pasos (PP a GG).
-             Forma: COMO EN EL DISPLAY, CÍRCULO o SOLO LED (un anillo del color del LED con el
-             nombre). En MÁS OPCIONES, la leyenda bajo cada ícono: el MODO del footswitch o el
-             COMANDO que envía.
-- Qué mostrar (interruptores)
-  Descripción: MODO PRESET / LIVE, el modo amigable, la etiqueta del preset (A1: pequeña, grande u
-             oculta), el número de los footswitches y la barra del LED.
-- Footswitches apagados (opción)
-  Descripción: NORMALES, OSCURECIDOS (lo encendido salta a la vista) u OCULTOS — desaparece el ícono
-             y queda solo el número, para que la pantalla muestre apenas lo encendido.
-- Accionar footswitch desde la pantalla (opción)
-  Descripción: UN TOQUE (predeterminado), MANTENER — el footswitch solo se acciona tras medio
-             segundo con el dedo en la pantalla, para no accionarlo sin querer — o APAGADO: los
-             íconos solo muestran el estado, útil cuando el celular queda al alcance de otras
-             personas en el escenario.
-- Mantener el ícono (elección)
-  Descripción: EDITAR EL FOOTSWITCH (por defecto): mantener un ícono abre su configuración MIDI al
-             lado del escenario — mira Editar un footswitch sin salir del escenario.
+  Descripción: Disposición: UNA FILA (1 a 6), COMO EN EL PEDAL (dos filas) o EN COLUMNA (al lado del
+             nombre). Tamaño P, M, G. Forma: COMO EN EL DISPLAY, CÍRCULO o SOLO LED. Apagados:
+             NORMALES, OSCURECIDOS (lo que está encendido resalta) u OCULTOS.
+- Mostrar en pantalla (chips numerados)
+  Descripción: El número de los footswitches, la barra del LED, MODO PRESET / LIVE y el modo
+             amigable. Cada número del chip señala la pieza en el dibujo; apagada, la pieza queda
+             punteada. En MÁS OPCIONES: la leyenda debajo de cada ícono (el MODO o el COMANDO) y la
+             etiqueta A1 (pequeña u oculta).
+Observaciones:
+- Activar el footswitch con un toque o manteniendo, y mantener el ícono para editarlo, están en la
+   pestaña AJUSTES, en Activar con.
+
+7.10. Configuración del escenario — ESPECIAL
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Pantalla/vista relacionada: CONFIGURACIÓN DEL ESCENARIO — ESPECIAL
+Objetivo: Cómo el ESCENARIO ESPECIAL muestra la cadena y los knobs del aparato.
+Campos e ítems:
+- Layout de la pantalla (layout)
+  Descripción: COMPLETO (preset, cadena de efectos y knobs), SOLO LA CADENA (bloques grandes;
+             mantener enciende y apaga), SOLO EL PRESET (el nombre en letra gigante), CADENA LATERAL
+             (la cadena en columna y los knobs al lado — pide pantalla de tablet o computadora) y
+             FAVORITOS (hasta ocho controles de cualquier bloque, fijos en la pantalla). El Kemper
+             sigue la misma elección; en él, CADENA LATERAL y FAVORITOS pasan a COMPLETO.
+- Knobs (tamaño, estilo y disposición)
+  Descripción: Tamaño P, M, G. Estilo: ARCO, PUNTERO, CHICKEN HEAD, BARRA vertical o NÚMERO grande.
+             Valor DEBAJO o DENTRO del knob. Los que no caben: EN FILA (páginas con flechas) o TODOS
+             A LA VISTA.
+- Mostrar en pantalla (chips numerados)
+  Descripción: El número del preset del aparato, el botón GUARDAR (quien no quiere arriesgarse a
+             grabar en el escenario puede quitarlo) y las siglas de los bloques.
+- Más opciones (ajustes)
+  Descripción: Imagen detrás del preset (la imagen del escenario detrás del nombre del preset del
+             aparato); bloque abierto al entrar (el AMP, EL ÚLTIMO que abriste o EL PRIMERO
+             ENCENDIDO); sensibilidad del arrastre de los knobs (fino, normal, rápido); y ajustes
+             por aparato — el layout y los knobs guardados para cada pedal (la pista de cada opción
+             dice a qué aparato vale).
+Observaciones:
+- El aspecto del ESCENARIO ESPECIAL (los colores del aparato, los tuyos o un panel realista) está en
+   APARIENCIA, en Quién define el aspecto. El tiempo para mantener y encender o apagar un bloque
+   está en AJUSTES, en Activar con.
 
 7.11. Las imágenes del escenario
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Pantalla/vista relacionada: IMAGEN DEL ESCENARIO Y RECORTE
-Objetivo: En las apps y en el sitio, el fondo del ESCENARIO BFMIDI puede ser la imagen de la
-          controladora, una imagen de la galería de la app o una foto tuya. El recorte vale en
-          cualquier caso. La misma imagen es la del fondo a pantalla completa, del diseño Póster y
-          de la opción Imagen detrás del preset.
+Objetivo: En las apps y en el sitio, la imagen del escenario puede ser la de la controladora, una de
+          la galería de la app o una foto tuya. El recorte vale en cualquier caso. La misma imagen
+          es la del encabezado del ESCENARIO BFMIDI, la del fondo de pantalla completa (APARIENCIA ›
+          Fondo: IMAGEN) y la de la opción Imagen detrás del preset.
 Cómo hacerlo:
 1. En AJUSTES, abre la categoría IMÁGENES.
 2. Elige si vale para TODOS LOS PRESETS o SOLO A1 (el preset actual).
@@ -1577,12 +1576,51 @@ Campos e ítems:
 - Recorte (ajuste)
   Descripción: Cada imagen guarda su propio encuadre: arrastra para elegir el punto, usa el zoom
              (100 a 300%) y CENTRAR para volver al centro.
+- Siempre la imagen de la pantalla PRESET (interruptor)
+  Descripción: Activada (predeterminado), la imagen del escenario es el fondo de la pantalla PRESET
+             aun con el pedal en LIVE. Desactivada, en LIVE aparece el fondo de la pantalla LIVE.
+             Solo vale cuando la imagen viene del display de la controladora.
 
-7.12. Perfiles y visuales listos
+7.12. Configuración del escenario — AJUSTES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Pantalla/vista relacionada: CONFIGURACIÓN DEL ESCENARIO — AJUSTES
+Objetivo: Cómo se comporta la pantalla y cómo se toca, en los dos escenarios.
+Campos e ítems:
+- Barra de presets de la BFMIDI (barra)
+  Descripción: La fila para cambiar de preset, en los dos escenarios. Activada, elige qué muestran
+             los botones (NÚMERO + NOMBRE, SOLO NÚMERO o SOLO NOMBRE), la posición (ABAJO, ARRIBA o
+             AL COSTADO) y el tamaño (P, M, G).
+- Activar con (seguridad)
+  Descripción: UN TOQUE o MANTENER, para no cambiar de preset ni activar un footswitch sin querer —
+             vale para la barra de presets y para los footswitches de la pantalla (PERSONALIZAR
+             separa los dos y tiene DESACTIVADO, en el que los footswitches solo muestran el
+             estado). Tiempo para mantener: 0,3 s, 0,45 s (predeterminado), 0,7 s o 1 s — el mismo
+             para presets, footswitches y encender/apagar los bloques del ESCENARIO ESPECIAL.
+             Mantener el ícono: EDITAR EL FOOTSWITCH abre su configuración MIDI al lado del
+             escenario.
+- Bloqueo táctil (seguridad)
+  Descripción: En MANTENER PARA DESBLOQUEAR el escenario abre bloqueado: los toques en footswitch,
+             preset, bloque y knob no hacen nada. Mantén el candado de la esquina para desbloquear;
+             8 segundos después del último toque se bloquea de nuevo (una línea abajo muestra el
+             tiempo).
+- Barra superior (chips y tiempo)
+  Descripción: Lo que muestra la barra superior: conexión, BPM y reloj (el reloj viene apagado). Y
+             cuánto tiempo queda a la vista: 2, 4 u 8 segundos, o FIJA (siempre visible, con el
+             escenario empezando debajo de ella).
+- Aparato (interruptores)
+  Descripción: Mantener la pantalla encendida (activado por defecto, en los equipos y navegadores
+             que lo permiten), Vibrar al tocar y Rendimiento: AUTOMÁTICO (predeterminado) elige
+             según el aparato; LIGERO quita desenfoque, brillos y animaciones, para celulares más
+             lentos o para ahorrar batería; COMPLETO mantiene todo.
+Observaciones:
+- Todo en la configuración del escenario se guarda solo en esta app, en este aparato. RESTAURAR
+   PREDETERMINADO vuelve a los ajustes de fábrica sin borrar las imágenes elegidas.
+
+7.13. Perfiles y visuales listos
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Pantalla/vista relacionada: PERFILES Y VISUALES LISTOS
 Objetivo: Guarda hasta seis formas de dejar el escenario (Ensayo, Show, Estudio) y pasa de una a
-          otra con un toque. Los visuales listos cambian colores, fuente y paneles de una vez.
+          otra con un toque. Los visuales listos están en APARIENCIA.
 Cómo hacerlo:
 1. En AJUSTES, abre la categoría PERFILES.
 2. Toca NUEVO (empieza del predeterminado) o DUPLICAR (copia del perfil marcado) y luego RENOMBRAR
@@ -1602,63 +1640,6 @@ Campos e ítems:
 - Borrar (botón)
   Descripción: Pide un segundo toque (¿BORRAR DE VERDAD?) y borra el perfil marcado. El último
              perfil no se puede borrar.
-- Visuales listos (tarjetas)
-  Descripción: PREDETERMINADO, ALTO CONTRASTE, OLED NEGRO, ÁMBAR, NEÓN, ACERO, COLOR DEL PRESET
-             (fondo y acento siguen el color del LED del preset) y LIMPIO. Un toque cambia fondo,
-             acento, fuente, esquinas y paneles del perfil marcado; los diseños y las imágenes no
-             cambian, y DESHACER vuelve atrás.
-
-7.13. Configuración del escenario — ESCENARIO ESPECIAL
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Pantalla/vista relacionada: CONFIGURACIÓN DEL ESCENARIO — ESCENARIO ESPECIAL
-Objetivo: Cómo el ESCENARIO ESPECIAL muestra la cadena y los knobs del aparato.
-Campos e ítems:
-- Diseño de la pantalla (diseño)
-  Descripción: Seis formas de organizar el escenario del pedal: COMPLETO (preset, cadena de efectos
-             y knobs), SOLO LA CADENA (bloques grandes; mantener enciende y apaga), SOLO LOS KNOBS,
-             SOLO EL PRESET (el nombre en letras gigantes) y CADENA LATERAL (la cadena en columna y
-             los knobs al lado — pide pantalla de tablet o computadora), además de FAVORITOS (hasta
-             ocho controles de cualquier bloque, fijos en la pantalla). El Kemper tiene su propia
-             elección, con los mismos COMPLETO, SOLO LA CADENA y SOLO LOS KNOBS y además SOLO EL
-             RIG.
-- Modo visual: ESTÁNDAR, ALUMINIO, VINTAGE o RACK (visual)
-  Descripción: En el ESCENARIO ESPECIAL, tres aspectos que imitan equipos de verdad, hechos solo con
-             dibujo (sin imágenes): ALUMINIO (pedal boutique: chapa cepillada con tornillos, knobs
-             negros, bloques como pedalitos pintados), VINTAGE (amplificador: tolex con ribete
-             crema, panel dorado, knobs con tapa dorada) y RACK (unidad de rack: aluminio negro,
-             display ámbar, knobs con anillo de LED, botones de goma iluminados). Cada uno cambia
-             los paneles, los knobs, los interruptores y los bloques de la cadena. Con uno de ellos
-             el Estilo de los knobs queda apagado; con el alto contraste activado vale ESTÁNDAR. El
-             ESCENARIO BFMIDI y el setlist no cambian. En las apps y en el sitio.
-- Aspecto del aparato (tema)
-  Descripción: Encendido, cada aparato usa sus propios colores y su estilo. Apagado, el ESCENARIO
-             ESPECIAL sigue la categoría VISUAL. Con Con mi fondo y acento encendido, quedan la
-             fuente y el dibujo del pedal, pero el fondo y el color de acento son los de la
-             categoría VISUAL.
-- Siglas y color de los bloques (cadena)
-  Descripción: Mostrar o no las siglas en los bloques, y si los bloques usan el color del aparato o
-             el color de acento. (Mostrar u ocultar la cadena ahora es el Diseño de la pantalla.)
-- Knobs (tamaño, estilo y disposición)
-  Descripción: Tamaño (P, M, G); estilo: ocho knobs (ARCO, PUNTERO, LEDS, ANILLO, COLOR, METAL,
-             VINTAGE y CHICKEN HEAD), BARRA vertical o NÚMERO grande; disposición: EN LÍNEA (con
-             flechas para los que no caben) o TODOS A LA VISTA. En MÁS OPCIONES: dónde aparece el
-             valor (abajo, arriba o dentro del knob) y la sensibilidad del arrastre (fino, normal,
-             rápido).
-- Mantener para encender/apagar (tiempo)
-  Descripción: Cuánto tiempo debe quedar el dedo en el bloque para encender o apagar el efecto: 0,3
-             s, 0,45 s (predeterminado), 0,7 s o 1 s.
-- Botón de guardar y número del preset (interruptores)
-  Descripción: Muestra u oculta el disquete del encabezado — quien no quiera arriesgarse a guardar
-             en el escenario puede quitarlo — y el número del preset del aparato. Imagen detrás del
-             preset pone la imagen del escenario detrás del nombre del preset del aparato.
-- Ajustes por aparato (interruptor)
-  Descripción: Encendido, el diseño de la pantalla y el tamaño, el estilo y la disposición de los
-             knobs se guardan para cada pedal (TONEX ONE, Nano Cortex, GP-5): la TONEX puede abrir
-             en Solo los knobs y la GP-5 en Completo. La pista de cada opción dice para qué aparato
-             vale.
-- Bloque abierto al entrar (opción)
-  Descripción: Qué bloque ya aparece con los knobs cuando abre el Escenario Especial: el AMP, EL
-             ÚLTIMO que abriste en ese aparato o EL PRIMERO ENCENDIDO de la cadena.
 
 7.14. En el celular y la tablet
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1809,6 +1790,29 @@ Cómo hacerlo:
 5. Más acordes trae los tipos (m, 7, 7M, sus4…), las 12 notas y un campo para escribir cualquier
    acorde — con bajo (D/F#), N.C. o %.
 Campos e ítems:
+- HOJA (letra y acordes en líneas) (texto)
+  Descripción: En MÁS OPCIONES › Esta parte muestra (o en la ficha, en EN EL ESCENARIO, para toda la
+             canción) elige HOJA. La tarjeta 3 pasa a ser un campo de texto de ancho fijo: escribe o
+             pega la parte en líneas, con la línea de acordes sobre la línea de la letra, como una
+             hoja de acordes. Puedes pegar directo desde un sitio de acordes: los caracteres
+             invisibles que vienen junto se quitan. En el escenario la letra sale grande y cada
+             acorde se vuelve una etiqueta sobre la sílaba donde cae (la primera de la pantalla,
+             llena); solo las líneas de acordes siguen el cambio de tono. Una línea solo con ---
+             empieza otra pantalla.
+             Si venías de ACORDES, los acordes de la parte ya están al principio de la hoja; los
+             cuadros de acordes siguen guardados.
+- Líneas por pantalla (opción)
+  Descripción: Cuántas líneas de la hoja aparecen cada vez en el escenario: 2, 3, 4, 6, 8, 10, 12 o
+             16. La letra llena la altura del área, así que menos líneas = letra más grande y más
+             pantallas. Un estribillo de 12 líneas con 4 por pantalla son 3 pantallas, iguales en
+             cualquier aparato. El editor muestra cuántas pantallas tiene la parte. AUTO usa el
+             número de los ajustes del escenario (SETLIST › Líneas por pantalla).
+             La línea de acordes nunca se separa de la línea de letra de abajo, y la letra se reduce
+             sola si una línea es demasiado larga.
+- Acordes por pantalla (opción)
+  Descripción: En una parte en ACORDES, en MÁS OPCIONES: 4, 8, 12, 16 o 24 cuadros por pantalla
+             (AUTO = hasta 24). Menos acordes = cuadros más grandes y más pantallas. Una parte con
+             más acordes de los que caben ya no se desplaza: se divide en pantallas.
 - Notas personales (texto)
   Descripción: En una parte en NOTAS PERSONALES, el teclado de acordes da lugar a un campo de texto
              libre: letra, recordatorio, entrada.
@@ -1894,25 +1898,49 @@ Cómo hacerlo:
    fondo (claro, color de la parte, destaque, oscuro o sin fondo) y, en MÁS OPCIONES, el color del
    texto.
 Campos e ítems:
-- Diseño de la pantalla (4 opciones)
+- Pantallas de la parte (‹ 2/3 ›) (botón)
+  Descripción: Cuando la parte no cabe en una pantalla (hoja larga, muchos acordes), aparece debajo
+             de las notas una franja con flechas, puntos y el número de pantalla. Pasa las pantallas
+             con las flechas, con las teclas Page Down / Page Up o → / ← (un pedal Bluetooth de
+             pasar página envía esas teclas) o con el pie: pon SETLIST NEXT PAGE y SETLIST PREV PAGE
+             en un footswitch (comandos especiales, al final de la lista de CC). En una parte en
+             NOTAS PERSONALES el mismo comando desplaza el texto.
+             Cambiar de parte vuelve a la primera pantalla.
+- TONO (tono en el escenario) (botón)
+  Descripción: En el encabezado, la cápsula − TONO +: cada toque en − o + sube o baja medio tono lo
+             que muestra la pantalla (los cuadros de acordes, las líneas de acordes de la hoja y el
+             tono del encabezado, que pasa a decir por ejemplo “Tono G (+2)”). La canción guardada
+             no cambia: es para la noche en que la banda toca en otro tono. Tocar en TONO abre la
+             ventana con VOLVER AL ORIGINAL, que lo deshace. El mismo ajuste está en la ficha, en
+             DETALLES › Tono en el escenario; allí también están −½ y +½, que reescriben la canción.
+- Líneas por pantalla (hoja) y el final de las pantallas (opción)
+  Descripción: En los ajustes del escenario, categoría SETLIST. Líneas por pantalla (hoja): 4 a 16,
+             vale para las partes en AUTO. En la última pantalla, SIGUIENTE PANTALLA…: PARA (por
+             defecto), VA A LA PARTE SIGUIENTE (un solo pie recorre toda la canción: pasa las
+             pantallas y, en la última, llama a la parte siguiente) o VUELVE A LA 1ª.
+- Diseño de la pantalla (5 opciones)
   Descripción: COMPLETO (canción, franja de partes, notas y pie), PARTES AL LADO (las partes en una
              columna, las notas a la derecha — necesita pantalla ancha), NOTAS GRANDES (la canción
-             en una sola línea y las notas ocupando la mayor parte de la pantalla) y SOLO LAS PARTES
-             (las tarjetas de las partes ocupan la pantalla, sin notas).
+             en una sola línea y las notas ocupando la mayor parte de la pantalla) , SOLO LAS PARTES
+             (las tarjetas de las partes ocupan la pantalla, sin notas) y LETRA Y CIFRA (la canción
+             en una línea, la hoja ocupando la mayor parte de la pantalla y las partes en una barra
+             baja abajo — hecho para la HOJA).
 - Parte que está sonando (animación, velocidad y marcas)
-  Descripción: La tarjeta de la parte que está sonando se mueve para quedar evidente de lejos.
-             Animación: BRILLO (el halo se enciende y se apaga; es el estándar), CONTORNO (un trazo
-             de luz corre alrededor), BARRIDO (una franja de luz cruza la tarjeta), RESPIRAR (la
-             tarjeta crece y vuelve) o SIN. VU pone pocas barras lisas y discretas en el color de la
-             parte EN LA ESQUINA de la tarjeta o EN TODO EL BLOQUE, detrás del texto, junto con
-             cualquier animación. Velocidad: LENTA, NORMAL o RÁPIDA (también para el VU). Marca
-             AHORA pone la etiqueta en la parte actual, y Apagar las otras partes oscurece las que
-             no están sonando. La miniatura de cada opción muestra el efecto. Con "reducir
-             movimiento" activado en el aparato, la parte solo queda encendida.
-- Tamaños y lo que aparece (opciones)
-  Descripción: Tamaño de las notas y de las partes; artista, tono y BPM; el preset de cada parte; el
-             pie con las canciones vecinas (apagado, la lista del setlist pasa a la cabecera); y, en
-             MÁS OPCIONES, el número de la canción y la marca A CONTINUACIÓN.
+  Descripción: Cuatro formas listas de dejar la parte actual evidente de lejos: SIN, DISCRETO
+             (brillo lento), DESTACADO (el predeterminado: el halo se enciende y se apaga, con la
+             marca AHORA) y SHOW (un trazo de luz corre alrededor, pocas barras de VU en la esquina
+             y las otras partes apagadas). PERSONALIZAR abre cada pieza: el efecto (BRILLO,
+             CONTORNO, BARRIDO o SIN), la velocidad, el VU (en la esquina o en todo el bloque), la
+             marca AHORA y apagar las otras partes. Con “reducir movimiento” activado en el aparato,
+             la parte solo queda encendida.
+- Tamaño de la letra y lo que aparece (opciones)
+  Descripción: Tamaño de la letra: uno solo para las notas, la letra y los acordes de la hoja y la
+             franja de la letra. Mostrar en pantalla (chips numerados): artista, tono y BPM; el
+             preset de cada parte; la marca A CONTINUACIÓN; el número de la canción y el nombre del
+             setlist; y el pie con las canciones vecinas (desactivado, la lista del setlist va al
+             encabezado). El fondo de la franja de la letra es claro, del color de la parte, oscuro
+             o sin fondo — el color del texto acompaña solo. En MÁS OPCIONES, el tamaño de las
+             tarjetas de las partes.
 
 7.22. Backup del setlist
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -2942,6 +2970,12 @@ Campos e ítems:
   Descripción: Al final de la lista, bajo ── SETLIST ──: avanzan por las partes y canciones del
              setlist abierto en el Modo Escenario de la app. Sin setlist abierto, no hacen nada. No
              necesitan canal. Mira Controlar el setlist con el pie en el capítulo Modo Escenario.
+- » SETLIST NEXT PAGE / PREV PAGE (comando)
+  Descripción: Pasan las pantallas de la parte que está en la pantalla del setlist de la app (la
+             hoja de acordes del estribillo en 3 pantallas, por ejemplo). La controladora solo avisa
+             a la app; sin el Modo Escenario abierto en el setlist, no hacen nada. No necesitan
+             canal. Lo que pasa en la última pantalla se elige en los ajustes del escenario (SETLIST
+             › En la última pantalla).
 - » STAGE / SETLIST SCREEN (comando)
   Descripción: También bajo ── SETLIST ──: cambia la pantalla del Modo Escenario entre el ESCENARIO
              y el SETLIST — cada toque alterna. Con el Modo Escenario cerrado, no hace nada. No
