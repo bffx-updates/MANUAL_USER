@@ -2372,7 +2372,9 @@ Campos e ítems:
 - GET NAMES (nombre en pantalla)
   Descripción: Muestra en la pantalla de la controladora el nombre del rig del Kemper (o del preset
              de la Nano Cortex) en lugar del nombre del preset de la BFMiDi. En la Nano, Cortex
-             Cloud tiene que estar desconectado.
+             Cloud tiene que estar desconectado. Con la Hotone Ampero II Stomp en el USB Host, la
+             tarjeta Ampero II Stomp tiene GET NAMES · AMPERO y SEGUIR LA AMPERO, que lleva la
+             controladora al preset que llama al preset cambiado en el pie de la Ampero.
 - SEGUIR EL KEMPER (Kemper)
   Descripción: Cuando cambias el rig en el propio Kemper, la controladora salta al preset que
              coincide.
@@ -3027,6 +3029,16 @@ Campos e ítems:
              parámetros de los FX) también aparecen por nombre en la lista de comandos de cualquier
              modo, marcados con ◇ — el footswitch mueve el knob en vivo, sin grabar en la Nano. Con
              el Cortex Cloud conectado por Bluetooth, la Nano rechaza la comunicación por USB.
+- Hotone Ampero II Stomp (integración)
+  Descripción: Conectada al USB Host: el editor de preset (cambiar efectos, encender y apagar
+             bloques, mover los knobs, guardar) y el escenario especial de la Ampero en el Modo
+             Escenario. Los parámetros de cada efecto aparecen en la lista de comandos de cualquier
+             modo, agrupados por tipo de efecto (DRIVE, DELAY, REVERB…) y con el nombre de cada
+             knob; el footswitch actúa sobre el primer efecto de ese tipo en la cadena del preset.
+             En CONFIGURACIÓN › MODO AMIGABLE › AVANZADO, GET NAMES · AMPERO muestra el nombre del
+             preset de la Ampero en la pantalla, y SEGUIR LA AMPERO lleva la controladora al preset
+             cuyo PC llama al preset cambiado en el pie de la Ampero. Requiere la controladora 15.18
+             y el USB Host 4.4.
 - ZOOM MS-70CDR, MS-50G y MS-60B (integración)
   Descripción: Estos MultiStomp solo tienen MIDI por USB: conéctalos al USB Host. La lista gana los
              presets (PC, PRESET 1 a 50), el afinador (CC 74: 127 enciende, 0 apaga) y, bajo ZOOM

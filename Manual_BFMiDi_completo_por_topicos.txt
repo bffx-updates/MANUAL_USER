@@ -2289,6 +2289,9 @@ Campos e itens:
 - GET NAMES (nome na tela)
   Descrição: Mostra na tela da controladora o nome do rig do Kemper (ou do preset da Nano Cortex) em
              vez do nome do preset da BFMiDi. Na Nano, o Cortex Cloud precisa estar desconectado.
+             Com a Hotone Ampero II Stomp no USB Host, o card Ampero II Stomp tem o GET NAMES ·
+             AMPERO e o SEGUIR A AMPERO, que leva a controladora ao preset que chama o preset
+             trocado no pé da Ampero.
 - SEGUIR O KEMPER (Kemper)
   Descrição: Quando você troca o rig no próprio Kemper, a controladora pula para o preset que casa.
 Observações:
@@ -2906,6 +2909,15 @@ Campos e itens:
              captura, gate e os parâmetros dos FX) também aparecem por nome na lista de comandos de
              qualquer modo, marcados com ◇ — o footswitch mexe no knob ao vivo, sem gravar na Nano.
              Com o Cortex Cloud conectado por Bluetooth, a Nano recusa a conversa pelo USB.
+- Hotone Ampero II Stomp (integração)
+  Descrição: Plugada no USB Host: o editor de preset (trocar efeito, ligar e desligar blocos, mexer
+             nos knobs, salvar) e o palco especial da Ampero no Modo Palco. Os parâmetros de cada
+             efeito aparecem na lista de comandos de qualquer modo, agrupados pelo tipo de efeito
+             (DRIVE, DELAY, REVERB…) e com o nome de cada knob; o footswitch age no primeiro efeito
+             daquele tipo que estiver na cadeia do preset. Em CONFIGURAÇÕES › MODO AMIGÁVEL ›
+             AVANÇADO, o GET NAMES · AMPERO mostra o nome do preset da Ampero na tela, e o SEGUIR A
+             AMPERO leva a controladora ao preset cujo PC chama o preset trocado no pé da Ampero.
+             Exige a controladora 15.18 e o USB Host 4.4.
 - ZOOM MS-70CDR, MS-50G e MS-60B (integração)
   Descrição: Esses MultiStomp só têm MIDI pela USB: ligue-os no USB Host. A lista ganha os presets
              (PC, PRESET 1 a 50), o afinador (CC 74: 127 liga, 0 desliga) e, sob ZOOM EFEITOS, os

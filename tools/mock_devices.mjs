@@ -33,6 +33,7 @@ const DT = await imp('device_editor_tables.js');
 const GP5 = await imp('gp5_models.js');
 const NCXM = await imp('nano_cortex_models.js');
 const KT = await imp('kemper_editor_tables.js');
+const AMPM = await imp('ampero_models.js');
 
 export const MOCK_STATUS = Symbol.for('bfmidi.mockStatus');
 const withStatus = (status, obj) => { obj[MOCK_STATUS] = status; return obj; };
@@ -234,6 +235,34 @@ function buildNanoValues(presetIdx) {
 }
 
 // ─── cache do editor (UsbHostEditorSlot) ─────────────────────────────────────
+// ─── HOTONE AMPERO II STOMP (kind 3) ─────────────────────────────────────────
+// Contrato em ampero_schema.js: slot*29 + (0 liga, 1 categoria, 2 tipo,
+// 3 numero, 4..28 parametros da cena), 348 cena, 349 volume, 350 tempo,
+// 351..362 ordem da cadeia. Os parametros nascem no padrao do app.
+const AMP_STRIDE = 29, AMP_COUNT = 363;
+function ampFirstAlg(module) { return AMPM.AMPERO_ALGS.findIndex((a) => a[1] === module); }
+function ampSetModel(v, s, row) {
+  const base = s * AMP_STRIDE;
+  for (let k = 1; k < AMP_STRIDE; k++) v[base + k] = k <= 3 ? -1 : 0;
+  if (row < 0) { v[base] = 0; return; }
+  const a = AMPM.AMPERO_ALGS[row];
+  const code = a[0] >>> 0;
+  v[base + 1] = a[1]; v[base + 2] = code >>> 24; v[base + 3] = code & 0xFFFFFF;
+  for (const prm of a[4]) v[base + 4 + prm[0]] = prm[5];
+}
+function buildAmperoValues() {
+  const v = new Array(AMP_COUNT).fill(0);
+  // DYN, DRV, AMP, CAB, EQ, MOD, DLY, RVB nos 8 primeiros slots; o resto vazio.
+  const mods = [0, 3, 4, 6, 8, 9, 10, 11];
+  for (let s = 0; s < 12; s++) {
+    ampSetModel(v, s, s < mods.length ? ampFirstAlg(mods[s]) : -1);
+    if (s < mods.length) v[s * AMP_STRIDE] = (s === 4 || s === 5) ? 0 : 1;
+  }
+  v[348] = 0; v[349] = 80; v[350] = 120;
+  for (let s = 0; s < 12; s++) v[351 + s] = s;
+  return v;
+}
+
 const FLAG_READY = 0x01, FLAG_DIRTY = 0x02, FLAG_SAVE_FAIL = 0x04, FLAG_LOST = 0x08,
   FLAG_INDEX = 0x10, FLAG_TIMEOUT = 0x20, FLAG_BUSY = 0x40;
 const EDITOR_DEFAULTS = {
@@ -241,6 +270,7 @@ const EDITOR_DEFAULTS = {
   '0:1': () => ({ preset: 7, name: 'Lead Boost', values: buildTonexValues(1) }),
   '1:0': () => ({ preset: 6, name: 'Blues Lead', values: buildGp5Values() }),
   '2:0': () => ({ preset: 2, name: 'Crunch', values: buildNanoValues(2) }),
+  '3:0': () => ({ preset: 4, name: 'Brit Crunch', values: buildAmperoValues() }),
 };
 function freshEditor(key) {
   const d = EDITOR_DEFAULTS[key]();
@@ -251,7 +281,7 @@ function freshEditor(key) {
     flags: FLAG_READY | FLAG_INDEX, dumps: 3, seq: 3, dumpMs: now - 1500, readMs: 0,
   };
 }
-const SAVE_NAME_MAX = { 1: 10, 2: 32 };
+const SAVE_NAME_MAX = { 1: 10, 2: 32, 3: 16 };
 
 // ─── Kemper Player ───────────────────────────────────────────────────────────
 // Secoes fixas: copia do KED_FIXED do kempereditor.jsx (so o que o mock usa).
@@ -403,6 +433,8 @@ const DEV_GP50 = { kind: 'midi', index: 0, port: 3, vid: '84EF', pid: '018A', re
   editor: true, manufacturer: 'Valeton', product: 'GP50', diag: '' };
 const DEV_TONEX = { kind: 'tonex', index: 0, port: 4, vid: '1963', pid: '00D1', ready: true, vendor: false,
   editor: true, manufacturer: 'IK Multimedia', product: 'TONEX ONE', diag: '' };
+const DEV_AMPERO = { kind: 'midi', index: 0, port: 0, vid: '84EF', pid: '0030', ready: true, vendor: false,
+  editor: true, manufacturer: 'Hotone', product: 'Ampero II Stomp Audio', diag: '' };
 const DEV_NANO = { kind: 'midi', index: 0, port: 0, vid: '152A', pid: '88E7', ready: true, vendor: false,
   editor: true, manufacturer: 'Neural DSP', product: 'Nano Cortex', diag: 'HID ok fw 2.2.1 #1' };
 // Segundo pedal USB MIDI comum, pra ver os filtros POR PEDAL (nov/2026): a
@@ -415,6 +447,7 @@ const SCENARIOS = {
   duo: { devices: [DEV_GP5, DEV_GP50_B, DEV_TONEX], kemper: true },
   gp50: { devices: [DEV_GP50, DEV_TONEX], kemper: true },
   nano: { devices: [DEV_NANO], kemper: true },
+  ampero: { devices: [DEV_AMPERO], kemper: false },
   kemper: { devices: [], kemper: true },
   none: { devices: [], kemper: false },
 };
@@ -541,7 +574,7 @@ function editorKey(a) {
   if (!has(a, 'kind') || !has(a, 'slot')) return { err: 'KIND/SLOT REQUIRED' };
   const kind = toInt(a.kind);
   const slot = toInt(a.slot);
-  if ((kind === 0 && (slot === 0 || slot === 1)) || ((kind === 1 || kind === 2) && slot === 0)) {
+  if ((kind === 0 && (slot === 0 || slot === 1)) || ((kind === 1 || kind === 2 || kind === 3) && slot === 0)) {
     return { kind, slot, key: `${kind}:${slot}` };
   }
   return { err: 'INVALID KIND/SLOT' };
@@ -550,7 +583,8 @@ function editorSupported(state, kind, slot) {
   return devicesNow(state).some((d) => d.editor && (
     (kind === 0 && d.kind === 'tonex' && d.index === slot)
     || (kind === 1 && d.kind !== 'tonex' && d.vid === '84EF' && (d.pid === '0184' || d.pid === '018A'))
-    || (kind === 2 && d.kind !== 'tonex' && d.vid === '152A' && d.pid === '88E7')));
+    || (kind === 2 && d.kind !== 'tonex' && d.vid === '152A' && d.pid === '88E7')
+    || (kind === 3 && d.kind !== 'tonex' && d.vid === '84EF' && d.pid === '0030')));
 }
 function editorParamsJson(state, kind, slot) {
   const e = state.editors[`${kind}:${slot}`];
@@ -876,8 +910,20 @@ export function handleMock(state, method, pathname, query, body) {
       if (!has(a, 'idx') || !has(a, 'value')) return withStatus(400, { error: 'IDX/VALUE REQUIRED' });
       const idx = toInt(a.idx);
       const value = Number(a.value);
-      if (idx < 0 || idx >= 120 || !Number.isFinite(value)) return withStatus(400, { error: 'INVALID PARAM' });
-      if (idx < e.values.length) e.values[idx] = wire6(value);
+      const maxIdx = ks.kind === 3 ? AMP_COUNT : 120;
+      if (idx < 0 || idx >= maxIdx || !Number.isFinite(value)) return withStatus(400, { error: 'INVALID PARAM' });
+      if (ks.kind === 3 && idx < 12 * AMP_STRIDE && idx % AMP_STRIDE === 3) {
+        // Ampero: troca de modelo = categoria e tipo recebidos antes + o numero;
+        // o pedal devolve os parametros no padrao do efeito novo.
+        const sl = Math.floor(idx / AMP_STRIDE), base = sl * AMP_STRIDE;
+        const cat = Math.round(e.values[base + 1]), type = Math.round(e.values[base + 2]);
+        const code = value < 0 ? -1 : ((type << 24) >>> 0) + value;
+        const row = value < 0 ? -1 : AMPM.AMPERO_ALGS.findIndex((x) => x[1] === cat && (x[0] >>> 0) === code);
+        const was = e.values[base];
+        ampSetModel(e.values, sl, row);
+        if (row >= 0) e.values[base] = was || 1;
+        editorDump(state, e);
+      } else if (idx < e.values.length) e.values[idx] = wire6(value);
       // GP-5 e Nano guardam a edicao ate o SALVAR (o host marca DIRTY);
       // a TONEX ONE grava sozinha.
       if (ks.kind !== 0) e.flags |= FLAG_DIRTY;

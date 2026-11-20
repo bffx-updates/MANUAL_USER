@@ -8555,9 +8555,9 @@ const MN_CONTENT = {
         "es": "nombre en pantalla"
        },
        "desc": {
-        "pt": "<p>Mostra na tela da controladora o nome do rig do Kemper (ou do preset da Nano Cortex) em vez do nome do preset da BFMiDi. Na Nano, o Cortex Cloud precisa estar desconectado.</p>",
-        "en": "<p>Shows the Kemper rig name (or the Nano Cortex preset name) on the controller's screen instead of the BFMiDi preset name. On the Nano, Cortex Cloud must be disconnected.</p>",
-        "es": "<p>Muestra en la pantalla de la controladora el nombre del rig del Kemper (o del preset de la Nano Cortex) en lugar del nombre del preset de la BFMiDi. En la Nano, Cortex Cloud tiene que estar desconectado.</p>"
+        "pt": "<p>Mostra na tela da controladora o nome do rig do Kemper (ou do preset da Nano Cortex) em vez do nome do preset da BFMiDi. Na Nano, o Cortex Cloud precisa estar desconectado. Com a Hotone Ampero II Stomp no USB Host, o card <strong>Ampero II Stomp</strong> tem o <strong>GET NAMES · AMPERO</strong> e o <strong>SEGUIR A AMPERO</strong>, que leva a controladora ao preset que chama o preset trocado no pé da Ampero.</p>",
+        "en": "<p>Shows the Kemper rig name (or the Nano Cortex preset name) on the controller's screen instead of the BFMiDi preset name. On the Nano, Cortex Cloud must be disconnected. With the Hotone Ampero II Stomp on the USB Host, the <strong>Ampero II Stomp</strong> card has <strong>GET NAMES · AMPERO</strong> and <strong>FOLLOW THE AMPERO</strong>, which takes the controller to the preset that calls the preset changed on the Ampero's footswitches.</p>",
+        "es": "<p>Muestra en la pantalla de la controladora el nombre del rig del Kemper (o del preset de la Nano Cortex) en lugar del nombre del preset de la BFMiDi. En la Nano, Cortex Cloud tiene que estar desconectado. Con la Hotone Ampero II Stomp en el USB Host, la tarjeta <strong>Ampero II Stomp</strong> tiene <strong>GET NAMES · AMPERO</strong> y <strong>SEGUIR LA AMPERO</strong>, que lleva la controladora al preset que llama al preset cambiado en el pie de la Ampero.</p>"
        }
       },
       {
@@ -10624,6 +10624,23 @@ const MN_CONTENT = {
         "pt": "<p>Plugada sozinha no USB Host: o <strong>afinador</strong> na tela da controladora (um footswitch mandando CC 43 no canal da Nano) e no Modo Palco, o <strong>nome do preset</strong> da Nano na tela (GET NAMES, ligado no card do Modo Amigável) e o <strong>editor de preset</strong>. Os <strong>knobs</strong> da Nano (amp, volume da captura, gate e os parâmetros dos FX) também aparecem por nome na lista de comandos de qualquer modo, marcados com ◇ — o footswitch mexe no knob ao vivo, sem gravar na Nano. Com o Cortex Cloud conectado por Bluetooth, a Nano recusa a conversa pelo USB.</p>",
         "en": "<p>Plugged into the USB Host on its own: the <strong>tuner</strong> on the controller's screen (a footswitch sending CC 43 on the Nano's channel) and in Stage Mode, the Nano's <strong>preset name</strong> on the screen (GET NAMES, turned on in the Friendly Mode card) and the <strong>preset editor</strong>. The Nano's <strong>knobs</strong> (amp, capture volume, gate and FX parameters) also appear by name in the command list of any mode, marked with ◇ — the footswitch moves the knob live, without saving on the Nano. With Cortex Cloud connected over Bluetooth, the Nano refuses to talk over USB.</p>",
         "es": "<p>Conectada sola al USB Host: el <strong>afinador</strong> en la pantalla de la controladora (un footswitch enviando CC 43 en el canal de la Nano) y en el Modo Escenario, el <strong>nombre del preset</strong> de la Nano en la pantalla (GET NAMES, activado en la tarjeta del Modo Amigable) y el <strong>editor de preset</strong>. Los <strong>knobs</strong> de la Nano (amp, volumen de la captura, gate y parámetros de los FX) también aparecen por nombre en la lista de comandos de cualquier modo, marcados con ◇ — el footswitch mueve el knob en vivo, sin grabar en la Nano. Con el Cortex Cloud conectado por Bluetooth, la Nano rechaza la comunicación por USB.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Hotone Ampero II Stomp",
+        "en": "Hotone Ampero II Stomp",
+        "es": "Hotone Ampero II Stomp"
+       },
+       "type": {
+        "pt": "integração",
+        "en": "integration",
+        "es": "integración"
+       },
+       "desc": {
+        "pt": "<p>Plugada no USB Host: o <strong>editor de preset</strong> (trocar efeito, ligar e desligar blocos, mexer nos knobs, salvar) e o <strong>palco especial</strong> da Ampero no Modo Palco. Os <strong>parâmetros de cada efeito</strong> aparecem na lista de comandos de qualquer modo, agrupados pelo tipo de efeito (DRIVE, DELAY, REVERB…) e com o nome de cada knob; o footswitch age no primeiro efeito daquele tipo que estiver na cadeia do preset. Em <strong>CONFIGURAÇÕES › MODO AMIGÁVEL › AVANÇADO</strong>, o <strong>GET NAMES · AMPERO</strong> mostra o nome do preset da Ampero na tela, e o <strong>SEGUIR A AMPERO</strong> leva a controladora ao preset cujo PC chama o preset trocado no pé da Ampero. Exige a controladora 15.18 e o USB Host 4.4.</p>",
+        "en": "<p>Plugged into the USB Host: the <strong>preset editor</strong> (change effects, turn blocks on and off, move the knobs, save) and the Ampero's <strong>special stage</strong> in Stage Mode. Each effect's <strong>parameters</strong> appear in the command list of any mode, grouped by effect type (DRIVE, DELAY, REVERB…) and with each knob's name; the footswitch acts on the first effect of that type in the preset's chain. In <strong>SETTINGS › FRIENDLY MODE › ADVANCED</strong>, <strong>GET NAMES · AMPERO</strong> shows the Ampero preset name on the screen, and <strong>FOLLOW THE AMPERO</strong> takes the controller to the preset whose PC calls the preset changed on the Ampero's footswitches. Requires controller 15.18 and USB Host 4.4.</p>",
+        "es": "<p>Conectada al USB Host: el <strong>editor de preset</strong> (cambiar efectos, encender y apagar bloques, mover los knobs, guardar) y el <strong>escenario especial</strong> de la Ampero en el Modo Escenario. Los <strong>parámetros de cada efecto</strong> aparecen en la lista de comandos de cualquier modo, agrupados por tipo de efecto (DRIVE, DELAY, REVERB…) y con el nombre de cada knob; el footswitch actúa sobre el primer efecto de ese tipo en la cadena del preset. En <strong>CONFIGURACIÓN › MODO AMIGABLE › AVANZADO</strong>, <strong>GET NAMES · AMPERO</strong> muestra el nombre del preset de la Ampero en la pantalla, y <strong>SEGUIR LA AMPERO</strong> lleva la controladora al preset cuyo PC llama al preset cambiado en el pie de la Ampero. Requiere la controladora 15.18 y el USB Host 4.4.</p>"
        }
       },
       {

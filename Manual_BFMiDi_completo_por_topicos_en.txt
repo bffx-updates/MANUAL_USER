@@ -2317,7 +2317,10 @@ Fields and items:
              level (I, II or III) decides which modules the editor shows.
 - GET NAMES (on-screen name)
   Description: Shows the Kemper rig name (or the Nano Cortex preset name) on the controller's screen
-             instead of the BFMiDi preset name. On the Nano, Cortex Cloud must be disconnected.
+             instead of the BFMiDi preset name. On the Nano, Cortex Cloud must be disconnected. With
+             the Hotone Ampero II Stomp on the USB Host, the Ampero II Stomp card has GET NAMES ·
+             AMPERO and FOLLOW THE AMPERO, which takes the controller to the preset that calls the
+             preset changed on the Ampero's footswitches.
 - FOLLOW THE KEMPER (Kemper)
   Description: When you change the rig on the Kemper itself, the controller jumps to the matching
              preset.
@@ -2954,6 +2957,15 @@ Fields and items:
              name in the command list of any mode, marked with ◇ — the footswitch moves the knob
              live, without saving on the Nano. With Cortex Cloud connected over Bluetooth, the Nano
              refuses to talk over USB.
+- Hotone Ampero II Stomp (integration)
+  Description: Plugged into the USB Host: the preset editor (change effects, turn blocks on and off,
+             move the knobs, save) and the Ampero's special stage in Stage Mode. Each effect's
+             parameters appear in the command list of any mode, grouped by effect type (DRIVE,
+             DELAY, REVERB…) and with each knob's name; the footswitch acts on the first effect of
+             that type in the preset's chain. In SETTINGS › FRIENDLY MODE › ADVANCED, GET NAMES ·
+             AMPERO shows the Ampero preset name on the screen, and FOLLOW THE AMPERO takes the
+             controller to the preset whose PC calls the preset changed on the Ampero's
+             footswitches. Requires controller 15.18 and USB Host 4.4.
 - ZOOM MS-70CDR, MS-50G and MS-60B (integration)
   Description: These MultiStomps only have MIDI over USB: plug them into the USB Host. The list gets
              the presets (PC, PRESET 1 to 50), the tuner (CC 74: 127 on, 0 off) and, under ZOOM
