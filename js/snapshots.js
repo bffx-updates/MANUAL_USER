@@ -1,4 +1,4 @@
-/* BFMiDi · Manual — PRINTS do editor (v15.13).
+/* BFMiDi · Manual — PRINTS do editor (v15.19).
    Gerado por tools/capture_shots.mjs. NAO editar a mao: quando a tela
    do editor mudar, rode a captura de novo.
    { img, light?, w, h, kind?, hot: { seletor: [x, y, w, h] em fracao } } */
@@ -428,45 +428,47 @@ const MN_SHOTS = {
  "deved-gp5": {
   "img": "img/shots/deved-gp5.webp",
   "w": 1180,
-  "h": 800,
+  "h": 820,
   "hot": {
    ".bf-deved-lcd": [
-    0.0186,
-    0.095,
-    0.2458,
-    0.0675
+    0.0254,
+    0.1024,
+    0.239,
+    0.0659
    ],
    ".bf-deved-chain": [
-    0.0186,
-    0.1775,
+    0.022,
+    0.1878,
     0.2458,
-    0.5687
+    0.5549
    ],
    ".bf-deved-block-head": [
-    0.2966,
-    0.2425,
-    0.6661,
-    0.06
+    0.3034,
+    0.2524,
+    0.6525,
+    0.0829
    ],
    ".bf-deved-savename": [
-    0.0186,
-    0.7775,
+    0.022,
+    0.7756,
     0.2458,
-    0.055
+    0.0537
    ],
    ".bf-deved-actions": [
-    0.0186,
-    0.845,
+    0.022,
+    0.8415,
     0.2458,
-    0.13
+    0.1268
    ]
-  }
+  },
+  "light": "img/shots/deved-gp5.light.webp"
  },
  "deved-tonex": {
   "img": "img/shots/deved-tonex.webp",
   "w": 1180,
-  "h": 800,
-  "hot": {}
+  "h": 820,
+  "hot": {},
+  "light": "img/shots/deved-tonex.light.webp"
  },
  "stage-1": {
   "img": "img/shots/stage-1.webp",
@@ -613,8 +615,9 @@ const MN_SHOTS = {
  "deved-nano": {
   "img": "img/shots/deved-nano.webp",
   "w": 1180,
-  "h": 800,
-  "hot": {}
+  "h": 820,
+  "hot": {},
+  "light": "img/shots/deved-nano.light.webp"
  },
  "stage-2-nano": {
   "img": "img/shots/stage-2-nano.webp",
@@ -724,33 +727,34 @@ const MN_SHOTS = {
  "ked": {
   "img": "img/shots/ked.webp",
   "w": 1180,
-  "h": 800,
+  "h": 820,
   "hot": {
    ".bf-deved-lcd": [
-    0.0186,
-    0.095,
-    0.2458,
-    0.0757
+    0.0254,
+    0.1024,
+    0.239,
+    0.0797
    ],
    ".bf-ked-notes": [
-    0.0186,
-    0.1857,
+    0.022,
+    0.2016,
     0.2458,
-    0.1044
+    0.1018
    ],
    ".bf-deved-chain": [
-    0.0186,
-    0.305,
+    0.022,
+    0.3181,
     0.2458,
-    0.5087
+    0.4905
    ],
    ".bf-deved-actions": [
-    0.0186,
-    0.845,
+    0.022,
+    0.8415,
     0.2458,
-    0.13
+    0.1268
    ]
-  }
+  },
+  "light": "img/shots/ked.light.webp"
  },
  "stage-kemper": {
   "img": "img/shots/stage-kemper.webp",

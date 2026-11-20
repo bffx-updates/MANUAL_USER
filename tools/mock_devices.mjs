@@ -136,6 +136,9 @@ function buildTonexValues(variant = 0) {
     84: 0.6, 85: 50, 86: 40, 87: 5, 90: 180, 91: 150, 92: 60, 93: 5,
     94: 1, 95: 1, 96: 0,                          // DELAY on, DIGITAL
     99: 380, 100: 28, 101: 0, 102: 20, 105: 420, 106: 32, 107: 0, 108: 24,
+    // AJUSTES DO PEDAL (bloco GLOBAL): BPM, input trim (dB), cab sim bypass,
+    // fonte do tempo (0 = global), referencia do afinador (Hz), bypass.
+    110: 120, 111: 0, 112: 0, 113: 0, 114: 440, 115: 0,
   });
   for (let m = 0; m < 6; m++) {                   // os 6 reverbs
     v[39 + m * 4] = Number((3 + m * 0.4).toFixed(1));

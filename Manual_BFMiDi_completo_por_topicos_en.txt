@@ -1979,6 +1979,10 @@ Summary: Edit the tone of the Valeton GP-5 and GP-50, the IK TONEX ONE, the Neur
 Introduction: With the device connected to the controller, the BFMiDi editor shows the preset
         playing on the device — blocks, models and parameters — and sends each change instantly,
         just like the manufacturers' apps.
+        The editor looks like a device: a display with the preset, the effect chain as keys with
+        LEDs (lit = on) and each effect on its own plate. On a computer or tablet it opens in a
+        window, with the display and the chain on the left and the effects on the right; on a phone
+        it fills the whole screen.
         The GP-5, the TONEX ONE and the Nano Cortex plug into the controller's USB HOST port
         (BFMIDI-3 and BFMIDI-S3). The Kemper Player connects the other way around: the controller's
         DEVICE port goes into the Player's USB port.
@@ -2063,6 +2067,14 @@ Fields and items:
   Description: With two TONEX ONE units plugged in, each one has its own editor and its own MIDI
              channel (SETTINGS › HOST › DEVICES). TONEX 1 is the one on the hub's lowest-numbered
              port.
+- Pedal settings (GLOBAL block) (block)
+  Description: At the end of the chain is the GLOBAL block, with the settings that apply to every
+             preset on the TONEX ONE: Cab Sim (cabinet simulator on or off), Input Trim (input gain,
+             from −15 to +15 dB), Tempo (GLOBAL or per PRESET), BPM and Tuning Ref (the tuner
+             reference, from 415 to 465 Hz). With Tempo set to PRESET, the BPM here is the one of
+             the preset that is playing. REVERT TO ORIGINAL does not touch these settings. It needs
+             USB Host 4.5 or newer; before that, the block appears greyed out and says what's
+             missing.
 
 8.4. Neural DSP Nano Cortex
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~

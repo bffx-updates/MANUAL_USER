@@ -7324,9 +7324,9 @@ const MN_CONTENT = {
     "es": "Edita en vivo el sonido de la Valeton GP-5 y GP-50, la IK TONEX ONE, la Neural DSP Nano Cortex y el Kemper Player — desde la propia BFMiDi, sin el software de computadora del fabricante."
    },
    "intro": {
-    "pt": "<p>Com o aparelho ligado na controladora, o editor da BFMiDi mostra o <strong>preset que está tocando no aparelho</strong> — blocos, modelos e parâmetros — e manda cada ajuste na hora, como os apps dos fabricantes.</p><p>A GP-5, a TONEX ONE e a Nano Cortex se ligam na porta <strong>USB HOST</strong> da controladora (BFMIDI-3 e BFMIDI-S3). O Kemper Player é ligado no contrário: a porta <strong>DEVICE</strong> da controladora na porta USB do Player.</p>",
-    "en": "<p>With the device connected to the controller, the BFMiDi editor shows the <strong>preset playing on the device</strong> — blocks, models and parameters — and sends each change instantly, just like the manufacturers' apps.</p><p>The GP-5, the TONEX ONE and the Nano Cortex plug into the controller's <strong>USB HOST</strong> port (BFMIDI-3 and BFMIDI-S3). The Kemper Player connects the other way around: the controller's <strong>DEVICE</strong> port goes into the Player's USB port.</p>",
-    "es": "<p>Con el aparato conectado a la controladora, el editor de la BFMiDi muestra el <strong>preset que está sonando en el aparato</strong> — bloques, modelos y parámetros — y envía cada ajuste al instante, como las apps de los fabricantes.</p><p>La GP-5, la TONEX ONE y la Nano Cortex se conectan al puerto <strong>USB HOST</strong> de la controladora (BFMIDI-3 y BFMIDI-S3). El Kemper Player se conecta al revés: el puerto <strong>DEVICE</strong> de la controladora va al puerto USB del Player.</p>"
+    "pt": "<p>Com o aparelho ligado na controladora, o editor da BFMiDi mostra o <strong>preset que está tocando no aparelho</strong> — blocos, modelos e parâmetros — e manda cada ajuste na hora, como os apps dos fabricantes.</p><p>O editor tem a cara de um aparelho: um visor com o preset, a cadeia de efeitos em teclas com LED (aceso = ligado) e cada efeito numa placa própria. No computador e no tablet ele abre numa janela, com o visor e a cadeia à esquerda e os efeitos à direita; no celular ocupa a tela inteira.</p><p>A GP-5, a TONEX ONE e a Nano Cortex se ligam na porta <strong>USB HOST</strong> da controladora (BFMIDI-3 e BFMIDI-S3). O Kemper Player é ligado no contrário: a porta <strong>DEVICE</strong> da controladora na porta USB do Player.</p>",
+    "en": "<p>With the device connected to the controller, the BFMiDi editor shows the <strong>preset playing on the device</strong> — blocks, models and parameters — and sends each change instantly, just like the manufacturers' apps.</p><p>The editor looks like a device: a display with the preset, the effect chain as keys with LEDs (lit = on) and each effect on its own plate. On a computer or tablet it opens in a window, with the display and the chain on the left and the effects on the right; on a phone it fills the whole screen.</p><p>The GP-5, the TONEX ONE and the Nano Cortex plug into the controller's <strong>USB HOST</strong> port (BFMIDI-3 and BFMIDI-S3). The Kemper Player connects the other way around: the controller's <strong>DEVICE</strong> port goes into the Player's USB port.</p>",
+    "es": "<p>Con el aparato conectado a la controladora, el editor de la BFMiDi muestra el <strong>preset que está sonando en el aparato</strong> — bloques, modelos y parámetros — y envía cada ajuste al instante, como las apps de los fabricantes.</p><p>El editor tiene cara de aparato: un visor con el preset, la cadena de efectos en teclas con LED (encendido = activo) y cada efecto en su propia placa. En la computadora y en la tablet se abre en una ventana, con el visor y la cadena a la izquierda y los efectos a la derecha; en el celular ocupa toda la pantalla.</p><p>La GP-5, la TONEX ONE y la Nano Cortex se conectan al puerto <strong>USB HOST</strong> de la controladora (BFMIDI-3 y BFMIDI-S3). El Kemper Player se conecta al revés: el puerto <strong>DEVICE</strong> de la controladora va al puerto USB del Player.</p>"
    },
    "cards": [
     {
@@ -7673,6 +7673,23 @@ const MN_CONTENT = {
         "pt": "<p>Com duas TONEX ONE plugadas, cada uma tem o seu editor e o seu canal MIDI (CONFIGURAÇÕES › HOST › APARELHOS). A TONEX 1 é a que está na porta de menor número do hub.</p>",
         "en": "<p>With two TONEX ONE units plugged in, each one has its own editor and its own MIDI channel (SETTINGS › HOST › DEVICES). TONEX 1 is the one on the hub's lowest-numbered port.</p>",
         "es": "<p>Con dos TONEX ONE conectadas, cada una tiene su propio editor y su propio canal MIDI (CONFIGURACIÓN › HOST › APARATOS). La TONEX 1 es la que está en el puerto de menor número del hub.</p>"
+       }
+      },
+      {
+       "name": {
+        "pt": "Ajustes do pedal (bloco GLOBAL)",
+        "en": "Pedal settings (GLOBAL block)",
+        "es": "Ajustes del pedal (bloque GLOBAL)"
+       },
+       "type": {
+        "pt": "bloco",
+        "en": "block",
+        "es": "bloque"
+       },
+       "desc": {
+        "pt": "<p>No fim da cadeia fica o bloco <strong>GLOBAL</strong>, com os ajustes que valem para <strong>todos os presets</strong> da TONEX ONE: <strong>Cab Sim</strong> (simulador de gabinete ligado ou desligado), <strong>Input Trim</strong> (ganho de entrada, de −15 a +15 dB), <strong>Tempo</strong> (GLOBAL ou do PRESET), <strong>BPM</strong> e <strong>Tuning Ref</strong> (a referência do afinador, de 415 a 465 Hz). Com o Tempo em PRESET, o BPM daqui é o do preset que está tocando. O VOLTAR AO ORIGINAL não mexe nesses ajustes. Precisa do USB Host 4.5 ou mais novo; antes disso o bloco aparece apagado, dizendo o que falta.</p>",
+        "en": "<p>At the end of the chain is the <strong>GLOBAL</strong> block, with the settings that apply to <strong>every preset</strong> on the TONEX ONE: <strong>Cab Sim</strong> (cabinet simulator on or off), <strong>Input Trim</strong> (input gain, from −15 to +15 dB), <strong>Tempo</strong> (GLOBAL or per PRESET), <strong>BPM</strong> and <strong>Tuning Ref</strong> (the tuner reference, from 415 to 465 Hz). With Tempo set to PRESET, the BPM here is the one of the preset that is playing. REVERT TO ORIGINAL does not touch these settings. It needs USB Host 4.5 or newer; before that, the block appears greyed out and says what's missing.</p>",
+        "es": "<p>Al final de la cadena está el bloque <strong>GLOBAL</strong>, con los ajustes que valen para <strong>todos los presets</strong> de la TONEX ONE: <strong>Cab Sim</strong> (simulador de gabinete encendido o apagado), <strong>Input Trim</strong> (ganancia de entrada, de −15 a +15 dB), <strong>Tempo</strong> (GLOBAL o del PRESET), <strong>BPM</strong> y <strong>Tuning Ref</strong> (la referencia del afinador, de 415 a 465 Hz). Con el Tempo en PRESET, el BPM de aquí es el del preset que está sonando. VOLVER AL ORIGINAL no toca estos ajustes. Necesita el USB Host 4.5 o más nuevo; antes de eso el bloque aparece apagado y dice qué falta.</p>"
        }
       }
      ]
