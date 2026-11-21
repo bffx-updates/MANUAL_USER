@@ -1761,6 +1761,20 @@ Fields and items:
              change. A line with only --- starts another screen.
              Coming from CHORDS, the part’s chords are already at the top of the sheet; the chord
              boxes stay saved.
+- EDIT ON SCREEN (sheet studio) (button)
+  Description: On the sheet card, EDIT ON SCREEN opens the studio: at the top, a preview of the
+             sheet as it will look on stage, on a PHONE or a TABLET (the VIEW button, which also
+             picks the screen layout and the guide lines); below, the sheets of the block, numbered
+             like the stage screens. Each line has an icon on the left: the music note is a chord
+             line, the text lines are lyrics (tap the icon to switch). Tap a line to move, split or
+             delete it; + CHORDS AND LYRICS adds a pair, NEW SHEET starts another screen and each
+             sheet's ⋯ menu moves or deletes it. The preview tells how much still fits on the sheet.
+             The strip at the top switches blocks, and Next block, at the end of the list, goes to
+             the next one. If you prefer typing, use TEXT.
+             Chords ON THE GRID pins each chord to a slot above the lyrics and keeps the lyrics at a
+             fixed size per block (3 chord and lyric pairs per screen at size M). On a phone held
+             sideways, when the stage part is a sheet on the grid, the setlist screen switches by
+             itself to the LYRICS AND CHORDS layout so the lyrics stay readable.
 - Lines per screen (option)
   Description: How many lines of the sheet show at a time on stage: 2, 3, 4, 6, 8, 10, 12 or 16. The
              text fills the height of the area, so fewer lines = bigger text and more screens. A

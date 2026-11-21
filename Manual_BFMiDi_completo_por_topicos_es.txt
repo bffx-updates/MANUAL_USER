@@ -1801,6 +1801,21 @@ Campos e ítems:
              empieza otra pantalla.
              Si venías de ACORDES, los acordes de la parte ya están al principio de la hoja; los
              cuadros de acordes siguen guardados.
+- EDITAR EN PANTALLA (estudio de la hoja) (botón)
+  Descripción: En la tarjeta de la hoja, EDITAR EN PANTALLA abre el estudio: arriba, la vista previa
+             de la hoja tal como saldrá en el escenario, en el MÓVIL o la TABLET (botón VER, que
+             también elige el diseño de la pantalla y las líneas de apoyo); abajo, las hojas del
+             bloque, numeradas como las pantallas del escenario. Cada línea tiene un ícono a la
+             izquierda: la nota musical es línea de acordes, las líneas de texto son letra (toca el
+             ícono para cambiar). Toca una línea para moverla, dividirla o borrarla; + ACORDES Y
+             LETRA agrega un par, NUEVA HOJA empieza otra pantalla y el menú ⋯ de cada hoja la mueve
+             o la borra. La vista previa avisa cuánto cabe todavía en la hoja. La franja de arriba
+             cambia de bloque, y Siguiente bloque, al final de la lista, pasa al siguiente. Si
+             prefieres escribir, usa TEXTO.
+             Acordes EN LA CUADRÍCULA fija cada acorde a una casilla sobre la letra y deja la letra
+             con un tamaño fijo por bloque (3 pares de acorde y letra por pantalla en el tamaño M).
+             En el celular acostado, cuando la parte del escenario es una hoja en la cuadrícula, la
+             pantalla del setlist usa sola el diseño LETRA Y ACORDES, para que la letra se lea.
 - Líneas por pantalla (opción)
   Descripción: Cuántas líneas de la hoja aparecen cada vez en el escenario: 2, 3, 4, 6, 8, 10, 12 o
              16. La letra llena la altura del área, así que menos líneas = letra más grande y más

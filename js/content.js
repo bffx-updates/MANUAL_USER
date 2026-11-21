@@ -6531,6 +6531,23 @@ const MN_CONTENT = {
       },
       {
        "name": {
+        "pt": "EDITAR NA TELA (estúdio da folha)",
+        "en": "EDIT ON SCREEN (sheet studio)",
+        "es": "EDITAR EN PANTALLA (estudio de la hoja)"
+       },
+       "type": {
+        "pt": "botão",
+        "en": "button",
+        "es": "botón"
+       },
+       "desc": {
+        "pt": "<p>No card da folha, <strong>EDITAR NA TELA</strong> abre o estúdio: em cima, a prévia da folha do jeito que vai sair no palco, no <strong>CELULAR</strong> ou no <strong>TABLET</strong> (botão <strong>VER</strong>, que também escolhe o layout da tela e as linhas de apoio); embaixo, as folhas do bloco, numeradas como as telas do palco. Cada linha tem um ícone à esquerda: a nota musical é linha de <strong>cifra</strong>, as linhas de texto são <strong>letra</strong> (toque no ícone para trocar). Toque numa linha para mover, dividir ou apagar; <strong>+ CIFRA E LETRA</strong> acrescenta um par, <strong>NOVA FOLHA</strong> começa outra tela e o menu ⋯ de cada folha a move ou apaga. A prévia avisa quanto ainda cabe na folha. A faixa de cima troca de bloco, e <strong>Próximo bloco</strong>, no fim da lista, passa para o seguinte. Quem prefere escrever usa <strong>TEXTO</strong>.</p><p><strong>Cifras NA GRADE</strong> prende cada acorde a uma casa acima da letra e deixa a letra num tamanho fixo por bloco (3 pares de cifra e letra por tela no tamanho M). No celular deitado, quando a parte do palco é uma folha na grade, a tela do setlist usa sozinha o layout LETRA E CIFRA, para a letra ficar legível.</p>",
+        "en": "<p>On the sheet card, <strong>EDIT ON SCREEN</strong> opens the studio: at the top, a preview of the sheet as it will look on stage, on a <strong>PHONE</strong> or a <strong>TABLET</strong> (the <strong>VIEW</strong> button, which also picks the screen layout and the guide lines); below, the sheets of the block, numbered like the stage screens. Each line has an icon on the left: the music note is a <strong>chord</strong> line, the text lines are <strong>lyrics</strong> (tap the icon to switch). Tap a line to move, split or delete it; <strong>+ CHORDS AND LYRICS</strong> adds a pair, <strong>NEW SHEET</strong> starts another screen and each sheet's ⋯ menu moves or deletes it. The preview tells how much still fits on the sheet. The strip at the top switches blocks, and <strong>Next block</strong>, at the end of the list, goes to the next one. If you prefer typing, use <strong>TEXT</strong>.</p><p><strong>Chords ON THE GRID</strong> pins each chord to a slot above the lyrics and keeps the lyrics at a fixed size per block (3 chord and lyric pairs per screen at size M). On a phone held sideways, when the stage part is a sheet on the grid, the setlist screen switches by itself to the LYRICS AND CHORDS layout so the lyrics stay readable.</p>",
+        "es": "<p>En la tarjeta de la hoja, <strong>EDITAR EN PANTALLA</strong> abre el estudio: arriba, la vista previa de la hoja tal como saldrá en el escenario, en el <strong>MÓVIL</strong> o la <strong>TABLET</strong> (botón <strong>VER</strong>, que también elige el diseño de la pantalla y las líneas de apoyo); abajo, las hojas del bloque, numeradas como las pantallas del escenario. Cada línea tiene un ícono a la izquierda: la nota musical es línea de <strong>acordes</strong>, las líneas de texto son <strong>letra</strong> (toca el ícono para cambiar). Toca una línea para moverla, dividirla o borrarla; <strong>+ ACORDES Y LETRA</strong> agrega un par, <strong>NUEVA HOJA</strong> empieza otra pantalla y el menú ⋯ de cada hoja la mueve o la borra. La vista previa avisa cuánto cabe todavía en la hoja. La franja de arriba cambia de bloque, y <strong>Siguiente bloque</strong>, al final de la lista, pasa al siguiente. Si prefieres escribir, usa <strong>TEXTO</strong>.</p><p><strong>Acordes EN LA CUADRÍCULA</strong> fija cada acorde a una casilla sobre la letra y deja la letra con un tamaño fijo por bloque (3 pares de acorde y letra por pantalla en el tamaño M). En el celular acostado, cuando la parte del escenario es una hoja en la cuadrícula, la pantalla del setlist usa sola el diseño LETRA Y ACORDES, para que la letra se lea.</p>"
+       }
+      },
+      {
+       "name": {
         "pt": "Linhas por tela",
         "en": "Lines per screen",
         "es": "Líneas por pantalla"

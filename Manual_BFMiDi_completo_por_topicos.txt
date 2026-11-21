@@ -1740,6 +1740,20 @@ Campos e itens:
              tom. Uma linha só com --- começa outra tela.
              Quem vinha de CIFRAS já encontra os acordes da parte no começo da folha; os quadros de
              cifras continuam guardados.
+- EDITAR NA TELA (estúdio da folha) (botão)
+  Descrição: No card da folha, EDITAR NA TELA abre o estúdio: em cima, a prévia da folha do jeito
+             que vai sair no palco, no CELULAR ou no TABLET (botão VER, que também escolhe o layout
+             da tela e as linhas de apoio); embaixo, as folhas do bloco, numeradas como as telas do
+             palco. Cada linha tem um ícone à esquerda: a nota musical é linha de cifra, as linhas
+             de texto são letra (toque no ícone para trocar). Toque numa linha para mover, dividir
+             ou apagar; + CIFRA E LETRA acrescenta um par, NOVA FOLHA começa outra tela e o menu ⋯
+             de cada folha a move ou apaga. A prévia avisa quanto ainda cabe na folha. A faixa de
+             cima troca de bloco, e Próximo bloco, no fim da lista, passa para o seguinte. Quem
+             prefere escrever usa TEXTO.
+             Cifras NA GRADE prende cada acorde a uma casa acima da letra e deixa a letra num
+             tamanho fixo por bloco (3 pares de cifra e letra por tela no tamanho M). No celular
+             deitado, quando a parte do palco é uma folha na grade, a tela do setlist usa sozinha o
+             layout LETRA E CIFRA, para a letra ficar legível.
 - Linhas por tela (opção)
   Descrição: Quantas linhas da folha aparecem de cada vez no palco: 2, 3, 4, 6, 8, 10, 12 ou 16. A
              letra enche a altura da área, então menos linhas = letra maior e mais telas. Um refrão
